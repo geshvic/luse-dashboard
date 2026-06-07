@@ -1,0 +1,69 @@
+{
+  "asOf": "2026-06-05",
+  "source": "Bank of Zambia (boz.zm), cross-rates from Wise/XE/ExchangeRates",
+  "baseNote": "Rates show ZMW per 1 unit of foreign currency. ↓ ZMW = Kwacha strengthening (appreciating).",
+  "mpRate": 13.5,
+  "mpRateNote": "Monetary Policy Rate reduced 75bps from 14.25% on Feb 11, 2026. Next review: May 13, 2026.",
+  "rates": {
+    "USD": {
+      "buy": 17.5071,
+      "sell": 17.5571,
+      "mid": 17.5321,
+      "trend": "appreciating",
+      "weekAgo": 18.45,
+      "twoWeeksAgo": 18.825,
+      "oneMonthAgo": 19.20,
+      "sixMonthsAgo": 22.50
+    },
+    "GBP": {
+      "mid": 23.80,
+      "trend": "appreciating",
+      "weekAgo": 24.91,
+      "oneMonthAgo": 25.50,
+      "note": "Cross rate via USD.GBP ~1.36"
+    },
+    "EUR": {
+      "mid": 21.10,
+      "trend": "appreciating",
+      "weekAgo": 22.10,
+      "oneMonthAgo": 22.40,
+      "note": "Cross rate via USD.EUR ~1.20"
+    },
+    "ZAR": {
+      "mid": 1.061,
+      "trend": "appreciating",
+      "weekAgo": 1.135,
+      "oneMonthAgo": 1.18,
+      "note": "1 ZMW = 0.942 ZAR. South African rand cross rate."
+    },
+    "BWP": {
+      "mid": 1.28,
+      "trend": "stable",
+      "weekAgo": 1.35,
+      "note": "Botswana pula. Estimated cross rate."
+    },
+    "CNY": {
+      "mid": 2.43,
+      "trend": "appreciating",
+      "weekAgo": 2.55,
+      "note": "Chinese yuan. Zambia's growing yuan-denominated mining tax corridor."
+    }
+  },
+  "trendAnalysis": {
+    "direction": "Kwacha STRENGTHENING sharply",
+    "twoWeekChange": -6.9,
+    "oneMonthChange": -8.7,
+    "sixMonthChange": -22.1,
+    "drivers": [
+      "Record copper output 890K tonnes (2025) — strong export earnings",
+      "Record maize harvest >4M tonnes — reduced food import needs",
+      "Debt restructuring complete — sovereign risk premium collapsing",
+      "IMF successor programme talks scheduled July 2026",
+      "MPR at 13.5% — high real yields attracting carry trade inflows",
+      "Yuan mining tax corridor reducing USD demand"
+    ],
+    "outlook": "BOZ likely to continue easing MPR if inflation remains below 8%. Further kwacha appreciation possible in near term on copper tailwinds, but BOZ may intervene to protect export competitiveness. Key risks: global copper price reversal, drought cycles, election-related fiscal expansion (Aug 2026).",
+    "projection3m": "USD/ZMW 16.50–18.00 range. Bias toward further appreciation if copper holds above $9,500/tonne and IMF successor programme progresses.",
+    "projection6m": "USD/ZMW 16.00–19.00 range. Wider range reflects election uncertainty (Aug 2026). Post-election policy continuity would support kwacha; fiscal slippage would reverse gains."
+  }
+}

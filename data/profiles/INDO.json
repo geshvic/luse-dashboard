@@ -1,0 +1,57 @@
+{
+  "ticker": "INDO",
+  "name": "Indo-Zambia Bank Limited",
+  "sector": "Banking",
+  "subSector": "Commercial Banking",
+  "market": "Main",
+  "description": "Indo-Zambia Bank Limited (IZB) is a commercial bank jointly owned by the Governments of Zambia and India, established as a symbol of bilateral cooperation. Listed on the LuSE Main Board since 2007, IZB provides retail banking, corporate banking, and trade finance services, with a particular focus on facilitating Zambia-India trade and investment flows. The bank has a growing branch network and serves both Zambian corporates and the Indian diaspora business community.",
+  "financials": {
+    "revenue": null,
+    "revenueUnit": "ZMW millions",
+    "revenueNote": "Bank revenue data not available from searched sources",
+    "netIncome": {"2023": 604, "2024": 724},
+    "netIncomeGrowth": 19.82,
+    "eps": null,
+    "dividendDeclared": 150,
+    "dividendNote": "K150 million total dividend declared for FY2024",
+    "note": "Detailed income statement and balance sheet data unavailable from searched sources. Annual report filed on LuSE SENS."
+  },
+  "ratios": {
+    "pe": 7.2,
+    "peNote": "From companies.json; with K724M profit and K780M market cap, PE would be ~1.08x — companies.json figure of 7.2 likely based on different earnings period. VERIFICATION NEEDED.",
+    "pb": null,
+    "debtToEquity": null,
+    "dividendYield": 4.8,
+    "dividendNote": "From companies.json; K150M total dividend against K780M market cap = 19.2% yield. Companies.json 4.8% yield needs reconciliation."
+  },
+  "ownership": {
+    "freeFloat": 25.0,
+    "topHolders": [
+      {"name": "Government of Zambia (GRZ)", "stake": null, "note": "Joint venture partner; exact stake unconfirmed"},
+      {"name": "Government of India", "stake": null, "note": "Joint venture partner; exact stake unconfirmed"},
+      {"name": "Public Float", "stake": 25.0}
+    ]
+  },
+  "analystNotes": [
+    {
+      "date": "Jun 2026",
+      "note": "Indo-Zambia Bank is a profitable niche bank (K724M PAT, +19.8% YoY) with sovereign backing from two governments. The K150M dividend declaration signals confidence. However, detailed financial data is surprisingly scarce for a Main Board-listed bank — no revenue breakdown, balance sheet, or ratio data was accessible from standard sources. The companies.json PE of 7.2x appears inconsistent with K724M profit against K780M market cap (which would imply PE ~1.1x). Either the market cap or earnings figure is stale. Limited free float (25%) and thin trading make this a quasi-sovereign entity rather than a public market stock. UNABLE TO BUILD FULL PROFILE — DATA GATHERING NEEDED.",
+      "author": "Vituli Musukuma, PhD"
+    }
+  ],
+  "riskRating": "MEDIUM — INSUFFICIENT DATA FOR FULL ASSESSMENT",
+  "riskFactors": [
+    "Insufficient publicly available financial data for thorough analysis",
+    "Government joint venture — political and governance risks",
+    "PE data inconsistency between sources",
+    "Low free float (25%) — limited secondary market liquidity",
+    "Concentration risk in Zambia-India trade corridor"
+  ],
+  "investmentThesis": "Indo-Zambia Bank is a profitable, government-backed niche bank that appears cheap on headline metrics but lacks the financial transparency needed for credible analysis. Until detailed audited financial statements (income statement, balance sheet, key ratios) are obtained, no investment thesis can be formed.",
+  "stance": "FLAGGED — INSUFFICIENT DATA FOR ANALYSIS",
+  "dataSources": [
+    "Indo Zambia Bank FY2024 AGM Press Briefing (izb.co.zm, Zambia Monitor, Daily Nation)",
+    "companies.json — internal dashboard data"
+  ],
+  "dataQuality": "LOW — Only net profit and dividend from press reports confirmed. No detailed financial statements accessed. Companies.json PE and yield need reconciliation. Full annual report retrieval needed."
+}

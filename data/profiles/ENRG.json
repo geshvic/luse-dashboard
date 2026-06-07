@@ -1,0 +1,47 @@
+{
+  "ticker": "ENRG",
+  "name": "Energy Africa Zambia PLC",
+  "sector": "Energy",
+  "subSector": "Renewable Energy & Power",
+  "market": "ALT-M",
+  "description": "Energy Africa Zambia PLC is a renewable energy company listed on the LuSE Alternative Market (ALT-M) since 2023. The company is positioned in Zambia's growing renewable energy sector, potentially involved in solar, mini-hydro, or other renewable power generation projects. Zambia's energy sector reforms, including open-access regulations, create a favorable backdrop for independent power producers. However, as a recent ALT-M listing, the company has minimal public track record.",
+  "financials": {
+    "revenue": null,
+    "note": "NO PUBLICLY AVAILABLE FINANCIAL DATA FOUND. As a 2023 ALT-M listing, the company may have filed IPO prospectus and limited post-listing results with LuSE SENS, but these were not accessible through standard web searches. Energy project developers typically have limited early-stage revenue until projects reach financial close and commercial operations."
+  },
+  "ratios": {
+    "pe": 12.0,
+    "peNote": "From companies.json — source and calculation basis unverified. For an early-stage energy developer, a PE ratio may be based on minimal or non-recurring earnings.",
+    "dividendYield": 0.0
+  },
+  "ownership": {
+    "freeFloat": 28.0,
+    "topHolders": [
+      {"name": "Founders/Sponsors", "stake": null, "note": "Presumed majority. Unconfirmed."},
+      {"name": "Public Float", "stake": 28.0}
+    ],
+    "note": "Zero trading volume (companies.json) — the free float is theoretical, not functional"
+  },
+  "analystNotes": [
+    {
+      "date": "Jun 2026",
+      "note": "ENRG is the newest listing on LuSE (ALT-M, 2023) with zero trading volume and no publicly accessible financial data. The renewable energy thesis is attractive — Zambia's energy reforms and power deficit create real demand for IPPs — but as an investable security, ENRG is non-functional. The ZMW 340M market cap and PE 12x cannot be verified. Energy project developers are typically valued on a project pipeline/NAV basis, not PE, making the companies.json PE questionable. This may be a legitimate energy developer that listed for future capital raising rather than secondary trading. FLAGGED FOR EVIDENCE GATHERING.",
+      "author": "Vituli Musukuma, PhD"
+    }
+  ],
+  "riskRating": "HIGH — EARLY STAGE, NO DATA, NO LIQUIDITY",
+  "riskFactors": [
+    "Zero trading volume — no functioning secondary market",
+    "No publicly accessible audited financial statements",
+    "Early-stage energy developer — pre-revenue or minimal revenue",
+    "ALT-M listing with minimal regulatory disclosure",
+    "Energy project risks — financing, construction, off-take agreements",
+    "Market cap and PE unverified"
+  ],
+  "investmentThesis": "The renewable energy opportunity in Zambia is real, but ENRG is not currently an investable public security. Zero trading volume, no financial data, and early-stage project risk make this a 'wait for project delivery and market function' situation. For renewable energy exposure on LuSE, CECZ and its Green Bond/solar pipeline offer a more transparent, liquid alternative.",
+  "stance": "FLAGGED — INSUFFICIENT DATA, NO MARKET FUNCTION",
+  "dataSources": [
+    "companies.json — internal dashboard data (unverified)"
+  ],
+  "dataQuality": "VERY LOW — No audited financials accessed. Zero trading volume. Market data from companies.json unverified. IPO prospectus may exist on LuSE SENS but not retrieved."
+}

@@ -1,0 +1,75 @@
+{
+  "ticker": "SCBL",
+  "name": "Standard Chartered Bank Zambia PLC",
+  "sector": "Banking",
+  "subSector": "Commercial Banking",
+  "market": "Main",
+  "description": "Standard Chartered Bank Zambia PLC is a subsidiary of Standard Chartered PLC, the London-listed emerging markets banking group. Listed on the LuSE Main Board since 1993, SCBL provides corporate banking, retail banking, and wealth management services in Zambia. The bank is a legacy institution in the Zambian financial sector with a focus on corporate and institutional clients. Standard Chartered Group regards Zambia as a key African market. The bank employs approximately 270 people.",
+  "financials": {
+    "revenue": {"2025": 711.10},
+    "revenueUnit": "ZMW millions",
+    "revenueGrowth": 3.59,
+    "grossProfit": {"2025": 711.10},
+    "operatingIncome": {"2025": 178.78},
+    "operatingMargin": 25.14,
+    "pretaxIncome": {"2025": 172.49},
+    "netIncome": {"2025": 190.56},
+    "netMargin": 26.80,
+    "eps": 0.09,
+    "incomeTax": 72.34,
+    "effectiveTaxRate": 41.94,
+    "cashBalance": 7970,
+    "cashNote": "Includes client deposits — not freely available cash",
+    "bookValue": 1330,
+    "bookValuePerShare": 0.64,
+    "totalDebt": 2800,
+    "debtNote": "Bank borrowings — leverage is core to banking model",
+    "employees": 270,
+    "revenuePerEmployee": 2.63,
+    "profitPerEmployee": 0.71,
+    "marketDataNote": "CRITICAL: StockAnalysis reports 2.08B shares outstanding at ZMW 1.28 (Jun 2026). A 1.25 forward split occurred Jan 7, 2026. Companies.json reports ZMW 7.20 (likely pre-split or different share count basis). Market cap ranges ZMW 2.67B (StockAnalysis) to ZMW 3.8B (companies.json). VERIFICATION NEEDED."
+  },
+  "ratios": {
+    "pe": 26.63,
+    "peNote": "Based on StockAnalysis data; companies.json shows PE 7.5 — likely pre-split/stale",
+    "pb": 2.00,
+    "returnOnEquity": null,
+    "returnOnAssets": null,
+    "dividendYield": null,
+    "dividendNote": "StockAnalysis shows no dividend; companies.json shows 7.2% yield. Standard Chartered historically paid dividends but may have suspended. CONFIRMATION NEEDED."
+  },
+  "ownership": {
+    "freeFloat": 10.0,
+    "sharesOutstanding": 2080,
+    "sharesNote": "Post-split and post-issuance; 2.08B shares",
+    "topHolders": [
+      {"name": "Standard Chartered PLC (Parent)", "stake": null, "note": "Majority owner; exact stake unconfirmed"},
+      {"name": "Public Float", "stake": 10.0}
+    ]
+  },
+  "analystNotes": [
+    {
+      "date": "Jun 2026",
+      "note": "Standard Chartered Bank Zambia is a frustrating ticker to analyze: a January 2026 stock split and potential additional share issuance make historical comparisons difficult. TTM data shows ZMW 711M revenue, ZMW 191M profit, 26.8% net margin — solid banking metrics. But at PE 26.6x, it's the most expensive bank on LuSE vs ZNCO at 8.2x. Piotroski F-Score of 1 is concerning. The 10% free float means limited trading. Dividend status is unclear — StockAnalysis shows none, companies.json shows 7.2%. With an effective tax rate of 42%, earnings quality is poor. SCBL is a brand-name subsidiary, not an investable standalone bank.",
+      "author": "Vituli Musukuma, PhD"
+    }
+  ],
+  "riskRating": "MEDIUM — OVERVALUED, LOW FLOAT, DATA INCONSISTENCIES",
+  "riskFactors": [
+    "Extremely low free float (10%) — negligible secondary market",
+    "PE 26.6x — most expensive bank on LuSE",
+    "Piotroski F-Score of 1 — weak financial strength signal",
+    "Data inconsistencies between sources (price, dividend, share count)",
+    "42% effective tax rate — earnings quality concern",
+    "Small employee base (270) vs peers — limited retail banking scale"
+  ],
+  "investmentThesis": "Standard Chartered Bank Zambia is a subsidiary listing, not a genuine public company. With 10% free float and PE 26.6x, it offers neither value nor liquidity. For Zambian banking exposure, ZNCO (PE 8.2x, 5.8% yield, 35% float) is superior on every metric. SCBL is a 'heritage listing' — it trades on the Standard Chartered brand, not on investable fundamentals.",
+  "stance": "AVOID — ZNCO IS THE SUPERIOR BANKING EXPOSURE",
+  "dataSources": [
+    "Standard Chartered Bank Zambia FY2025 Annual Report (via LuSE SENS)",
+    "StockAnalysis.com — LUSE:SCBL Statistics (Jun 2026)",
+    "SCBL FY2024 Financial Statements (via MarketScreener, LuSE SENS)",
+    "companies.json — internal dashboard data"
+  ],
+  "dataQuality": "LOW-MEDIUM — Major discrepancies between sources on price and dividend. Stock split on Jan 7, 2026 complicates historical comparison. Core P&L from audited reports confirmed. Market data reconciliation needed."
+}

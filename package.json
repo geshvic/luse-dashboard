@@ -1,0 +1,18 @@
+{
+  "name": "luse-dashboard",
+  "version": "1.0.0",
+  "description": "Baobab Capital — LuSE Stock Analysis Dashboard",
+  "main": "server.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "fetch": "node scripts/fetch-luse-data.js",
+    "postinstall": "npx playwright install chromium --with-deps 2>/dev/null || true"
+  },
+  "dependencies": {
+    "express": "^4.21.0",
+    "playwright-core": "^1.52.0"
+  }
+}

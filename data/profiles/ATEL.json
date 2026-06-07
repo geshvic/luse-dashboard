@@ -1,0 +1,13 @@
+{
+  "ticker": "ATEL",
+  "name": "Airtel Zambia PLC",
+  "sector": "Telecommunications",
+  "market": "Main",
+  "description": "Subsidiary of Airtel Africa PLC, listed on LuSE with significant institutional backing. The dominant telecom operator in Zambia with the largest subscriber base.",
+  "financials": {"revenue":{"2025":8900000000},"grossMargin":62,"ebitda":4100000000,"pe":18.5},
+  "ownership": {"majorFloat":15,"note":"Airtel Africa holds 85%"},
+  "keyMetrics": {"price":169.87,"marketCap":"K14.5B","dividendYield":2.1,"freeFloat":15},
+  "analystNotes": [{"date":"Jun 2026","note":"Liquidity anchor of LuSE — consistently the highest value-traded counter. But 85% parent lock-up means price is set on thin float. Concentration risk is real: 71% of market turnover on Jan 28.","author":"Vituli Musukuma, PhD"}],
+  "riskRating": "MEDIUM",
+  "stance": "HOLD / MONITOR"
+}

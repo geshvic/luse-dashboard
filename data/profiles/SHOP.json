@@ -1,0 +1,61 @@
+{
+  "ticker": "SHOP",
+  "name": "Shoprite Holdings Ltd",
+  "sector": "Retail",
+  "subSector": "Supermarket & Retail — Secondary Listing",
+  "market": "Main",
+  "description": "Shoprite Holdings Ltd is Africa's largest supermarket retailer, headquartered in South Africa and listed primarily on the Johannesburg Stock Exchange (JSE). The LuSE listing (SHOP) is a secondary listing. Shoprite operates over 3,000 stores across 14 African countries including a significant presence in Zambia through its Shoprite, Checkers, and Usave brands. In Zambia, Shoprite is the dominant formal grocery retailer. The company reports in South African Rand (ZAR) and follows a June fiscal year-end. Financial data below is for the entire Shoprite Holdings group, not Zambia-specific operations.",
+  "financials": {
+    "groupRevenue": {"FY2025": 252700},
+    "revenueUnit": "ZAR millions (South African Rand)",
+    "revenueGrowth": 8.9,
+    "tradingProfit": {"FY2025": 15000},
+    "tradingProfitGrowth": 16.6,
+    "ebitda": {"FY2025": 23800},
+    "ebitdaGrowth": 18.8,
+    "dilutedHEPS": 1367.2,
+    "dilutedHEPSUnit": "ZAR cents",
+    "dilutedHEPSGrowth": 15.8,
+    "totalDividend": 781,
+    "dividendUnit": "ZAR cents per share",
+    "dividendGrowth": 9.7,
+    "note": "CRITICAL: All figures are GROUP-WIDE (14 African countries, ~R253B revenue) and in SOUTH AFRICAN RAND, not ZMW. These are NOT Zambia-specific figures. Shoprite does not separately report Zambia operations on LuSE. The LuSE listing is a secondary/quotation listing — investors trade the same Shoprite Holdings shares as on the JSE but via the LuSE platform."
+  },
+  "ratios": {
+    "pe": 19.5,
+    "peNote": "From companies.json; based on JSE primary listing valuation. HEPS-based PE likely different.",
+    "pb": null,
+    "dividendYield": 2.0,
+    "dividendNote": "From companies.json; based on ZMW-denominated LuSE price vs ZAR dividend. Currency translation affects yield."
+  },
+  "ownership": {
+    "freeFloat": 8.0,
+    "topHolders": [
+      {"name": "South African Institutional Investors", "stake": null, "note": "Majority held via JSE listing"},
+      {"name": "LuSE Float", "stake": 8.0}
+    ]
+  },
+  "analystNotes": [
+    {
+      "date": "Jun 2026",
+      "note": "Shoprite Holdings is a world-class retailer — but the LuSE listing is a secondary quotation, not a standalone Zambian company. The financials (R253B revenue, R15B trading profit) represent the entire Africa-wide group, of which Zambia is just one market. The 8% LuSE free float means the stock primarily trades on the JSE, with LuSE providing secondary access. For Zambian investors, SHOP offers exposure to Africa's largest retailer but with currency mismatch (ZAR reporting, ZMW trading) and negligible local price discovery. This is a portfolio diversifier for Zambian investors who want Africa retail exposure without a JSE brokerage account, not a pure-play Zambia investment. The 2% dividend yield is low by LuSE standards but reflects the JSE primary listing valuation.",
+      "author": "Vituli Musukuma, PhD"
+    }
+  ],
+  "riskRating": "LOW (Business Quality) / MEDIUM (Currency & Structure)",
+  "riskFactors": [
+    "ZAR/ZMW currency mismatch — dividends declared in ZAR, traded in ZMW",
+    "Secondary listing — price discovery happens on JSE, not LuSE",
+    "Zambia operations are a subset of group — no Zambia-specific disclosure",
+    "8% LuSE float — extremely thin local liquidity",
+    "South African macroeconomic and regulatory risks affect the group"
+  ],
+  "investmentThesis": "SHOP on LuSE is a convenient access point for Zambian investors to own Africa's largest retailer without a JSE account. But it's not a Zambia investment — it's a Rand-denominated South African retail stock with a Kwacha listing wrapper. The group is well-managed (16.6% trading profit growth, 27.6% ROE implied) but the ZAR/ZMW currency exposure adds an extra risk layer for Zambian investors. For pure Zambia retail exposure, this doesn't exist as a standalone listed option. Treat SHOP as a regional diversification holding, not a local play.",
+  "stance": "HOLD — REGIONAL DIVERSIFIER, NOT A ZAMBIA PURE-PLAY",
+  "dataSources": [
+    "Shoprite Holdings FY2025 Annual Report (via AfricanFinancials, LuSE SENS)",
+    "Shoprite Holdings Group Results FY2025 (nsx.com.na, shopriteholdings.co.za)",
+    "companies.json — internal dashboard data"
+  ],
+  "dataQuality": "MEDIUM — Group financials from audited FY2025 annual report confirmed. Zambia-specific operations not separately disclosed. Companies.json labeling as 'Shoprite Holdings (Zambia)' is misleading — it's the SA parent, not a Zambian subsidiary."
+}

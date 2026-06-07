@@ -1,0 +1,78 @@
+{
+  "asOf": "2026-06-05",
+  "marketClose": {
+    "lasiIndex": 25689.97,
+    "lasiChange": 0.96,
+    "lasiChangePct": 0.00,
+    "totalTrades": 1025,
+    "totalVolume": 355789,
+    "totalValue": 11159660.22,
+    "marketCapTotal": 333.59,
+    "marketCapExclShoprite": 143.51,
+    "marketCapUnit": "Billion ZMW",
+    "sessionSummary": "1,025 trades across 355,789 shares. Turnover K11.16 million. LASI flat at 25,689.97. ZFCO sole gainer (+K0.02). CHIL, DCZM, NATB declined. Trading in 22 of 28 listed securities."
+  },
+  "gainers": [
+    {"ticker": "ZFCO", "name": "ZAFFICO", "price": 6.53, "change": 0.02, "changePct": 0.31, "volume": 170}
+  ],
+  "decliners": [
+    {"ticker": "DCZM", "name": "Dot Com Zambia", "price": 24.60, "change": -0.02, "changePct": -0.08, "volume": 6905},
+    {"ticker": "CHIL", "name": "Chilanga Cement", "price": 66.70, "change": -0.01, "changePct": -0.01, "volume": 516},
+    {"ticker": "NATB", "name": "National Breweries", "price": 2.85, "change": -0.01, "changePct": -0.35, "volume": 3054}
+  ],
+  "mostActiveByValue": [
+    {"ticker": "ATEL", "name": "Airtel Zambia", "price": 169.87, "volume": 47815, "value": 8122332, "trades": 43},
+    {"ticker": "CECZ", "name": "Copperbelt Energy", "price": 16.87, "volume": 98323, "value": 1658694, "trades": 127},
+    {"ticker": "ZNCO", "name": "Zanaco", "price": 9.57, "volume": 76799, "value": 734770, "trades": 162},
+    {"ticker": "BATA", "name": "Zambia Bata", "price": 9.00, "volume": 29009, "value": 261083, "trades": 63},
+    {"ticker": "DCZM", "name": "Dot Com Zambia", "price": 24.60, "volume": 6905, "value": 169839, "trades": 41}
+  ],
+  "analysis": {
+    "marketCondition": "LOW ACTIVITY - FLAT",
+    "marketConditionDetail": "The LASI closed flat at 25,689.97 as only 4 stocks recorded price changes. Market cap including Shoprite Holdings reached K333.6 billion (K143.5 billion excluding Shoprite). Activity concentrated in ATEL (73% of value traded) and CECZ.",
+    "observations": [
+      {
+        "type": "watch",
+        "ticker": "ATEL",
+        "title": "ATEL - Liquidity Anchor Dominance",
+        "detail": "ATEL accounted for 73% of total value traded (ZMW 8.12M on 47,815 shares). At K169.87 with PE 10.02x and 7.06% dividend yield, it remains LuSE's most liquid counter. Concentration risk cuts both ways.",
+        "stance": "HOLD / MONITOR"
+      },
+      {
+        "type": "watch",
+        "ticker": "CECZ",
+        "title": "CECZ - Highest Volume Counter",
+        "detail": "98,323 shares traded (highest volume on the board). At K16.87 with PE 9.72x, CECZ offers copper-linked upside supported by the Green Bond solar expansion and DRC market growth.",
+        "stance": "ACCUMULATE ON WEAKNESS"
+      },
+      {
+        "type": "caution",
+        "ticker": "DCZM",
+        "title": "DCZM - Still Trading on Sentiment",
+        "detail": "At K24.60 with a 3.6% gross margin business, DCZM trades on the technology listing narrative rather than fundamentals. The eFuel and Smart Cards segments generated near-zero revenue in FY2025.",
+        "stance": "AVOID / WAIT FOR CATALYST"
+      },
+      {
+        "type": "caution",
+        "ticker": "ZSUG",
+        "title": "ZSUG - K69.09, Thin Volume",
+        "detail": "Zambia Sugar closed at K69.09 on just 635 shares. With 75% held by ABF, the effective free float remains negligible. Great company, terrible trading stock.",
+        "stance": "AVOID FOR TRADING"
+      },
+      {
+        "type": "opportunity",
+        "ticker": "ZNCO",
+        "title": "ZNCO - Deep Value Banking",
+        "detail": "At K9.57 with PE 6.87x and 4.58% dividend yield (35% payout ratio), Zanaco offers the best risk-adjusted value among LuSE financials. 7 consecutive years of dividend growth.",
+        "stance": "ACCUMULATE"
+      }
+    ],
+    "riskFlags": [
+      "K190B of K333.6B market cap is Shoprite Holdings - only K143.5B in domestic Zambian equities",
+      "3 stocks recorded ZERO shares traded (INDO, PRIM, ENRG)",
+      "Government bond yields compete aggressively with equity returns",
+      "Single-stock concentration risk: ATEL = 73% of daily value traded"
+    ],
+    "authorNote": "Based on official LuSE daily stock data for June 5, 2026. This analysis is for informational purposes only and does not constitute investment advice."
+  }
+}

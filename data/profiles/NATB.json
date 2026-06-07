@@ -1,0 +1,59 @@
+{
+  "ticker": "NATB",
+  "name": "National Breweries PLC",
+  "sector": "Consumer Goods",
+  "subSector": "Beverages — Traditional/Opaque Beer",
+  "market": "Main",
+  "description": "National Breweries PLC (Natbrew) is a Zambian brewer specializing in traditional opaque beer, primarily Chibuku, a sorghum-based beverage popular in Zambian communities. Listed on the LuSE Main Board since 2003. The company operates with a March fiscal year-end. Natbrew has been struggling with persistent losses, facing competition from both formal clear beers (Zambian Breweries) and informal home-brewed alternatives.",
+  "financials": {
+    "revenue": {"FY2024": 532.8, "FY2025": 435.84},
+    "revenueUnit": "ZMW millions",
+    "revenueGrowth": -18.2,
+    "grossProfit": null,
+    "operatingIncome": {"FY2024": -488.4, "FY2025": -331.3},
+    "operatingMargin": -76.0,
+    "netIncome": {"FY2024": -545.5, "FY2025": -442.5},
+    "netMargin": -101.5,
+    "eps": null,
+    "note": "March fiscal year-end. FY2025 = year ended March 31, 2025. Consecutive losses: FY2024 loss K545.5M, FY2025 loss K442.5M (improved but still deeply negative). Revenue declining 18%."
+  },
+  "ratios": {
+    "pe": null,
+    "peNote": "Negative earnings — PE meaningless",
+    "pb": null,
+    "debtToEquity": null,
+    "dividendYield": 0.0,
+    "dividendNote": "No dividend — loss-making company"
+  },
+  "ownership": {
+    "freeFloat": 30.0,
+    "topHolders": [
+      {"name": "AB InBev / Zambian Breweries", "stake": null, "note": "Likely controlled by same parent as ZABR; exact stake unconfirmed"},
+      {"name": "Public Float", "stake": 30.0}
+    ]
+  },
+  "analystNotes": [
+    {
+      "date": "Jun 2026",
+      "note": "National Breweries is a zombie company in slow decline: two consecutive years of massive losses (FY2024: -K545M, FY2025: -K442M), with revenue down 18% to K436M. Operating losses exceed 75% of revenue — the cost structure is broken. The opaque beer market is under pressure from rising clear beer consumption and informal competition. At a market cap of ZMW 180M (companies.json), this is a micro-cap walking corpse. The only plausible investment thesis is a turnaround/acquisition by AB InBev (which already controls ZABR), but there's no visible catalyst. The company is burning through cash and has no dividend.",
+      "author": "Vituli Musukuma, PhD"
+    }
+  ],
+  "riskRating": "CRITICAL — GOING CONCERN RISK",
+  "riskFactors": [
+    "Operating losses exceeding 75% of revenue — business model is broken",
+    "Two consecutive years of losses exceeding ZMW 440M each",
+    "Revenue declining 18% — market share erosion",
+    "Opaque beer market structural decline",
+    "No dividend — zero return to shareholders",
+    "Small market cap (ZMW 180M) — negligible liquidity"
+  ],
+  "investmentThesis": "There is no investment thesis for National Breweries. It's a loss-making, revenue-declining micro-cap in a structurally challenged opaque beer market. The only reason to own it would be a speculative bet on an AB InBev restructuring or acquisition, but with no visible catalyst, that's gambling, not investing. Avoid.",
+  "stance": "AVOID — ZOMBIE COMPANY",
+  "dataSources": [
+    "National Breweries FY2025 Abridged Report (via AfricanFinancials, MarketScreener)",
+    "StockAnalysis.com — LUSE:NATB Revenue (Jun 2026)",
+    "companies.json — internal dashboard data"
+  ],
+  "dataQuality": "MEDIUM — Core P&L from audited reports confirmed. Balance sheet details unavailable. Ownership structure unconfirmed."
+}

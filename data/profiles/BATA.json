@@ -1,0 +1,74 @@
+{
+  "ticker": "BATA",
+  "name": "Zambia Bata Shoe Company PLC",
+  "sector": "Consumer Goods",
+  "subSector": "Footwear & Retail",
+  "market": "Main",
+  "description": "Zambia Bata Shoe Company PLC is a subsidiary of the global Bata Shoe Organization, one of the world's largest footwear manufacturers and retailers. Listed on the LuSE Main Board since 1990, BATA manufactures and retails footwear through a network of company-owned stores and wholesale channels across Zambia. The company employs approximately 94 people.",
+  "financials": {
+    "revenue": {"2024": 297, "2025": 352.27},
+    "revenueUnit": "ZMW millions",
+    "revenueGrowth": {"2024": 14.0, "2025": 18.59},
+    "grossProfit": {"2025": 171.62},
+    "grossMargin": 48.72,
+    "operatingIncome": {"2025": 45.23},
+    "operatingMargin": 12.84,
+    "pretaxIncome": {"2025": 45.23},
+    "netIncome": {"2024": 43.8, "2025": 33.39},
+    "netMargin": 9.48,
+    "eps": 0.44,
+    "cashBalance": 47.66,
+    "bookValue": 211.63,
+    "bookValuePerShare": 2.78,
+    "workingCapital": 97.09,
+    "totalDebt": 0,
+    "operatingCashFlow": 62.81
+  },
+  "ratios": {
+    "pe": 20.51,
+    "pb": 3.24,
+    "debtToEquity": 0,
+    "currentRatio": 2.31,
+    "quickRatio": 0.64,
+    "returnOnEquity": 16.70,
+    "returnOnAssets": 9.09,
+    "payoutRatio": 34.19
+  },
+  "ownership": {
+    "freeFloat": 38.0,
+    "sharesOutstanding": 76.11,
+    "employees": 94,
+    "topHolders": [
+      {"name": "Bata Shoe Organization (Parent)", "stake": null, "note": "Majority owner; exact stake unconfirmed"},
+      {"name": "Public Float", "stake": 38.0}
+    ]
+  },
+  "dividend": {
+    "annualPerShare": 0.15,
+    "yield": 1.67,
+    "payoutRatio": 34.19,
+    "exDividendDate": "Apr 22, 2026"
+  },
+  "analystNotes": [
+    {
+      "date": "Jun 2026",
+      "note": "BATA is a steady, unspectacular business: 18.6% revenue growth to ZMW 352M, 48.7% gross margins, zero debt, and modest profitability (9.5% net margin). The 1.67% dividend yield is negligible. At PE 20.5x, the stock is not cheap for a small, low-growth footwear company. BATA's investment case would require significant revenue acceleration or margin expansion that isn't visible in the current numbers. The 45.4% 52-week price appreciation may have already priced in the recovery. Decent business, wrong price.",
+      "author": "Vituli Musukuma, PhD"
+    }
+  ],
+  "riskRating": "LOW — CONSERVATIVE BALANCE SHEET",
+  "riskFactors": [
+    "Small scale — ZMW 352M revenue limits growth investment capacity",
+    "Import competition and informal sector footwear",
+    "Thin trading liquidity on LuSE",
+    "Dividend yield too low to compensate for illiquidity"
+  ],
+  "investmentThesis": "BATA is a conservatively-run business with zero debt, decent margins, and a global parent. But at 20.5x earnings for a ZMW 352M revenue company with 9.5% net margins, there's no margin of safety. The 1.67% dividend yield doesn't compensate for LuSE liquidity risk. A good company, but overpriced relative to alternatives like ZNCO (PE 8.2x, 5.8% yield).",
+  "stance": "AVOID — OVERVALUED RELATIVE TO PEERS",
+  "dataSources": [
+    "BATA FY2024 Abridged Financial Statements (via AfricanFinancials, LuSE SENS)",
+    "StockAnalysis.com — LUSE:BATA Statistics (Jun 2026)",
+    "companies.json — internal dashboard data"
+  ],
+  "dataQuality": "HIGH — Based on audited FY2024 annual report with FY2025 TTM data from StockAnalysis"
+}

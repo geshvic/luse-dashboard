@@ -1,0 +1,46 @@
+{
+  "ticker": "LUSW",
+  "name": "Lusaka Water and Sewerage Company Ltd",
+  "sector": "Utilities",
+  "subSector": "Water Supply & Sanitation",
+  "market": "ALT-M",
+  "description": "Lusaka Water and Sewerage (or Lusaka Water Supply and Sanitation Company — LWSC) is a water utility serving the Lusaka metropolitan area. Listed on the LuSE Alternative Market (ALT-M) since 2022. As a utility, it is a regulated monopoly providing essential water and sewerage services to Zambia's largest city. The company is a state-owned enterprise operating under the regulatory oversight of NWASCO (National Water Supply and Sanitation Council).",
+  "financials": {
+    "revenue": null,
+    "note": "NO PUBLICLY AVAILABLE FINANCIAL DATA FOUND. The company may file with LuSE SENS but financials were not accessible through standard web sources. ALT-M companies have lighter disclosure requirements. LuSE SENS filings and NWASCO regulatory reports (nwasco.org.zm) may contain financial data."
+  },
+  "ratios": {
+    "pe": 14.0,
+    "peNote": "From companies.json — source and calculation basis unverified",
+    "dividendYield": 0.0
+  },
+  "ownership": {
+    "freeFloat": 18.0,
+    "topHolders": [
+      {"name": "Government of Zambia / Lusaka City Council", "stake": null, "note": "Presumed majority state ownership. Unconfirmed."}
+    ]
+  },
+  "analystNotes": [
+    {
+      "date": "Jun 2026",
+      "note": "LUSW is a water utility with no publicly accessible financial data. As an ALT-M listing from 2022, disclosure is limited. The companies.json data (PE 14.0x, ZMW 1.95/share, market cap ZMW 110M) cannot be verified against audited accounts. Water utilities are typically stable, regulated businesses with government backing, but without financial transparency, no analysis is possible. FLAGGED FOR EVIDENCE GATHERING.",
+      "author": "Vituli Musukuma, PhD"
+    }
+  ],
+  "riskRating": "UNKNOWN — INSUFFICIENT DATA",
+  "riskFactors": [
+    "No publicly accessible audited financial statements",
+    "ALT-M lighter disclosure regime",
+    "Government ownership — political interference risk",
+    "Infrastructure-heavy utility — capital intensive",
+    "Extremely illiquid — ALT-M listing with negligible trading"
+  ],
+  "investmentThesis": "No investment thesis can be formed without audited financial statements. Water utilities have infrastructure monopolies and stable cash flows in principle, but without visibility into LUSW's specific financials, any thesis would be speculation.",
+  "stance": "FLAGGED — INSUFFICIENT DATA FOR ANALYSIS",
+  "dataSources": [
+    "companies.json — internal dashboard data (unverified)",
+    "LWSC operational website (lwsc.com.zm — no financial data)",
+    "NWASCO sector reports (nwasco.org.zm — regulatory, not company-specific financials)"
+  ],
+  "dataQuality": "VERY LOW — No audited financial statements accessed. All market data from companies.json, unverified. Requires direct LuSE SENS filing retrieval or company engagement."
+}

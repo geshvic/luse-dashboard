@@ -1,0 +1,65 @@
+{
+  "ticker": "ZCCM-IH",
+  "name": "ZCCM Investments Holdings PLC",
+  "sector": "Mining",
+  "subSector": "Mining Investment & Operations",
+  "market": "Main",
+  "description": "ZCCM Investments Holdings PLC is a premier Zambian mining investment holding company, listed on the LuSE Main Board (1995), with secondary listings on Euronext Access Paris and the London Stock Exchange. The company holds equity stakes in multiple copper and other mineral mining operations across Zambia, including through joint ventures with global mining companies. ZCCM-IH operates through two segments: Investments (equity stakes in mines) and Mining & Processing (direct operations including gold, amethyst, manganese, limestone, and coal). The company also provides environmental consultancy, engineering, and energy services.",
+  "financials": {
+    "revenue": {"2024": 3210},
+    "revenueUnit": "ZMW millions",
+    "grossProfit": null,
+    "netIncome": {"2024": 39850},
+    "netIncomeNote": "Includes substantial fair value gains, disposal gains, and share of profit from associates — non-recurring in nature. Normalized/recurring earnings are significantly lower.",
+    "eps": {"reported": 247.80, "note": "Headline EPS includes one-off gains; normalized EPS estimated at ZMW 6-7 based on market PE"},
+    "totalAssets": 57290,
+    "bookValue": null,
+    "totalLiabilities": null,
+    "employees": 646
+  },
+  "ratios": {
+    "pe": 6.5,
+    "peNote": "Based on headline EPS of ZMW 247.80 the PE would be ~0.17x. The reported 6.5x PE suggests the market is using normalized/core earnings of approximately ZMW 6.46 per share. DATA RECONCILIATION NEEDED.",
+    "pb": null,
+    "debtToEquity": null,
+    "dividendYield": 1.8
+  },
+  "ownership": {
+    "freeFloat": 20.0,
+    "topHolders": [
+      {"name": "Government of Zambia (GRZ)", "stake": null, "note": "Majority shareholder via IDC; exact stake needs confirmation"},
+      {"name": "Public Float", "stake": 20.0}
+    ]
+  },
+  "keyInvestments": [
+    {"name": "Kansanshi Mining PLC", "note": "Copper — joint venture stake"},
+    {"name": "Mopani Copper Mines PLC", "note": "Historical majority stake; partial divestment completed"},
+    {"name": "Konkola Copper Mines (KCM)", "note": "Stake via investment; ongoing restructuring"},
+    {"name": "Other mining & energy assets", "note": "Multiple smaller equity stakes in Zambian mining operations"}
+  ],
+  "analystNotes": [
+    {
+      "date": "Jun 2026",
+      "note": "ZCCM-IH is the hardest LuSE company to value. The FY2024 reported net profit of ZMW 39.85 billion on revenue of just ZMW 3.21 billion screams 'non-recurring items.' This is typical for mining investment holding companies where fair value gains, disposal proceeds, and share of associate profits can dwarf operating revenue. The market appears to price ZCCM-IH on normalized/core earnings (~PE 6.5x), not headline EPS of ZMW 247.80 (which would imply a PE of 0.17x — absurd). Total assets of ZMW 57.29 billion against a market cap of ~ZMW 9.5 billion means the stock trades at ~0.17x book — either deeply undervalued or the assets carry significant liabilities and contingent obligations. DEEP-DIVE FORENSIC ANALYSIS RECOMMENDED.",
+      "author": "Vituli Musukuma, PhD"
+    }
+  ],
+  "riskRating": "HIGH — VALUATION UNCERTAINTY",
+  "riskFactors": [
+    "Extreme earnings volatility — headline profits driven by non-recurring items",
+    "Complex corporate structure with multiple subsidiaries and associates",
+    "Government majority ownership — political and policy risk",
+    "Opaque financial reporting — difficult to separate recurring from one-off earnings",
+    "Mining sector cyclicality — copper price dependency",
+    "Market pricing disconnect — trades at ~0.17x book value"
+  ],
+  "investmentThesis": "ZCCM-IH is a 'too hard' pile for most investors. It's a government-controlled mining investment vehicle where headline earnings are meaningless and normalized earnings are anyone's guess. Trading at 0.17x book value, it's either the cheapest mining stock in the world or a value trap where the assets are encumbered by liabilities, social obligations, and government interference. Until a clear reconciliation between headline EPS (ZMW 247.80) and the PE the market is actually using (6.5x) is completed, no credible investment thesis can be formed.",
+  "stance": "AVOID — NEEDS FORENSIC DEEP DIVE BEFORE ANY POSITION",
+  "dataSources": [
+    "ZCCM-IH 2024 Integrated Annual Report (via AfricanFinancials, Scribd)",
+    "ZCCM-IH FY2024 Abridged Audited Financial Results — LuSE SENS (Jun 2025)",
+    "StockAnalysis.com — LUSE:ZCCM Overview (Jun 2026)",
+    "companies.json — internal dashboard data"
+  ],
+  "dataQuality": "MEDIUM — Core financials from audited 2024 annual report are confirmed, but EPS/PE reconciliation between headline and market-implied earnings requires further investigation. Ownership breakdown needs verification."
+}

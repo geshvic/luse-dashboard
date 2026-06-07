@@ -1,0 +1,87 @@
+{
+  "ticker": "ZMBF",
+  "name": "Zambeef Products PLC",
+  "sector": "Agriculture",
+  "subSector": "Agro-Processing — Meat, Dairy & Crops",
+  "market": "Main",
+  "description": "Zambeef Products PLC is one of Zambia's largest integrated agro-processing companies, producing and retailing beef, chicken, pork, dairy, eggs, edible oils, flour, and stock feed. The company operates a farm-to-fork value chain with approximately 7,000 employees — making it one of Zambia's largest private employers. Listed on the LuSE Main Board, Zambeef is a major supplier to Zambian retailers, the mining sector, and exports to regional markets. The company is 46.3% institutionally owned with significant South African and UK institutional investor backing.",
+  "financials": {
+    "revenue": {"2025": 8060},
+    "revenueUnit": "ZMW millions",
+    "grossProfit": {"2025": 2890},
+    "grossMargin": 35.83,
+    "operatingIncome": {"2025": 835.57},
+    "operatingMargin": 10.37,
+    "pretaxIncome": {"2025": 252.98},
+    "pretaxMargin": 3.14,
+    "netIncome": {"2025": 225.82},
+    "netMargin": 2.80,
+    "ebitda": {"2025": 1100},
+    "ebitdaMargin": 13.63,
+    "eps": 0.56,
+    "cashBalance": 244.45,
+    "bookValue": 6370,
+    "bookValuePerShare": 21.24,
+    "totalDebt": 2400,
+    "debtNote": "ZMW 2.4B debt against ZMW 6.37B equity — moderate leverage at D/E 0.38",
+    "workingCapital": 269.90,
+    "operatingCashFlow": 268.94,
+    "capex": 373.68,
+    "freeCashFlow": -104.74,
+    "incomeTax": 27.87,
+    "effectiveTaxRate": 11.01,
+    "employees": 7000,
+    "revenuePerEmployee": 1.15,
+    "profitPerEmployee": 0.032
+  },
+  "ratios": {
+    "pe": 3.55,
+    "forwardPE": 3.25,
+    "pb": 0.09,
+    "ps": 0.07,
+    "debtToEquity": 0.38,
+    "currentRatio": 1.10,
+    "quickRatio": 0.19,
+    "returnOnEquity": 3.97,
+    "returnOnAssets": 5.48,
+    "interestCoverage": 2.05,
+    "altmanZScore": 1.37,
+    "piotroskiFScore": 6,
+    "earningsYield": 37.56
+  },
+  "ownership": {
+    "insiders": 4.66,
+    "institutions": 46.32,
+    "freeFloat": 49.02,
+    "sharesOutstanding": 300.58,
+    "topHolders": [
+      {"name": "Institutional Investors (SA/UK)", "stake": 46.32},
+      {"name": "Insiders/Management", "stake": 4.66},
+      {"name": "Public Float", "stake": 49.02}
+    ]
+  },
+  "analystNotes": [
+    {
+      "date": "Jun 2026",
+      "note": "Zambeef is the ultimate value trap or the deepest value on LuSE — and the truth depends on debt. The headline numbers are absurd: PE 3.55x, PB 0.09x, PS 0.07x, earnings yield 37.6%. A company with ZMW 8.06B revenue, ZMW 6.37B book value, and ZMW 226M profit trading at a ZMW 601M market cap. The market is pricing in distress — and the Altman Z-Score of 1.37 confirms it. ZMW 2.4B debt against ZMW 244M cash, interest coverage of just 2.05x, and negative FCF of -ZMW 105M. The 2.8% net margin on ZMW 8B revenue leaves almost no room for error. If the company can refinance debt and improve margins, it's a multi-bagger from these levels. If not, the Z-Score is right. The Piotroski F-Score of 6 is a rare bright spot. NOTE: companies.json INCORRECTLY labels ZMBF as 'Zambia Microfinance Bank' in Financial Services/ALT-M. This is wrong — ZMBF is Zambeef Products, agro-processing, Main Board. CORRECTION NEEDED.",
+      "author": "Vituli Musukuma, PhD"
+    }
+  ],
+  "riskRating": "HIGH — DISTRESSED VALUATION, DEBT OVERHANG",
+  "riskFactors": [
+    "Altman Z-Score 1.37 — distress zone",
+    "Interest coverage only 2.05x — vulnerable to rate hikes",
+    "Debt ZMW 2.4B vs cash ZMW 244M — refinancing risk",
+    "Negative free cash flow (-ZMW 105M) — capex consuming cash",
+    "2.8% net margin — thin profitability on ZMW 8B revenue",
+    "Companies.json has WRONG name, sector, and market — data integrity risk"
+  ],
+  "investmentThesis": "Zambeef at PE 3.55x and PB 0.09x is either the cheapest stock on LuSE or a pre-restructuring zombie. The 0.09x book value suggests the market believes the assets are worth 9% of stated value — extreme skepticism. But ZMW 8B revenue and 7,000 employees make this a real operating company, not a shell. The Piotroski F-Score of 6 says the financial trend is improving. If management can refinance debt and improve margins beyond 2.8%, the re-rating potential is enormous. But until the balance sheet is de-risked, this is a special situations bet, not a core holding.",
+  "stance": "SPECULATIVE DEEP VALUE — NEEDS DEBT RESTRUCTURING CATALYST",
+  "dataSources": [
+    "StockAnalysis.com — LUSE:ZMBF Statistics (Jun 2026)",
+    "ZMBF HY2025 Financials (via SBZ)",
+    "companies.json — internal dashboard data (NAME AND SECTOR ARE INCORRECT)"
+  ],
+  "dataQuality": "HIGH — Based on FY2025 TTM data from StockAnalysis. CRITICAL NOTE: companies.json incorrectly identifies ZMBF as 'Zambia Microfinance Bank' in Financial Services/ALT-M. The correct identity is Zambeef Products PLC, an agro-processing company on the Main Board. This is a material data error requiring immediate correction."
+}

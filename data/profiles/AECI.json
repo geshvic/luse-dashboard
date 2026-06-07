@@ -1,0 +1,80 @@
+{
+  "ticker": "AECI",
+  "name": "AECI Mining Explosives PLC",
+  "sector": "Industrial",
+  "subSector": "Mining Services — Explosives & Chemicals",
+  "market": "Main",
+  "description": "AECI Mining Explosives PLC is the Zambian subsidiary of AECI Limited, a Johannesburg Stock Exchange-listed chemicals and explosives group. Listed on the LuSE Main Board since 1991, AECI supplies explosives, initiating systems, and blasting services to Zambia's mining industry, primarily the Copperbelt copper mines. The company employs approximately 274 people and operates as a critical supplier to the mining value chain.",
+  "financials": {
+    "revenue": {"2025": 997.64},
+    "revenueUnit": "ZMW millions",
+    "revenueGrowth": -18.23,
+    "grossProfit": {"2025": -15.99},
+    "grossMargin": -1.60,
+    "operatingIncome": {"2025": -15.99},
+    "operatingMargin": -1.60,
+    "netIncome": {"2025": -37.40},
+    "netMargin": -3.75,
+    "eps": -1.83,
+    "cashBalance": 104.89,
+    "bookValue": 486.57,
+    "bookValuePerShare": 23.84,
+    "workingCapital": 410.27,
+    "operatingCashFlow": 66.81,
+    "sharesOutstanding": 20.41,
+    "employees": 274
+  },
+  "ratios": {
+    "pe": null,
+    "pb": 5.16,
+    "ps": 2.52,
+    "debtToEquity": 0,
+    "currentRatio": 3.69,
+    "quickRatio": 0.69,
+    "returnOnEquity": -6.31,
+    "returnOnAssets": -1.32,
+    "altmanZScore": 7.88,
+    "piotroskiFScore": 2,
+    "dividendYield": 0.53
+  },
+  "ownership": {
+    "insiders": 0.33,
+    "freeFloat": 99.67,
+    "sharesOutstanding": 20.41,
+    "topHolders": [
+      {"name": "AECI Limited (Parent, JSE-listed)", "stake": null, "note": "Majority owner; exact stake unconfirmed. Insider ownership reported at 0.33% which seems inconsistent with majority parent ownership. DATA RECONCILIATION NEEDED."},
+      {"name": "Public Float", "stake": 99.67}
+    ]
+  },
+  "dividend": {
+    "annualPerShare": 0.65,
+    "yield": 0.53,
+    "growthYoY": -83.25,
+    "exDividendDate": "May 13, 2026",
+    "note": "Dividend maintained despite losses — down 83% YoY. Payout from reserves, not earnings."
+  },
+  "analystNotes": [
+    {
+      "date": "Jun 2026",
+      "note": "AECI is a puzzle: a ZMW 2.5B market cap company with negative gross margins (-1.6%) and net losses of ZMW 37M on ZMW 998M revenue. Revenue declined 18.2% in FY2025. Yet the stock trades at ZMW 123 and is up 136% in 52 weeks. The company maintains a dividend (ZMW 0.65/share, 0.53% yield) despite losses, presumably from reserves. Zero debt and ZMW 105M cash provide a cushion, but at 5.16x book value for a loss-making business, this is a pricing anomaly. The 99.7% 'free float' is misleading — the parent AECI Ltd likely holds the majority stake through a nominee structure. This stock trades on sentiment and parent guarantee, not fundamentals.",
+      "author": "Vituli Musukuma, PhD"
+    }
+  ],
+  "riskRating": "HIGH — LOSS-MAKING, OVERVALUED ON FUNDAMENTALS",
+  "riskFactors": [
+    "Negative gross margins — selling below cost of production",
+    "Revenue decline of 18.2% — mining sector headwinds",
+    "Maintaining dividend from reserves while loss-making",
+    "Piotroski F-Score of 2 — very weak financial health",
+    "Illiquid — average 286 shares/day (ZMW 35K/day)",
+    "5.16x book value for a loss-making business is hard to justify"
+  ],
+  "investmentThesis": "AECI doesn't work on fundamentals. It's losing money at the gross margin level, revenue is declining, and the stock has tripled in price over 52 weeks for reasons that have nothing to do with earnings. The ZMW 105M cash and zero-debt balance sheet provide downside protection, but at 5.16x book, you're paying for a parent guarantee, not a business. The 0.53% yield doesn't compensate for the risk. This is a 'pass' until the company demonstrates a return to profitability.",
+  "stance": "AVOID — WAIT FOR RETURN TO PROFITABILITY",
+  "dataSources": [
+    "AECI Mining Explosives FY2024 Annual Report (via LuSE SENS)",
+    "StockAnalysis.com — LUSE:AECI Statistics (Jun 2026)",
+    "companies.json — internal dashboard data"
+  ],
+  "dataQuality": "HIGH — Based on audited FY2024 annual report (with FY2025 TTM data). Parent ownership stake needs confirmation."
+}

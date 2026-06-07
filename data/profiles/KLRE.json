@@ -1,0 +1,82 @@
+{
+  "ticker": "KLRE",
+  "name": "Klapton Reinsurance PLC",
+  "sector": "Financial Services",
+  "subSector": "Reinsurance",
+  "market": "Main",
+  "description": "Klapton Reinsurance PLC is a Zambian reinsurance company listed on the LuSE Main Board. The company provides reinsurance solutions to insurance companies in Zambia and the region. Klapton has delivered exceptional growth, with insurance revenue reaching ZMW 3.05B in FY2025 and profit growing 64% to ZMW 387.7M. The company maintains a capital adequacy ratio of 138%, well above regulatory requirements. With only 60 employees, Klapton is an extremely capital-efficient operation. The company's planned listing was intended to enhance its capital base.",
+  "financials": {
+    "revenue": {"2025": 3050},
+    "revenueUnit": "ZMW millions",
+    "revenueGrowth": 53.4,
+    "grossProfit": {"2025": 874.22},
+    "grossMargin": 28.67,
+    "operatingIncome": {"2025": 539.53},
+    "operatingMargin": 17.70,
+    "pretaxIncome": {"2025": 551.27},
+    "pretaxMargin": 18.08,
+    "netIncome": {"2025": 387.73},
+    "netMargin": 12.72,
+    "netIncomeGrowth": 64.0,
+    "ebitda": {"2025": 542.88},
+    "ebitdaMargin": 17.81,
+    "eps": 0.05,
+    "cashBalance": 84.42,
+    "bookValue": 696.26,
+    "bookValuePerShare": 0.08,
+    "totalDebt": 1.46,
+    "workingCapital": 2.54,
+    "operatingCashFlow": -55.47,
+    "freeCashFlow": -58.60,
+    "incomeTax": 163.53,
+    "effectiveTaxRate": 29.67,
+    "employees": 60,
+    "revenuePerEmployee": 50.82,
+    "profitPerEmployee": 6.46,
+    "capitalAdequacyRatio": 138,
+    "totalAssets": 3760
+  },
+  "ratios": {
+    "pe": 7.64,
+    "pb": 5.67,
+    "ps": 1.30,
+    "debtToEquity": 0,
+    "currentRatio": 1.00,
+    "returnOnEquity": 57.52,
+    "returnOnAssets": 9.59,
+    "interestCoverage": 2118.10,
+    "piotroskiFScore": 2,
+    "earningsYield": 9.81
+  },
+  "ownership": {
+    "insiders": 25.47,
+    "freeFloat": 25.0,
+    "sharesOutstanding": 11290,
+    "sharesNote": "11.29 billion shares outstanding — extremely high share count; likely reflects historical capital structure"
+  },
+  "analystNotes": [
+    {
+      "date": "Jun 2026",
+      "note": "Klapton Reinsurance is a high-growth, high-ROE reinsurer hiding behind an extremely fragmented share structure (11.29 billion shares at ZMW 0.35). The business is exceptional: 57.5% ROE, 64% profit growth, 138% capital adequacy, zero debt. Revenue of ZMW 3.05B with only 60 employees is staggering capital efficiency (ZMW 50.8M revenue per employee). The 12.7% net margin is strong for reinsurance. However: negative operating cash flow (-ZMW 55M) despite ZMW 388M profit is a RED FLAG — suggests earnings quality issues or aggressive accrual accounting typical of insurance. Piotroski F-Score of 2 confirms weak cash conversion. The PE of 7.64x is cheap for the growth rate but the cash flow divergence needs investigation. NOTE: companies.json INCORRECTLY labels KLRE as 'KL Real Estate PLC' in Real Estate/ALT-M. This is wrong — KLRE is Klapton Reinsurance, a financial services/reinsurance company on the Main Board. CORRECTION NEEDED.",
+      "author": "Vituli Musukuma, PhD"
+    }
+  ],
+  "riskRating": "MEDIUM — STRONG PROFITABILITY, WEAK CASH CONVERSION",
+  "riskFactors": [
+    "Negative operating cash flow despite strong profits — earnings quality concern",
+    "Piotroski F-Score of 2 — weak financial strength signals",
+    "Extremely high share count (11.29B shares) — fragmented capital structure",
+    "Reinsurance cycle risk — underwriting profitability can swing sharply",
+    "Small employee base (60) — key-person risk",
+    "Companies.json misidentification as Real Estate company"
+  ],
+  "investmentThesis": "Klapton Reinsurance has an exceptional business model: 57.5% ROE, 64% profit growth, zero debt, and the leanest operations on LuSE (60 employees generating ZMW 3B revenue). At PE 7.64x, it's cheap for the growth rate. The concern is cash flow quality — negative OCF despite ZMW 388M profit suggests earnings may be accrual-heavy. Insurance accounting is complex; the profit may be real but tied up in receivables. If cash conversion improves, this is a compounder. If not, the profits are accounting constructs. Worth a deeper forensic look.",
+  "stance": "HOLD — MONITOR CASH CONVERSION",
+  "dataSources": [
+    "Klapton Reinsurance FY2025 Annual Report (via AfricanFinancials, LuSE SENS)",
+    "StockAnalysis.com — LUSE:KLRE Statistics (Jun 2026)",
+    "SimplyWall.st earnings analysis",
+    "companies.json — internal dashboard data (NAME AND SECTOR ARE INCORRECT)"
+  ],
+  "dataQuality": "MEDIUM-HIGH — Audited financials confirmed. Negative OCF vs strong profit needs reconciliation. companies.json name/sector are incorrect."
+}

@@ -1,0 +1,64 @@
+{
+  "asOf": "2026-03-28",
+  "notes": "BoZ Government Bond Auction Results",
+  "auctions": [
+    {
+      "date": "Jan 23, 2026",
+      "bids": 9303.34,
+      "allocated": 9300,
+      "offer": 4200,
+      "oversubscription": 2.2,
+      "yields": {
+        "2yr": 14.5,
+        "5yr": 16.10,
+        "7yr": 16.0,
+        "10yr": 17.19,
+        "15yr": 18.79
+      }
+    },
+    {
+      "date": "Feb 13, 2026",
+      "bids": 21335.07,
+      "allocated": 4200,
+      "offer": 4200,
+      "oversubscription": 5.1,
+      "yields": {
+        "2yr": 13.8,
+        "5yr": 14.98,
+        "7yr": 15.2,
+        "10yr": 16.5,
+        "15yr": 17.59
+      }
+    },
+    {
+      "date": "Mar 27, 2026",
+      "bids": 3280,
+      "allocated": 3280,
+      "offer": 4200,
+      "oversubscription": 0.78,
+      "subscriptionRate": 78,
+      "yields": {
+        "7yr": 16.0,
+        "15yr": 17.59
+      },
+      "detail": {
+        "7yr": {"bids": 2933, "subscription": 111},
+        "15yr": {"bids": 347, "subscription": 49}
+      }
+    }
+  ],
+  "fiscalYear2026": {
+    "grossDomesticBorrowing": 106,
+    "refinancing": 84.4,
+    "domesticDebtInterest": 52.0,
+    "budgetDeficit": 21.6,
+    "totalBudget": 253.1,
+    "inBillions": true
+  },
+  "yieldChanges": {
+    "from": "Jan 23",
+    "to": "Feb 13",
+    "5yr": -1.12,
+    "15yr": -1.20
+  }
+}

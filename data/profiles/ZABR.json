@@ -1,0 +1,81 @@
+{
+  "ticker": "ZABR",
+  "name": "Zambian Breweries PLC",
+  "sector": "Consumer Goods",
+  "subSector": "Beverages — Beer & Soft Drinks",
+  "market": "Main",
+  "description": "Zambian Breweries PLC is Zambia's dominant brewer with over 95% market share in the total beer market. A subsidiary of AB InBev, the world's largest brewer, Zambian Breweries produces and distributes clear beer (Mosi, Castle, Castle Lite, Carling Black Label) and soft drinks under license. Listed on the LuSE Main Board since 1997. The company employs ~749 people and operates brewing and distribution facilities across Zambia.",
+  "financials": {
+    "revenue": {"2024": 6602, "2025": 6110},
+    "revenueUnit": "ZMW millions",
+    "revenueGrowth": {"2024": 29.0, "2025": 14.45},
+    "grossProfit": {"2024": 1238, "2025": 1870},
+    "grossMargin": 30.59,
+    "operatingIncome": {"2024": -376, "2025": 928.82},
+    "operatingMargin": {"2024": -5.7, "2025": 15.19},
+    "pretaxIncome": {"2024": null, "2025": 574.09},
+    "netIncome": {"2024": -673, "2025": 294.77},
+    "netMargin": {"2024": -10.2, "2025": 4.82},
+    "ebitda": {"2025": 1600},
+    "ebitdaMargin": 26.23,
+    "eps": 0.54,
+    "cashBalance": 84.0,
+    "bookValue": 324.74,
+    "bookValuePerShare": 0.59,
+    "totalDebt": 2490,
+    "workingCapital": -4730,
+    "operatingCashFlow": 62.55,
+    "capex": 908.48,
+    "freeCashFlow": -845.92
+  },
+  "ratios": {
+    "pe": 12.60,
+    "pb": 11.43,
+    "debtToEquity": 7.67,
+    "currentRatio": 0.24,
+    "quickRatio": 0.09,
+    "returnOnEquity": 166.20,
+    "returnOnAssets": 8.70,
+    "interestCoverage": 2.18
+  },
+  "ownership": {
+    "insiders": null,
+    "institutions": 5.73,
+    "freeFloat": 12.75,
+    "sharesOutstanding": 546.01,
+    "topHolders": [
+      {"name": "AB InBev (Parent)", "stake": null, "note": "Majority owner via SABMiller acquisition; exact stake unconfirmed"},
+      {"name": "Institutional Investors", "stake": 5.73},
+      {"name": "Public Float", "stake": 12.75}
+    ]
+  },
+  "dividend": {
+    "annualPerShare": null,
+    "yield": 2.8,
+    "dividendNote": "Dividend suspended in FY2024 following net loss of ZMW 673M. FY2025 profitability may allow resumption. companies.json shows 2.8% yield which may reflect historical/pre-loss dividend. CONFIRMATION NEEDED."
+  },
+  "analystNotes": [
+    {
+      "date": "Jun 2026",
+      "note": "Zambian Breweries staged a remarkable FY2025 turnaround: from a ZMW 673M loss to ZMW 295M profit. Revenue grew 14.45% to ZMW 6.11B. However, the balance sheet is stretched: negative working capital of ZMW 4.73B, debt/equity of 7.67x, current ratio of 0.24, and FCF of -ZMW 846M. The Altman Z-Score of 0.87 flags serious financial distress risk. The company's 95% beer market share is a moat, but AB InBev's aggressive capital structure (typical for the global parent) leaves the local subsidiary highly leveraged. Monitor whether the operational turnaround translates to balance sheet repair.",
+      "author": "Vituli Musukuma, PhD"
+    }
+  ],
+  "riskRating": "HIGH — FINANCIAL DISTRESS INDICATORS",
+  "riskFactors": [
+    "Altman Z-Score 0.87 — distress zone (below 1.8)",
+    "Debt/Equity 7.67x — extreme leverage",
+    "Negative working capital (ZMW -4.73B) and current ratio 0.24",
+    "Negative free cash flow (ZMW -846M) despite return to profitability",
+    "AB InBev parent leverage — capital structure imposed by global parent",
+    "Dividend suspension during loss year — uncertain restoration timeline"
+  ],
+  "investmentThesis": "Zambian Breweries has a monopoly moat (95% market share) and AB InBev's global expertise, but trades with extreme financial risk. The FY2025 turnaround is real and encouraging, but the balance sheet is severely distressed. The 12.6x PE looks cheap only if earnings are sustainable and debt can be serviced from cash flows (OCF of just ZMW 62.5M vs ZMW 2.49B debt is alarming). This is a wait-and-watch situation: if the turnaround deepens and debt is restructured/reduced, it could be a multi-bagger. Until then, the Z-Score of 0.87 is a blinking red light.",
+  "stance": "AVOID — MONITOR BALANCE SHEET REPAIR",
+  "dataSources": [
+    "Zambian Breweries 2025 Annual Report (via AfricanFinancials)",
+    "StockAnalysis.com — LUSE:ZABR Statistics (Jun 2026)",
+    "companies.json — internal dashboard data"
+  ],
+  "dataQuality": "HIGH — Based on audited FY2025 annual report and verified market data. Dividend status needs confirmation."
+}

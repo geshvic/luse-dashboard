@@ -1,0 +1,170 @@
+{
+  "asOf": "2026-06-06",
+  "marketCap": 333.59,
+  "marketCapBillion": true, "marketCapExclShoprite": 143.51,
+  "tradableFloat": 143.51,
+  "deadCapital": 190.08,
+  "lasiIndex": 25689.97,
+  "summary": {
+    "trades": 1025,
+    "volume": 355789,
+    "value": 11159660.22,
+    "valueCurrency": "ZMW"
+  },
+  "spotlightData": {
+    "dates": [
+      "Mon Jun 1",
+      "Tue Jun 2",
+      "Wed Jun 3",
+      "Thu Jun 4"
+    ],
+    "tickers": [
+      "ATEL",
+      "CECZ",
+      "ZNCO",
+      "DCZM"
+    ],
+    "sectors": [
+      "Telecom",
+      "Energy",
+      "Banking",
+      "Tech"
+    ],
+    "turnoverShare": [
+      73,
+      15,
+      7,
+      5
+    ]
+  },
+  "dcZM": {
+    "lastPrice": 22,
+    "ipoPrice": 12.3,
+    "dayOneClose": 14.54,
+    "peakPrice": 24.5,
+    "peakDate": "Jan 26, 2026",
+    "grossMargin": 3.6,
+    "revenue": 665596639,
+    "grossProfit": 24146752,
+    "insiderOwnership": 82.49,
+    "retailFloat": 17.51,
+    "freeFloatPct": 17.51
+  },
+  "topGainers": [
+    {
+      "ticker": "ZCCM-IH",
+      "name": "ZCCM Investments Holdings PLC",
+      "price": 42,
+      "change": 0.5,
+      "changePct": 1.2,
+      "volume": 8200
+    },
+    {
+      "ticker": "ZABR",
+      "name": "Zambian Breweries PLC",
+      "price": 12.8,
+      "change": 0.15,
+      "changePct": 1.19,
+      "volume": 18500
+    },
+    {
+      "ticker": "ATEL",
+      "name": "Airtel Zambia PLC",
+      "price": 169.87,
+      "change": 1.2,
+      "changePct": 0.71,
+      "volume": 47815
+    },
+    {
+      "ticker": "ZNCO",
+      "name": "Zambia National Commercial Bank PLC",
+      "price": 9.57,
+      "change": 0.05,
+      "changePct": 0.53,
+      "volume": 76799
+    },
+    {
+      "ticker": "ZFCO",
+      "name": "Zambia Forestry & Forest Industries Corp (ZAFFICO)",
+      "price": 6.53,
+      "change": 0.02,
+      "changePct": 0.31,
+      "volume": 12500
+    }
+  ],
+  "topDecliners": [
+    {
+      "ticker": "SCBL",
+      "name": "Standard Chartered Bank Zambia PLC",
+      "price": 7.2,
+      "change": -0.1,
+      "changePct": -1.37,
+      "volume": 13781
+    },
+    {
+      "ticker": "RFIN",
+      "name": "Real People Finance Zambia",
+      "price": 2.1,
+      "change": -0.02,
+      "changePct": -0.94,
+      "volume": 8900
+    },
+    {
+      "ticker": "CECZ",
+      "name": "Copperbelt Energy Corporation PLC",
+      "price": 16.87,
+      "change": -0.13,
+      "changePct": -0.76,
+      "volume": 98323
+    },
+    {
+      "ticker": "DCZM",
+      "name": "Dot Com Zambia PLC",
+      "price": 22,
+      "change": -0.15,
+      "changePct": -0.68,
+      "volume": 145
+    },
+    {
+      "ticker": "BATA",
+      "name": "Zambia Bata Shoe Company PLC",
+      "price": 9,
+      "change": -0.05,
+      "changePct": -0.55,
+      "volume": 29009
+    }
+  ],
+  "mostActive": [
+    {
+      "ticker": "CECZ",
+      "value": 1658709,
+      "volume": 98323,
+      "price": 16.87
+    },
+    {
+      "ticker": "ZNCO",
+      "value": 734966,
+      "volume": 76799,
+      "price": 9.57
+    },
+    {
+      "ticker": "KLRE",
+      "value": 18200,
+      "volume": 52000,
+      "price": 0.35
+    },
+    {
+      "ticker": "ATEL",
+      "value": 8122334,
+      "volume": 47815,
+      "price": 169.87
+    },
+    {
+      "ticker": "ZMBF",
+      "value": 90000,
+      "volume": 45000,
+      "price": 2
+    }
+  ],
+  "lastFetchAttempt": "2026-06-06T21:33:36.045Z"
+}

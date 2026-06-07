@@ -1,0 +1,56 @@
+{
+  "ticker": "PUMA",
+  "name": "Puma Energy Zambia PLC",
+  "sector": "Energy",
+  "subSector": "Oil Marketing & Distribution",
+  "market": "Main",
+  "description": "Puma Energy Zambia PLC is a subsidiary of Puma Energy, a global energy company with operations across Africa, Asia, and Latin America. Listed on the LuSE Main Board since 2012, PUMA is an oil marketing company (OMC) engaged in the importation, storage, distribution, and retail of petroleum products including gasoline, diesel, jet fuel, and lubricants. The company operates a network of retail service stations and supplies bulk fuel to mining and industrial customers across Zambia.",
+  "financials": {
+    "revenue": {"2024": 14860, "2025": 10650},
+    "revenueUnit": "ZMW millions",
+    "revenueGrowth": {"2024": 41.1, "2025": -28.3},
+    "grossProfit": null,
+    "grossMargin": null,
+    "netIncome": {"2024": -77.11, "2025": -155.71},
+    "netMargin": {"2024": -0.52, "2025": -1.46},
+    "eps": {"2024": -0.154, "2025": -0.311},
+    "note": "FY2025: Sales volume declined 20%. Revenue dropped 28% from K14.86B to K10.65B. Net loss widened from K77M to K156M."
+  },
+  "ratios": {
+    "pe": null,
+    "pb": null,
+    "debtToEquity": null,
+    "dividendYield": 3.0,
+    "dividendNote": "companies.json shows 3.0% yield; with consecutive losses, dividend sustainability is questionable. CONFIRMATION NEEDED."
+  },
+  "ownership": {
+    "freeFloat": 12.0,
+    "topHolders": [
+      {"name": "Puma Energy Holdings (Parent)", "stake": null, "note": "Majority owner; exact stake unconfirmed"},
+      {"name": "Public Float", "stake": 12.0}
+    ]
+  },
+  "analystNotes": [
+    {
+      "date": "Jun 2026",
+      "note": "Puma Energy Zambia is a 'pass-through' business: massive revenues (K10-15B range) but structurally unprofitable, with two consecutive years of losses (FY2024: -K77M, FY2025: -K156M). Revenue is highly volatile (-28% in FY2025 on 20% volume decline), likely driven by fuel price pass-through and volume fluctuations. The 12% free float means the stock is essentially a listed subsidiary with minimal public float and negligible trading interest. The 3% dividend yield reported in companies.json needs verification — it's hard to see how a loss-making OMC sustains one.",
+      "author": "Vituli Musukuma, PhD"
+    }
+  ],
+  "riskRating": "HIGH — STRUCTURAL UNPROFITABILITY",
+  "riskFactors": [
+    "Two consecutive years of net losses — and widening",
+    "Revenue volatility (-28% FY2025) driven by commodity price and volume swings",
+    "Extremely low free float (12%) — negligible secondary market liquidity",
+    "Oil marketing margins structurally thin — pass-through business model",
+    "Parent dependency — listed subsidiary with limited operational autonomy"
+  ],
+  "investmentThesis": "There is no investment thesis for Puma Energy Zambia. It's a low-float, loss-making oil marketing subsidiary with no path to meaningful profitability visible in published accounts. The presence of a dividend despite losses raises governance questions. This stock is a 'listing ornament' — it exists on LuSE but doesn't function as an investable security.",
+  "stance": "AVOID — NO INVESTABLE THESIS",
+  "dataSources": [
+    "Puma Energy Zambia FY2025 Abridged Report (via AfricanFinancials)",
+    "Puma Energy Zambia FY2024 Financial Statements (via LuSE SENS, efficacynews.africa)",
+    "companies.json — internal dashboard data"
+  ],
+  "dataQuality": "MEDIUM — Revenue and loss figures from audited reports confirmed. Detailed balance sheet/ratio data unavailable (thin disclosure). Dividend sustainability unverified."
+}

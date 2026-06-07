@@ -1,0 +1,101 @@
+{
+  "ticker": "CHIL",
+  "name": "Chilanga Cement PLC",
+  "sector": "Industrial",
+  "subSector": "Cement & Building Materials",
+  "market": "Main",
+  "description": "Chilanga Cement PLC is one of Zambia's largest cement manufacturers, listed on the LuSE Main Board since 1995. The company produces cement and clinker for the Zambian construction industry, operating from its manufacturing plant in Chilanga, near Lusaka. Chilanga Cement has a strong market position in a growing construction sector driven by infrastructure development and mining expansion. The company employs approximately 386 people.",
+  "financials": {
+    "revenue": {"2025": 3160},
+    "revenueUnit": "ZMW millions",
+    "revenueGrowth": 16.0,
+    "grossProfit": {"2025": 1770},
+    "grossMargin": 55.92,
+    "operatingIncome": {"2025": 1080},
+    "operatingMargin": 34.10,
+    "pretaxIncome": {"2025": 1110},
+    "pretaxMargin": 35.01,
+    "pretaxGrowth": 49.0,
+    "netIncome": {"2025": 761.51},
+    "netMargin": 24.11,
+    "ebitda": {"2025": 1140},
+    "ebitdaMargin": 36.22,
+    "eps": 3.81,
+    "epsGrowth": 34.0,
+    "cashBalance": 474.60,
+    "bookValue": 1450,
+    "bookValuePerShare": 7.27,
+    "totalDebt": 0,
+    "workingCapital": 38.10,
+    "operatingCashFlow": 1440,
+    "ocfGrowth": 90.0,
+    "capex": 675.75,
+    "freeCashFlow": 761.02,
+    "fcfPerShare": 3.80,
+    "incomeTax": 344.19,
+    "effectiveTaxRate": 31.13,
+    "employees": 386,
+    "revenuePerEmployee": 8.18,
+    "profitPerEmployee": 1.97,
+    "productionNote": "Clinker production +19%, cement production increased in FY2025"
+  },
+  "ratios": {
+    "pe": 17.52,
+    "pb": 9.18,
+    "ps": 4.22,
+    "debtToEquity": 0,
+    "currentRatio": 1.04,
+    "quickRatio": 0.64,
+    "returnOnEquity": 51.70,
+    "returnOnAssets": 26.19,
+    "interestCoverage": 176.65,
+    "altmanZScore": 6.32,
+    "piotroskiFScore": 5,
+    "payoutRatio": 105.08,
+    "fcfYield": 5.70,
+    "earningsYield": 5.71
+  },
+  "ownership": {
+    "insiders": 0.0,
+    "freeFloat": 21.3,
+    "sharesOutstanding": 200.04,
+    "sharesChange": "+61.83% (QoQ)",
+    "topHolders": [
+      {"name": "Huaxin Cement / Strategic Partner", "stake": null, "note": "Majority stakeholder following acquisition/restructuring; exact stake unconfirmed — 61.83% QoQ share increase suggests recent capital raise or conversion."},
+      {"name": "Public Float", "stake": 21.3}
+    ]
+  },
+  "dividend": {
+    "annualPerShare": 4.00,
+    "yield": 6.00,
+    "growthYoY": 14.29,
+    "yearsOfGrowth": 2,
+    "payoutRatio": 105.08,
+    "exDividendDate": "Apr 22, 2026",
+    "note": "Dividend of K4.00 exceeds EPS of K3.81 — 105% payout ratio. Sustainable only if capex declines or operating cash flow continues to grow."
+  },
+  "analystNotes": [
+    {
+      "date": "Jun 2026",
+      "note": "Chilanga Cement is the highest-quality industrial company on LuSE right now. The numbers are exceptional: 56% gross margins, 24% net margins, 52% ROE, zero debt, FCF of ZMW 761M covering the dividend. Revenue grew 16%, PBT grew 49%, OCF grew 90%. Clinker production up 19% signals capacity expansion. The only yellow flags: 105% dividend payout ratio (K4.00 dividend vs K3.81 EPS — dipping into retained earnings), tight working capital (current ratio 1.04), and the opaque 61.83% QoQ share increase suggesting a recent major transaction. At PE 17.5x with 6% dividend yield and zero debt, this is a genuine compounder. If the share issuance was a strategic partner entry (likely Huaxin Cement), the growth runway extends further.",
+      "author": "Vituli Musukuma, PhD"
+    }
+  ],
+  "riskRating": "LOW-MEDIUM — STRONG FUNDAMENTALS, SOME UNCERTAINTY",
+  "riskFactors": [
+    "105% dividend payout ratio — dividend > earnings, not sustainable without OCF growth or reserve drawdown",
+    "61.83% QoQ share dilution — needs explanation (capital raise, acquisition, or conversion?)",
+    "Tight working capital (current ratio 1.04) — limited financial flexibility",
+    "Construction sector cyclicality and government infrastructure spending dependency",
+    "Concentrated float (21.3%) — price discovery on thin volume"
+  ],
+  "investmentThesis": "Chilanga Cement is the standout industrial on LuSE: 56% gross margins, 52% ROE, zero debt, 6% dividend yield, and a cement market with genuine growth tailwinds from Zambian infrastructure and mining. The K4.00 dividend (105% payout ratio) is aggressive but supported by ZMW 1.44B operating cash flow. The recent 62% share increase suggests a transformative transaction — likely Huaxin Cement deepening its stake after the 2021 acquisition. At 17.5x PE with 6% yield and debt-free balance sheet, CHIL is one of the few LuSE stocks that passes institutional-quality screens. The working capital tightness and payout ratio require monitoring, but the earnings trajectory is strong enough to grow into both.",
+  "stance": "BUY — BEST INDUSTRIAL ON LUSE",
+  "dataSources": [
+    "Chilanga Cement FY2025 Annual Report (via AfricanFinancials)",
+    "Chilanga Cement FY2024 Audited Financials (via LuSE SENS)",
+    "StockAnalysis.com — LUSE:CHIL Statistics (Jun 2026)",
+    "companies.json — internal dashboard data"
+  ],
+  "dataQuality": "HIGH — Based on audited FY2025 annual report and verified market data. Share issuance reasons need confirmation."
+}

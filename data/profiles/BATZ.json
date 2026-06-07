@@ -1,0 +1,80 @@
+{
+  "ticker": "BATZ",
+  "name": "British American Tobacco Zambia PLC",
+  "sector": "Consumer Goods",
+  "subSector": "Tobacco",
+  "market": "Main",
+  "description": "British American Tobacco Zambia PLC is a subsidiary of British American Tobacco PLC, one of the world's largest tobacco companies. Listed on the LuSE Main Board since 1998, BATZ manufactures and distributes cigarettes and tobacco products in Zambia. The company has consistently delivered high margins and dividends, though it faces headwinds from rising illicit tobacco trade.",
+  "financials": {
+    "revenue": {"2024": 892.21, "2025": 792.91},
+    "revenueUnit": "ZMW millions",
+    "revenueGrowth": {"2024": 40.99, "2025": -11.1},
+    "grossProfit": {"2025": 476.16},
+    "grossMargin": 60.05,
+    "operatingIncome": {"2024": 285.7, "2025": 321.6},
+    "operatingMargin": 40.40,
+    "netIncome": {"2024": 196.2, "2025": 216.55},
+    "netMargin": 27.31,
+    "ebitda": {"2025": 336.39},
+    "ebitdaMargin": 42.43,
+    "eps": 1.02,
+    "totalAssets": null,
+    "totalLiabilities": null,
+    "cashBalance": 146.14,
+    "bookValue": 349.57,
+    "bookValuePerShare": 1.65,
+    "workingCapital": 201.27
+  },
+  "ratios": {
+    "pe": 11.0,
+    "pb": 7.69,
+    "debtToEquity": null,
+    "currentRatio": 2.78,
+    "quickRatio": 1.88,
+    "returnOnEquity": 64.28,
+    "returnOnAssets": 39.11,
+    "payoutRatio": 85.58,
+    "interestCoverage": 20021.56
+  },
+  "ownership": {
+    "insiders": 1.25,
+    "institutions": 7.18,
+    "freeFloat": 22.0,
+    "sharesOutstanding": 212.46,
+    "topHolders": [
+      {"name": "British American Tobacco PLC (Parent)", "stake": 78.0},
+      {"name": "Institutional Investors", "stake": 7.18},
+      {"name": "Public Float", "stake": 14.82}
+    ]
+  },
+  "dividend": {
+    "annualPerShare": 0.80,
+    "yield": 9.2,
+    "yearsOfGrowth": 4,
+    "growthYoY": 11.11,
+    "exDividendDate": "Jun 17, 2026"
+  },
+  "analystNotes": [
+    {
+      "date": "Jun 2026",
+      "note": "BATZ is a cash-flow machine with 60% gross margins, 27% net margins, and zero debt. ROE of 64% is exceptional. However, FY2025 revenue declined 11% due to illicit trade — a structural risk. 85.6% payout ratio leaves little retained earnings for growth. The 9.2% dividend yield is attractive but reflects market skepticism about sustainable earnings in the face of illicit competition.",
+      "author": "Vituli Musukuma, PhD"
+    }
+  ],
+  "riskRating": "MEDIUM",
+  "riskFactors": [
+    "Illicit tobacco trade eroding legitimate market — 11% revenue decline in FY2025",
+    "85.6% dividend payout ratio — limited retained earnings for reinvestment",
+    "Regulatory and ESG headwinds facing global tobacco industry",
+    "Low free float (22%) — thin liquidity on LuSE",
+    "Single-product dependency with limited diversification"
+  ],
+  "investmentThesis": "BATZ is a high-yield dividend play backed by exceptional margins and a debt-free balance sheet. However, the structural decline in revenue due to illicit trade raises questions about terminal value. The 9.2% dividend yield compensates for these risks, but the high payout ratio means the dividend is vulnerable to any earnings shock. Suitable for income-focused investors with eyes wide open to tobacco sector risks.",
+  "stance": "HOLD — INCOME PLAY WITH CAUTION",
+  "dataSources": [
+    "BATZ 2025 Annual Report (via LuSE SENS)",
+    "StockAnalysis.com — LUSE:BATZ Statistics (Jun 2026)",
+    "companies.json — internal dashboard data"
+  ],
+  "dataQuality": "HIGH — Based on audited FY2025 annual report and verified market data"
+}
