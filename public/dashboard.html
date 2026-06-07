@@ -13,6 +13,35 @@
 }
 * { margin:0; padding:0; box-sizing:border-box; }
 body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background:var(--bg); color:var(--text); line-height:1.5; }
+
+/* ===== LOGIN GATE ===== */
+#loginGate { position:fixed; inset:0; z-index:9999; display:flex; align-items:center; justify-content:center; background:radial-gradient(ellipse at center, #0d1a2d 0%, #0d1117 70%); }
+#loginGate.hidden { display:none; }
+.login-bg { position:absolute; inset:0; overflow:hidden; pointer-events:none; }
+.login-bg .orb { position:absolute; border-radius:50%; filter:blur(80px); opacity:0.12; }
+.login-bg .orb.gold { width:300px; height:300px; background:var(--gold); top:20%; left:30%; animation:orbFloat 8s ease-in-out infinite; }
+.login-bg .orb.blue { width:250px; height:250px; background:var(--blue); bottom:25%; right:25%; animation:orbFloat 10s ease-in-out infinite reverse; }
+@keyframes orbFloat { 0%,100%{transform:translate(0,0) scale(1)} 33%{transform:translate(30px,-20px) scale(1.1)} 66%{transform:translate(-20px,15px) scale(0.95)} }
+.login-card { position:relative; background:var(--card); border:1px solid var(--border); border-radius:16px; padding:2.5rem 2.5rem 2rem; width:420px; max-width:92vw; text-align:center; box-shadow:0 0 60px rgba(210,153,29,0.06),0 0 120px rgba(31,111,235,0.04); }
+.login-card::before { content:''; position:absolute; inset:-1px; border-radius:16px; padding:1px; background:linear-gradient(135deg, rgba(210,153,29,0.3), transparent 40%, transparent 60%, rgba(31,111,235,0.3)); -webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0); -webkit-mask-composite:xor; mask-composite:exclude; pointer-events:none; }
+.login-logo { margin-bottom:0.75rem; }
+.login-logo .baobab { font-size:1.6rem; font-weight:800; color:var(--gold); letter-spacing:-0.5px; }
+.login-logo .capital { font-size:1rem; font-weight:600; color:var(--text); letter-spacing:3px; display:block; }
+.login-logo .tagline { font-size:0.62rem; color:var(--muted); margin-top:0.25rem; letter-spacing:1px; }
+.login-divider { width:40px; height:2px; background:var(--gold); margin:1rem auto; border-radius:1px; }
+.login-subtitle { font-size:0.7rem; color:var(--muted); text-transform:uppercase; letter-spacing:2px; margin-bottom:1.5rem; }
+.login-field { position:relative; margin-bottom:1rem; }
+.login-field input { width:100%; padding:0.7rem 2.5rem 0.7rem 1rem; background:rgba(13,17,23,0.6); border:1px solid var(--border); border-radius:8px; color:var(--text); font-size:0.9rem; font-family:inherit; transition:border-color 0.2s; }
+.login-field input:focus { outline:none; border-color:var(--gold); box-shadow:0 0 0 2px rgba(210,153,29,0.1); }
+.login-field input::placeholder { color:var(--muted); font-size:0.8rem; }
+.login-toggle { position:absolute; right:10px; top:50%; transform:translateY(-50%); background:none; border:none; color:var(--muted); cursor:pointer; font-size:0.85rem; padding:4px; }
+.login-toggle:hover { color:var(--text); }
+.login-error { font-size:0.68rem; color:var(--red); min-height:1.2rem; margin-bottom:0.5rem; opacity:0; transition:opacity 0.3s; }
+.login-error.show { opacity:1; }
+.login-btn { width:100%; padding:0.7rem; background:linear-gradient(135deg, #d2991d, #c4861a); color:#0d1117; border:none; border-radius:8px; font-size:0.82rem; font-weight:700; font-family:inherit; cursor:pointer; letter-spacing:0.5px; transition:all 0.2s; text-transform:uppercase; }
+.login-btn:hover { background:linear-gradient(135deg, #e0a830, #d2991d); transform:translateY(-1px); box-shadow:0 4px 20px rgba(210,153,29,0.3); }
+.login-btn:active { transform:translateY(0); }
+.login-footer { margin-top:1.5rem; font-size:0.6rem; color:var(--muted); letter-spacing:0.5px; }
 .header { background:var(--card); border-bottom:1px solid var(--border); padding:0.5rem 2rem; display:flex; justify-content:space-between; align-items:center; position:sticky; top:0; z-index:100; height:3.5rem; }
 .header h1 { font-size:1.15rem; display:flex; align-items:center; gap:0.5rem; }
 .header .logo-wordmark { display:flex; flex-direction:column; }
@@ -241,12 +270,35 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
 </style>
 </head>
 <body>
+
+<!-- ====== EXECUTIVE LOGIN GATE ====== -->
+<div id="loginGate">
+  <div class="login-bg"><div class="orb gold"></div><div class="orb blue"></div></div>
+  <div class="login-card">
+    <div class="login-logo">
+      <span class="baobab">BAOBAB</span>
+      <span class="capital">CAPITAL</span>
+      <span class="tagline">African Markets Intelligence</span>
+    </div>
+    <div class="login-divider"></div>
+    <div class="login-subtitle">Confidential · Authorized Access Only</div>
+    <div class="login-field">
+      <input type="password" id="loginPassword" placeholder="Enter access key" autofocus onkeydown="if(event.key==='Enter')attemptLogin()">
+      <button class="login-toggle" onclick="toggleLoginPW()" tabindex="-1">👁</button>
+    </div>
+    <div class="login-error" id="loginError">Invalid access key</div>
+    <button class="login-btn" onclick="attemptLogin()">Access Intelligence</button>
+    <div class="login-footer">Baobab Capital · Lusaka Securities Exchange</div>
+  </div>
+</div>
+
 <div class="header">
   <h1>
     <img class="logo-icon" src="/logo.png" alt="Baobab Capital" style="width:42px; height:42px; border-radius:8px;">
     <span class="logo-wordmark"><span class="baobab">BAOBAB</span> <span class="capital">CAPITAL</span><span class="tagline">African Markets Intelligence</span></span>
   </h1>
   <div class="controls">
+    <button class="btn btn-outline" onclick="logout()" style="margin-right:0.25rem;font-size:0.65rem;">🔒</button>
     <span class="status"><span class="dot live" id="sdot"></span><span id="supd"></span></span>
     <button class="btn btn-outline" onclick="refresh()">🔄</button>
   </div>
@@ -326,6 +378,54 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
 
 <script>
 let allData = {}, currentFilter = 'all', chartInst = null;
+
+// ====== AUTH GATE ======
+const ACCESS_HASH = '28d657d5cd993f21689047e28091ffadfae9beafeae2c9375503f326f5699a0c'; // default: Lusaka2026
+
+function checkAuth() {
+  const session = localStorage.getItem('bc_session');
+  if (session) {
+    try {
+      const { exp } = JSON.parse(atob(session));
+      if (exp > Date.now()) return true;
+    } catch(e) {}
+  }
+  return false;
+}
+
+function toggleLoginPW() {
+  const inp = document.getElementById('loginPassword');
+  inp.type = inp.type === 'password' ? 'text' : 'password';
+}
+
+async function attemptLogin() {
+  const pw = document.getElementById('loginPassword').value;
+  const errEl = document.getElementById('loginError');
+  if (!pw) { errEl.classList.add('show'); errEl.textContent = 'Access key required'; return; }
+  
+  // SHA-256 hash check
+  const hashBuffer = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(pw));
+  const hashArray = Array.from(new Uint8Array(hashBuffer));
+  const hashHex = hashArray.map(b => b.toString(16).padStart(2,'0')).join('');
+  
+  if (hashHex === ACCESS_HASH) {
+    const session = btoa(JSON.stringify({ exp: Date.now() + 7 * 24 * 60 * 60 * 1000 })); // 7-day session
+    localStorage.setItem('bc_session', session);
+    document.getElementById('loginGate').classList.add('hidden');
+  } else {
+    errEl.classList.add('show');
+    errEl.textContent = 'Invalid access key';
+    document.getElementById('loginPassword').value = '';
+  }
+}
+
+if (!checkAuth()) {
+  document.getElementById('loginGate').classList.remove('hidden');
+} else {
+  document.getElementById('loginGate').classList.add('hidden');
+}
+
+function logout() { localStorage.removeItem('bc_session'); location.reload(); }
 
 async function load() {
   try {
