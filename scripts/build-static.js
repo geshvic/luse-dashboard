@@ -65,12 +65,16 @@ if (fs.existsSync(historyDir)) {
   console.log('[build-static] ✓ data/history/');
 }
 
-// Create index.html (copy/move)
+// Also write all.json to root data/ for GitHub Pages
+fs.writeFileSync(path.join(DATA_SRC, 'all.json'), JSON.stringify(all));
+console.log('[build-static] ✓ data/all.json (root)');
+
+// Create index.html at repo root for GitHub Pages
 const dashboardPath = path.join(PUBLIC, 'dashboard.html');
-const indexPath = path.join(PUBLIC, 'index.html');
+const rootIndexPath = path.join(ROOT, 'index.html');
 if (fs.existsSync(dashboardPath)) {
-  fs.copyFileSync(dashboardPath, indexPath);
-  console.log('[build-static] ✓ index.html');
+  fs.copyFileSync(dashboardPath, rootIndexPath);
+  console.log('[build-static] ✓ index.html (root)');
 }
 
 console.log('[build-static] ✅ Build complete — ready for GitHub Pages');
