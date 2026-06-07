@@ -1,0 +1,59 @@
+{
+  "ticker": "ZFCO",
+  "name": "Zambia Forestry and Forest Industries Corporation PLC (ZAFFICO)",
+  "sector": "Agriculture",
+  "subSector": "Forestry & Wood Products",
+  "market": "Main",
+  "description": "Zambia Forestry and Forest Industries Corporation PLC (ZAFFICO) is a state-owned forestry company listed on the LuSE Main Board since 2018. ZAFFICO manages vast pine and eucalyptus plantations across Zambia, producing timber, poles, and wood products. The company's earnings are significantly influenced by fair value adjustments on biological assets (standing timber), which creates earnings volatility unrelated to operating performance. The company is one of Zambia's largest landowners by plantation area.",
+  "financials": {
+    "revenue": {"2024": 332.11, "2025": 460.66},
+    "revenueUnit": "ZMW millions",
+    "revenueGrowth": {"2024": -21.6, "2025": 38.71},
+    "grossProfit": null,
+    "netIncome": {"2024": 738, "2025": 514},
+    "netIncomeNote": "Profit decline due to lower fair value gain on biological assets (standing timber revaluation), not operational deterioration",
+    "eps": {"2024": 1.85, "2025": 1.29},
+    "totalAssets": {"2024": 8530, "2025": 9580},
+    "cashBalance": null,
+    "bookValue": null
+  },
+  "ratios": {
+    "pe": 15.3,
+    "peNote": "companies.json figure. With EPS of ZMW 1.29, PE would be ~5.1x at current price. VERIFICATION NEEDED.",
+    "pb": null,
+    "debtToEquity": null,
+    "dividendYield": 2.5,
+    "dividendNote": "companies.json figure. With EPS of ZMW 1.29, a 2.5% yield suggests dividend of ~ZMW 0.16/share. CONFIRMATION NEEDED."
+  },
+  "ownership": {
+    "freeFloat": 40.0,
+    "topHolders": [
+      {"name": "Government of Zambia (GRZ)", "stake": null, "note": "Majority shareholder; state-owned enterprise"},
+      {"name": "Public Float", "stake": 40.0}
+    ]
+  },
+  "analystNotes": [
+    {
+      "date": "Jun 2026",
+      "note": "ZAFFICO (listed as ZFCO) is a biological asset story: earnings are dominated by fair value adjustments on standing timber, not operational cash flows. FY2025 net profit of ZMW 514M (down from ZMW 738M) reflects lower timber revaluation gains, not business deterioration. Revenue grew 39% to ZMW 460M — a positive operational signal. Total assets of ZMW 9.58B against a market cap of ~ZMW 420M (per companies.json) implies the stock trades at ~0.04x book — potentially deeply undervalued, or the asset base includes timber plantations that can't be easily monetized. Note: companies.json labels this as 'Zambia Fertilizer Company Limited' which is INCORRECT — ZFCO is ZAFFICO, a forestry company, not a fertilizer company. CORRECTION NEEDED in companies.json.",
+      "author": "Vituli Musukuma, PhD"
+    }
+  ],
+  "riskRating": "MEDIUM — COMPLEX VALUATION (BIOLOGICAL ASSETS)",
+  "riskFactors": [
+    "Earnings dominated by non-cash fair value adjustments on timber",
+    "Government majority ownership — political interference risk",
+    "Low revenue relative to asset base — ZMW 460M revenue on ZMW 9.58B assets",
+    "Forestry sector risks — fire, disease, climate",
+    "Companies.json mislabeling as 'Fertilizer Company' — data integrity issue"
+  ],
+  "investmentThesis": "ZAFFICO is a real asset play: vast timber plantations with a book value far exceeding market cap. If the government ever monetizes or partially privatizes, value could be unlocked. But for now, it's a state-controlled forestry company where earnings are accounting constructs (biological asset revaluations), not cash. The 39% revenue growth is encouraging but from a low base. For patient, deep-value investors willing to accept government control and accounting complexity, the 0.04x book value is intriguing. For everyone else, it's a 'too hard' pile candidate.",
+  "stance": "SPECULATIVE DEEP VALUE — NEEDS PRIVATIZATION CATALYST",
+  "dataSources": [
+    "ZAFFICO FY2025 Abridged Report (via AfricanFinancials)",
+    "ZAFFICO FY2024 Abridged Financials (via LuSE SENS, SBZ)",
+    "StockAnalysis.com — LUSE:ZFCO Revenue (Jun 2026)",
+    "companies.json — internal dashboard data"
+  ],
+  "dataQuality": "MEDIUM — Core financials from audited reports confirmed. Market ratios from companies.json need reconciliation with current EPS. Companies.json company name is INCORRECT (says 'Fertilizer' instead of 'Forestry')."
+}

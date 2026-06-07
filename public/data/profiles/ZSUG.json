@@ -1,0 +1,36 @@
+{
+  "ticker": "ZSUG",
+  "name": "Zambia Sugar PLC",
+  "sector": "Agriculture",
+  "market": "Main",
+  "description": "Zambia Sugar is the country's largest sugar producer and a subsidiary of Associated British Foods (ABF), which holds 75% of the equity. The company crossed the $1 billion market capitalization threshold in January 2026, joining the LuSE's exclusive 'Three Comma Club' alongside CEC and ZCCM-IH.",
+  "financials": {
+    "revenue": {"2023": 4600000000, "2024": 5100000000, "2025": 5800000000},
+    "grossProfit": {"2023": 1800000000, "2024": 2100000000, "2025": 2400000000},
+    "grossMargin": 41.4,
+    "netIncome": {"2023": 1200000000, "2024": 1500000000, "2025": 1850000000},
+    "ebitda": 2800000000,
+    "totalAssets": 8500000000,
+    "pe": 14.7
+  },
+  "ownership": {
+    "insiders": 75.0,
+    "float": 25.0,
+    "topHolders": [
+      {"name":"Associated British Foods (ABF)","stake":75.0},
+      {"name":"NAPSA","stake":8.5},
+      {"name":"Public Float","stake":16.5}
+    ]
+  },
+  "priceHistory": {
+    "recent": {"price":38.50,"date":"Jun 2026"},
+    "milestone":"Crossed $1B market cap — Jan 2026",
+    "dailyVolume": {"shares":25,"value":89926,"date":"Feb 19, 2026"}
+  },
+  "analystNotes": [
+    {"date":"Jan 30, 2026","note":"Crossed $1B valuation. But K89,926 daily trading value (~$2,000) on a billion-dollar company is the 'Paperweight Heavyweight' problem in one ticker. 75% ABF lock-up means the market cap is decorative.","author":"Vituli Musukuma, PhD"}
+  ],
+  "riskRating": "LOW (fundamentals) / HIGH (liquidity)",
+  "keyMetrics": {"dividendYield":3.2,"freeFloat":25,"pe":14.7,"marketCap":"$1B"},
+  "stance": "AVOID FOR TRADING — Great company, terrible trading stock"
+}

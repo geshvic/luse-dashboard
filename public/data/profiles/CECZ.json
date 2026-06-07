@@ -1,0 +1,91 @@
+{
+  "ticker": "CECZ",
+  "name": "Copperbelt Energy Corporation PLC",
+  "sector": "Energy",
+  "subSector": "Power Generation & Transmission",
+  "market": "Main",
+  "description": "Copperbelt Energy Corporation PLC (CEC) is a Zambian power utility listed on the LuSE Main Board since 2008. CEC generates, transmits, distributes, and supplies electricity primarily to mining companies on the Copperbelt and in the DRC. The company is executing a major renewable energy expansion strategy through its subsidiary CEC Renewables, including solar PV plants and Green Bond issuances. In 2024, CEC commissioned its second solar PV plant at Itimpi (60 MWp) and issued a US$96.7 million second tranche Green Bond.",
+  "financials": {
+    "revenue": {"2024": 15830},
+    "revenueUnit": "ZMW millions",
+    "revenueUSD": 547.7,
+    "revenueGrowth": 43.0,
+    "grossProfit": {"2024": 4970},
+    "grossMargin": 31.40,
+    "operatingIncome": {"2024": 4040},
+    "operatingMargin": 25.50,
+    "netIncome": {"2024": 2820},
+    "netMargin": 17.81,
+    "ebitda": {"2024": 4600},
+    "ebitdaMargin": 29.08,
+    "eps": 1.74,
+    "totalAssets": null,
+    "totalLiabilities": null,
+    "cashBalance": 3490,
+    "bookValue": 11540,
+    "bookValuePerShare": 7.10,
+    "totalDebt": 3540,
+    "workingCapital": 4600,
+    "capex": 2380,
+    "operatingCashFlow": 2460,
+    "freeCashFlow": 80.92
+  },
+  "ratios": {
+    "pe": 12.3,
+    "pb": 2.37,
+    "debtToEquity": 0.31,
+    "currentRatio": 3.46,
+    "quickRatio": 3.32,
+    "returnOnEquity": 26.07,
+    "returnOnAssets": 12.96,
+    "payoutRatio": 50.0,
+    "interestCoverage": 31.22
+  },
+  "ownership": {
+    "freeFloat": 30.0,
+    "institutions": 0.09,
+    "sharesOutstanding": 1630,
+    "topHolders": [
+      {"name": "ZCCM-IH (Strategic Stakeholder)", "stake": null, "note": "Historical strategic interest; exact stake unconfirmed"},
+      {"name": "Institutional Investors", "stake": 0.09},
+      {"name": "Public Float", "stake": 30.0}
+    ]
+  },
+  "dividend": {
+    "annualPerShare": 0.69,
+    "yield": 4.5,
+    "growthYoY": -4.98,
+    "exDividendDate": "Nov 12, 2025",
+    "note": "8.8% dividend increase declared for 2024 (per Chairperson's letter)"
+  },
+  "greenInitiatives": {
+    "solarCapacity": "60 MWp (Itimpi Phase 1, commissioned 2024)",
+    "solarPipeline": "136 MWp (Itimpi Phase 2, upcoming)",
+    "greenBonds": "US$53M (2023) + US$96.7M (2024 tranche 2) via CEC Renewables",
+    "renewablesTarget": "2027 sustainability ambitions"
+  },
+  "analystNotes": [
+    {
+      "date": "Jun 2026",
+      "note": "CEC's 43% revenue growth to ZMW 15.83B is impressive, driven by regional power sales. However, the 30% decline in PAT (USD 96.9M in USD terms, ZMW 2.82B) reflects one-off items: KCM receivable writeback in prior year and Kabompo hydropower impairment. Normalized earnings are stronger than headline suggests. The Green Bond strategy and solar expansion position CEC well for Zambia's open-access energy reforms. FCF of only ZMW 81M on ZMW 15.8B revenue is concerning — heavy capex cycle underway.",
+      "author": "Vituli Musukuma, PhD"
+    }
+  ],
+  "riskRating": "MEDIUM",
+  "riskFactors": [
+    "Heavy capex cycle — ZMW 2.38B in capital expenditures consuming nearly all operating cash flow",
+    "Mining sector dependency — customer concentration risk on Copperbelt and DRC mines",
+    "Hydropower vulnerability — drought and load management affected operations in 2024",
+    "Green Bond debt obligations — US$149.7M total across two tranches",
+    "Currency risk — USD-denominated revenues and debt, ZMW functional currency"
+  ],
+  "investmentThesis": "CEC is a utility-in-transition: pivoting from hydropower-dependent transmission to a diversified renewables generator. The 43% revenue growth and expanding DRC market signal strong demand. However, the heavy capex cycle means minimal free cash flow for the near term. The 4.5% dividend yield is modest for the risk. The investment case hinges on execution of the solar pipeline and whether open-access energy reforms unlock new revenue streams. Worth monitoring for entry after capex peak.",
+  "stance": "HOLD — MONITOR CAPEX CYCLE & SOLAR EXECUTION",
+  "dataSources": [
+    "CEC 2024 Integrated Annual Report (cec.com.zm)",
+    "StockAnalysis.com — LUSE:CECZ Statistics (Jun 2026)",
+    "CEC FY2024 Abridged Financials — LuSE SENS (Mar 2025)",
+    "companies.json — internal dashboard data"
+  ],
+  "dataQuality": "HIGH — Based on audited FY2024 annual report, integrated report, and verified market data"
+}

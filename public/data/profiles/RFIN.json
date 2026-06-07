@@ -1,0 +1,48 @@
+{
+  "ticker": "RFIN",
+  "name": "Real People Finance Zambia PLC",
+  "sector": "Financial Services",
+  "subSector": "Consumer & SME Finance",
+  "market": "ALT-M",
+  "description": "Real People Finance Zambia PLC is a consumer and SME finance company listed on the LuSE Alternative Market (ALT-M) since 2022. The company is part of the Real People group, a pan-African non-bank financial services provider operating in several African countries. Real People provides microloans, SME financing, and asset-backed lending to underserved segments in Zambia.",
+  "financials": {
+    "revenue": null,
+    "note": "NO PUBLICLY AVAILABLE FINANCIAL DATA FOUND. The company's filings on LuSE SENS were not accessible through standard web searches. ALT-M lighter disclosure regime. The parent group (Real People, headquartered in Kenya/South Africa) publishes consolidated accounts but Zambia-specific subsidiary data is not separately disclosed."
+  },
+  "ratios": {
+    "pe": 9.5,
+    "peNote": "From companies.json — source and calculation basis unverified",
+    "pb": null,
+    "dividendYield": 5.2,
+    "dividendNote": "From companies.json — 5.2% yield unverified"
+  },
+  "ownership": {
+    "freeFloat": 35.0,
+    "topHolders": [
+      {"name": "Real People Group (Parent)", "stake": null, "note": "Presumed majority owner. Unconfirmed."},
+      {"name": "Public Float", "stake": 35.0}
+    ]
+  },
+  "analystNotes": [
+    {
+      "date": "Jun 2026",
+      "note": "RFIN is an ALT-M listed consumer finance company with no publicly accessible financial data. The companies.json metrics (PE 9.5x, 5.2% dividend yield, ZMW 2.10/share, ZMW 130M market cap) cannot be verified. Consumer finance in Zambia faces significant credit risk given economic conditions, and without visibility into loan book quality, NPL ratios, and funding structure, no analysis is possible. The 5.2% dividend yield is notable but unverifiable. FLAGGED FOR EVIDENCE GATHERING.",
+      "author": "Vituli Musukuma, PhD"
+    }
+  ],
+  "riskRating": "UNKNOWN — INSUFFICIENT DATA",
+  "riskFactors": [
+    "No publicly accessible audited financial statements",
+    "Consumer lending in Zambia — high credit risk environment",
+    "ALT-M lighter disclosure regime",
+    "Potential NPL and loan book quality issues (typical for sector)",
+    "Pan-African parent — subsidiary may depend on parent funding"
+  ],
+  "investmentThesis": "No investment thesis can be formed without audited financial statements and loan book data. Consumer finance can be a high-margin business in underbanked markets, but credit cycles in Zambia are severe. Without NPL ratios, loan growth, and funding costs, any analysis would be guesswork.",
+  "stance": "FLAGGED — INSUFFICIENT DATA FOR ANALYSIS",
+  "dataSources": [
+    "companies.json — internal dashboard data (unverified)",
+    "Real People Group website (no Zambia-specific financials)"
+  ],
+  "dataQuality": "VERY LOW — No audited financial statements accessed. All market data from companies.json, unverified. Requires direct LuSE SENS filing retrieval or company engagement."
+}

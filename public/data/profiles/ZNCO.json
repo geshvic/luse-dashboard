@@ -1,0 +1,80 @@
+{
+  "ticker": "ZNCO",
+  "name": "Zambia National Commercial Bank PLC (Zanaco)",
+  "sector": "Banking",
+  "subSector": "Commercial Banking",
+  "market": "Main",
+  "description": "Zambia National Commercial Bank PLC, commonly known as Zanaco, is one of Zambia's largest banks by assets and branch network. Listed on the LuSE Main Board since 2008, Zanaco serves retail customers, large corporations, agri-business, and public sector clients. The bank has evolved from its origins as Zambia's national commercial bank into a leading universal banking institution with over 1,300 employees. It is majority-owned by Rabobank (Netherlands) through a strategic partnership.",
+  "financials": {
+    "revenue": {"2025": 6350},
+    "revenueUnit": "ZMW millions",
+    "revenueGrowth": 16.54,
+    "grossMargin": null,
+    "grossMarginNote": "N/A for banks — net interest income + fees = operating revenue",
+    "operatingMargin": 46.48,
+    "pretaxIncome": {"2025": 2950},
+    "netIncome": {"2025": 2010},
+    "netMargin": 31.65,
+    "eps": 1.39,
+    "totalAssets": null,
+    "totalLiabilities": null,
+    "cashBalance": 2650,
+    "bookValue": 6990,
+    "bookValuePerShare": 4.84,
+    "totalDebt": 5430,
+    "netCash": -2790,
+    "incomeTax": 940.16,
+    "effectiveTaxRate": 31.86
+  },
+  "ratios": {
+    "pe": 8.2,
+    "pb": 1.98,
+    "debtToEquity": null,
+    "returnOnEquity": 31.58,
+    "returnOnAssets": 3.68,
+    "payoutRatio": 35.03,
+    "revenuePerEmployee": 4.78,
+    "profitPerEmployee": 1.51
+  },
+  "ownership": {
+    "freeFloat": 35.0,
+    "institutions": 9.72,
+    "sharesOutstanding": 1440,
+    "employees": 1330,
+    "topHolders": [
+      {"name": "Rabobank (Strategic Partner)", "stake": null, "note": "Majority strategic shareholder; exact stake unconfirmed"},
+      {"name": "Institutional Investors", "stake": 9.72},
+      {"name": "Public Float", "stake": 35.0}
+    ]
+  },
+  "dividend": {
+    "annualPerShare": 0.44,
+    "yield": 5.8,
+    "growthYoY": 11.42,
+    "yearsOfGrowth": 7,
+    "exDividendDate": "May 6, 2026"
+  },
+  "analystNotes": [
+    {
+      "date": "Jun 2026",
+      "note": "Zanaco is the most attractive valuation on LuSE among the liquid large-caps: PE of 8.2x, PB of 1.98x, ROE of 31.6%, and a 5.8% dividend yield with a sustainable 35% payout ratio. Revenue growth of 16.5% is solid. The bank is profitable with strong margins (31.6% net margin for a bank is exceptional). Main concern: high debt load (ZMW 5.43B) relative to cash, and the negative net cash position. But for a bank, leverage is the business model. 7 consecutive years of dividend growth signals management confidence.",
+      "author": "Vituli Musukuma, PhD"
+    }
+  ],
+  "riskRating": "LOW-MEDIUM",
+  "riskFactors": [
+    "Credit risk — Zambian economic conditions can pressure loan books",
+    "Sovereign exposure — significant government securities holdings",
+    "Currency and interest rate volatility in Zambian market",
+    "Competition from mobile money and fintech disrupting traditional banking"
+  ],
+  "investmentThesis": "Zanaco offers the best risk-adjusted value among LuSE large-caps: low PE, high ROE, sustainable dividend growth, and reasonable float. The 5.8% yield with a 35% payout ratio leaves room for both dividend growth and reinvestment. The Rabobank strategic partnership provides institutional discipline. The negative net cash position is normal for a bank and not a concern. This is the closest thing to a core portfolio holding on LuSE today — a profitable, dividend-growing bank trading at a discount to intrinsic value.",
+  "stance": "BUY — BEST VALUE ON LUSE AMONG LIQUID LARGE-CAPS",
+  "dataSources": [
+    "Zanaco FY2024 Audited Results (zanacoinvestor.com)",
+    "StockAnalysis.com — LUSE:ZNCO Statistics (Jun 2026)",
+    "Zanaco FY2024 Abridged Financials — LuSE SENS (Mar 2025)",
+    "companies.json — internal dashboard data"
+  ],
+  "dataQuality": "HIGH — Based on audited FY2024 annual results and verified market data"
+}

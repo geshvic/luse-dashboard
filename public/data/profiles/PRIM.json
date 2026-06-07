@@ -1,0 +1,47 @@
+{
+  "ticker": "PRIM",
+  "name": "Prime Marble and Granite Ltd",
+  "sector": "Industrial",
+  "subSector": "Dimension Stone & Quarrying",
+  "market": "ALT-M",
+  "description": "Prime Marble and Granite is a Zambian dimension stone quarrying and processing company listed on the LuSE Alternative Market (ALT-M) since 2021. The company quarries, cuts, and supplies marble and granite for the construction and monument industries in Zambia and potentially for export. As a small-cap industrial with ALT-M listing, the company operates under lighter disclosure and regulatory requirements than the Main Board.",
+  "financials": {
+    "revenue": null,
+    "note": "NO PUBLICLY AVAILABLE FINANCIAL DATA FOUND. ALT-M companies have minimal web presence and lighter disclosure obligations. The company may file abridged results with LuSE SENS but these were not indexed by search engines. Note: Search results returned 'Zambia Reinsurance PLC (formerly Prima Reinsurance)' which is a DIFFERENT company — not to be confused with Prime Marble and Granite (PRIM)."
+  },
+  "ratios": {
+    "pe": 16.0,
+    "peNote": "From companies.json — source and calculation basis unverified",
+    "dividendYield": 1.0,
+    "dividendNote": "From companies.json — 1% yield unverified. With zero recorded trading volume (companies.json), price discovery is suspect."
+  },
+  "ownership": {
+    "freeFloat": 55.0,
+    "topHolders": [
+      {"name": "Founders/Promoters", "stake": null, "note": "Presumed majority. Unconfirmed."},
+      {"name": "Public Float", "stake": 55.0}
+    ],
+    "note": "55% free float is unusually high for ALT-M — could indicate dispersed founding shareholders rather than institutional float"
+  },
+  "analystNotes": [
+    {
+      "date": "Jun 2026",
+      "note": "PRIM is a micro-cap ALT-M listed quarrying company with zero recorded trading volume (per companies.json) and no publicly accessible financial data. At ZMW 4.80/share with a ZMW 290M market cap and zero volume, this is a listed company in name only — there is no functioning secondary market. The 55% free float is theoretical; in practice, liquidity is non-existent. The company may have real quarrying operations, but as an investable security, it does not function. FLAGGED FOR EVIDENCE GATHERING.",
+      "author": "Vituli Musukuma, PhD"
+    }
+  ],
+  "riskRating": "CRITICAL — NON-FUNCTIONING LISTED SECURITY",
+  "riskFactors": [
+    "Zero recorded trading volume — no functioning market",
+    "No publicly accessible financial statements",
+    "ALT-M micro-cap with minimal regulatory oversight",
+    "Quarrying/mining operational risks — single-site dependency",
+    "55% free float is theoretical — practical liquidity is zero"
+  ],
+  "investmentThesis": "There is no investment thesis for PRIM. A stock with zero trading volume is not a stock — it's a private company with a listing certificate. The business may be viable as a private quarrying operation, but as a public market security, it is non-functional.",
+  "stance": "AVOID — NON-FUNCTIONING MARKET",
+  "dataSources": [
+    "companies.json — internal dashboard data (unverified)"
+  ],
+  "dataQuality": "VERY LOW — No audited financials accessed. No trading volume. Market data from companies.json unverified. Company may have financials filed with LuSE SENS but not indexed publicly."
+}
