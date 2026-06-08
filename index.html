@@ -412,6 +412,21 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
   </div>
   <div class="news-list" id="newsList"></div>
 </div>
+<!-- ====== SENS ANNOUNCEMENTS ====== -->
+<div class="sens-section">
+  <h3>📋 SENS Announcements</h3>
+  <div class="sens-filters">
+    <button class="btn btn-sm active" onclick="filterSens('all',this)">All</button>
+    <button class="btn btn-sm btn-outline" onclick="filterSens('Earnings',this)">📊 Earnings</button>
+    <button class="btn btn-sm btn-outline" onclick="filterSens('Dividends',this)">💵 Dividends</button>
+    <button class="btn btn-sm btn-outline" onclick="filterSens('Directorate',this)">👤 Directorate</button>
+    <button class="btn btn-sm btn-outline" onclick="filterSens('Cautionary',this)">⚠️ Cautionary</button>
+    <button class="btn btn-sm btn-outline" onclick="filterSens('AGM',this)">📅 AGM/EGM</button>
+  </div>
+  <div class="sens-list" id="sensList"></div>
+  <div class="note" style="margin-top:0.5rem;">Source: <a href="https://www.luse.co.zm/sens/" target="_blank" style="color:var(--blue);">LuSE SENS</a> — Regulatory announcements from listed companies</div>
+</div>
+
 
 
 <div class="section-header">
