@@ -267,6 +267,40 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
 .heatmap-gradient { width:120px; height:10px; border-radius:5px; background:linear-gradient(90deg,#f85149,#f0883e,#7ee787,#3fb950); }
 .heatmap-wrap { background:var(--card); border:1px solid var(--border); border-radius:8px; padding:0.5rem; display:flex; justify-content:center; }
 .heatmap-wrap canvas { width:100%; max-width:900px; height:340px; }
+/* === SIMULATORS === */
+.sim-section { margin:1rem 2rem 1.5rem; }
+.sim-section h2 { font-size:0.95rem; color:var(--gold); margin-bottom:0.25rem; letter-spacing:0.5px; }
+.sim-section .sim-subtitle { font-size:0.65rem; color:var(--muted); margin-bottom:0.75rem; }
+.sim-grid { display:grid; grid-template-columns:1fr 1fr; gap:1rem; }
+@media (max-width:768px) { .sim-grid { grid-template-columns:1fr; } }
+.sim-card { background:var(--card); border:1px solid var(--border); border-radius:10px; padding:1rem 1.25rem; }
+.sim-card h3 { font-size:0.78rem; color:var(--muted); text-transform:uppercase; letter-spacing:0.5px; margin-bottom:0.75rem; display:flex; align-items:center; gap:0.4rem; }
+.sim-row { display:flex; gap:0.5rem; margin-bottom:0.6rem; align-items:center; flex-wrap:wrap; }
+.sim-row label { font-size:0.7rem; color:var(--muted); min-width:60px; }
+.sim-row input, .sim-row select { padding:0.45rem 0.6rem; background:rgba(13,17,23,0.6); border:1px solid var(--border); border-radius:6px; color:var(--text); font-size:0.78rem; font-family:inherit; min-width:130px; }
+.sim-row input:focus, .sim-row select:focus { outline:none; border-color:var(--gold); }
+.sim-row select option { background:var(--card); color:var(--text); }
+.sim-result { margin-top:0.75rem; padding:0.75rem; background:rgba(31,111,235,0.06); border-radius:8px; }
+.sim-result-row { display:flex; justify-content:space-between; padding:0.3rem 0; font-size:0.75rem; border-bottom:1px solid rgba(48,54,61,0.4); }
+.sim-result-row:last-child { border-bottom:none; }
+.sim-result-row .v { font-weight:600; font-variant-numeric:tabular-nums; }
+.sim-result-row .v.pos { color:var(--green); }
+.sim-result-row .v.neg { color:var(--red); }
+.sim-total { margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border); font-size:0.9rem; font-weight:700; display:flex; justify-content:space-between; }
+.sim-total .v { font-size:1rem; }
+.sim-note { font-size:0.6rem; color:var(--muted); margin-top:0.4rem; font-style:italic; }
+.compare-bar { margin:0 2rem 1rem; background:var(--card); border:1px solid var(--border); border-radius:10px; padding:1rem 1.25rem; }
+.compare-bar h3 { font-size:0.78rem; color:var(--muted); text-transform:uppercase; letter-spacing:0.5px; margin-bottom:0.75rem; }
+.compare-chart { display:flex; gap:0; height:8px; border-radius:4px; overflow:hidden; margin-bottom:0.5rem; }
+.compare-chart .bar-bond { background:var(--gold); transition:width 0.5s; }
+.compare-chart .bar-stock { background:var(--blue); transition:width 0.5s; }
+.compare-legend { display:flex; gap:1.5rem; font-size:0.7rem; color:var(--muted); }
+.compare-legend span { display:flex; align-items:center; gap:0.3rem; }
+.compare-legend .dot { width:8px; height:8px; border-radius:2px; display:inline-block; }
+.compare-legend .dot.bond { background:var(--gold); }
+.compare-legend .dot.stock { background:var(--blue); }
+.compare-winner { text-align:center; margin-top:0.5rem; font-size:0.85rem; font-weight:700; }
+.compare-winner .delta { font-size:0.7rem; font-weight:500; margin-left:0.5rem; }
 </style>
 </head>
 <body>
@@ -368,6 +402,83 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
 <div class="ticker-table" id="tickerTable"></div>
 
 <div class="bottom-grid" id="bottom"></div>
+<!-- ====== SIMULATORS ====== -->
+<div class="sim-section">
+  <h2>🧮 Investment Simulators</h2>
+  <div class="sim-subtitle">Compare government bond returns vs LuSE stocks — after taxes & fees</div>
+  
+  <div class="sim-grid">
+    <!-- BOND SIMULATOR -->
+    <div class="sim-card">
+      <h3>📜 Government Bond</h3>
+      <div class="sim-row">
+        <label>Amount (ZMW)</label>
+        <input type="number" id="bondAmt" value="10000" min="1000" step="1000" onchange="simBond()" oninput="simBond()">
+      </div>
+      <div class="sim-row">
+        <label>Tenor</label>
+        <select id="bondTenor" onchange="simBond()">
+          <option value="2">2-Year (14.50%)</option>
+          <option value="5">5-Year (14.98%)</option>
+          <option value="7">7-Year (16.00%)</option>
+          <option value="10" selected>10-Year (16.50%)</option>
+          <option value="15">15-Year (17.59%)</option>
+        </select>
+      </div>
+      <div class="sim-result" id="bondResult"></div>
+      <div class="sim-note">⚠️ 15% withholding tax on interest · Semi-annual coupon payments · Face value returned at maturity · Assumes held to maturity</div>
+    </div>
+
+    <!-- STOCK SIMULATOR -->
+    <div class="sim-card">
+      <h3>📈 Stock Investment</h3>
+      <div class="sim-row">
+        <label>Amount (ZMW)</label>
+        <input type="number" id="stockAmt" value="10000" min="1000" step="1000" onchange="simStock()" oninput="simStock()">
+      </div>
+      <div class="sim-row">
+        <label>Stock</label>
+        <select id="stockPick" onchange="simStock()">
+          <option value="LASI">LASI Index (Broad Market)</option>
+          <option value="ATEL">ATEL — Airtel Zambia</option>
+          <option value="ZNCO">ZNCO — Zanaco</option>
+          <option value="CECZ">CECZ — Copperbelt Energy</option>
+          <option value="ZSUG">ZSUG — Zambia Sugar</option>
+          <option value="DCZM">DCZM — Dot Com Zambia</option>
+          <option value="CHIL">CHIL — Chilanga Cement</option>
+          <option value="ZFCO">ZFCO — ZAFFICO</option>
+          <option value="SCBL">SCBL — Standard Chartered</option>
+          <option value="ZMBF">ZMBF — Zambeef</option>
+        </select>
+      </div>
+      <div class="sim-row">
+        <label>Period</label>
+        <select id="stockPeriod" onchange="simStock()">
+          <option value="1">1 Year</option>
+          <option value="2">2 Years</option>
+          <option value="3">3 Years</option>
+        </select>
+      </div>
+      <div class="sim-result" id="stockResult"></div>
+      <div class="sim-note">⚠️ 1.5% brokerage fee (buy + sell) · LuSE levy 0.1% · Based on historical/annualised returns · Past performance ≠ future results</div>
+    </div>
+  </div>
+</div>
+
+<!-- ====== COMPARISON ====== -->
+<div class="compare-bar" id="compareBar" style="display:none;">
+  <h3>⚖️ Bond vs Stock — Net Returns Compared</h3>
+  <div class="compare-chart">
+    <div class="bar-bond" id="barBond" style="width:50%;"></div>
+    <div class="bar-stock" id="barStock" style="width:50%;"></div>
+  </div>
+  <div class="compare-legend">
+    <span><span class="dot bond"></span> Bond: <strong id="legendBond">—</strong></span>
+    <span><span class="dot stock"></span> Stock: <strong id="legendStock">—</strong></span>
+  </div>
+  <div class="compare-winner" id="compareWinner"></div>
+</div>
+
 <div class="disclaimer" id="disc"></div>
 <div class="footer">Baobab Capital · African Markets Intelligence · Not investment advice</div>
 
@@ -907,8 +1018,131 @@ function renderBottom() {
 }
 
 async function refresh(){document.getElementById('supd').textContent='Static — build script updates data';setTimeout(()=>{document.getElementById('supd').textContent=allData.marketClose?.asOf||allData.market?.asOf||'';},2000);}
+
+// ====== SIMULATORS ======
+const BOND_YIELDS = { '2':14.50, '5':14.98, '7':16.00, '10':16.50, '15':17.59 };
+const WITHHOLDING_TAX = 0.15; // 15% on bond interest
+const BROKERAGE_FEE = 0.015; // 1.5% buy + sell
+const LUSE_LEVY = 0.001; // 0.1%
+
+// Historical annual returns for stocks (approximate)
+const STOCK_RETURNS = {
+  LASI: [0.68, 0.12, -0.05],  // LASI: 68% (2025), 12%, -5%
+  ATEL: [0.15, 0.08, 0.05],
+  ZNCO: [0.22, 0.10, 0.03],
+  CECZ: [0.10, 0.05, -0.02],
+  ZSUG: [0.18, 0.12, 0.08],
+  DCZM: [0.45, 0.20, 0.00],
+  CHIL: [0.08, 0.04, 0.01],
+  ZFCO: [0.35, 0.15, 0.10],
+  SCBL: [0.05, -0.03, -0.08],
+  ZMBF: [0.12, 0.06, -0.02]
+};
+
+function fmtK(v) { return 'K' + (v||0).toLocaleString('en-US', {minimumFractionDigits:2,maximumFractionDigits:2}); }
+function pct(v) { return (v>=0?'+':'') + (v*100).toFixed(1) + '%'; }
+
+function simBond() {
+  const amt = parseFloat(document.getElementById('bondAmt').value) || 10000;
+  const tenor = parseInt(document.getElementById('bondTenor').value) || 10;
+  const yieldPct = BOND_YIELDS[tenor] / 100;
+  
+  const annualInterest = amt * yieldPct;
+  const semiAnnual = annualInterest / 2;
+  const totalGrossInterest = annualInterest * tenor;
+  const taxPaid = totalGrossInterest * WITHHOLDING_TAX;
+  const netInterest = totalGrossInterest - taxPaid;
+  const totalReturn = amt + netInterest;
+  const annualisedReturn = (Math.pow(totalReturn/amt, 1/tenor) - 1) * 100;
+  
+  document.getElementById('bondResult').innerHTML = 
+    '<div class="sim-result-row"><span>Yield (p.a.)</span><span class="v">' + (yieldPct*100).toFixed(2) + '%</span></div>' +
+    '<div class="sim-result-row"><span>Annual Interest</span><span class="v">' + fmtK(annualInterest) + '</span></div>' +
+    '<div class="sim-result-row"><span>Semi-Annual Coupon</span><span class="v">' + fmtK(semiAnnual) + '</span></div>' +
+    '<div class="sim-result-row"><span>Gross Interest ('+tenor+'yr)</span><span class="v pos">' + fmtK(totalGrossInterest) + '</span></div>' +
+    '<div class="sim-result-row"><span>Withholding Tax (15%)</span><span class="v neg">−' + fmtK(taxPaid) + '</span></div>' +
+    '<div class="sim-total"><span>After-Tax Return</span><span class="v pos">' + fmtK(totalReturn) + '</span></div>' +
+    '<div class="sim-note">Effective annualised return: <strong>' + annualisedReturn.toFixed(2) + '%</strong> after tax</div>';
+  
+  compareReturns();
+}
+
+function simStock() {
+  const amt = parseFloat(document.getElementById('stockAmt').value) || 10000;
+  const ticker = document.getElementById('stockPick').value;
+  const period = parseInt(document.getElementById('stockPeriod').value) || 1;
+  
+  const returns = STOCK_RETURNS[ticker] || STOCK_RETURNS.LASI;
+  // Compound the annual returns for the period
+  let growthFactor = 1;
+  for (let i = 0; i < Math.min(period, returns.length); i++) {
+    growthFactor *= (1 + returns[i]);
+  }
+  // If period > available data, use last available return
+  if (period > returns.length) {
+    const lastRet = returns[returns.length-1];
+    for (let i = returns.length; i < period; i++) growthFactor *= (1 + lastRet);
+  }
+  
+  const grossValue = amt * growthFactor;
+  const fees = amt * BROKERAGE_FEE + grossValue * BROKERAGE_FEE + grossValue * LUSE_LEVY;
+  const netValue = grossValue - fees;
+  const netReturn = netValue - amt;
+  const annualisedReturn = (Math.pow(netValue/amt, 1/period) - 1) * 100;
+  
+  const returnCls = netReturn >= 0 ? 'pos' : 'neg';
+  
+  document.getElementById('stockResult').innerHTML =
+    '<div class="sim-result-row"><span>Period</span><span class="v">' + period + ' year(s)</span></div>' +
+    '<div class="sim-result-row"><span>Gross Value</span><span class="v ' + (grossValue>amt?'pos':'neg') + '">' + fmtK(grossValue) + '</span></div>' +
+    '<div class="sim-result-row"><span>Brokerage (1.5% × 2)</span><span class="v neg">−' + fmtK(amt*BROKERAGE_FEE + grossValue*BROKERAGE_FEE) + '</span></div>' +
+    '<div class="sim-result-row"><span>LuSE Levy (0.1%)</span><span class="v neg">−' + fmtK(grossValue*LUSE_LEVY) + '</span></div>' +
+    '<div class="sim-total"><span>Net Return</span><span class="v ' + returnCls + '">' + fmtK(netValue) + '</span></div>' +
+    '<div class="sim-note">' + (netReturn>=0?'Gain':'Loss') + ': <strong class="' + returnCls + '">' + (netReturn>=0?'+':'') + fmtK(netReturn) + '</strong> · Annualised: <strong>' + annualisedReturn.toFixed(2) + '%</strong></div>';
+  
+  compareReturns();
+}
+
+function compareReturns() {
+  const bondAmt = parseFloat(document.getElementById('bondAmt').value) || 10000;
+  const stockAmt = parseFloat(document.getElementById('stockAmt').value) || 10000;
+  const tenor = parseInt(document.getElementById('bondTenor').value) || 10;
+  const bondYield = BOND_YIELDS[tenor] / 100;
+  
+  const bondTotal = bondAmt + (bondAmt * bondYield * tenor * (1 - WITHHOLDING_TAX));
+  const bondRet = ((bondTotal - bondAmt) / bondAmt * 100);
+  
+  const ticker = document.getElementById('stockPick').value;
+  const period = Math.min(parseInt(document.getElementById('stockPeriod').value), parseInt(document.getElementById('bondTenor').value));
+  const returns = STOCK_RETURNS[ticker] || STOCK_RETURNS.LASI;
+  let growthFactor = 1;
+  for (let i = 0; i < Math.min(period, returns.length); i++) growthFactor *= (1 + returns[i]);
+  if (period > returns.length) { const lr = returns[returns.length-1]; for (let i = returns.length; i < period; i++) growthFactor *= (1 + lr); }
+  const stockGross = stockAmt * growthFactor;
+  const stockFees = stockAmt * BROKERAGE_FEE + stockGross * BROKERAGE_FEE + stockGross * LUSE_LEVY;
+  const stockNet = stockGross - stockFees;
+  const stockRet = ((stockNet - stockAmt) / stockAmt * 100);
+  
+  // Adjust bond to same period for fair comparison
+  const bondRetAdj = ((bondAmt + (bondAmt * bondYield * period * (1-WITHHOLDING_TAX))) - bondAmt) / bondAmt * 100;
+  
+  document.getElementById('compareBar').style.display = 'block';
+  const total = Math.abs(bondRetAdj) + Math.abs(stockRet) || 1;
+  const bondPct = Math.abs(bondRetAdj) / total * 100;
+  const stockPct = Math.abs(stockRet) / total * 100;
+  document.getElementById('barBond').style.width = bondPct + '%';
+  document.getElementById('barStock').style.width = stockPct + '%';
+  document.getElementById('legendBond').textContent = bondRetAdj.toFixed(1) + '%';
+  document.getElementById('legendStock').textContent = stockRet.toFixed(1) + '%';
+  
+  const winner = bondRetAdj > stockRet ? '📜 Bond' : '📈 Stock';
+  const delta = Math.abs(bondRetAdj - stockRet).toFixed(1);
+  const wClr = bondRetAdj > stockRet ? 'var(--gold)' : 'var(--blue)';
+  document.getElementById('compareWinner').innerHTML = '<span style="color:'+wClr+'">' + winner + ' wins</span><span class="delta" style="color:var(--muted);">by ' + delta + ' percentage points</span>';
+}
+
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal();});
-load(); setInterval(load,300000);
+load(); setInterval(load,300000); setTimeout(()=>{simBond();simStock();},500);
 </script>
 </body>
 </html>
