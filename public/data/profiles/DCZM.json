@@ -5,11 +5,27 @@
   "market": "ALT-M",
   "description": "Dot Com Zambia PLC is Zambia's first technology listing on the Lusaka Securities Exchange Alternative Market (ALT-M). The company operates as a high-volume transaction processor, primarily managing electronic toll collection systems for the National Road Fund Agency (NRFA). The company also has nascent digital services segments including eFuel and Smart Cards.",
   "financials": {
-    "revenue": {"2023": 620000000, "2024": 680000000, "2025": 665596639},
+    "revenue": {
+      "2023": 620000000,
+      "2024": 680000000,
+      "2025": 665596639
+    },
     "revenueUnit": "ZMW",
-    "grossProfit": {"2023": 19500000, "2024": 22100000, "2025": 24146752},
-    "grossMargin": {"2023": 3.1, "2024": 3.3, "2025": 3.6},
-    "netIncome": {"2023": 8500000, "2024": 10200000, "2025": 11500000},
+    "grossProfit": {
+      "2023": 19500000,
+      "2024": 22100000,
+      "2025": 24146752
+    },
+    "grossMargin": {
+      "2023": 3.1,
+      "2024": 3.3,
+      "2025": 3.6
+    },
+    "netIncome": {
+      "2023": 8500000,
+      "2024": 10200000,
+      "2025": 11500000
+    },
     "totalAssets": 98000000,
     "totalLiabilities": 35000000,
     "cashBalance": 17880242,
@@ -23,36 +39,93 @@
     "returnOnEquity": 18.3
   },
   "priceHistory": {
-    "ipo": {"date": "Dec 18, 2025", "price": 12.30},
+    "ipo": {
+      "date": "Dec 18, 2025",
+      "price": 12.3
+    },
     "day1Close": 14.54,
     "day1Gain": 18.2,
-    "peak": {"date": "Jan 26, 2026", "price": 24.50},
-    "crash": {"date": "Jan 27, 2026", "price": 22.15, "drop": 9.6},
-    "deadCatBounce": {"date": "Jan 28, 2026", "recovery": 5.6},
-    "current": {"date": "Jun 5, 2026", "price": 22.00},
+    "peak": {
+      "date": "Jan 26, 2026",
+      "price": 24.5
+    },
+    "crash": {
+      "date": "Jan 27, 2026",
+      "price": 22.15,
+      "drop": 9.6
+    },
+    "deadCatBounce": {
+      "date": "Jan 28, 2026",
+      "recovery": 5.6
+    },
+    "current": {
+      "date": "Jun 5, 2026",
+      "price": 24.6
+    },
     "priceTimeline": [
-      {"date":"Dec 18","price":14.54,"event":"Day 1 Close (+18.2%)"},
-      {"date":"Jan 10","price":18.80,"event":"Retail accumulation"},
-      {"date":"Jan 26","price":24.50,"event":"PEAK — 91% of market turnover"},
-      {"date":"Jan 27","price":22.15,"event":"Crash (-9.6% in one session)"},
-      {"date":"Jan 28","price":23.50,"event":"Dead-cat bounce (+5.6% on K28K volume)"},
-      {"date":"Feb 19","price":22.00,"event":"Liquidity evaporation (K2,732 traded)"},
-      {"date":"Mar 6","price":22.00,"event":"Forensic financial analysis published"},
-      {"date":"Jun 5","price":22.00,"event":"Trading sideways"}
+      {
+        "date": "Dec 18",
+        "price": 14.54,
+        "event": "Day 1 Close (+18.2%)"
+      },
+      {
+        "date": "Jan 10",
+        "price": 18.8,
+        "event": "Retail accumulation"
+      },
+      {
+        "date": "Jan 26",
+        "price": 24.5,
+        "event": "PEAK — 91% of market turnover"
+      },
+      {
+        "date": "Jan 27",
+        "price": 22.15,
+        "event": "Crash (-9.6% in one session)"
+      },
+      {
+        "date": "Jan 28",
+        "price": 23.5,
+        "event": "Dead-cat bounce (+5.6% on K28K volume)"
+      },
+      {
+        "date": "Feb 19",
+        "price": 22,
+        "event": "Liquidity evaporation (K2,732 traded)"
+      },
+      {
+        "date": "Mar 6",
+        "price": 22,
+        "event": "Forensic financial analysis published"
+      },
+      {
+        "date": "Jun 5",
+        "price": 22,
+        "event": "Trading sideways"
+      }
     ]
   },
   "ownership": {
     "insiders": 82.49,
     "retailFloat": 17.51,
     "topHolders": [
-      {"name": "Founders & Management", "stake": 65.0},
-      {"name": "Strategic Investors", "stake": 17.49},
-      {"name": "Public Float", "stake": 17.51}
+      {
+        "name": "Founders & Management",
+        "stake": 65
+      },
+      {
+        "name": "Strategic Investors",
+        "stake": 17.49
+      },
+      {
+        "name": "Public Float",
+        "stake": 17.51
+      }
     ]
   },
   "ipoDetails": {
     "sharesOffered": 1000000,
-    "offerPrice": 12.30,
+    "offerPrice": 12.3,
     "grossProceeds": 11070012,
     "netProceeds": 9498912,
     "subscription": 114,
@@ -62,16 +135,40 @@
     "zambianPct": 95,
     "top10Concentration": 65,
     "usesOfProceeds": [
-      {"category":"Office Relocation & Working Capital","pct":24},
-      {"category":"System Upgrades & Technology","pct":35},
-      {"category":"Product Development","pct":25},
-      {"category":"Marketing & Expansion","pct":16}
+      {
+        "category": "Office Relocation & Working Capital",
+        "pct": 24
+      },
+      {
+        "category": "System Upgrades & Technology",
+        "pct": 35
+      },
+      {
+        "category": "Product Development",
+        "pct": 25
+      },
+      {
+        "category": "Marketing & Expansion",
+        "pct": 16
+      }
     ]
   },
   "analystNotes": [
-    {"date":"Dec 18, 2025","note":"Strong debut at +18.2%. But 0.147% turnover exposes extreme illiquidity risk. Wide K14.15-K15.30 spread signals fragile price discovery.","author":"Vituli Musukuma, PhD"},
-    {"date":"Dec 23, 2025","note":"Office property search budget of ZMW 10M raises governance questions — exceeds net IPO proceeds. Three plausible explanations but clarification needed.","author":"Vituli Musukuma, PhD"},
-    {"date":"Mar 6, 2026","note":"Deep-dive forensic analysis reveals 3.6% gross margin on K665M revenue. IFRS 15 principal treatment masks low-margin toll processor. Pre-IPO dividend sweep of K5.42M. eFuel and Smart Cards segments essentially dormant.","author":"Vituli Musukuma, PhD"}
+    {
+      "date": "Dec 18, 2025",
+      "note": "Strong debut at +18.2%. But 0.147% turnover exposes extreme illiquidity risk. Wide K14.15-K15.30 spread signals fragile price discovery.",
+      "author": "Vituli Musukuma, PhD"
+    },
+    {
+      "date": "Dec 23, 2025",
+      "note": "Office property search budget of ZMW 10M raises governance questions — exceeds net IPO proceeds. Three plausible explanations but clarification needed.",
+      "author": "Vituli Musukuma, PhD"
+    },
+    {
+      "date": "Mar 6, 2026",
+      "note": "Deep-dive forensic analysis reveals 3.6% gross margin on K665M revenue. IFRS 15 principal treatment masks low-margin toll processor. Pre-IPO dividend sweep of K5.42M. eFuel and Smart Cards segments essentially dormant.",
+      "author": "Vituli Musukuma, PhD"
+    }
   ],
   "riskRating": "HIGH",
   "riskFactors": [

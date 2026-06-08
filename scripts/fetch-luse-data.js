@@ -150,6 +150,42 @@ async function scrapeMarketData() {
         }
       }
       saveJSON('companies.json', companies);
+
+      // Also update individual profile files for ticker detail pages
+      const profilesDir = path.join(DATA_DIR, 'profiles');
+      if (fs.existsSync(profilesDir)) {
+        const profileFiles = fs.readdirSync(profilesDir).filter(f => f.endsWith('.json') && !f.includes('ohlcv'));
+        for (const pf of profileFiles) {
+          const ticker = pf.replace('.json', '');
+          const co = companies.find(c => c.ticker === ticker);
+          if (!co) continue;
+          const profilePath = path.join(profilesDir, pf);
+          const profile = JSON.parse(fs.readFileSync(profilePath, 'utf8'));
+          let changed = false;
+          if (profile.priceHistory?.current?.price !== undefined && profile.priceHistory.current.price !== co.price) {
+            profile.priceHistory.current.price = co.price;
+            changed = true;
+          }
+          if (profile.lastPrice !== undefined && profile.lastPrice !== co.price) {
+            profile.lastPrice = co.price;
+            changed = true;
+          }
+          if (profile.price !== undefined && profile.price !== co.price) {
+            profile.price = co.price;
+            changed = true;
+          }
+          // Update volume from market data
+          const msStock = summary.stocks.find(s => s.ticker === ticker);
+          if (msStock && profile.volume !== undefined && profile.volume !== msStock.volume) {
+            profile.volume = msStock.volume;
+            changed = true;
+          }
+          if (changed) {
+            fs.writeFileSync(profilePath, JSON.stringify(profile, null, 2));
+            console.log(`[fetch-luse] Updated profile: ${ticker}`);
+          }
+        }
+      }
     }
 
     // --- Build market-close.json (site primary display format) ---
