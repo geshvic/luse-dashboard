@@ -77,4 +77,11 @@ if (fs.existsSync(dashboardPath)) {
   console.log('[build-static] ✓ index.html (root)');
 }
 
+// Copy logo to root for GitHub Pages
+const logoPath = path.join(PUBLIC, 'logo.png');
+if (fs.existsSync(logoPath)) {
+  fs.copyFileSync(logoPath, path.join(ROOT, 'logo.png'));
+  console.log('[build-static] ✓ logo.png (root)');
+}
+
 console.log('[build-static] ✅ Build complete — ready for GitHub Pages');
