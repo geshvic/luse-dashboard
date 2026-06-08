@@ -618,6 +618,8 @@ let allData = {}, currentFilter = 'all', chartInst = null;
 const ACCESS_HASH = '28d657d5cd993f21689047e28091ffadfae9beafeae2c9375503f326f5699a0c'; // default: Lusaka2026
 
 function checkAuth() {
+  // Login temporarily disabled — skip gate
+  return true;
   const session = localStorage.getItem('bc_session');
   if (session) {
     try {
