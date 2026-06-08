@@ -2,11 +2,16 @@
   {
     "date": "2026-06-08",
     "category": "Market",
-    "title": "LuSE Closes Flat at 25,689.97 — Sleepy Monday with Negative Breadth",
-    "summary": "The LASI closed unchanged at 25,689.97. 943 trades across 369,700 shares. Turnover ~K10.85M. Market cap K335.48B. Breadth negative: 1 advancer, 3 decliners, 16 unchanged. DCZM led decliners (-0.08% to K24.60). Trading recorded in 20 of 24 listed securities. Pre-election caution evident.",
-    "source": "MansaMarkets / LuSE Official",
-    "url": "https://www.mansamarkets.com/zambia",
-    "tickers": ["DCZM"]
+    "title": "LASI Edges Up 0.03% to 25,698.02 — Low Turnover Monday",
+    "summary": "The LASI rose 8.04 points (+0.03%) to close at 25,698.02. 967 trades across 491,799 shares. Turnover K9.77M. Market cap K333.63B. Breadth negative: 1 advancer (ZNCO +0.05), 3 decliners (CHIL -0.03, PUMA -0.01, CECZ -0.01). Trading in 20 of 24 listed securities.",
+    "source": "LuSE Official",
+    "url": "https://www.luse.co.zm/trading/market-data/",
+    "tickers": [
+      "ZNCO",
+      "CHIL",
+      "PUMA",
+      "CECZ"
+    ]
   },
   {
     "date": "2026-06-08",
@@ -24,7 +29,9 @@
     "summary": "ZCCM Investments Holdings has agreed a deal with Chinese-owned Wonderful Group Services to build a 600 megawatt coal-fired power station, addressing Zambia's energy deficit. The announcement follows the Constitutional Court judgment clearing the Mopani dispute. ZCCM-IH trades at K153.07 with PE 6.5x.",
     "source": "CNBC Africa / Reuters",
     "url": "https://www.cnbcafrica.com/2026/zambias-zccm-ih-partners-with-chinese-firm-to-build-600-mw-coal-plant",
-    "tickers": ["ZCCM-IH"]
+    "tickers": [
+      "ZCCM-IH"
+    ]
   },
   {
     "date": "2026-06-08",
@@ -33,7 +40,9 @@
     "summary": "Zambia Sugar PLC Country Managing Director Oswald Magwenzi noted that 2026 has been more challenging compared to the previous year, with the company enduring various headwinds in H1 2026. ZSUG closed at K69.09. PE 19.58x, dividend yield 1.59%, FCF negative at -K111.9M.",
     "source": "Zambian Business Times",
     "url": "https://zambianbusinesstimes.com/",
-    "tickers": ["ZSUG"]
+    "tickers": [
+      "ZSUG"
+    ]
   },
   {
     "date": "2026-06-08",
@@ -42,7 +51,9 @@
     "summary": "Money Acumen Advisory announced the intention of OneSquareK Property Development Plc (OSK) to list on the Alternative Market of the Lusaka Securities Exchange. Following DCZM's December 2025 debut, OSK would be the second ALT-M listing — described as 'a very different bet' from Dot Com Zambia.",
     "source": "African Markets",
     "url": "https://www.african-markets.com/en/stock-markets/luse",
-    "tickers": ["DCZM"]
+    "tickers": [
+      "DCZM"
+    ]
   },
   {
     "date": "2026-06-08",
@@ -64,11 +75,18 @@
   },
   {
     "date": "2026-06-05",
-    "title": "LASI Closes Flat at 25,689.97 — Low Activity Session",
-    "source": "LuSE Daily Summary",
     "category": "Market",
-    "tickers": [],
-    "summary": "The Lusaka All Share Index closed unchanged. 1,025 trades across the board with ATEL dominating value traded at ZMW 8.12M. 8 listed stocks recorded zero shares traded."
+    "title": "LASI Inches Up 0.96 pts to 25,689.97 — Light Friday Session",
+    "summary": "The Lusaka All Share Index edged up 0.96 points to 25,689.97. 1,025 trades with ATEL dominating value at ZMW 8.12M. ZFCO led gainers (+0.31%). NATB, DCZM, CHIL led decliners.",
+    "source": "LuSE Daily Summary",
+    "url": "https://afx.kwayisi.org/luse/",
+    "tickers": [
+      "ATEL",
+      "ZFCO",
+      "NATB",
+      "DCZM",
+      "CHIL"
+    ]
   },
   {
     "date": "2026-06-04",
@@ -83,7 +101,9 @@
     "title": "Zambia Posts Record Bumper Harvest — Maize Output Exceeds 4M Tonnes",
     "source": "Zambia Daily Mail",
     "category": "Economy",
-    "tickers": ["ZSUG"],
+    "tickers": [
+      "ZSUG"
+    ],
     "summary": "The Ministry of Agriculture confirmed a record maize harvest exceeding 4 million metric tonnes for the 2025/2026 season, driven by favorable rains and expanded FISP coverage."
   },
   {
@@ -91,7 +111,9 @@
     "title": "Klapton Reinsurance IPO Oversubscribed — Lists March 2026",
     "source": "LuSE Announcement",
     "category": "IPO",
-    "tickers": ["KLAPTON"],
+    "tickers": [
+      "KLAPTON"
+    ],
     "summary": "Klapton Reinsurance confirmed its IPO was oversubscribed. The company, with K2.97B in gross written premiums and a Caa1 Moody's rating, is expected to list on LuSE Main Board this month."
   },
   {
@@ -99,7 +121,10 @@
     "title": "Copper Prices Hold Above $10,000/tonne on AI Data Center Demand",
     "source": "Reuters",
     "category": "Commodities",
-    "tickers": ["CECZ", "ZCCM-IH"],
+    "tickers": [
+      "CECZ",
+      "ZCCM-IH"
+    ],
     "summary": "Copper prices continue to trade above $10,000/tonne, supported by AI data center buildout and EV manufacturing demand. Zambia's 2025 output hit a record 890,346 metric tonnes."
   },
   {
