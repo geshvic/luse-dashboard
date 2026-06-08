@@ -1,43 +1,51 @@
 {
   "asOf": "2026-06-08",
   "marketClose": {
-    "lasiIndex": 25689.97,
-    "lasiChange": 0,
-    "lasiChangePct": 0,
-    "totalTrades": 943,
-    "totalVolume": 369700,
-    "totalValue": 10850000,
-    "marketCapTotal": 335.48,
-    "marketCapExclShoprite": 145.4,
+    "lasiIndex": 25698.02,
+    "lasiChange": 8.04,
+    "lasiChangePct": 0.03,
+    "totalTrades": 967,
+    "totalVolume": 491799,
+    "totalValue": 9768567.87,
+    "marketCapTotal": 333.63,
+    "marketCapExclShoprite": 143.56,
     "marketCapUnit": "Billion ZMW",
-    "sessionSummary": "943 trades across 369,700 shares. Turnover ~K10.85 million. LASI flat at 25,689.97. Breadth negative: 1 advancer, 3 decliners, 16 unchanged. DCZM led decliners (-0.08% to K24.60). Trading in 20 of 24 listed securities."
+    "sessionSummary": "967 trades across 491,799 shares. Turnover K9.77 million. LASI up 0.03% to 25,698.02. Breadth negative: 1 advancer, 3 decliners, 16 unchanged. ZFCO led gainers (+0.31% to K6.53). NATB, DCZM, CHIL led decliners."
   },
   "gainers": [
     {
-      "ticker": "N/A",
-      "name": "1 advancer",
-      "price": "TBD",
-      "change": "TBD",
-      "changePct": "TBD",
-      "volume": "TBD"
+      "ticker": "ZFCO",
+      "name": "Zambia Forestry",
+      "price": 6.53,
+      "change": 0.02,
+      "changePct": 0.31,
+      "volume": 170
     }
   ],
   "decliners": [
+    {
+      "ticker": "NATB",
+      "name": "National Breweries",
+      "price": 2.85,
+      "change": -0.01,
+      "changePct": -0.35,
+      "volume": 3054
+    },
     {
       "ticker": "DCZM",
       "name": "Dot Com Zambia",
       "price": 24.6,
       "change": -0.02,
       "changePct": -0.08,
-      "volume": 15500
+      "volume": 6905
     },
     {
-      "ticker": "N/A",
-      "name": "2 additional decliners",
-      "price": "TBD",
-      "change": "TBD",
-      "changePct": "TBD",
-      "volume": "TBD"
+      "ticker": "CHIL",
+      "name": "Chilanga Cement",
+      "price": 66.67,
+      "change": -0.03,
+      "changePct": -0.04,
+      "volume": 1437
     }
   ],
   "mostActiveByValue": [
@@ -45,41 +53,25 @@
       "ticker": "ATEL",
       "name": "Airtel Zambia",
       "price": 169.87,
-      "volume": 22000,
-      "value": 3737140,
-      "trades": 38
-    },
-    {
-      "ticker": "ZSUG",
-      "name": "Zambia Sugar",
-      "price": 69.09,
-      "volume": 41000,
-      "value": 2832690,
-      "trades": 36
+      "volume": 23737,
+      "value": 4032203.92,
+      "trades": 40
     },
     {
       "ticker": "BATA",
       "name": "Zambia Bata",
       "price": 9,
-      "volume": 175000,
-      "value": 1575000,
-      "trades": 45
+      "volume": 189048,
+      "value": 1701433.58,
+      "trades": 48
     },
     {
-      "ticker": "DCZM",
-      "name": "Dot Com Zambia",
-      "price": 24.6,
-      "volume": 15500,
-      "value": 381300,
-      "trades": 32
-    },
-    {
-      "ticker": "CECZ",
-      "name": "Copperbelt Energy",
-      "price": 16.87,
-      "volume": 6800,
-      "value": 114648,
-      "trades": 110
+      "ticker": "ZSUG",
+      "name": "Zambia Sugar",
+      "price": 69.09,
+      "volume": 635,
+      "value": 43869.15,
+      "trades": 36
     }
   ],
   "analysis": {
@@ -130,5 +122,31 @@
       "DCZM now declined 3 consecutive sessions — potential sentiment shift in ALT-M names"
     ],
     "authorNote": "Based on MansaMarkets live data and official LuSE daily summary for June 8, 2026. Stock-level granularity from stockanalysis.com (June 5 close) supplemented with June 8 session summary. This analysis is for informational purposes only and does not constitute investment advice."
-  }
+  },
+  "mostActiveByVolume": [
+    {
+      "ticker": "BATA",
+      "name": "Zambia Bata",
+      "price": 9,
+      "volume": 189048,
+      "value": 1701433.58,
+      "trades": 48
+    },
+    {
+      "ticker": "CECZ",
+      "name": "Copperbelt Energy",
+      "price": 16.86,
+      "volume": 7096,
+      "value": 119642.88,
+      "trades": 118
+    },
+    {
+      "ticker": "ZNCO",
+      "name": "Zanaco",
+      "price": 9.62,
+      "volume": 76799,
+      "value": 739202.38,
+      "trades": 118
+    }
+  ]
 }

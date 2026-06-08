@@ -1,12 +1,12 @@
 {
   "asOf": "2026-06-08",
-  "marketCap": 335.48,
+  "marketCap": 333.63,
   "marketCapBillion": true,
-  "lasiIndex": 25689.97,
+  "lasiIndex": 25698.02,
   "summary": {
-    "trades": 943,
-    "volume": 369700,
-    "value": 10850000,
+    "trades": 967,
+    "volume": 491799,
+    "value": 9768567.87,
     "valueCurrency": "ZMW"
   },
   "stocks": [
@@ -49,8 +49,8 @@
     {
       "ticker": "CECZ",
       "name": "CECZ",
-      "price": 16.87,
-      "change": 0,
+      "price": 16.86,
+      "change": -0.01,
       "trades": 110,
       "volume": 6800,
       "value": 114648
@@ -58,8 +58,8 @@
     {
       "ticker": "CHIL",
       "name": "CHIL",
-      "price": 66.7,
-      "change": -0.01,
+      "price": 66.67,
+      "change": -0.03,
       "trades": 30,
       "volume": 1300,
       "value": 86671
@@ -94,8 +94,8 @@
     {
       "ticker": "PUMA",
       "name": "PUMA",
-      "price": 42.94,
-      "change": 0,
+      "price": 42.93,
+      "change": -0.01,
       "trades": 48,
       "volume": 3200,
       "value": 9376
@@ -157,7 +157,7 @@
     {
       "ticker": "ZMFA",
       "name": "ZMFA",
-      "price": 2,
+      "price": 52,
       "change": 0,
       "trades": 4,
       "volume": 20,
@@ -175,8 +175,8 @@
     {
       "ticker": "ZNCO",
       "name": "ZNCO",
-      "price": 9.57,
-      "change": 0,
+      "price": 9.62,
+      "change": 0.05,
       "trades": 108,
       "volume": 7600,
       "value": 73112
@@ -220,8 +220,8 @@
     {
       "ticker": "CCAF",
       "name": "CCAF",
-      "price": 0.75,
-      "change": null,
+      "price": 0.76,
+      "change": 0.01,
       "trades": null,
       "volume": null,
       "value": null
