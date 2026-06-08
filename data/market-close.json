@@ -27,17 +27,25 @@
       "ticker": "NATB",
       "name": "National Breweries",
       "price": 2.85,
+      "change": 0,
+      "changePct": 0,
+      "volume": 1243
+    },
+    {
+      "ticker": "PUMA",
+      "name": "Puma Energy",
+      "price": 2.93,
       "change": -0.01,
-      "changePct": -0.35,
-      "volume": 3054
+      "changePct": -0.34,
+      "volume": 3486
     },
     {
       "ticker": "DCZM",
       "name": "Dot Com Zambia",
       "price": 24.6,
-      "change": -0.02,
-      "changePct": -0.08,
-      "volume": 6905
+      "change": 0,
+      "changePct": 0,
+      "volume": 16937
     },
     {
       "ticker": "CHIL",
