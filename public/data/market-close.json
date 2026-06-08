@@ -8,153 +8,128 @@
     "totalVolume": 491799,
     "totalValue": 9768567.87,
     "marketCapTotal": 333.63,
-    "marketCapExclShoprite": 143.56,
+    "marketCapExclShoprite": 143.46,
     "marketCapUnit": "Billion ZMW",
-    "sessionSummary": "967 trades across 491,799 shares. Turnover K9.77 million. LASI up 0.03% to 25,698.02. Breadth negative: 1 advancer, 3 decliners, 16 unchanged. ZFCO led gainers (+0.31% to K6.53). NATB, DCZM, CHIL led decliners."
+    "sessionSummary": "967 trades across 491,799 shares. Turnover K9.77M. LASI up 0.03% to 25,698.02. Breadth: 1 advancer, 3 decliners, 19 unchanged."
   },
   "gainers": [
     {
-      "ticker": "ZFCO",
-      "name": "Zambia Forestry",
-      "price": 6.53,
-      "change": 0.02,
-      "changePct": 0.31,
-      "volume": 170
+      "ticker": "ZNCO",
+      "name": "ZNCO",
+      "price": 9.62,
+      "change": 0.05,
+      "changePct": 0.52,
+      "volume": 8381
     }
   ],
   "decliners": [
     {
-      "ticker": "NATB",
-      "name": "National Breweries",
-      "price": 2.85,
-      "change": 0,
-      "changePct": 0,
-      "volume": 1243
-    },
-    {
-      "ticker": "PUMA",
-      "name": "Puma Energy",
-      "price": 2.93,
+      "ticker": "CECZ",
+      "name": "CECZ",
+      "price": 16.86,
       "change": -0.01,
-      "changePct": -0.34,
-      "volume": 3486
-    },
-    {
-      "ticker": "DCZM",
-      "name": "Dot Com Zambia",
-      "price": 24.6,
-      "change": 0,
-      "changePct": 0,
-      "volume": 16937
+      "changePct": -0.06,
+      "volume": 7096
     },
     {
       "ticker": "CHIL",
-      "name": "Chilanga Cement",
+      "name": "CHIL",
       "price": 66.67,
       "change": -0.03,
       "changePct": -0.04,
       "volume": 1437
+    },
+    {
+      "ticker": "PUMA",
+      "name": "PUMA",
+      "price": 2.93,
+      "change": -0.01,
+      "changePct": -0.34,
+      "volume": 3486
     }
   ],
   "mostActiveByValue": [
     {
       "ticker": "ATEL",
-      "name": "Airtel Zambia",
+      "name": "ATEL",
       "price": 169.87,
       "volume": 23737,
       "value": 4032203.92,
       "trades": 40
     },
     {
+      "ticker": "ZSUG",
+      "name": "ZSUG",
+      "price": 69.09,
+      "volume": 44495,
+      "value": 3074158.93,
+      "trades": 39
+    },
+    {
       "ticker": "BATA",
-      "name": "Zambia Bata",
+      "name": "BATA",
       "price": 9,
       "volume": 189048,
       "value": 1701433.58,
       "trades": 48
     },
     {
-      "ticker": "ZSUG",
-      "name": "Zambia Sugar",
-      "price": 69.09,
-      "volume": 635,
-      "value": 43869.15,
-      "trades": 36
-    }
-  ],
-  "analysis": {
-    "marketCondition": "LOW ACTIVITY - FLAT",
-    "marketConditionDetail": "The LASI closed unchanged at 25,689.97 for the second consecutive session. Market cap rose slightly to K335.48 billion (K145.4 billion excluding Shoprite). Negative breadth with 1 advancer vs 3 decliners. Activity concentrated in ATEL, ZSUG, and BATA. DCZM continued its slide (-0.08%). Low turnover of K10.85 million across 369,700 shares — a sleepy Monday session typical of pre-election caution.",
-    "observations": [
-      {
-        "type": "watch",
-        "ticker": "DCZM",
-        "title": "DCZM — Continued Decline, Now 3 Sessions of Losses",
-        "detail": "Dot Com Zambia fell another 0.08% to K24.60, marking its third consecutive declining session. At K24.60 with PE 36.42x and 2.93% gross margins, the stock remains priced on narrative, not fundamentals. FY2025 revenue of K665.6M yielded only K6.75M net profit (1.01% margin). eFuel and Smart Cards segments near-zero revenue. Caution warranted.",
-        "stance": "AVOID / WAIT FOR EARNINGS (Jun 15)"
-      },
-      {
-        "type": "watch",
-        "ticker": "ATEL",
-        "title": "ATEL — Still the Liquidity Anchor",
-        "detail": "Airtel Zambia accounted for ~34% of total value traded at K3.74M. At K169.87 with PE 10.02x and 7.06% dividend yield (K11.99 DPS), it remains LuSE's most liquid and institutionally-owned counter. FY2025 revenue K8.95B, net income K1.76B. Ex-div date was May 6. Strong fundamentals but beta -0.18 suggests low correlation with broader moves.",
-        "stance": "HOLD / DIVIDEND PLAY"
-      },
-      {
-        "type": "opportunity",
-        "ticker": "ZNCO",
-        "title": "ZNCO — Deep Value Banking at PE 6.87x",
-        "detail": "Zanaco closed at K9.57 (stockanalysis.com) / K9.62 (LuSE sheet). PE 6.87x, dividend yield 4.58%, 7 consecutive years of dividend growth. Revenue K6.35B, net income K2.01B (31.65% margin). ROE 31.58%. The discount to intrinsic value remains compelling in a post-restructuring Zambia.",
-        "stance": "ACCUMULATE"
-      },
-      {
-        "type": "caution",
-        "ticker": "ZSUG",
-        "title": "ZSUG — K69.09 on Thin Float, 2026 Headwinds",
-        "detail": "Zambia Sugar MD Oswald Magwenzi noted 2026 is 'more challenging' than prior year. At K69.09 with PE 19.58x and 1.59% dividend yield, valuation looks stretched. 75% held by ABF leaves negligible free float. FCF negative at -K111.9M. Great company, terrible trading stock.",
-        "stance": "AVOID FOR TRADING"
-      },
-      {
-        "type": "opportunity",
-        "ticker": "ZCCM-IH",
-        "title": "ZCCM-IH — Strategic Moves Accelerating",
-        "detail": "At K153.07 with PE 6.5x, ZCCM-IH is the cheapest mining play on LuSE. Recent developments: (1) 600MW coal plant deal with Wonderful Group announced Jun 1, (2) Constitutional Court judgment clearing Mopani dispute, (3) Strategic review of Mopani stake ongoing. Copper above $10,000/tonne supports thesis.",
-        "stance": "ACCUMULATE ON WEAKNESS"
-      }
-    ],
-    "riskFlags": [
-      "K190B of K335.48B market cap is Shoprite Holdings — only K145.4B in domestic Zambian equities",
-      "4 stocks recorded ZERO shares traded (SHOP, FARM, REIZUSD, and potentially INDO/PRIM/ENRG)",
-      "Government bond yields compete aggressively with equity returns at 13.5% MPR",
-      "August 2026 elections create policy uncertainty — fiscal expansion risk",
-      "DCZM now declined 3 consecutive sessions — potential sentiment shift in ALT-M names"
-    ],
-    "authorNote": "Based on MansaMarkets live data and official LuSE daily summary for June 8, 2026. Stock-level granularity from stockanalysis.com (June 5 close) supplemented with June 8 session summary. This analysis is for informational purposes only and does not constitute investment advice."
-  },
-  "mostActiveByVolume": [
-    {
-      "ticker": "BATA",
-      "name": "Zambia Bata",
-      "price": 9,
-      "volume": 189048,
-      "value": 1701433.58,
-      "trades": 48
+      "ticker": "DCZM",
+      "name": "DCZM",
+      "price": 24.6,
+      "volume": 16937,
+      "value": 416651.36,
+      "trades": 34
     },
     {
       "ticker": "CECZ",
-      "name": "Copperbelt Energy",
+      "name": "CECZ",
       "price": 16.86,
       "volume": 7096,
       "value": 119642.88,
       "trades": 118
+    }
+  ],
+  "mostActiveByVolume": [
+    {
+      "ticker": "BATA",
+      "name": "BATA",
+      "price": 9,
+      "volume": 189048,
+      "value": 1701433.58,
+      "trades": 48
     },
     {
-      "ticker": "ZNCO",
-      "name": "Zanaco",
-      "price": 9.62,
-      "volume": 76799,
-      "value": 739202.38,
-      "trades": 118
+      "ticker": "KLRE",
+      "name": "KLRE",
+      "price": 0.35,
+      "volume": 161807,
+      "value": 56632.45,
+      "trades": 148
+    },
+    {
+      "ticker": "ZSUG",
+      "name": "ZSUG",
+      "price": 69.09,
+      "volume": 44495,
+      "value": 3074158.93,
+      "trades": 39
+    },
+    {
+      "ticker": "ATEL",
+      "name": "ATEL",
+      "price": 169.87,
+      "volume": 23737,
+      "value": 4032203.92,
+      "trades": 40
+    },
+    {
+      "ticker": "DCZM",
+      "name": "DCZM",
+      "price": 24.6,
+      "volume": 16937,
+      "value": 416651.36,
+      "trades": 34
     }
   ]
 }

@@ -145,11 +145,58 @@ async function scrapeMarketData() {
         const co = companies.find(c => c.ticker === stock.ticker);
         if (co) {
           co.price = stock.price;
-          co.volume = stock.volume || co.volume;
+          if (stock.change !== undefined && !isNaN(stock.change)) co.change = stock.change;
+          if (stock.volume !== undefined) co.volume = stock.volume;
         }
       }
       saveJSON('companies.json', companies);
     }
+
+    // --- Build market-close.json (site primary display format) ---
+    const lasiChangeMatch = bodyText.match(/Change\s*\+?([\d.]+)/i);
+    const lasiPctMatch = bodyText.match(/% Change\s*\+?([\d.]+)/i);
+    const capMatch = bodyText.match(/capitalization of\s*K?([\d,]+(?:\.\d+)?)/i);
+    const capExclMatch = bodyText.match(/excluding\s*Shoprite[^K]*K?([\d,]+(?:\.\d+)?)/i);
+
+    const lasiChange = lasiChangeMatch ? parseFloat(lasiChangeMatch[1]) : 0;
+    const lasiChangePct = lasiPctMatch ? parseFloat(lasiPctMatch[1]) : 0;
+    const marketCapTotal = capMatch ? parseFloat(capMatch[1].replace(/,/g, '')) / 1e9 : (lasi || 0) * 0.013;
+    const marketCapExcl = capExclMatch ? parseFloat(capExclMatch[1].replace(/,/g, '')) / 1e9 : marketCapTotal * 0.43;
+
+    const gainers = stocks.filter(s => s.change > 0).map(s => ({
+      ticker: s.ticker, name: s.ticker, price: s.price, change: s.change,
+      changePct: s.price ? parseFloat(((s.change / (s.price - s.change)) * 100).toFixed(2)) : 0,
+      volume: s.volume
+    }));
+    const decliners = stocks.filter(s => s.change < 0).map(s => ({
+      ticker: s.ticker, name: s.ticker, price: s.price, change: s.change,
+      changePct: s.price ? parseFloat(((s.change / (s.price - s.change)) * 100).toFixed(2)) : 0,
+      volume: s.volume
+    }));
+
+    const byValue = [...stocks].filter(s => s.value > 0).sort((a,b) => b.value - a.value).slice(0,5)
+      .map(s => ({ ticker: s.ticker, name: s.ticker, price: s.price, volume: s.volume, value: s.value, trades: s.trades }));
+    const byVolume = [...stocks].filter(s => s.volume > 0).sort((a,b) => b.volume - a.volume).slice(0,5)
+      .map(s => ({ ticker: s.ticker, name: s.ticker, price: s.price, volume: s.volume, value: s.value, trades: s.trades }));
+
+    const advCount = gainers.length;
+    const decCount = decliners.length;
+    const mktClose = {
+      asOf: todayStr(),
+      marketClose: {
+        lasiIndex: lasi || 0, lasiChange, lasiChangePct,
+        totalTrades: summary.summary.trades, totalVolume: summary.summary.volume,
+        totalValue: summary.summary.value, marketCapTotal: parseFloat(marketCapTotal.toFixed(2)),
+        marketCapExclShoprite: parseFloat(marketCapExcl.toFixed(2)), marketCapUnit: 'Billion ZMW',
+        sessionSummary: `${summary.summary.trades} trades across ${summary.summary.volume.toLocaleString()} shares. Turnover K${(summary.summary.value/1e6).toFixed(2)}M. LASI ${lasiChangePct >= 0 ? 'up' : 'down'} ${Math.abs(lasiChangePct)}% to ${lasi?.toLocaleString()}. Breadth: ${advCount} advancer${advCount!==1?'s':''}, ${decCount} decliner${decCount!==1?'s':''}, ${stocks.length - advCount - decCount} unchanged.`
+      },
+      gainers: gainers.length ? gainers : [{ ticker: 'N/A', name: 'No gainers', price: 0, change: 0, changePct: 0, volume: 0 }],
+      decliners: decliners.length ? decliners : [{ ticker: 'N/A', name: 'No decliners', price: 0, change: 0, changePct: 0, volume: 0 }],
+      mostActiveByValue: byValue,
+      mostActiveByVolume: byVolume
+    };
+    saveJSON('market-close.json', mktClose);
+    console.log(`[fetch-luse] market-close.json — ${gainers.length} gainers, ${decliners.length} decliners`);
 
     // Save daily snapshot
     const historyDir = path.join(DATA_DIR, 'history', todayStr());
