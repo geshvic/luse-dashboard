@@ -605,8 +605,8 @@ async function load() {
     sensData = allData.sens || [];
     renderTicker(newsData);
     renderNews();
-    renderSens();
-    if (typeof initScreener === 'function') initScreener();
+    try { renderSens(); } catch(e) {}
+    try { if (typeof initScreener === 'function') initScreener(); } catch(e) {}
     render();
     document.getElementById('supd').textContent = allData.marketClose?.asOf || allData.market?.asOf || '';
   } catch(e) {
@@ -1141,7 +1141,9 @@ function renderNews() {
 function renderSens() {
   let items = sensData;
   if (sensFilter !== 'all') items = items.filter(s => s.type === sensFilter);
-  document.getElementById('sensList').innerHTML = items.slice(0, 24).map(s => {
+  const list = document.getElementById('sensList');
+  if (!list) return;
+  list.innerHTML = items.slice(0, 24).map(s => {
     const typeClass = s.type.replace(/[^a-zA-Z0-9]/g, '_');
     return '<div class="sens-item type-' + typeClass + '">' +
       '<div class="s-date">' + s.date + '<span class="s-type s-type-' + typeClass + '">' + s.type + '</span></div>' +
