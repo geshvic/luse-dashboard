@@ -631,8 +631,23 @@ function renderCurrency() {
 function renderCommodities() {
   const comms = allData.commodities;
   if (!comms || !comms.length) return '';
-  const fmtPrice = (v, u) => {
-    if (u.includes('USD')) return '
+  const fmtPrice = function(v, u) {
+    if (u.indexOf('USD') >= 0) return '$' + Number(v).toLocaleString();
+    return 'K' + Number(v).toLocaleString();
+  };
+  let r = '<div class="commodity-row"><div class="commodity-grid">';
+  comms.forEach(function(c) {
+    var cls = c.changePct > 0 ? 'up' : c.changePct < 0 ? 'down' : '';
+    var arrow = c.changePct > 0 ? '▲' : c.changePct < 0 ? '▼' : '—';
+    r += '<div class="commodity-item"><span class="cm-icon">' + c.icon + '</span> <span class="cm-name">' + c.name + '</span><br><span class="cm-price">' + fmtPrice(c.price, c.unit) + '</span><br><span class="cm-zmw">' + (c.zmwValue ? 'K' + c.zmwValue.toLocaleString() : '') + '</span><br><span class="cm-move ' + cls + '">' + arrow + ' ' + Math.abs(c.changePct).toFixed(1) + '%</span></div>';
+  });
+  r += '</div><div style="font-size:0.52rem;color:var(--muted);margin-top:0.3rem;line-height:1.3">';
+  comms.forEach(function(c) { r += '<strong>' + c.name + '</strong>: ' + c.note + ' · '; });
+  r += '</div></div>';
+  return r;
+}
+
+function renderHero() {
   const mc = allData.marketClose?.marketClose; if (!mc) { document.getElementById('heroMarketClose').innerHTML = ''; return; }
   const condClass = mc.lasiChange>0?'condition-up':mc.lasiChange<0?'condition-down':'condition-flat';
   const ct = mc.lasiChange>0?'▲ UP':mc.lasiChange<0?'▼ DOWN':'— FLAT';
