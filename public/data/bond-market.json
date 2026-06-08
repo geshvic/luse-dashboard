@@ -10,8 +10,8 @@
       "oversubscription": 2.2,
       "yields": {
         "2yr": 14.5,
-        "5yr": 16.10,
-        "7yr": 16.0,
+        "5yr": 16.1,
+        "7yr": 16,
         "10yr": 17.19,
         "15yr": 18.79
       }
@@ -38,19 +38,25 @@
       "oversubscription": 0.78,
       "subscriptionRate": 78,
       "yields": {
-        "7yr": 16.0,
+        "7yr": 16,
         "15yr": 17.59
       },
       "detail": {
-        "7yr": {"bids": 2933, "subscription": 111},
-        "15yr": {"bids": 347, "subscription": 49}
+        "7yr": {
+          "bids": 2933,
+          "subscription": 111
+        },
+        "15yr": {
+          "bids": 347,
+          "subscription": 49
+        }
       }
     }
   ],
   "fiscalYear2026": {
     "grossDomesticBorrowing": 106,
     "refinancing": 84.4,
-    "domesticDebtInterest": 52.0,
+    "domesticDebtInterest": 52,
     "budgetDeficit": 21.6,
     "totalBudget": 253.1,
     "inBillions": true
@@ -59,6 +65,37 @@
     "from": "Jan 23",
     "to": "Feb 13",
     "5yr": -1.12,
-    "15yr": -1.20
+    "15yr": -1.2
+  },
+  "treasuryBills": {
+    "asOf": "2026-05-28",
+    "tenderNo": "11/2026",
+    "bills": [
+      {
+        "period": "91 Days",
+        "isin": "ZM3000013919",
+        "discountRate": 10.232,
+        "yield": 10.5
+      },
+      {
+        "period": "182 Days",
+        "isin": "ZM3000013927",
+        "discountRate": 10.428,
+        "yield": 11
+      },
+      {
+        "period": "273 Days",
+        "isin": "ZM3000013935",
+        "discountRate": 10.3768,
+        "yield": 11.25
+      },
+      {
+        "period": "364 Days",
+        "isin": "ZM3000013943",
+        "discountRate": 11.1145,
+        "yield": 12.5
+      }
+    ],
+    "source": "boz.zm/markets-securities/treasury-bills"
   }
 }

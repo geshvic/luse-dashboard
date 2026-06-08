@@ -418,11 +418,16 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
       <div class="sim-row">
         <label>Tenor</label>
         <select id="bondTenor" onchange="simBond()">
-          <option value="2">2-Year (14.50%)</option>
-          <option value="5">5-Year (14.98%)</option>
-          <option value="7">7-Year (16.00%)</option>
-          <option value="10" selected>10-Year (16.50%)</option>
-          <option value="15">15-Year (17.59%)</option>
+          <option value="91d">91-Day T-Bill (10.50%)</option>
+          <option value="182d">182-Day T-Bill (11.00%)</option>
+          <option value="273d">273-Day T-Bill (11.25%)</option>
+          <option value="364d">364-Day T-Bill (12.50%)</option>
+          <option value="2yr" disabled>── Government Bonds ──</option>
+          <option value="2yr">2-Year Bond (14.50%)</option>
+          <option value="5yr">5-Year Bond (14.98%)</option>
+          <option value="7yr">7-Year Bond (16.00%)</option>
+          <option value="10yr" selected>10-Year Bond (16.50%)</option>
+          <option value="15yr">15-Year Bond (17.59%)</option>
         </select>
       </div>
       <div class="sim-result" id="bondResult"></div>
@@ -1012,15 +1017,45 @@ function renderBottom() {
   const sd = allData.market?.spotlightData;
   let s = '<div class="card"><h3>🔦 Spotlight Tracker</h3>';
   if(sd){s+='<div class="spotlight-grid">';sd.dates.forEach((d,i)=>{s+='<div class="spotlight-day"><div class="day">'+d+'</div><div class="pct" style="color:var(--gold)">'+sd.turnoverShare[i]+'%</div><div class="sector">'+sd.tickers[i]+'·'+sd.sectors[i]+'</div></div>';});s+='</div><div class="note">📌 "Traveling circus" — liquidity concentrates on one stock per day.</div>';}s+='</div>';
-  const b = allData.bonds; let bd = '<div class="card"><h3>📜 Bond Yields</h3>';
-  if(b?.auctions?.length){bd+='<table class="yield-table"><tr><th>Tenor</th><th>Jan 23</th><th>Feb 13</th><th>Δ</th></tr>';['2yr','5yr','7yr','10yr','15yr'].forEach(t=>{const j=b.auctions[0].yields[t],f=b.auctions[1]?.yields[t];if(j!=null&&f!=null){const d=(f-j).toFixed(0);bd+='<tr><td>'+t.replace('yr','-Year')+'</td><td>'+j.toFixed(2)+'%</td><td>'+f.toFixed(2)+'%</td><td style="color:'+(d<0?'var(--green)':'var(--red)')+'">'+(d>0?'+':'')+d+' bps</td></tr>';}});bd+='</table>';}bd+='</div>';
+  const b = allData.bonds; 
+  let bd = '<div class="card"><h3>📜 Bond & T-Bill Yields</h3>';
+  
+  // Government Bonds
+  if(b?.auctions?.length){
+    bd+='<div style="font-size:0.65rem;color:var(--gold);margin-bottom:0.3rem;font-weight:600;">Government Bonds</div>';
+    bd+='<table class="yield-table" style="margin-bottom:0.75rem;"><tr><th>Tenor</th><th>Jan 23</th><th>Feb 13</th><th>Δ</th></tr>';
+    ['2yr','5yr','7yr','10yr','15yr'].forEach(t=>{
+      const j=b.auctions[0].yields[t],f=b.auctions[1]?.yields[t];
+      if(j!=null&&f!=null){
+        const d=(f-j).toFixed(0);
+        bd+='<tr><td>'+t.replace('yr','-Year')+'</td><td>'+j.toFixed(2)+'%</td><td>'+f.toFixed(2)+'%</td><td style="color:'+(d<0?'var(--green)':'var(--red)')+'">'+(d>0?'+':'')+d+' bps</td></tr>';
+      }
+    });
+    bd+='</table>';
+  }
+  
+  // Treasury Bills
+  if(b?.treasuryBills?.bills?.length){
+    const tb = b.treasuryBills;
+    bd+='<div style="font-size:0.65rem;color:var(--gold);margin-bottom:0.3rem;font-weight:600;">Treasury Bills · '+tb.asOf+'</div>';
+    bd+='<table class="yield-table"><tr><th>Tenor</th><th>Discount</th><th>Yield</th><th>ISIN</th></tr>';
+    tb.bills.forEach(r=>{
+      bd+='<tr><td>'+r.period+'</td><td>'+r.discountRate+'%</td><td style="color:var(--green);font-weight:600;">'+r.yield+'%</td><td style="font-size:0.6rem;">'+r.isin+'</td></tr>';
+    });
+    bd+='</table>';
+  }
+  bd+='<div class="note" style="margin-top:0.4rem;">Source: <a href="https://www.boz.zm/markets-securities/treasury-bills" target="_blank" style="color:var(--blue);">Bank of Zambia</a></div>';
+  bd+='</div>';
   document.getElementById('bottom').innerHTML = s+bd;
 }
 
 async function refresh(){document.getElementById('supd').textContent='Static — build script updates data';setTimeout(()=>{document.getElementById('supd').textContent=allData.marketClose?.asOf||allData.market?.asOf||'';},2000);}
 
 // ====== SIMULATORS ======
-const BOND_YIELDS = { '2':14.50, '5':14.98, '7':16.00, '10':16.50, '15':17.59 };
+const BOND_YIELDS = { 
+  '91d':10.50, '182d':11.00, '273d':11.25, '364d':12.50,
+  '2yr':14.50, '5yr':14.98, '7yr':16.00, '10yr':16.50, '15yr':17.59 
+};
 const WITHHOLDING_TAX = 0.15; // 15% on bond interest
 const BROKERAGE_FEE = 0.015; // 1.5% buy + sell
 const LUSE_LEVY = 0.001; // 0.1%
@@ -1044,26 +1079,61 @@ function pct(v) { return (v>=0?'+':'') + (v*100).toFixed(1) + '%'; }
 
 function simBond() {
   const amt = parseFloat(document.getElementById('bondAmt').value) || 10000;
-  const tenor = parseInt(document.getElementById('bondTenor').value) || 10;
-  const yieldPct = BOND_YIELDS[tenor] / 100;
+  const tenorKey = document.getElementById('bondTenor').value;
+  const yieldPct = BOND_YIELDS[tenorKey] / 100;
+  const isTBill = tenorKey.endsWith('d');
   
-  const annualInterest = amt * yieldPct;
-  const semiAnnual = annualInterest / 2;
-  const totalGrossInterest = annualInterest * tenor;
-  const taxPaid = totalGrossInterest * WITHHOLDING_TAX;
-  const netInterest = totalGrossInterest - taxPaid;
-  const totalReturn = amt + netInterest;
-  const annualisedReturn = (Math.pow(totalReturn/amt, 1/tenor) - 1) * 100;
+  // Parse days or years
+  let years, label;
+  if (isTBill) {
+    const days = parseInt(tenorKey);
+    years = days / 365;
+    label = days + ' Days';
+  } else {
+    years = parseInt(tenorKey);
+    label = years + ' Years';
+  }
   
-  document.getElementById('bondResult').innerHTML = 
-    '<div class="sim-result-row"><span>Yield (p.a.)</span><span class="v">' + (yieldPct*100).toFixed(2) + '%</span></div>' +
-    '<div class="sim-result-row"><span>Annual Interest</span><span class="v">' + fmtK(annualInterest) + '</span></div>' +
-    '<div class="sim-result-row"><span>Semi-Annual Coupon</span><span class="v">' + fmtK(semiAnnual) + '</span></div>' +
-    '<div class="sim-result-row"><span>Gross Interest ('+tenor+'yr)</span><span class="v pos">' + fmtK(totalGrossInterest) + '</span></div>' +
+  let totalGrossInterest, annualInterest, taxPaid, netInterest, totalReturn;
+  
+  if (isTBill) {
+    // T-Bills: zero-coupon discount instrument
+    // Buy at discount, get face value at maturity
+    const discountRate = yieldPct; // annualised yield
+    const maturityYield = discountRate * years;
+    const discountAmount = amt * maturityYield;
+    const purchasePrice = amt - discountAmount; // what you actually pay
+    totalGrossInterest = discountAmount;
+    annualInterest = totalGrossInterest / years;
+    taxPaid = totalGrossInterest * WITHHOLDING_TAX;
+    netInterest = totalGrossInterest - taxPaid;
+    totalReturn = amt - taxPaid; // face value minus tax on discount
+  } else {
+    // Bonds: semi-annual coupon payments
+    annualInterest = amt * yieldPct;
+    totalGrossInterest = annualInterest * years;
+    taxPaid = totalGrossInterest * WITHHOLDING_TAX;
+    netInterest = totalGrossInterest - taxPaid;
+    totalReturn = amt + netInterest;
+  }
+  
+  const semiAnnual = isTBill ? null : (annualInterest / 2);
+  const annualisedReturn = (Math.pow(totalReturn/amt, 1/years) - 1) * 100;
+  
+  let html = '<div class="sim-result-row"><span>Instrument</span><span class="v" style="color:var(--gold);">' + (isTBill ? 'Treasury Bill' : 'Govt Bond') + ' · ' + label + '</span></div>' +
+    '<div class="sim-result-row"><span>Yield (annualised)</span><span class="v">' + (yieldPct*100).toFixed(2) + '%</span></div>' +
+    '<div class="sim-result-row"><span>Annual Interest</span><span class="v">' + fmtK(annualInterest) + '</span></div>';
+  
+  if (!isTBill) {
+    html += '<div class="sim-result-row"><span>Semi-Annual Coupon</span><span class="v">' + fmtK(semiAnnual) + '</span></div>';
+  }
+  
+  html += '<div class="sim-result-row"><span>Gross Return ('+label+')</span><span class="v pos">' + fmtK(totalGrossInterest) + '</span></div>' +
     '<div class="sim-result-row"><span>Withholding Tax (15%)</span><span class="v neg">−' + fmtK(taxPaid) + '</span></div>' +
     '<div class="sim-total"><span>After-Tax Return</span><span class="v pos">' + fmtK(totalReturn) + '</span></div>' +
-    '<div class="sim-note">Effective annualised return: <strong>' + annualisedReturn.toFixed(2) + '%</strong> after tax</div>';
+    '<div class="sim-note">Effective annualised return: <strong>' + annualisedReturn.toFixed(2) + '%</strong> after tax' + (isTBill ? ' · Zero-coupon discount instrument' : ' · Held to maturity') + '</div>';
   
+  document.getElementById('bondResult').innerHTML = html;
   compareReturns();
 }
 
@@ -1104,40 +1174,53 @@ function simStock() {
 }
 
 function compareReturns() {
-  const bondAmt = parseFloat(document.getElementById('bondAmt').value) || 10000;
   const stockAmt = parseFloat(document.getElementById('stockAmt').value) || 10000;
-  const tenor = parseInt(document.getElementById('bondTenor').value) || 10;
-  const bondYield = BOND_YIELDS[tenor] / 100;
+  const tenorKey = document.getElementById('bondTenor').value;
+  const bondYield = BOND_YIELDS[tenorKey] / 100;
+  const isTBill = tenorKey.endsWith('d');
   
-  const bondTotal = bondAmt + (bondAmt * bondYield * tenor * (1 - WITHHOLDING_TAX));
-  const bondRet = ((bondTotal - bondAmt) / bondAmt * 100);
+  // Calculate bond/T-bill return
+  let years, bondRet;
+  if (isTBill) {
+    years = parseInt(tenorKey) / 365;
+    const maturityYield = bondYield * years;
+    bondRet = (1 * (1 - maturityYield * WITHHOLDING_TAX)) / (1 - maturityYield) - 1;
+    // Simpler: net return over investment amount
+    const bondTotal = 1 + (maturityYield * (1 - WITHHOLDING_TAX));
+    bondRet = (bondTotal - 1) * 100;
+  } else {
+    years = parseInt(tenorKey);
+    const bondAmt = 1;
+    const bondTotal = bondAmt + (bondAmt * bondYield * years * (1 - WITHHOLDING_TAX));
+    bondRet = ((bondTotal - bondAmt) / bondAmt * 100);
+  }
   
+  // Stock return for same period
   const ticker = document.getElementById('stockPick').value;
-  const period = Math.min(parseInt(document.getElementById('stockPeriod').value), parseInt(document.getElementById('bondTenor').value));
+  const periodYears = Math.min(parseInt(document.getElementById('stockPeriod').value), Math.ceil(years));
   const returns = STOCK_RETURNS[ticker] || STOCK_RETURNS.LASI;
   let growthFactor = 1;
-  for (let i = 0; i < Math.min(period, returns.length); i++) growthFactor *= (1 + returns[i]);
-  if (period > returns.length) { const lr = returns[returns.length-1]; for (let i = returns.length; i < period; i++) growthFactor *= (1 + lr); }
+  for (let i = 0; i < periodYears; i++) {
+    const ri = i < returns.length ? returns[i] : returns[returns.length-1];
+    growthFactor *= (1 + ri);
+  }
   const stockGross = stockAmt * growthFactor;
   const stockFees = stockAmt * BROKERAGE_FEE + stockGross * BROKERAGE_FEE + stockGross * LUSE_LEVY;
   const stockNet = stockGross - stockFees;
   const stockRet = ((stockNet - stockAmt) / stockAmt * 100);
   
-  // Adjust bond to same period for fair comparison
-  const bondRetAdj = ((bondAmt + (bondAmt * bondYield * period * (1-WITHHOLDING_TAX))) - bondAmt) / bondAmt * 100;
-  
   document.getElementById('compareBar').style.display = 'block';
-  const total = Math.abs(bondRetAdj) + Math.abs(stockRet) || 1;
-  const bondPct = Math.abs(bondRetAdj) / total * 100;
+  const total = Math.abs(bondRet) + Math.abs(stockRet) || 1;
+  const bondPct = Math.abs(bondRet) / total * 100;
   const stockPct = Math.abs(stockRet) / total * 100;
   document.getElementById('barBond').style.width = bondPct + '%';
   document.getElementById('barStock').style.width = stockPct + '%';
-  document.getElementById('legendBond').textContent = bondRetAdj.toFixed(1) + '%';
+  document.getElementById('legendBond').textContent = bondRet.toFixed(1) + '%';
   document.getElementById('legendStock').textContent = stockRet.toFixed(1) + '%';
   
-  const winner = bondRetAdj > stockRet ? '📜 Bond' : '📈 Stock';
-  const delta = Math.abs(bondRetAdj - stockRet).toFixed(1);
-  const wClr = bondRetAdj > stockRet ? 'var(--gold)' : 'var(--blue)';
+  const winner = bondRet > stockRet ? '📜 ' + (isTBill ? 'T-Bill' : 'Bond') : '📈 Stock';
+  const delta = Math.abs(bondRet - stockRet).toFixed(1);
+  const wClr = bondRet > stockRet ? 'var(--gold)' : 'var(--blue)';
   document.getElementById('compareWinner').innerHTML = '<span style="color:'+wClr+'">' + winner + ' wins</span><span class="delta" style="color:var(--muted);">by ' + delta + ' percentage points</span>';
 }
 
