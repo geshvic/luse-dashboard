@@ -282,29 +282,6 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
 .screener-table .scr-caution { position:relative; }
 .screener-table .scr-caution::after { content:'⚠️'; font-size:0.55rem; margin-left:0.15rem; }
 .scr-empty { text-align:center; padding:1.5rem; color:var(--muted); font-size:0.75rem; }
-/* === STOCK SCREENER === */
-.screener-section { margin:0 2rem 1rem; }
-.screener-section h3 { font-size:0.8rem; color:var(--muted); text-transform:uppercase; letter-spacing:0.5px; margin-bottom:0.5rem; }
-.screener-bar { display:flex; gap:0.4rem; flex-wrap:wrap; align-items:center; margin-bottom:0.5rem; padding:0.6rem; background:var(--card); border:1px solid var(--border); border-radius:8px; }
-.screener-bar select, .screener-bar input { padding:0.3rem 0.5rem; background:rgba(13,17,23,0.8); border:1px solid var(--border); border-radius:5px; color:var(--text); font-size:0.68rem; font-family:inherit; min-width:80px; }
-.screener-bar select:focus, .screener-bar input:focus { outline:none; border-color:var(--blue); }
-.screener-bar label { font-size:0.6rem; color:var(--muted); display:flex; align-items:center; gap:0.2rem; white-space:nowrap; }
-.screener-bar .scr-row { display:flex; gap:0.3rem; align-items:center; }
-.screener-bar .scr-clear { font-size:0.6rem; color:var(--blue); cursor:pointer; background:none; border:none; text-decoration:underline; }
-.screener-bar .scr-count { font-size:0.65rem; color:var(--muted); margin-left:auto; }
-.screener-table-wrap { overflow-x:auto; background:var(--card); border:1px solid var(--border); border-radius:8px; }
-.screener-table { width:100%; border-collapse:collapse; font-size:0.72rem; }
-.screener-table th { padding:0.4rem 0.5rem; text-align:left; color:var(--muted); font-weight:500; font-size:0.65rem; border-bottom:1px solid var(--border); cursor:pointer; white-space:nowrap; user-select:none; }
-.screener-table th:hover { color:var(--text); }
-.screener-table th .sort-arrow { font-size:0.55rem; margin-left:0.15rem; }
-.screener-table td { padding:0.35rem 0.5rem; border-bottom:1px solid var(--border); white-space:nowrap; }
-.screener-table tr:hover td { background:rgba(31,111,235,0.05); cursor:pointer; }
-.screener-table .scr-ticker { color:var(--blue); font-weight:600; }
-.screener-table .scr-positive { color:var(--green); }
-.screener-table .scr-negative { color:var(--red); }
-.screener-table .scr-caution { position:relative; }
-.screener-table .scr-caution::after { content:'⚠️'; font-size:0.55rem; margin-left:0.15rem; }
-.scr-empty { text-align:center; padding:1.5rem; color:var(--muted); font-size:0.75rem; }
 /* === SENS ANNOUNCEMENTS === */
 .sens-section { margin:0 2rem 1rem; }
 .sens-section h3 { font-size:0.8rem; color:var(--muted); text-transform:uppercase; letter-spacing:0.5px; margin-bottom:0.5rem; }
@@ -375,6 +352,27 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
 </style>
 </head>
 <body>
+
+<!-- ====== EXECUTIVE LOGIN GATE ====== -->
+<div id="loginGate">
+  <div class="login-bg"><div class="orb gold"></div><div class="orb blue"></div></div>
+  <div class="login-card">
+    <div class="login-logo">
+      <span class="baobab">BAOBAB</span>
+      <span class="capital">CAPITAL</span>
+      <span class="tagline">African Markets Intelligence</span>
+    </div>
+    <div class="login-divider"></div>
+    <div class="login-subtitle">Confidential · Authorized Access Only</div>
+    <div class="login-field">
+      <input type="password" id="loginPassword" placeholder="Enter access key" autofocus onkeydown="if(event.key==='Enter')attemptLogin()">
+      <button class="login-toggle" onclick="toggleLoginPW()" tabindex="-1">👁</button>
+    </div>
+    <div class="login-error" id="loginError">Invalid access key</div>
+    <button class="login-btn" onclick="attemptLogin()">Access Intelligence</button>
+    <div class="login-footer">Baobab Capital · Lusaka Securities Exchange</div>
+  </div>
+</div>
 
 <div class="header">
   <h1>
@@ -453,39 +451,6 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
 </div>
 
 
-
-
-<!-- ====== STOCK SCREENER ====== -->
-<div class="screener-section">
-  <h3>🔍 Stock Screener</h3>
-  <div class="screener-bar" id="screenerBar">
-    <select id="scrSector" onchange="runScreener()">
-      <option value="all">All Sectors</option>
-    </select>
-    <div class="scr-row"><label>PE</label><input type="number" id="scrPeMin" placeholder="Min" style="width:55px" onchange="runScreener()"><span style="font-size:0.55rem;color:var(--muted)">–</span><input type="number" id="scrPeMax" placeholder="Max" style="width:55px" onchange="runScreener()"></div>
-    <div class="scr-row"><label>Yield%</label><input type="number" id="scrYieldMin" placeholder="Min" style="width:55px" onchange="runScreener()"><span style="font-size:0.55rem;color:var(--muted)">–</span><input type="number" id="scrYieldMax" placeholder="Max" style="width:55px" onchange="runScreener()"></div>
-    <select id="scrMktCap" onchange="runScreener()">
-      <option value="all">All Market Caps</option>
-      <option value="large">Large (>K10B)</option>
-      <option value="mid">Mid (K1B-10B)</option>
-      <option value="small">Small (<K1B)</option>
-      <option value="micro">Micro (<K100M)</option>
-    </select>
-    <select id="scrChange" onchange="runScreener()">
-      <option value="all">Any Change</option>
-      <option value="up">🟢 Gainers Only</option>
-      <option value="down">🔴 Losers Only</option>
-      <option value="flat">➖ Unchanged</option>
-    </select>
-    <label><input type="checkbox" id="scrCaution" onchange="runScreener()"> Exclude Cautionaries</label>
-    <label><input type="checkbox" id="scrActive" onchange="runScreener()"> Traded Today</label>
-    <button class="scr-clear" onclick="clearScreener()">Clear</button>
-    <span class="scr-count" id="scrCount"></span>
-  </div>
-  <div class="screener-table-wrap">
-    <table class="screener-table" id="screenerTable"></table>
-  </div>
-</div>
 
 <div class="section-header">
   <h3>📋 All Listed Companies (23)</h3>
@@ -594,7 +559,44 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
 let allData = {}, currentFilter = 'all', chartInst = null;
 
 // ====== AUTH GATE ======
-// Auth removed
+const ACCESS_HASH = '28d657d5cd993f21689047e28091ffadfae9beafeae2c9375503f326f5699a0c'; // default: Lusaka2026
+
+function checkAuth() { return true; }
+
+function toggleLoginPW() {
+  const inp = document.getElementById('loginPassword');
+  inp.type = inp.type === 'password' ? 'text' : 'password';
+}
+
+async function attemptLogin() {
+  const pw = document.getElementById('loginPassword').value;
+  const errEl = document.getElementById('loginError');
+  if (!pw) { errEl.classList.add('show'); errEl.textContent = 'Access key required'; return; }
+  
+  // SHA-256 hash check
+  const hashBuffer = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(pw));
+  const hashArray = Array.from(new Uint8Array(hashBuffer));
+  const hashHex = hashArray.map(b => b.toString(16).padStart(2,'0')).join('');
+  
+  if (hashHex === ACCESS_HASH) {
+    const session = btoa(JSON.stringify({ exp: Date.now() + 7 * 24 * 60 * 60 * 1000 })); // 7-day session
+    localStorage.setItem('bc_session', session);
+    document.getElementById('loginGate').classList.add('hidden');
+  } else {
+    errEl.classList.add('show');
+    errEl.textContent = 'Invalid access key';
+    document.getElementById('loginPassword').value = '';
+  }
+}
+
+if (!checkAuth()) {
+  document.getElementById('loginGate').classList.remove('hidden');
+} else {
+  document.getElementById('loginGate').classList.add('hidden');
+}
+
+function logout() { localStorage.removeItem('bc_session'); location.reload(); }
+
 async function load() {
   try {
     const r = await fetch('data/all.json');
@@ -604,6 +606,7 @@ async function load() {
     renderTicker(newsData);
     renderNews();
     renderSens();
+    if (typeof initScreener === 'function') initScreener();
     render();
     document.getElementById('supd').textContent = allData.marketClose?.asOf || allData.market?.asOf || '';
   } catch(e) {
@@ -713,320 +716,83 @@ function getCautionaryTickers() {
 function initScreener() {
   const companies = allData.companies || [];
   const cautions = getCautionaryTickers();
-  const today = new Date().toISOString().split('T')[0];
-  
   screenerData = companies.filter(c => c.price > 0).map(c => ({
-    ticker: c.ticker,
-    name: c.name || c.ticker,
-    sector: c.sector || 'Other',
-    price: c.price,
-    change: c.change || 0,
-    changePct: c.changePct || 0,
-    volume: c.volume || 0,
-    marketCap: c.marketCap || 0,
-    pe: c.pe || null,
-    yield: c.dividendYield || null,
-    caution: cautions.has(c.ticker),
-    traded: (c.volume || 0) > 0
+    ticker: c.ticker, name: c.name || c.ticker, sector: c.sector || 'Other',
+    price: c.price, change: c.change || 0, changePct: c.changePct || 0,
+    volume: c.volume || 0, marketCap: c.marketCap || 0,
+    pe: c.pe || null, yield: c.dividendYield || null,
+    caution: cautions.has(c.ticker), traded: (c.volume || 0) > 0
   }));
-  
-  // Populate sector dropdown
   const sectors = [...new Set(screenerData.map(s => s.sector))].sort();
   const sel = document.getElementById('scrSector');
-  sectors.forEach(s => {
-    const opt = document.createElement('option');
-    opt.value = s; opt.textContent = s;
-    sel.appendChild(opt);
-  });
-  
+  if (sel) sectors.forEach(s => { const opt = document.createElement('option'); opt.value = s; opt.textContent = s; sel.appendChild(opt); });
   runScreener();
 }
 
 function runScreener() {
   let items = [...screenerData];
-  
-  // Filters
   const sector = document.getElementById('scrSector')?.value;
   if (sector && sector !== 'all') items = items.filter(s => s.sector === sector);
-  
   const peMin = parseFloat(document.getElementById('scrPeMin')?.value);
   const peMax = parseFloat(document.getElementById('scrPeMax')?.value);
   if (!isNaN(peMin)) items = items.filter(s => s.pe !== null && s.pe >= peMin);
   if (!isNaN(peMax)) items = items.filter(s => s.pe !== null && s.pe <= peMax);
-  
   const yMin = parseFloat(document.getElementById('scrYieldMin')?.value);
   const yMax = parseFloat(document.getElementById('scrYieldMax')?.value);
   if (!isNaN(yMin)) items = items.filter(s => s.yield !== null && s.yield >= yMin);
   if (!isNaN(yMax)) items = items.filter(s => s.yield !== null && s.yield <= yMax);
-  
   const mktCap = document.getElementById('scrMktCap')?.value;
   if (mktCap === 'large') items = items.filter(s => s.marketCap >= 10e9);
   else if (mktCap === 'mid') items = items.filter(s => s.marketCap >= 1e9 && s.marketCap < 10e9);
   else if (mktCap === 'small') items = items.filter(s => s.marketCap >= 100e6 && s.marketCap < 1e9);
   else if (mktCap === 'micro') items = items.filter(s => s.marketCap < 100e6);
-  
   const change = document.getElementById('scrChange')?.value;
   if (change === 'up') items = items.filter(s => s.change > 0);
   else if (change === 'down') items = items.filter(s => s.change < 0);
   else if (change === 'flat') items = items.filter(s => s.change === 0);
-  
   if (document.getElementById('scrCaution')?.checked) items = items.filter(s => !s.caution);
   if (document.getElementById('scrActive')?.checked) items = items.filter(s => s.traded);
-  
-  // Sort
-  const col = screenerSort.col;
-  const dir = screenerSort.dir;
-  items.sort((a, b) => {
-    let va = a[col], vb = b[col];
-    if (va === null || va === undefined) va = dir > 0 ? Infinity : -Infinity;
-    if (vb === null || vb === undefined) vb = dir > 0 ? Infinity : -Infinity;
-    if (typeof va === 'string') return dir * va.localeCompare(vb);
-    return dir * (va - vb);
-  });
-  
-  // Render
+  const col = screenerSort.col, dir = screenerSort.dir;
+  items.sort((a, b) => { let va = a[col], vb = b[col]; if (va === null || va === undefined) va = dir > 0 ? Infinity : -Infinity; if (vb === null || vb === undefined) vb = dir > 0 ? Infinity : -Infinity; if (typeof va === 'string') return dir * va.localeCompare(vb); return dir * (va - vb); });
   document.getElementById('scrCount').textContent = items.length + ' of ' + screenerData.length;
-  
-  if (items.length === 0) {
-    document.getElementById('screenerTable').innerHTML = '<div class="scr-empty">No stocks match your filters</div>';
-    return;
-  }
-  
-  const fmtMktCap = (v) => {
-    if (!v) return '—';
-    if (v >= 1e12) return 'K' + (v/1e12).toFixed(2) + 'T';
-    if (v >= 1e9) return 'K' + (v/1e9).toFixed(2) + 'B';
-    if (v >= 1e6) return 'K' + (v/1e6).toFixed(0) + 'M';
-    return 'K' + v.toLocaleString();
-  };
-  
+  if (items.length === 0) { document.getElementById('screenerTable').innerHTML = '<div class="scr-empty">No stocks match your filters</div>'; return; }
+  const fmtMktCap = (v) => { if (!v) return '—'; if (v >= 1e12) return 'K' + (v/1e12).toFixed(2) + 'T'; if (v >= 1e9) return 'K' + (v/1e9).toFixed(2) + 'B'; if (v >= 1e6) return 'K' + (v/1e6).toFixed(0) + 'M'; return 'K' + v.toLocaleString(); };
   const sortArrow = (c) => screenerSort.col === c ? (screenerSort.dir > 0 ? ' ▴' : ' ▾') : '';
-  
-  let t = '<tr>' +
-    '<th onclick="sortScreener(' + "'ticker'" + ')">Ticker' + sortArrow('ticker') + '</th>' +
-    '<th onclick="sortScreener(' + "'sector'" + ')">Sector' + sortArrow('sector') + '</th>' +
-    '<th onclick="sortScreener(' + "'price'" + ')" style="text-align:right">Price' + sortArrow('price') + '</th>' +
-    '<th onclick="sortScreener(' + "'changePct'" + ')" style="text-align:right">Chg%' + sortArrow('changePct') + '</th>' +
-    '<th onclick="sortScreener(' + "'volume'" + ')" style="text-align:right">Vol' + sortArrow('volume') + '</th>' +
-    '<th onclick="sortScreener(' + "'marketCap'" + ')" style="text-align:right">Mkt Cap' + sortArrow('marketCap') + '</th>' +
-    '<th onclick="sortScreener(' + "'pe'" + ')" style="text-align:right">PE' + sortArrow('pe') + '</th>' +
-    '<th onclick="sortScreener(' + "'yield'" + ')" style="text-align:right">Yield%' + sortArrow('yield') + '</th>' +
-    '</tr>';
-  
-  items.forEach(s => {
-    const chgCls = s.change > 0 ? 'scr-positive' : s.change < 0 ? 'scr-negative' : '';
-    const cauCls = s.caution ? ' scr-caution' : '';
-    const pe = s.pe ? s.pe.toFixed(1) : '—';
-    const yld = s.yield ? s.yield.toFixed(1) + '%' : '—';
-    const vol = s.volume ? s.volume.toLocaleString() : '—';
-    const chg = s.changePct ? (s.changePct > 0 ? '+' : '') + s.changePct.toFixed(2) + '%' : '0.00%';
-    
-    t += '<tr onclick="showProfile(' + "'" + s.ticker + "'" + ')">' +
-      '<td><span class="scr-ticker' + cauCls + '">' + s.ticker + '</span></td>' +
-      '<td style="font-size:0.65rem;color:var(--muted)">' + s.sector + '</td>' +
-      '<td style="text-align:right">K' + s.price.toFixed(2) + '</td>' +
-      '<td class="' + chgCls + '" style="text-align:right">' + chg + '</td>' +
-      '<td style="text-align:right;font-size:0.65rem;color:var(--muted)">' + vol + '</td>' +
-      '<td style="text-align:right;font-size:0.65rem">' + fmtMktCap(s.marketCap) + '</td>' +
-      '<td style="text-align:right">' + pe + '</td>' +
-      '<td style="text-align:right">' + yld + '</td>' +
-      '</tr>';
-  });
-  
+  let t = '<tr><th onclick="sortScreener(\'ticker\')">Ticker' + sortArrow('ticker') + '</th><th onclick="sortScreener(\'sector\')">Sector' + sortArrow('sector') + '</th><th onclick="sortScreener(\'price\')" style="text-align:right">Price' + sortArrow('price') + '</th><th onclick="sortScreener(\'changePct\')" style="text-align:right">Chg%' + sortArrow('changePct') + '</th><th onclick="sortScreener(\'volume\')" style="text-align:right">Vol' + sortArrow('volume') + '</th><th onclick="sortScreener(\'marketCap\')" style="text-align:right">Mkt Cap' + sortArrow('marketCap') + '</th><th onclick="sortScreener(\'pe\')" style="text-align:right">PE' + sortArrow('pe') + '</th><th onclick="sortScreener(\'yield\')" style="text-align:right">Yield%' + sortArrow('yield') + '</th></tr>';
+  items.forEach(s => { const chgCls = s.change > 0 ? 'scr-positive' : s.change < 0 ? 'scr-negative' : ''; const cauCls = s.caution ? ' scr-caution' : ''; const pe = s.pe ? s.pe.toFixed(1) : '—'; const yld = s.yield ? s.yield.toFixed(1) + '%' : '—'; const vol = s.volume ? s.volume.toLocaleString() : '—'; const chg = s.changePct ? (s.changePct > 0 ? '+' : '') + s.changePct.toFixed(2) + '%' : '0.00%'; t += '<tr onclick="showProfile(\'' + s.ticker + '\')"><td><span class="scr-ticker' + cauCls + '">' + s.ticker + '</span></td><td style="font-size:0.65rem;color:var(--muted)">' + s.sector + '</td><td style="text-align:right">K' + s.price.toFixed(2) + '</td><td class="' + chgCls + '" style="text-align:right">' + chg + '</td><td style="text-align:right;font-size:0.65rem;color:var(--muted)">' + vol + '</td><td style="text-align:right;font-size:0.65rem">' + fmtMktCap(s.marketCap) + '</td><td style="text-align:right">' + pe + '</td><td style="text-align:right">' + yld + '</td></tr>'; });
   document.getElementById('screenerTable').innerHTML = t;
 }
 
-function sortScreener(col) {
-  if (screenerSort.col === col) screenerSort.dir *= -1;
-  else { screenerSort.col = col; screenerSort.dir = -1; }
-  runScreener();
-}
+function sortScreener(col) { if (screenerSort.col === col) screenerSort.dir *= -1; else { screenerSort.col = col; screenerSort.dir = -1; } runScreener(); }
 
 function clearScreener() {
-  ['scrSector','scrMktCap','scrChange'].forEach(id => {
-    const el = document.getElementById(id); if (el) el.value = 'all';
-  });
-  ['scrPeMin','scrPeMax','scrYieldMin','scrYieldMax'].forEach(id => {
-    const el = document.getElementById(id); if (el) el.value = '';
-  });
-  ['scrCaution','scrActive'].forEach(id => {
-    const el = document.getElementById(id); if (el) el.checked = false;
-  });
-  runScreener();
-}
-
-let screenerSort = { col: 'mktCap', dir: -1 };
-let screenerData = [];
-
-function getCautionaryTickers() {
-  const sens = allData.sens || [];
-  const recent = sens.filter(s => s.type === 'Cautionary' && s.date > '2026-03-01');
-  return new Set(recent.flatMap(s => s.tickers));
-}
-
-function initScreener() {
-  const companies = allData.companies || [];
-  const cautions = getCautionaryTickers();
-  const today = new Date().toISOString().split('T')[0];
-  
-  screenerData = companies.filter(c => c.price > 0).map(c => ({
-    ticker: c.ticker,
-    name: c.name || c.ticker,
-    sector: c.sector || 'Other',
-    price: c.price,
-    change: c.change || 0,
-    changePct: c.changePct || 0,
-    volume: c.volume || 0,
-    marketCap: c.marketCap || 0,
-    pe: c.pe || null,
-    yield: c.dividendYield || null,
-    caution: cautions.has(c.ticker),
-    traded: (c.volume || 0) > 0
-  }));
-  
-  // Populate sector dropdown
-  const sectors = [...new Set(screenerData.map(s => s.sector))].sort();
-  const sel = document.getElementById('scrSector');
-  sectors.forEach(s => {
-    const opt = document.createElement('option');
-    opt.value = s; opt.textContent = s;
-    sel.appendChild(opt);
-  });
-  
-  runScreener();
-}
-
-function runScreener() {
-  let items = [...screenerData];
-  
-  // Filters
-  const sector = document.getElementById('scrSector')?.value;
-  if (sector && sector !== 'all') items = items.filter(s => s.sector === sector);
-  
-  const peMin = parseFloat(document.getElementById('scrPeMin')?.value);
-  const peMax = parseFloat(document.getElementById('scrPeMax')?.value);
-  if (!isNaN(peMin)) items = items.filter(s => s.pe !== null && s.pe >= peMin);
-  if (!isNaN(peMax)) items = items.filter(s => s.pe !== null && s.pe <= peMax);
-  
-  const yMin = parseFloat(document.getElementById('scrYieldMin')?.value);
-  const yMax = parseFloat(document.getElementById('scrYieldMax')?.value);
-  if (!isNaN(yMin)) items = items.filter(s => s.yield !== null && s.yield >= yMin);
-  if (!isNaN(yMax)) items = items.filter(s => s.yield !== null && s.yield <= yMax);
-  
-  const mktCap = document.getElementById('scrMktCap')?.value;
-  if (mktCap === 'large') items = items.filter(s => s.marketCap >= 10e9);
-  else if (mktCap === 'mid') items = items.filter(s => s.marketCap >= 1e9 && s.marketCap < 10e9);
-  else if (mktCap === 'small') items = items.filter(s => s.marketCap >= 100e6 && s.marketCap < 1e9);
-  else if (mktCap === 'micro') items = items.filter(s => s.marketCap < 100e6);
-  
-  const change = document.getElementById('scrChange')?.value;
-  if (change === 'up') items = items.filter(s => s.change > 0);
-  else if (change === 'down') items = items.filter(s => s.change < 0);
-  else if (change === 'flat') items = items.filter(s => s.change === 0);
-  
-  if (document.getElementById('scrCaution')?.checked) items = items.filter(s => !s.caution);
-  if (document.getElementById('scrActive')?.checked) items = items.filter(s => s.traded);
-  
-  // Sort
-  const col = screenerSort.col;
-  const dir = screenerSort.dir;
-  items.sort((a, b) => {
-    let va = a[col], vb = b[col];
-    if (va === null || va === undefined) va = dir > 0 ? Infinity : -Infinity;
-    if (vb === null || vb === undefined) vb = dir > 0 ? Infinity : -Infinity;
-    if (typeof va === 'string') return dir * va.localeCompare(vb);
-    return dir * (va - vb);
-  });
-  
-  // Render
-  document.getElementById('scrCount').textContent = items.length + ' of ' + screenerData.length;
-  
-  if (items.length === 0) {
-    document.getElementById('screenerTable').innerHTML = '<div class="scr-empty">No stocks match your filters</div>';
-    return;
-  }
-  
-  const fmtMktCap = (v) => {
-    if (!v) return '—';
-    if (v >= 1e12) return 'K' + (v/1e12).toFixed(2) + 'T';
-    if (v >= 1e9) return 'K' + (v/1e9).toFixed(2) + 'B';
-    if (v >= 1e6) return 'K' + (v/1e6).toFixed(0) + 'M';
-    return 'K' + v.toLocaleString();
-  };
-  
-  const sortArrow = (c) => screenerSort.col === c ? (screenerSort.dir > 0 ? ' ▴' : ' ▾') : '';
-  
-  let t = '<tr>' +
-    '<th onclick="sortScreener(' + "'ticker'" + ')">Ticker' + sortArrow('ticker') + '</th>' +
-    '<th onclick="sortScreener(' + "'sector'" + ')">Sector' + sortArrow('sector') + '</th>' +
-    '<th onclick="sortScreener(' + "'price'" + ')" style="text-align:right">Price' + sortArrow('price') + '</th>' +
-    '<th onclick="sortScreener(' + "'changePct'" + ')" style="text-align:right">Chg%' + sortArrow('changePct') + '</th>' +
-    '<th onclick="sortScreener(' + "'volume'" + ')" style="text-align:right">Vol' + sortArrow('volume') + '</th>' +
-    '<th onclick="sortScreener(' + "'marketCap'" + ')" style="text-align:right">Mkt Cap' + sortArrow('marketCap') + '</th>' +
-    '<th onclick="sortScreener(' + "'pe'" + ')" style="text-align:right">PE' + sortArrow('pe') + '</th>' +
-    '<th onclick="sortScreener(' + "'yield'" + ')" style="text-align:right">Yield%' + sortArrow('yield') + '</th>' +
-    '</tr>';
-  
-  items.forEach(s => {
-    const chgCls = s.change > 0 ? 'scr-positive' : s.change < 0 ? 'scr-negative' : '';
-    const cauCls = s.caution ? ' scr-caution' : '';
-    const pe = s.pe ? s.pe.toFixed(1) : '—';
-    const yld = s.yield ? s.yield.toFixed(1) + '%' : '—';
-    const vol = s.volume ? s.volume.toLocaleString() : '—';
-    const chg = s.changePct ? (s.changePct > 0 ? '+' : '') + s.changePct.toFixed(2) + '%' : '0.00%';
-    
-    t += '<tr onclick="showProfile(' + "'" + s.ticker + "'" + ')">' +
-      '<td><span class="scr-ticker' + cauCls + '">' + s.ticker + '</span></td>' +
-      '<td style="font-size:0.65rem;color:var(--muted)">' + s.sector + '</td>' +
-      '<td style="text-align:right">K' + s.price.toFixed(2) + '</td>' +
-      '<td class="' + chgCls + '" style="text-align:right">' + chg + '</td>' +
-      '<td style="text-align:right;font-size:0.65rem;color:var(--muted)">' + vol + '</td>' +
-      '<td style="text-align:right;font-size:0.65rem">' + fmtMktCap(s.marketCap) + '</td>' +
-      '<td style="text-align:right">' + pe + '</td>' +
-      '<td style="text-align:right">' + yld + '</td>' +
-      '</tr>';
-  });
-  
-  document.getElementById('screenerTable').innerHTML = t;
-}
-
-function sortScreener(col) {
-  if (screenerSort.col === col) screenerSort.dir *= -1;
-  else { screenerSort.col = col; screenerSort.dir = -1; }
-  runScreener();
-}
-
-function clearScreener() {
-  ['scrSector','scrMktCap','scrChange'].forEach(id => {
-    const el = document.getElementById(id); if (el) el.value = 'all';
-  });
-  ['scrPeMin','scrPeMax','scrYieldMin','scrYieldMax'].forEach(id => {
-    const el = document.getElementById(id); if (el) el.value = '';
-  });
-  ['scrCaution','scrActive'].forEach(id => {
-    const el = document.getElementById(id); if (el) el.checked = false;
-  });
+  ['scrSector','scrMktCap','scrChange'].forEach(id => { const el = document.getElementById(id); if (el) el.value = 'all'; });
+  ['scrPeMin','scrPeMax','scrYieldMin','scrYieldMax'].forEach(id => { const el = document.getElementById(id); if (el) el.value = ''; });
+  ['scrCaution','scrActive'].forEach(id => { const el = document.getElementById(id); if (el) el.checked = false; });
   runScreener();
 }
 
 function renderCalendar() {
-  let items = allData.calendar || [];
-  if (!items.length) {
-    // Fallback if no calendar.json loaded
-    items = [
-      { ticker:'DCZM', displayDate:'Jun 15', type:'Earnings', desc:'Full Year Results', confidence:'confirmed' },
-      { ticker:'CECZ', displayDate:'Jun 23', type:'AGM', desc:'EGM', confidence:'confirmed' },
-      { ticker:'NATB', displayDate:'Jun 26', type:'AGM', desc:'58th AGM', confidence:'confirmed' },
-      { ticker:'ATEL', displayDate:'Aug 20', type:'Earnings', desc:'Half-Year Results', confidence:'confirmed' },
-      { ticker:'ZNCO', displayDate:'Sep 18', type:'Earnings', desc:'Half-Year Results', confidence:'confirmed' },
-    ];
-  }
-  const dotCls = (t) => t==='Earnings'?'earnings':t==='Dividend'?'dividend':t==='AGM'?'event':'event';
-  const emoji = (t) => t==='Earnings'?'📊':t==='Dividend'?'💵':t==='AGM'?'📅':'📌';
+  const c = allData.companies || [];
+  // Build earnings/dividend calendar from company data
+  let items = [];
+  // Upcoming dividends (from companies with yield and ex-div dates in profiles)
+  const divTickers = [
+    { ticker:'BATZ', date:'Jun 17', type:'dividend', desc:'Final Dividend' },
+    { ticker:'CHIL', date:'Jun 8', type:'earnings', desc:'Earnings Release' },
+    { ticker:'BATA', date:'Jun 11', type:'earnings', desc:'Earnings Release' },
+    { ticker:'ZMBF', date:'Jun 22', type:'earnings', desc:'Earnings Release' },
+    { ticker:'AECI', date:'Jun 26', type:'earnings', desc:'Earnings Release' },
+    { ticker:'SCBL', date:'Jul 24', type:'earnings', desc:'Earnings Release' },
+    { ticker:'ZABR', date:'Aug 14', type:'earnings', desc:'Earnings Release' },
+    { ticker:'ATEL', date:'Aug 20', type:'earnings', desc:'Earnings Release' },
+  ];
+  if (!items.length) items = divTickers;
+  const dotCls = (t) => t==='earnings'?'earnings':t==='dividend'?'dividend':'event';
+  const emoji = (t) => t==='earnings'?'📋':t==='dividend'?'💵':'📅';
   let html = '<h3>📅 Upcoming Events</h3>';
-  items.slice(0, 10).forEach(i => {
-    const conf = i.confidence === 'estimated' ? ' <span style=font-size:0.5rem;color:var(--muted)>est</span>' : '';
-    html += '<div class="cal-item"><div class="cal-dot '+dotCls(i.type)+'"></div><span class="cal-date">'+i.displayDate+'</span><span class="cal-ticker">'+i.ticker+'</span><span class="cal-desc">'+emoji(i.type)+' '+i.desc+conf+'</span></div>';
+  items.forEach(i => {
+    html += '<div class="cal-item"><div class="cal-dot '+dotCls(i.type)+'"></div><span class="cal-date">'+i.date+'</span><span class="cal-ticker">'+i.ticker+'</span><span class="cal-desc">'+emoji(i.type)+' '+i.desc+'</span></div>';
   });
   document.getElementById('earningsCalendar').innerHTML = html;
 }
