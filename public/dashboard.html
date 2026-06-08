@@ -573,8 +573,10 @@ async function load() {
     const r = await fetch('data/all.json');
     allData = await r.json();
     newsData = allData.news || [];
+    sensData = allData.sens || [];
     renderTicker(newsData);
     renderNews();
+    renderSens();
     render();
     document.getElementById('supd').textContent = allData.marketClose?.asOf || allData.market?.asOf || '';
   } catch(e) {
