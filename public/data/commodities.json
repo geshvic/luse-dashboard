@@ -1,0 +1,57 @@
+[
+  {
+    "name": "Copper",
+    "symbol": "LME",
+    "price": 13479,
+    "unit": "USD/tonne",
+    "change": 220,
+    "changePct": 1.66,
+    "zmwValue": 236734,
+    "icon": "🟠",
+    "note": "70% of Zambia's exports"
+  },
+  {
+    "name": "Brent Crude",
+    "symbol": "BRENT",
+    "price": 94.91,
+    "unit": "USD/bbl",
+    "change": 1.83,
+    "changePct": 1.96,
+    "zmwValue": 1667,
+    "icon": "🛢️",
+    "note": "Fuel & transport cost driver"
+  },
+  {
+    "name": "Gold",
+    "symbol": "XAU",
+    "price": 3125,
+    "unit": "USD/oz",
+    "change": 15,
+    "changePct": 0.48,
+    "zmwValue": 54875,
+    "icon": "🥇",
+    "note": "ZCCM-IH gold mining play"
+  },
+  {
+    "name": "Cobalt",
+    "symbol": "LME",
+    "price": 24800,
+    "unit": "USD/tonne",
+    "change": -300,
+    "changePct": -1.20,
+    "zmwValue": 435488,
+    "icon": "🔋",
+    "note": "EV battery demand driver"
+  },
+  {
+    "name": "Maize",
+    "symbol": "FRA",
+    "price": 340,
+    "unit": "ZMW/50kg",
+    "change": 0,
+    "changePct": 0,
+    "zmwValue": 340,
+    "icon": "🌽",
+    "note": "FRA floor price 2025/26"
+  }
+]

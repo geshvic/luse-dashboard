@@ -80,6 +80,15 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
 .cc-move.down { color:var(--red); }
 .currency-trend { margin-top:0.5rem; padding-top:0.4rem; border-top:1px solid var(--border); font-size:0.6rem; color:var(--muted); line-height:1.35; }
 .currency-trend strong { color:var(--gold); }
+/* === COMMODITY TRACKER === */
+.commodity-row { margin-top:0.5rem; padding-top:0.4rem; border-top:1px solid var(--border); }
+.commodity-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:0.3rem; }
+.commodity-item { background:rgba(31,111,235,0.04); border-radius:5px; padding:0.3rem 0.4rem; }
+.commodity-item .cm-icon { font-size:0.85rem; }
+.commodity-item .cm-name { font-size:0.5rem; color:var(--muted); font-weight:600; }
+.commodity-item .cm-price { font-size:0.75rem; font-weight:700; color:var(--text); }
+.commodity-item .cm-zmw { font-size:0.5rem; color:var(--muted); }
+.commodity-item .cm-move { font-size:0.5rem; font-weight:600; }
 
 /* === SENTIMENT METER === */
 .sentiment-card { background:var(--card); border:1px solid var(--border); border-radius:10px; padding:0.85rem; text-align:center; }
@@ -673,7 +682,759 @@ function renderCurrency() {
   document.getElementById('currencyCard').innerHTML =
     '<div class="cc-header"><h3>💱 ZMW Exchange Rates</h3><span class="cc-source">BOZ · '+cu.asOf+'</span></div>' +
     '<div class="currency-grid">'+items+'</div>' +
-    '<div class="currency-trend"><strong>'+kwacha+'</strong> · '+outlook.substring(0,180)+'…</div>';
+    '<div class="currency-trend"><strong>'+kwacha+'</strong> · '+outlook.substring(0,180)+'…</div>' + renderCommodities();
+}
+
+function renderCommodities() {
+  const comms = allData.commodities;
+  if (!comms || !comms.length) return '';
+  const fmtPrice = (v, u) => {
+    if (u.includes('USD')) return '
+  const mc = allData.marketClose?.marketClose; if (!mc) { document.getElementById('heroMarketClose').innerHTML = ''; return; }
+  const condClass = mc.lasiChange>0?'condition-up':mc.lasiChange<0?'condition-down':'condition-flat';
+  const ct = mc.lasiChange>0?'▲ UP':mc.lasiChange<0?'▼ DOWN':'— FLAT';
+  let h = '<div class="label-row"><h3>📈 Market Close</h3><span class="date">'+allData.marketClose?.asOf+'</span></div>';
+  h += '<div class="lasi">LASI '+mc.lasiIndex?.toLocaleString()+' <span class="condition '+condClass+'">'+ct+'</span></div>';
+  h += '<div class="lasi-sub">'+(mc.lasiChange>0?'+':'')+mc.lasiChange+' ('+mc.lasiChangePct+'%) · '+(mc.sessionSummary||'')+'</div>';
+  h += '<div class="stats-grid"><div class="stat-item"><div class="val">'+fmt(mc.totalTrades)+'</div><div class="lbl">Trades</div></div>';
+  h += '<div class="stat-item"><div class="val">'+fmt(mc.totalVolume)+'</div><div class="lbl">Volume</div></div>';
+  h += '<div class="stat-item"><div class="val" style="color:var(--gold);">ZMW '+fmtM(mc.totalValue)+'</div><div class="lbl">Value</div></div>';
+  h += '<div class="stat-item"><div class="val" style="color:var(--green);">ZMW '+mc.marketCapTotal+mc.marketCapUnit+'</div><div class="lbl">Mkt Cap</div></div></div>';
+  document.getElementById('heroMarketClose').innerHTML = h;
+}
+
+function renderMovers() {
+  const gs = allData.marketClose?.gainers || [];
+  const ds = allData.marketClose?.decliners || [];
+  
+  let g = '<div class="label-row"><h3>🟢 Gainers</h3></div>';
+  if (gs.length) {
+    gs.forEach(gi => { g += '<div class="mover-row"><span class="t" style="color:var(--green)">'+gi.ticker+'</span><span class="n">'+(gi.name||'')+'</span><span class="p">K'+gi.price+'</span><span class="c" style="color:var(--green)">+'+gi.change+'</span></div>'; });
+  } else { g += '<div class="muted" style="font-size:0.72rem;padding:0.4rem 0;">No gainers today</div>'; }
+  document.getElementById('heroGainers').innerHTML = g;
+  
+  let d = '<div class="label-row"><h3>🔴 Decliners</h3></div>';
+  if (ds.length) {
+    ds.forEach(di => { d += '<div class="mover-row"><span class="t" style="color:var(--red)">'+di.ticker+'</span><span class="n">'+(di.name||'')+'</span><span class="p">K'+di.price+'</span><span class="c" style="color:var(--red)">'+di.change+'</span></div>'; });
+  } else { d += '<div class="muted" style="font-size:0.72rem;padding:0.4rem 0;">No decliners today</div>'; }
+  document.getElementById('heroDecliners').innerHTML = d;
+}
+
+function renderSentiment() {
+  // Calculate sentiment score from available data
+  const cos = allData.companies || [];
+  const gainers = cos.filter(c => (c.changePct||0) > 0).length;
+  const losers = cos.filter(c => (c.changePct||0) < 0).length;
+  const flat = cos.filter(c => (c.changePct||0) === 0).length;
+  const total = cos.length || 1;
+  // Score: 0=bear (all red), 100=bull (all green). Weighted: gainers and magnitude
+  let score = 50;
+  if (gainers + losers > 0) {
+    const gPct = gainers / total * 100;
+    const avgGain = cos.filter(c=>c.changePct>0).reduce((s,c)=>s+c.changePct,0) / Math.max(gainers,1);
+    const avgLoss = cos.filter(c=>c.changePct<0).reduce((s,c)=>s+Math.abs(c.changePct),0) / Math.max(losers,1);
+    score = 50 + (gainers - losers) * 3 + (avgGain - (avgLoss||0)) * 5;
+    score = Math.max(5, Math.min(95, score));
+  }
+  let color, verdict, emoji;
+  if (score >= 65) { color = 'var(--green)'; verdict = 'Bullish'; emoji = '🟢'; }
+  else if (score >= 45) { color = 'var(--gold)'; verdict = 'Neutral'; emoji = '🟡'; }
+  else { color = 'var(--red)'; verdict = 'Bearish'; emoji = '🔴'; }
+  
+  document.getElementById('sentimentMeter').innerHTML =
+    '<h3>📊 Market Sentiment</h3>' +
+    '<div class="sentiment-gauge"><div class="gauge-fill" style="width:'+score+'%;background:linear-gradient(90deg,var(--red),var(--gold),var(--green));"></div></div>' +
+    '<div class="sentiment-labels"><span>Bearish</span><span>Neutral</span><span>Bullish</span></div>' +
+    '<div class="sentiment-score" style="color:'+color+';">'+emoji+' '+Math.round(score)+'/100</div>' +
+    '<div class="sentiment-verdict" style="color:'+color+';">'+verdict+' · '+gainers+'▲ '+losers+'▼ '+flat+'─</div>';
+}
+
+let screenerSort = { col: 'mktCap', dir: -1 };
+let screenerData = [];
+
+function getCautionaryTickers() {
+  const sens = allData.sens || [];
+  const recent = sens.filter(s => s.type === 'Cautionary' && s.date > '2026-03-01');
+  return new Set(recent.flatMap(s => s.tickers));
+}
+
+function initScreener() {
+  const companies = allData.companies || [];
+  const cautions = getCautionaryTickers();
+  screenerData = companies.filter(c => c.price > 0).map(c => ({
+    ticker: c.ticker, name: c.name || c.ticker, sector: c.sector || 'Other',
+    price: c.price, change: c.change || 0, changePct: c.changePct || 0,
+    volume: c.volume || 0, marketCap: c.marketCap || 0,
+    pe: c.pe || null, yield: c.dividendYield || null,
+    caution: cautions.has(c.ticker), traded: (c.volume || 0) > 0
+  }));
+  const sectors = [...new Set(screenerData.map(s => s.sector))].sort();
+  const sel = document.getElementById('scrSector');
+  if (sel) sectors.forEach(s => { const opt = document.createElement('option'); opt.value = s; opt.textContent = s; sel.appendChild(opt); });
+  runScreener();
+}
+
+function runScreener() {
+  let items = [...screenerData];
+  const sector = document.getElementById('scrSector')?.value;
+  if (sector && sector !== 'all') items = items.filter(s => s.sector === sector);
+  const peMin = parseFloat(document.getElementById('scrPeMin')?.value);
+  const peMax = parseFloat(document.getElementById('scrPeMax')?.value);
+  if (!isNaN(peMin)) items = items.filter(s => s.pe !== null && s.pe >= peMin);
+  if (!isNaN(peMax)) items = items.filter(s => s.pe !== null && s.pe <= peMax);
+  const yMin = parseFloat(document.getElementById('scrYieldMin')?.value);
+  const yMax = parseFloat(document.getElementById('scrYieldMax')?.value);
+  if (!isNaN(yMin)) items = items.filter(s => s.yield !== null && s.yield >= yMin);
+  if (!isNaN(yMax)) items = items.filter(s => s.yield !== null && s.yield <= yMax);
+  const mktCap = document.getElementById('scrMktCap')?.value;
+  if (mktCap === 'large') items = items.filter(s => s.marketCap >= 10e9);
+  else if (mktCap === 'mid') items = items.filter(s => s.marketCap >= 1e9 && s.marketCap < 10e9);
+  else if (mktCap === 'small') items = items.filter(s => s.marketCap >= 100e6 && s.marketCap < 1e9);
+  else if (mktCap === 'micro') items = items.filter(s => s.marketCap < 100e6);
+  const change = document.getElementById('scrChange')?.value;
+  if (change === 'up') items = items.filter(s => s.change > 0);
+  else if (change === 'down') items = items.filter(s => s.change < 0);
+  else if (change === 'flat') items = items.filter(s => s.change === 0);
+  if (document.getElementById('scrCaution')?.checked) items = items.filter(s => !s.caution);
+  if (document.getElementById('scrActive')?.checked) items = items.filter(s => s.traded);
+  const col = screenerSort.col, dir = screenerSort.dir;
+  items.sort((a, b) => { let va = a[col], vb = b[col]; if (va === null || va === undefined) va = dir > 0 ? Infinity : -Infinity; if (vb === null || vb === undefined) vb = dir > 0 ? Infinity : -Infinity; if (typeof va === 'string') return dir * va.localeCompare(vb); return dir * (va - vb); });
+  document.getElementById('scrCount').textContent = items.length + ' of ' + screenerData.length;
+  if (items.length === 0) { document.getElementById('screenerTable').innerHTML = '<div class="scr-empty">No stocks match your filters</div>'; return; }
+  const fmtMktCap = (v) => { if (!v) return '—'; if (v >= 1e12) return 'K' + (v/1e12).toFixed(2) + 'T'; if (v >= 1e9) return 'K' + (v/1e9).toFixed(2) + 'B'; if (v >= 1e6) return 'K' + (v/1e6).toFixed(0) + 'M'; return 'K' + v.toLocaleString(); };
+  const sortArrow = (c) => screenerSort.col === c ? (screenerSort.dir > 0 ? ' ▴' : ' ▾') : '';
+  let t = '<tr><th onclick="sortScreener(\'ticker\')">Ticker' + sortArrow('ticker') + '</th><th onclick="sortScreener(\'sector\')">Sector' + sortArrow('sector') + '</th><th onclick="sortScreener(\'price\')" style="text-align:right">Price' + sortArrow('price') + '</th><th onclick="sortScreener(\'changePct\')" style="text-align:right">Chg%' + sortArrow('changePct') + '</th><th onclick="sortScreener(\'volume\')" style="text-align:right">Vol' + sortArrow('volume') + '</th><th onclick="sortScreener(\'marketCap\')" style="text-align:right">Mkt Cap' + sortArrow('marketCap') + '</th><th onclick="sortScreener(\'pe\')" style="text-align:right">PE' + sortArrow('pe') + '</th><th onclick="sortScreener(\'yield\')" style="text-align:right">Yield%' + sortArrow('yield') + '</th></tr>';
+  items.forEach(s => { const chgCls = s.change > 0 ? 'scr-positive' : s.change < 0 ? 'scr-negative' : ''; const cauCls = s.caution ? ' scr-caution' : ''; const pe = s.pe ? s.pe.toFixed(1) : '—'; const yld = s.yield ? s.yield.toFixed(1) + '%' : '—'; const vol = s.volume ? s.volume.toLocaleString() : '—'; const chg = s.changePct ? (s.changePct > 0 ? '+' : '') + s.changePct.toFixed(2) + '%' : '0.00%'; t += '<tr onclick="showProfile(\'' + s.ticker + '\')"><td><span class="scr-ticker' + cauCls + '">' + s.ticker + '</span></td><td style="font-size:0.65rem;color:var(--muted)">' + s.sector + '</td><td style="text-align:right">K' + s.price.toFixed(2) + '</td><td class="' + chgCls + '" style="text-align:right">' + chg + '</td><td style="text-align:right;font-size:0.65rem;color:var(--muted)">' + vol + '</td><td style="text-align:right;font-size:0.65rem">' + fmtMktCap(s.marketCap) + '</td><td style="text-align:right">' + pe + '</td><td style="text-align:right">' + yld + '</td></tr>'; });
+  document.getElementById('screenerTable').innerHTML = t;
+}
+
+function sortScreener(col) { if (screenerSort.col === col) screenerSort.dir *= -1; else { screenerSort.col = col; screenerSort.dir = -1; } runScreener(); }
+
+function clearScreener() {
+  ['scrSector','scrMktCap','scrChange'].forEach(id => { const el = document.getElementById(id); if (el) el.value = 'all'; });
+  ['scrPeMin','scrPeMax','scrYieldMin','scrYieldMax'].forEach(id => { const el = document.getElementById(id); if (el) el.value = ''; });
+  ['scrCaution','scrActive'].forEach(id => { const el = document.getElementById(id); if (el) el.checked = false; });
+  runScreener();
+}
+
+function renderCalendar() {
+  const c = allData.companies || [];
+  // Build earnings/dividend calendar from company data
+  let items = [];
+  // Upcoming dividends (from companies with yield and ex-div dates in profiles)
+  const divTickers = [
+    { ticker:'BATZ', date:'Jun 17', type:'dividend', desc:'Final Dividend' },
+    { ticker:'CHIL', date:'Jun 8', type:'earnings', desc:'Earnings Release' },
+    { ticker:'BATA', date:'Jun 11', type:'earnings', desc:'Earnings Release' },
+    { ticker:'ZMBF', date:'Jun 22', type:'earnings', desc:'Earnings Release' },
+    { ticker:'AECI', date:'Jun 26', type:'earnings', desc:'Earnings Release' },
+    { ticker:'SCBL', date:'Jul 24', type:'earnings', desc:'Earnings Release' },
+    { ticker:'ZABR', date:'Aug 14', type:'earnings', desc:'Earnings Release' },
+    { ticker:'ATEL', date:'Aug 20', type:'earnings', desc:'Earnings Release' },
+  ];
+  if (!items.length) items = divTickers;
+  const dotCls = (t) => t==='earnings'?'earnings':t==='dividend'?'dividend':'event';
+  const emoji = (t) => t==='earnings'?'📋':t==='dividend'?'💵':'📅';
+  let html = '<h3>📅 Upcoming Events</h3>';
+  items.forEach(i => {
+    html += '<div class="cal-item"><div class="cal-dot '+dotCls(i.type)+'"></div><span class="cal-date">'+i.date+'</span><span class="cal-ticker">'+i.ticker+'</span><span class="cal-desc">'+emoji(i.type)+' '+i.desc+'</span></div>';
+  });
+  document.getElementById('earningsCalendar').innerHTML = html;
+}
+
+function renderAnalysis() {
+  const a=allData.marketClose?.analysis; if(!a) return;
+  let h='<h3>🧠 Market Analysis — '+a.marketCondition+'</h3><p style="font-size:0.78rem;color:var(--muted);margin-bottom:0.75rem;">'+a.marketConditionDetail+'</p>';
+  (a.observations||[]).forEach(o=>{const cl=o.type==='caution'?'caution':o.type==='opportunity'?'opportunity':'watch';const bc=o.stance?.includes('AVOID')?'badge-avoid':o.stance?.includes('ACCUMULATE')?'badge-buy':o.stance?.includes('WATCH')||o.stance?.includes('PREPARE')?'badge-opp':'badge-watch';h+='<div class="obs-card '+cl+'"><div class="obs-badge '+bc+'">'+o.stance+'</div><div class="obs-content"><h4><span style="color:var(--accent);">'+o.ticker+'</span> '+o.title+'</h4><p>'+o.detail+'</p></div></div>';});
+  document.getElementById('analysis').innerHTML=h;
+}
+
+function renderRisks(){const f=allData.marketClose?.analysis?.riskFlags||[];document.getElementById('risks').innerHTML=f.length?f.map(x=>'<div class="risk-flag">⚠️ '+x+'</div>').join(''):'';}
+
+function renderTracker(filter) {
+  if (filter) currentFilter = filter;
+  let companies = allData.companies || [];
+  if (currentFilter === 'gainers') companies = companies.filter(c => (c.changePct||0) > 0).sort((a,b)=>(b.changePct||0)-(a.changePct||0));
+  else if (currentFilter === 'losers') companies = companies.filter(c => (c.changePct||0) < 0).sort((a,b)=>(a.changePct||0)-(b.changePct||0));
+  else if (currentFilter === 'volume') companies = [...companies].sort((a,b)=>(b.volume||0)-(a.volume||0));
+  else if (currentFilter === 'marketcap') companies = [...companies].sort((a,b)=>(b.marketCap||0)-(a.marketCap||0));
+  document.getElementById('tickerTable').innerHTML = '<table><thead><tr><th>Ticker</th><th>Company</th><th>Sector</th><th class="num">Price</th><th class="num">Change</th><th class="num">Vol</th><th class="num">Mkt Cap</th><th class="num">Float</th><th class="num">P/E</th><th></th></tr></thead><tbody>' +
+    companies.map(c => {
+      const chCls = (c.changePct||0)>=0?'pos':'neg'; const volCls = !c.volume?'zero-vol':'';
+      return '<tr class="'+volCls+'" onclick="openProfile(\''+c.ticker+'\')"><td><span class="ticker-link">'+c.ticker+'</span></td><td>'+c.name+'</td><td class="muted">'+(c.subSector||c.sector)+'</td><td class="num">K'+(c.price?.toFixed(2)||'—')+'</td><td class="num '+chCls+'">'+(c.changePct>=0?'+':'')+(c.changePct?.toFixed(2)||'0.00')+'%</td><td class="num muted '+volCls+'">'+(c.volume?fmt(c.volume):'—')+'</td><td class="num muted">'+(c.marketCap?'K'+(c.marketCap/1e9).toFixed(1)+'B':'—')+'</td><td class="num muted">'+(c.freeFloat||'—')+'%</td><td class="num muted">'+(c.pe?.toFixed(1)||'—')+'</td><td><button class="btn btn-sm btn-outline" onclick="event.stopPropagation();openProfile(\''+c.ticker+'\')">→</button></td></tr>';
+    }).join('') + '</tbody></table>';
+}
+
+function filterTracker(f, btn) { document.querySelectorAll('.filters .btn-sm').forEach(b=>b.classList.remove('active')); btn.classList.add('active'); renderTracker(f); }
+
+// ====== CHART ======
+let chartPeriod = 90;
+
+function computeMA(data, period) {
+  const result = []; for (let i=0; i<data.length; i++) { if (i<period-1) {result.push(null); continue;} let sum=0; for (let j=i-period+1; j<=i; j++) sum+=data[j].close; result.push(Math.round(sum/period*100)/100); } return result;
+}
+
+function computeRSI(data, period = 14) {
+  const rsi = []; if (data.length < period+1) return rsi;
+  let gains=0, losses=0;
+  for (let i=1; i<=period; i++) { const diff=data[i].close-data[i-1].close; if(diff>=0) gains+=diff; else losses-=diff; }
+  let avgGain=gains/period, avgLoss=losses/period;
+  rsi.push(null); for (let i=1;i<period;i++) rsi.push(null);
+  rsi.push(avgLoss===0?100:Math.round((100-100/(1+avgGain/avgLoss))*100)/100);
+  for (let i=period+1; i<data.length; i++) { const diff=data[i].close-data[i-1].close; avgGain=(avgGain*13+(diff>0?diff:0))/14; avgLoss=(avgLoss*13+(diff<0?-diff:0))/14; rsi.push(avgLoss===0?100:Math.round((100-100/(1+avgGain/avgLoss))*100)/100); }
+  return rsi;
+}
+
+async function renderChart(ticker) {
+  if (chartInst) { chartInst.destroy(); chartInst = null; }
+  try {
+    const r = await fetch('data/profiles/' + ticker + '_ohlcv.json');
+    const ohlcv = await r.json();
+    if (!ohlcv.data || ohlcv.data.length < 5) { document.getElementById('chartDiv').innerHTML='<div style="text-align:center;padding:2rem;color:var(--muted);">No chart data for '+ticker+'</div>'; return; }
+    
+    let data = ohlcv.data;
+    if (chartPeriod === 30) data = data.slice(-Math.min(30, data.length));
+    else if (chartPeriod === 60) data = data.slice(-Math.min(60, data.length));
+    
+    const labels = data.map(d=>d.date.slice(5));
+    const closes = data.map(d=>d.close);
+    const volumes = data.map(d=>d.volume);
+    const ma7 = computeMA(data,7), ma21 = computeMA(data,21);
+    const rsiVals = computeRSI(data,14);
+    
+    // Price colors
+    const upColor = '#3fb950', downColor = '#f85149';
+    const barColors = data.map((d,i)=>i===0?upColor:(d.close>=data[i-1].close?upColor:downColor));
+    
+    const ctx = document.getElementById('chartCanvas').getContext('2d');
+    chartInst = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels,
+        datasets: [
+          { label:'Close', data:closes, borderColor:'#58a6ff', borderWidth:1.5, pointRadius:0, tension:0.1, order:1, yAxisID:'y' },
+          { label:'MA 7', data:ma7, borderColor:'#d2991d', borderWidth:1, pointRadius:0, tension:0.1, order:2, yAxisID:'y' },
+          { label:'MA 21', data:ma21, borderColor:'#8b949e', borderWidth:1, pointRadius:0, tension:0.1, order:2, yAxisID:'y', borderDash:[4,2] },
+          { label:'Volume', data:volumes, backgroundColor:barColors.map(c=>c+'44'), borderColor:barColors.map(c=>c+'88'), borderWidth:0.5, type:'bar', order:3, yAxisID:'y1' }
+        ]
+      },
+      options: {
+        responsive:true, maintainAspectRatio:false,
+        interaction:{intersect:false,mode:'index'},
+        plugins:{legend:{display:true,position:'top',labels:{color:'#8b949e',font:{size:10},usePointStyle:true,padding:15,boxWidth:8}},tooltip:{backgroundColor:'#161b22',titleColor:'#c9d1d9',bodyColor:'#8b949e',borderColor:'#30363d',borderWidth:1}},
+        scales:{
+          x:{ticks:{color:'#484f58',font:{size:9},maxTicksLimit:12},grid:{color:'#21262d'}},
+          y:{position:'right',ticks:{color:'#8b949e',font:{size:9},callback:v=>'K'+v.toFixed(2)},grid:{color:'#21262d'}},
+          y1:{position:'left',ticks:{color:'#484f58',font:{size:8},callback:v=>v>1000?'K'+(v/1000).toFixed(1):v},grid:{display:false}}
+        }
+      }
+    });
+    
+    // Render indicators
+    const lastClose = closes[closes.length-1];
+    const ma7Last = ma7[ma7.length-1];
+    const ma21Last = ma21[ma21.length-1];
+    const rsiLast = rsiVals[rsiVals.length-1];
+    const signal7v21 = ma7Last && ma21Last ? (ma7Last > ma21Last ? '🟢 Bullish (MA7 > MA21)' : '🔴 Bearish (MA7 < MA21)') : '—';
+    const rsiSignal = rsiLast > 70 ? '🔴 Overbought' : rsiLast < 30 ? '🟢 Oversold' : '— Neutral';
+    const trendSignal = lastClose > ma21Last ? '🟢 Above MA21' : '🔴 Below MA21';
+    
+    document.getElementById('indicatorsDiv').innerHTML =
+      '<div class="indicator-card"><div class="ind-val">'+lastClose+'</div><div class="ind-lbl">Last Close</div></div>' +
+      '<div class="indicator-card"><div class="ind-val" style="color:'+(ma7Last>ma21Last?'var(--green)':'var(--red)')+';">'+(ma7Last||'—')+'</div><div class="ind-lbl">MA7 / MA21</div><div class="ind-sig">'+signal7v21+'</div></div>' +
+      '<div class="indicator-card"><div class="ind-val" style="color:'+(rsiLast>70?'var(--red)':rsiLast<30?'var(--green)':'var(--muted)')+';">'+(rsiLast||'—')+'</div><div class="ind-lbl">RSI (14)</div><div class="ind-sig">'+rsiSignal+'</div></div>' +
+      '<div class="indicator-card"><div class="ind-val">K'+fmtM(data[data.length-1].volume*1000)+'</div><div class="ind-lbl">Latest Volume</div></div>' +
+      '<div class="indicator-card"><div class="ind-val" style="color:var(--muted);">'+(Math.round((lastClose - data[0].close)/data[0].close*10000)/100)+'%</div><div class="ind-lbl">Period Return</div></div>' +
+      '<div class="indicator-card"><div class="ind-val" style="color:var(--muted);">'+trendSignal.split(' ')[0]+'</div><div class="ind-lbl">Trend vs MA21</div><div class="ind-sig">'+trendSignal+'</div></div>';
+    
+    // Event markers on chart
+    data.forEach((d,i)=>{if(d.event){chartInst.data.labels[i] = '⚡ '+chartInst.data.labels[i];}});
+    chartInst.update();
+  } catch(e) { console.error('Chart error:',e); }
+}
+
+function setChartPeriod(p,btn) {
+  chartPeriod = p;
+  document.querySelectorAll('.chart-periods .btn-sm').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  const ticker = document.getElementById('modalContent').dataset?.ticker;
+  if (ticker) renderChart(ticker);
+}
+
+// ====== PROFILE MODAL ======
+async function openProfile(ticker) {
+  document.getElementById('modal').classList.add('open');
+  document.getElementById('modalContent').innerHTML = '<div class="spinner" style="padding:3rem;">Loading '+ticker+'...</div>';
+  try {
+    const [pr,cr] = await Promise.all([fetch('data/profiles/'+ticker+'.json'), fetch('data/profiles/'+ticker+'_ohlcv.json')]);
+    const p = await pr.json(); const ohlcv = await cr.json();
+    document.getElementById('modalContent').dataset.ticker = ticker;
+    renderProfile(p, ohlcv);
+    if (ohlcv.data?.length) { renderChart(ticker); }
+  } catch(e) { document.getElementById('modalContent').innerHTML='<div class="spinner">Failed to load profile.</div>'; }
+}
+
+function closeModal(){document.getElementById('modal').classList.remove('open');if(chartInst){chartInst.destroy();chartInst=null;}}
+
+function renderProfile(p, ohlcv) {
+  if (!p.financials && !p.description) { document.getElementById('modalContent').innerHTML='<div class="modal-header"><div class="title-block"><h2>'+(p.name||p.ticker)+'</h2><div class="ticker-display">'+p.ticker+'</div></div><button class="modal-close" onclick="closeModal()">✕</button></div><div class="modal-body"><p class="muted">Full profile not yet available.</p></div>'; return; }
+  
+  // Fallback data from companies.json live market data
+  const co = (allData.companies||[]).find(c => c.ticker === p.ticker) || {};
+  
+  const riskCls = (p.riskRating||'').includes('HIGH')?'risk-high':(p.riskRating||'').includes('MED')?'risk-med':'risk-low';
+  const stanceCls = (p.stance||'').includes('AVOID')?'stance-avoid':(p.stance||'').includes('HOLD')?'stance-hold':(p.stance||'').includes('BUY')||(p.stance||'').includes('ACCUMULATE')?'stance-buy':'stance-watch';
+  
+  // Build metrics from ALL available sources: profile + companies.json
+  const lastPrice = p.priceHistory?.current?.price || p.priceHistory?.recent?.price || co.price || null;
+  const grossMargin = p.financials?.grossMargin ?? p.financials?.grossMargin2025 ?? null;
+  const peVal = p.ratios?.pe ?? co.pe ?? null;
+  const divYield = p.dividend?.yield ?? co.dividendYield ?? p.ratios?.dividendYield ?? null;
+  const freeFloat = p.ownership?.freeFloat ?? p.ownership?.float ?? co.freeFloat ?? null;
+  const mktCap = co.marketCap ?? null;
+  
+  let h = '<div class="modal-header"><div class="title-block"><h2>'+p.name+'</h2><div class="ticker-display">'+p.ticker+' · '+p.sector+' · '+p.market+' · Risk: <span class="risk-badge '+riskCls+'">'+(p.riskRating||'NR')+'</span></div></div><button class="modal-close" onclick="closeModal()">✕</button></div><div class="modal-body">';
+  
+  // Key metrics row
+  h += '<div class="profile-grid">';
+  h += '<div class="profile-stat"><div class="ps-val">'+(lastPrice?'K'+lastPrice:'—')+'</div><div class="ps-lbl">Last Price</div></div>';
+  h += '<div class="profile-stat"><div class="ps-val">'+(grossMargin!=null?grossMargin+'%':'—')+'</div><div class="ps-lbl">Gross Margin</div></div>';
+  h += '<div class="profile-stat"><div class="ps-val">'+(peVal!=null?peVal:'—')+'</div><div class="ps-lbl">P/E</div></div>';
+  h += '<div class="profile-stat"><div class="ps-val">'+(divYield!=null?divYield+'%':'—')+'</div><div class="ps-lbl">Div Yield</div></div>';
+  h += '<div class="profile-stat"><div class="ps-val">'+(freeFloat!=null?freeFloat+'%':'—')+'</div><div class="ps-lbl">Free Float</div></div>';
+  h += '<div class="profile-stat"><div class="ps-val">'+(mktCap?'K'+(mktCap/1e9).toFixed(1)+'B':'—')+'</div><div class="ps-lbl">Market Cap</div></div>';
+  h += '</div>';
+  
+  if (p.stance) h += '<div class="stance-badge '+stanceCls+'">📌 '+p.stance+'</div>';
+  
+  // CHART
+  h += '<div class="chart-periods"><span style="font-size:0.7rem;color:var(--muted);margin-right:0.5rem;">📈 '+(ohlcv?.data?.length||0)+' trading days</span>';
+  h += '<button class="btn btn-sm active" onclick="setChartPeriod(90,this)">3M</button>';
+  h += '<button class="btn btn-sm btn-outline" onclick="setChartPeriod(60,this)">2M</button>';
+  h += '<button class="btn btn-sm btn-outline" onclick="setChartPeriod(30,this)">1M</button>';
+  h += '</div>';
+  h += '<div class="chart-wrap"><canvas id="chartCanvas"></canvas></div>';
+  h += '<div class="indicators-row" id="indicatorsDiv"></div>';
+  
+  // About
+  if (p.description) h += '<div class="profile-section"><h4>About</h4><p>'+p.description+'</p></div>';
+  
+  // Price Timeline
+  if (p.priceHistory?.priceTimeline) { h += '<div class="profile-section"><h4>Key Events</h4><ul class="price-timeline">'; p.priceHistory.priceTimeline.forEach(pt=>{h+='<li><span class="pt-date">'+pt.date+'</span><span class="pt-price">K'+pt.price+'</span><span class="pt-event">'+pt.event+'</span></li>';}); h+='</ul></div>'; }
+  
+  // Analyst Notes
+  if (p.analystNotes?.length) { h += '<div class="profile-section"><h4>Analyst Notes</h4>'; p.analystNotes.forEach(n=>{h+='<div class="analyst-note"><div class="an-date">'+n.date+' · <span class="an-author">'+n.author+'</span></div><p style="margin-top:0.2rem;">'+n.note+'</p></div>';}); h+='</div>'; }
+  
+  // Risk Factors
+  if (p.riskFactors?.length) { h += '<div class="profile-section"><h4>Risk Factors</h4>'; p.riskFactors.forEach(rf=>h+='<div class="risk-flag">⚠️ '+rf+'</div>'); h+='</div>'; }
+  
+  // Investment Thesis
+  if (p.investmentThesis) h += '<div class="profile-section"><h4>Investment Thesis</h4><p>'+p.investmentThesis+'</p></div>';
+  
+  // Ownership
+  if (p.ownership?.topHolders) { h += '<div class="profile-section"><h4>Ownership</h4>'; p.ownership.topHolders.forEach(oh=>{h+='<div class="mover-row"><span class="n">'+oh.name+'</span><span class="p" style="font-weight:600;">'+oh.stake+'%</span></div>';}); h+='</div>'; }
+  
+  h += '</div>';
+  document.getElementById('modalContent').innerHTML = h;
+}
+
+
+// ====== HEATMAP ======
+function renderHeatmap() {
+  const companies = allData.companies || [];
+  if (!companies.length) return;
+  
+  const list = companies.filter(c => c.marketCap && c.price > 0).sort((a,b) => b.marketCap - a.marketCap);
+  if (!list.length) return;
+  
+  const canvas = document.getElementById('heatmapCanvas');
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+  
+  const W = 900, H = 340;
+  canvas.width = W; canvas.height = H;
+  canvas.style.cursor = 'default';
+  
+  const cols = 5;
+  const rows = Math.ceil(list.length / cols);
+  const cw = W / cols;
+  const ch = H / rows;
+  
+  // Store cell data for tooltip
+  const cells = [];
+  
+  list.forEach((c, i) => {
+    const col = i % cols;
+    const row = Math.floor(i / cols);
+    const sx = col * cw;
+    const sy = row * ch;
+    const pct = c.changePct || 0;
+    let color;
+    if (pct >= 0.5) color = '#3fb950';
+    else if (pct >= 0) color = '#7ee787';
+    else if (pct >= -0.5) color = '#f0883e';
+    else color = '#f85149';
+    
+    const alpha = Math.min(0.85, 0.25 + Math.abs(pct) * 0.9);
+    ctx.fillStyle = color + Math.round(alpha * 255).toString(16).padStart(2,'0');
+    ctx.fillRect(sx+1, sy+1, cw-3, ch-3);
+    
+    cells.push({ sx: sx+1, sy: sy+1, w: cw-3, h: ch-3, ticker: c.ticker, pct: pct, mcap: c.marketCap, name: c.name });
+    
+    // Only show labels if cell is large enough
+    if (ch > 18 && cw > 65) {
+      ctx.fillStyle = '#c9d1d9';
+      ctx.font = 'bold ' + Math.min(11, ch/3) + 'px -apple-system, sans-serif';
+      ctx.textAlign = 'left';
+      ctx.fillText(c.ticker, sx+6, sy+ch/2+1);
+      
+      if (cw > 90) {
+        ctx.fillStyle = '#a8b2bd';
+        ctx.font = Math.min(9, ch/4) + 'px -apple-system, sans-serif';
+        const chgStr = (pct >= 0 ? '+' : '') + pct.toFixed(1) + '%';
+        ctx.textAlign = 'right';
+        ctx.fillText(chgStr, sx+cw-8, sy+ch/2+1);
+        ctx.textAlign = 'left';
+      }
+    }
+  });
+  
+  // Hover tooltip
+  canvas.onmousemove = function(e) {
+    const rect = canvas.getBoundingClientRect();
+    const scaleX = W / rect.width;
+    const scaleY = H / rect.height;
+    const mx = (e.clientX - rect.left) * scaleX;
+    const my = (e.clientY - rect.top) * scaleY;
+    
+    let found = null;
+    for (const cell of cells) {
+      if (mx >= cell.sx && mx <= cell.sx + cell.w && my >= cell.sy && my <= cell.sy + cell.h) {
+        found = cell; break;
+      }
+    }
+    
+    if (found) {
+      canvas.style.cursor = 'pointer';
+      canvas.title = found.ticker + ' | ' + found.name + ' | ' + (found.pct>=0?'+':'') + found.pct.toFixed(2) + '% | Mkt Cap: K' + (found.mcap/1e9).toFixed(1) + 'B';
+    } else {
+      canvas.style.cursor = 'default';
+      canvas.title = '';
+    }
+  };
+  
+  canvas.onclick = function(e) {
+    const rect = canvas.getBoundingClientRect();
+    const scaleX = W / rect.width;
+    const scaleY = H / rect.height;
+    const mx = (e.clientX - rect.left) * scaleX;
+    const my = (e.clientY - rect.top) * scaleY;
+    for (const cell of cells) {
+      if (mx >= cell.sx && mx <= cell.sx + cell.w && my >= cell.sy && my <= cell.sy + cell.h) {
+        openProfile(cell.ticker); return;
+      }
+    }
+  };
+}
+
+// ====== TICKER ======
+function renderTicker(items) {
+  const track = document.getElementById('tickerTrack');
+  if (!items.length) { track.innerHTML = '<span class="ticker-item">No recent news — check back after market hours.</span>'; return; }
+  // Duplicate for seamless scroll
+  const html = items.slice(0, 12).map(n => {
+    const catClass = 'tcat-' + (n.category || 'market').toLowerCase();
+    const tickers = n.tickers?.length ? ' ' + n.tickers.map(t => '#' + t).join(' ') : '';
+    return '<span class="ticker-item"><span class="t-cat '+catClass+'">'+(n.category||'NEWS')+'</span>'+n.title+'<span class="t-tickers">'+tickers+'</span><span class="ticker-time">'+n.date+'</span></span>';
+  }).join('');
+  track.innerHTML = html + html; // duplicate for seamless loop
+}
+
+// ====== NEWS ======
+let newsData = [], sensData = [], sensFilter = 'all', newsFilter = 'all';
+
+async function loadNews() {
+  // News loaded from all.json in load()
+  try {
+    if (!newsData.length) {
+      const r = await fetch('data/news.json');
+      newsData = await r.json();
+    }
+    renderTicker(newsData);
+    renderNews();
+  } catch(e) {}
+}
+
+function filterNews(cat, btn) {
+  newsFilter = cat;
+  document.querySelectorAll('.news-filters .btn-sm').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  renderNews();
+}
+
+function renderNews() {
+  let items = newsData;
+  if (newsFilter !== 'all') items = items.filter(n => n.category === newsFilter);
+  document.getElementById('newsList').innerHTML = items.map(n => 
+    '<div class="news-item"><div class="n-date">' + n.date + '<span class="n-cat n-cat-' + n.category + '">' + n.category + '</span></div>' +
+    '<div class="n-title">' + n.title + '</div>' +
+    '<div class="n-sum">' + n.summary + (n.tickers?.length ? ' ' + n.tickers.map(t => '<span class="n-ticker">' + t + '</span>').join('') : '') + '</div>' +
+    '<div class="n-source">' + n.source + '</div></div>'
+  ).join('');
+}
+
+function renderSens() {
+  let items = sensData;
+  if (sensFilter !== 'all') items = items.filter(s => s.type === sensFilter);
+  const list = document.getElementById('sensList');
+  if (!list) return;
+  list.innerHTML = items.slice(0, 24).map(s => {
+    const typeClass = s.type.replace(/[^a-zA-Z0-9]/g, '_');
+    return '<div class="sens-item type-' + typeClass + '">' +
+      '<div class="s-date">' + s.date + '<span class="s-type s-type-' + typeClass + '">' + s.type + '</span></div>' +
+      '<div class="s-title">' + s.title + '</div>' +
+      '<div class="s-cat">' + s.category + '</div>' +
+      (s.tickers?.length ? '<div class="s-tickers">' + s.tickers.map(t => '<span class="s-ticker">#' + t + '</span>').join('') + '</div>' : '') +
+      '</div>';
+  }).join('');
+}
+
+function filterSens(type, btn) {
+  document.querySelectorAll('.sens-filters .btn-sm').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  sensFilter = type;
+  renderSens();
+}
+
+function renderBottom() {
+  const sd = allData.market?.spotlightData;
+  let s = '<div class="card"><h3>🔦 Spotlight Tracker</h3>';
+  if(sd){s+='<div class="spotlight-grid">';sd.dates.forEach((d,i)=>{s+='<div class="spotlight-day"><div class="day">'+d+'</div><div class="pct" style="color:var(--gold)">'+sd.turnoverShare[i]+'%</div><div class="sector">'+sd.tickers[i]+'·'+sd.sectors[i]+'</div></div>';});s+='</div><div class="note">📌 "Traveling circus" — liquidity concentrates on one stock per day.</div>';}s+='</div>';
+  const b = allData.bonds; 
+  let bd = '<div class="card"><h3>📜 Bond & T-Bill Yields</h3>';
+  
+  // Government Bonds
+  if(b?.auctions?.length){
+    bd+='<div style="font-size:0.65rem;color:var(--gold);margin-bottom:0.3rem;font-weight:600;">Government Bonds</div>';
+    bd+='<table class="yield-table" style="margin-bottom:0.75rem;"><tr><th>Tenor</th><th>Jan 23</th><th>Feb 13</th><th>Δ</th></tr>';
+    ['2yr','5yr','7yr','10yr','15yr'].forEach(t=>{
+      const j=b.auctions[0].yields[t],f=b.auctions[1]?.yields[t];
+      if(j!=null&&f!=null){
+        const d=(f-j).toFixed(0);
+        bd+='<tr><td>'+t.replace('yr','-Year')+'</td><td>'+j.toFixed(2)+'%</td><td>'+f.toFixed(2)+'%</td><td style="color:'+(d<0?'var(--green)':'var(--red)')+'">'+(d>0?'+':'')+d+' bps</td></tr>';
+      }
+    });
+    bd+='</table>';
+  }
+  
+  // Treasury Bills
+  if(b?.treasuryBills?.bills?.length){
+    const tb = b.treasuryBills;
+    bd+='<div style="font-size:0.65rem;color:var(--gold);margin-bottom:0.3rem;font-weight:600;">Treasury Bills · '+tb.asOf+'</div>';
+    bd+='<table class="yield-table"><tr><th>Tenor</th><th>Discount</th><th>Yield</th><th>ISIN</th></tr>';
+    tb.bills.forEach(r=>{
+      bd+='<tr><td>'+r.period+'</td><td>'+r.discountRate+'%</td><td style="color:var(--green);font-weight:600;">'+r.yield+'%</td><td style="font-size:0.6rem;">'+r.isin+'</td></tr>';
+    });
+    bd+='</table>';
+  }
+  bd+='<div class="note" style="margin-top:0.4rem;">Source: <a href="https://www.boz.zm/markets-securities/treasury-bills" target="_blank" style="color:var(--blue);">Bank of Zambia</a></div>';
+  bd+='</div>';
+  document.getElementById('bottom').innerHTML = s+bd;
+}
+
+async function refresh(){document.getElementById('supd').textContent='Static — build script updates data';setTimeout(()=>{document.getElementById('supd').textContent=allData.marketClose?.asOf||allData.market?.asOf||'';},2000);}
+
+// ====== SIMULATORS ======
+const BOND_YIELDS = { 
+  '91d':10.50, '182d':11.00, '273d':11.25, '364d':12.50,
+  '2yr':14.50, '5yr':14.98, '7yr':16.00, '10yr':16.50, '15yr':17.59 
+};
+const WITHHOLDING_TAX = 0.15; // 15% on bond interest
+const BROKERAGE_FEE = 0.015; // 1.5% buy + sell
+const LUSE_LEVY = 0.001; // 0.1%
+
+// Historical annual returns for stocks (approximate)
+const STOCK_RETURNS = {
+  LASI: [0.68, 0.12, -0.05],  // LASI: 68% (2025), 12%, -5%
+  ATEL: [0.15, 0.08, 0.05],
+  ZNCO: [0.22, 0.10, 0.03],
+  CECZ: [0.10, 0.05, -0.02],
+  ZSUG: [0.18, 0.12, 0.08],
+  DCZM: [0.45, 0.20, 0.00],
+  CHIL: [0.08, 0.04, 0.01],
+  ZFCO: [0.35, 0.15, 0.10],
+  SCBL: [0.05, -0.03, -0.08],
+  ZMBF: [0.12, 0.06, -0.02]
+};
+
+function fmtK(v) { return 'K' + (v||0).toLocaleString('en-US', {minimumFractionDigits:2,maximumFractionDigits:2}); }
+function pct(v) { return (v>=0?'+':'') + (v*100).toFixed(1) + '%'; }
+
+function simBond() {
+  const amt = parseFloat(document.getElementById('bondAmt').value) || 10000;
+  const tenorKey = document.getElementById('bondTenor').value;
+  const yieldPct = BOND_YIELDS[tenorKey] / 100;
+  const isTBill = tenorKey.endsWith('d');
+  
+  // Parse days or years
+  let years, label;
+  if (isTBill) {
+    const days = parseInt(tenorKey);
+    years = days / 365;
+    label = days + ' Days';
+  } else {
+    years = parseInt(tenorKey);
+    label = years + ' Years';
+  }
+  
+  let totalGrossInterest, annualInterest, taxPaid, netInterest, totalReturn;
+  
+  if (isTBill) {
+    // T-Bills: zero-coupon discount instrument
+    // Buy at discount, get face value at maturity
+    const discountRate = yieldPct; // annualised yield
+    const maturityYield = discountRate * years;
+    const discountAmount = amt * maturityYield;
+    const purchasePrice = amt - discountAmount; // what you actually pay
+    totalGrossInterest = discountAmount;
+    annualInterest = totalGrossInterest / years;
+    taxPaid = totalGrossInterest * WITHHOLDING_TAX;
+    netInterest = totalGrossInterest - taxPaid;
+    totalReturn = amt - taxPaid; // face value minus tax on discount
+  } else {
+    // Bonds: semi-annual coupon payments
+    annualInterest = amt * yieldPct;
+    totalGrossInterest = annualInterest * years;
+    taxPaid = totalGrossInterest * WITHHOLDING_TAX;
+    netInterest = totalGrossInterest - taxPaid;
+    totalReturn = amt + netInterest;
+  }
+  
+  const semiAnnual = isTBill ? null : (annualInterest / 2);
+  const annualisedReturn = (Math.pow(totalReturn/amt, 1/years) - 1) * 100;
+  
+  let html = '<div class="sim-result-row"><span>Instrument</span><span class="v" style="color:var(--gold);">' + (isTBill ? 'Treasury Bill' : 'Govt Bond') + ' · ' + label + '</span></div>' +
+    '<div class="sim-result-row"><span>Yield (annualised)</span><span class="v">' + (yieldPct*100).toFixed(2) + '%</span></div>' +
+    '<div class="sim-result-row"><span>Annual Interest</span><span class="v">' + fmtK(annualInterest) + '</span></div>';
+  
+  if (!isTBill) {
+    html += '<div class="sim-result-row"><span>Semi-Annual Coupon</span><span class="v">' + fmtK(semiAnnual) + '</span></div>';
+  }
+  
+  html += '<div class="sim-result-row"><span>Gross Return ('+label+')</span><span class="v pos">' + fmtK(totalGrossInterest) + '</span></div>' +
+    '<div class="sim-result-row"><span>Withholding Tax (15%)</span><span class="v neg">−' + fmtK(taxPaid) + '</span></div>' +
+    '<div class="sim-total"><span>After-Tax Return</span><span class="v pos">' + fmtK(totalReturn) + '</span></div>' +
+    '<div class="sim-note">Effective annualised return: <strong>' + annualisedReturn.toFixed(2) + '%</strong> after tax' + (isTBill ? ' · Zero-coupon discount instrument' : ' · Held to maturity') + '</div>';
+  
+  document.getElementById('bondResult').innerHTML = html;
+  compareReturns();
+}
+
+function simStock() {
+  const amt = parseFloat(document.getElementById('stockAmt').value) || 10000;
+  const ticker = document.getElementById('stockPick').value;
+  const period = parseInt(document.getElementById('stockPeriod').value) || 1;
+  
+  const returns = STOCK_RETURNS[ticker] || STOCK_RETURNS.LASI;
+  // Compound the annual returns for the period
+  let growthFactor = 1;
+  for (let i = 0; i < Math.min(period, returns.length); i++) {
+    growthFactor *= (1 + returns[i]);
+  }
+  // If period > available data, use last available return
+  if (period > returns.length) {
+    const lastRet = returns[returns.length-1];
+    for (let i = returns.length; i < period; i++) growthFactor *= (1 + lastRet);
+  }
+  
+  const grossValue = amt * growthFactor;
+  const fees = amt * BROKERAGE_FEE + grossValue * BROKERAGE_FEE + grossValue * LUSE_LEVY;
+  const netValue = grossValue - fees;
+  const netReturn = netValue - amt;
+  const annualisedReturn = (Math.pow(netValue/amt, 1/period) - 1) * 100;
+  
+  const returnCls = netReturn >= 0 ? 'pos' : 'neg';
+  
+  document.getElementById('stockResult').innerHTML =
+    '<div class="sim-result-row"><span>Period</span><span class="v">' + period + ' year(s)</span></div>' +
+    '<div class="sim-result-row"><span>Gross Value</span><span class="v ' + (grossValue>amt?'pos':'neg') + '">' + fmtK(grossValue) + '</span></div>' +
+    '<div class="sim-result-row"><span>Brokerage (1.5% × 2)</span><span class="v neg">−' + fmtK(amt*BROKERAGE_FEE + grossValue*BROKERAGE_FEE) + '</span></div>' +
+    '<div class="sim-result-row"><span>LuSE Levy (0.1%)</span><span class="v neg">−' + fmtK(grossValue*LUSE_LEVY) + '</span></div>' +
+    '<div class="sim-total"><span>Net Return</span><span class="v ' + returnCls + '">' + fmtK(netValue) + '</span></div>' +
+    '<div class="sim-note">' + (netReturn>=0?'Gain':'Loss') + ': <strong class="' + returnCls + '">' + (netReturn>=0?'+':'') + fmtK(netReturn) + '</strong> · Annualised: <strong>' + annualisedReturn.toFixed(2) + '%</strong></div>';
+  
+  compareReturns();
+}
+
+function compareReturns() {
+  const stockAmt = parseFloat(document.getElementById('stockAmt').value) || 10000;
+  const tenorKey = document.getElementById('bondTenor').value;
+  const bondYield = BOND_YIELDS[tenorKey] / 100;
+  const isTBill = tenorKey.endsWith('d');
+  
+  // Calculate bond/T-bill return
+  let years, bondRet;
+  if (isTBill) {
+    years = parseInt(tenorKey) / 365;
+    const maturityYield = bondYield * years;
+    bondRet = (1 * (1 - maturityYield * WITHHOLDING_TAX)) / (1 - maturityYield) - 1;
+    // Simpler: net return over investment amount
+    const bondTotal = 1 + (maturityYield * (1 - WITHHOLDING_TAX));
+    bondRet = (bondTotal - 1) * 100;
+  } else {
+    years = parseInt(tenorKey);
+    const bondAmt = 1;
+    const bondTotal = bondAmt + (bondAmt * bondYield * years * (1 - WITHHOLDING_TAX));
+    bondRet = ((bondTotal - bondAmt) / bondAmt * 100);
+  }
+  
+  // Stock return for same period
+  const ticker = document.getElementById('stockPick').value;
+  const periodYears = Math.min(parseInt(document.getElementById('stockPeriod').value), Math.ceil(years));
+  const returns = STOCK_RETURNS[ticker] || STOCK_RETURNS.LASI;
+  let growthFactor = 1;
+  for (let i = 0; i < periodYears; i++) {
+    const ri = i < returns.length ? returns[i] : returns[returns.length-1];
+    growthFactor *= (1 + ri);
+  }
+  const stockGross = stockAmt * growthFactor;
+  const stockFees = stockAmt * BROKERAGE_FEE + stockGross * BROKERAGE_FEE + stockGross * LUSE_LEVY;
+  const stockNet = stockGross - stockFees;
+  const stockRet = ((stockNet - stockAmt) / stockAmt * 100);
+  
+  document.getElementById('compareBar').style.display = 'block';
+  const total = Math.abs(bondRet) + Math.abs(stockRet) || 1;
+  const bondPct = Math.abs(bondRet) / total * 100;
+  const stockPct = Math.abs(stockRet) / total * 100;
+  document.getElementById('barBond').style.width = bondPct + '%';
+  document.getElementById('barStock').style.width = stockPct + '%';
+  document.getElementById('legendBond').textContent = bondRet.toFixed(1) + '%';
+  document.getElementById('legendStock').textContent = stockRet.toFixed(1) + '%';
+  
+  const winner = bondRet > stockRet ? '📜 ' + (isTBill ? 'T-Bill' : 'Bond') : '📈 Stock';
+  const delta = Math.abs(bondRet - stockRet).toFixed(1);
+  const wClr = bondRet > stockRet ? 'var(--gold)' : 'var(--blue)';
+  document.getElementById('compareWinner').innerHTML = '<span style="color:'+wClr+'">' + winner + ' wins</span><span class="delta" style="color:var(--muted);">by ' + delta + ' percentage points</span>';
+}
+
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal();});
+load(); setInterval(load,300000); setTimeout(()=>{simBond();simStock();},500);
+</script>
+</body>
+</html>
+ + v.toLocaleString();
+    return 'K' + v.toLocaleString();
+  };
+  let r = '<div class="commodity-row"><div class="commodity-grid">';
+  comms.forEach(c => {
+    const cls = c.changePct > 0 ? 'up' : c.changePct < 0 ? 'down' : '';
+    const arrow = c.changePct > 0 ? '▲' : c.changePct < 0 ? '▼' : '—';
+    r += '<div class="commodity-item"><span class="cm-icon">' + c.icon + '</span> <span class="cm-name">' + c.name + '</span><br><span class="cm-price">' + fmtPrice(c.price, c.unit) + '</span><br><span class="cm-zmw">' + (c.zmwValue ? 'K' + c.zmwValue.toLocaleString() : '') + '</span><br><span class="cm-move ' + cls + '">' + arrow + ' ' + Math.abs(c.changePct).toFixed(1) + '%</span></div>';
+  });
+  r += '</div><div style="font-size:0.52rem;color:var(--muted);margin-top:0.3rem;line-height:1.3">';
+  comms.forEach(c => r += '<strong>' + c.name + '</strong>: ' + c.note + ' &middot; ');
+  r += '</div></div>';
+  return r;
 }
 
 function renderHero() {
