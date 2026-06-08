@@ -1,40 +1,41 @@
 {
-  "asOf": "2026-06-05",
-  "source": "Bank of Zambia (boz.zm), cross-rates from Wise/XE/ExchangeRates",
+  "asOf": "2026-06-08",
+  "source": "Bank of Zambia (boz.zm), exchangerate.guru, Wise, valutafx, exchange-rates.org",
   "baseNote": "Rates show ZMW per 1 unit of foreign currency. ↓ ZMW = Kwacha strengthening (appreciating).",
   "mpRate": 13.5,
-  "mpRateNote": "Monetary Policy Rate reduced 75bps from 14.25% on Feb 11, 2026. Next review: May 13, 2026.",
+  "mpRateNote": "Monetary Policy Rate reduced 75bps from 14.25% on Feb 11, 2026. BOZ held at 13.5% at May review. Next review: August 2026.",
   "rates": {
     "USD": {
-      "buy": 17.5071,
-      "sell": 17.5571,
-      "mid": 17.5321,
+      "buy": 17.51,
+      "sell": 17.61,
+      "mid": 17.56,
       "trend": "appreciating",
-      "weekAgo": 18.45,
+      "weekAgo": 18.23,
       "twoWeeksAgo": 18.825,
       "oneMonthAgo": 19.20,
-      "sixMonthsAgo": 22.50
+      "sixMonthsAgo": 22.50,
+      "note": "exchangerate.guru Jun 8: 17.56. 2026 low was 17.512 on Jun 4 (exchange-rates.org). Wise shows 2.38% decrease in USD/ZMW on Jun 8 — kwacha strengthening resumed."
     },
     "GBP": {
-      "mid": 23.80,
+      "mid": 23.45,
       "trend": "appreciating",
       "weekAgo": 24.91,
       "oneMonthAgo": 25.50,
-      "note": "Cross rate via USD.GBP ~1.36"
+      "note": "Cross rate via ZMW/GBP ~0.04264 (Wise Jun 5 high). 1 GBP ≈ 23.45 ZMW."
     },
     "EUR": {
-      "mid": 21.10,
+      "mid": 20.35,
       "trend": "appreciating",
       "weekAgo": 22.10,
       "oneMonthAgo": 22.40,
-      "note": "Cross rate via USD.EUR ~1.20"
+      "note": "EUR/ZMW low was 20.263 on Jun 5 (valutafx). 2026 high was 26.069 on Jan 1. -22.27% YTD."
     },
     "ZAR": {
       "mid": 1.061,
       "trend": "appreciating",
       "weekAgo": 1.135,
       "oneMonthAgo": 1.18,
-      "note": "1 ZMW = 0.942 ZAR. South African rand cross rate."
+      "note": "1 ZMW = 0.942 ZAR. ZAR/ZMW 2026 high was 1 ZMW = 0.9422 ZAR on Jun 5 (valutafx)."
     },
     "BWP": {
       "mid": 1.28,
@@ -50,19 +51,21 @@
     }
   },
   "trendAnalysis": {
-    "direction": "Kwacha STRENGTHENING sharply",
-    "twoWeekChange": -6.9,
-    "oneMonthChange": -8.7,
-    "sixMonthChange": -22.1,
+    "direction": "Kwacha STRENGTHENING — near 2-year highs",
+    "twoWeekChange": -6.7,
+    "oneMonthChange": -8.5,
+    "sixMonthChange": -22.0,
+    "ytdChange": -20.8,
     "drivers": [
       "Record copper output 890K tonnes (2025) — strong export earnings",
       "Record maize harvest >4M tonnes — reduced food import needs",
-      "Debt restructuring complete — sovereign risk premium collapsing",
-      "IMF successor programme talks scheduled July 2026",
+      "Debt restructuring 94% complete — sovereign risk premium collapsing",
+      "IMF successor programme talks scheduled July 2026 — staff visit confirmed",
       "MPR at 13.5% — high real yields attracting carry trade inflows",
-      "Yuan mining tax corridor reducing USD demand"
+      "Yuan mining tax corridor reducing USD demand",
+      "Gross international reserves at historic high of US$6.5 billion"
     ],
-    "outlook": "BOZ likely to continue easing MPR if inflation remains below 8%. Further kwacha appreciation possible in near term on copper tailwinds, but BOZ may intervene to protect export competitiveness. Key risks: global copper price reversal, drought cycles, election-related fiscal expansion (Aug 2026).",
+    "outlook": "BOZ held MPR at 13.5% at May review. Inflation at 6.8% (April). Further kwacha appreciation possible on copper tailwinds, but BOZ may intervene to protect export competitiveness. Key risks: global copper price reversal, drought cycles, election-related fiscal expansion (Aug 2026).",
     "projection3m": "USD/ZMW 16.50–18.00 range. Bias toward further appreciation if copper holds above $9,500/tonne and IMF successor programme progresses.",
     "projection6m": "USD/ZMW 16.00–19.00 range. Wider range reflects election uncertainty (Aug 2026). Post-election policy continuity would support kwacha; fiscal slippage would reverse gains."
   }
