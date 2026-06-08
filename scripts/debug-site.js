@@ -1,8 +1,6 @@
-async function check() {
-  const r = await fetch('https://raw.githubusercontent.com/geshvic/luse-dashboard/master/index.html');
-  const html = await r.text();
-  console.log('RAW GitHub sensList:', html.includes('id="sensList"'));
-  console.log('RAW SENS Announcements:', html.includes('SENS Announcements'));
-  console.log('RAW size:', (html.length/1024).toFixed(1) + 'KB');
-}
-check().catch(e => console.error(e.message));
+const fs = require('fs');
+const h = fs.readFileSync('C:\\Users\\MUSUK\\.openclaw\\workspace\\luse-dashboard\\public\\dashboard.html', 'utf8');
+console.log('screenerBar:', h.includes('screenerBar'));
+console.log('scrSector:', h.includes('scrSector'));
+console.log('Stock Screener:', h.includes('Stock Screener'));
+console.log('screener-section before All Listed:', h.indexOf('screener-section') < h.indexOf('All Listed Companies'));
