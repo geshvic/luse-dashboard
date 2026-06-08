@@ -452,6 +452,38 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
 
 
 
+<!-- ====== STOCK SCREENER ====== -->
+<div class="screener-section">
+  <h3>🔍 Stock Screener</h3>
+  <div class="screener-bar" id="screenerBar">
+    <select id="scrSector" onchange="runScreener()">
+      <option value="all">All Sectors</option>
+    </select>
+    <div class="scr-row"><label>PE</label><input type="number" id="scrPeMin" placeholder="Min" style="width:55px" onchange="runScreener()"><span style="font-size:0.55rem;color:var(--muted)">–</span><input type="number" id="scrPeMax" placeholder="Max" style="width:55px" onchange="runScreener()"></div>
+    <div class="scr-row"><label>Yield%</label><input type="number" id="scrYieldMin" placeholder="Min" style="width:55px" onchange="runScreener()"><span style="font-size:0.55rem;color:var(--muted)">–</span><input type="number" id="scrYieldMax" placeholder="Max" style="width:55px" onchange="runScreener()"></div>
+    <select id="scrMktCap" onchange="runScreener()">
+      <option value="all">All Market Caps</option>
+      <option value="large">Large (&gt;K10B)</option>
+      <option value="mid">Mid (K1B–10B)</option>
+      <option value="small">Small (&lt;K1B)</option>
+      <option value="micro">Micro (&lt;K100M)</option>
+    </select>
+    <select id="scrChange" onchange="runScreener()">
+      <option value="all">Any Change</option>
+      <option value="up">🟢 Gainers Only</option>
+      <option value="down">🔴 Losers Only</option>
+      <option value="flat">➖ Unchanged</option>
+    </select>
+    <label><input type="checkbox" id="scrCaution" onchange="runScreener()"> Exclude Cautionaries</label>
+    <label><input type="checkbox" id="scrActive" onchange="runScreener()"> Traded Today</label>
+    <button class="scr-clear" onclick="clearScreener()">Clear</button>
+    <span class="scr-count" id="scrCount"></span>
+  </div>
+  <div class="screener-table-wrap">
+    <table class="screener-table" id="screenerTable"></table>
+  </div>
+</div>
+
 <div class="section-header">
   <h3>📋 All Listed Companies (23)</h3>
   <div class="filters">
