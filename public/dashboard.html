@@ -704,6 +704,8 @@ function renderSentiment() {
     '<div class="sentiment-gauge"><div class="gauge-fill" style="width:'+score+'%;background:linear-gradient(90deg,var(--red),var(--gold),var(--green));"></div></div>' +
     '<div class="sentiment-labels"><span>Bearish</span><span>Neutral</span><span>Bullish</span></div>' +
     '<div class="sentiment-score" style="color:'+color+';">'+emoji+' '+Math.round(score)+'/100</div>' +
+    '<div class="sentiment-verdict" style="color:'+color+';">'+verdict+' · '+gainers+'▲ '+losers+'▼ '+flat+'─</div>';
+}
 
 let screenerSort = { col: 'mktCap', dir: -1 };
 let screenerData = [];
