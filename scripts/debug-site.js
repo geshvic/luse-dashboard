@@ -2,15 +2,17 @@ async function check() {
   const r = await fetch('https://geshvic.github.io/luse-dashboard/?' + Date.now());
   const html = await r.text();
   
-  console.log('CDN size:', (html.length/1024).toFixed(1) + 'KB');
-  console.log('Has screener HTML:', html.includes('Stock Screener'));
-  console.log('Has scrSector:', html.includes('scrSector'));
-  console.log('Has initScreener:', html.includes('function initScreener'));
-  console.log('Has screener CSS:', html.includes('screener-section'));
+  // Find all screenerSort declarations with context
+  const re = /let screenerSort/g;
+  let m;
+  let count = 0;
+  while ((m = re.exec(html)) !== null) {
+    count++;
+    const ctx = html.slice(Math.max(0, m.index - 30), m.index + 40);
+    console.log('Declaration', count, ':', ctx.replace(/\n/g, ' ').slice(0, 80));
+  }
   
-  // Check the initScreener call in load()
-  const loadIdx = html.indexOf('async function load');
-  const endIdx = html.indexOf('function render()', loadIdx);
-  console.log('\nload() has initScreener:', html.slice(loadIdx, endIdx).includes('initScreener'));
+  // Check if any are inside strings or comments
+  console.log('\nTotal:', count);
 }
 check().catch(e => console.error(e.message));
