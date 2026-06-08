@@ -31,16 +31,17 @@ const companies = readJSON('companies.json');
 const currency = readJSON('currency-data.json');
 const news = readJSON('news.json');
 const sens = readJSON('sens.json');
+const calendar = readJSON('calendar.json');
 let marketClose = {};
 try { marketClose = readJSON('market-close.json'); } catch(e) {}
 
 // Build combined all.json (matches /api/all response)
-const all = { market, bonds, stocks, companies, currency, marketClose, news, sens };
+const all = { market, bonds, stocks, companies, currency, marketClose, news, sens, calendar };
 fs.writeFileSync(path.join(DATA_DST, 'all.json'), JSON.stringify(all));
 console.log('[build-static] ✓ data/all.json');
 
 // Copy individual data files
-for (const f of ['market-summary.json','bond-market.json','stocks.json','companies.json','currency-data.json','news.json','market-close.json','sens.json']) {
+for (const f of ['market-summary.json','bond-market.json','stocks.json','companies.json','currency-data.json','news.json','market-close.json','sens.json','calendar.json']) {
   const src = path.join(DATA_SRC, f);
   if (fs.existsSync(src)) {
     fs.copyFileSync(src, path.join(DATA_DST, f));

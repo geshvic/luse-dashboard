@@ -690,26 +690,23 @@ function renderSentiment() {
 }
 
 function renderCalendar() {
-  const c = allData.companies || [];
-  // Build earnings/dividend calendar from company data
-  let items = [];
-  // Upcoming dividends (from companies with yield and ex-div dates in profiles)
-  const divTickers = [
-    { ticker:'BATZ', date:'Jun 17', type:'dividend', desc:'Final Dividend' },
-    { ticker:'CHIL', date:'Jun 8', type:'earnings', desc:'Earnings Release' },
-    { ticker:'BATA', date:'Jun 11', type:'earnings', desc:'Earnings Release' },
-    { ticker:'ZMBF', date:'Jun 22', type:'earnings', desc:'Earnings Release' },
-    { ticker:'AECI', date:'Jun 26', type:'earnings', desc:'Earnings Release' },
-    { ticker:'SCBL', date:'Jul 24', type:'earnings', desc:'Earnings Release' },
-    { ticker:'ZABR', date:'Aug 14', type:'earnings', desc:'Earnings Release' },
-    { ticker:'ATEL', date:'Aug 20', type:'earnings', desc:'Earnings Release' },
-  ];
-  if (!items.length) items = divTickers;
-  const dotCls = (t) => t==='earnings'?'earnings':t==='dividend'?'dividend':'event';
-  const emoji = (t) => t==='earnings'?'📋':t==='dividend'?'💵':'📅';
+  let items = allData.calendar || [];
+  if (!items.length) {
+    // Fallback if no calendar.json loaded
+    items = [
+      { ticker:'DCZM', displayDate:'Jun 15', type:'Earnings', desc:'Full Year Results', confidence:'confirmed' },
+      { ticker:'CECZ', displayDate:'Jun 23', type:'AGM', desc:'EGM', confidence:'confirmed' },
+      { ticker:'NATB', displayDate:'Jun 26', type:'AGM', desc:'58th AGM', confidence:'confirmed' },
+      { ticker:'ATEL', displayDate:'Aug 20', type:'Earnings', desc:'Half-Year Results', confidence:'confirmed' },
+      { ticker:'ZNCO', displayDate:'Sep 18', type:'Earnings', desc:'Half-Year Results', confidence:'confirmed' },
+    ];
+  }
+  const dotCls = (t) => t==='Earnings'?'earnings':t==='Dividend'?'dividend':t==='AGM'?'event':'event';
+  const emoji = (t) => t==='Earnings'?'📊':t==='Dividend'?'💵':t==='AGM'?'📅':'📌';
   let html = '<h3>📅 Upcoming Events</h3>';
-  items.forEach(i => {
-    html += '<div class="cal-item"><div class="cal-dot '+dotCls(i.type)+'"></div><span class="cal-date">'+i.date+'</span><span class="cal-ticker">'+i.ticker+'</span><span class="cal-desc">'+emoji(i.type)+' '+i.desc+'</span></div>';
+  items.slice(0, 10).forEach(i => {
+    const conf = i.confidence === 'estimated' ? ' <span style=font-size:0.5rem;color:var(--muted)>est</span>' : '';
+    html += '<div class="cal-item"><div class="cal-dot '+dotCls(i.type)+'"></div><span class="cal-date">'+i.displayDate+'</span><span class="cal-ticker">'+i.ticker+'</span><span class="cal-desc">'+emoji(i.type)+' '+i.desc+conf+'</span></div>';
   });
   document.getElementById('earningsCalendar').innerHTML = html;
 }
