@@ -1250,9 +1250,34 @@ function filterSens(type, btn) {
 }
 
 function renderBottom() {
-  const sd = allData.market?.spotlightData;
-  let s = '<div class="card"><h3>🔦 Spotlight Tracker</h3>';
-  if(sd){s+='<div class="spotlight-grid">';sd.dates.forEach((d,i)=>{s+='<div class="spotlight-day"><div class="day">'+d+'</div><div class="pct" style="color:var(--gold)">'+sd.turnoverShare[i]+'%</div><div class="sector">'+sd.tickers[i]+'·'+sd.sectors[i]+'</div></div>';});s+='</div><div class="note">📌 "Traveling circus" — liquidity concentrates on one stock per day.</div>';}s+='</div>';
+  // Spotlight: Recently Listed + Top Performers
+  const cos = allData.companies || [];
+  let s = '<div class="card"><h3>🔦 Spotlight</h3>';
+  
+  // Recently Listed
+  s += '<div style="font-size:0.6rem;color:var(--gold);margin-bottom:0.3rem;font-weight:600;">🆕 Recently Listed</div>';
+  const recent = [
+    { ticker:'KLRE', name:'Klapton Reinsurance', date:'Mar 2026', note:'Direct listing · K49.5M' },
+    { ticker:'DCZM', name:'Dot Com Zambia', date:'Dec 2025', note:'IPO · Alt-M Board' },
+  ];
+  recent.forEach(r => {
+    const p = cos.find(c => c.ticker === r.ticker);
+    const price = p?.price ? 'K' + p.price.toFixed(2) : '—';
+    const chg = p?.changePct ? (p.changePct > 0 ? '+' : '') + p.changePct.toFixed(1) + '%' : '—';
+    s += '<div class="cal-item"><span class="cal-ticker" style="color:var(--blue);">' + r.ticker + '</span><span class="cal-desc" style="font-size:0.6rem;">' + r.name + '</span><span style="font-size:0.58rem;color:var(--muted);margin-left:auto;">' + price + ' <span style="color:'+(p?.changePct>0?'var(--green)':'var(--muted)')+';">' + chg + '</span></span></div>';
+  });
+  
+  // Top 3 Performers (by % change)
+  s += '<div style="font-size:0.6rem;color:var(--gold);margin:0.5rem 0 0.3rem;font-weight:600;">🏆 Top 3 — Today</div>';
+  const performers = [...cos].filter(c => c.price > 0).sort((a,b) => (b.changePct||0) - (a.changePct||0)).slice(0, 3);
+  performers.forEach((p, i) => {
+    const medal = ['🥇','🥈','🥉'][i];
+    const chgCls = (p.changePct||0) > 0 ? 'pos' : (p.changePct||0) < 0 ? 'neg' : '';
+    s += '<div class="cal-item"><span style="width:20px;font-size:0.75rem;">' + medal + '</span><span class="cal-ticker" style="color:var(--blue);">' + p.ticker + '</span><span class="cal-desc" style="font-size:0.58rem;">' + (p.name||'').slice(0,25) + '</span><span style="font-size:0.6rem;margin-left:auto;" class="' + chgCls + '">' + (p.changePct>0?'+':'') + (p.changePct||0).toFixed(2) + '%</span></div>';
+  });
+  
+  s += '</div>';
+  
   const b = allData.bonds; 
   let bd = '<div class="card"><h3>📜 Bond & T-Bill Yields</h3>';
   
