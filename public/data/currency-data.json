@@ -1,61 +1,67 @@
 {
-  "asOf": "2026-06-08",
-  "source": "Bank of Zambia (boz.zm), exchangerate.guru, Wise, valutafx, exchange-rates.org",
+  "asOf": "2026-06-09",
+  "source": "Bank of Zambia (boz.zm), XE.com, exchangerate.guru, valutafx",
   "baseNote": "Rates show ZMW per 1 unit of foreign currency. ↓ ZMW = Kwacha strengthening (appreciating).",
   "mpRate": 13.5,
   "mpRateNote": "Monetary Policy Rate reduced 75bps from 14.25% on Feb 11, 2026. BOZ held at 13.5% at May review. Next review: August 2026.",
   "rates": {
     "USD": {
-      "buy": 17.51,
-      "sell": 17.61,
-      "mid": 17.56,
-      "trend": "appreciating",
+      "buy": 17.6800,
+      "sell": 17.7300,
+      "mid": 17.7050,
+      "marketMid": 17.8145,
+      "trend": "weakening",
+      "dayAgo": 17.56,
       "weekAgo": 18.23,
       "twoWeeksAgo": 18.825,
       "oneMonthAgo": 19.20,
       "sixMonthsAgo": 22.50,
-      "note": "exchangerate.guru Jun 8: 17.56. 2026 low was 17.512 on Jun 4 (exchange-rates.org). Wise shows 2.38% decrease in USD/ZMW on Jun 8 — kwacha strengthening resumed."
+      "note": "BOZ official mid-rate: 17.7050. XE.com mid-market: 17.8145 at 16:32 UTC Jun 9. 2026 low was 17.512 on Jun 4 (valutafx). XE 7-day range: 17.56–18.43. Slight bounce off multi-year lows — kwacha paused its rally."
     },
     "GBP": {
-      "mid": 23.45,
-      "trend": "appreciating",
+      "mid": 23.83,
+      "trend": "weakening",
+      "dayAgo": 23.45,
       "weekAgo": 24.91,
       "oneMonthAgo": 25.50,
-      "note": "Cross rate via ZMW/GBP ~0.04264 (Wise Jun 5 high). 1 GBP ≈ 23.45 ZMW."
+      "note": "XE.com mid-market: 1 GBP = 23.8315 ZMW at 16:32 UTC. GBP/ZMW cross via USD."
     },
     "EUR": {
-      "mid": 20.35,
-      "trend": "appreciating",
+      "mid": 20.57,
+      "trend": "weakening",
+      "dayAgo": 20.35,
       "weekAgo": 22.10,
       "oneMonthAgo": 22.40,
-      "note": "EUR/ZMW low was 20.263 on Jun 5 (valutafx). 2026 high was 26.069 on Jan 1. -22.27% YTD."
+      "note": "XE.com mid-market: 1 EUR = 20.5696 ZMW at 16:32 UTC. 2026 high was 26.069 on Jan 1 (valutafx). -21.1% YTD."
     },
     "ZAR": {
-      "mid": 1.061,
-      "trend": "appreciating",
+      "mid": 1.079,
+      "trend": "weakening",
+      "dayAgo": 1.061,
       "weekAgo": 1.135,
       "oneMonthAgo": 1.18,
-      "note": "1 ZMW = 0.942 ZAR. ZAR/ZMW 2026 high was 1 ZMW = 0.9422 ZAR on Jun 5 (valutafx)."
+      "note": "XE.com mid-market: 1 ZAR = 1.0793 ZMW at 16:32 UTC. 1 ZMW = 0.9265 ZAR."
     },
     "BWP": {
-      "mid": 1.28,
+      "mid": 1.30,
       "trend": "stable",
       "weekAgo": 1.35,
       "note": "Botswana pula. Estimated cross rate."
     },
     "CNY": {
-      "mid": 2.43,
-      "trend": "appreciating",
+      "mid": 2.46,
+      "trend": "weakening",
       "weekAgo": 2.55,
       "note": "Chinese yuan. Zambia's growing yuan-denominated mining tax corridor."
     }
   },
   "trendAnalysis": {
-    "direction": "Kwacha STRENGTHENING — near 2-year highs",
-    "twoWeekChange": -6.7,
-    "oneMonthChange": -8.5,
-    "sixMonthChange": -22.0,
-    "ytdChange": -20.8,
+    "direction": "Kwacha PAUSED near 2-year highs — slight retreat today",
+    "dayChange": 1.4,
+    "twoWeekChange": -5.4,
+    "oneMonthChange": -7.2,
+    "sixMonthChange": -20.8,
+    "ytdChange": -19.7,
     "drivers": [
       "Record copper output 890K tonnes (2025) — strong export earnings",
       "Record maize harvest >4M tonnes — reduced food import needs",
