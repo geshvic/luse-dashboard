@@ -83,7 +83,27 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
 .hero-chart-indicators .ind-mini .val { font-size:0.85rem; font-weight:700; }
 .hero-chart-indicators .ind-mini .lbl { font-size:0.55rem; color:var(--muted); margin-top:0.1rem; }
 
-/* === MOVERS STRIP === */
+/* === LEFT COLUMN MOVERS === */
+.left-movers { display:flex; flex-direction:column; gap:0.5rem; margin-top:auto; }
+.left-mover-card { background:var(--card); border:1px solid var(--border); border-radius:8px; padding:0.55rem 0.7rem; }
+.left-mover-card.gainers { border-left:2px solid var(--green); }
+.left-mover-card.decliners { border-left:2px solid var(--red); }
+.left-mover-card.sentiment { border-left:2px solid var(--gold); }
+.left-mover-card .lm-header { font-size:0.6rem; color:var(--muted); text-transform:uppercase; letter-spacing:0.5px; margin-bottom:0.3rem; }
+.left-mover-card .lm-row { display:flex; justify-content:space-between; align-items:center; padding:0.18rem 0; font-size:0.65rem; border-bottom:1px solid rgba(48,54,61,0.3); }
+.left-mover-card .lm-row:last-child { border-bottom:none; }
+.left-mover-card .lm-ticker { font-weight:700; color:var(--blue); cursor:pointer; width:40px; }
+.left-mover-card .lm-ticker:hover { color:var(--accent); }
+.left-mover-card .lm-price { color:var(--muted); font-size:0.6rem; }
+.left-mover-card .lm-chg { font-weight:600; min-width:42px; text-align:right; font-size:0.62rem; }
+.left-mover-card .lm-empty { font-size:0.58rem; color:var(--muted); padding:0.15rem 0; }
+.left-mover-card .mini-gauge-wrap { margin-top:0.3rem; }
+.left-mover-card .mini-gauge { height:4px; border-radius:2px; background:rgba(48,54,61,0.5); overflow:hidden; }
+.left-mover-card .mini-gauge .fill { height:100%; border-radius:2px; transition:width 0.6s; background:linear-gradient(90deg,var(--red),var(--gold),var(--green)); }
+.left-mover-card .mini-score-row { display:flex; justify-content:space-between; align-items:center; margin-top:0.25rem; font-size:0.6rem; }
+.left-mover-card .mini-score-row .score-num { font-weight:700; font-size:0.75rem; }
+
+/* === MOVERS STRIP (legacy, kept empty) === */
 .movers-strip { margin:0 2rem 0.75rem; display:grid; grid-template-columns:1fr 1fr 1.5fr; gap:0.75rem; }
 @media (max-width:900px) { .movers-strip { grid-template-columns:1fr 1fr; } }
 .movers-strip-card { background:var(--card); border:1px solid var(--border); border-radius:8px; padding:0.6rem 0.85rem; display:flex; align-items:center; gap:0.5rem; overflow:hidden; }
@@ -420,6 +440,11 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
 <div class="hero" id="hero">
   <div class="hero-col">
     <div class="hero-card" id="heroMarketClose"></div>
+    <div class="left-movers" id="leftMovers">
+      <div class="left-mover-card gainers" id="leftGainers"></div>
+      <div class="left-mover-card decliners" id="leftDecliners"></div>
+      <div class="left-mover-card sentiment" id="leftSentiment"></div>
+    </div>
   </div>
   <div class="hero-chart-col">
     <div class="hero-chart-card">
@@ -435,12 +460,6 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
     <div class="currency-card" id="currencyCard"></div>
     <div class="calendar-card" id="earningsCalendar"></div>
   </div>
-</div>
-
-<div class="movers-strip" id="moversStrip">
-  <div class="movers-strip-card gainers" id="stripGainers"></div>
-  <div class="movers-strip-card decliners" id="stripDecliners"></div>
-  <div class="movers-strip-sentiment" id="stripSentiment"></div>
 </div>
 
 <div class="analysis-section" id="analysis"></div>
@@ -713,31 +732,29 @@ function renderMoversStrip() {
   const cos = allData.companies || [];
   const gainers = cos.filter(c => (c.changePct||0) > 0).sort((a,b)=>(b.changePct||0)-(a.changePct||0)).slice(0,5);
   const losers = cos.filter(c => (c.changePct||0) < 0).sort((a,b)=>(a.changePct||0)-(b.changePct||0)).slice(0,5);
-  
-  // Gainers strip
-  let g = '<span class="ms-label">🟢 Gainers</span><div class="ms-items">';
-  if (gainers.length) {
-    gainers.forEach(gi => {
-      g += '<div class="ms-item"><span class="ms-ticker" style="color:var(--blue);cursor:pointer" onclick="openProfile(\''+gi.ticker+'\')">'+gi.ticker+'</span><span class="ms-chg" style="color:var(--green)">+'+(gi.changePct||0).toFixed(1)+'%</span></div>';
-    });
-  } else { g += '<span class="muted" style="font-size:0.6rem;">No gainers</span>'; }
-  g += '</div>';
-  document.getElementById('stripGainers').innerHTML = g;
-  
-  // Decliners strip
-  let d = '<span class="ms-label">🔴 Decliners</span><div class="ms-items">';
-  if (losers.length) {
-    losers.forEach(di => {
-      d += '<div class="ms-item"><span class="ms-ticker" style="color:var(--blue);cursor:pointer" onclick="openProfile(\''+di.ticker+'\')">'+di.ticker+'</span><span class="ms-chg" style="color:var(--red)">'+(di.changePct||0).toFixed(1)+'%</span></div>';
-    });
-  } else { d += '<span class="muted" style="font-size:0.6rem;">No decliners</span>'; }
-  d += '</div>';
-  document.getElementById('stripDecliners').innerHTML = d;
-  
-  // Sentiment strip
   const gainersAll = cos.filter(c => (c.changePct||0) > 0).length;
   const losersAll = cos.filter(c => (c.changePct||0) < 0).length;
   const flat = cos.filter(c => (c.changePct||0) === 0).length;
+  
+  // Left Gainers card
+  let g = '<div class="lm-header">🟢 Top Gainers</div>';
+  if (gainers.length) {
+    gainers.forEach(gi => {
+      g += '<div class="lm-row"><span class="lm-ticker" onclick="openProfile(\''+gi.ticker+'\')">'+gi.ticker+'</span><span class="lm-price">K'+(gi.price||'—')+'</span><span class="lm-chg" style="color:var(--green)">+'+(gi.changePct||0).toFixed(1)+'%</span></div>';
+    });
+  } else { g += '<div class="lm-empty">No gainers today</div>'; }
+  document.getElementById('leftGainers').innerHTML = g;
+  
+  // Left Decliners card
+  let d = '<div class="lm-header">🔴 Top Decliners</div>';
+  if (losers.length) {
+    losers.forEach(di => {
+      d += '<div class="lm-row"><span class="lm-ticker" onclick="openProfile(\''+di.ticker+'\')">'+di.ticker+'</span><span class="lm-price">K'+(di.price||'—')+'</span><span class="lm-chg" style="color:var(--red)">'+(di.changePct||0).toFixed(1)+'%</span></div>';
+    });
+  } else { d += '<div class="lm-empty">No decliners today</div>'; }
+  document.getElementById('leftDecliners').innerHTML = d;
+  
+  // Left Sentiment card
   const total = cos.length || 1;
   let score = 50;
   if (gainersAll + losersAll > 0) {
@@ -751,11 +768,10 @@ function renderMoversStrip() {
   else if (score >= 45) { color = 'var(--gold)'; verdict = 'Neutral'; emoji = '🟡'; }
   else { color = 'var(--red)'; verdict = 'Bearish'; emoji = '🔴'; }
   
-  document.getElementById('stripSentiment').innerHTML =
-    '<span class="ms-label">📊 Sentiment</span>' +
-    '<div class="mini-gauge"><div class="fill" style="width:'+score+'%"></div></div>' +
-    '<span class="mini-score" style="color:'+color+'">'+emoji+' '+Math.round(score)+'/100 '+verdict+'</span>' +
-    '<span class="ms-label" style="font-size:0.55rem;">'+gainersAll+'▲ '+losersAll+'▼ '+flat+'─</span>';
+  document.getElementById('leftSentiment').innerHTML =
+    '<div class="lm-header">📊 Market Sentiment</div>' +
+    '<div class="mini-gauge-wrap"><div class="mini-gauge"><div class="fill" style="width:'+score+'%"></div></div></div>' +
+    '<div class="mini-score-row"><span class="score-num" style="color:'+color+'">'+emoji+' '+Math.round(score)+'/100</span><span style="color:var(--muted);font-size:0.58rem">'+verdict+' · '+gainersAll+'▲ '+losersAll+'▼ '+flat+'─</span></div>';
 }
 
 let screenerSort = { col: 'mktCap', dir: -1 };
