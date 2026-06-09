@@ -58,12 +58,48 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
 .btn-outline { background:transparent; border:1px solid var(--border); color:var(--text); }
 .btn-sm { padding:0.2rem 0.5rem; font-size:0.7rem; }
 
-.hero { margin:1rem 2rem; display:grid; grid-template-columns:1.2fr 1fr 1fr; gap:1rem; align-items:stretch; }
+.hero { margin:1rem 2rem; display:grid; grid-template-columns:1fr 2.8fr 1.1fr; gap:1rem; align-items:stretch; }
 .hero-col { display:flex; flex-direction:column; gap:1rem; }
 .hero-col > *:last-child { margin-top: auto; }
-@media (max-width:900px) { .hero { grid-template-columns:1fr 1fr; } }
+@media (max-width:1200px) { .hero { grid-template-columns:1fr 1.8fr 1fr; } }
+@media (max-width:900px) { .hero { grid-template-columns:1fr 1fr; } .hero-chart-col { grid-column:1/-1; order:3; } }
 .hero-card { background:var(--card); border:1px solid var(--border); border-radius:10px; padding:1.25rem; }
 .hero-card.full-width { grid-column:1/-1; }
+
+/* === HERO CHART === */
+.hero-chart-col { display:flex; flex-direction:column; }
+.hero-chart-card { background:var(--card); border:1px solid var(--border); border-radius:10px; padding:0.85rem; display:flex; flex-direction:column; flex:1; position:relative; overflow:hidden; }
+.hero-chart-card::before { content:''; position:absolute; inset:-1px; border-radius:10px; padding:1px; background:linear-gradient(135deg, rgba(210,153,29,0.2), transparent 40%, transparent 60%, rgba(31,111,235,0.2)); -webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0); -webkit-mask-composite:xor; mask-composite:exclude; pointer-events:none; }
+.hero-chart-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:0.4rem; position:relative; z-index:1; }
+.hero-chart-header h3 { font-size:0.72rem; color:var(--muted); text-transform:uppercase; letter-spacing:0.5px; }
+.hero-chart-header .chart-periods { display:flex; gap:0.2rem; }
+.hero-chart-header .chart-periods .btn-sm { padding:0.18rem 0.5rem; font-size:0.65rem; background:transparent; border:1px solid var(--border); color:var(--muted); border-radius:4px; cursor:pointer; transition:all 0.15s; }
+.hero-chart-header .chart-periods .btn-sm:hover { border-color:var(--blue); color:var(--text); }
+.hero-chart-header .chart-periods .btn-sm.active { background:var(--accent); color:white; border-color:var(--accent); }
+.hero-chart-wrap { flex:1; position:relative; min-height:240px; }
+.hero-chart-wrap canvas { width:100% !important; height:100% !important; }
+.hero-chart-indicators { display:grid; grid-template-columns:repeat(4,1fr); gap:0.35rem; margin-top:0.5rem; position:relative; z-index:1; }
+.hero-chart-indicators .ind-mini { background:rgba(31,111,235,0.05); border-radius:5px; padding:0.35rem 0.5rem; text-align:center; }
+.hero-chart-indicators .ind-mini .val { font-size:0.85rem; font-weight:700; }
+.hero-chart-indicators .ind-mini .lbl { font-size:0.55rem; color:var(--muted); margin-top:0.1rem; }
+
+/* === MOVERS STRIP === */
+.movers-strip { margin:0 2rem 0.75rem; display:grid; grid-template-columns:1fr 1fr 1.5fr; gap:0.75rem; }
+@media (max-width:900px) { .movers-strip { grid-template-columns:1fr 1fr; } }
+.movers-strip-card { background:var(--card); border:1px solid var(--border); border-radius:8px; padding:0.6rem 0.85rem; display:flex; align-items:center; gap:0.5rem; overflow:hidden; }
+.movers-strip-card .ms-label { font-size:0.6rem; color:var(--muted); text-transform:uppercase; letter-spacing:0.5px; white-space:nowrap; margin-right:0.25rem; }
+.movers-strip-card .ms-items { display:flex; gap:0.5rem; overflow-x:auto; flex:1; }
+.movers-strip-card .ms-item { display:flex; align-items:center; gap:0.2rem; font-size:0.65rem; white-space:nowrap; }
+.movers-strip-card .ms-item .ms-ticker { font-weight:700; }
+.movers-strip-card .ms-item .ms-chg { font-weight:600; font-size:0.6rem; }
+.movers-strip-card .ms-item .ms-spark { width:40px; height:14px; opacity:0.6; }
+.movers-strip-card.gainers { border-left:2px solid var(--green); }
+.movers-strip-card.decliners { border-left:2px solid var(--red); }
+.movers-strip-sentiment { display:flex; align-items:center; gap:0.5rem; padding:0.5rem 0.85rem; background:var(--card); border:1px solid var(--border); border-radius:8px; }
+.movers-strip-sentiment .ms-label { font-size:0.6rem; color:var(--muted); text-transform:uppercase; letter-spacing:0.5px; white-space:nowrap; }
+.movers-strip-sentiment .mini-gauge { flex:1; height:5px; border-radius:3px; background:rgba(48,54,61,0.5); overflow:hidden; max-width:140px; }
+.movers-strip-sentiment .mini-gauge .fill { height:100%; border-radius:3px; transition:width 0.6s; background:linear-gradient(90deg,var(--red),var(--gold),var(--green)); }
+.movers-strip-sentiment .mini-score { font-size:0.75rem; font-weight:700; }
 
 /* === CURRENCY CARD === */
 .currency-card { background:linear-gradient(135deg,#0d1a2d,#0d1117); border:1px solid var(--border); border-radius:10px; padding:0.85rem; }
@@ -384,17 +420,29 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
 <div class="hero" id="hero">
   <div class="hero-col">
     <div class="hero-card" id="heroMarketClose"></div>
-    <div class="sentiment-card" id="sentimentMeter"></div>
   </div>
-  <div class="hero-col">
-    <div class="hero-card hero-card-compact" id="heroGainers"></div>
-    <div class="hero-card hero-card-compact" id="heroDecliners"></div>
+  <div class="hero-chart-col">
+    <div class="hero-chart-card">
+      <div class="hero-chart-header">
+        <h3>📈 LASI All-Share Index</h3>
+        <div class="chart-periods" id="heroChartPeriods"></div>
+      </div>
+      <div class="hero-chart-wrap"><canvas id="heroChartCanvas"></canvas></div>
+      <div class="hero-chart-indicators" id="heroChartIndicators"></div>
+    </div>
   </div>
   <div class="hero-col">
     <div class="currency-card" id="currencyCard"></div>
     <div class="calendar-card" id="earningsCalendar"></div>
   </div>
 </div>
+
+<div class="movers-strip" id="moversStrip">
+  <div class="movers-strip-card gainers" id="stripGainers"></div>
+  <div class="movers-strip-card decliners" id="stripDecliners"></div>
+  <div class="movers-strip-sentiment" id="stripSentiment"></div>
+</div>
+
 <div class="analysis-section" id="analysis"></div>
 <div class="risk-flags" id="risks"></div>
 
@@ -576,7 +624,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
 </div>
 
 <script>
-let allData = {}, currentFilter = 'all', chartInst = null;
+let allData = {}, currentFilter = 'all', chartInst = null, heroChartInst = null, heroChartPeriod = 60;
 
 // ====== AUTH GATE ======
 const ACCESS_HASH = '28d657d5cd993f21689047e28091ffadfae9beafeae2c9375503f326f5699a0c'; // default: Lusaka2026
@@ -599,7 +647,7 @@ async function load() {
 }
 
 function render() {
-  renderCurrency(); renderHero(); renderMovers(); renderSentiment(); renderCalendar();
+  renderCurrency(); renderHero(); renderHeroChart(); renderMoversStrip(); renderCalendar();
   renderAnalysis(); renderRisks(); renderHeatmap(); renderNews(); renderTracker(); renderBottom();
   document.getElementById('disc').innerHTML = '⚖️ ' + (allData.marketClose?.analysis?.authorNote || 'This analysis is for informational purposes only. Not investment advice.');
 }
@@ -661,37 +709,41 @@ function renderHero() {
   document.getElementById('heroMarketClose').innerHTML = h;
 }
 
-function renderMovers() {
-  const gs = allData.marketClose?.gainers || [];
-  const ds = allData.marketClose?.decliners || [];
-  
-  let g = '<div class="label-row"><h3>🟢 Gainers</h3></div>';
-  if (gs.length) {
-    gs.forEach(gi => { g += '<div class="mover-row"><span class="t" style="color:var(--green)">'+gi.ticker+'</span><span class="n">'+(gi.name||'')+'</span><span class="p">K'+gi.price+'</span><span class="c" style="color:var(--green)">+'+gi.change+'</span></div>'; });
-  } else { g += '<div class="muted" style="font-size:0.72rem;padding:0.4rem 0;">No gainers today</div>'; }
-  document.getElementById('heroGainers').innerHTML = g;
-  
-  let d = '<div class="label-row"><h3>🔴 Decliners</h3></div>';
-  if (ds.length) {
-    ds.forEach(di => { d += '<div class="mover-row"><span class="t" style="color:var(--red)">'+di.ticker+'</span><span class="n">'+(di.name||'')+'</span><span class="p">K'+di.price+'</span><span class="c" style="color:var(--red)">'+di.change+'</span></div>'; });
-  } else { d += '<div class="muted" style="font-size:0.72rem;padding:0.4rem 0;">No decliners today</div>'; }
-  document.getElementById('heroDecliners').innerHTML = d;
-}
-
-function renderSentiment() {
-  // Calculate sentiment score from available data
+function renderMoversStrip() {
   const cos = allData.companies || [];
-  const gainers = cos.filter(c => (c.changePct||0) > 0).length;
-  const losers = cos.filter(c => (c.changePct||0) < 0).length;
+  const gainers = cos.filter(c => (c.changePct||0) > 0).sort((a,b)=>(b.changePct||0)-(a.changePct||0)).slice(0,5);
+  const losers = cos.filter(c => (c.changePct||0) < 0).sort((a,b)=>(a.changePct||0)-(b.changePct||0)).slice(0,5);
+  
+  // Gainers strip
+  let g = '<span class="ms-label">🟢 Gainers</span><div class="ms-items">';
+  if (gainers.length) {
+    gainers.forEach(gi => {
+      g += '<div class="ms-item"><span class="ms-ticker" style="color:var(--blue);cursor:pointer" onclick="openProfile(\''+gi.ticker+'\')">'+gi.ticker+'</span><span class="ms-chg" style="color:var(--green)">+'+(gi.changePct||0).toFixed(1)+'%</span></div>';
+    });
+  } else { g += '<span class="muted" style="font-size:0.6rem;">No gainers</span>'; }
+  g += '</div>';
+  document.getElementById('stripGainers').innerHTML = g;
+  
+  // Decliners strip
+  let d = '<span class="ms-label">🔴 Decliners</span><div class="ms-items">';
+  if (losers.length) {
+    losers.forEach(di => {
+      d += '<div class="ms-item"><span class="ms-ticker" style="color:var(--blue);cursor:pointer" onclick="openProfile(\''+di.ticker+'\')">'+di.ticker+'</span><span class="ms-chg" style="color:var(--red)">'+(di.changePct||0).toFixed(1)+'%</span></div>';
+    });
+  } else { d += '<span class="muted" style="font-size:0.6rem;">No decliners</span>'; }
+  d += '</div>';
+  document.getElementById('stripDecliners').innerHTML = d;
+  
+  // Sentiment strip
+  const gainersAll = cos.filter(c => (c.changePct||0) > 0).length;
+  const losersAll = cos.filter(c => (c.changePct||0) < 0).length;
   const flat = cos.filter(c => (c.changePct||0) === 0).length;
   const total = cos.length || 1;
-  // Score: 0=bear (all red), 100=bull (all green). Weighted: gainers and magnitude
   let score = 50;
-  if (gainers + losers > 0) {
-    const gPct = gainers / total * 100;
-    const avgGain = cos.filter(c=>c.changePct>0).reduce((s,c)=>s+c.changePct,0) / Math.max(gainers,1);
-    const avgLoss = cos.filter(c=>c.changePct<0).reduce((s,c)=>s+Math.abs(c.changePct),0) / Math.max(losers,1);
-    score = 50 + (gainers - losers) * 3 + (avgGain - (avgLoss||0)) * 5;
+  if (gainersAll + losersAll > 0) {
+    const avgGain = cos.filter(c=>c.changePct>0).reduce((s,c)=>s+c.changePct,0) / Math.max(gainersAll,1);
+    const avgLoss = cos.filter(c=>c.changePct<0).reduce((s,c)=>s+Math.abs(c.changePct),0) / Math.max(losersAll,1);
+    score = 50 + (gainersAll - losersAll) * 3 + (avgGain - (avgLoss||0)) * 5;
     score = Math.max(5, Math.min(95, score));
   }
   let color, verdict, emoji;
@@ -699,12 +751,11 @@ function renderSentiment() {
   else if (score >= 45) { color = 'var(--gold)'; verdict = 'Neutral'; emoji = '🟡'; }
   else { color = 'var(--red)'; verdict = 'Bearish'; emoji = '🔴'; }
   
-  document.getElementById('sentimentMeter').innerHTML =
-    '<h3>📊 Market Sentiment</h3>' +
-    '<div class="sentiment-gauge"><div class="gauge-fill" style="width:'+score+'%;background:linear-gradient(90deg,var(--red),var(--gold),var(--green));"></div></div>' +
-    '<div class="sentiment-labels"><span>Bearish</span><span>Neutral</span><span>Bullish</span></div>' +
-    '<div class="sentiment-score" style="color:'+color+';">'+emoji+' '+Math.round(score)+'/100</div>' +
-    '<div class="sentiment-verdict" style="color:'+color+';">'+verdict+' · '+gainers+'▲ '+losers+'▼ '+flat+'─</div>';
+  document.getElementById('stripSentiment').innerHTML =
+    '<span class="ms-label">📊 Sentiment</span>' +
+    '<div class="mini-gauge"><div class="fill" style="width:'+score+'%"></div></div>' +
+    '<span class="mini-score" style="color:'+color+'">'+emoji+' '+Math.round(score)+'/100 '+verdict+'</span>' +
+    '<span class="ms-label" style="font-size:0.55rem;">'+gainersAll+'▲ '+losersAll+'▼ '+flat+'─</span>';
 }
 
 let screenerSort = { col: 'mktCap', dir: -1 };
@@ -926,6 +977,87 @@ function computeRSI(data, period = 14) {
   rsi.push(avgLoss===0?100:Math.round((100-100/(1+avgGain/avgLoss))*100)/100);
   for (let i=period+1; i<data.length; i++) { const diff=data[i].close-data[i-1].close; avgGain=(avgGain*13+(diff>0?diff:0))/14; avgLoss=(avgLoss*13+(diff<0?-diff:0))/14; rsi.push(avgLoss===0?100:Math.round((100-100/(1+avgGain/avgLoss))*100)/100); }
   return rsi;
+}
+
+// ====== HERO CHART (LASI Index) ======
+async function renderHeroChart() {
+  if (heroChartInst) { heroChartInst.destroy(); heroChartInst = null; }
+  try {
+    const r = await fetch('data/profiles/LASI_ohlcv.json');
+    const ohlcv = await r.json();
+    if (!ohlcv.data || ohlcv.data.length < 5) return;
+    
+    let data = ohlcv.data;
+    if (heroChartPeriod < data.length) data = data.slice(-heroChartPeriod);
+    
+    const labels = data.map(d => d.date.slice(5));
+    const closes = data.map(d => d.close);
+    const volumes = data.map(d => d.volume);
+    const ma7 = computeMA(data, 7), ma21 = computeMA(data, 21);
+    
+    // Build chart period buttons
+    document.getElementById('heroChartPeriods').innerHTML =
+      '<button class="btn-sm'+(heroChartPeriod===7?' active':'')+'" onclick="setHeroChartPeriod(7,this)">1W</button>' +
+      '<button class="btn-sm'+(heroChartPeriod===30?' active':'')+'" onclick="setHeroChartPeriod(30,this)">1M</button>' +
+      '<button class="btn-sm'+(heroChartPeriod===60?' active':'')+'" onclick="setHeroChartPeriod(60,this)">3M</button>' +
+      '<button class="btn-sm'+(heroChartPeriod===100?' active':'')+'" onclick="setHeroChartPeriod(100,this)">YTD</button>' +
+      '<button class="btn-sm'+(heroChartPeriod===365?' active':'')+'" onclick="setHeroChartPeriod(365,this)">1Y</button>';
+    
+    const upColor = '#3fb950', downColor = '#f85149';
+    const barColors = data.map((d,i) => i===0 ? upColor : (d.close >= data[i-1].close ? upColor : downColor));
+    
+    const ctx = document.getElementById('heroChartCanvas').getContext('2d');
+    heroChartInst = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels,
+        datasets: [
+          { label: 'LASI', data: closes, borderColor: '#22d3ee', borderWidth: 2, pointRadius: 0, tension: 0.2, order: 1, yAxisID: 'y', fill: {target:'origin',above:'rgba(34,211,238,0.04)'} },
+          { label: 'MA 7', data: ma7, borderColor: '#d2991d', borderWidth: 1.2, pointRadius: 0, tension: 0.2, order: 2, yAxisID: 'y' },
+          { label: 'MA 21', data: ma21, borderColor: '#8b949e', borderWidth: 1, pointRadius: 0, tension: 0.2, order: 2, yAxisID: 'y', borderDash: [4,2] },
+          { label: 'Volume', data: volumes, backgroundColor: barColors.map(c => c+'33'), borderColor: barColors.map(c => c+'77'), borderWidth: 0.5, type: 'bar', order: 3, yAxisID: 'y1' }
+        ]
+      },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        interaction: { intersect: false, mode: 'index' },
+        plugins: {
+          legend: { display: true, position: 'top', labels: { color: '#8b949e', font: { size: 9 }, usePointStyle: true, padding: 12, boxWidth: 6 } },
+          tooltip: {
+            backgroundColor: '#161b22', titleColor: '#c9d1d9', bodyColor: '#8b949e', borderColor: '#30363d', borderWidth: 1,
+            callbacks: { label: ctx => ctx.dataset.label + ': ' + (ctx.dataset.label==='Volume' ? (ctx.raw/1000).toFixed(0)+'K' : ctx.raw.toLocaleString()) }
+          }
+        },
+        scales: {
+          x: { ticks: { color: '#484f58', font: { size: 8 }, maxTicksLimit: 10 }, grid: { color: '#21262d' } },
+          y: { position: 'right', ticks: { color: '#8b949e', font: { size: 8 }, callback: v => v.toLocaleString() }, grid: { color: '#21262d' } },
+          y1: { position: 'left', ticks: { color: '#484f58', font: { size: 7 }, callback: v => v>1000 ? (v/1000).toFixed(0)+'K' : v }, grid: { display: false } }
+        }
+      }
+    });
+    
+    // Indicators
+    const lastClose = closes[closes.length-1];
+    const firstClose = closes[0];
+    const periodReturn = ((lastClose - firstClose) / firstClose * 100);
+    const ma7Last = ma7[ma7.length-1];
+    const ma21Last = ma21[ma21.length-1];
+    const signal = ma7Last && ma21Last ? (ma7Last > ma21Last ? 'Bullish ▴' : 'Bearish ▾') : '—';
+    const signalClr = ma7Last > ma21Last ? 'var(--green)' : 'var(--red)';
+    
+    document.getElementById('heroChartIndicators').innerHTML =
+      '<div class="ind-mini"><div class="val" style="color:var(--cyan)">'+lastClose.toLocaleString()+'</div><div class="lbl">LASI Close</div></div>' +
+      '<div class="ind-mini"><div class="val" style="color:var(--gold)">'+(ma7Last||'—')+'</div><div class="lbl">MA7 / MA21</div></div>' +
+      '<div class="ind-mini"><div class="val" style="color:'+signalClr+'">'+signal+'</div><div class="lbl">Trend Signal</div></div>' +
+      '<div class="ind-mini"><div class="val" style="color:'+(periodReturn>=0?'var(--green)':'var(--red)')+'">'+(periodReturn>=0?'+':'')+periodReturn.toFixed(2)+'%</div><div class="lbl">Period Return</div></div>';
+  } catch(e) { console.error('Hero chart:', e); }
+}
+
+function setHeroChartPeriod(p, btn) {
+  heroChartPeriod = p;
+  document.querySelectorAll('#heroChartPeriods .btn-sm').forEach(b => b.classList.remove('active'));
+  if (btn) btn.classList.add('active');
+  renderHeroChart();
 }
 
 async function renderChart(ticker) {
