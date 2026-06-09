@@ -1,135 +1,127 @@
 {
-  "asOf": "2026-06-08",
+  "asOf": "2026-06-09",
   "marketClose": {
-    "lasiIndex": 25698.02,
-    "lasiChange": 8.04,
-    "lasiChangePct": 0.03,
-    "totalTrades": 967,
-    "totalVolume": 491799,
-    "totalValue": 9768567.87,
-    "marketCapTotal": 333.63,
-    "marketCapExclShoprite": 143.46,
+    "lasiIndex": 25684.52,
+    "lasiChange": 0,
+    "lasiChangePct": 0,
+    "totalTrades": 776,
+    "totalVolume": 108887,
+    "totalValue": 573143.26,
+    "marketCapTotal": 333.55,
+    "marketCapExclShoprite": 143.43,
     "marketCapUnit": "Billion ZMW",
-    "sessionSummary": "967 trades across 491,799 shares. Turnover K9.77M. LASI up 0.03% to 25,698.02. Breadth: 1 advancer, 3 decliners, 19 unchanged."
+    "sessionSummary": "776 trades across 108,887 shares. Turnover K0.57M. LASI up 0% to 25,684.52. Breadth: 1 advancer, 2 decliners, 20 unchanged."
   },
   "gainers": [
     {
-      "ticker": "ZNCO",
-      "name": "ZNCO",
-      "price": 9.62,
-      "change": 0.05,
-      "changePct": 0.52,
-      "volume": 8381
+      "ticker": "ZSUG",
+      "name": "ZSUG",
+      "price": 69.1,
+      "change": 0.01,
+      "changePct": 0.01,
+      "volume": 206
     }
   ],
   "decliners": [
     {
-      "ticker": "CECZ",
-      "name": "CECZ",
-      "price": 16.86,
+      "ticker": "SCBL",
+      "name": "SCBL",
+      "price": 1.27,
       "change": -0.01,
-      "changePct": -0.06,
-      "volume": 7096
+      "changePct": -0.78,
+      "volume": 3856
     },
     {
-      "ticker": "CHIL",
-      "name": "CHIL",
-      "price": 66.67,
-      "change": -0.03,
-      "changePct": -0.04,
-      "volume": 1437
-    },
-    {
-      "ticker": "PUMA",
-      "name": "PUMA",
-      "price": 2.93,
-      "change": -0.01,
-      "changePct": -0.34,
-      "volume": 3486
+      "ticker": "ZNCO",
+      "name": "ZNCO",
+      "price": 9.58,
+      "change": -0.04,
+      "changePct": -0.42,
+      "volume": 9060
     }
   ],
   "mostActiveByValue": [
     {
-      "ticker": "ATEL",
-      "name": "ATEL",
-      "price": 169.87,
-      "volume": 23737,
-      "value": 4032203.92,
-      "trades": 40
-    },
-    {
-      "ticker": "ZSUG",
-      "name": "ZSUG",
-      "price": 69.09,
-      "volume": 44495,
-      "value": 3074158.93,
-      "trades": 39
-    },
-    {
-      "ticker": "BATA",
-      "name": "BATA",
-      "price": 9,
-      "volume": 189048,
-      "value": 1701433.58,
-      "trades": 48
-    },
-    {
-      "ticker": "DCZM",
-      "name": "DCZM",
-      "price": 24.6,
-      "volume": 16937,
-      "value": 416651.36,
-      "trades": 34
-    },
-    {
       "ticker": "CECZ",
       "name": "CECZ",
       "price": 16.86,
-      "volume": 7096,
-      "value": 119642.88,
-      "trades": 118
-    }
-  ],
-  "mostActiveByVolume": [
+      "volume": 16360,
+      "value": 275821.38,
+      "trades": 124
+    },
     {
-      "ticker": "BATA",
-      "name": "BATA",
-      "price": 9,
-      "volume": 189048,
-      "value": 1701433.58,
-      "trades": 48
+      "ticker": "ATEL",
+      "name": "ATEL",
+      "price": 169.87,
+      "volume": 603,
+      "value": 102123.06,
+      "trades": 40
+    },
+    {
+      "ticker": "ZNCO",
+      "name": "ZNCO",
+      "price": 9.58,
+      "volume": 9060,
+      "value": 86790.69,
+      "trades": 117
     },
     {
       "ticker": "KLRE",
       "name": "KLRE",
       "price": 0.35,
-      "volume": 161807,
-      "value": 56632.45,
-      "trades": 148
+      "volume": 64812,
+      "value": 22684.2,
+      "trades": 118
     },
     {
-      "ticker": "ZSUG",
-      "name": "ZSUG",
-      "price": 69.09,
-      "volume": 44495,
-      "value": 3074158.93,
-      "trades": 39
+      "ticker": "CHIL",
+      "name": "CHIL",
+      "price": 66.67,
+      "volume": 318,
+      "value": 21189.75,
+      "trades": 30
+    }
+  ],
+  "mostActiveByVolume": [
+    {
+      "ticker": "KLRE",
+      "name": "KLRE",
+      "price": 0.35,
+      "volume": 64812,
+      "value": 22684.2,
+      "trades": 118
     },
     {
-      "ticker": "ATEL",
-      "name": "ATEL",
-      "price": 169.87,
-      "volume": 23737,
-      "value": 4032203.92,
-      "trades": 40
+      "ticker": "CECZ",
+      "name": "CECZ",
+      "price": 16.86,
+      "volume": 16360,
+      "value": 275821.38,
+      "trades": 124
     },
     {
-      "ticker": "DCZM",
-      "name": "DCZM",
-      "price": 24.6,
-      "volume": 16937,
-      "value": 416651.36,
-      "trades": 34
+      "ticker": "ZNCO",
+      "name": "ZNCO",
+      "price": 9.58,
+      "volume": 9060,
+      "value": 86790.69,
+      "trades": 117
+    },
+    {
+      "ticker": "REIZUSD",
+      "name": "REIZUSD",
+      "price": 0.09,
+      "volume": 4548,
+      "value": 411.37,
+      "trades": 22
+    },
+    {
+      "ticker": "SCBL",
+      "name": "SCBL",
+      "price": 1.27,
+      "volume": 3856,
+      "value": 4909.92,
+      "trades": 62
     }
   ]
 }
