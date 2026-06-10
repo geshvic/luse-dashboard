@@ -106,7 +106,59 @@ app.get('/api/all', (req, res) => {
   res.json({ market, bonds, stocks, companies, currency, marketClose: mktClose });
 });
 
-// API: trigger data refresh
+// ── DB-powered API routes (SQLite) ──────────────────────
+const db = require('./db');
+
+// Sector performance over a date range
+app.get('/api/db/sectors', (req, res) => {
+  const { start, end } = req.query;
+  if (!start || !end) return res.status(400).json({ error: 'start and end date required (YYYY-MM-DD)' });
+  const rows = db.sectorPerformance(start, end);
+  res.json(rows);
+});
+
+// Price history for a ticker
+app.get('/api/db/price/:ticker', (req, res) => {
+  const { ticker } = req.params;
+  const { start, end } = req.query;
+  const rows = db.priceHistory(ticker.toUpperCase(), start, end);
+  res.json({ ticker: ticker.toUpperCase(), data: rows });
+});
+
+// LASI index history
+app.get('/api/db/lasi', (req, res) => {
+  const { start, end } = req.query;
+  const rows = db.lasiHistory(start, end);
+  res.json(rows);
+});
+
+// Commodity price history
+app.get('/api/db/commodities', (req, res) => {
+  const { name, start, end } = req.query;
+  const rows = db.commodityHistory(name, start, end);
+  res.json(rows);
+});
+
+// Exchange rate history
+app.get('/api/db/rates', (req, res) => {
+  const { currency, start, end } = req.query;
+  const rows = db.exchangeHistory(currency, start, end);
+  res.json(rows);
+});
+
+// Database stats
+app.get('/api/db/stats', (req, res) => {
+  res.json(db.stats());
+});
+
+// Latest prices (today's board)
+app.get('/api/db/latest', (req, res) => {
+  const { date } = req.query;
+  const rows = db.latestPrices(date);
+  res.json(rows);
+});
+
+// ── Trigger ─────────────────────────────────────────────
 app.post('/api/refresh', (req, res) => {
   const script = path.join(__dirname, 'scripts', 'fetch-luse-data.js');
   exec(`node "${script}"`, (err, stdout, stderr) => {

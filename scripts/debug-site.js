@@ -1,18 +1,30 @@
+const { chromium } = require('playwright-core');
+
 async function check() {
-  const r = await fetch('https://geshvic.github.io/luse-dashboard/?' + Date.now());
-  const html = await r.text();
+  // Check raw GitHub
+  const r = await (await fetch('https://raw.githubusercontent.com/geshvic/luse-dashboard/master/index.html')).text();
+  const ss = r.indexOf('<script>') + 8;
+  const se = r.indexOf('</script>', ss);
+  const script = r.slice(ss, se);
   
-  // Find all screenerSort declarations with context
-  const re = /let screenerSort/g;
-  let m;
-  let count = 0;
-  while ((m = re.exec(html)) !== null) {
-    count++;
-    const ctx = html.slice(Math.max(0, m.index - 30), m.index + 40);
-    console.log('Declaration', count, ':', ctx.replace(/\n/g, ' ').slice(0, 80));
+  try {
+    new Function(script);
+    console.log('Raw GitHub script: ✅ OK');
+
+    // Test in browser
+    const browser = await chromium.launch({ headless: true, args: ['--no-sandbox'] });
+    const page = await browser.newPage();
+    const errors = [];
+    page.on('pageerror', err => errors.push(err.message));
+    
+    await page.setContent(r, { waitUntil: 'load' });
+    await page.waitForTimeout(1000);
+    
+    console.log('Browser test:', errors.length === 0 ? '✅ CLEAN' : '❌ ' + errors.join('; '));
+    
+    await browser.close();
+  } catch(e) {
+    console.log('Raw GitHub script: ❌', e.message.slice(0, 80));
   }
-  
-  // Check if any are inside strings or comments
-  console.log('\nTotal:', count);
 }
 check().catch(e => console.error(e.message));

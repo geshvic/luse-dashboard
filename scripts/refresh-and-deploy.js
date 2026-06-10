@@ -37,6 +37,12 @@ async function main() {
     process.exit(1);
   }
 
+  // Step 2.5: Write to SQLite database
+  run(`node "${path.join(SCRIPTS, 'write-to-db.js')}"`, 'DB WRITE');
+
+  // Step 2.6: Generate sector trends for public site
+  run(`node "${path.join(SCRIPTS, 'generate-sector-trends.js')}"`, 'SECTOR TRENDS');
+
   // Step 3: Git add, commit, push
   run('git add data/ index.html public/data/ logo.png', 'GIT ADD');
   

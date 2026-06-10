@@ -3,3 +3,4 @@ data/tunnel-url.txt
 .env
 *.log
 .DS_Store
+data/luse.db
