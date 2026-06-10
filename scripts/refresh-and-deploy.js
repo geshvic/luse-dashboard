@@ -44,7 +44,7 @@ async function main() {
   run(`node "${path.join(SCRIPTS, 'generate-sector-trends.js')}"`, 'SECTOR TRENDS');
 
   // Step 3: Git add, commit, push
-  run('git add data/ index.html public/data/ logo.png', 'GIT ADD');
+  run('git add data/ public/data/ logo.png', 'GIT ADD');
   
   const commitMsg = `data: daily refresh ${today}`;
   run(`git commit -m "${commitMsg}"`, 'GIT COMMIT');
