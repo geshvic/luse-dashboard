@@ -483,11 +483,12 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
 .sp-bar .bear-bar { background:var(--red); transition:width 0.4s; }
 .sp-bar-labels { display:flex; justify-content:space-between; font-size:0.52rem; color:var(--muted); }
 .sp-vote-wrap { display:flex; gap:0.25rem; flex-shrink:0; }
-.sp-btn { padding:0.2rem 0.5rem; border-radius:4px; border:1px solid var(--border); background:transparent; color:var(--muted); cursor:pointer; font-size:0.62rem; font-family:inherit; transition:all 0.15s; }
+.sp-btn { padding:0.35rem 0.7rem; border-radius:6px; border:1px solid var(--green); background:rgba(63,185,80,0.1); color:var(--green); cursor:pointer; font-size:0.7rem; font-family:inherit; transition:all 0.15s; font-weight:700; min-width:50px; }
 .sp-btn:hover { border-color:var(--green); color:var(--green); }
-.sp-btn.bear:hover { border-color:var(--red); color:var(--red); }
-.sp-btn.voted-bull { background:rgba(63,185,80,0.15); color:var(--green); border-color:var(--green); }
-.sp-btn.voted-bear { background:rgba(248,81,73,0.15); color:var(--red); border-color:var(--red); }
+.sp-btn.bear { border-color:var(--red); background:rgba(248,81,73,0.1); color:var(--red); }
+.sp-btn.bear:hover { background:rgba(248,81,73,0.25); }
+.sp-btn.voted-bull { background:var(--green); color:#000; border-color:var(--green); box-shadow:0 0 8px rgba(63,185,80,0.4); }
+.sp-btn.voted-bear { background:var(--red); color:#fff; border-color:var(--red); box-shadow:0 0 8px rgba(248,81,73,0.4); }
 .sp-btn:active { transform:scale(0.95); }
 
 </style>
@@ -620,12 +621,12 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
 
 <!-- ====== VALUATION BANDS + SENTIMENT POLL ====== -->
 <div class="val-section">
-  <h3>📊 Valuation Bands — Historical PE, Yield & Sector Context</h3>
+  <h3>📊 Valuation Bands <span style="font-size:0.55rem;color:var(--muted);font-weight:400">Click tickers for detail</span> — Historical PE, Yield & Sector Context</h3>
   <div class="val-grid" id="valGrid"></div>
 </div>
 
 <div class="sentiment-poll">
-  <h3>🗳️ Retail Sentiment — Vote on Stocks You Follow</h3>
+  <h3>🗳️ Retail Sentiment <span style="font-size:0.55rem;color:var(--muted);font-weight:400">Tap Bull or Bear to vote</span> — Vote on Stocks You Follow</h3>
   <div class="sp-grid" id="spGrid"></div>
 </div>
 
