@@ -964,7 +964,7 @@ function renderHero() {
 
 // ====== SENTIMENT POLL ======
 function getSentiment() {
-document.addEventListener("click",function(e){var btn=e.target.closest("[data-vote]");if(btn){var tk=btn.getAttribute("data-vote");var dr=btn.getAttribute("data-dir");if(tk&&dr)voteSentiment(tk,dr);return;}var tk=e.target.closest("[data-ticker]");if(tk){var t=tk.getAttribute("data-ticker");if(t)showStockModal(t);return;}});
+document.addEventListener("click",function(e){var btn=e.target.closest("[data-vote]");if(btn){var tk=btn.getAttribute("data-vote");var dr=btn.getAttribute("data-dir");if(tk&&dr)voteSentiment(tk,dr);return;}var tk=e.target.closest("[data-ticker]");if(tk){var t=tk.getAttribute("data-ticker");if(t)openProfile(t);return;}});
   try { return JSON.parse(localStorage.getItem('bc_sentiment') || '{}'); } catch(e) { return {}; }
 }
 function saveSentiment(s) {
@@ -1068,12 +1068,12 @@ function renderSentiment() {
   rated.slice(0, mid).forEach(function(r) {
     const badgeCls = r.verdict;
     const badgeColor = r.verdict === 'undervalued' ? 'var(--green)' : r.verdict === 'overvalued' ? 'var(--red)' : 'var(--gold)';
-    col1 += '<div class="val-row"><span class="val-ticker" onclick="showStockModal(\''+r.ticker+'\')">'+r.ticker+'</span><span class="val-name">'+(r.name||'').substring(0,16)+'</span><div class="val-gauge"><div class="fill" style="width:50%;background:'+badgeColor+'"></div></div><span class="val-badge '+badgeCls+'">'+r.verdict+'</span><span class="val-pct">'+(r.pe!=null?r.pe.toFixed(1)+'x':'--')+'</span></div>';
+    col1 += '<div class="val-row"><span class="val-ticker" onclick="openProfile(\''+r.ticker+'\')">'+r.ticker+'</span><span class="val-name">'+(r.name||'').substring(0,16)+'</span><div class="val-gauge"><div class="fill" style="width:50%;background:'+badgeColor+'"></div></div><span class="val-badge '+badgeCls+'">'+r.verdict+'</span><span class="val-pct">'+(r.pe!=null?r.pe.toFixed(1)+'x':'--')+'</span></div>';
   });
   rated.slice(mid).forEach(function(r) {
     const badgeCls = r.verdict;
     const badgeColor = r.verdict === 'undervalued' ? 'var(--green)' : r.verdict === 'overvalued' ? 'var(--red)' : 'var(--gold)';
-    col2 += '<div class="val-row"><span class="val-ticker" onclick="showStockModal(\''+r.ticker+'\')">'+r.ticker+'</span><span class="val-name">'+(r.name||'').substring(0,16)+'</span><div class="val-gauge"><div class="fill" style="width:50%;background:'+badgeColor+'"></div></div><span class="val-badge '+badgeCls+'">'+r.verdict+'</span><span class="val-pct">'+(r.pe!=null?r.pe.toFixed(1)+'x':'--')+'</span></div>';
+    col2 += '<div class="val-row"><span class="val-ticker" onclick="openProfile(\''+r.ticker+'\')">'+r.ticker+'</span><span class="val-name">'+(r.name||'').substring(0,16)+'</span><div class="val-gauge"><div class="fill" style="width:50%;background:'+badgeColor+'"></div></div><span class="val-badge '+badgeCls+'">'+r.verdict+'</span><span class="val-pct">'+(r.pe!=null?r.pe.toFixed(1)+'x':'--')+'</span></div>';
   });
   const undCnt = rated.filter(function(r){return r.verdict==='undervalued';}).length;
   const overCnt = rated.filter(function(r){return r.verdict==='overvalued';}).length;
@@ -1095,14 +1095,14 @@ function renderBillionClub() {
     const pct = Math.max(3, (((c.marketCap||0)/rate) / maxUsdCap) * 100);
     const usdCap = (c.marketCap||0)/rate;
     const capStr = usdCap >= 1000 ? '$' + (usdCap/1e3).toFixed(1) + 'B' : usdCap >= 1 ? '$' + usdCap.toFixed(2) + 'B' : '$' + (usdCap*1000).toFixed(0) + 'M';
-    h += '<div class="bc-row"><span class="bc-ticker" onclick="showStockModal(\'' + c.ticker + '\')">' + c.ticker + '</span><span class="bc-sect">' + (c.sector||'?') + '</span><div class="bc-bar-bg"><div class="bc-bar-fill" style="width:' + pct + '%"></div></div><span class="bc-cap">' + capStr + '</span></div>';
+    h += '<div class="bc-row"><span class="bc-ticker" onclick="openProfile(\'' + c.ticker + '\')">' + c.ticker + '</span><span class="bc-sect">' + (c.sector||'?') + '</span><div class="bc-bar-bg"><div class="bc-bar-fill" style="width:' + pct + '%"></div></div><span class="bc-cap">' + capStr + '</span></div>';
   });
   h += '</div>';
   if (aspiring.length) {
     h += '<div class="bc-divider"></div>';
     h += '<div class="bc-aspiring-header">🎯 Aspiring Candidates</div>';
     aspiring.forEach(function(c) {
-      h += '<div class="bc-aspiring-row"><span class="bc-ticker-sm" onclick="showStockModal(\'' + c.ticker + '\')">' + c.ticker + '</span><span style="color:var(--muted);font-size:0.5rem">' + (c.name||'').substring(0,22) + '</span><span class="bc-cap-sm">$' + (c.marketCap/rate/1e6).toFixed(0) + 'M</span></div>';
+      h += '<div class="bc-aspiring-row"><span class="bc-ticker-sm" onclick="openProfile(\'' + c.ticker + '\')">' + c.ticker + '</span><span style="color:var(--muted);font-size:0.5rem">' + (c.name||'').substring(0,22) + '</span><span class="bc-cap-sm">$' + (c.marketCap/rate/1e6).toFixed(0) + 'M</span></div>';
       const pct = Math.round(((c.marketCap||0)/rate/1e9)*100);
       h += '<div class="bc-threshold"><span>0</span><div class="thresh-bar"><div class="thresh-fill" style="width:' + pct + '%"></div></div><span>$1B</span></div>';
     });
