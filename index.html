@@ -437,6 +437,59 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
 .bc-threshold .thresh-fill { height:100%; background:rgba(210,153,29,0.4); border-radius:1px; }
 .bc-threshold span { font-size:0.5rem; color:var(--muted); }
 
+
+/* === VALUATION BANDS === */
+.val-section { margin:0 2rem 0.75rem; }
+.val-section h3 { font-size:0.8rem; color:var(--muted); text-transform:uppercase; letter-spacing:0.5px; margin-bottom:0.5rem; }
+.val-grid { display:grid; grid-template-columns:1fr 1fr; gap:0.75rem; }
+@media (max-width:768px) { .val-grid { grid-template-columns:1fr; } }
+.val-col { display:flex; flex-direction:column; gap:0.5rem; }
+.val-card { background:var(--card); border:1px solid var(--border); border-radius:10px; padding:0.85rem; }
+.val-card h4 { font-size:0.7rem; color:var(--muted); text-transform:uppercase; letter-spacing:0.4px; margin-bottom:0.5rem; display:flex; align-items:center; gap:0.3rem; }
+.val-row { display:flex; align-items:center; gap:0.4rem; padding:0.3rem 0; border-bottom:1px solid rgba(48,54,61,0.3); font-size:0.64rem; }
+.val-row:last-child { border-bottom:none; }
+.val-ticker { font-weight:700; color:var(--blue); cursor:pointer; min-width:44px; font-size:0.62rem; }
+.val-ticker:hover { color:var(--accent); }
+.val-name { flex:1; color:var(--text); font-size:0.6rem; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.val-badge { font-size:0.55rem; font-weight:700; padding:0.1rem 0.4rem; border-radius:4px; min-width:48px; text-align:center; }
+.val-badge.undervalued { background:rgba(63,185,80,0.15); color:var(--green); }
+.val-badge.fair { background:rgba(210,153,29,0.15); color:var(--gold); }
+.val-badge.overvalued { background:rgba(248,81,73,0.15); color:var(--red); }
+.val-pct { font-size:0.58rem; color:var(--muted); min-width:32px; text-align:right; }
+.val-gauge { flex:1; height:4px; background:rgba(48,54,61,0.4); border-radius:2px; overflow:hidden; max-width:60px; }
+.val-gauge .fill { height:100%; border-radius:2px; }
+.val-note { font-size:0.55rem; color:var(--muted); margin-top:0.35rem; line-height:1.35; }
+
+/* === SENTIMENT POLL === */
+.sentiment-poll { margin:0 2rem 0.75rem; }
+.sentiment-poll h3 { font-size:0.8rem; color:var(--muted); text-transform:uppercase; letter-spacing:0.5px; margin-bottom:0.5rem; }
+.sp-grid { display:grid; grid-template-columns:1fr 1fr; gap:0.75rem; }
+@media (max-width:768px) { .sp-grid { grid-template-columns:1fr; } }
+.sp-overall-card { background:var(--card); border:1px solid var(--border); border-radius:10px; padding:0.85rem; text-align:center; }
+.sp-overall-card h4 { font-size:0.7rem; color:var(--muted); text-transform:uppercase; letter-spacing:0.4px; margin-bottom:0.4rem; }
+.sp-big-gauge { position:relative; width:100%; max-width:320px; height:16px; border-radius:8px; margin:0.3rem auto; background:rgba(48,54,61,0.5); overflow:hidden; }
+.sp-big-gauge .fill { height:100%; border-radius:8px; transition:width 0.5s; }
+.sp-big-labels { display:flex; justify-content:space-between; font-size:0.5rem; color:var(--muted); margin:0 auto 0.3rem; max-width:320px; }
+.sp-big-score { font-size:1.8rem; font-weight:800; }
+.sp-big-verdict { font-size:0.7rem; font-weight:600; margin-top:0.15rem; }
+.sp-big-total { font-size:0.55rem; color:var(--muted); margin-top:0.15rem; }
+.sp-stock-list { display:flex; flex-direction:column; gap:0.4rem; }
+.sp-stock-card { background:var(--card); border:1px solid var(--border); border-radius:8px; padding:0.55rem 0.7rem; display:flex; align-items:center; gap:0.5rem; }
+.sp-stock-card .sp-ticker { font-weight:700; color:var(--blue); cursor:pointer; min-width:44px; font-size:0.65rem; }
+.sp-stock-card .sp-ticker:hover { color:var(--accent); }
+.sp-bar-wrap { flex:1; display:flex; flex-direction:column; gap:1px; }
+.sp-bar { display:flex; height:6px; border-radius:3px; overflow:hidden; }
+.sp-bar .bull-bar { background:var(--green); transition:width 0.4s; }
+.sp-bar .bear-bar { background:var(--red); transition:width 0.4s; }
+.sp-bar-labels { display:flex; justify-content:space-between; font-size:0.52rem; color:var(--muted); }
+.sp-vote-wrap { display:flex; gap:0.25rem; flex-shrink:0; }
+.sp-btn { padding:0.2rem 0.5rem; border-radius:4px; border:1px solid var(--border); background:transparent; color:var(--muted); cursor:pointer; font-size:0.62rem; font-family:inherit; transition:all 0.15s; }
+.sp-btn:hover { border-color:var(--green); color:var(--green); }
+.sp-btn.bear:hover { border-color:var(--red); color:var(--red); }
+.sp-btn.voted-bull { background:rgba(63,185,80,0.15); color:var(--green); border-color:var(--green); }
+.sp-btn.voted-bear { background:rgba(248,81,73,0.15); color:var(--red); border-color:var(--red); }
+.sp-btn:active { transform:scale(0.95); }
+
 </style>
 </head>
 <body>
@@ -562,6 +615,18 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
     <span style="margin-left:1rem;">Rectangle size = Market Cap</span>
   </div>
   <div class="heatmap-wrap"><canvas id="heatmapCanvas"></canvas></div>
+</div>
+
+
+<!-- ====== VALUATION BANDS + SENTIMENT POLL ====== -->
+<div class="val-section">
+  <h3>📊 Valuation Bands — Historical PE, Yield & Sector Context</h3>
+  <div class="val-grid" id="valGrid"></div>
+</div>
+
+<div class="sentiment-poll">
+  <h3>🗳️ Retail Sentiment — Vote on Stocks You Follow</h3>
+  <div class="sp-grid" id="spGrid"></div>
 </div>
 
 <!-- ====== NEWS ====== -->
@@ -824,7 +889,7 @@ async function load() {
     renderNews();
     try { renderSens(); } catch(e) {}
     try { if (typeof initScreener === 'function') initScreener(); } catch(e) {}
-    render();
+    render(); renderValuation(); renderSentiment();
     document.getElementById('supd').textContent = allData.marketClose?.asOf || allData.market?.asOf || '';
   } catch(e) {
     document.getElementById('hero').innerHTML = '<div class="hero-card full-width" style="text-align:center;padding:2rem;"><p style="color:var(--muted);">⚠️ Server not reachable. Run: node server.js</p></div>';
@@ -894,6 +959,128 @@ function renderHero() {
   document.getElementById('heroMarketClose').innerHTML = h;
 }
 
+
+
+// ====== SENTIMENT POLL ======
+function getSentiment() {
+document.addEventListener("click",function(e){var btn=e.target.closest("[data-vote]");if(btn){var tk=btn.getAttribute("data-vote");var dr=btn.getAttribute("data-dir");if(tk&&dr)voteSentiment(tk,dr);return;}var tk=e.target.closest("[data-ticker]");if(tk){var t=tk.getAttribute("data-ticker");if(t)showStockModal(t);return;}});
+  try { return JSON.parse(localStorage.getItem('bc_sentiment') || '{}'); } catch(e) { return {}; }
+}
+function saveSentiment(s) {
+  localStorage.setItem('bc_sentiment', JSON.stringify(s));
+}
+function voteSentiment(ticker, direction) {
+  const data = getSentiment();
+  if (!data[ticker]) data[ticker] = { bull: 0, bear: 0 };
+  if (data[ticker].mine === direction) {
+    delete data[ticker].mine;
+    if (direction === 'bull') data[ticker].bull = Math.max(0, data[ticker].bull - 1);
+    else data[ticker].bear = Math.max(0, data[ticker].bear - 1);
+  } else {
+    if (data[ticker].mine === 'bull') data[ticker].bull = Math.max(0, data[ticker].bull - 1);
+    if (data[ticker].mine === 'bear') data[ticker].bear = Math.max(0, data[ticker].bear - 1);
+    data[ticker].mine = direction;
+    if (direction === 'bull') data[ticker].bull++;
+    else data[ticker].bear++;
+  }
+  saveSentiment(data);
+  renderSentiment();
+}
+function renderSentiment() {
+  const cos = allData.companies || [];
+  const sentiment = getSentiment();
+  const totalVotes = Object.values(sentiment).reduce(function(s, v) { return s + (v.bull||0) + (v.bear||0); }, 0);
+  const totalBull = Object.values(sentiment).reduce(function(s, v) { return s + (v.bull||0); }, 0);
+  const overallPct = totalVotes > 0 ? Math.round((totalBull / totalVotes) * 100) : 50;
+  var gaugeColor = overallPct >= 60 ? "var(--green)" : overallPct <= 40 ? "var(--red)" : "var(--gold)";
+  var verdict = overallPct >= 60 ? "Bullish" : overallPct <= 40 ? "Bearish" : "Neutral";
+  var stockVotes = cos.map(function(c) {
+    var s2 = sentiment[c.ticker] || { bull: 0, bear: 0, mine: null };
+    return { ticker: c.ticker, name: c.name, bull: s2.bull||0, bear: s2.bear||0, mine: s2.mine, total: (s2.bull||0) + (s2.bear||0) };
+  }).filter(function(s) { return s.total > 0; }).sort(function(a,b) { return b.total - a.total; }).slice(0,6);
+  var stockList = [];
+  if (stockVotes.length) {
+    stockVotes.forEach(function(s) {
+      var bullPct = s.total > 0 ? Math.round((s.bull / s.total) * 100) : 50;
+      var bearPct = 100 - bullPct;
+      var myVote = s.mine;
+      var bullCls = myVote === "bull" ? "voted-bull" : "";
+      var bearCls = myVote === "bear" ? "voted-bear" : "";
+      stockList.push("<div class=\"sp-stock-card\">");
+      stockList.push("<span class=\"sp-ticker\" data-ticker=\"" + s.ticker + "\">" + s.ticker + "</span>");
+      stockList.push("<div class=\"sp-bar-wrap\"><div class=\"sp-bar\"><div class=\"bull-bar\" style=\"width:" + bullPct + "%\"></div><div class=\"bear-bar\" style=\"width:" + bearPct + "%\"></div></div>");
+      stockList.push("<div class=\"sp-bar-labels\"><span>Bull " + s.bull + "</span><span>" + s.total + " votes</span><span>Bear " + s.bear + "</span></div></div>");
+      stockList.push("<div class=\"sp-vote-wrap\">");
+      stockList.push("<button class=\"sp-btn " + bullCls + "\" data-vote=\"" + s.ticker + "\" data-dir=\"bull\">Bull</button>");
+      stockList.push("<button class=\"sp-btn bear " + bearCls + "\" data-vote=\"" + s.ticker + "\" data-dir=\"bear\">Bear</button>");
+      stockList.push("</div></div>");
+    });
+  } else {
+    stockList.push("<div class=\"sp-stock-card\" style=\"justify-content:center;color:var(--muted);font-size:0.65rem;\">Click Bull/Bear on any stock below to cast your first vote</div>");
+  }
+  document.getElementById("spGrid").innerHTML =
+    "<div class=\"sp-overall-card\"><h4>Retail Consensus</h4><div class=\"sp-big-labels\"><span>Bearish</span><span>Bullish</span></div><div class=\"sp-big-gauge\"><div class=\"fill\" style=\"width:" + overallPct + "%;background:" + gaugeColor + "\"></div></div><div class=\"sp-big-score\" style=\"color:" + gaugeColor + "\">" + overallPct + "%</div><div class=\"sp-big-verdict\" style=\"color:" + gaugeColor + "\">" + verdict + "</div><div class=\"sp-big-total\">" + totalVotes + " total votes</div></div>" +
+    "<div class=\"sp-stock-list\">" + stockList.join("") + "</div>";
+}
+
+function renderValuation() {
+  const cos = allData.companies || [];
+  if (!cos.length) return;
+  const sectors = {};
+  cos.forEach(function(c) {
+    if (!c.sector) return;
+    if (!sectors[c.sector]) sectors[c.sector] = { pes: [], yields: [], stocks: [] };
+    sectors[c.sector].stocks.push(c);
+    if (c.pe != null && c.pe > 0) sectors[c.sector].pes.push(c.pe);
+    if (c.dividendYield != null && c.dividendYield > 0) sectors[c.sector].yields.push(c.dividendYield);
+  });
+  const median = function(arr) {
+    if (!arr.length) return null;
+    const s = [...arr].sort(function(a,b){return a-b;});
+    return s[Math.floor(s.length/2)];
+  };
+  const rated = [];
+  cos.forEach(function(c) {
+    const sect = sectors[c.sector];
+    if (!sect) return;
+    const sectorMedPE = median(sect.pes);
+    let verdict = 'fair';
+    let pctDevPE = 0;
+    if (c.pe != null && c.pe > 0 && sectorMedPE != null) {
+      pctDevPE = ((c.pe - sectorMedPE) / sectorMedPE) * 100;
+      if (pctDevPE < -20) verdict = 'undervalued';
+      else if (pctDevPE > 20) verdict = 'overvalued';
+    }
+    rated.push({
+      ticker: c.ticker, name: c.name, sector: c.sector,
+      pe: c.pe, yield: c.dividendYield, marketCap: c.marketCap,
+      verdict: verdict, pctDevPE: pctDevPE
+    });
+  });
+  const order = { undervalued: 0, fair: 1, overvalued: 2 };
+  rated.sort(function(a,b) {
+    const o = order[a.verdict] - order[b.verdict];
+    if (o !== 0) return o;
+    return (b.marketCap||0) - (a.marketCap||0);
+  });
+  const mid = Math.ceil(rated.length / 2);
+  let col1 = '', col2 = '';
+  rated.slice(0, mid).forEach(function(r) {
+    const badgeCls = r.verdict;
+    const badgeColor = r.verdict === 'undervalued' ? 'var(--green)' : r.verdict === 'overvalued' ? 'var(--red)' : 'var(--gold)';
+    col1 += '<div class="val-row"><span class="val-ticker" onclick="showStockModal(\''+r.ticker+'\')">'+r.ticker+'</span><span class="val-name">'+(r.name||'').substring(0,16)+'</span><div class="val-gauge"><div class="fill" style="width:50%;background:'+badgeColor+'"></div></div><span class="val-badge '+badgeCls+'">'+r.verdict+'</span><span class="val-pct">'+(r.pe!=null?r.pe.toFixed(1)+'x':'--')+'</span></div>';
+  });
+  rated.slice(mid).forEach(function(r) {
+    const badgeCls = r.verdict;
+    const badgeColor = r.verdict === 'undervalued' ? 'var(--green)' : r.verdict === 'overvalued' ? 'var(--red)' : 'var(--gold)';
+    col2 += '<div class="val-row"><span class="val-ticker" onclick="showStockModal(\''+r.ticker+'\')">'+r.ticker+'</span><span class="val-name">'+(r.name||'').substring(0,16)+'</span><div class="val-gauge"><div class="fill" style="width:50%;background:'+badgeColor+'"></div></div><span class="val-badge '+badgeCls+'">'+r.verdict+'</span><span class="val-pct">'+(r.pe!=null?r.pe.toFixed(1)+'x':'--')+'</span></div>';
+  });
+  const undCnt = rated.filter(function(r){return r.verdict==='undervalued';}).length;
+  const overCnt = rated.filter(function(r){return r.verdict==='overvalued';}).length;
+  document.getElementById('valGrid').innerHTML =
+    '<div class="val-col"><div class="val-card"><h4>Undervalued ('+undCnt+')</h4>'+col1+'</div></div>' +
+    '<div class="val-col"><div class="val-card"><h4>Overvalued ('+overCnt+')</h4>'+col2+'<div class="val-note">PE compared against sector median. Green = below sector average. Red = above.</div></div></div>';
+}
 
 function renderBillionClub() {
   const cos = allData.companies || [];
