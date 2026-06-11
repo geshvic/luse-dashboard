@@ -994,37 +994,36 @@ function renderSentiment() {
   const totalBull = Object.values(sentiment).reduce(function(s, v) { return s + (v.bull||0); }, 0);
   const overallPct = totalVotes > 0 ? Math.round((totalBull / totalVotes) * 100) : 50;
   var gaugeColor = overallPct >= 60 ? "var(--green)" : overallPct <= 40 ? "var(--red)" : "var(--gold)";
-  var verdict = overallPct >= 60 ? "Bullish" : overallPct <= 40 ? "Bearish" : "Neutral";
-  var stockVotes = cos.map(function(c) {
+  var verdict = totalVotes > 0 ? (overallPct >= 60 ? "Bullish" : overallPct <= 40 ? "Bearish" : "Neutral") : "No votes yet";
+
+  // Always show top stocks by mkt cap (at least 6), with or without votes
+  var ranked = cos.filter(function(c){return c.marketCap > 0;}).sort(function(a,b){return (b.marketCap||0)-(a.marketCap||0);}).slice(0,6);
+  var stockVotes = ranked.map(function(c) {
     var s2 = sentiment[c.ticker] || { bull: 0, bear: 0, mine: null };
-    return { ticker: c.ticker, name: c.name, bull: s2.bull||0, bear: s2.bear||0, mine: s2.mine, total: (s2.bull||0) + (s2.bear||0) };
-  }).filter(function(s) { return s.total > 0; }).sort(function(a,b) { return b.total - a.total; }).slice(0,6);
+    return { ticker: c.ticker, name: c.name, bull: s2.bull||0, bear: s2.bear||0, mine: s2.mine, total: (s2.bull||0) + (s2.bear||0), marketCap: c.marketCap };
+  });
+
   var stockList = [];
-  if (stockVotes.length) {
-    stockVotes.forEach(function(s) {
-      var bullPct = s.total > 0 ? Math.round((s.bull / s.total) * 100) : 50;
-      var bearPct = 100 - bullPct;
-      var myVote = s.mine;
-      var bullCls = myVote === "bull" ? "voted-bull" : "";
-      var bearCls = myVote === "bear" ? "voted-bear" : "";
-      stockList.push("<div class=\"sp-stock-card\">");
-      stockList.push("<span class=\"sp-ticker\" data-ticker=\"" + s.ticker + "\">" + s.ticker + "</span>");
-      stockList.push("<div class=\"sp-bar-wrap\"><div class=\"sp-bar\"><div class=\"bull-bar\" style=\"width:" + bullPct + "%\"></div><div class=\"bear-bar\" style=\"width:" + bearPct + "%\"></div></div>");
-      stockList.push("<div class=\"sp-bar-labels\"><span>Bull " + s.bull + "</span><span>" + s.total + " votes</span><span>Bear " + s.bear + "</span></div></div>");
-      stockList.push("<div class=\"sp-vote-wrap\">");
-      stockList.push("<button class=\"sp-btn " + bullCls + "\" data-vote=\"" + s.ticker + "\" data-dir=\"bull\">Bull</button>");
-      stockList.push("<button class=\"sp-btn bear " + bearCls + "\" data-vote=\"" + s.ticker + "\" data-dir=\"bear\">Bear</button>");
-      stockList.push("</div></div>");
-    });
-  } else {
-    stockList.push("<div class=\"sp-stock-card\" style=\"justify-content:center;color:var(--muted);font-size:0.65rem;\">Click Bull/Bear on any stock below to cast your first vote</div>");
-  }
+  stockVotes.forEach(function(s) {
+    var bullPct = s.total > 0 ? Math.round((s.bull / s.total) * 100) : 50;
+    var bearPct = 100 - bullPct;
+    var myVote = s.mine;
+    var bullCls = myVote === "bull" ? "voted-bull" : "";
+    var bearCls = myVote === "bear" ? "voted-bear" : "";
+    stockList.push("<div class=\"sp-stock-card\">");
+    stockList.push("<span class=\"sp-ticker\" data-ticker=\"" + s.ticker + "\">" + s.ticker + "</span>");
+    stockList.push("<div class=\"sp-bar-wrap\"><div class=\"sp-bar\"><div class=\"bull-bar\" style=\"width:" + bullPct + "%\"></div><div class=\"bear-bar\" style=\"width:" + bearPct + "%\"></div></div>");
+    stockList.push("<div class=\"sp-bar-labels\"><span>Bull " + s.bull + "</span><span>" + s.total + " votes</span><span>Bear " + s.bear + "</span></div></div>");
+    stockList.push("<div class=\"sp-vote-wrap\">");
+    stockList.push("<button class=\"sp-btn " + bullCls + "\" data-vote=\"" + s.ticker + "\" data-dir=\"bull\">Bull</button>");
+    stockList.push("<button class=\"sp-btn bear " + bearCls + "\" data-vote=\"" + s.ticker + "\" data-dir=\"bear\">Bear</button>");
+    stockList.push("</div></div>");
+  });
+
   document.getElementById("spGrid").innerHTML =
     "<div class=\"sp-overall-card\"><h4>Retail Consensus</h4><div class=\"sp-big-labels\"><span>Bearish</span><span>Bullish</span></div><div class=\"sp-big-gauge\"><div class=\"fill\" style=\"width:" + overallPct + "%;background:" + gaugeColor + "\"></div></div><div class=\"sp-big-score\" style=\"color:" + gaugeColor + "\">" + overallPct + "%</div><div class=\"sp-big-verdict\" style=\"color:" + gaugeColor + "\">" + verdict + "</div><div class=\"sp-big-total\">" + totalVotes + " total votes</div></div>" +
     "<div class=\"sp-stock-list\">" + stockList.join("") + "</div>";
-}
-
-function renderValuation() {
+}function renderValuation() {
   const cos = allData.companies || [];
   if (!cos.length) return;
   const sectors = {};
