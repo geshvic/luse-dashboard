@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-06-10",
-  "source": "Bank of Zambia (boz.zm), exchangerate.guru, exchange-rates.org, Wise, geocountries.com, tradingeconomics",
+  "asOf": "2026-06-11",
+  "source": "Bank of Zambia (boz.zm), Wise, exchange-rates.org, valutafx.com",
   "baseNote": "Rates show ZMW per 1 unit of foreign currency. ↑ ZMW = Kwacha weakening (depreciating).",
   "mpRate": 13.5,
   "mpRateNote": "Monetary Policy Rate reduced 75bps from 14.25% on Feb 11, 2026. BOZ held at 13.5% at May review. Next review: August 2026.",
@@ -9,38 +9,38 @@
       "buy": 17.6800,
       "sell": 17.7300,
       "mid": 17.7050,
-      "marketMid": 17.80,
-      "trend": "weakening",
+      "marketMid": 17.46,
+      "trend": "strengthening",
       "dayAgo": 17.71,
       "weekAgo": 18.20,
       "twoWeeksAgo": 18.83,
       "oneMonthAgo": 19.20,
       "sixMonthsAgo": 22.50,
-      "note": "BOZ official mid-rate (Jun 9): 17.7050. Market mid Jun 10: 17.80 (tradingeconomics, exchangerate.guru). Kwacha weakened 0.5% overnight — second day of retreat from Jun 4 low of 17.512. 7-day range: 17.51–18.20."
+      "note": "BOZ official mid-rate (Jun 9): 17.7050. Wise mid-market Jun 11: 17.46 (1 ZMW = 0.05728 USD). Kwacha strengthened ~0.71% from Jun 10. 7-day high 0.0573, low 0.0555 USD/ZMW. YTD appreciation ~21%."
     },
     "GBP": {
-      "mid": 23.83,
-      "trend": "weakening",
+      "mid": 23.27,
+      "trend": "strengthening",
       "dayAgo": 23.83,
       "weekAgo": 24.91,
       "oneMonthAgo": 25.50,
-      "note": "1 GBP = 23.83 ZMW (exchangerate.guru, exchange-rates.org as of Jun 10). GBP/ZMW flat day-on-day. Cross via USD/GBP ~1.34."
+      "note": "1 GBP = 23.27 ZMW (Wise Jun 11). 1 ZMW = 0.04297 GBP. GBP/ZMW down 2.3% day-on-day reflecting broad kwacha strength. 7-day range: 23.27–24.91."
     },
     "EUR": {
-      "mid": 20.55,
-      "trend": "weakening",
+      "mid": 20.09,
+      "trend": "strengthening",
       "dayAgo": 20.57,
       "weekAgo": 20.82,
       "oneMonthAgo": 22.40,
-      "note": "1 EUR = 20.5493 ZMW (geocountries.com) / 20.5386 (Wise) as of Jun 10. EUR/ZMW -0.1% day-on-day. 7-day high 20.8222 (Jun 3), low 20.236 (Jun 7). YTD decline -21.2%."
+      "note": "1 EUR = 20.09 ZMW (Wise Jun 11). 1 ZMW = 0.04977 EUR. EUR/ZMW -2.3% day-on-day. 7-day high 20.82, low 20.09. YTD decline ~21%."
     },
     "ZAR": {
-      "mid": 1.075,
-      "trend": "weakening",
+      "mid": 1.057,
+      "trend": "strengthening",
       "dayAgo": 1.079,
       "weekAgo": 1.135,
       "oneMonthAgo": 1.18,
-      "note": "1 ZMW = 0.93 ZAR (exchangerate.guru Jun 10). 1 ZAR = 1.075 ZMW. Kwacha slightly weaker vs rand. 2026 high was 1 ZMW = 0.9422 ZAR on Jun 5 (valutafx)."
+      "note": "1 ZAR = 1.057 ZMW (Wise Jun 11). 1 ZMW = 0.9463 ZAR. Kwacha gained ~2.0% vs rand day-on-day. 7-day ZMW/ZAR high 0.9466, low 0.9200."
     },
     "BWP": {
       "mid": 1.30,
@@ -56,12 +56,12 @@
     }
   },
   "trendAnalysis": {
-    "direction": "Kwacha retreats for second day — USD/ZMW up to 17.80 from Jun 4 low of 17.512",
-    "dayChange": 0.5,
+    "direction": "Kwacha strengthens — USD/ZMW mid 17.46 (Wise), BOZ official 17.7050",
+    "dayChange": -0.71,
     "twoWeekChange": -5.5,
     "oneMonthChange": -7.3,
     "sixMonthChange": -20.9,
-    "ytdChange": -19.9,
+    "ytdChange": -21.0,
     "drivers": [
       "Record copper output 890K tonnes (2025) — strong export earnings",
       "Record maize harvest >4M tonnes — reduced food import needs",
@@ -71,7 +71,7 @@
       "Yuan mining tax corridor reducing USD demand",
       "Gross international reserves at historic high of US$6.5 billion"
     ],
-    "outlook": "BOZ held MPR at 13.5% at May review. Inflation at 6.8% (April). Kwacha gave back some gains after hitting 2-year low of 17.512 on Jun 4 — profit-taking and possible BOZ smoothing. Further appreciation possible on copper tailwinds, but BOZ may intervene to protect export competitiveness. Key risks: global copper price reversal, drought cycles, election-related fiscal expansion (Aug 2026).",
+    "outlook": "BOZ held MPR at 13.5% at May review. Inflation at 6.8% (April). Kwacha continues to strengthen backed by strong copper exports, high reserves, and capital inflows. Further appreciation likely if copper holds above $9,500/tonne and IMF successor programme progresses. BOZ may lean against excessive strength to protect export competitiveness.",
     "projection3m": "USD/ZMW 16.50–18.00 range. Bias toward further appreciation if copper holds above $9,500/tonne and IMF successor programme progresses.",
     "projection6m": "USD/ZMW 16.00–19.00 range. Wider range reflects election uncertainty (Aug 2026). Post-election policy continuity would support kwacha; fiscal slippage would reverse gains."
   }

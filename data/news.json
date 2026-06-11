@@ -1,6 +1,42 @@
 [
   {
     "date": "2026-06-11",
+    "category": "Market",
+    "title": "LuSE Daily: LASI +0.09% to 25,679.91 — 4 gainers, 2 decliners",
+    "summary": "The Lusaka Securities Exchange All-Share Index (LASI) edged up 0.09% to 25,679.91. 559 trades across 76,259 shares, turnover ZMW 1.03M. KLRE led gainers (+2.94%) while CHIL and ZMFA slipped. DCZM and ZNCO were most active. Market cap ZMW 333.53B.",
+    "source": "LuSE (via Playwright scraper)",
+    "url": "https://www.luse.co.zm/market-data/",
+    "tickers": ["KLRE", "DCZM", "ZNCO", "CECZ", "BATZ"]
+  },
+  {
+    "date": "2026-06-11",
+    "category": "Currency",
+    "title": "Kwacha strengthens to ~17.46/USD (Wise) — YTD appreciation ~21%",
+    "summary": "USD/ZMW mid 17.46 (Wise), BOZ official 17.7050. GBP/ZMW 23.27, EUR/ZMW 20.09, ZAR/ZMW 1.057. Kwacha continues strong run backed by copper exports, high reserves ($6.5B), and IMF programme progress.",
+    "source": "Wise, BOZ",
+    "url": "https://wise.com/us/currency-converter/zmw-to-usd-rate/history",
+    "tickers": []
+  },
+  {
+    "date": "2026-06-11",
+    "category": "Corporate",
+    "title": "Zambia's SEC reports strong Q1 2026 capital markets growth",
+    "summary": "The Securities and Exchange Commission (SEC) says Zambia's capital markets recorded strong growth during Q1 2026, driven by improved macroeconomic conditions, lower inflation, and a stable kwacha.",
+    "source": "Lusaka Times",
+    "url": "https://www.lusakatimes.com/economy/",
+    "tickers": []
+  },
+  {
+    "date": "2026-06-11",
+    "category": "Corporate",
+    "title": "Handicrafts exports grow 53%, but Zambia's share remains small",
+    "summary": "Zambia's handicrafts exports grew 53%, though market share remains small.",
+    "source": "Zambian Business Times",
+    "url": "https://zambianbusinesstimes.com/",
+    "tickers": []
+  },
+  {
+    "date": "2026-06-11",
     "category": "Corporate",
     "title": "PDF Zambian Business Times",
     "summary": "By Carol Sichone diversification efforts, and new Despite concerns around the side formal economic sys- Without such reforms, he Zambia's planned Gross Domes- forms of economic activity. choice of base year, Cheelo Speaking to Zambian Busi- tems. war",
