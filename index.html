@@ -345,7 +345,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
 .screener-table .scr-positive { color:var(--green); }
 .screener-table .scr-negative { color:var(--red); }
 .screener-table .scr-caution { position:relative; }
-.screener-table .scr-caution::after { content:'⚠∩╕Å'; font-size:0.55rem; margin-left:0.15rem; }
+.screener-table .scr-caution::after { content:'⚠️'; font-size:0.55rem; margin-left:0.15rem; }
 .scr-empty { text-align:center; padding:1.5rem; color:var(--muted); font-size:0.75rem; }
 /* === SENS ANNOUNCEMENTS === */
 .sens-section { margin:0 2rem 1rem; }
@@ -553,7 +553,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
       <button class="login-btn" onclick="doLogout()" style="background:rgba(248,81,73,0.6);color:var(--text);text-transform:none;">🚪 Logout</button>
     </div>
 
-    <div class="login-footer">SECURED CONNECTION ┬╖ AES-256-GCM ┬╖ SESSION v2.3</div>
+    <div class="login-footer">SECURED CONNECTION · AES-256-GCM · SESSION v2.3</div>
   </div>
 </div>
 
@@ -651,7 +651,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
     <button class="btn btn-sm btn-outline" onclick="filterSens('Earnings',this)">📊 Earnings</button>
     <button class="btn btn-sm btn-outline" onclick="filterSens('Dividends',this)">💵 Dividends</button>
     <button class="btn btn-sm btn-outline" onclick="filterSens('Directorate',this)">👤 Directorate</button>
-    <button class="btn btn-sm btn-outline" onclick="filterSens('Cautionary',this)">⚠∩╕Å Cautionary</button>
+    <button class="btn btn-sm btn-outline" onclick="filterSens('Cautionary',this)">⚠️ Cautionary</button>
     <button class="btn btn-sm btn-outline" onclick="filterSens('AGM',this)">📅 AGM/EGM</button>
   </div>
   <div class="sens-list" id="sensList"></div>
@@ -734,7 +734,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
         </select>
       </div>
       <div class="sim-result" id="bondResult"></div>
-      <div class="sim-note">⚠∩╕Å 15% withholding tax on interest ┬╖ Semi-annual coupon payments ┬╖ Face value returned at maturity ┬╖ Assumes held to maturity</div>
+      <div class="sim-note">⚠️ 15% withholding tax on interest · Semi-annual coupon payments · Face value returned at maturity · Assumes held to maturity</div>
     </div>
 
     <!-- STOCK SIMULATOR -->
@@ -768,14 +768,14 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
         </select>
       </div>
       <div class="sim-result" id="stockResult"></div>
-      <div class="sim-note">⚠∩╕Å 1.5% brokerage fee (buy + sell) ┬╖ LuSE levy 0.1% ┬╖ Based on historical/annualised returns ┬╖ Past performance ≠ future results</div>
+      <div class="sim-note">⚠️ 1.5% brokerage fee (buy + sell) · LuSE levy 0.1% · Based on historical/annualised returns · Past performance ≠ future results</div>
     </div>
   </div>
 </div>
 
 <!-- ====== COMPARISON ====== -->
 <div class="compare-bar" id="compareBar" style="display:none;">
-  <h3>⚚∩╕Å Bond vs Stock — Net Returns Compared</h3>
+  <h3>⚚️ Bond vs Stock — Net Returns Compared</h3>
   <div class="compare-chart">
     <div class="bar-bond" id="barBond" style="width:50%;"></div>
     <div class="bar-stock" id="barStock" style="width:50%;"></div>
@@ -788,7 +788,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
 </div>
 
 <div class="disclaimer" id="disc"></div>
-<div class="footer">Baobab Capital ┬╖ African Markets Intelligence ┬╖ Not investment advice</div>
+<div class="footer">Baobab Capital · African Markets Intelligence · Not investment advice</div>
 
 <!-- PROFILE MODAL -->
 <div class="modal-overlay" id="modal" onclick="if(event.target===this)closeModal()">
@@ -893,14 +893,14 @@ async function load() {
     render(); renderValuation(); renderSentiment();
     document.getElementById('supd').textContent = allData.marketClose?.asOf || allData.market?.asOf || '';
   } catch(e) {
-    document.getElementById('hero').innerHTML = '<div class="hero-card full-width" style="text-align:center;padding:2rem;"><p style="color:var(--muted);">⚠∩╕Å Server not reachable. Run: node server.js</p></div>';
+    document.getElementById('hero').innerHTML = '<div class="hero-card full-width" style="text-align:center;padding:2rem;"><p style="color:var(--muted);">⚠️ Server not reachable. Run: node server.js</p></div>';
   }
 }
 
 function render() {
   renderCurrency(); renderHero(); renderBillionClub(); renderHeroChart(); renderMoversStrip(); renderCalendar();
   renderAnalysis(); renderRisks(); renderHeatmap(); renderNews(); renderTracker(); renderBottom();
-  document.getElementById('disc').innerHTML = '⚚∩╕Å ' + (allData.marketClose?.analysis?.authorNote || 'This analysis is for informational purposes only. Not investment advice.');
+  document.getElementById('disc').innerHTML = '⚚️ ' + (allData.marketClose?.analysis?.authorNote || 'This analysis is for informational purposes only. Not investment advice.');
 }
 
 function fmt(v){return v?.toLocaleString?.()||v||'—';}
@@ -917,14 +917,14 @@ function renderCurrency() {
     const trendSign = data.trend === 'appreciating' ? '▼' : data.trend === 'depreciating' ? '▲' : '—';
     const trendLabel = data.trend === 'appreciating' ? 'Kwacha ↑' : data.trend === 'depreciating' ? 'Kwacha ↓' : 'Stable';
     const wkChg = data.weekAgo ? ((data.mid - data.weekAgo) / data.weekAgo * 100).toFixed(1) : null;
-    items += '<div class="currency-item"><div class="cc-flag">'+getFlag(code)+'</div><div class="cc-code">'+code+'/'+getName(code)+'</div><div class="cc-rate">K'+data.mid.toFixed(2)+'</div><div class="cc-move '+trendClass+'">'+trendSign+' '+trendLabel+(wkChg?' ┬╖ '+wkChg+'% wk':'')+'</div></div>';
+    items += '<div class="currency-item"><div class="cc-flag">'+getFlag(code)+'</div><div class="cc-code">'+code+'/'+getName(code)+'</div><div class="cc-rate">K'+data.mid.toFixed(2)+'</div><div class="cc-move '+trendClass+'">'+trendSign+' '+trendLabel+(wkChg?' · '+wkChg+'% wk':'')+'</div></div>';
   }
   const kwacha = cu.trendAnalysis?.direction || '';
   const outlook = cu.trendAnalysis?.outlook || '';
   document.getElementById('currencyCard').innerHTML =
-    '<div class="cc-header"><h3>💱 ZMW Exchange Rates</h3><span class="cc-source">BOZ ┬╖ '+cu.asOf+'</span></div>' +
+    '<div class="cc-header"><h3>💱 ZMW Exchange Rates</h3><span class="cc-source">BOZ · '+cu.asOf+'</span></div>' +
     '<div class="currency-grid">'+items+'</div>' +
-    '<div class="currency-trend"><strong>'+kwacha+'</strong> ┬╖ '+outlook.substring(0,180)+'…</div>' + renderCommodities();
+    '<div class="currency-trend"><strong>'+kwacha+'</strong> · '+outlook.substring(0,180)+'…</div>' + renderCommodities();
 }
 
 function renderCommodities() {
@@ -941,7 +941,7 @@ function renderCommodities() {
     r += '<div class="commodity-item"><span class="cm-icon">' + c.icon + '</span> <span class="cm-name">' + c.name + '</span><br><span class="cm-price">' + fmtPrice(c.price, c.unit) + '</span><br><span class="cm-zmw">' + (c.zmwValue ? 'K' + c.zmwValue.toLocaleString() : '') + '</span><br><span class="cm-move ' + cls + '">' + arrow + ' ' + Math.abs(c.changePct).toFixed(1) + '%</span></div>';
   });
   r += '</div><div style="font-size:0.52rem;color:var(--muted);margin-top:0.3rem;line-height:1.3">';
-  comms.forEach(function(c) { r += '<strong>' + c.name + '</strong>: ' + c.note + ' ┬╖ '; });
+  comms.forEach(function(c) { r += '<strong>' + c.name + '</strong>: ' + c.note + ' · '; });
   r += '</div></div>';
   return r;
 }
@@ -952,7 +952,7 @@ function renderHero() {
   const ct = mc.lasiChange>0?'▲ UP':mc.lasiChange<0?'▼ DOWN':'— FLAT';
   let h = '<div class="label-row"><h3>📈 Market Close</h3><span class="date">'+allData.marketClose?.asOf+'</span></div>';
   h += '<div class="lasi">LASI '+mc.lasiIndex?.toLocaleString()+' <span class="condition '+condClass+'">'+ct+'</span></div>';
-  h += '<div class="lasi-sub">'+(mc.lasiChange>0?'+':'')+mc.lasiChange+' ('+mc.lasiChangePct+'%) ┬╖ '+(mc.sessionSummary||'')+'</div>';
+  h += '<div class="lasi-sub">'+(mc.lasiChange>0?'+':'')+mc.lasiChange+' ('+mc.lasiChangePct+'%) · '+(mc.sessionSummary||'')+'</div>';
   h += '<div class="stats-grid"><div class="stat-item"><div class="val">'+fmt(mc.totalTrades)+'</div><div class="lbl">Trades</div></div>';
   h += '<div class="stat-item"><div class="val">'+fmt(mc.totalVolume)+'</div><div class="lbl">Volume</div></div>';
   h += '<div class="stat-item"><div class="val" style="color:var(--gold);">ZMW '+fmtM(mc.totalValue)+'</div><div class="lbl">Value</div></div>';
@@ -1152,7 +1152,7 @@ function renderMoversStrip() {
   document.getElementById('leftSentiment').innerHTML =
     '<div class="lm-header">📊 Market Sentiment</div>' +
     '<div class="mini-gauge-wrap"><div class="mini-gauge"><div class="fill" style="width:'+score+'%"></div></div></div>' +
-    '<div class="mini-score-row"><span class="score-num" style="color:'+color+'">'+emoji+' '+Math.round(score)+'/100</span><span style="color:var(--muted);font-size:0.58rem">'+verdict+' ┬╖ '+gainersAll+'▲ '+losersAll+'▼ '+flat+'─</span></div>';
+    '<div class="mini-score-row"><span class="score-num" style="color:'+color+'">'+emoji+' '+Math.round(score)+'/100</span><span style="color:var(--muted);font-size:0.58rem">'+verdict+' · '+gainersAll+'▲ '+losersAll+'▼ '+flat+'─</span></div>';
 }
 
 let screenerSort = { col: 'mktCap', dir: -1 };
@@ -1253,7 +1253,7 @@ function runScreener() {
     return 'K' + v.toLocaleString();
   };
   
-  const sortArrow = (c) => screenerSort.col === c ? (screenerSort.dir > 0 ? ' ▴' : ' ▾') : '';
+  const sortArrow = (c) => screenerSort.col === c ? (screenerSort.dir > 0 ? ' ▲' : ' ▼') : '';
   
   let t = '<tr>' +
     '<th onclick="sortScreener(' + "'ticker'" + ')">Ticker' + sortArrow('ticker') + '</th>' +
@@ -1340,7 +1340,7 @@ function renderAnalysis() {
   document.getElementById('analysis').innerHTML=h;
 }
 
-function renderRisks(){const f=allData.marketClose?.analysis?.riskFlags||[];document.getElementById('risks').innerHTML=f.length?f.map(x=>'<div class="risk-flag">⚠∩╕Å '+x+'</div>').join(''):'';}
+function renderRisks(){const f=allData.marketClose?.analysis?.riskFlags||[];document.getElementById('risks').innerHTML=f.length?f.map(x=>'<div class="risk-flag">⚠️ '+x+'</div>').join(''):'';}
 
 function renderTracker(filter) {
   if (filter) currentFilter = filter;
@@ -1439,7 +1439,7 @@ async function renderHeroChart() {
     const periodReturn = ((lastClose - firstClose) / firstClose * 100);
     const ma7Last = ma7[ma7.length-1];
     const ma21Last = ma21[ma21.length-1];
-    const signal = ma7Last && ma21Last ? (ma7Last > ma21Last ? 'Bullish ▴' : 'Bearish ▾') : '—';
+    const signal = ma7Last && ma21Last ? (ma7Last > ma21Last ? 'Bullish ▲' : 'Bearish ▼') : '—';
     const signalClr = ma7Last > ma21Last ? 'var(--green)' : 'var(--red)';
     
     document.getElementById('heroChartIndicators').innerHTML =
@@ -1565,7 +1565,7 @@ function renderProfile(p, ohlcv) {
   const freeFloat = p.ownership?.freeFloat ?? p.ownership?.float ?? co.freeFloat ?? null;
   const mktCap = co.marketCap ?? null;
   
-  let h = '<div class="modal-header"><div class="title-block"><h2>'+p.name+'</h2><div class="ticker-display">'+p.ticker+' ┬╖ '+p.sector+' ┬╖ '+p.market+' ┬╖ Risk: <span class="risk-badge '+riskCls+'">'+(p.riskRating||'NR')+'</span></div></div><button class="modal-close" onclick="closeModal()">✕</button></div><div class="modal-body">';
+  let h = '<div class="modal-header"><div class="title-block"><h2>'+p.name+'</h2><div class="ticker-display">'+p.ticker+' · '+p.sector+' · '+p.market+' · Risk: <span class="risk-badge '+riskCls+'">'+(p.riskRating||'NR')+'</span></div></div><button class="modal-close" onclick="closeModal()">✕</button></div><div class="modal-body">';
   
   // Key metrics row
   h += '<div class="profile-grid">';
@@ -1595,10 +1595,10 @@ function renderProfile(p, ohlcv) {
   if (p.priceHistory?.priceTimeline) { h += '<div class="profile-section"><h4>Key Events</h4><ul class="price-timeline">'; p.priceHistory.priceTimeline.forEach(pt=>{h+='<li><span class="pt-date">'+pt.date+'</span><span class="pt-price">K'+pt.price+'</span><span class="pt-event">'+pt.event+'</span></li>';}); h+='</ul></div>'; }
   
   // Analyst Notes
-  if (p.analystNotes?.length) { h += '<div class="profile-section"><h4>Analyst Notes</h4>'; p.analystNotes.forEach(n=>{h+='<div class="analyst-note"><div class="an-date">'+n.date+' ┬╖ <span class="an-author">'+n.author+'</span></div><p style="margin-top:0.2rem;">'+n.note+'</p></div>';}); h+='</div>'; }
+  if (p.analystNotes?.length) { h += '<div class="profile-section"><h4>Analyst Notes</h4>'; p.analystNotes.forEach(n=>{h+='<div class="analyst-note"><div class="an-date">'+n.date+' · <span class="an-author">'+n.author+'</span></div><p style="margin-top:0.2rem;">'+n.note+'</p></div>';}); h+='</div>'; }
   
   // Risk Factors
-  if (p.riskFactors?.length) { h += '<div class="profile-section"><h4>Risk Factors</h4>'; p.riskFactors.forEach(rf=>h+='<div class="risk-flag">⚠∩╕Å '+rf+'</div>'); h+='</div>'; }
+  if (p.riskFactors?.length) { h += '<div class="profile-section"><h4>Risk Factors</h4>'; p.riskFactors.forEach(rf=>h+='<div class="risk-flag">⚠️ '+rf+'</div>'); h+='</div>'; }
   
   // Investment Thesis
   if (p.investmentThesis) h += '<div class="profile-section"><h4>Investment Thesis</h4><p>'+p.investmentThesis+'</p></div>';
@@ -1786,8 +1786,8 @@ function renderBottom() {
   // Recently Listed
   s += '<div style="font-size:0.6rem;color:var(--gold);margin-bottom:0.3rem;font-weight:600;">🆕 Recently Listed</div>';
   const recent = [
-    { ticker:'KLRE', name:'Klapton Reinsurance', date:'Mar 2026', note:'Direct listing ┬╖ K49.5M' },
-    { ticker:'DCZM', name:'Dot Com Zambia', date:'Dec 2025', note:'IPO ┬╖ Alt-M Board' },
+    { ticker:'KLRE', name:'Klapton Reinsurance', date:'Mar 2026', note:'Direct listing · K49.5M' },
+    { ticker:'DCZM', name:'Dot Com Zambia', date:'Dec 2025', note:'IPO · Alt-M Board' },
   ];
   recent.forEach(r => {
     const p = cos.find(c => c.ticker === r.ticker);
@@ -1813,7 +1813,7 @@ function renderBottom() {
   // Government Bonds
   if(b?.auctions?.length){
     bd+='<div style="font-size:0.65rem;color:var(--gold);margin-bottom:0.3rem;font-weight:600;">Government Bonds</div>';
-    bd+='<table class="yield-table" style="margin-bottom:0.75rem;"><tr><th>Tenor</th><th>Jan 23</th><th>Feb 13</th><th>╬ö</th></tr>';
+    bd+='<table class="yield-table" style="margin-bottom:0.75rem;"><tr><th>Tenor</th><th>Jan 23</th><th>Feb 13</th><th>Δ</th></tr>';
     ['2yr','5yr','7yr','10yr','15yr'].forEach(t=>{
       const j=b.auctions[0].yields[t],f=b.auctions[1]?.yields[t];
       if(j!=null&&f!=null){
@@ -1827,7 +1827,7 @@ function renderBottom() {
   // Treasury Bills
   if(b?.treasuryBills?.bills?.length){
     const tb = b.treasuryBills;
-    bd+='<div style="font-size:0.65rem;color:var(--gold);margin-bottom:0.3rem;font-weight:600;">Treasury Bills ┬╖ '+tb.asOf+'</div>';
+    bd+='<div style="font-size:0.65rem;color:var(--gold);margin-bottom:0.3rem;font-weight:600;">Treasury Bills · '+tb.asOf+'</div>';
     bd+='<table class="yield-table"><tr><th>Tenor</th><th>Discount</th><th>Yield</th><th>ISIN</th></tr>';
     tb.bills.forEach(r=>{
       bd+='<tr><td>'+r.period+'</td><td>'+r.discountRate+'%</td><td style="color:var(--green);font-weight:600;">'+r.yield+'%</td><td style="font-size:0.6rem;">'+r.isin+'</td></tr>';
@@ -1910,7 +1910,7 @@ function simBond() {
   const semiAnnual = isTBill ? null : (annualInterest / 2);
   const annualisedReturn = (Math.pow(totalReturn/amt, 1/years) - 1) * 100;
   
-  let html = '<div class="sim-result-row"><span>Instrument</span><span class="v" style="color:var(--gold);">' + (isTBill ? 'Treasury Bill' : 'Govt Bond') + ' ┬╖ ' + label + '</span></div>' +
+  let html = '<div class="sim-result-row"><span>Instrument</span><span class="v" style="color:var(--gold);">' + (isTBill ? 'Treasury Bill' : 'Govt Bond') + ' · ' + label + '</span></div>' +
     '<div class="sim-result-row"><span>Yield (annualised)</span><span class="v">' + (yieldPct*100).toFixed(2) + '%</span></div>' +
     '<div class="sim-result-row"><span>Annual Interest</span><span class="v">' + fmtK(annualInterest) + '</span></div>';
   
@@ -1921,7 +1921,7 @@ function simBond() {
   html += '<div class="sim-result-row"><span>Gross Return ('+label+')</span><span class="v pos">' + fmtK(totalGrossInterest) + '</span></div>' +
     '<div class="sim-result-row"><span>Withholding Tax (15%)</span><span class="v neg">−' + fmtK(taxPaid) + '</span></div>' +
     '<div class="sim-total"><span>After-Tax Return</span><span class="v pos">' + fmtK(totalReturn) + '</span></div>' +
-    '<div class="sim-note">Effective annualised return: <strong>' + annualisedReturn.toFixed(2) + '%</strong> after tax' + (isTBill ? ' ┬╖ Zero-coupon discount instrument' : ' ┬╖ Held to maturity') + '</div>';
+    '<div class="sim-note">Effective annualised return: <strong>' + annualisedReturn.toFixed(2) + '%</strong> after tax' + (isTBill ? ' · Zero-coupon discount instrument' : ' · Held to maturity') + '</div>';
   
   document.getElementById('bondResult').innerHTML = html;
   compareReturns();
@@ -1955,10 +1955,10 @@ function simStock() {
   document.getElementById('stockResult').innerHTML =
     '<div class="sim-result-row"><span>Period</span><span class="v">' + period + ' year(s)</span></div>' +
     '<div class="sim-result-row"><span>Gross Value</span><span class="v ' + (grossValue>amt?'pos':'neg') + '">' + fmtK(grossValue) + '</span></div>' +
-    '<div class="sim-result-row"><span>Brokerage (1.5% ├ù 2)</span><span class="v neg">−' + fmtK(amt*BROKERAGE_FEE + grossValue*BROKERAGE_FEE) + '</span></div>' +
+    '<div class="sim-result-row"><span>Brokerage (1.5% × 2)</span><span class="v neg">−' + fmtK(amt*BROKERAGE_FEE + grossValue*BROKERAGE_FEE) + '</span></div>' +
     '<div class="sim-result-row"><span>LuSE Levy (0.1%)</span><span class="v neg">−' + fmtK(grossValue*LUSE_LEVY) + '</span></div>' +
     '<div class="sim-total"><span>Net Return</span><span class="v ' + returnCls + '">' + fmtK(netValue) + '</span></div>' +
-    '<div class="sim-note">' + (netReturn>=0?'Gain':'Loss') + ': <strong class="' + returnCls + '">' + (netReturn>=0?'+':'') + fmtK(netReturn) + '</strong> ┬╖ Annualised: <strong>' + annualisedReturn.toFixed(2) + '%</strong></div>';
+    '<div class="sim-note">' + (netReturn>=0?'Gain':'Loss') + ': <strong class="' + returnCls + '">' + (netReturn>=0?'+':'') + fmtK(netReturn) + '</strong> · Annualised: <strong>' + annualisedReturn.toFixed(2) + '%</strong></div>';
   
   compareReturns();
 }
