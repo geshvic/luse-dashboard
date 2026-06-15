@@ -942,7 +942,10 @@ function renderCommodities() {
   });
   r += '</div><div style="font-size:0.52rem;color:var(--muted);margin-top:0.3rem;line-height:1.3">';
   comms.forEach(function(c) { r += '<strong>' + c.name + '</strong>: ' + c.note + ' · '; });
-  r += '</div></div>';
+  r += '</div>';
+  const comAsOf = allData.marketClose?.asOf || allData.market?.asOf || '';
+  r += '<div style="font-size:0.5rem;color:var(--muted);margin-top:0.25rem;text-align:center;">🔄 Last updated: ' + (comAsOf || 'N/A') + '</div>';
+  r += '</div>';
   return r;
 }
 
