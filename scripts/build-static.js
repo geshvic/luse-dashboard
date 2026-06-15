@@ -72,12 +72,15 @@ if (fs.existsSync(historyDir)) {
 fs.writeFileSync(path.join(DATA_SRC, 'all.json'), JSON.stringify(all));
 console.log('[build-static] ✓ data/all.json (root)');
 
-// Create index.html at repo root for GitHub Pages
+// Index at repo root: only update from dashboard.html if index.html doesn't exist yet
+// Otherwise user may have custom features (billion-dollar club, sentiment, valuation, login)
 const dashboardPath = path.join(PUBLIC, 'dashboard.html');
 const rootIndexPath = path.join(ROOT, 'index.html');
-if (fs.existsSync(dashboardPath)) {
+if (fs.existsSync(dashboardPath) && !fs.existsSync(rootIndexPath)) {
   fs.copyFileSync(dashboardPath, rootIndexPath);
-  console.log('[build-static] ✓ index.html (root)');
+  console.log('[build-static] ✓ index.html (root) — created from dashboard.html');
+} else if (fs.existsSync(rootIndexPath)) {
+  console.log('[build-static] ℹ️  index.html (root) exists — skipping overwrite to preserve custom features');
 }
 
 // Copy logo to root for GitHub Pages
