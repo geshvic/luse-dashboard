@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -414,149 +414,9 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
 .compare-legend .dot.stock { background:var(--blue); }
 .compare-winner { text-align:center; margin-top:0.5rem; font-size:0.85rem; font-weight:700; }
 .compare-winner .delta { font-size:0.7rem; font-weight:500; margin-left:0.5rem; }
-
-/* === BILLION DOLLAR CLUB === */
-.billion-club { padding:0.85rem 1rem; }
-.billion-club h3 { font-size:0.7rem; color:var(--gold); text-transform:uppercase; letter-spacing:0.5px; margin-bottom:0.6rem; display:flex; align-items:center; gap:0.4rem; }
-.billion-club h3 .icon { font-size:0.85rem; }
-.bc-bar-wrap { display:flex; flex-direction:column; gap:3px; margin-bottom:0.5rem; }
-.bc-row { display:flex; align-items:center; gap:0.4rem; font-size:0.62rem; }
-.bc-row .bc-ticker { font-weight:700; color:var(--blue); cursor:pointer; min-width:50px; font-size:0.6rem; }
-.bc-row .bc-ticker:hover { color:var(--accent); }
-.bc-row .bc-sect { color:var(--muted); font-size:0.52rem; min-width:56px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
-.bc-row .bc-bar-bg { flex:1; height:7px; background:rgba(255,255,255,0.05); border-radius:3px; overflow:hidden; position:relative; }
-.bc-row .bc-bar-fill { height:100%; border-radius:3px; background:linear-gradient(90deg, var(--gold), #e8b730); transition:width 1s; }
-.bc-row .bc-cap { font-weight:600; min-width:42px; text-align:right; font-size:0.6rem; color:var(--gold); }
-.bc-divider { height:1px; background:var(--border); margin:0.5rem 0; opacity:0.5; }
-.bc-aspiring-header { font-size:0.58rem; color:var(--muted); text-transform:uppercase; letter-spacing:0.4px; margin-bottom:0.4rem; }
-.bc-aspiring-row { display:flex; justify-content:space-between; align-items:center; font-size:0.6rem; padding:0.15rem 0; }
-.bc-aspiring-row .bc-ticker-sm { font-weight:700; color:var(--blue); cursor:pointer; font-size:0.58rem; }
-.bc-aspiring-row .bc-cap-sm { color:var(--muted); font-size:0.55rem; }
-.bc-threshold { display:flex; justify-content:space-between; align-items:center; margin-bottom:0.4rem; }
-.bc-threshold .thresh-bar { flex:1; height:3px; background:rgba(255,255,255,0.06); border-radius:1px; overflow:hidden; margin:0 0.5rem; }
-.bc-threshold .thresh-fill { height:100%; background:rgba(210,153,29,0.4); border-radius:1px; }
-.bc-threshold span { font-size:0.5rem; color:var(--muted); }
-
-
-/* === VALUATION BANDS === */
-.val-section { margin:0 2rem 0.75rem; }
-.val-section h3 { font-size:0.8rem; color:var(--muted); text-transform:uppercase; letter-spacing:0.5px; margin-bottom:0.5rem; }
-.val-grid { display:grid; grid-template-columns:1fr 1fr; gap:0.75rem; }
-@media (max-width:768px) { .val-grid { grid-template-columns:1fr; } }
-.val-col { display:flex; flex-direction:column; gap:0.5rem; }
-.val-card { background:var(--card); border:1px solid var(--border); border-radius:10px; padding:0.85rem; }
-.val-card h4 { font-size:0.7rem; color:var(--muted); text-transform:uppercase; letter-spacing:0.4px; margin-bottom:0.5rem; display:flex; align-items:center; gap:0.3rem; }
-.val-row { display:flex; align-items:center; gap:0.4rem; padding:0.3rem 0; border-bottom:1px solid rgba(48,54,61,0.3); font-size:0.64rem; }
-.val-row:last-child { border-bottom:none; }
-.val-ticker { font-weight:700; color:var(--blue); cursor:pointer; min-width:44px; font-size:0.62rem; }
-.val-ticker:hover { color:var(--accent); }
-.val-name { flex:1; color:var(--text); font-size:0.6rem; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
-.val-badge { font-size:0.55rem; font-weight:700; padding:0.1rem 0.4rem; border-radius:4px; min-width:48px; text-align:center; }
-.val-badge.undervalued { background:rgba(63,185,80,0.15); color:var(--green); }
-.val-badge.fair { background:rgba(210,153,29,0.15); color:var(--gold); }
-.val-badge.overvalued { background:rgba(248,81,73,0.15); color:var(--red); }
-.val-pct { font-size:0.58rem; color:var(--muted); min-width:32px; text-align:right; }
-.val-gauge { flex:1; height:4px; background:rgba(48,54,61,0.4); border-radius:2px; overflow:hidden; max-width:60px; }
-.val-gauge .fill { height:100%; border-radius:2px; }
-.val-note { font-size:0.55rem; color:var(--muted); margin-top:0.35rem; line-height:1.35; }
-
-/* === SENTIMENT POLL === */
-.sentiment-poll { margin:0 2rem 0.75rem; }
-.sentiment-poll h3 { font-size:0.8rem; color:var(--muted); text-transform:uppercase; letter-spacing:0.5px; margin-bottom:0.5rem; }
-.sp-grid { display:grid; grid-template-columns:1fr 1fr; gap:0.75rem; }
-@media (max-width:768px) { .sp-grid { grid-template-columns:1fr; } }
-.sp-overall-card { background:var(--card); border:1px solid var(--border); border-radius:10px; padding:0.85rem; text-align:center; }
-.sp-overall-card h4 { font-size:0.7rem; color:var(--muted); text-transform:uppercase; letter-spacing:0.4px; margin-bottom:0.4rem; }
-.sp-big-gauge { position:relative; width:100%; max-width:320px; height:16px; border-radius:8px; margin:0.3rem auto; background:rgba(48,54,61,0.5); overflow:hidden; }
-.sp-big-gauge .fill { height:100%; border-radius:8px; transition:width 0.5s; }
-.sp-big-labels { display:flex; justify-content:space-between; font-size:0.5rem; color:var(--muted); margin:0 auto 0.3rem; max-width:320px; }
-.sp-big-score { font-size:1.8rem; font-weight:800; }
-.sp-big-verdict { font-size:0.7rem; font-weight:600; margin-top:0.15rem; }
-.sp-big-total { font-size:0.55rem; color:var(--muted); margin-top:0.15rem; }
-.sp-stock-list { display:flex; flex-direction:column; gap:0.4rem; }
-.sp-stock-card { background:var(--card); border:1px solid var(--border); border-radius:8px; padding:0.55rem 0.7rem; display:flex; align-items:center; gap:0.5rem; }
-.sp-stock-card .sp-ticker { font-weight:700; color:var(--blue); cursor:pointer; min-width:44px; font-size:0.65rem; }
-.sp-stock-card .sp-ticker:hover { color:var(--accent); }
-.sp-bar-wrap { flex:1; display:flex; flex-direction:column; gap:1px; }
-.sp-bar { display:flex; height:6px; border-radius:3px; overflow:hidden; }
-.sp-bar .bull-bar { background:var(--green); transition:width 0.4s; }
-.sp-bar .bear-bar { background:var(--red); transition:width 0.4s; }
-.sp-bar-labels { display:flex; justify-content:space-between; font-size:0.52rem; color:var(--muted); }
-.sp-vote-wrap { display:flex; gap:0.25rem; flex-shrink:0; }
-.sp-btn { padding:0.35rem 0.7rem; border-radius:6px; border:1px solid var(--green); background:rgba(63,185,80,0.1); color:var(--green); cursor:pointer; font-size:0.7rem; font-family:inherit; transition:all 0.15s; font-weight:700; min-width:50px; }
-.sp-btn:hover { border-color:var(--green); color:var(--green); }
-.sp-btn.bear { border-color:var(--red); background:rgba(248,81,73,0.1); color:var(--red); }
-.sp-btn.bear:hover { background:rgba(248,81,73,0.25); }
-.sp-btn.voted-bull { background:var(--green); color:#000; border-color:var(--green); box-shadow:0 0 8px rgba(63,185,80,0.4); }
-.sp-btn.voted-bear { background:var(--red); color:#fff; border-color:var(--red); box-shadow:0 0 8px rgba(248,81,73,0.4); }
-.sp-btn:active { transform:scale(0.95); }
-
 </style>
 </head>
 <body>
-<!-- ====== LOGIN GATE ====== -->
-<div id="loginGate">
-  <div class="login-bg">
-    <div class="orb gold"></div>
-    <div class="orb blue"></div>
-    <div class="orb" style="width:200px;height:200px;background:var(--green);top:60%;left:60%;animation:orbFloat 12s ease-in-out infinite;opacity:0.06;"></div>
-    <div class="orb" style="width:180px;height:180px;background:var(--red);top:15%;right:10%;animation:orbFloat 9s ease-in-out infinite reverse;opacity:0.05;"></div>
-  </div>
-  <div class="login-card" id="loginCard">
-    <!-- Branding -->
-    <div class="login-logo">
-      <div class="baobab">BAOBAB</div>
-      <div class="capital">CAPITAL</div>
-      <div class="tagline">African Markets Intelligence</div>
-    </div>
-    <div class="login-divider"></div>
-    <div class="login-subtitle">🔐 Subscriber Portal v2.3</div>
-
-    <!-- Login Form -->
-    <div id="loginForm">
-      <div class="login-field">
-        <input type="text" id="loginUser" placeholder="Username" autocomplete="username" spellcheck="false" onkeydown="if(event.key==='Enter')document.getElementById('loginPass').focus()">
-      </div>
-      <div class="login-field">
-        <input type="password" id="loginPass" placeholder="Password" autocomplete="current-password" onkeydown="if(event.key==='Enter')doLogin()">
-        <button class="login-toggle" id="pwToggle" onclick="togglePw()" type="button" title="Show/hide password">👁</button>
-      </div>
-      <div class="login-error" id="loginError"></div>
-      <button class="login-btn" id="loginBtn" onclick="doLogin()">🔓 Authenticate</button>
-      <div style="display:flex;justify-content:space-between;margin-top:0.75rem;">
-        <span style="font-size:0.6rem;color:var(--muted);cursor:pointer;" onclick="showSignup()">📝 Sign Up</span>
-        <span style="font-size:0.6rem;color:var(--muted);cursor:pointer;" onclick="forgotLogin()">❓ Forgot?</span>
-      </div>
-    </div>
-
-    <!-- Signup Form (hidden by default) -->
-    <div id="signupForm" style="display:none;">
-      <div class="login-field">
-        <input type="text" id="signupUser" placeholder="Choose username" autocomplete="off" spellcheck="false">
-      </div>
-      <div class="login-field">
-        <input type="password" id="signupPass" placeholder="Choose password" autocomplete="off">
-      </div>
-      <div class="login-field">
-        <input type="password" id="signupConfirm" placeholder="Confirm password" autocomplete="off" onkeydown="if(event.key==='Enter')doSignup()">
-      </div>
-      <div class="login-error" id="signupError"></div>
-      <button class="login-btn" onclick="doSignup()">📝 Create Account</button>
-      <div style="margin-top:0.75rem;font-size:0.5rem;color:var(--muted);">By signing up you agree to the terms of service. Credentials stored locally.</div>
-      <div style="margin-top:0.5rem;"><span style="font-size:0.6rem;color:var(--blue);cursor:pointer;" onclick="showLogin()">← Back to Login</span></div>
-    </div>
-
-    <!-- Authenticated state (hidden by default) -->
-    <div id="loginAuthed" style="display:none;">
-      <div style="font-size:1.2rem;margin:0.5rem 0;">👤 <span id="authedUser"></span></div>
-      <div style="font-size:0.62rem;color:var(--green);margin-bottom:1rem;">✓ Authenticated</div>
-      <button class="login-btn" onclick="doLogout()" style="background:rgba(248,81,73,0.6);color:var(--text);text-transform:none;">🚪 Logout</button>
-    </div>
-
-    <div class="login-footer">SECURED CONNECTION · AES-256-GCM · SESSION v2.3</div>
-  </div>
-</div>
-
 
 <div class="header">
   <h1>
@@ -564,7 +424,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
     <span class="logo-wordmark"><span class="baobab">BAOBAB</span> <span class="capital">CAPITAL</span><span class="tagline">African Markets Intelligence</span></span>
   </h1>
   <div class="controls">
-    <button class="btn btn-outline" onclick="doLogout()" style="margin-right:0.25rem;font-size:0.65rem;">🔒</button>
+    <button class="btn btn-outline" onclick="logout()" style="margin-right:0.25rem;font-size:0.65rem;">🔒</button>
     <span class="status"><span class="dot live" id="sdot"></span><span id="supd"></span></span>
     <button class="btn btn-outline" onclick="refresh()">🔄</button>
   </div>
@@ -580,7 +440,6 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
 <div class="hero" id="hero">
   <div class="hero-col">
     <div class="hero-card" id="heroMarketClose"></div>
-    <div class="hero-card billion-club" id="billionClub"></div>
     <div class="left-movers" id="leftMovers">
       <div class="left-mover-card gainers" id="leftGainers"></div>
       <div class="left-mover-card decliners" id="leftDecliners"></div>
@@ -616,18 +475,6 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
     <span style="margin-left:1rem;">Rectangle size = Market Cap</span>
   </div>
   <div class="heatmap-wrap"><canvas id="heatmapCanvas"></canvas></div>
-</div>
-
-
-<!-- ====== VALUATION BANDS + SENTIMENT POLL ====== -->
-<div class="val-section">
-  <h3>📊 Valuation Bands <span style="font-size:0.55rem;color:var(--muted);font-weight:400">Click tickers for detail</span> — Historical PE, Yield & Sector Context</h3>
-  <div class="val-grid" id="valGrid"></div>
-</div>
-
-<div class="sentiment-poll">
-  <h3>🗳️ Retail Sentiment <span style="font-size:0.55rem;color:var(--muted);font-weight:400">Tap Bull or Bear to vote</span> — Vote on Stocks You Follow</h3>
-  <div class="sp-grid" id="spGrid"></div>
 </div>
 
 <!-- ====== NEWS ====== -->
@@ -775,7 +622,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
 
 <!-- ====== COMPARISON ====== -->
 <div class="compare-bar" id="compareBar" style="display:none;">
-  <h3>⚚️ Bond vs Stock — Net Returns Compared</h3>
+  <h3>⚖️ Bond vs Stock — Net Returns Compared</h3>
   <div class="compare-chart">
     <div class="bar-bond" id="barBond" style="width:50%;"></div>
     <div class="bar-stock" id="barStock" style="width:50%;"></div>
@@ -799,86 +646,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
 let allData = {}, currentFilter = 'all', chartInst = null, heroChartInst = null, heroChartPeriod = 60;
 
 // ====== AUTH GATE ======
-function getUsers(){try{return JSON.parse(localStorage.getItem('bc_users')||'{}')}catch(e){return{}}}
-function saveUsers(u){localStorage.setItem('bc_users',JSON.stringify(u))}
-function ensureDefaultUser(){const u=getUsers();if(!u.admin){u.admin={pw:'Lusaka2026',created:Date.now(),role:'admin'};saveUsers(u)}return u}
-ensureDefaultUser();
-
-
-// ====== LOGIN / LOGOUT / SIGNUP ======
-function togglePw() {
-  const p = document.getElementById('loginPass');
-  p.type = p.type === 'password' ? 'text' : 'password';
-}
-
-function showSignup() {
-  document.getElementById('loginForm').style.display = 'none';
-  document.getElementById('signupForm').style.display = 'block';
-  document.getElementById('loginError').textContent = '';
-}
-function showLogin() {
-  document.getElementById('loginForm').style.display = 'block';
-  document.getElementById('signupForm').style.display = 'none';
-  document.getElementById('signupError').textContent = '';
-}
-
-function doLogin() {
-  const user = document.getElementById('loginUser').value.trim();
-  const pass = document.getElementById('loginPass').value;
-  const err = document.getElementById('loginError');
-  if (!user || !pass) { err.textContent = 'Username and password required'; err.classList.add('show'); return; }
-  err.classList.remove('show');
-  const users = getUsers();
-  if (!users[user]) { err.textContent = 'Invalid credentials'; err.classList.add('show'); return; }
-  if (users[user].pw !== pass) { err.textContent = 'Invalid credentials'; err.classList.add('show'); return; }
-  localStorage.setItem('bc_session', JSON.stringify({user, time: Date.now(), role: users[user].role||'user'}));
-  document.getElementById('loginGate').classList.add('hidden');
-}
-
-function doLogout() {
-  localStorage.removeItem('bc_session');
-  document.getElementById('loginGate').classList.remove('hidden');
-  document.getElementById('loginForm').style.display = 'block';
-  document.getElementById('signupForm').style.display = 'none';
-  document.getElementById('loginAuthed').style.display = 'none';
-  document.getElementById('loginUser').value = '';
-  document.getElementById('loginPass').value = '';
-}
-
-function doSignup() {
-  const user = document.getElementById('signupUser').value.trim();
-  const pass = document.getElementById('signupPass').value;
-  const confirm = document.getElementById('signupConfirm').value;
-  const err = document.getElementById('signupError');
-  if (!user || !pass) { err.textContent = 'Username and password required'; err.classList.add('show'); return; }
-  if (user.length < 3) { err.textContent = 'Username must be at least 3 characters'; err.classList.add('show'); return; }
-  if (pass.length < 6) { err.textContent = 'Password must be at least 6 characters'; err.classList.add('show'); return; }
-  if (pass !== confirm) { err.textContent = 'Passwords do not match'; err.classList.add('show'); return; }
-  err.classList.remove('show');
-  const users = getUsers();
-  if (users[user]) { err.textContent = 'Username already taken'; err.classList.add('show'); return; }
-  users[user] = {pw: pass, created: Date.now(), role: 'user'};
-  saveUsers(users);
-  localStorage.setItem('bc_session', JSON.stringify({user, time: Date.now(), role: 'user'}));
-  document.getElementById('loginGate').classList.add('hidden');
-}
-
-function forgotLogin() {
-  const err = document.getElementById('loginError');
-  err.textContent = 'Contact Baobab Capital support to reset credentials.';
-  err.classList.add('show');
-}
-
-// Check session on load
-(function() {
-  try {
-    const sess = JSON.parse(localStorage.getItem('bc_session'));
-    if (sess && sess.user && sess.time > Date.now() - 86400000) {
-      document.getElementById('loginGate').classList.add('hidden');
-    }
-  } catch(e) {}
-})();
-
+const ACCESS_HASH = '28d657d5cd993f21689047e28091ffadfae9beafeae2c9375503f326f5699a0c'; // default: Lusaka2026
 
 async function load() {
   try {
@@ -890,7 +658,7 @@ async function load() {
     renderNews();
     try { renderSens(); } catch(e) {}
     try { if (typeof initScreener === 'function') initScreener(); } catch(e) {}
-    render(); renderValuation(); renderSentiment();
+    render();
     document.getElementById('supd').textContent = allData.marketClose?.asOf || allData.market?.asOf || '';
   } catch(e) {
     document.getElementById('hero').innerHTML = '<div class="hero-card full-width" style="text-align:center;padding:2rem;"><p style="color:var(--muted);">⚠️ Server not reachable. Run: node server.js</p></div>';
@@ -898,9 +666,9 @@ async function load() {
 }
 
 function render() {
-  renderCurrency(); renderHero(); renderBillionClub(); renderHeroChart(); renderMoversStrip(); renderCalendar();
+  renderCurrency(); renderHero(); renderHeroChart(); renderMoversStrip(); renderCalendar();
   renderAnalysis(); renderRisks(); renderHeatmap(); renderNews(); renderTracker(); renderBottom();
-  document.getElementById('disc').innerHTML = '⚚️ ' + (allData.marketClose?.analysis?.authorNote || 'This analysis is for informational purposes only. Not investment advice.');
+  document.getElementById('disc').innerHTML = '⚖️ ' + (allData.marketClose?.analysis?.authorNote || 'This analysis is for informational purposes only. Not investment advice.');
 }
 
 function fmt(v){return v?.toLocaleString?.()||v||'—';}
@@ -960,155 +728,6 @@ function renderHero() {
   document.getElementById('heroMarketClose').innerHTML = h;
 }
 
-
-
-// ====== SENTIMENT POLL ======
-function getSentiment() {
-document.addEventListener("click",function(e){var btn=e.target.closest("[data-vote]");if(btn){var tk=btn.getAttribute("data-vote");var dr=btn.getAttribute("data-dir");if(tk&&dr)voteSentiment(tk,dr);return;}var tk=e.target.closest("[data-ticker]");if(tk){var t=tk.getAttribute("data-ticker");if(t)openProfile(t);return;}});
-  try { return JSON.parse(localStorage.getItem('bc_sentiment') || '{}'); } catch(e) { return {}; }
-}
-function saveSentiment(s) {
-  localStorage.setItem('bc_sentiment', JSON.stringify(s));
-}
-function voteSentiment(ticker, direction) {
-  const data = getSentiment();
-  if (!data[ticker]) data[ticker] = { bull: 0, bear: 0 };
-  if (data[ticker].mine === direction) {
-    delete data[ticker].mine;
-    if (direction === 'bull') data[ticker].bull = Math.max(0, data[ticker].bull - 1);
-    else data[ticker].bear = Math.max(0, data[ticker].bear - 1);
-  } else {
-    if (data[ticker].mine === 'bull') data[ticker].bull = Math.max(0, data[ticker].bull - 1);
-    if (data[ticker].mine === 'bear') data[ticker].bear = Math.max(0, data[ticker].bear - 1);
-    data[ticker].mine = direction;
-    if (direction === 'bull') data[ticker].bull++;
-    else data[ticker].bear++;
-  }
-  saveSentiment(data);
-  renderSentiment();
-}
-function renderSentiment() {
-  const cos = allData.companies || [];
-  const sentiment = getSentiment();
-  const totalVotes = Object.values(sentiment).reduce(function(s, v) { return s + (v.bull||0) + (v.bear||0); }, 0);
-  const totalBull = Object.values(sentiment).reduce(function(s, v) { return s + (v.bull||0); }, 0);
-  const overallPct = totalVotes > 0 ? Math.round((totalBull / totalVotes) * 100) : 50;
-  var gaugeColor = overallPct >= 60 ? "var(--green)" : overallPct <= 40 ? "var(--red)" : "var(--gold)";
-  var verdict = totalVotes > 0 ? (overallPct >= 60 ? "Bullish" : overallPct <= 40 ? "Bearish" : "Neutral") : "No votes yet";
-
-  // Always show top stocks by mkt cap (at least 6), with or without votes
-  var ranked = cos.filter(function(c){return c.marketCap > 0;}).sort(function(a,b){return (b.marketCap||0)-(a.marketCap||0);}).slice(0,6);
-  var stockVotes = ranked.map(function(c) {
-    var s2 = sentiment[c.ticker] || { bull: 0, bear: 0, mine: null };
-    return { ticker: c.ticker, name: c.name, bull: s2.bull||0, bear: s2.bear||0, mine: s2.mine, total: (s2.bull||0) + (s2.bear||0), marketCap: c.marketCap };
-  });
-
-  var stockList = [];
-  stockVotes.forEach(function(s) {
-    var bullPct = s.total > 0 ? Math.round((s.bull / s.total) * 100) : 50;
-    var bearPct = 100 - bullPct;
-    var myVote = s.mine;
-    var bullCls = myVote === "bull" ? "voted-bull" : "";
-    var bearCls = myVote === "bear" ? "voted-bear" : "";
-    stockList.push("<div class=\"sp-stock-card\">");
-    stockList.push("<span class=\"sp-ticker\" data-ticker=\"" + s.ticker + "\">" + s.ticker + "</span>");
-    stockList.push("<div class=\"sp-bar-wrap\"><div class=\"sp-bar\"><div class=\"bull-bar\" style=\"width:" + bullPct + "%\"></div><div class=\"bear-bar\" style=\"width:" + bearPct + "%\"></div></div>");
-    stockList.push("<div class=\"sp-bar-labels\"><span>Bull " + s.bull + "</span><span>" + s.total + " votes</span><span>Bear " + s.bear + "</span></div></div>");
-    stockList.push("<div class=\"sp-vote-wrap\">");
-    stockList.push("<button class=\"sp-btn " + bullCls + "\" data-vote=\"" + s.ticker + "\" data-dir=\"bull\">Bull</button>");
-    stockList.push("<button class=\"sp-btn bear " + bearCls + "\" data-vote=\"" + s.ticker + "\" data-dir=\"bear\">Bear</button>");
-    stockList.push("</div></div>");
-  });
-
-  document.getElementById("spGrid").innerHTML =
-    "<div class=\"sp-overall-card\"><h4>Retail Consensus</h4><div class=\"sp-big-labels\"><span>Bearish</span><span>Bullish</span></div><div class=\"sp-big-gauge\"><div class=\"fill\" style=\"width:" + overallPct + "%;background:" + gaugeColor + "\"></div></div><div class=\"sp-big-score\" style=\"color:" + gaugeColor + "\">" + overallPct + "%</div><div class=\"sp-big-verdict\" style=\"color:" + gaugeColor + "\">" + verdict + "</div><div class=\"sp-big-total\">" + totalVotes + " total votes</div></div>" +
-    "<div class=\"sp-stock-list\">" + stockList.join("") + "</div>";
-}function renderValuation() {
-  const cos = allData.companies || [];
-  if (!cos.length) return;
-  const sectors = {};
-  cos.forEach(function(c) {
-    if (!c.sector) return;
-    if (!sectors[c.sector]) sectors[c.sector] = { pes: [], yields: [], stocks: [] };
-    sectors[c.sector].stocks.push(c);
-    if (c.pe != null && c.pe > 0) sectors[c.sector].pes.push(c.pe);
-    if (c.dividendYield != null && c.dividendYield > 0) sectors[c.sector].yields.push(c.dividendYield);
-  });
-  const median = function(arr) {
-    if (!arr.length) return null;
-    const s = [...arr].sort(function(a,b){return a-b;});
-    return s[Math.floor(s.length/2)];
-  };
-  const rated = [];
-  cos.forEach(function(c) {
-    const sect = sectors[c.sector];
-    if (!sect) return;
-    const sectorMedPE = median(sect.pes);
-    let verdict = 'fair';
-    let pctDevPE = 0;
-    if (c.pe != null && c.pe > 0 && sectorMedPE != null) {
-      pctDevPE = ((c.pe - sectorMedPE) / sectorMedPE) * 100;
-      if (pctDevPE < -20) verdict = 'undervalued';
-      else if (pctDevPE > 20) verdict = 'overvalued';
-    }
-    rated.push({
-      ticker: c.ticker, name: c.name, sector: c.sector,
-      pe: c.pe, yield: c.dividendYield, marketCap: c.marketCap,
-      verdict: verdict, pctDevPE: pctDevPE
-    });
-  });
-  const order = { undervalued: 0, fair: 1, overvalued: 2 };
-  rated.sort(function(a,b) {
-    const o = order[a.verdict] - order[b.verdict];
-    if (o !== 0) return o;
-    return (b.marketCap||0) - (a.marketCap||0);
-  });
-  const mid = Math.ceil(rated.length / 2);
-  let col1 = '', col2 = '';
-  rated.slice(0, mid).forEach(function(r) {
-    const badgeCls = r.verdict;
-    const badgeColor = r.verdict === 'undervalued' ? 'var(--green)' : r.verdict === 'overvalued' ? 'var(--red)' : 'var(--gold)';
-    col1 += '<div class="val-row"><span class="val-ticker" onclick="openProfile(\''+r.ticker+'\')">'+r.ticker+'</span><span class="val-name">'+(r.name||'').substring(0,16)+'</span><div class="val-gauge"><div class="fill" style="width:50%;background:'+badgeColor+'"></div></div><span class="val-badge '+badgeCls+'">'+r.verdict+'</span><span class="val-pct">'+(r.pe!=null?r.pe.toFixed(1)+'x':'--')+'</span></div>';
-  });
-  rated.slice(mid).forEach(function(r) {
-    const badgeCls = r.verdict;
-    const badgeColor = r.verdict === 'undervalued' ? 'var(--green)' : r.verdict === 'overvalued' ? 'var(--red)' : 'var(--gold)';
-    col2 += '<div class="val-row"><span class="val-ticker" onclick="openProfile(\''+r.ticker+'\')">'+r.ticker+'</span><span class="val-name">'+(r.name||'').substring(0,16)+'</span><div class="val-gauge"><div class="fill" style="width:50%;background:'+badgeColor+'"></div></div><span class="val-badge '+badgeCls+'">'+r.verdict+'</span><span class="val-pct">'+(r.pe!=null?r.pe.toFixed(1)+'x':'--')+'</span></div>';
-  });
-  const undCnt = rated.filter(function(r){return r.verdict==='undervalued';}).length;
-  const overCnt = rated.filter(function(r){return r.verdict==='overvalued';}).length;
-  document.getElementById('valGrid').innerHTML =
-    '<div class="val-col"><div class="val-card"><h4>Undervalued ('+undCnt+')</h4>'+col1+'</div></div>' +
-    '<div class="val-col"><div class="val-card"><h4>Overvalued ('+overCnt+')</h4>'+col2+'<div class="val-note">PE compared against sector median. Green = below sector average. Red = above.</div></div></div>';
-}
-
-function renderBillionClub() {
-  const cos = allData.companies || [];
-  const rate = (allData.currency?.rates?.USD?.mid) || 17.71;
-  const billion = cos.filter(c => c.marketCap && c.marketCap/rate >= 1e9).sort((a,b) => b.marketCap - a.marketCap);
-  const aspiring = cos.filter(c => c.marketCap && c.marketCap/rate >= 5e8 && c.marketCap/rate < 1e9).sort((a,b) => b.marketCap - a.marketCap);
-  const totalCap = billion.reduce((s,c) => s + (c.marketCap||0)/rate, 0);
-  const maxUsdCap = billion.length ? billion[0].marketCap/rate : 1e9;
-  let h = '<h3><span class="icon">💰</span> Billion Dollar Club <span style="font-size:0.55rem;color:var(--muted);font-weight:400;text-transform:none;margin-left:auto;">$' + (totalCap/1e9).toFixed(1) + 'B combined</span></h3>';
-  h += '<div class="bc-bar-wrap">';
-  billion.slice(0,8).forEach(function(c) {
-    const pct = Math.max(3, (((c.marketCap||0)/rate) / maxUsdCap) * 100);
-    const usdCap = (c.marketCap||0)/rate;
-    const capStr = usdCap >= 1000 ? '$' + (usdCap/1e3).toFixed(1) + 'B' : usdCap >= 1 ? '$' + usdCap.toFixed(2) + 'B' : '$' + (usdCap*1000).toFixed(0) + 'M';
-    h += '<div class="bc-row"><span class="bc-ticker" onclick="openProfile(\'' + c.ticker + '\')">' + c.ticker + '</span><span class="bc-sect">' + (c.sector||'?') + '</span><div class="bc-bar-bg"><div class="bc-bar-fill" style="width:' + pct + '%"></div></div><span class="bc-cap">' + capStr + '</span></div>';
-  });
-  h += '</div>';
-  if (aspiring.length) {
-    h += '<div class="bc-divider"></div>';
-    h += '<div class="bc-aspiring-header">🎯 Aspiring Candidates</div>';
-    aspiring.forEach(function(c) {
-      h += '<div class="bc-aspiring-row"><span class="bc-ticker-sm" onclick="openProfile(\'' + c.ticker + '\')">' + c.ticker + '</span><span style="color:var(--muted);font-size:0.5rem">' + (c.name||'').substring(0,22) + '</span><span class="bc-cap-sm">$' + (c.marketCap/rate/1e6).toFixed(0) + 'M</span></div>';
-      const pct = Math.round(((c.marketCap||0)/rate/1e9)*100);
-      h += '<div class="bc-threshold"><span>0</span><div class="thresh-bar"><div class="thresh-fill" style="width:' + pct + '%"></div></div><span>$1B</span></div>';
-    });
-  }
-  document.getElementById('billionClub').innerHTML = h;
-}
 function renderMoversStrip() {
   const cos = allData.companies || [];
   const gainers = cos.filter(c => (c.changePct||0) > 0).sort((a,b)=>(b.changePct||0)-(a.changePct||0)).slice(0,5);
@@ -1253,7 +872,7 @@ function runScreener() {
     return 'K' + v.toLocaleString();
   };
   
-  const sortArrow = (c) => screenerSort.col === c ? (screenerSort.dir > 0 ? ' ▲' : ' ▼') : '';
+  const sortArrow = (c) => screenerSort.col === c ? (screenerSort.dir > 0 ? ' ▴' : ' ▾') : '';
   
   let t = '<tr>' +
     '<th onclick="sortScreener(' + "'ticker'" + ')">Ticker' + sortArrow('ticker') + '</th>' +
@@ -1439,7 +1058,7 @@ async function renderHeroChart() {
     const periodReturn = ((lastClose - firstClose) / firstClose * 100);
     const ma7Last = ma7[ma7.length-1];
     const ma21Last = ma21[ma21.length-1];
-    const signal = ma7Last && ma21Last ? (ma7Last > ma21Last ? 'Bullish ▲' : 'Bearish ▼') : '—';
+    const signal = ma7Last && ma21Last ? (ma7Last > ma21Last ? 'Bullish ▴' : 'Bearish ▾') : '—';
     const signalClr = ma7Last > ma21Last ? 'var(--green)' : 'var(--red)';
     
     document.getElementById('heroChartIndicators').innerHTML =
