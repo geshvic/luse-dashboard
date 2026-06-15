@@ -1,88 +1,184 @@
 /**
- * fetch-commodities.js — updates commodities.json with latest prices
- * 
- * This is a manual/assisted update script. It searches for current prices
- * and logs the results so they can be verified and written.
- * 
- * Current data sources:
- *   Copper LME: tradingeconomics.com/commodity/copper
- *   Brent Crude: tradingeconomics.com/commodity/crude-oil
- *   Gold XAU: tradingeconomics.com/commodity/gold
- *   Cobalt LME: tradingeconomics.com/commodity/cobalt
- *   Maize: FRA floor price (government-set)
- * 
+ * fetch-commodities.js — scrapes live commodity prices via headless Playwright
+ *
+ * Sources:
+ *   Copper → LME directly (lme.com) — official benchmark for Zambia
+ *   Brent / Gold / Cobalt → Trading Economics (tab-delimited table)
+ *   Maize → FRA floor price (government-set, stable)
+ *
  * Run: node scripts/fetch-commodities.js
  */
+const { chromium } = require('playwright-core');
 const fs = require('fs');
 const path = require('path');
-const https = require('https');
 
-const DATA_PATH = path.join(__dirname, '..', 'data', 'commodities.json');
-const RATE = 17.71; // ZMW/USD — updated by currency scraper
+const DATA_DIR = path.join(__dirname, '..', 'data');
+const RATE = 17.71; // ZMW/USD
 
-function fetchPrice(url) {
-  return new Promise((resolve, reject) => {
-    https.get(url, { timeout: 15000 }, res => {
-      let data = '';
-      res.on('data', c => data += c.toString());
-      res.on('end', () => resolve(data));
-    }).on('error', reject);
-  });
+function loadJSON() {
+  try { return JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'commodities.json'), 'utf8')); }
+  catch { return []; }
 }
 
-function extractPrice(html, pattern) {
-  const m = html.match(pattern);
-  return m ? parseFloat(m[1].replace(/,/g, '')) : null;
+function saveJSON(data) {
+  fs.writeFileSync(path.join(DATA_DIR, 'commodities.json'), JSON.stringify(data, null, 2), 'utf8');
+  const pubDir = path.join(__dirname, '..', 'public', 'data');
+  fs.mkdirSync(pubDir, { recursive: true });
+  fs.writeFileSync(path.join(pubDir, 'commodities.json'), JSON.stringify(data, null, 2), 'utf8');
+}
+
+async function scrapePage(browser, url, label) {
+  console.log(`  [${label}] Loading...`);
+  const ctx = await browser.newContext({
+    userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/125.0.0.0 Safari/537.36',
+    viewport: { width: 1280, height: 800 }
+  });
+  const page = await ctx.newPage();
+  await page.addInitScript(() => {
+    Object.defineProperty(navigator, 'webdriver', { get: () => false });
+    window.chrome = { runtime: {} };
+  });
+  try {
+    await page.goto(url, { waitUntil: 'networkidle', timeout: 30000 });
+    await page.waitForTimeout(3000);
+    const text = await page.evaluate(() => document.body.innerText);
+    await ctx.close();
+    return text;
+  } catch (e) {
+    console.log(`  [${label}] Error: ${e.message}`);
+    await ctx.close().catch(() => {});
+    return null;
+  }
+}
+
+function getTEPrices(text) {
+  const result = {};
+  const lines = text.split('\n');
+  for (const line of lines) {
+    const parts = line.split('\t');
+    if (parts.length >= 2) {
+      const name = parts[0].trim();
+      const firstNum = parts[1];
+      if (firstNum && firstNum.match(/^[0-9,]+\.?[0-9]*$/)) {
+        result[name] = parseFloat(firstNum.replace(/,/g, ''));
+      }
+    }
+  }
+  return result;
 }
 
 async function main() {
-  console.log('Fetching commodity prices...\n');
-  
-  const results = {};
-  const errors = [];
-  
-  // Copper
-  try {
-    const html = await fetchPrice('https://tradingeconomics.com/commodity/copper');
-    const price = extractPrice(html, /Copper[^0-9]*([0-9,]+\.?[0-9]*)/);
-    if (price) {
-      results.copper = price;
-      console.log(`Copper: $${price}/tonne`);
+  console.log(`\n📦 Commodity Price Scraper — ${new Date().toISOString().split('T')[0]}\n`);
+
+  const browser = await chromium.launch({
+    headless: true,
+    args: ['--no-sandbox', '--disable-gpu', '--disable-dev-shm-usage']
+  });
+
+  const existing = loadJSON();
+  const updated = [...existing];
+  let changes = 0;
+
+  // --- Copper: LME direct (official benchmark for Zambia) ---
+  const copperText = await scrapePage(browser, 'https://www.lme.com/en/Metals/Non-ferrous/LME-Copper', 'LME Copper');
+  if (copperText) {
+    const lines = copperText.split('\n');
+    for (let i = 0; i < lines.length; i++) {
+      const num = parseFloat(lines[i].replace(/,/g, ''));
+      if (num > 10000 && num < 20000) {
+        const price = Math.round(num);
+        console.log(`  -> LME Copper: $${price}/tonne`);
+        const idx = updated.findIndex(c => c.name === 'Copper');
+        if (idx >= 0) {
+          const old = updated[idx].price;
+          updated[idx].price = price;
+          updated[idx].change = parseFloat((price - old).toFixed(2));
+          updated[idx].changePct = old > 0 ? parseFloat((((price - old) / old) * 100).toFixed(2)) : 0;
+          updated[idx].zmwValue = parseFloat((price * RATE).toFixed(0));
+          changes++;
+          console.log(`    ✓ Copper: $${old} -> $${price}`);
+        }
+        break;
+      }
     }
-  } catch (e) { errors.push(`Copper: ${e.message}`); }
-  
-  // Brent
-  try {
-    const html = await fetchPrice('https://tradingeconomics.com/commodity/crude-oil');
-    const price = extractPrice(html, /Crude Oil[^0-9]*([0-9,]+\.?[0-9]*)/);
+  } else {
+    console.log('  LME Copper: FAILED - page not loaded');
+  }
+
+  // --- Brent Crude ---
+  const crudeText = await scrapePage(browser, 'https://tradingeconomics.com/commodity/crude-oil', 'Brent Crude');
+  if (crudeText) {
+    const prices = getTEPrices(crudeText);
+    const price = prices['Crude Oil'];
     if (price) {
-      results.brent = price;
-      console.log(`Brent: $${price}/bbl`);
+      const idx = updated.findIndex(c => c.name === 'Brent Crude');
+      if (idx >= 0) {
+        const old = updated[idx].price;
+        const v = parseFloat(price.toFixed(2));
+        updated[idx].price = v;
+        updated[idx].change = parseFloat((v - old).toFixed(2));
+        updated[idx].changePct = old > 0 ? parseFloat((((v - old) / old) * 100).toFixed(2)) : 0;
+        updated[idx].zmwValue = parseFloat((v * RATE).toFixed(0));
+        changes++;
+        console.log(`    ✓ Brent Crude: $${old} -> $${v}`);
+      }
     }
-  } catch (e) { errors.push(`Brent: ${e.message}`); }
-  
-  // Gold
-  try {
-    const html = await fetchPrice('https://tradingeconomics.com/commodity/gold');
-    const price = extractPrice(html, /Gold[^0-9]*([0-9,]+\.?[0-9]*)/);
+  }
+
+  // --- Gold ---
+  const goldText = await scrapePage(browser, 'https://tradingeconomics.com/commodity/gold', 'Gold');
+  if (goldText) {
+    const prices = getTEPrices(goldText);
+    const price = prices['Gold'];
     if (price) {
-      results.gold = price;
-      console.log(`Gold: $${price}/oz`);
+      const idx = updated.findIndex(c => c.name === 'Gold');
+      if (idx >= 0) {
+        const old = updated[idx].price;
+        const v = parseFloat(price.toFixed(2));
+        updated[idx].price = v;
+        updated[idx].change = parseFloat((v - old).toFixed(2));
+        updated[idx].changePct = old > 0 ? parseFloat((((v - old) / old) * 100).toFixed(2)) : 0;
+        updated[idx].zmwValue = parseFloat((v * RATE).toFixed(0));
+        changes++;
+        console.log(`    ✓ Gold: $${old} -> $${v}`);
+      }
     }
-  } catch (e) { errors.push(`Gold: ${e.message}`); }
-  
-  // Cobalt
-  try {
-    const html = await fetchPrice('https://tradingeconomics.com/commodity/cobalt');
-    const price = extractPrice(html, /Cobalt[^0-9]*([0-9,]+\.?[0-9]*)/);
+  }
+
+  // --- Cobalt ---
+  const cobaltText = await scrapePage(browser, 'https://tradingeconomics.com/commodity/cobalt', 'Cobalt');
+  if (cobaltText) {
+    const prices = getTEPrices(cobaltText);
+    const price = prices['Cobalt'];
     if (price) {
-      results.cobalt = price;
-      console.log(`Cobalt: $${price}/tonne`);
+      const idx = updated.findIndex(c => c.name === 'Cobalt');
+      if (idx >= 0) {
+        const old = updated[idx].price;
+        const v = parseFloat(price.toFixed(2));
+        updated[idx].price = v;
+        updated[idx].change = parseFloat((v - old).toFixed(2));
+        updated[idx].changePct = old > 0 ? parseFloat((((v - old) / old) * 100).toFixed(2)) : 0;
+        updated[idx].zmwValue = parseFloat((v * RATE).toFixed(0));
+        changes++;
+        console.log(`    ✓ Cobalt: $${old} -> $${v}`);
+      }
     }
-  } catch (e) { errors.push(`Cobalt: ${e.message}`); }
-  
-  console.log('\nResults:', JSON.stringify(results, null, 2));
-  if (errors.length) console.log('Errors:', errors.join('\n'));
+  }
+
+  await browser.close();
+
+  // Maize: FRA floor price (stable)
+  console.log('  Maize: ZMW 340 (FRA floor, stable)');
+
+  saveJSON(updated);
+  console.log(`\nSaved - ${changes}/4 commodities updated`);
+
+  for (const c of updated) {
+    const arrow = c.changePct > 0 ? '+' : c.changePct < 0 ? '-' : ' ';
+    console.log(`  ${arrow} ${c.name}: $${c.price} (${c.changePct > 0 ? '+' : ''}${c.changePct}%)`);
+  }
+
+  console.log('\nCommodity scrape complete\n');
 }
 
-main().catch(e => console.error(e));
+main().catch(e => { console.error('Fatal:', e.message); process.exit(1); });
