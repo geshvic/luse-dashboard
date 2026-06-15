@@ -147,6 +147,10 @@ async function scrapeMarketData() {
           co.price = stock.price;
           if (stock.change !== undefined && !isNaN(stock.change)) co.change = stock.change;
           if (stock.volume !== undefined) co.volume = stock.volume;
+          // Dynamic market cap: sharesOutstanding × current price
+          if (co.sharesOutstanding && co.price > 0) {
+            co.marketCap = Math.round(co.sharesOutstanding * co.price);
+          }
         }
       }
       saveJSON('companies.json', companies);

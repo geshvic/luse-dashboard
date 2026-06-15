@@ -10,12 +10,13 @@
     "volume": 267,
     "trades": 43,
     "value": 8122332.28,
-    "marketCap": 17670000000,
+    "marketCap": 17670000075,
     "freeFloat": 15,
     "pe": 10.02,
     "dividendYield": 7.06,
     "ipo": 2015,
-    "listed": true
+    "listed": true,
+    "sharesOutstanding": 100971429
   },
   {
     "ticker": "CECZ",
@@ -29,12 +30,13 @@
     "volume": 4613,
     "trades": 127,
     "value": 1658694.01,
-    "marketCap": 27410000000,
+    "marketCap": 27409999992,
     "freeFloat": 30,
     "pe": 9.72,
     "dividendYield": 4.07,
     "ipo": 2008,
-    "listed": true
+    "listed": true,
+    "sharesOutstanding": 1626706231
   },
   {
     "ticker": "ZNCO",
@@ -47,12 +49,13 @@
     "volume": 4597,
     "trades": 162,
     "value": 734769.54,
-    "marketCap": 13820000000,
+    "marketCap": 13820000002,
     "freeFloat": 35,
     "pe": 6.87,
     "dividendYield": 4.58,
     "ipo": 2008,
-    "listed": true
+    "listed": true,
+    "sharesOutstanding": 1444096134
   },
   {
     "ticker": "ZSUG",
@@ -65,12 +68,13 @@
     "volume": 592,
     "trades": 31,
     "value": 43872.15,
-    "marketCap": 48600000000,
+    "marketCap": 48599999972,
     "freeFloat": 25,
     "pe": 14.7,
     "dividendYield": 3.2,
     "ipo": 1996,
-    "listed": true
+    "listed": true,
+    "sharesOutstanding": 703328509
   },
   {
     "ticker": "ZABR",
@@ -84,12 +88,13 @@
     "volume": 720,
     "trades": 25,
     "value": 4848.4,
-    "marketCap": 3710000000,
+    "marketCap": 3709999998,
     "freeFloat": 20,
     "pe": 12.6,
     "dividendYield": 0,
     "ipo": 1997,
-    "listed": true
+    "listed": true,
+    "sharesOutstanding": 545588235
   },
   {
     "ticker": "BATA",
@@ -103,12 +108,13 @@
     "volume": 5,
     "trades": 63,
     "value": 261082.7,
-    "marketCap": 685000000,
+    "marketCap": 684999999,
     "freeFloat": 38,
     "pe": 20.51,
     "dividendYield": 1.67,
     "ipo": 1990,
-    "listed": true
+    "listed": true,
+    "sharesOutstanding": 76026637
   },
   {
     "ticker": "PUMA",
@@ -122,12 +128,13 @@
     "volume": 88,
     "trades": 30,
     "value": 2451.96,
-    "marketCap": 623000000,
+    "marketCap": 622999999,
     "freeFloat": 12,
     "pe": null,
     "dividendYield": 0,
     "ipo": 2012,
-    "listed": true
+    "listed": true,
+    "sharesOutstanding": 212627986
   },
   {
     "ticker": "SCBL",
@@ -145,7 +152,8 @@
     "pe": 26.63,
     "dividendYield": 0,
     "ipo": 1993,
-    "listed": true
+    "listed": true,
+    "sharesOutstanding": 2136000000
   },
   {
     "ticker": "AECI",
@@ -159,12 +167,13 @@
     "volume": 2,
     "trades": 4,
     "value": 853.93,
-    "marketCap": 2510000000,
+    "marketCap": 2509999992,
     "freeFloat": 99.7,
     "pe": null,
     "dividendYield": 0.53,
     "ipo": 1991,
-    "listed": true
+    "listed": true,
+    "sharesOutstanding": 20406504
   },
   {
     "ticker": "DCZM",
@@ -177,12 +186,13 @@
     "volume": 73,
     "trades": 41,
     "value": 169839.14,
-    "marketCap": 138000000,
+    "marketCap": 137999998,
     "freeFloat": 17.5,
     "pe": null,
     "dividendYield": null,
     "ipo": "Dec 2025",
-    "listed": true
+    "listed": true,
+    "sharesOutstanding": 5609756
   },
   {
     "ticker": "ZFCO",
@@ -196,12 +206,13 @@
     "volume": 3,
     "trades": 4,
     "value": 1110.7,
-    "marketCap": 420000000,
+    "marketCap": 420000001,
     "freeFloat": 40,
     "pe": 5.06,
     "dividendYield": 2.5,
     "ipo": 2018,
-    "listed": true
+    "listed": true,
+    "sharesOutstanding": 64318530
   },
   {
     "ticker": "NATB",
@@ -220,7 +231,8 @@
     "pe": null,
     "dividendYield": 0,
     "ipo": 2003,
-    "listed": true
+    "listed": true,
+    "sharesOutstanding": 62937063
   },
   {
     "ticker": "CHIL",
@@ -234,12 +246,13 @@
     "volume": 1397,
     "trades": 24,
     "value": 34416.83,
-    "marketCap": 13340000000,
+    "marketCap": 13339999998,
     "freeFloat": 21.3,
     "pe": 17.52,
     "dividendYield": 6,
     "ipo": 1995,
-    "listed": true
+    "listed": true,
+    "sharesOutstanding": 200180072
   },
   {
     "ticker": "ZMBF",
@@ -258,7 +271,8 @@
     "pe": 3.55,
     "dividendYield": 0,
     "ipo": 2000,
-    "listed": true
+    "listed": true,
+    "sharesOutstanding": 300500000
   },
   {
     "ticker": "KLRE",
@@ -277,7 +291,8 @@
     "pe": 7.64,
     "dividendYield": 0,
     "ipo": 2019,
-    "listed": true
+    "listed": true,
+    "sharesOutstanding": 11285714286
   },
   {
     "ticker": "BATZ",
@@ -291,12 +306,13 @@
     "volume": 1358,
     "trades": 84,
     "value": 37131.78,
-    "marketCap": 2690000000,
+    "marketCap": 2690000003,
     "freeFloat": 22,
     "pe": 12.42,
     "dividendYield": 6.32,
     "ipo": 1998,
-    "listed": true
+    "listed": true,
+    "sharesOutstanding": 212480253
   },
   {
     "ticker": "ZCCM-IH",
@@ -314,7 +330,8 @@
     "pe": 6.5,
     "dividendYield": 1.8,
     "ipo": 1995,
-    "listed": true
+    "listed": true,
+    "sharesOutstanding": 165400000
   },
   {
     "ticker": "SHOP",
@@ -328,13 +345,14 @@
     "volume": null,
     "trades": 0,
     "value": 0,
-    "marketCap": 190000000000,
+    "marketCap": 190000000050,
     "freeFloat": 8,
     "pe": 19.5,
     "dividendYield": 2,
     "ipo": 2004,
     "listed": true,
-    "note": "ZAR-denominated secondary listing. Market cap estimate in ZMW."
+    "note": "ZAR-denominated secondary listing. Market cap estimate in ZMW.",
+    "sharesOutstanding": 542857143
   },
   {
     "ticker": "INDO",
@@ -353,7 +371,8 @@
     "dividendYield": 4.8,
     "ipo": 2007,
     "listed": true,
-    "note": "No trades recorded Jun 5. Price from last session."
+    "note": "No trades recorded Jun 5. Price from last session.",
+    "sharesOutstanding": 226086957
   },
   {
     "ticker": "LUSW",
@@ -372,7 +391,8 @@
     "dividendYield": 0,
     "ipo": 2022,
     "listed": true,
-    "note": "No trades recorded."
+    "note": "No trades recorded.",
+    "sharesOutstanding": 56410256
   },
   {
     "ticker": "RFIN",
@@ -392,7 +412,8 @@
     "dividendYield": 5.2,
     "ipo": 2022,
     "listed": true,
-    "note": "No trades recorded. Not on LuSE daily sheet — may be suspended."
+    "note": "No trades recorded. Not on LuSE daily sheet — may be suspended.",
+    "sharesOutstanding": 61904762
   },
   {
     "ticker": "PRIM",
@@ -412,7 +433,8 @@
     "dividendYield": 1,
     "ipo": 2021,
     "listed": true,
-    "note": "No trades recorded. Not on LuSE daily sheet."
+    "note": "No trades recorded. Not on LuSE daily sheet.",
+    "sharesOutstanding": 60416667
   },
   {
     "ticker": "ENRG",
@@ -432,7 +454,8 @@
     "dividendYield": 0,
     "ipo": 2023,
     "listed": true,
-    "note": "No trades recorded. Not on LuSE daily sheet."
+    "note": "No trades recorded. Not on LuSE daily sheet.",
+    "sharesOutstanding": 60176991
   },
   {
     "ticker": "CCAF",
@@ -451,7 +474,8 @@
     "dividendYield": null,
     "ipo": null,
     "listed": true,
-    "note": "Listed on LuSE daily sheet with trades. Details pending — NEW ADDITION."
+    "note": "Listed on LuSE daily sheet with trades. Details pending — NEW ADDITION.",
+    "sharesOutstanding": null
   },
   {
     "ticker": "FARM",
@@ -470,7 +494,8 @@
     "dividendYield": null,
     "ipo": null,
     "listed": true,
-    "note": "Listed on LuSE. No trades Jun 5. NEW ADDITION."
+    "note": "Listed on LuSE. No trades Jun 5. NEW ADDITION.",
+    "sharesOutstanding": null
   },
   {
     "ticker": "MAFS",
@@ -489,7 +514,8 @@
     "dividendYield": null,
     "ipo": null,
     "listed": true,
-    "note": "Listed on LuSE. No trades Jun 5. NEW ADDITION."
+    "note": "Listed on LuSE. No trades Jun 5. NEW ADDITION.",
+    "sharesOutstanding": null
   },
   {
     "ticker": "ZMFA",
@@ -508,7 +534,8 @@
     "dividendYield": null,
     "ipo": null,
     "listed": true,
-    "note": "Traded on Jun 5. NEW ADDITION — needs profiling."
+    "note": "Traded on Jun 5. NEW ADDITION — needs profiling.",
+    "sharesOutstanding": null
   },
   {
     "ticker": "ZMRE",
@@ -528,7 +555,8 @@
     "dividendYield": null,
     "ipo": null,
     "listed": true,
-    "note": "Traded on Jun 5. NEW ADDITION — needs profiling."
+    "note": "Traded on Jun 5. NEW ADDITION — needs profiling.",
+    "sharesOutstanding": null
   },
   {
     "ticker": "REIZUSD",
@@ -547,6 +575,7 @@
     "dividendYield": null,
     "ipo": null,
     "listed": true,
-    "note": "USD-denominated REIT. No trades Jun 5. NEW ADDITION."
+    "note": "USD-denominated REIT. No trades Jun 5. NEW ADDITION.",
+    "sharesOutstanding": null
   }
 ]
