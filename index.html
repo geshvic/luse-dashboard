@@ -1090,7 +1090,7 @@ function renderBillionClub() {
   const totalCap = billion.reduce((s,c) => s + (c.marketCap||0)/rate, 0);
   const maxUsdCap = billion.length ? billion[0].marketCap/rate : 1e9;
   const asOf = allData.marketClose?.asOf || allData.market?.asOf || '';
-let h = '<h3><span class="icon">💰</span> Billion Dollar Club <span style="font-size:0.55rem;color:var(--muted);font-weight:400;text-transform:none;margin-left:auto;">
+let h = '<h3><span class="icon">💰</span> Billion Dollar Club <span style="font-size:0.55rem;color:var(--muted);font-weight:400;text-transform:none;margin-left:auto;">$' + (totalCap/1e9).toFixed(1) + 'B combined</span></h3>';
   h += '<div style="font-size:0.5rem;color:var(--muted);margin-bottom:0.4rem;">🔄 Last updated: ' + (asOf || 'N/A') + ' · Live prices × shares outstanding</div>';
   h += '<div class="bc-bar-wrap">';
   billion.slice(0,8).forEach(function(c) {
