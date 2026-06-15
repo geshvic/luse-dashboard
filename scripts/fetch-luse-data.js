@@ -145,7 +145,14 @@ async function scrapeMarketData() {
         const co = companies.find(c => c.ticker === stock.ticker);
         if (co) {
           co.price = stock.price;
-          if (stock.change !== undefined && !isNaN(stock.change)) co.change = stock.change;
+          if (stock.change !== undefined && !isNaN(stock.change)) {
+            co.change = stock.change;
+            // Recalculate changePct: change / (price - change) * 100
+            const prevPrice = co.price - co.change;
+            if (prevPrice > 0) {
+              co.changePct = parseFloat(((co.change / prevPrice) * 100).toFixed(2));
+            }
+          }
           if (stock.volume !== undefined) co.volume = stock.volume;
           // Dynamic market cap: sharesOutstanding × current price
           if (co.sharesOutstanding && co.price > 0) {
