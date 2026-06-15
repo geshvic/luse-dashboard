@@ -1,13 +1,5 @@
 [
   {
-    "ticker": "DCZM",
-    "date": "2026-06-15",
-    "type": "Earnings",
-    "desc": "Full Year Results",
-    "displayDate": "Jun 15",
-    "confidence": "confirmed"
-  },
-  {
     "ticker": "CECZ",
     "date": "2026-06-23",
     "type": "AGM",
@@ -153,6 +145,14 @@
   },
   {
     "ticker": "BATZ",
+    "date": "2026-09-15",
+    "displayDate": "Sep 15",
+    "type": "Earnings",
+    "desc": "Half-Year Results (est)",
+    "confidence": "estimated"
+  },
+  {
+    "ticker": "ZCCM-IH",
     "date": "2026-09-15",
     "displayDate": "Sep 15",
     "type": "Earnings",

@@ -1,5 +1,39 @@
 [
   {
+    "title": "CEC Renewables Ltd-Notice of EGM",
+    "date": "2026-06-12",
+    "category": "AGM/EGM",
+    "type": "AGM",
+    "tickers": [
+      "CECZ",
+      "CCAF"
+    ],
+    "source": "LuSE SENS",
+    "url": "https://www.luse.co.zm/sens-category/annual-and-extraordinary-general-meeting/"
+  },
+  {
+    "title": "ATEL – MARKET CAPITALISATION MILESTONE",
+    "date": "2026-06-11",
+    "category": "General Announcements",
+    "type": "General",
+    "tickers": [
+      "ATEL"
+    ],
+    "source": "LuSE SENS",
+    "url": "https://www.luse.co.zm/sens-category/general-announcements/"
+  },
+  {
+    "title": "ATEL – CAUTIONARY ANNOUNCEMENT",
+    "date": "2026-06-11",
+    "category": "Cautionary Announcement",
+    "type": "Cautionary",
+    "tickers": [
+      "ATEL"
+    ],
+    "source": "LuSE SENS",
+    "url": "https://www.luse.co.zm/sens-category/cautionary-announcement/"
+  },
+  {
     "title": "NATB – TRADING STATEMENT",
     "date": "2026-06-05",
     "category": "General Announcements",
