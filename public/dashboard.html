@@ -1155,6 +1155,8 @@ function renderMoversStrip() {
     '<div class="lm-header">📊 Market Sentiment</div>' +
     '<div class="mini-gauge-wrap"><div class="mini-gauge"><div class="fill" style="width:'+score+'%"></div></div></div>' +
     '<div class="mini-score-row"><span class="score-num" style="color:'+color+'">'+emoji+' '+Math.round(score)+'/100</span><span style="color:var(--muted);font-size:0.58rem">'+verdict+' · '+gainersAll+'▲ '+losersAll+'▼ '+flat+'─</span></div>';
+  const asOf = allData.marketClose?.asOf || allData.market?.asOf || '';
+  document.getElementById('leftMovers').insertAdjacentHTML('beforeend', '<div style="font-size:0.5rem;color:var(--muted);text-align:center;margin-top:0.3rem;">🔄 Last updated: ' + (asOf || 'N/A') + '</div>');
 }
 
 let screenerSort = { col: 'mktCap', dir: -1 };
