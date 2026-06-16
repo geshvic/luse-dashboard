@@ -1,6 +1,24 @@
 [
   {
     "date": "2026-06-16",
+    "category": "Market",
+    "title": "LuSE Daily Close: LASI +0.01% to 25,680.73 — flat session, 3 decliners",
+    "summary": "836 trades across 50,003,521 shares. Turnover K19.03M. LASI edged up 0.01% to 25,680.73. Breadth: 0 advancers, 3 decliners (BATZ -0.11%, CHIL -0.06%, REIZUSD -11.11%), 20 unchanged. ATEL led gainers (+3.02%). Most active: DCZM (K7.1M), BATA (K2.3M), ZMFA (K149K).",
+    "source": "LuSE (via Playwright scraper)",
+    "url": "https://www.luse.co.zm/market-data/",
+    "tickers": [
+      "ATEL",
+      "BATZ",
+      "CHIL",
+      "DCZM",
+      "BATA",
+      "ZNCO",
+      "ZMFA",
+      "KLRE"
+    ]
+  },
+  {
+    "date": "2026-06-16",
     "category": "Corporate",
     "title": "PDF Zambian Business Times",
     "summary": "By Carol Sichone diversification efforts, and new Despite concerns around the side formal economic sys- Without such reforms, he Zambia's planned Gross Domes- forms of economic activity. choice of base year, Cheelo Speaking to Zambian Busi- tems. war",

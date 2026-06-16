@@ -1,46 +1,46 @@
 {
-  "asOf": "2026-06-15",
-  "source": "XE.com mid-market rates 16:30 UTC, Bank of Zambia (boz.zm), Wise",
+  "asOf": "2026-06-16",
+  "source": "XE.com mid-market rates 16:42 UTC, Bank of Zambia (boz.zm)",
   "baseNote": "Rates show ZMW per 1 unit of foreign currency. ↑ ZMW = Kwacha weakening (depreciating).",
   "mpRate": 13.5,
   "mpRateNote": "Monetary Policy Rate reduced 75bps from 14.25% on Feb 11, 2026. BOZ held at 13.5% at May review. Next review: August 2026.",
   "rates": {
     "USD": {
-      "buy": 17.6850,
-      "sell": 17.7550,
-      "mid": 17.7200,
-      "marketMid": 17.7196,
+      "buy": 17.70,
+      "sell": 17.77,
+      "mid": 17.7366,
+      "marketMid": 17.7366,
       "trend": "weakening",
-      "dayAgo": 17.71,
+      "dayAgo": 17.72,
       "weekAgo": 17.46,
       "twoWeeksAgo": 17.71,
       "oneMonthAgo": 18.83,
       "sixMonthsAgo": 22.50,
-      "note": "XE mid-market Jun 15 16:30 UTC: 1 USD = 17.7196 ZMW. Kwacha weakened ~1.5% since Jun 11 low of 17.46. Short-term pullback from rapid appreciation. YTD appreciation still ~21%."
+      "note": "XE mid-market Jun 16 16:42 UTC: 1 USD = 17.7366 ZMW. Kwacha slightly softer from 17.72 yesterday. Short-term consolidation after recent pullback from Jun 11 low of 17.46."
     },
     "GBP": {
-      "mid": 23.8019,
+      "mid": 23.8249,
       "trend": "weakening",
-      "dayAgo": 23.83,
+      "dayAgo": 23.80,
       "weekAgo": 23.27,
       "oneMonthAgo": 25.50,
-      "note": "1 GBP = 23.80 ZMW (XE Jun 15). GBP/ZMW up ~2.3% from Jun 11 low of 23.27, reflecting broad USD/GBP strength pulling cable higher."
+      "note": "1 GBP = 23.82 ZMW (XE Jun 16). Cable holding near recent highs as sterling firms against kwacha."
     },
     "EUR": {
-      "mid": 20.5623,
+      "mid": 20.6018,
       "trend": "weakening",
-      "dayAgo": 20.57,
+      "dayAgo": 20.56,
       "weekAgo": 20.09,
       "oneMonthAgo": 22.40,
-      "note": "1 EUR = 20.56 ZMW (XE Jun 15). EUR/ZMW up ~2.3% from Jun 11 low of 20.09 as euro firms across the board. YTD decline ~14%."
+      "note": "1 EUR = 20.60 ZMW (XE Jun 16). Euro slightly higher vs kwacha from yesterday's 20.56."
     },
     "ZAR": {
-      "mid": 1.0943,
+      "mid": 1.0957,
       "trend": "weakening",
-      "dayAgo": 1.079,
+      "dayAgo": 1.094,
       "weekAgo": 1.057,
       "oneMonthAgo": 1.18,
-      "note": "1 ZAR = 1.094 ZMW (XE Jun 15). ZAR/ZMW up ~3.5% from Jun 11 low of 1.057. Rand weakness vs kwacha partially reversing."
+      "note": "1 ZAR = 1.096 ZMW (XE Jun 16). Rand near flat from yesterday's 1.094. 1 ZMW = 0.9127 ZAR."
     },
     "BWP": {
       "mid": 1.30,
@@ -56,8 +56,8 @@
     }
   },
   "trendAnalysis": {
-    "direction": "Kwacha pulls back from recent highs — USD/ZMW XE 17.72, up from 17.46 (Jun 11)",
-    "dayChange": 0.05,
+    "direction": "Kwacha consolidating — USD/ZMW XE 17.74, little changed from 17.72 (Jun 15)",
+    "dayChange": 0.02,
     "twoWeekChange": -5.5,
     "oneMonthChange": -6.4,
     "sixMonthChange": -20.9,
@@ -71,7 +71,7 @@
       "Yuan mining tax corridor reducing USD demand",
       "Gross international reserves at historic high of US$6.5 billion"
     ],
-    "outlook": "Kwacha saw mild profit-taking / pullback from the Jun 11 peak (17.46). This appears to be a short-term correction in an otherwise strong uptrend. Copper prices and IMF programme progress remain key catalysts. BOZ leaning against excessive strength to protect export competitiveness.",
+    "outlook": "Kwacha consolidating after pullback from Jun 11 peak (17.46). Mild day-over-day softening suggests profit-taking continues. Copper prices and IMF programme progress remain key catalysts. BOZ leaning against excessive strength to protect export competitiveness.",
     "projection3m": "USD/ZMW 16.50–18.00 range. Expect continued appreciation bias but with increased volatility ahead of August 2026 elections.",
     "projection6m": "USD/ZMW 16.00–19.00 range. Post-election clarity determines direction — policy continuity supports kwacha, fiscal slippage reverses gains."
   }
