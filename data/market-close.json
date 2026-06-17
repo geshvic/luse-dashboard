@@ -1,16 +1,16 @@
 {
-  "asOf": "2026-06-16",
+  "asOf": "2026-06-17",
   "marketClose": {
-    "lasiIndex": 25680.73,
-    "lasiChange": 2.91,
-    "lasiChangePct": 0.01,
-    "totalTrades": 836,
-    "totalVolume": 50003521,
-    "totalValue": 19033239.19,
-    "marketCapTotal": 333.53,
-    "marketCapExclShoprite": 143.42,
+    "lasiIndex": 25633.23,
+    "lasiChange": 0,
+    "lasiChangePct": 0,
+    "totalTrades": 841,
+    "totalVolume": 462010,
+    "totalValue": 9871510.48,
+    "marketCapTotal": 333.27,
+    "marketCapExclShoprite": 143.31,
     "marketCapUnit": "Billion ZMW",
-    "sessionSummary": "836 trades across 50,003,521 shares. Turnover K19.03M. LASI up 0.01% to 25,680.73. Breadth: 0 advancers, 3 decliners, 20 unchanged."
+    "sessionSummary": "841 trades across 462,010 shares. Turnover K9.87M. LASI up 0% to 25,633.23. Breadth: 0 advancers, 3 decliners, 20 unchanged."
   },
   "gainers": [
     {
@@ -24,16 +24,16 @@
   ],
   "decliners": [
     {
-      "ticker": "BATZ",
-      "name": "BATZ",
+      "ticker": "BATA",
+      "name": "BATA",
       "price": 9,
       "change": -0.01,
       "changePct": -0.11,
       "volume": 1027
     },
     {
-      "ticker": "CHIL",
-      "name": "CHIL",
+      "ticker": "CECZ",
+      "name": "CECZ",
       "price": 16.85,
       "change": -0.01,
       "changePct": -0.06,
@@ -58,24 +58,24 @@
       "trades": 28
     },
     {
-      "ticker": "BATA",
-      "name": "BATA",
+      "ticker": "ATEL",
+      "name": "ATEL",
       "price": 175,
       "volume": 13120,
       "value": 2293345.44,
       "trades": 94
     },
     {
-      "ticker": "ZMFA",
-      "name": "ZMFA",
+      "ticker": "ZMBF",
+      "name": "ZMBF",
       "price": 2,
       "volume": 74315,
       "value": 148630,
       "trades": 91
     },
     {
-      "ticker": "CHIL",
-      "name": "CHIL",
+      "ticker": "CECZ",
+      "name": "CECZ",
       "price": 16.85,
       "volume": 5430,
       "value": 91440.1,
@@ -100,8 +100,8 @@
       "trades": 28
     },
     {
-      "ticker": "ZMFA",
-      "name": "ZMFA",
+      "ticker": "ZMBF",
+      "name": "ZMBF",
       "price": 2,
       "volume": 74315,
       "value": 148630,
@@ -116,8 +116,8 @@
       "trades": 103
     },
     {
-      "ticker": "BATA",
-      "name": "BATA",
+      "ticker": "ATEL",
+      "name": "ATEL",
       "price": 175,
       "volume": 13120,
       "value": 2293345.44,

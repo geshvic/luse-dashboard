@@ -2,15 +2,6 @@
   {
     "ticker": "AECI",
     "name": "AECI",
-    "price": 6.53,
-    "change": null,
-    "trades": null,
-    "volume": null,
-    "value": null
-  },
-  {
-    "ticker": "ATEL",
-    "name": "ATEL",
     "price": 123,
     "change": null,
     "trades": 4,
@@ -18,8 +9,8 @@
     "value": 959.94
   },
   {
-    "ticker": "BATA",
-    "name": "BATA",
+    "ticker": "ATEL",
+    "name": "ATEL",
     "price": 175,
     "change": null,
     "trades": 94,
@@ -27,8 +18,8 @@
     "value": 2293345.44
   },
   {
-    "ticker": "BATZ",
-    "name": "BATZ",
+    "ticker": "BATA",
+    "name": "BATA",
     "price": 9,
     "change": -0.01,
     "trades": 65,
@@ -36,8 +27,8 @@
     "value": 9257.03
   },
   {
-    "ticker": "CECZ",
-    "name": "CECZ",
+    "ticker": "BATZ",
+    "name": "BATZ",
     "price": 12.66,
     "change": null,
     "trades": 39,
@@ -45,13 +36,22 @@
     "value": 19483.74
   },
   {
-    "ticker": "CHIL",
-    "name": "CHIL",
+    "ticker": "CECZ",
+    "name": "CECZ",
     "price": 16.85,
     "change": -0.01,
     "trades": 98,
     "volume": 5430,
     "value": 91440.1
+  },
+  {
+    "ticker": "CHIL",
+    "name": "CHIL",
+    "price": 66.64,
+    "change": null,
+    "trades": 23,
+    "volume": 380,
+    "value": 25320.42
   },
   {
     "ticker": "FARM",
@@ -65,15 +65,6 @@
   {
     "ticker": "MAFS",
     "name": "MAFS",
-    "price": 66.64,
-    "change": null,
-    "trades": 23,
-    "volume": 380,
-    "value": 25320.42
-  },
-  {
-    "ticker": "NATB",
-    "name": "NATB",
     "price": 1.81,
     "change": null,
     "trades": 7,
@@ -81,8 +72,8 @@
     "value": 235.45
   },
   {
-    "ticker": "PUMA",
-    "name": "PUMA",
+    "ticker": "NATB",
+    "name": "NATB",
     "price": 2.86,
     "change": null,
     "trades": 4,
@@ -90,17 +81,8 @@
     "value": 71.5
   },
   {
-    "ticker": "SCBL",
-    "name": "SCBL",
-    "price": 2.72,
-    "change": null,
-    "trades": 5,
-    "volume": 35,
-    "value": 95.55
-  },
-  {
-    "ticker": "SHOP",
-    "name": "SHOP",
+    "ticker": "PUMA",
+    "name": "PUMA",
     "price": 2.93,
     "change": null,
     "trades": 39,
@@ -108,8 +90,8 @@
     "value": 2301.78
   },
   {
-    "ticker": "ZABR",
-    "name": "ZABR",
+    "ticker": "SCBL",
+    "name": "SCBL",
     "price": 1.25,
     "change": null,
     "trades": 61,
@@ -117,8 +99,8 @@
     "value": 7974.8
   },
   {
-    "ticker": "ZCCM-IH",
-    "name": "ZCCM-IH",
+    "ticker": "SHOP",
+    "name": "SHOP",
     "price": 350,
     "change": null,
     "trades": 2,
@@ -126,8 +108,8 @@
     "value": 700
   },
   {
-    "ticker": "ZFCO",
-    "name": "ZFCO",
+    "ticker": "ZABR",
+    "name": "ZABR",
     "price": 6.8,
     "change": null,
     "trades": 21,
@@ -135,8 +117,8 @@
     "value": 8214.4
   },
   {
-    "ticker": "ZMBF",
-    "name": "ZMBF",
+    "ticker": "ZCCM-IH",
+    "name": "ZCCM-IH",
     "price": 150,
     "change": null,
     "trades": 8,
@@ -144,8 +126,17 @@
     "value": 8100
   },
   {
-    "ticker": "ZMFA",
-    "name": "ZMFA",
+    "ticker": "ZFCO",
+    "name": "ZFCO",
+    "price": 6.53,
+    "change": null,
+    "trades": null,
+    "volume": null,
+    "value": null
+  },
+  {
+    "ticker": "ZMBF",
+    "name": "ZMBF",
     "price": 2,
     "change": null,
     "trades": 91,
@@ -153,13 +144,22 @@
     "value": 148630
   },
   {
-    "ticker": "ZMRE",
-    "name": "ZMRE",
+    "ticker": "ZMFA",
+    "name": "ZMFA",
     "price": 51.99,
     "change": null,
     "trades": 3,
     "volume": 13,
     "value": 675.87
+  },
+  {
+    "ticker": "ZMRE",
+    "name": "ZMRE",
+    "price": 2.72,
+    "change": null,
+    "trades": 5,
+    "volume": 35,
+    "value": 95.55
   },
   {
     "ticker": "ZNCO",
