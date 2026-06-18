@@ -1,67 +1,67 @@
 {
-  "asOf": "2026-06-16",
-  "source": "XE.com mid-market rates 16:42 UTC, Bank of Zambia (boz.zm)",
+  "asOf": "2026-06-18",
+  "source": "ExchangeRate-API (open.er-api.com) mid-market rates 17:08 UTC, cross-referenced with Wise and Trading Economics",
   "baseNote": "Rates show ZMW per 1 unit of foreign currency. ↑ ZMW = Kwacha weakening (depreciating).",
   "mpRate": 13.5,
-  "mpRateNote": "Monetary Policy Rate reduced 75bps from 14.25% on Feb 11, 2026. BOZ held at 13.5% at May review. Next review: August 2026.",
+  "mpRateNote": "Monetary Policy Rate held at 13.50% — reduced 75bps from 14.25% on Feb 11, 2026. BOZ held rate at May 2026 review. Next review: August 2026.",
   "rates": {
     "USD": {
       "buy": 17.70,
-      "sell": 17.77,
-      "mid": 17.7366,
-      "marketMid": 17.7366,
+      "sell": 17.85,
+      "mid": 17.784,
+      "marketMid": 17.784,
       "trend": "weakening",
-      "dayAgo": 17.72,
+      "dayAgo": 17.74,
       "weekAgo": 17.46,
       "twoWeeksAgo": 17.71,
       "oneMonthAgo": 18.83,
       "sixMonthsAgo": 22.50,
-      "note": "XE mid-market Jun 16 16:42 UTC: 1 USD = 17.7366 ZMW. Kwacha slightly softer from 17.72 yesterday. Short-term consolidation after recent pullback from Jun 11 low of 17.46."
+      "note": "OpenExchangeRates Jun 18: 1 USD = 17.784 ZMW. Wise mid-market shows 17.95, Trading Economics 17.76. Kwacha slightly softer from 17.74 (Jun 16)."
     },
     "GBP": {
-      "mid": 23.8249,
+      "mid": 23.894,
       "trend": "weakening",
-      "dayAgo": 23.80,
+      "dayAgo": 23.82,
       "weekAgo": 23.27,
       "oneMonthAgo": 25.50,
-      "note": "1 GBP = 23.82 ZMW (XE Jun 16). Cable holding near recent highs as sterling firms against kwacha."
+      "note": "1 GBP = 23.894 ZMW (OpenExRates Jun 18). Sterling firming against kwacha."
     },
     "EUR": {
-      "mid": 20.6018,
+      "mid": 20.663,
       "trend": "weakening",
-      "dayAgo": 20.56,
+      "dayAgo": 20.60,
       "weekAgo": 20.09,
       "oneMonthAgo": 22.40,
-      "note": "1 EUR = 20.60 ZMW (XE Jun 16). Euro slightly higher vs kwacha from yesterday's 20.56."
+      "note": "1 EUR = 20.663 ZMW (OpenExRates Jun 18). Euro slightly higher vs kwacha from Jun 16's 20.60."
     },
     "ZAR": {
-      "mid": 1.0957,
+      "mid": 1.1009,
       "trend": "weakening",
-      "dayAgo": 1.094,
+      "dayAgo": 1.096,
       "weekAgo": 1.057,
       "oneMonthAgo": 1.18,
-      "note": "1 ZAR = 1.096 ZMW (XE Jun 16). Rand near flat from yesterday's 1.094. 1 ZMW = 0.9127 ZAR."
+      "note": "1 ZAR = 1.101 ZMW (OpenExRates Jun 18). Rand nearly flat from Jun 16's 1.096. 1 ZMW = 0.908 ZAR."
     },
     "BWP": {
-      "mid": 1.30,
+      "mid": 1.31,
       "trend": "stable",
       "weekAgo": 1.35,
-      "note": "Botswana pula. Estimated cross rate."
+      "note": "Botswana pula. Estimated cross rate via OpenExRates: 1 BWP = 1.307 ZMW."
     },
     "CNY": {
-      "mid": 2.46,
+      "mid": 2.62,
       "trend": "weakening",
       "weekAgo": 2.55,
-      "note": "Chinese yuan. Zambia's growing yuan-denominated mining tax corridor."
+      "note": "Chinese yuan. OpenExRates: 1 CNY = 2.625 ZMW."
     }
   },
   "trendAnalysis": {
-    "direction": "Kwacha consolidating — USD/ZMW XE 17.74, little changed from 17.72 (Jun 15)",
-    "dayChange": 0.02,
+    "direction": "Kwacha slightly softer — USD/ZMW 17.78 (OpenExRates), up from 17.74 (Jun 16)",
+    "dayChange": 0.04,
     "twoWeekChange": -5.5,
     "oneMonthChange": -6.4,
     "sixMonthChange": -20.9,
-    "ytdChange": -21.0,
+    "ytdChange": -19.0,
     "drivers": [
       "Record copper output 890K tonnes (2025) — strong export earnings",
       "Record maize harvest >4M tonnes — reduced food import needs",
