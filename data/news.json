@@ -1,6 +1,24 @@
 [
   {
     "date": "2026-06-19",
+    "category": "Market",
+    "title": "Can the waiver of registration fees increase LuSE listing?",
+    "summary": "SEC working on waiving fees on the alternative market to encourage more SMEs to list on LuSE. Director of Policy and Market Development Mateyo Lungu cited. Currently listed companies pegged below 30, with only one SME.",
+    "source": "Zambian Business Times",
+    "url": "https://zambianbusinesstimes.com/can-the-waiver-of-registration-fees-increase-luse-listing/",
+    "tickers": []
+  },
+  {
+    "date": "2026-06-19",
+    "category": "Market",
+    "title": "LuSE Daily Close: LASI +0.39% to 25,745.86 — ZFCO surges 22.48%",
+    "summary": "657 trades across 110,058 shares. Turnover K0.89M. LASI up 0.39% to 25,745.86. Breadth: 1 advancer (ZFCO +22.48%), 3 decliners, 19 unchanged. ZCCM-IH -2.01% led decliners. Most active by value: AECI (K252K), ATEL (K212K), DCZM (K195K).",
+    "source": "LuSE (via Playwright scraper)",
+    "url": "https://www.luse.co.zm/market-data/",
+    "tickers": ["ZFCO", "ZCCM-IH", "AECI", "ATEL", "DCZM", "CECZ", "ZNCO"]
+  },
+  {
+    "date": "2026-06-19",
     "category": "Corporate",
     "title": "FNB Zambia named headline sponsor for AmCham's 2026 ...",
     "summary": "Zambian Business Timeshttps://zambianbusinesstimes.com › fn...",
@@ -368,7 +386,7 @@
     "title": "General Announcements Archives - Page 4 of 17 - Lusaka Securities ...",
     "summary": "General Announcements Standard Chartered Bank Zambia Plc- Completion of Bonus Share Issue Announcement Download 26 February, 2026",
     "source": "LuSE Official",
-    "url": "https://www.luse.co.zm/sens-category/general-announcements/page/4/",
+    "url": "https://www.luse.co.zm/sens/category/general-announcements/page/4/",
     "tickers": []
   },
   {
