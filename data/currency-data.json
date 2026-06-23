@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-06-19",
-  "source": "ExchangeRate-API (open.er-api.com) mid-market rates 16:30 UTC, cross-referenced with Wise and Trading Economics",
+  "asOf": "2026-06-23",
+  "source": "ExchangeRate-API (open.er-api.com) mid-market rates 22:30 UTC, cross-referenced with Wise and Trading Economics",
   "baseNote": "Rates show ZMW per 1 unit of foreign currency. ↑ ZMW = Kwacha weakening (depreciating).",
   "mpRate": 13.5,
   "mpRateNote": "Monetary Policy Rate held at 13.50% — reduced 75bps from 14.25% on Feb 11, 2026. BOZ held rate at May 2026 review. Next review: August 2026.",
@@ -8,60 +8,60 @@
     "USD": {
       "buy": 17.75,
       "sell": 17.90,
-      "mid": 17.824,
-      "marketMid": 17.824,
+      "mid": 17.889,
+      "marketMid": 17.889,
       "trend": "weakening",
-      "dayAgo": 17.784,
+      "dayAgo": 17.824,
       "weekAgo": 17.46,
       "twoWeeksAgo": 17.71,
       "oneMonthAgo": 18.83,
       "sixMonthsAgo": 22.50,
-      "note": "OpenExchangeRates Jun 19: 1 USD = 17.824 ZMW. Wise shows 1 ZMW = 0.05555 USD (1 USD = 18.00). Kwacha slightly softer from 17.784 (Jun 18). Week high 17.46, low 17.82."
+      "note": "ExchangeRate-API Jun 23: 1 USD = 17.889 ZMW (1 ZMW = 0.0559 USD). Kwacha slightly softer vs USD from 17.824 (Jun 19) — 0.4% depreciation over the long weekend."
     },
     "GBP": {
-      "mid": 23.569,
+      "mid": 23.641,
       "trend": "weakening",
-      "dayAgo": 23.894,
+      "dayAgo": 23.569,
       "weekAgo": 23.27,
       "oneMonthAgo": 25.50,
-      "note": "1 GBP = 23.569 ZMW (OpenExRates Jun 19). Sterling weaker against kwacha from 23.894 (Jun 18)."
+      "note": "1 GBP = 23.641 ZMW (ExchangeRate-API Jun 23). Sterling slightly firmer vs kwacha from 23.569 (Jun 19)."
     },
     "EUR": {
-      "mid": 20.446,
+      "mid": 20.492,
       "trend": "weakening",
-      "dayAgo": 20.663,
+      "dayAgo": 20.446,
       "weekAgo": 20.09,
       "oneMonthAgo": 22.40,
-      "note": "1 EUR = 20.446 ZMW (OpenExRates Jun 19). Euro weaker vs kwacha from 20.663 (Jun 18)."
+      "note": "1 EUR = 20.492 ZMW (ExchangeRate-API Jun 23). Euro slightly firmer vs kwacha from 20.446 (Jun 19)."
     },
     "ZAR": {
-      "mid": 1.085,
+      "mid": 1.089,
       "trend": "weakening",
-      "dayAgo": 1.101,
+      "dayAgo": 1.085,
       "weekAgo": 1.057,
       "oneMonthAgo": 1.18,
-      "note": "1 ZAR = 1.085 ZMW (OpenExRates Jun 19). Rand weaker vs kwacha from 1.101 (Jun 18). 1 ZMW = 0.922 ZAR."
+      "note": "1 ZAR = 1.089 ZMW (ExchangeRate-API Jun 23). Rand slightly firmer vs kwacha from 1.085 (Jun 19). 1 ZMW = 0.918 ZAR."
     },
     "BWP": {
-      "mid": 1.293,
+      "mid": 1.285,
       "trend": "stable",
       "weekAgo": 1.35,
-      "note": "Botswana pula. OpenExRates cross: 1 BWP = 1.293 ZMW (17.824 / 13.785)."
+      "note": "Botswana pula. ExchangeRate-API cross: 1 ZMW = 0.787 BWP."
     },
     "CNY": {
-      "mid": 2.627,
+      "mid": 2.638,
       "trend": "weakening",
       "weekAgo": 2.55,
-      "note": "Chinese yuan. OpenExRates: 1 CNY = 2.627 ZMW (17.824 / 6.784)."
+      "note": "Chinese yuan. ExchangeRate-API: 1 ZMW = 0.379 CNY → 1 CNY = 2.638 ZMW."
     }
   },
   "trendAnalysis": {
-    "direction": "Kwacha mixed — softer vs USD (17.824 from 17.784) but firmer vs GBP, EUR, ZAR. USD strength driving cross-rates.",
-    "dayChange": 0.04,
-    "twoWeekChange": -0.6,
-    "oneMonthChange": -5.7,
-    "sixMonthChange": -20.8,
-    "ytdChange": -19.0,
+    "direction": "Kwacha slightly softer across the board after the long weekend — moderate USD strength continuing to drive cross-rates. Kwacha weakening 0.2–0.4% vs major pairs since Jun 19.",
+    "dayChange": 0.07,
+    "twoWeekChange": 0.18,
+    "oneMonthChange": -5.0,
+    "sixMonthChange": -20.5,
+    "ytdChange": -18.8,
     "drivers": [
       "Record copper output 890K tonnes (2025) — strong export earnings",
       "Record maize harvest >4M tonnes — reduced food import needs",
@@ -71,7 +71,7 @@
       "Yuan mining tax corridor reducing USD demand",
       "Gross international reserves at historic high of US$6.5 billion"
     ],
-    "outlook": "Kwacha showing mixed signals — weakening against broadly strong USD but gaining on crosses. Profit-taking from Jun 11 peak (17.46) continues. Copper prices and IMF programme progress remain key catalysts. BOZ leaning against excessive strength to protect export competitiveness.",
+    "outlook": "Kwacha showing mild weakness after profit-taking from Jun 11 peak (17.46). The long weekend saw some USD demand build. Overall range-bound in 17.80–18.00 area. Copper prices and IMF programme progress remain key catalysts. BOZ likely to lean against excessive weakness to manage inflation expectations.",
     "projection3m": "USD/ZMW 16.50–18.00 range. Expect continued appreciation bias but with increased volatility ahead of August 2026 elections.",
     "projection6m": "USD/ZMW 16.00–19.00 range. Post-election clarity determines direction — policy continuity supports kwacha, fiscal slippage reverses gains."
   }
