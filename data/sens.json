@@ -1,5 +1,27 @@
 [
   {
+    "title": "MAFS – CAUTIONARY ANNOUNCEMENT",
+    "date": "2026-06-23",
+    "category": "Cautionary Announcement",
+    "type": "Cautionary",
+    "tickers": [
+      "MAFS"
+    ],
+    "source": "LuSE SENS",
+    "url": "https://www.luse.co.zm/sens-category/cautionary-announcement/"
+  },
+  {
+    "title": "SCBL – UPDATE ON SALE OF WEALTH AND RETAIL BUSINESS",
+    "date": "2026-06-22",
+    "category": "General Announcements",
+    "type": "General",
+    "tickers": [
+      "SCBL"
+    ],
+    "source": "LuSE SENS",
+    "url": "https://www.luse.co.zm/sens-category/general-announcements/"
+  },
+  {
     "title": "CEC Renewables Ltd-Notice of EGM",
     "date": "2026-06-12",
     "category": "AGM/EGM",
