@@ -6,7 +6,16 @@
     "summary": "651 trades across 178,726 shares. Turnover K1.13M. LASI unchanged at 25,729.27. Breadth: 2 advancers (CECZ +0.06%, ZMBF +2.56%), 2 decliners (CHIL -0.15%, ZNCO -0.52%), 19 unchanged. KLRE most active by volume with 103,502 shares traded. ATEL led by value at K559,777.",
     "source": "LuSE (via Playwright scraper)",
     "url": "https://www.luse.co.zm/market-data/",
-    "tickers": ["CECZ", "ZMBF", "CHIL", "ZNCO", "KLRE", "ATEL", "ZSUG", "SCBL"]
+    "tickers": [
+      "CECZ",
+      "ZMBF",
+      "CHIL",
+      "ZNCO",
+      "KLRE",
+      "ATEL",
+      "ZSUG",
+      "SCBL"
+    ]
   },
   {
     "date": "2026-06-24",
@@ -15,7 +24,9 @@
     "summary": "Shareholders of Standard Chartered Bank Zambia Plc advised that the Bank of Zambia granted its approval on 19 June 2026 for the proposed sale of its Wealth and Retail Business.",
     "source": "LuSE Official",
     "url": "https://www.luse.co.zm/wp-content/uploads/2026/06/SCBZ-Market-Announcement-SENS-22.06.2026.pdf",
-    "tickers": ["SCBL"]
+    "tickers": [
+      "SCBL"
+    ]
   },
   {
     "date": "2026-06-25",
@@ -188,7 +199,13 @@
     "summary": "657 trades across 110,058 shares. Turnover K0.89M. LASI up 0.39% to 25,745.86. ZFCO +22.48% led gainers.",
     "source": "LuSE (via Playwright scraper)",
     "url": "https://www.luse.co.zm/market-data/",
-    "tickers": ["ZFCO", "ZCCM-IH", "AECI", "ATEL", "DCZM"]
+    "tickers": [
+      "ZFCO",
+      "ZCCM-IH",
+      "AECI",
+      "ATEL",
+      "DCZM"
+    ]
   },
   {
     "date": "2026-06-17",
