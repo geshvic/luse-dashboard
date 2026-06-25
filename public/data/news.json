@@ -1,6 +1,15 @@
 [
   {
     "date": "2026-06-25",
+    "category": "Corporate",
+    "title": "ZRA Recovers Over K21.6 Million From Luanshya Taxpayer",
+    "summary": "ZRA convicted Amfube Investment Limited of tax evasion. Recovered over K21.6 million in unpaid taxes from Luanshya-based taxpayer.",
+    "source": "Mwebantu",
+    "url": "https://www.mwebantu.com/zra-recovers-over-k21-6-million-from-luanshya-taxpayer/",
+    "tickers": []
+  },
+  {
+    "date": "2026-06-25",
     "category": "Commodities",
     "title": "Zambian Kwacha closes 2025 firm as copper prices rally",
     "summary": "The Zambian kwacha ended 2025 on a strong footing, extending gains against the United States dollar on the back of firm copper prices and improving investor confidence. Bloomberg data showed the currency closed the year at around K22.17 to the dollar",
@@ -48,7 +57,7 @@
     "date": "2026-06-25",
     "category": "Macro",
     "title": "Economic situation High levels of public debt",
-    "summary": "Bundesministerium für wirtschaftliche Zusammenarbeit und Entwicklunghttps://www.bmz.de › zambia › econo...",
+    "summary": "Bundesministerium f\u00c3\u00bcr wirtschaftliche Zusammenarbeit und Entwicklunghttps://www.bmz.de \u00e2\u20ac\u00ba zambia \u00e2\u20ac\u00ba econo...",
     "source": "Reuters",
     "url": "https://www.bmz.de/en/countries/zambia/economic-situation-55838",
     "tickers": []
@@ -57,7 +66,7 @@
     "date": "2026-06-25",
     "category": "Macro",
     "title": "Reuters reports that Zambia's international bondholders ...",
-    "summary": "Facebook · Lusaka Times>420 lượt thể hiện cảm xúc  ·  3 năm trước",
+    "summary": "Facebook\u00c2\u00a0\u00c2\u00b7\u00c2\u00a0Lusaka Times>420 l\u00c6\u00b0\u00e1\u00bb\u00a3t th\u00e1\u00bb\u0192 hi\u00e1\u00bb\u2021n c\u00e1\u00ba\u00a3m x\u00c3\u00bac  \u00c2\u00b7  3 n\u00c4\u0192m tr\u00c6\u00b0\u00e1\u00bb\u203ac",
     "source": "Reuters",
     "url": "https://www.facebook.com/lusakatimes/posts/reuters-reports-that-zambias-international-bondholders-have-criticised-the-inter/5477601515648778/",
     "tickers": []
@@ -66,7 +75,7 @@
     "date": "2026-06-25",
     "category": "Macro",
     "title": "Zambia's debt turnaround",
-    "summary": "ISS African Futureshttps://futures.issafrica.org › blog › Za...",
+    "summary": "ISS African Futureshttps://futures.issafrica.org \u00e2\u20ac\u00ba blog \u00e2\u20ac\u00ba Za...",
     "source": "Reuters",
     "url": "https://futures.issafrica.org/blog/2025/Zambias-debt-turnaround",
     "tickers": []
@@ -75,7 +84,7 @@
     "date": "2026-06-25",
     "category": "Macro",
     "title": "Zambia: Third Review Under the Arrangement ... - IMF eLibrary",
-    "summary": "IMF eLibraryhttps://www.elibrary.imf.org › journals",
+    "summary": "IMF eLibraryhttps://www.elibrary.imf.org \u00e2\u20ac\u00ba journals",
     "source": "Reuters",
     "url": "https://www.elibrary.imf.org/view/journals/002/2024/190/article-A001-en.xml",
     "tickers": []
@@ -84,7 +93,7 @@
     "date": "2026-06-25",
     "category": "Macro",
     "title": "Zambia says no timeline on debt restructuring as IMF seeks ...",
-    "summary": "Reutershttps://www.reuters.com › markets › z...",
+    "summary": "Reutershttps://www.reuters.com \u00e2\u20ac\u00ba markets \u00e2\u20ac\u00ba z...",
     "source": "Reuters",
     "url": "https://www.reuters.com/markets/zambia-says-no-timeline-debt-restructuring-imf-seeks-compromise-2024-02-05/",
     "tickers": []
@@ -92,7 +101,7 @@
   {
     "date": "2026-06-24",
     "category": "Market",
-    "title": "LuSE Daily Close: LASI flat at 25,729.27 — quiet session, ZMBF +2.56% gainer",
+    "title": "LuSE Daily Close: LASI flat at 25,729.27 \u00e2\u20ac\u201d quiet session, ZMBF +2.56% gainer",
     "summary": "651 trades across 178,726 shares. Turnover K1.13M. LASI unchanged at 25,729.27. Breadth: 2 advancers (CECZ +0.06%, ZMBF +2.56%), 2 decliners (CHIL -0.15%, ZNCO -0.52%), 19 unchanged. KLRE most active by volume with 103,502 shares traded. ATEL led by value at K559,777.",
     "source": "LuSE (via Playwright scraper)",
     "url": "https://www.luse.co.zm/market-data/",
@@ -149,7 +158,7 @@
     "date": "2026-06-25",
     "category": "Corporate",
     "title": "FQM injects $2.6bn into Zambia economy - Zambian Business Times",
-    "summary": "‎By Tyndale Muchiya ‎‎In his recent keynote address at the Mining Indaba in Cape Town, President Hakainde Hichilema highlighted First Quantum Minerals' position as Zambia's largest taxpayer. ‎The following analysis of the mining company's most recent",
+    "summary": "\u00e2\u20ac\u017dBy Tyndale Muchiya \u00e2\u20ac\u017d\u00e2\u20ac\u017dIn his recent keynote address at the Mining Indaba in Cape Town, President Hakainde Hichilema highlighted First Quantum Minerals' position as Zambia's largest taxpayer. \u00e2\u20ac\u017dThe following analysis of the mining company's most recent",
     "source": "Zambian Business Times",
     "url": "https://zambianbusinesstimes.com/fqm-injects-2-6bn-into-zambia-economy/",
     "tickers": [
@@ -187,7 +196,7 @@
     "date": "2026-06-25",
     "category": "Market",
     "title": "ZAMBIA-US 'DEAL' RAISES ALARM - The Mast Newspaper",
-    "summary": "ZAMBIA - US 'DEAL' RAISES ALARM …America to access copper, other minerals in exchange for aid By George Zulu ZAMBIA is on the verge of signing a secretive memorandum of understanding (MoU) with the United States (US) government, which will give the D",
+    "summary": "ZAMBIA - US 'DEAL' RAISES ALARM \u00e2\u20ac\u00a6America to access copper, other minerals in exchange for aid By George Zulu ZAMBIA is on the verge of signing a secretive memorandum of understanding (MoU) with the United States (US) government, which will give the D",
     "source": "Mast Media Zambia",
     "url": "https://mastmediazm.com/2026/01/zambia-us-deal-raises-alarm/",
     "tickers": []
@@ -285,7 +294,7 @@
   {
     "date": "2026-06-19",
     "category": "Market",
-    "title": "LuSE Daily Close: LASI +0.39% to 25,745.86 — ZFCO surges 22.48%",
+    "title": "LuSE Daily Close: LASI +0.39% to 25,745.86 \u00e2\u20ac\u201d ZFCO surges 22.48%",
     "summary": "657 trades across 110,058 shares. Turnover K0.89M. LASI up 0.39% to 25,745.86. ZFCO +22.48% led gainers.",
     "source": "LuSE (via Playwright scraper)",
     "url": "https://www.luse.co.zm/market-data/",
