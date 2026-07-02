@@ -1,6 +1,23 @@
 [
   {
     "date": "2026-07-02",
+    "category": "Market",
+    "title": "LuSE Daily Close: LASI flat at 25,783.32 — ZFCO +1.82% lone advancer, ZMFA -7.66% top decliner",
+    "summary": "957 trades across 170,021 shares. Turnover K0.73M. LASI unchanged at 25,783.32. Breadth: 1 advancer (ZFCO +1.82%), 4 decliners (ZMFA -7.66%, ZMBF -1.5%, CECZ -0.24%, ZNCO -0.21%), 18 unchanged. CECZ led by value at K266.7K. KLRE most active by volume with 99,483 shares. Quiet session with election campaign in focus.",
+    "source": "LuSE (via Playwright scraper)",
+    "url": "https://www.luse.co.zm/market-data/",
+    "tickers": [
+      "ZFCO",
+      "ZMFA",
+      "ZMBF",
+      "CECZ",
+      "ZNCO",
+      "KLRE",
+      "ATEL"
+    ]
+  },
+  {
+    "date": "2026-07-02",
     "category": "Macro",
     "title": "ERB cuts fuel prices for July as oil costs drop, kwacha firms",
     "summary": "The Energy Regulation Board has reduced petroleum pump prices for July 2026, citing lower international oil prices and a stronger kwacha. The reduction provides relief to consumers and businesses.",
