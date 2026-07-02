@@ -1,6 +1,41 @@
 [
   {
     "date": "2026-07-02",
+    "category": "Macro",
+    "title": "ERB cuts fuel prices for July as oil costs drop, kwacha firms",
+    "summary": "The Energy Regulation Board has reduced petroleum pump prices for July 2026, citing lower international oil prices and a stronger kwacha. The reduction provides relief to consumers and businesses.",
+    "source": "Mwebantu",
+    "url": "https://www.mwebantu.com/erb-cuts-fuel-prices-for-july-as-oil-costs-drop-kwacha-firms/",
+    "tickers": []
+  },
+  {
+    "date": "2026-07-02",
+    "category": "Market",
+    "title": "LuSE Daily Close: LASI +0.1% to 25,810.53 — ZFCO +3.32% leads gainers",
+    "summary": "976 trades across 228,820 shares. Turnover K1.43M. LASI up 0.1% to 25,810.53. Breadth: 2 advancers (SCBL +1.63%, ZFCO +3.32%), 2 decliners (CHIL -0.03%, ZNCO -0.1%), 19 unchanged. CECZ led by value at K536.9K. KLRE most active by volume with 97,524 shares.",
+    "source": "LuSE (via Playwright scraper)",
+    "url": "https://www.luse.co.zm/market-data/",
+    "tickers": [
+      "SCBL",
+      "ZFCO",
+      "CHIL",
+      "ZNCO",
+      "CECZ",
+      "KLRE",
+      "ATEL"
+    ]
+  },
+  {
+    "date": "2026-07-02",
+    "category": "Macro",
+    "title": "Foreign Exchange Reserves Are Not Government Money: Understanding the Difference",
+    "summary": "Prof. Lubinda Haabazoka explains the distinction between foreign exchange reserves and national budget, clarifying a commonly misunderstood economic concept in Zambia.",
+    "source": "Mwebantu",
+    "url": "https://www.mwebantu.com/foreign-exchange-reserves-are-not-government-money-understanding-the-difference-between-national-budgets-and-national-savings/",
+    "tickers": []
+  },
+  {
+    "date": "2026-07-02",
     "category": "Corporate",
     "title": "PDF Zambian Business Times",
     "summary": "By Carol Sichone diversification efforts, and new Despite concerns around the side formal economic sys- Without such reforms, he Zambia's planned Gross Domes- forms of economic activity. choice of base year, Cheelo Speaking to Zambian Busi- tems. war",
