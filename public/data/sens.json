@@ -1,5 +1,69 @@
 [
   {
+    "title": "REIZ- FURTHER CAUTIONARY ANNOUNCEMENT",
+    "date": "2026-07-02",
+    "category": "Cautionary Announcement",
+    "type": "Cautionary",
+    "tickers": [
+      "REIZ"
+    ],
+    "source": "LuSE SENS",
+    "url": "https://www.luse.co.zm/sens-category/cautionary-announcement/"
+  },
+  {
+    "title": "ZCCM IH FY 2025 TRADING STATEMENT",
+    "date": "2026-06-30",
+    "category": "General Announcements",
+    "type": "Earnings",
+    "tickers": [
+      "ZCCM-IH"
+    ],
+    "source": "LuSE SENS",
+    "url": "https://www.luse.co.zm/sens-category/general-announcements/"
+  },
+  {
+    "title": "ZCCM IH FY 2025 Provisional Abridged Unaudited Financial Results",
+    "date": "2026-06-30",
+    "category": "Financial Statements",
+    "type": "Earnings",
+    "tickers": [
+      "ZCCM-IH"
+    ],
+    "source": "LuSE SENS",
+    "url": "https://www.luse.co.zm/sens-category/financial-statements/"
+  },
+  {
+    "title": "CCAF FURTHER CAUTIONARY ANNOUNCEMENT",
+    "date": "2026-06-30",
+    "category": "Cautionary Announcement",
+    "type": "Cautionary",
+    "tickers": [
+      "CCAF"
+    ],
+    "source": "LuSE SENS",
+    "url": "https://www.luse.co.zm/sens-category/cautionary-announcement/"
+  },
+  {
+    "title": "AECI- CHANGE IN DIRECTORATE",
+    "date": "2026-06-25",
+    "category": "Change in Directorate",
+    "type": "Directorate",
+    "tickers": [
+      "AECI"
+    ],
+    "source": "LuSE SENS",
+    "url": "https://www.luse.co.zm/sens-category/change-in-directorate/"
+  },
+  {
+    "title": "CHANGE IN DIRECTORATE",
+    "date": "2026-06-25",
+    "category": "Change in Directorate",
+    "type": "Directorate",
+    "tickers": [],
+    "source": "LuSE SENS",
+    "url": "https://www.luse.co.zm/sens-category/change-in-directorate/"
+  },
+  {
     "title": "MAFS – CAUTIONARY ANNOUNCEMENT",
     "date": "2026-06-23",
     "category": "Cautionary Announcement",

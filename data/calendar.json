@@ -1,13 +1,5 @@
 [
   {
-    "ticker": "NATB",
-    "date": "2026-06-26",
-    "type": "AGM",
-    "desc": "58th Annual General Meeting",
-    "displayDate": "Jun 26",
-    "confidence": "confirmed"
-  },
-  {
     "ticker": "ATEL",
     "date": "2026-08-20",
     "type": "Earnings",
@@ -153,6 +145,14 @@
   },
   {
     "ticker": "SHOP",
+    "date": "2026-09-15",
+    "displayDate": "Sep 15",
+    "type": "Earnings",
+    "desc": "Half-Year Results (est)",
+    "confidence": "estimated"
+  },
+  {
+    "ticker": "INDO",
     "date": "2026-09-15",
     "displayDate": "Sep 15",
     "type": "Earnings",
