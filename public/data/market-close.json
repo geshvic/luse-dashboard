@@ -1,101 +1,85 @@
 {
-  "asOf": "2026-07-03",
+  "asOf": "2026-07-07",
   "marketClose": {
-    "lasiIndex": 25783.32,
-    "lasiChange": 0,
-    "lasiChangePct": 0,
-    "totalTrades": 957,
-    "totalVolume": 170021,
-    "totalValue": 733210.6,
-    "marketCapTotal": 334.11,
-    "marketCapExclShoprite": 143.67,
+    "lasiIndex": 25804.64,
+    "lasiChange": 21.31,
+    "lasiChangePct": 0.08,
+    "totalTrades": 803,
+    "totalVolume": 144140,
+    "totalValue": 437854.15,
+    "marketCapTotal": 334.23,
+    "marketCapExclShoprite": 143.72,
     "marketCapUnit": "Billion ZMW",
-    "sessionSummary": "957 trades across 170,021 shares. Turnover K0.73M. LASI up 0% to 25,783.32. Breadth: 1 advancer, 4 decliners, 18 unchanged."
+    "sessionSummary": "803 trades across 144,140 shares. Turnover K0.44M. LASI up 0.08% to 25,804.64. Breadth: 1 advancer, 2 decliners, 20 unchanged."
   },
   "gainers": [
     {
       "ticker": "ZFCO",
       "name": "ZFCO",
-      "price": 9.5,
-      "change": 0.17,
-      "changePct": 1.82,
-      "volume": 5922
+      "price": 10.1,
+      "change": 0.6,
+      "changePct": 6.32,
+      "volume": 2424
     }
   ],
   "decliners": [
     {
       "ticker": "CECZ",
       "name": "CECZ",
-      "price": 16.78,
-      "change": -0.04,
-      "changePct": -0.24,
-      "volume": 15889
-    },
-    {
-      "ticker": "ZMBF",
-      "name": "ZMBF",
-      "price": 1.97,
+      "price": 16.75,
       "change": -0.03,
-      "changePct": -1.5,
-      "volume": 5007
-    },
-    {
-      "ticker": "ZMFA",
-      "name": "ZMFA",
-      "price": 48,
-      "change": -3.98,
-      "changePct": -7.66,
-      "volume": 243
+      "changePct": -0.18,
+      "volume": 12429
     },
     {
       "ticker": "ZNCO",
       "name": "ZNCO",
-      "price": 9.52,
-      "change": -0.02,
-      "changePct": -0.21,
-      "volume": 8785
+      "price": 9.47,
+      "change": -0.05,
+      "changePct": -0.53,
+      "volume": 5040
     }
   ],
   "mostActiveByValue": [
     {
       "ticker": "CECZ",
       "name": "CECZ",
-      "price": 16.78,
-      "volume": 15889,
-      "value": 266716.51,
+      "price": 16.75,
+      "volume": 12429,
+      "value": 208240.64,
       "trades": 122
+    },
+    {
+      "ticker": "ZNCO",
+      "name": "ZNCO",
+      "price": 9.47,
+      "volume": 5040,
+      "value": 47620.3,
+      "trades": 124
     },
     {
       "ticker": "ATEL",
       "name": "ATEL",
       "price": 175,
-      "volume": 1018,
-      "value": 178150,
-      "trades": 38
-    },
-    {
-      "ticker": "ZNCO",
-      "name": "ZNCO",
-      "price": 9.52,
-      "volume": 8785,
-      "value": 83656.25,
-      "trades": 154
-    },
-    {
-      "ticker": "ZFCO",
-      "name": "ZFCO",
-      "price": 9.5,
-      "volume": 5922,
-      "value": 56314.22,
-      "trades": 54
+      "volume": 209,
+      "value": 36595,
+      "trades": 35
     },
     {
       "ticker": "KLRE",
       "name": "KLRE",
       "price": 0.35,
-      "volume": 99483,
-      "value": 34807.05,
-      "trades": 115
+      "volume": 96998,
+      "value": 33949.3,
+      "trades": 96
+    },
+    {
+      "ticker": "ZFCO",
+      "name": "ZFCO",
+      "price": 10.1,
+      "volume": 2424,
+      "value": 24476.8,
+      "trades": 32
     }
   ],
   "mostActiveByVolume": [
@@ -103,41 +87,41 @@
       "ticker": "KLRE",
       "name": "KLRE",
       "price": 0.35,
-      "volume": 99483,
-      "value": 34807.05,
-      "trades": 115
+      "volume": 96998,
+      "value": 33949.3,
+      "trades": 96
     },
     {
       "ticker": "CECZ",
       "name": "CECZ",
-      "price": 16.78,
-      "volume": 15889,
-      "value": 266716.51,
+      "price": 16.75,
+      "volume": 12429,
+      "value": 208240.64,
       "trades": 122
     },
     {
-      "ticker": "REIZUSD",
-      "name": "REIZUSD",
-      "price": 0.09,
-      "volume": 10697,
-      "value": 962.73,
-      "trades": 8
+      "ticker": "SCBL",
+      "name": "SCBL",
+      "price": 1.25,
+      "volume": 6660,
+      "value": 8305.26,
+      "trades": 35
     },
     {
       "ticker": "ZNCO",
       "name": "ZNCO",
-      "price": 9.52,
-      "volume": 8785,
-      "value": 83656.25,
-      "trades": 154
+      "price": 9.47,
+      "volume": 5040,
+      "value": 47620.3,
+      "trades": 124
     },
     {
-      "ticker": "ZFCO",
-      "name": "ZFCO",
-      "price": 9.5,
-      "volume": 5922,
-      "value": 56314.22,
-      "trades": 54
+      "ticker": "ZMBF",
+      "name": "ZMBF",
+      "price": 1.97,
+      "volume": 3576,
+      "value": 7025.29,
+      "trades": 78
     }
   ]
 }
