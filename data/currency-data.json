@@ -1,46 +1,46 @@
 {
-  "asOf": "2026-07-07",
-  "source": "XE.com mid-market rates (01:45 UTC 2026-07-07)",
+  "asOf": "2026-07-08",
+  "source": "ExchangeRates247.com mid-market rates (14:41 CAT 2026-07-08), Bank of Zambia indicative 18.2929 (Jul 3)",
   "baseNote": "Rates show ZMW per 1 unit of foreign currency. ↑ ZMW = Kwacha weakening (depreciating).",
   "mpRate": 13.5,
   "mpRateNote": "Monetary Policy Rate held at 13.50% — reduced 75bps from 14.25% on Feb 11, 2026. BOZ held rate at May 2026 review. Next review: August 2026.",
   "rates": {
     "USD": {
-      "buy": 18.15,
-      "sell": 18.55,
-      "mid": 18.35,
-      "marketMid": 18.35,
-      "trend": "stable",
-      "dayAgo": 18.30,
-      "weekAgo": 18.04,
-      "twoWeeksAgo": 17.71,
+      "buy": 18.27,
+      "sell": 18.66,
+      "mid": 18.47,
+      "marketMid": 18.47,
+      "trend": "weakening",
+      "dayAgo": 18.42,
+      "weekAgo": 18.01,
+      "twoWeeksAgo": 18.02,
       "oneMonthAgo": 18.83,
       "sixMonthsAgo": 22.50,
-      "note": "Jul 6: 1 USD ≈ 18.35 ZMW mid-market (XE). Kwacha slightly softer from 18.30 (Jul 2) and weaker week-on-week from 18.04 (Jun 25). Market consolidating in 18.00–18.50 range."
+      "note": "Jul 8: 1 USD ≈ 18.47 ZMW mid-market. Kwacha weaker from 18.42 (Jul 7) and week-on-week from 18.01 (Jul 1). Market trending in 18.00–18.50 range."
     },
     "GBP": {
-      "mid": 24.57,
-      "trend": "weakening",
-      "dayAgo": 24.47,
-      "weekAgo": 23.77,
+      "mid": 24.27,
+      "trend": "strengthening",
+      "dayAgo": 24.64,
+      "weekAgo": 23.92,
       "oneMonthAgo": 25.50,
-      "note": "1 GBP ≈ 24.57 ZMW (Jul 6). Sterling slightly firmer from 24.28 (Jul 2). Up 3.4% week-on-week."
+      "note": "1 GBP ≈ 24.27 ZMW (Jul 8). Sterling weakened from 24.64 (Jul 7) — Kwacha strengthening notably against GBP. Down 1.5% day-on-day."
     },
     "EUR": {
-      "mid": 20.99,
+      "mid": 21.09,
       "trend": "weakening",
-      "dayAgo": 20.94,
+      "dayAgo": 21.05,
       "weekAgo": 20.50,
       "oneMonthAgo": 22.40,
-      "note": "1 EUR ≈ 20.99 ZMW (Jul 6). Euro slightly up from 20.82 (Jul 2). Up 2.4% week-on-week."
+      "note": "1 EUR ≈ 21.09 ZMW (Jul 8). Euro slightly firmer from 21.05 (Jul 7). Up 2.9% week-on-week."
     },
     "ZAR": {
       "mid": 1.13,
-      "trend": "weakening",
-      "dayAgo": 1.127,
-      "weekAgo": 1.088,
+      "trend": "stable",
+      "dayAgo": 1.13,
+      "weekAgo": 1.10,
       "oneMonthAgo": 1.18,
-      "note": "1 ZAR ≈ 1.13 ZMW (Jul 6). Rand slightly stronger from 1.12 (Jul 2). 1 ZMW ≈ 0.885 ZAR."
+      "note": "1 ZAR ≈ 1.13 ZMW (Jul 8). Rand broadly stable. 1 ZMW ≈ 0.885 ZAR."
     },
     "BWP": {
       "mid": 1.283,
@@ -49,18 +49,18 @@
       "note": "Botswana pula. 1 BWP ≈ 1.283 ZMW. Stable cross-rate."
     },
     "CNY": {
-      "mid": 2.67,
+      "mid": 2.69,
       "trend": "weakening",
-      "weekAgo": 2.638,
-      "note": "Chinese yuan. 1 CNY ≈ 2.67 ZMW. Kwacha weakening slightly against yuan."
+      "weekAgo": 2.64,
+      "note": "Chinese yuan. 1 CNY ≈ 2.69 ZMW. Kwacha weakening slightly against yuan."
     }
   },
   "trendAnalysis": {
-    "direction": "Kwacha slightly softer — mid-market at 18.35 (XE Jul 6) vs 18.25 (Jul 2). Kwacha weakening week-on-week from 18.04 (Jun 25). EM currencies under pressure from broad USD strength ahead of US election expectations.",
-    "dayChange": 0.10,
-    "twoWeekChange": 0.64,
-    "oneMonthChange": -2.55,
-    "sixMonthChange": -18.4,
+    "direction": "Kwacha softer — mid-market at 18.47 (Jul 8) vs 18.42 (Jul 7). Kwacha weakening week-on-week from 18.01 (Jul 1). GBP notably weaker against ZMW — Kwacha strengthening against Sterling. EM currencies mixed.",
+    "dayChange": 0.05,
+    "twoWeekChange": 0.45,
+    "oneMonthChange": -0.36,
+    "sixMonthChange": -4.03,
     "ytdChange": -17.6,
     "drivers": [
       "Record copper output 890K tonnes (2025) — strong export earnings",
