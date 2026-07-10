@@ -1,5 +1,24 @@
 [
   {
+    "date": "2026-07-09",
+    "category": "Market",
+    "title": "LuSE Daily Close: LASI +0.48% to 25,927.31 - ATEL +5.71% leads, ZMFA top decliner",
+    "summary": "1074 trades across 460,803 shares. Turnover K3.93M. LASI up 0.48% to 25,927.31. Breadth: 3 gainers, 2 decliners. ATEL +5.71%, ZMBF +1.52%, CECZ +0.06%. AECI -3.24%, CHIL -2.33%. ZMFA sharp drop. KLRE most active by volume.",
+    "source": "LuSE (Playwright scraper)",
+    "url": "https://www.luse.co.zm/market-data/",
+    "tickers": [
+      "ATEL",
+      "CECZ",
+      "ZMBF",
+      "AECI",
+      "CHIL",
+      "ZSUG",
+      "KLRE",
+      "ZFCO",
+      "ZMFA"
+    ]
+  },
+  {
     "date": "2026-07-10",
     "category": "Corporate",
     "title": "GDP expands by 7.7% in Q1of 2026 - Zambian Business Times",

@@ -1,46 +1,46 @@
 {
-  "asOf": "2026-07-08",
-  "source": "ExchangeRates247.com mid-market rates (14:41 CAT 2026-07-08), Bank of Zambia indicative 18.2929 (Jul 3)",
-  "baseNote": "Rates show ZMW per 1 unit of foreign currency. ↑ ZMW = Kwacha weakening (depreciating).",
+  "asOf": "2026-07-09",
+  "source": "ExchangeRates247.com mid-market rates (16:52 CAT 2026-07-09)",
+  "baseNote": "Rates show ZMW per 1 unit of foreign currency. ↓ ZMW = Kwacha strengthening (appreciating).",
   "mpRate": 13.5,
   "mpRateNote": "Monetary Policy Rate held at 13.50% — reduced 75bps from 14.25% on Feb 11, 2026. BOZ held rate at May 2026 review. Next review: August 2026.",
   "rates": {
     "USD": {
-      "buy": 18.27,
-      "sell": 18.66,
-      "mid": 18.47,
-      "marketMid": 18.47,
-      "trend": "weakening",
-      "dayAgo": 18.42,
+      "buy": 18.1476,
+      "sell": 18.1494,
+      "mid": 18.1485,
+      "marketMid": 18.1485,
+      "trend": "strengthening",
+      "dayAgo": 18.4668,
       "weekAgo": 18.01,
       "twoWeeksAgo": 18.02,
       "oneMonthAgo": 18.83,
       "sixMonthsAgo": 22.50,
-      "note": "Jul 8: 1 USD ≈ 18.47 ZMW mid-market. Kwacha weaker from 18.42 (Jul 7) and week-on-week from 18.01 (Jul 1). Market trending in 18.00–18.50 range."
+      "note": "Jul 9: 1 USD ≈ 18.1485 ZMW mid-market. Kwacha strengthened sharply from 18.4668 (Jul 8) — best level in weeks. Market trending lower in 18.00–18.50 range."
     },
     "GBP": {
-      "mid": 24.27,
+      "mid": 24.1571,
       "trend": "strengthening",
-      "dayAgo": 24.64,
+      "dayAgo": 24.27,
       "weekAgo": 23.92,
       "oneMonthAgo": 25.50,
-      "note": "1 GBP ≈ 24.27 ZMW (Jul 8). Sterling weakened from 24.64 (Jul 7) — Kwacha strengthening notably against GBP. Down 1.5% day-on-day."
+      "note": "1 GBP ≈ 24.1571 ZMW (Jul 9). Sterling slightly softer from 24.27 (Jul 7). Kwacha strengthening against GBP. Down ~0.5% day-on-day."
     },
     "EUR": {
-      "mid": 21.09,
-      "trend": "weakening",
-      "dayAgo": 21.05,
+      "mid": 20.7637,
+      "trend": "strengthening",
+      "dayAgo": 21.09,
       "weekAgo": 20.50,
       "oneMonthAgo": 22.40,
-      "note": "1 EUR ≈ 21.09 ZMW (Jul 8). Euro slightly firmer from 21.05 (Jul 7). Up 2.9% week-on-week."
+      "note": "1 EUR ≈ 20.7637 ZMW (Jul 9). Euro notably weaker from 21.09 (Jul 7). Kwacha gaining ground against single currency."
     },
     "ZAR": {
-      "mid": 1.13,
+      "mid": 1.1049,
       "trend": "stable",
       "dayAgo": 1.13,
       "weekAgo": 1.10,
       "oneMonthAgo": 1.18,
-      "note": "1 ZAR ≈ 1.13 ZMW (Jul 8). Rand broadly stable. 1 ZMW ≈ 0.885 ZAR."
+      "note": "1 ZAR ≈ 1.1049 ZMW (Jul 9). Rand broadly stable. 1 ZMW ≈ 0.905 ZAR."
     },
     "BWP": {
       "mid": 1.283,
@@ -50,17 +50,17 @@
     },
     "CNY": {
       "mid": 2.69,
-      "trend": "weakening",
+      "trend": "stable",
       "weekAgo": 2.64,
-      "note": "Chinese yuan. 1 CNY ≈ 2.69 ZMW. Kwacha weakening slightly against yuan."
+      "note": "Chinese yuan. 1 CNY ≈ 2.69 ZMW. Cross-rate stable."
     }
   },
   "trendAnalysis": {
-    "direction": "Kwacha softer — mid-market at 18.47 (Jul 8) vs 18.42 (Jul 7). Kwacha weakening week-on-week from 18.01 (Jul 1). GBP notably weaker against ZMW — Kwacha strengthening against Sterling. EM currencies mixed.",
-    "dayChange": 0.05,
-    "twoWeekChange": 0.45,
-    "oneMonthChange": -0.36,
-    "sixMonthChange": -4.03,
+    "direction": "Kwacha strengthened sharply — mid-market at 18.1485 (Jul 9) vs 18.4668 (Jul 8). Best level in weeks. Kwacha notably firmer across major crosses — USD, GBP, EUR all lower. EM currencies mixed.",
+    "dayChange": -0.3183,
+    "twoWeekChange": 0.1285,
+    "oneMonthChange": -0.6815,
+    "sixMonthChange": -4.3515,
     "ytdChange": -17.6,
     "drivers": [
       "Record copper output 890K tonnes (2025) — strong export earnings",
@@ -73,7 +73,7 @@
       "ERB cut fuel prices for July — lower import bill supporting kwacha",
       "Pre-election spending starting to add pressure on kwacha"
     ],
-    "outlook": "Kwacha consolidating in 18.00–18.50 range. BOZ likely to hold MPR at August review. Pre-election spending adding modest pressure. Fuel price cut provides offset.",
+    "outlook": "Kwacha consolidating in 18.00–18.50 range, with strong gains seen on Jul 9. BOZ likely to hold MPR at August review. Pre-election spending adding modest pressure. Fuel price cut provides offset.",
     "projection3m": "USD/ZMW 16.50–18.50 range. Elections expected to drive volatility.",
     "projection6m": "USD/ZMW 16.00–19.00 range. Post-election clarity determines direction."
   }
