@@ -1,5 +1,27 @@
 [
   {
+    "title": "REIZ- TRANSACTION CIRCULAR",
+    "date": "2026-07-09",
+    "category": "General Announcements",
+    "type": "M&A",
+    "tickers": [
+      "REIZ"
+    ],
+    "source": "LuSE SENS",
+    "url": "https://www.luse.co.zm/sens-category/general-announcements/"
+  },
+  {
+    "title": "REIZ- GRADUARE EGM NOTICE",
+    "date": "2026-07-09",
+    "category": "AGM/EGM",
+    "type": "AGM",
+    "tickers": [
+      "REIZ"
+    ],
+    "source": "LuSE SENS",
+    "url": "https://www.luse.co.zm/sens-category/annual-and-extraordinary-general-meeting/"
+  },
+  {
     "title": "REIZ- TRANSACTION ANNOUNCEMENT (GRADUARE 51% ACQUISITION)",
     "date": "2026-07-03",
     "category": "General Announcements",
