@@ -1,24 +1,5 @@
 [
   {
-    "date": "2026-07-09",
-    "category": "Market",
-    "title": "LuSE Daily Close: LASI +0.48% to 25,927.31 - ATEL +5.71% leads, ZMFA top decliner",
-    "summary": "1074 trades across 460,803 shares. Turnover K3.93M. LASI up 0.48% to 25,927.31. Breadth: 3 gainers, 2 decliners. ATEL +5.71%, ZMBF +1.52%, CECZ +0.06%. AECI -3.24%, CHIL -2.33%. ZMFA sharp drop. KLRE most active by volume.",
-    "source": "LuSE (Playwright scraper)",
-    "url": "https://www.luse.co.zm/market-data/",
-    "tickers": [
-      "ATEL",
-      "CECZ",
-      "ZMBF",
-      "AECI",
-      "CHIL",
-      "ZSUG",
-      "KLRE",
-      "ZFCO",
-      "ZMFA"
-    ]
-  },
-  {
     "date": "2026-07-10",
     "category": "Corporate",
     "title": "GDP expands by 7.7% in Q1of 2026 - Zambian Business Times",
@@ -48,21 +29,19 @@
   {
     "date": "2026-07-10",
     "category": "Corporate",
-    "title": "Is inflation really falling for ordinary Zambians? - Zambian Business Times",
-    "summary": "The Zambia Statistics Agency (ZAMSTATS) reported in April 2026 that the annual inflation rate slowed to 6.8% in April 2026 from 7.1% in March, but nonfood inflation increased to 6.0% from 5.9%. The report further showed that the rise in non-food infl",
-    "source": "Zambian Business Times",
-    "url": "https://zambianbusinesstimes.com/is-inflation-really-falling-for-ordinary-zambians/",
-    "tickers": [
-      "CHIL"
-    ]
-  },
-  {
-    "date": "2026-07-10",
-    "category": "Corporate",
     "title": "PDF Zambian Business Times",
     "summary": "By Carol Sichone diversification efforts, and new Despite concerns around the side formal economic sys- Without such reforms, he Zambia's planned Gross Domes- forms of economic activity. choice of base year, Cheelo Speaking to Zambian Busi- tems. war",
     "source": "Zambian Business Times",
     "url": "https://zambianbusinesstimes.com/wp-content/uploads/2026/03/ZBT-30th-March-%E2%80%93-6th-April-2026-Issue-no-200-1.pdf",
+    "tickers": []
+  },
+  {
+    "date": "2026-07-10",
+    "category": "Corporate",
+    "title": "LuSE market capitalization booms to K1.9bn - Zambian Business Times",
+    "summary": "The Zambia capital market recorded a strong performance in Q1 of 2026, with the market capitalization increasing from K330 billion in Q4 of 2025 to K341.9 billion in Q1 of 2026, and the LuSE All Share Index ( LASI) increased by 5.3% to close at 27.3 ",
+    "source": "Zambian Business Times",
+    "url": "https://zambianbusinesstimes.com/luse-market-capitalization-booms-to-k1-9bn/",
     "tickers": []
   },
   {
@@ -140,17 +119,6 @@
   {
     "date": "2026-07-10",
     "category": "Macro",
-    "title": "Hakainde Hichilema's Fiscal Discipline: A Case Study in Economic ...",
-    "summary": "What distinguishes Zambia's experience is not merely the adoption of orthodox fiscal principles, but the measurable outcomes that have followed, making it a valuable case study for scholars and policymakers alike. When the administration assumed offi",
-    "source": "Mwebantu",
-    "url": "https://www.mwebantu.com/hakainde-hichilemas-fiscal-discipline-a-case-study-in-economic-recovery/",
-    "tickers": [
-      "CHIL"
-    ]
-  },
-  {
-    "date": "2026-07-10",
-    "category": "Macro",
     "title": "IMF Completion of Zambia's ECF Programme: A Turning Point for Economic ...",
     "summary": "The completion of Zambia's IMF ECF programme is a landmark achievement that signals restored macroeconomic stability, renewed international confidence, and a positive growth trajectory. It affirms that disciplined policy, structural reforms, and soun",
     "source": "Mwebantu",
@@ -159,11 +127,11 @@
   },
   {
     "date": "2026-07-10",
-    "category": "Commodities",
-    "title": "Copper rebounds as AI demand offsets geopolitical concerns, Kwacha ...",
-    "summary": "Read more: Copper gains on easing geopolitical tensions as Kwacha holds firm However, the bank said investors continued to view copper's long-term demand outlook positively, supported by the expected expansion of AI infrastructure and data centres, w",
-    "source": "Bloomberg",
-    "url": "https://www.zambiamonitor.com/copper-rebounds-as-ai-demand-offsets-geopolitical-concerns-kwacha-strengthens-access-bank-report/",
+    "category": "Macro",
+    "title": "IMF says Zambia has made impressive progress on inflation, reserves ...",
+    "summary": "THE International Monetary Fund said Thursday that Zambia has made substantial progress in restoring macroeconomic stability but faces rising fiscal pressure ahead of the Aug. 13 elections. An IMF staff team led by Edward Gemayel visited Lusaka from ",
+    "source": "Mwebantu",
+    "url": "https://www.mwebantu.com/imf-says-zambia-has-made-impressive-progress-on-inflation-reserves-and-debt-restructuring-but-faces-fiscal-pressure-before-elections/",
     "tickers": []
   },
   {
@@ -173,6 +141,24 @@
     "summary": "The Zambian kwacha ended 2025 on a strong footing, extending gains against the United States dollar on the back of firm copper prices and improving investor confidence. Bloomberg data showed the currency closed the year at around K22.17 to the dollar",
     "source": "Bloomberg",
     "url": "https://www.zambiamonitor.com/zambian-kwacha-closes-2025-firm-as-copper-prices-rally/",
+    "tickers": []
+  },
+  {
+    "date": "2026-07-10",
+    "category": "Commodities",
+    "title": "Zambia's copper output set to pass one million tonnes",
+    "summary": "Copper is the spine of the Zambian economy, generating most of the country's export earnings and a large share of government revenue. A jump above one million tonnes therefore reaches far beyond the mines: it lifts mineral royalties, supports the kwa",
+    "source": "Bloomberg",
+    "url": "https://kwachanews.com/writing/zambia-copper-output-one-million-tonnes-2026",
+    "tickers": []
+  },
+  {
+    "date": "2026-07-10",
+    "category": "Commodities",
+    "title": "Copper rebounds as AI demand offsets geopolitical concerns, Kwacha ...",
+    "summary": "Read more: Copper gains on easing geopolitical tensions as Kwacha holds firm However, the bank said investors continued to view copper's long-term demand outlook positively, supported by the expected expansion of AI infrastructure and data centres, w",
+    "source": "Bloomberg",
+    "url": "https://www.zambiamonitor.com/copper-rebounds-as-ai-demand-offsets-geopolitical-concerns-kwacha-strengthens-access-bank-report/",
     "tickers": []
   },
   {
@@ -191,15 +177,6 @@
     "summary": "Zambia's currency surged to its strongest level in nearly two years, buoyed by renewed optimism in the nation's copper industry. The kwacha advanced 0.7% to 22.76 per dollar, its highest level since February 2024, extending a rally that has made it A",
     "source": "Bloomberg",
     "url": "https://africa.businessinsider.com/local/markets/zambias-currency-hits-highest-level-since-2024-amid-copper-price-boom/fms73zb?op=1",
-    "tickers": []
-  },
-  {
-    "date": "2026-07-10",
-    "category": "Commodities",
-    "title": "Zambia's Kwacha Strengthens to 18-Month High as Copper Prices Surge",
-    "summary": "Credit: bloomberg.com Zambia's currency, the kwacha, has climbed to its strongest level since early 2024, supported by soaring copper prices and renewed investor confidence in the mining-driven economy. The rally highlights the deep link between Zamb",
-    "source": "Bloomberg",
-    "url": "https://empiremagazineafrica.com/zambias-kwacha-strengthens-to-18-month-high-as-copper-prices-surge/",
     "tickers": []
   },
   {
@@ -232,11 +209,13 @@
   {
     "date": "2026-07-10",
     "category": "Macro",
-    "title": "Zambia nears completion of debt restructuring at 94%, says finance ...",
-    "summary": "Talks with Afreximbank remain key to ending Zambia's default status Zambia has completed 94% of its debt restructuring process, Finance and National Planning Minister Situmbeko Musokotwane said during a press briefing. He noted that the country had m",
+    "title": "Debt Restructuring Saves Zambia $1.4 Billion Annually",
+    "summary": "Debt Restructuring Saves Zambia $1.4 Billion Annually Zambia's economy is back on a firmer footing, with President Hakainde Hichilema crediting the country's debt restructuring programme for both the savings achieved and the renewed confidence among ",
     "source": "Reuters",
-    "url": "https://www.ecofinagency.com/news/3010-49964-zambia-nears-completion-of-debt-restructuring-at-94-says-finance-minister",
-    "tickers": []
+    "url": "https://www.openzambia.com/economics/2026/6/11/debt-restructuring-saves-zambia-14-billion-annually",
+    "tickers": [
+      "CHIL"
+    ]
   },
   {
     "date": "2026-07-10",
@@ -283,6 +262,65 @@
     "summary": "ISIN: ZM0000000342 [\"Airtel\" or \"the Company\"] NOTICE OF FINAL DIVIDEND PAYMENT At the Annual General Meeting (\"AGM\") held on 30th March 2026 in Lusaka, a Final Dividend of ZMW6.52 Kwacha per share for the financial year ended 31st December 2025 was ",
     "source": "LuSE Official",
     "url": "https://www.luse.co.zm/wp-content/uploads/2026/04/Airtel-FY-Notice-of-Dividend-SENS-02.04.2026.pdf",
+    "tickers": []
+  },
+  {
+    "date": "2026-07-09",
+    "category": "Market",
+    "title": "LuSE Daily Close: LASI +0.48% to 25,927.31 - ATEL +5.71% leads, ZMFA top decliner",
+    "summary": "1074 trades across 460,803 shares. Turnover K3.93M. LASI up 0.48% to 25,927.31. Breadth: 3 gainers, 2 decliners. ATEL +5.71%, ZMBF +1.52%, CECZ +0.06%. AECI -3.24%, CHIL -2.33%. ZMFA sharp drop. KLRE most active by volume.",
+    "source": "LuSE (Playwright scraper)",
+    "url": "https://www.luse.co.zm/market-data/",
+    "tickers": [
+      "ATEL",
+      "CECZ",
+      "ZMBF",
+      "AECI",
+      "CHIL",
+      "ZSUG",
+      "KLRE",
+      "ZFCO",
+      "ZMFA"
+    ]
+  },
+  {
+    "date": "2026-07-10",
+    "category": "Corporate",
+    "title": "Is inflation really falling for ordinary Zambians? - Zambian Business Times",
+    "summary": "The Zambia Statistics Agency (ZAMSTATS) reported in April 2026 that the annual inflation rate slowed to 6.8% in April 2026 from 7.1% in March, but nonfood inflation increased to 6.0% from 5.9%. The report further showed that the rise in non-food infl",
+    "source": "Zambian Business Times",
+    "url": "https://zambianbusinesstimes.com/is-inflation-really-falling-for-ordinary-zambians/",
+    "tickers": [
+      "CHIL"
+    ]
+  },
+  {
+    "date": "2026-07-10",
+    "category": "Macro",
+    "title": "Hakainde Hichilema's Fiscal Discipline: A Case Study in Economic ...",
+    "summary": "What distinguishes Zambia's experience is not merely the adoption of orthodox fiscal principles, but the measurable outcomes that have followed, making it a valuable case study for scholars and policymakers alike. When the administration assumed offi",
+    "source": "Mwebantu",
+    "url": "https://www.mwebantu.com/hakainde-hichilemas-fiscal-discipline-a-case-study-in-economic-recovery/",
+    "tickers": [
+      "CHIL"
+    ]
+  },
+  {
+    "date": "2026-07-10",
+    "category": "Commodities",
+    "title": "Zambia's Kwacha Strengthens to 18-Month High as Copper Prices Surge",
+    "summary": "Credit: bloomberg.com Zambia's currency, the kwacha, has climbed to its strongest level since early 2024, supported by soaring copper prices and renewed investor confidence in the mining-driven economy. The rally highlights the deep link between Zamb",
+    "source": "Bloomberg",
+    "url": "https://empiremagazineafrica.com/zambias-kwacha-strengthens-to-18-month-high-as-copper-prices-surge/",
+    "tickers": []
+  },
+  {
+    "date": "2026-07-10",
+    "category": "Macro",
+    "title": "Zambia nears completion of debt restructuring at 94%, says finance ...",
+    "summary": "Talks with Afreximbank remain key to ending Zambia's default status Zambia has completed 94% of its debt restructuring process, Finance and National Planning Minister Situmbeko Musokotwane said during a press briefing. He noted that the country had m",
+    "source": "Reuters",
+    "url": "https://www.ecofinagency.com/news/3010-49964-zambia-nears-completion-of-debt-restructuring-at-94-says-finance-minister",
     "tickers": []
   },
   {
@@ -490,15 +528,6 @@
   {
     "date": "2026-07-07",
     "category": "Macro",
-    "title": "IMF says Zambia has made impressive progress on inflation, reserves ...",
-    "summary": "THE International Monetary Fund said Thursday that Zambia has made substantial progress in restoring macroeconomic stability but faces rising fiscal pressure ahead of the Aug. 13 elections. An IMF staff team led by Edward Gemayel visited Lusaka from ",
-    "source": "Mwebantu",
-    "url": "https://www.mwebantu.com/imf-says-zambia-has-made-impressive-progress-on-inflation-reserves-and-debt-restructuring-but-faces-fiscal-pressure-before-elections/",
-    "tickers": []
-  },
-  {
-    "date": "2026-07-07",
-    "category": "Macro",
     "title": "Zambia Draws Rising Investor Interest as Fiscal Recovery Boosts ...",
     "summary": "Zambia's mining, energy and agriculture sectors are attracting renewed investor interest as the country's fiscal consolidation efforts and emergence from sovereign default improve confidence in its economic outlook, according to Citi Zambia. Speaking",
     "source": "Reuters",
@@ -541,44 +570,6 @@
     "summary": "Zambia recorded a trade surplus of K3.5 billion in April 2026, a significant rise from the K0.9 billion surplus recorded in March, according to official government data. The growth was driven by a 1.5% increase in exports, which rose from K25.0 billi",
     "source": "Zambian Business Times",
     "url": "https://zambianbusinesstimes.com/zambias-trade-surplus-reached-k3-5-billion-in-april/",
-    "tickers": []
-  },
-  {
-    "date": "2026-07-03",
-    "category": "Corporate",
-    "title": "FQM injects $2.6bn into Zambia economy - Zambian Business Times",
-    "summary": "â€ŽBy Tyndale Muchiya â€Žâ€ŽIn his recent keynote address at the Mining Indaba in Cape Town, President Hakainde Hichilema highlighted First Quantum Minerals' position as Zambia's largest taxpayer. â€ŽThe following analysis of the mining company's most recent",
-    "source": "Zambian Business Times",
-    "url": "https://zambianbusinesstimes.com/fqm-injects-2-6bn-into-zambia-economy/",
-    "tickers": [
-      "CHIL"
-    ]
-  },
-  {
-    "date": "2026-07-03",
-    "category": "Macro",
-    "title": "Investors have regained appetite for Zambia after default, Citi says",
-    "summary": "Zambia's mining, energy and agriculture sectors have drawn significant investor interest as the government's fiscal consolidation gains traction after emerging from a sovereign default, said Citi's country chief. \"We have noted increased interest, es",
-    "source": "Mwebantu",
-    "url": "https://www.mwebantu.com/investors-have-regained-appetite-for-zambia-after-default-citi-says/",
-    "tickers": []
-  },
-  {
-    "date": "2026-07-03",
-    "category": "Macro",
-    "title": "Zambia's FDI Hits Record High of US$2.36 Billion in 2024 says Bank of ...",
-    "summary": "ZAMBIA posted a record foreign direct investment (FDI) inflow of US$2.36 billion in 2024, the highest ever recorded, according to the Bank of Zambia (BoZ). The BoZ's deputy governor, Dr Francis Chipimo, said the surge reflects renewed investor confid",
-    "source": "Mwebantu",
-    "url": "https://www.mwebantu.com/zambias-fdi-hits-record-high-of-us2-36-billion-in-2024-says-bank-of-zambia/",
-    "tickers": []
-  },
-  {
-    "date": "2026-07-03",
-    "category": "Macro",
-    "title": "Zambia's debt restructuring remains snagged on Afreximbank problems",
-    "summary": "LONDON (Reuters) -Zambia's debt restructuring remains snagged on its thorny negotiations with the African Export-Import Bank and won't be resolved until next year, one of its top finance officials has told Reuters. Zambia, one of the world's top copp",
-    "source": "Reuters",
-    "url": "https://www.marketscreener.com/news/zambia-s-debt-restructuring-remains-snagged-on-afreximbank-problems-ce7d58deda8cf621",
     "tickers": []
   }
 ]
