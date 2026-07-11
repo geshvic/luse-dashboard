@@ -1,5 +1,16 @@
 [
   {
+    "title": "ZCCM IH CAUTIONARY ANNOUNCEMENENT",
+    "date": "2026-07-10",
+    "category": "Cautionary Announcement",
+    "type": "Cautionary",
+    "tickers": [
+      "ZCCM-IH"
+    ],
+    "source": "LuSE SENS",
+    "url": "https://www.luse.co.zm/sens-category/cautionary-announcement/"
+  },
+  {
     "title": "REIZ- TRANSACTION CIRCULAR",
     "date": "2026-07-09",
     "category": "General Announcements",
