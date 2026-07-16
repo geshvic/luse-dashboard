@@ -1,9 +1,54 @@
 [
   {
     "date": "2026-07-16",
+    "category": "Market",
+    "title": "LuSE Daily Close (Jul 16): LASI flat at 25,835.99 — 0 gainers, 5 decliners",
+    "summary": "620 trades across 162,199 shares. Turnover K0.55M. LASI unchanged at 25,835.99. Breadth: 0 advancers, 5 decliners, 18 unchanged. Most active: ZFCO (K120.9K), ATEL (K105.8K), ZNCO (K104.3K). Top volume: REIZUSD (131,511), KLRE (66,974), SCBL (41,392).",
+    "source": "LuSE (Playwright scraper)",
+    "url": "https://www.luse.co.zm/market-data/",
+    "tickers": ["REIZUSD", "KLRE", "SCBL", "ZFCO", "ATEL", "ZNCO", "CECZ", "PUMA", "ZMBF"]
+  },
+  {
+    "date": "2026-07-16",
+    "category": "Market",
+    "title": "Mining dominated GDP share by nearly 15% — Zambian Business Times",
+    "summary": "Zambian Business Times reports mining sector dominated GDP share by nearly 15%. Maize costs K6.56/Kg to produce in 2025/2026 season.",
+    "source": "Zambian Business Times",
+    "url": "https://zambianbusinesstimes.com/",
+    "tickers": []
+  },
+  {
+    "date": "2026-07-16",
+    "category": "Macro",
+    "title": "Zambia-Japan investment agreement to enter into force on 30 July",
+    "summary": "The Zambia-Japan investment promotion and protection agreement is set to enter into force on 30 July 2026, strengthening bilateral investment ties.",
+    "source": "Lusaka Times",
+    "url": "https://www.lusakatimes.com/economy/",
+    "tickers": []
+  },
+  {
+    "date": "2026-07-16",
     "category": "Corporate",
-    "title": "GDP expands by 7.7% in Q1of 2026 - Zambian Business Times",
-    "summary": "GDP expands by 7.7% in Q1of 2026 According to official government data, Zambia's Gross Domestic Product (GDP) grew by 7.7% in the first quarter of 2026, up from 4.5% recorded during the same period in 2025, representing an acceleration of 3.2 percent",
+    "title": "REIZ Transaction Circular — LuSE announcement",
+    "summary": "Real Estate Investments Zambia (REIZ) published a transaction circular on 9 July 2026 on LuSE.",
+    "source": "LuSE Official",
+    "url": "https://www.luse.co.zm/",
+    "tickers": ["REIZUSD"]
+  },
+  {
+    "date": "2026-07-16",
+    "category": "Market",
+    "title": "GDP needs to grow faster than population for ordinary Zambians to benefit — Expert",
+    "summary": "Economic experts caution that despite strong GDP growth figures, per capita benefits remain limited if growth does not outpace population increases.",
+    "source": "Zambian Business Times",
+    "url": "https://zambianbusinesstimes.com/",
+    "tickers": []
+  },
+  {
+    "date": "2026-07-16",
+    "category": "Corporate",
+    "title": "GDP expands by 7.7% in Q1 of 2026 - Zambian Business Times",
+    "summary": "GDP expands by 7.7% in Q1 of 2026 According to official government data, Zambia's Gross Domestic Product (GDP) grew by 7.7% in the first quarter of 2026, up from 4.5% recorded during the same period in 2025, representing an acceleration of 3.2 percent",
     "source": "Zambian Business Times",
     "url": "https://zambianbusinesstimes.com/gdp-expands-by-7-7-in-q1of-2026/",
     "tickers": []
@@ -20,22 +65,11 @@
   {
     "date": "2026-07-16",
     "category": "Corporate",
-    "title": "PDF Zambian Business Times",
-    "summary": "By Carol Sichone diversification efforts, and new Despite concerns around the side formal economic sys- Without such reforms, he Zambia's planned Gross Domes- forms of economic activity. choice of base year, Cheelo Speaking to Zambian Busi- tems. war",
-    "source": "Zambian Business Times",
-    "url": "https://zambianbusinesstimes.com/wp-content/uploads/2026/03/ZBT-30th-March-%E2%80%93-6th-April-2026-Issue-no-200-1.pdf",
-    "tickers": []
-  },
-  {
-    "date": "2026-07-16",
-    "category": "Corporate",
     "title": "Is inflation really falling for ordinary Zambians? - Zambian Business Times",
     "summary": "The Zambia Statistics Agency (ZAMSTATS) reported in April 2026 that the annual inflation rate slowed to 6.8% in April 2026 from 7.1% in March, but nonfood inflation increased to 6.0% from 5.9%. The report further showed that the rise in non-food infl",
     "source": "Zambian Business Times",
     "url": "https://zambianbusinesstimes.com/is-inflation-really-falling-for-ordinary-zambians/",
-    "tickers": [
-      "CHIL"
-    ]
+    "tickers": ["CHIL"]
   },
   {
     "date": "2026-07-16",
@@ -68,7 +102,7 @@
     "date": "2026-07-16",
     "category": "Market",
     "title": "ZAMBIA-US 'DEAL' RAISES ALARM - The Mast Newspaper",
-    "summary": "ZAMBIA - US 'DEAL' RAISES ALARM …America to access copper, other minerals in exchange for aid By George Zulu ZAMBIA is on the verge of signing a secretive memorandum of understanding (MoU) with the United States (US) government, which will give the D",
+    "summary": "ZAMBIA - US 'DEAL' RAISES ALARM …America to access copper, other minerals in exchange for aid By George Zulu ZAMBIA is on the verge of signing a secretive memorandum of understanding (MoU) with the US government, which will give the D",
     "source": "Mast Media Zambia",
     "url": "https://mastmediazm.com/2026/01/zambia-us-deal-raises-alarm/",
     "tickers": []
@@ -107,15 +141,6 @@
     "summary": "Financial Services The financial sector has transformed. Today Zambia has: Mobile banking Digital lending FinTech innovations Electronic payments Agency banking Mobile money Many of these activities scarcely existed in 2010. ICT and Digital Economy P",
     "source": "Mwebantu",
     "url": "https://www.mwebantu.com/zambias-gdp-is-likely-to-leapfrog-why-the-gdp-rebasing-exercise-could-transform-the-countrys-economic-profile/",
-    "tickers": []
-  },
-  {
-    "date": "2026-07-16",
-    "category": "Macro",
-    "title": "Business - Mwebantu",
-    "summary": "Business / 2 weeks ago Mikalo Finance Official Relaunch Business / 2 weeks ago ZRA seizes smuggled heavy-duty grader in Kapiri Mposhi, prevents K615,000 revenue loss Business / 2 weeks ago ZAFFICO Eyes K1.8 Billion Revenue by 2029 Through Forestry Ex",
-    "source": "Mwebantu",
-    "url": "https://www.mwebantu.com/category/business/",
     "tickers": []
   },
   {
@@ -233,9 +258,7 @@
     "summary": "TRANSACTION ANNOUNCEMENT The shareholders of ZCCM Investments Holdings Plc (\"ZCCM-IH\" or \"the Company\") and other market participants are referred to the cautionary announcements issued on 6th August 2025, and the subsequent cautionary announcements ",
     "source": "LuSE Official",
     "url": "https://www.luse.co.zm/wp-content/uploads/2026/05/ZCCM-IH-NDOLA-LIMESTONE-2026-TRANSACTION-ANNOUNCEMENT-SENS-27-May-2026.pdf",
-    "tickers": [
-      "ZCCM"
-    ]
+    "tickers": ["ZCCM"]
   },
   {
     "date": "2026-07-16",
@@ -268,7 +291,7 @@
     "date": "2026-07-13",
     "category": "Corporate",
     "title": "LuSE market capitalization booms to K1.9bn - Zambian Business Times",
-    "summary": "The Zambia capital market recorded a strong performance in Q1 of 2026, with the market capitalization increasing from K330 billion in Q4 of 2025 to K341.9 billion in Q1 of 2026, and the LuSE All Share Index ( LASI) increased by 5.3% to close at 27.3 ",
+    "summary": "The Zambia capital market recorded a strong performance in Q1 of 2026, with the market capitalization increasing from K330 billion in Q4 of 2025 to K341.9 billion in Q1 of 2026, and the LuSE All Share Index (LASI) increased by 5.3% to close at 27.3 ",
     "source": "Zambian Business Times",
     "url": "https://zambianbusinesstimes.com/luse-market-capitalization-booms-to-k1-9bn/",
     "tickers": []
@@ -307,9 +330,7 @@
     "summary": "Speaking on Prime TV's Financial Insight program, Friday, Lautier said the progress made in restructuring the debt had started changing perceptions among international investors and credit rating agencies. \"Zambia has made significant progress in its",
     "source": "Reuters",
     "url": "https://diggers.news/business/2025/09/14/zambia-has-made-progress-in-debt-restructuring-with-94-of-debt-covered-imf/",
-    "tickers": [
-      "PRIM"
-    ]
+    "tickers": ["PRIM"]
   },
   {
     "date": "2026-07-13",
@@ -354,9 +375,7 @@
     "summary": "What distinguishes Zambia's experience is not merely the adoption of orthodox fiscal principles, but the measurable outcomes that have followed, making it a valuable case study for scholars and policymakers alike. When the administration assumed offi",
     "source": "Mwebantu",
     "url": "https://www.mwebantu.com/hakainde-hichilemas-fiscal-discipline-a-case-study-in-economic-recovery/",
-    "tickers": [
-      "CHIL"
-    ]
+    "tickers": ["CHIL"]
   },
   {
     "date": "2026-07-12",
@@ -419,9 +438,7 @@
     "summary": "Debt Restructuring Saves Zambia $1.4 Billion Annually Zambia's economy is back on a firmer footing, with President Hakainde Hichilema crediting the country's debt restructuring programme for both the savings achieved and the renewed confidence among ",
     "source": "Reuters",
     "url": "https://www.openzambia.com/economics/2026/6/11/debt-restructuring-saves-zambia-14-billion-annually",
-    "tickers": [
-      "CHIL"
-    ]
+    "tickers": ["CHIL"]
   },
   {
     "date": "2026-07-10",
@@ -444,41 +461,11 @@
   {
     "date": "2026-07-09",
     "category": "Market",
-    "title": "LuSE Daily Close: LASI +0.48% to 25,927.31 - ATEL +5.71% leads, ZMFA top decliner",
+    "title": "LuSE Daily Close: LASI +0.48% to 25,927.31 — ATEL +5.71% leads, ZMFA top decliner",
     "summary": "1074 trades across 460,803 shares. Turnover K3.93M. LASI up 0.48% to 25,927.31. Breadth: 3 gainers, 2 decliners. ATEL +5.71%, ZMBF +1.52%, CECZ +0.06%. AECI -3.24%, CHIL -2.33%. ZMFA sharp drop. KLRE most active by volume.",
     "source": "LuSE (Playwright scraper)",
     "url": "https://www.luse.co.zm/market-data/",
-    "tickers": [
-      "ATEL",
-      "CECZ",
-      "ZMBF",
-      "AECI",
-      "CHIL",
-      "ZSUG",
-      "KLRE",
-      "ZFCO",
-      "ZMFA"
-    ]
-  },
-  {
-    "url": "https://www.luse.co.zm/market-data/",
-    "source": "LuSE (via Playwright scraper)",
-    "tickers": [
-      "ATEL",
-      "CECZ",
-      "ZMBF",
-      "AECI",
-      "CHIL",
-      "ZSUG",
-      "KLRE",
-      "ZNCO",
-      "BATZ",
-      "ZFCO"
-    ],
-    "date": "2026-07-08",
-    "summary": "1074 trades across 460,803 shares. Turnover K3.93M. LASI up 0.48% to 25,927.31. Breadth: 3 advancers (ATEL +5.71%, ZFCO +6.32%, ZMBF +1.52%, CECZ +0.06%), 2 decliners (AECI -3.24%, CHIL -2.33%), 18 unchanged. ZSUG led by value at K2.8M. KLRE most active by volume with 351,853 shares. ATEL market cap reached USD 1bn milestone.",
-    "category": "Market",
-    "title": "LuSE Daily Close: LASI +0.48% to 25,927.31 — ATEL +5.71% leads gainers, AECI -3.24% top decliner"
+    "tickers": ["ATEL", "CECZ", "ZMBF", "AECI", "CHIL", "ZSUG", "KLRE", "ZFCO", "ZMFA"]
   },
   {
     "date": "2026-07-08",
@@ -569,5 +556,25 @@
     "source": "Zambian Business Times",
     "url": "https://zambianbusinesstimes.com/fqm-injects-3-4-billion-into-the-zambian-economy-in-2025/",
     "tickers": []
+  },
+  {
+    "url": "https://www.luse.co.zm/market-data/",
+    "source": "LuSE (via Playwright scraper)",
+    "tickers": [
+      "ATEL",
+      "CECZ",
+      "ZMBF",
+      "AECI",
+      "CHIL",
+      "ZSUG",
+      "KLRE",
+      "ZNCO",
+      "BATZ",
+      "ZFCO"
+    ],
+    "date": "2026-07-08",
+    "summary": "1074 trades across 460,803 shares. Turnover K3.93M. LASI up 0.48% to 25,927.31. Breadth: 3 advancers (ATEL +5.71%, ZFCO +6.32%, ZMBF +1.52%, CECZ +0.06%), 2 decliners (AECI -3.24%, CHIL -2.33%), 18 unchanged. ZSUG led by value at K2.8M. KLRE most active by volume with 351,853 shares. ATEL market cap reached USD 1bn milestone.",
+    "category": "Market",
+    "title": "LuSE Daily Close: LASI +0.48% to 25,927.31 — ATEL +5.71% leads gainers, AECI -3.24% top decliner"
   }
 ]

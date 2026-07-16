@@ -1,48 +1,47 @@
 {
-  "asOf": "2026-07-11",
-  "source": "XE.com mid-market rates (13:18 UTC 2026-07-11) + ExchangeRates247",
-  "ratesLastUpdated": "2026-07-11 13:18 UTC",
-  "note": "Saturday market — XE live rates as proxy for latest close.",
+  "asOf": "2026-07-16",
+  "source": "ExchangeRates.guru (Open Exchange Rates) + Mataf.net + Wise + BOZ Jul 13",
+  "ratesLastUpdated": "2026-07-16 20:58 UTC",
   "baseNote": "Rates show ZMW per 1 unit of foreign currency. ↓ ZMW = Kwacha strengthening (appreciating).",
   "mpRate": 13.5,
   "mpRateNote": "Monetary Policy Rate held at 13.50% — reduced 75bps from 14.25% on Feb 11, 2026. BOZ held rate at May 2026 review. Next review: August 2026.",
   "rates": {
     "USD": {
-      "buy": 18.057,
-      "sell": 18.060,
-      "mid": 18.0586,
-      "marketMid": 18.0586,
-      "trend": "strengthening",
+      "buy": 18.007,
+      "sell": 18.057,
+      "mid": 18.1232,
+      "marketMid": 18.1232,
+      "trend": "stable",
       "dayAgo": 18.1485,
-      "weekAgo": 18.01,
+      "weekAgo": 18.03,
       "twoWeeksAgo": 18.02,
       "oneMonthAgo": 18.83,
       "sixMonthsAgo": 22.50,
-      "note": "Jul 11: 1 USD ≈ 18.0586 ZMW (XE). Kwacha edged firmer from 18.1485 (Jul 9). Range-bound in 17.90–18.50 corridor."
+      "note": "Jul 16: 1 USD ≈ 18.1232 ZMW (mataf.net). BOZ Jul 13 mid at 18.0321. Kwacha softened slightly from Jul 13 firm levels but remains in strong 18.00–18.50 corridor."
     },
     "GBP": {
-      "mid": 24.1988,
-      "trend": "stable",
+      "mid": 24.42,
+      "trend": "weakening",
       "dayAgo": 24.1571,
       "weekAgo": 24.27,
       "oneMonthAgo": 25.50,
-      "note": "1 GBP ≈ 24.1988 ZMW (Jul 11 XE). Sterling marginally higher from 24.1571 (Jul 9). Kwacha broadly flat against GBP."
+      "note": "1 GBP ≈ 24.42 ZMW (Jul 16). Sterling firmer against kwacha. ZMW softer vs GBP vs last week."
     },
     "EUR": {
-      "mid": 20.6145,
-      "trend": "strengthening",
+      "mid": 20.73,
+      "trend": "weakening",
       "dayAgo": 20.7637,
       "weekAgo": 20.50,
       "oneMonthAgo": 22.40,
-      "note": "1 EUR ≈ 20.6145 ZMW (Jul 11 XE). Euro softer from 20.7637 (Jul 9). Kwacha continuing to gain ground."
+      "note": "1 EUR ≈ 20.73 ZMW (Jul 16). Euro recovered from 20.61 (Jul 11). ZMW slightly softer vs EUR."
     },
     "ZAR": {
-      "mid": 1.1060,
+      "mid": 1.10,
       "trend": "stable",
       "dayAgo": 1.1049,
       "weekAgo": 1.10,
       "oneMonthAgo": 1.18,
-      "note": "1 ZAR ≈ 1.1060 ZMW (Jul 11 XE). Rand stable near unchanged. 1 ZMW ≈ 0.904 ZAR."
+      "note": "1 ZAR ≈ 1.10 ZMW (Jul 16). Rand stable. Weekly range 1.09324–1.12081 (Wise). 1 ZMW ≈ 0.909 ZAR."
     },
     "BWP": {
       "mid": 1.283,
@@ -58,11 +57,11 @@
     }
   },
   "trendAnalysis": {
-    "direction": "Kwacha consolidating near best levels — mid-market at 18.0586 (Jul 11) vs 18.1485 (Jul 9). Kwacha holding firm across major crosses. Best levels since early 2025.",
-    "dayChange": -0.0899,
-    "twoWeekChange": 0.1285,
-    "oneMonthChange": -0.6815,
-    "sixMonthChange": -4.3515,
+    "direction": "Kwacha consolidating in 18.00–18.50 corridor. Mid-market at 18.12 (Jul 16) vs 18.03 BOZ (Jul 13). Kwacha slightly softer from Jul 13 best levels but remains strong vs pre-2026 levels.",
+    "dayChange": -0.074,
+    "twoWeekChange": 0.103,
+    "oneMonthChange": -0.707,
+    "sixMonthChange": -4.377,
     "ytdChange": -17.6,
     "drivers": [
       "Record copper output 890K tonnes (2025) — strong export earnings",
@@ -75,7 +74,7 @@
       "ERB cut fuel prices for July — lower import bill supporting kwacha",
       "Pre-election spending starting to add pressure on kwacha"
     ],
-    "outlook": "Kwacha consolidating in 18.00–18.50 range, with strong gains seen on Jul 9. BOZ likely to hold MPR at August review. Pre-election spending adding modest pressure. Fuel price cut provides offset.",
+    "outlook": "Kwacha consolidating in 18.00–18.50 range. Kwacha slightly softer on Jul 16 from Jul 13 BOZ fix of 18.03. Pre-election spending adding modest pressure. Fuel price cut provides offset.",
     "projection3m": "USD/ZMW 16.50–18.50 range. Elections expected to drive volatility.",
     "projection6m": "USD/ZMW 16.00–19.00 range. Post-election clarity determines direction."
   }
