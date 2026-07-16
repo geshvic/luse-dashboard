@@ -1,59 +1,67 @@
 {
   "asOf": "2026-07-16",
   "marketClose": {
-    "lasiIndex": 25890.95,
+    "lasiIndex": 25835.99,
     "lasiChange": 0,
     "lasiChangePct": 0,
-    "totalTrades": 599,
-    "totalVolume": 84007,
-    "totalValue": 499925.68,
-    "marketCapTotal": 334.71,
-    "marketCapExclShoprite": 143.92,
+    "totalTrades": 620,
+    "totalVolume": 162199,
+    "totalValue": 546196.46,
+    "marketCapTotal": 334.4,
+    "marketCapExclShoprite": 143.79,
     "marketCapUnit": "Billion ZMW",
-    "sessionSummary": "599 trades across 84,007 shares. Turnover K0.50M. LASI up 0% to 25,890.95. Breadth: 2 advancers, 3 decliners, 18 unchanged."
+    "sessionSummary": "620 trades across 162,199 shares. Turnover K0.55M. LASI up 0% to 25,835.99. Breadth: 0 advancers, 5 decliners, 18 unchanged."
   },
   "gainers": [
     {
-      "ticker": "SCBL",
-      "name": "SCBL",
-      "price": 1.29,
-      "change": 0.04,
-      "changePct": 3.2,
-      "volume": 398
-    },
-    {
-      "ticker": "ZNCO",
-      "name": "ZNCO",
-      "price": 9.54,
-      "change": 0.01,
-      "changePct": 0.1,
-      "volume": 2728
+      "ticker": "N/A",
+      "name": "No gainers",
+      "price": 0,
+      "change": 0,
+      "changePct": 0,
+      "volume": 0
     }
   ],
   "decliners": [
     {
       "ticker": "CECZ",
       "name": "CECZ",
-      "price": 16.5,
-      "change": -0.07,
-      "changePct": -0.42,
-      "volume": 7963
+      "price": 16.49,
+      "change": -0.01,
+      "changePct": -0.06,
+      "volume": 2932
     },
     {
       "ticker": "PUMA",
       "name": "PUMA",
-      "price": 2.87,
-      "change": -0.03,
-      "changePct": -1.03,
-      "volume": 767
+      "price": 2.8,
+      "change": -0.07,
+      "changePct": -2.44,
+      "volume": 1019
     },
     {
-      "ticker": "ZABR",
-      "name": "ZABR",
-      "price": 6.7,
-      "change": -0.08,
-      "changePct": -1.18,
-      "volume": 461
+      "ticker": "ZMBF",
+      "name": "ZMBF",
+      "price": 1.97,
+      "change": -0.01,
+      "changePct": -0.51,
+      "volume": 2597
+    },
+    {
+      "ticker": "REIZUSD",
+      "name": "REIZUSD",
+      "price": 0.09,
+      "change": -0.01,
+      "changePct": -10,
+      "volume": 131511
+    },
+    {
+      "ticker": "KLRE",
+      "name": "KLRE",
+      "price": 0.34,
+      "change": -0.01,
+      "changePct": -2.86,
+      "volume": 66974
     }
   ],
   "mostActiveByValue": [
@@ -61,83 +69,83 @@
       "ticker": "ZFCO",
       "name": "ZFCO",
       "price": 10.16,
-      "volume": 15454,
-      "value": 156966.22,
-      "trades": 25
-    },
-    {
-      "ticker": "CECZ",
-      "name": "CECZ",
-      "price": 16.5,
-      "volume": 7963,
-      "value": 131389.5,
-      "trades": 99
+      "volume": 11892,
+      "value": 120858.8,
+      "trades": 34
     },
     {
       "ticker": "ATEL",
       "name": "ATEL",
       "price": 185,
-      "volume": 340,
-      "value": 62843,
-      "trades": 28
+      "volume": 572,
+      "value": 105764,
+      "trades": 23
     },
     {
       "ticker": "ZNCO",
       "name": "ZNCO",
       "price": 9.54,
-      "volume": 2728,
-      "value": 26017.36,
-      "trades": 46
+      "volume": 10938,
+      "value": 104333.65,
+      "trades": 112
     },
     {
-      "ticker": "ZSUG",
-      "name": "ZSUG",
-      "price": 69.1,
-      "volume": 345,
-      "value": 23839.5,
-      "trades": 17
+      "ticker": "SCBL",
+      "name": "SCBL",
+      "price": 1.29,
+      "volume": 41392,
+      "value": 53395.68,
+      "trades": 51
+    },
+    {
+      "ticker": "CECZ",
+      "name": "CECZ",
+      "price": 16.49,
+      "volume": 2932,
+      "value": 48352.67,
+      "trades": 74
     }
   ],
   "mostActiveByVolume": [
     {
+      "ticker": "REIZUSD",
+      "name": "REIZUSD",
+      "price": 0.09,
+      "volume": 131511,
+      "value": 11844.49,
+      "trades": 11
+    },
+    {
       "ticker": "KLRE",
       "name": "KLRE",
-      "price": 0.35,
-      "volume": 29417,
-      "value": 10291.27,
-      "trades": 77
+      "price": 0.34,
+      "volume": 66974,
+      "value": 23072.42,
+      "trades": 101
+    },
+    {
+      "ticker": "SCBL",
+      "name": "SCBL",
+      "price": 1.29,
+      "volume": 41392,
+      "value": 53395.68,
+      "trades": 51
     },
     {
       "ticker": "ZFCO",
       "name": "ZFCO",
       "price": 10.16,
-      "volume": 15454,
-      "value": 156966.22,
-      "trades": 25
+      "volume": 11892,
+      "value": 120858.8,
+      "trades": 34
     },
     {
-      "ticker": "ZMBF",
-      "name": "ZMBF",
-      "price": 1.98,
-      "volume": 8451,
-      "value": 16727.56,
-      "trades": 78
-    },
-    {
-      "ticker": "CECZ",
-      "name": "CECZ",
-      "price": 16.5,
-      "volume": 7963,
-      "value": 131389.5,
-      "trades": 99
-    },
-    {
-      "ticker": "REIZUSD",
-      "name": "REIZUSD",
-      "price": 0.1,
-      "volume": 3153,
-      "value": 315.3,
-      "trades": 5
+      "ticker": "ZNCO",
+      "name": "ZNCO",
+      "price": 9.54,
+      "volume": 10938,
+      "value": 104333.65,
+      "trades": 112
     }
   ]
 }
