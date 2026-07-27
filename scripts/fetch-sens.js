@@ -104,8 +104,20 @@ async function scrapeCategory(browser, cat, maxPages = 1) {
         : `https://www.luse.co.zm/sens-category/${cat.slug}/page/${pageNum}/`;
       
       console.log(`  [${cat.name}] Page ${pageNum}...`);
-      await page.goto(url, { waitUntil: 'networkidle', timeout: 45000 });
-      await page.waitForTimeout(2000);
+      // luse.co.zm keeps connections open (analytics/fonts), so 'networkidle'
+      // often never fires. 'domcontentloaded' + settle time is far more reliable.
+      let loaded = false;
+      for (let attempt = 1; attempt <= 2 && !loaded; attempt++) {
+        try {
+          await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 60000 });
+          loaded = true;
+        } catch (navErr) {
+          console.log(`  ⚠️ Nav attempt ${attempt} failed: ${navErr.message.slice(0, 120)}`);
+          if (attempt === 2) throw navErr;
+          await page.waitForTimeout(3000);
+        }
+      }
+      await page.waitForTimeout(4000);
       
       const title = await page.title();
       if (title.includes('security') || title.includes('Just a moment')) {
