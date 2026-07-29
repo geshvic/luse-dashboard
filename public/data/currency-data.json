@@ -1,69 +1,70 @@
 {
-  "asOf": "2026-07-27",
+  "asOf": "2026-07-28",
   "source": "open.er-api.com (auto) + BOZ mid-rate (manual)",
-  "ratesLastUpdated": "2026-07-27 16:12 UTC",
+  "ratesLastUpdated": "2026-07-28 23:59 UTC",
   "baseNote": "Rates show ZMW per 1 unit of foreign currency. ↓ ZMW = Kwacha strengthening (appreciating).",
   "mpRate": 13.5,
   "mpRateNote": "Monetary Policy Rate held at 13.50% — reduced 75bps from 14.25% on Feb 11, 2026. BOZ held rate at May 2026 review. Next review: August 2026.",
   "rates": {
     "USD": {
-      "buy": 18.007,
-      "sell": 18.057,
-      "mid": 18.6654,
-      "marketMid": 18.1232,
+      "buy": 18.4368,
+      "sell": 18.4868,
+      "mid": 18.70,
+      "marketMid": 18.70,
+      "bozMid": 18.4618,
       "trend": "weakening",
-      "dayAgo": 18.1232,
+      "dayAgo": 18.6654,
       "weekAgo": 18.1485,
       "twoWeeksAgo": 18.02,
       "oneMonthAgo": 18.83,
       "sixMonthsAgo": 22.5,
-      "note": "1 USD ≈ 18.6654 ZMW — auto-updated 2026-07-27 (open.er-api.com). ↓ ZMW per USD = kwacha strengthening."
+      "note": "1 USD ≈ 18.70 ZMW — auto-updated 2026-07-28 (open.er-api.com). BOZ July 24 fix at 18.4618. ↓ ZMW per USD = kwacha strengthening."
     },
     "GBP": {
-      "mid": 24.8954,
+      "mid": 24.93,
       "trend": "weakening",
-      "dayAgo": 24.42,
+      "dayAgo": 24.8954,
       "weekAgo": 24.1571,
       "oneMonthAgo": 25.5,
-      "note": "1 GBP ≈ 24.8954 ZMW — auto-updated 2026-07-27 (open.er-api.com). ↓ ZMW per GBP = kwacha strengthening."
+      "note": "1 GBP ≈ 24.93 ZMW — auto-updated 2026-07-28 (open.er-api.com). ↓ ZMW per GBP = kwacha strengthening."
     },
     "EUR": {
-      "mid": 21.2427,
+      "mid": 21.30,
       "trend": "weakening",
-      "dayAgo": 20.73,
+      "dayAgo": 21.2427,
       "weekAgo": 20.7637,
       "oneMonthAgo": 22.4,
-      "note": "1 EUR ≈ 21.2427 ZMW — auto-updated 2026-07-27 (open.er-api.com). ↓ ZMW per EUR = kwacha strengthening."
+      "note": "1 EUR ≈ 21.30 ZMW — auto-updated 2026-07-28 (open.er-api.com). ↓ ZMW per EUR = kwacha strengthening."
     },
     "ZAR": {
-      "mid": 1.11,
+      "mid": 1.117,
       "trend": "weakening",
-      "dayAgo": 1.1,
+      "dayAgo": 1.11,
       "weekAgo": 1.1049,
       "oneMonthAgo": 1.18,
-      "note": "1 ZAR ≈ 1.11 ZMW — auto-updated 2026-07-27 (open.er-api.com). ↓ ZMW per ZAR = kwacha strengthening."
+      "note": "1 ZAR ≈ 1.117 ZMW — auto-updated 2026-07-28 (open.er-api.com). ↓ ZMW per ZAR = kwacha strengthening."
     },
     "BWP": {
-      "mid": 1.3507,
+      "mid": 1.304,
       "trend": "weakening",
       "weekAgo": 1.285,
-      "note": "1 BWP ≈ 1.3507 ZMW — auto-updated 2026-07-27 (open.er-api.com). ↓ ZMW per BWP = kwacha strengthening.",
-      "dayAgo": 1.283
+      "dayAgo": 1.3507,
+      "note": "1 BWP ≈ 1.304 ZMW — auto-updated 2026-07-28 (open.er-api.com). ↓ ZMW per BWP = kwacha strengthening."
     },
     "CNY": {
-      "mid": 2.7539,
+      "mid": 2.760,
       "trend": "weakening",
       "weekAgo": 2.64,
-      "note": "1 CNY ≈ 2.7539 ZMW — auto-updated 2026-07-27 (open.er-api.com). ↓ ZMW per CNY = kwacha strengthening.",
-      "dayAgo": 2.69
+      "dayAgo": 2.7539,
+      "note": "1 CNY ≈ 2.760 ZMW — auto-updated 2026-07-28 (open.er-api.com). ↓ ZMW per CNY = kwacha strengthening."
     }
   },
   "trendAnalysis": {
-    "direction": "USD/ZMW mid at 18.6654 (2.99% vs previous 18.1232). Rates auto-refreshed from open.er-api.com; BOZ mid-rate and MPR reviewed manually at each MPC meeting.",
-    "dayChange": 0.542,
-    "twoWeekChange": 0.645,
-    "oneMonthChange": -0.165,
-    "sixMonthChange": -3.835,
+    "direction": "USD/ZMW mid at 18.70 (+0.04 vs previous 18.6654). Kwacha marginally softer. BOZ indicative fix on July 24 was 18.4618. Market mid slightly above BOZ fix, reflecting mild demand pressure.",
+    "dayChange": 0.035,
+    "twoWeekChange": 0.68,
+    "oneMonthChange": -0.13,
+    "sixMonthChange": -3.80,
     "ytdChange": -17.6,
     "drivers": [
       "Record copper output 890K tonnes (2025) — strong export earnings",
@@ -74,10 +75,11 @@
       "Yuan mining tax corridor reducing USD demand",
       "Gross international reserves at historic high of US$6.5 billion",
       "ERB cut fuel prices for July — lower import bill supporting kwacha",
-      "Pre-election spending starting to add pressure on kwacha"
+      "Pre-election spending starting to add pressure on kwacha",
+      "Election on Aug 13, 2026 — uncertainty driving some USD demand"
     ],
-    "outlook": "Kwacha consolidating in 18.00–18.50 range. Kwacha slightly softer on Jul 16 from Jul 13 BOZ fix of 18.03. Pre-election spending adding modest pressure. Fuel price cut provides offset.",
-    "projection3m": "USD/ZMW 16.50–18.50 range. Elections expected to drive volatility.",
+    "outlook": "Kwacha consolidating in 18.40–18.80 range. BOZ fix at 18.46 vs market 18.70 suggests moderate demand pressure. Pre-election spending adding modest pressure. Fuel price cut provides offset.",
+    "projection3m": "USD/ZMW 16.50–18.80 range. Elections expected to drive volatility.",
     "projection6m": "USD/ZMW 16.00–19.00 range. Post-election clarity determines direction."
   }
 }
