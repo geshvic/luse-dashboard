@@ -13,11 +13,11 @@
   {
     "name": "Brent Crude",
     "symbol": "BRENT",
-    "price": 81.14,
+    "price": 83.65,
     "unit": "USD/bbl",
-    "change": -0.55,
-    "changePct": -0.67,
-    "zmwValue": 1437,
+    "change": 2.51,
+    "changePct": 3.09,
+    "zmwValue": 1481,
     "icon": "🛢️",
     "note": "Fuel & transport cost driver"
   },
