@@ -554,5 +554,25 @@
     "source": "liberianobserver.com",
     "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPY3pXbERmVWx0bzZqUU9iamFlUmFJZ2Q0RXMzMi1XWjhhSXJLSzRhOUtBb1RqOVRVVXZJWk4tWDlfU3dfX3FsQTBWVVBudHFRSGdoYVIwb0l4TTRVU25nQmpGdlBqN2xFb2FVS25Jc2dLaXZiX0RpU3g1a1FUazludy1NbmszVVdsMTR3YVZfN2prcndGdzJSRU9Oc2w0c0NxUHpQV1NqNlJyUmc1anUwdU5PQnBWUUlvUXZGdXN3?oc=5",
     "tickers": []
+  },
+  {
+    "date": "2026-07-31",
+    "category": "Macro",
+    "title": "Whether Mundubile or Hichilema wins elections, economic uncertainty awaits Zambia – Expert",
+    "summary": "Economic expert Salwindi Notulu says Zambia is likely to face a period of economic uncertainty after the August 2026 General Election regardless of whether President Hakainde Hichilema or Brian Mundubile wins, citing policy continuity and fiscal reform risks.",
+    "source": "Zambian Business Times",
+    "url": "https://zambianbusinesstimes.com/whether-mundubile-or-hichilema-wins-elections-economic-uncertainty-awaits-zambia-expert/",
+    "tickers": []
+  },
+  {
+    "date": "2026-07-30",
+    "category": "Market",
+    "title": "Mundubile promises to overhaul mining sector",
+    "summary": "Opposition leader Brian Mundubile has promised to overhaul Zambia's mining sector if elected in the August 13, 2026 general election, pledging policy changes aimed at boosting copper output and investment.",
+    "source": "Mast Media Zambia",
+    "url": "https://mastmediazm.com/2026/07/mundubile-promises-to-overhaul-mining-sector/",
+    "tickers": [
+      "ZCCM-IH"
+    ]
   }
 ]
