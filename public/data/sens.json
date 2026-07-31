@@ -1,5 +1,16 @@
 [
   {
+    "title": "ATEL – FURTHER CAUTIONARY ANNOUNCEMENT",
+    "date": "2026-07-30",
+    "category": "Cautionary Announcement",
+    "type": "Cautionary",
+    "tickers": [
+      "ATEL"
+    ],
+    "source": "LuSE SENS",
+    "url": "https://www.luse.co.zm/sens-category/cautionary-announcement/"
+  },
+  {
     "title": "RIGHTS ISSUE FINALISATION ANNOUNCEMENT",
     "date": "2026-07-17",
     "category": "General Announcements",
