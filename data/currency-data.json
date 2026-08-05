@@ -11,14 +11,14 @@
       "sell": 18.4868,
       "mid": 18.97,
       "marketMid": 18.9702,
-      "bozMid": 18.4618,
+      "bozMid": 18.9402,
       "trend": "weakening",
       "dayAgo": 18.8423,
       "weekAgo": 18.7,
       "twoWeeksAgo": 18.1485,
       "oneMonthAgo": 18.83,
       "sixMonthsAgo": 22.5,
-      "note": "1 USD = 18.9702 ZMW — auto-updated 2026-08-05 (open.er-api.com). BOZ July 24 fix at 18.4618. Kwacha softer into the Aug 13 election on USD hedging and importer demand."
+      "note": "1 USD = 18.9702 ZMW — auto-updated 2026-08-05 (open.er-api.com). BOZ Aug 05 fix at 18.9402 (buy 18.9152 / sell 18.9652). Kwacha softer into the Aug 13 election on USD hedging and importer demand."
     },
     "GBP": {
       "mid": 25.51,
@@ -60,7 +60,7 @@
     }
   },
   "trendAnalysis": {
-    "direction": "USD/ZMW mid at 18.97 (+0.13 vs 18.84 on Jul 31). Kwacha softer across the board into the Aug 13 election. BOZ indicative fix (Jul 24) at 18.4618 — market mid running ~2.8% above the fix, reflecting pre-election USD hedging and importer demand.",
+    "direction": "USD/ZMW mid at 18.97 (+0.13 vs 18.84 on Jul 31). Kwacha softer across the board into the Aug 13 election. BOZ indicative fix (Aug 05) at 18.9402 — market mid ~0.2% above the fix, reflecting modest pre-election USD hedging and importer demand.",
     "dayChange": 0.13,
     "twoWeekChange": 0.95,
     "oneMonthChange": 0.14,
