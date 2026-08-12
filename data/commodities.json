@@ -13,10 +13,10 @@
   {
     "name": "Brent Crude",
     "symbol": "BRENT",
-    "price": 82.83,
+    "price": 82.81,
     "unit": "USD/bbl",
-    "change": -0.05,
-    "changePct": -0.06,
+    "change": -0.02,
+    "changePct": -0.02,
     "zmwValue": 1467,
     "icon": "🛢️",
     "note": "Fuel & transport cost driver"
@@ -24,11 +24,11 @@
   {
     "name": "Gold",
     "symbol": "XAU",
-    "price": 4429.5,
+    "price": 4423.57,
     "unit": "USD/oz",
-    "change": 0.2,
-    "changePct": 0,
-    "zmwValue": 78446,
+    "change": -5.93,
+    "changePct": -0.13,
+    "zmwValue": 78341,
     "icon": "🥇",
     "note": "ZCCM-IH gold mining play"
   },
