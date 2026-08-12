@@ -552,5 +552,43 @@
     "source": "Zambian Business Times",
     "url": "https://zambianbusinesstimes.com/imports-reduce-by-8-billion-despite-the-kwacha-gaining-to-k18-per-us-dollar/",
     "tickers": []
+  },
+  {
+    "date": "2026-08-12",
+    "category": "Macro",
+    "title": "Zambia to vote as economic hardship tests government reforms - Al Jazeera",
+    "summary": "Zambia heads to the polls Aug 13 with voters weighing economic hardship against the government's reform record — debt restructuring, IMF programme completion and kwacha strength versus cost-of-living pressures. Election-eve framing of the key macro risks for markets.",
+    "source": "Al Jazeera",
+    "url": "https://www.aljazeera.com",
+    "tickers": []
+  },
+  {
+    "date": "2026-08-12",
+    "category": "Macro",
+    "title": "A guide to this week's election in Zambia, a southern African country rich in critical minerals - AP News",
+    "summary": "AP previews Zambia's Aug 13 general election — critical minerals (copper) economy, key candidates and what the vote means for mining policy, fiscal continuity and the successor IMF programme.",
+    "source": "AP News",
+    "url": "https://apnews.com",
+    "tickers": [
+      "ZCCM"
+    ]
+  },
+  {
+    "date": "2026-08-12",
+    "category": "Macro",
+    "title": "Amnesty International warns of rising authoritarian risk in Zambia ahead of elections - Jurist",
+    "summary": "Amnesty International flags rising authoritarian risk and concerns over civic space in Zambia ahead of the Aug 13 elections — a governance headline for investors to weigh alongside macro fundamentals.",
+    "source": "Jurist.org",
+    "url": "https://www.jurist.org",
+    "tickers": []
+  },
+  {
+    "date": "2026-08-12",
+    "category": "Commodities",
+    "title": "New Corridor Investments boost the Mining industry in Africa - The Tanzania Times",
+    "summary": "New corridor investments — including the Lobito and TAZARA-linked rail corridors — are boosting mining logistics in Africa, supporting Zambia's copper export ambitions and regional supply-chain integration.",
+    "source": "The Tanzania Times",
+    "url": "https://tanzaniatimes.net",
+    "tickers": []
   }
 ]
