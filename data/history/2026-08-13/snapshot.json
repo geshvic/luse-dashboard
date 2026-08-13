@@ -1,221 +1,127 @@
 {
   "asOf": "2026-08-13",
-  "marketCap": 333.59,
-  "marketCapBillion": true,
-  "lasiIndex": 26397.81,
-  "summary": {
-    "trades": 777,
-    "volume": 286547,
-    "value": 1553143.2,
-    "valueCurrency": "ZMW"
+  "marketClose": {
+    "lasiIndex": 26397.81,
+    "lasiChange": 69.36,
+    "lasiChangePct": 0.26,
+    "totalTrades": 777,
+    "totalVolume": 286547,
+    "totalValue": 1553143.2,
+    "marketCapTotal": 337.54,
+    "marketCapExclShoprite": 145.14,
+    "marketCapUnit": "Billion ZMW",
+    "sessionSummary": "777 trades across 286,547 shares. Turnover K1.55M. LASI up 0.26% to 26,397.81. Breadth: 1 advancer, 2 decliners, 20 unchanged."
   },
-  "stocks": [
+  "gainers": [
     {
-      "ticker": "AECI",
-      "name": "AECI",
-      "price": 115,
-      "change": null,
-      "trades": 218,
-      "volume": 2,
-      "value": 2
-    },
-    {
-      "ticker": "ATEL",
-      "name": "ATEL",
-      "price": 225,
-      "change": null,
-      "trades": 540,
-      "volume": 49,
-      "value": 2403
-    },
-    {
-      "ticker": "BATA",
-      "name": "BATA",
-      "price": 9.58,
-      "change": null,
-      "trades": 12,
-      "volume": 11,
-      "value": 1305
-    },
-    {
-      "ticker": "BATZ",
-      "name": "BATZ",
-      "price": 12.49,
-      "change": null,
-      "trades": 116,
-      "volume": 44,
-      "value": 9320
-    },
+      "ticker": "REIZUSD",
+      "name": "REIZUSD",
+      "price": 0.18,
+      "change": 0.03,
+      "changePct": 20,
+      "volume": 35
+    }
+  ],
+  "decliners": [
     {
       "ticker": "CECZ",
       "name": "CECZ",
       "price": 15.83,
       "change": -0.06,
-      "trades": 186,
-      "volume": 106,
-      "value": 11800
-    },
-    {
-      "ticker": "CHIL",
-      "name": "CHIL",
-      "price": 63.17,
-      "change": null,
-      "trades": 109,
-      "volume": 32,
-      "value": 1734
-    },
-    {
-      "ticker": "FARM",
-      "name": "FARM",
-      "price": 5.8,
-      "change": null,
-      "trades": null,
-      "volume": null,
-      "value": null
-    },
-    {
-      "ticker": "MAFS",
-      "name": "MAFS",
-      "price": 1.81,
-      "change": null,
-      "trades": 885,
-      "volume": 11,
-      "value": 489
-    },
-    {
-      "ticker": "NATB",
-      "name": "NATB",
-      "price": 2.85,
-      "change": null,
-      "trades": 515,
-      "volume": 11,
-      "value": 181
-    },
-    {
-      "ticker": "PUMA",
-      "name": "PUMA",
-      "price": 2.5,
-      "change": null,
-      "trades": 5,
-      "volume": 37,
-      "value": 2349
-    },
-    {
-      "ticker": "SCBL",
-      "name": "SCBL",
-      "price": 1.27,
-      "change": null,
-      "trades": 68,
-      "volume": 42,
-      "value": 53700
-    },
-    {
-      "ticker": "SHOP",
-      "name": "SHOP",
-      "price": 350,
-      "change": null,
-      "trades": 4,
-      "volume": 11,
-      "value": 14
-    },
-    {
-      "ticker": "ZABR",
-      "name": "ZABR",
-      "price": 6.7,
-      "change": null,
-      "trades": 5,
-      "volume": 18,
-      "value": 856
-    },
-    {
-      "ticker": "ZCCM-IH",
-      "name": "ZCCM-IH",
-      "price": 140,
-      "change": null,
-      "trades": 5,
-      "volume": 6,
-      "value": 38
+      "changePct": -0.38,
+      "volume": 106
     },
     {
       "ticker": "ZFCO",
       "name": "ZFCO",
       "price": 10.39,
       "change": -0.02,
-      "trades": 12,
-      "volume": 32,
-      "value": 1238
+      "changePct": -0.19,
+      "volume": 32
+    }
+  ],
+  "mostActiveByValue": [
+    {
+      "ticker": "KLRE",
+      "name": "KLRE",
+      "price": 0.36,
+      "volume": 117,
+      "value": 89270,
+      "trades": 32
     },
     {
       "ticker": "ZMBF",
       "name": "ZMBF",
       "price": 1.96,
-      "change": null,
-      "trades": 171,
       "volume": 61,
-      "value": 87692
+      "value": 87692,
+      "trades": 171
     },
     {
-      "ticker": "ZMFA",
-      "name": "ZMFA",
-      "price": 47.85,
-      "change": null,
-      "trades": 320,
-      "volume": 5,
-      "value": 8
-    },
-    {
-      "ticker": "ZMRE",
-      "name": "ZMRE",
-      "price": 2.72,
-      "change": null,
-      "trades": 312,
-      "volume": 2,
-      "value": 115
+      "ticker": "SCBL",
+      "name": "SCBL",
+      "price": 1.27,
+      "volume": 42,
+      "value": 53700,
+      "trades": 68
     },
     {
       "ticker": "ZNCO",
       "name": "ZNCO",
       "price": 9.51,
-      "change": null,
-      "trades": 166,
       "volume": 82,
-      "value": 17487
+      "value": 17487,
+      "trades": 166
     },
     {
-      "ticker": "ZSUG",
-      "name": "ZSUG",
-      "price": 70,
-      "change": null,
-      "trades": 103,
-      "volume": 20,
-      "value": 1479
-    },
-    {
-      "ticker": "REIZUSD",
-      "name": "REIZUSD",
-      "price": 0.18,
-      "change": 0.03,
-      "trades": 1,
-      "volume": 35,
-      "value": 10227
-    },
-    {
-      "ticker": "DCZM",
-      "name": "DCZM",
-      "price": 24.6,
-      "change": null,
-      "trades": 1,
-      "volume": 11,
-      "value": 43
-    },
+      "ticker": "CECZ",
+      "name": "CECZ",
+      "price": 15.83,
+      "volume": 106,
+      "value": 11800,
+      "trades": 186
+    }
+  ],
+  "mostActiveByVolume": [
     {
       "ticker": "KLRE",
       "name": "KLRE",
       "price": 0.36,
-      "change": null,
-      "trades": 32,
       "volume": 117,
-      "value": 89270
+      "value": 89270,
+      "trades": 32
+    },
+    {
+      "ticker": "CECZ",
+      "name": "CECZ",
+      "price": 15.83,
+      "volume": 106,
+      "value": 11800,
+      "trades": 186
+    },
+    {
+      "ticker": "ZNCO",
+      "name": "ZNCO",
+      "price": 9.51,
+      "volume": 82,
+      "value": 17487,
+      "trades": 166
+    },
+    {
+      "ticker": "ZMBF",
+      "name": "ZMBF",
+      "price": 1.96,
+      "volume": 61,
+      "value": 87692,
+      "trades": 171
+    },
+    {
+      "ticker": "ATEL",
+      "name": "ATEL",
+      "price": 225,
+      "volume": 49,
+      "value": 2403,
+      "trades": 540
     }
   ]
 }
