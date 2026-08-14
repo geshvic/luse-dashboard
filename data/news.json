@@ -559,5 +559,77 @@
     "source": "Reuters",
     "url": "https://www.ecofinagency.com/news/3010-49964-zambia-nears-completion-of-debt-restructuring-at-94-says-finance-minister",
     "tickers": []
+  },
+  {
+    "date": "2026-08-14",
+    "category": "Market",
+    "title": "LuSE Market Summary — 13 August 2026: LASI Index +0.26%",
+    "summary": "The Lusaka Securities Exchange rose on Thursday, 13 August 2026, with the LASI Index up +0.26% to 26,397.81. Election-day session saw the market advance on modest turnover.",
+    "source": "Mansa Markets",
+    "url": "https://www.mansamarkets.com/zambia/summary/2026-08-13",
+    "tickers": []
+  },
+  {
+    "date": "2026-08-14",
+    "category": "Corporate",
+    "title": "Zambia to develop 300MW coal-fired power plant as ZCCM-IH targets energy security",
+    "summary": "Zambia is moving forward with plans to develop a 300MW coal-fired thermal power plant in Sinazongwe District to strengthen electricity supply and reduce heavy reliance on hydropower.",
+    "source": "Copperbelt Katanga Mining",
+    "url": "https://copperbeltkatangamining.com/category/energy/",
+    "tickers": [
+      "ZCCM-IH",
+      "CECZ"
+    ]
+  },
+  {
+    "date": "2026-08-14",
+    "category": "Commodities",
+    "title": "Zambia's copper boom draws global investment as production ambitions rise",
+    "summary": "Copper sector momentum continues to attract international capital as Zambia targets higher production; DRC expansion and deeper China-India-Tanzania roles also feature.",
+    "source": "Copperbelt Katanga Mining",
+    "url": "https://copperbeltkatangamining.com/",
+    "tickers": [
+      "ZCCM-IH"
+    ]
+  },
+  {
+    "date": "2026-08-14",
+    "category": "Macro",
+    "title": "What Zambia's next government inherits in August 2026",
+    "summary": "Independent assessment of the economic position Zambia's next government inherits: debt restructured to 94% of perimeter, inflation at an eight-year low, record harvests — set against a primary surplus falling by two-thirds and no successor IMF programme.",
+    "source": "Zambian Economist",
+    "url": "https://zambianeconomist.com/what-the-next-government-inherits-zambia-economy-2026/",
+    "tickers": []
+  },
+  {
+    "date": "2026-08-14",
+    "category": "Macro",
+    "title": "Zambia's economy and the 2026 election stakes",
+    "summary": "The economy takes centre stage in the campaign ahead of the 13 August vote. Since 2021 Hichilema has presided over a fragile recovery from Zambia's 2020 sovereign default, helped by high copper prices and restructured debt.",
+    "source": "Kwacha News",
+    "url": "https://kwachanews.com/writing/zambia-economy-election-stakes-2026",
+    "tickers": []
+  },
+  {
+    "date": "2026-08-14",
+    "category": "Market",
+    "title": "Top 10 LuSE Zambia stocks to buy in 2026: Zanaco, CEC, ZCCM-IH & more",
+    "summary": "Mansa Markets ranks top LuSE picks for 2026, citing the copper boom, a firmer kwacha, bank profits and dividends. Updated August 2026.",
+    "source": "Mansa Markets",
+    "url": "https://www.mansamarkets.com/blog/top-10-luse-zambia-stocks-to-buy-2026",
+    "tickers": [
+      "ZCCM-IH",
+      "CECZ",
+      "ZANACO"
+    ]
+  },
+  {
+    "date": "2026-08-14",
+    "category": "Macro",
+    "title": "Zambia 2026 general election: strategic assessment & economic reform outlook",
+    "summary": "Strategic assessment of Zambia's August 2026 general election covering Hichilema re-election dynamics, debt restructuring impact scenarios, Copperbelt indicators and governance benchmarks.",
+    "source": "Africa Index",
+    "url": "https://africaindex.com/blog/zambia-2026-strategic-assessment",
+    "tickers": []
   }
 ]

@@ -1,70 +1,70 @@
 {
-  "asOf": "2026-08-13",
+  "asOf": "2026-08-14",
   "source": "open.er-api.com (auto) + BOZ mid-rate (manual)",
-  "ratesLastUpdated": "2026-08-13 00:02 UTC",
+  "ratesLastUpdated": "2026-08-14 00:02 UTC",
   "baseNote": "Rates show ZMW per 1 unit of foreign currency. ↓ ZMW = Kwacha strengthening (appreciating).",
   "mpRate": 13.5,
-  "mpRateNote": "Monetary Policy Rate held at 13.50% — reduced 75bps from 14.25% on Feb 11, 2026. BOZ held rate at May 2026 review. August 2026 review scheduled; no decision announced as of Aug 13.",
+  "mpRateNote": "Monetary Policy Rate held at 13.50% — reduced 75bps from 14.25% on Feb 11, 2026. BOZ held rate at May 2026 review. August 2026 review scheduled; no decision announced as of Aug 14.",
   "rates": {
     "USD": {
-      "buy": 18.7639,
-      "sell": 18.8139,
-      "mid": 18.7889,
-      "marketMid": 18.7889,
+      "buy": 18.7438,
+      "sell": 18.7938,
+      "mid": 18.7688,
+      "marketMid": 18.7688,
       "bozMid": 18.9402,
       "trend": "stable",
-      "dayAgo": 18.7189,
+      "dayAgo": 18.7889,
       "weekAgo": 18.9434,
       "twoWeeksAgo": 18.1485,
       "oneMonthAgo": 18.83,
       "sixMonthsAgo": 22.5,
-      "note": "1 USD = 18.7889 ZMW — auto-updated 2026-08-13 00:02 UTC (open.er-api.com). Kwacha ~0.4% softer than yesterday (18.7189) into election day, but still ~0.8% firmer than the Aug 08 level (18.94). Market mid continues to trade below the BOZ indicative fix of 18.9402 (Aug 05: buying 18.9152, selling 18.9652). Buy/sell derived from market mid ±0.025."
+      "note": "1 USD = 18.7688 ZMW — auto-updated 2026-08-14 00:02 UTC (open.er-api.com). Kwacha ~0.1% firmer than election-day close (18.7889 on Aug 13), extending the recovery vs the Aug 08 level (18.94). Market mid continues to trade below the BOZ indicative fix of 18.9402 (Aug 05: buying 18.9152, selling 18.9652). Buy/sell derived from market mid ±0.025."
     },
     "GBP": {
-      "mid": 25.4272,
+      "mid": 25.3318,
       "trend": "stable",
-      "dayAgo": 25.2838,
+      "dayAgo": 25.4272,
       "weekAgo": 25.54,
       "oneMonthAgo": 25.5,
-      "note": "1 GBP = 25.4272 ZMW — auto-updated 2026-08-13 (open.er-api.com). ~0.6% softer vs yesterday; kwacha ~0.4% firmer than a week ago."
+      "note": "1 GBP = 25.3318 ZMW — auto-updated 2026-08-14 (open.er-api.com). ~0.4% softer vs election day; kwacha ~0.8% firmer than a week ago."
     },
     "EUR": {
-      "mid": 21.717,
+      "mid": 21.6436,
       "trend": "stable",
-      "dayAgo": 21.6099,
+      "dayAgo": 21.717,
       "weekAgo": 21.89,
       "oneMonthAgo": 22.4,
-      "note": "1 EUR = 21.7170 ZMW — auto-updated 2026-08-13 (open.er-api.com). ~0.5% softer vs yesterday; kwacha ~0.8% firmer than a week ago. Consistent with exchange-rates.org snapshot (0.04610 EUR per ZMW ≈ 21.69)."
+      "note": "1 EUR = 21.6436 ZMW — auto-updated 2026-08-14 (open.er-api.com). ~0.3% softer vs election day; kwacha ~1.1% firmer than a week ago."
     },
     "ZAR": {
-      "mid": 1.16534,
+      "mid": 1.16264,
       "trend": "stable",
-      "dayAgo": 1.1567,
+      "dayAgo": 1.16534,
       "weekAgo": 1.168,
       "oneMonthAgo": 1.18,
-      "note": "1 ZAR = 1.1653 ZMW — auto-updated 2026-08-13 (open.er-api.com). ~0.7% softer vs yesterday; kwacha broadly steady vs rand over the past week."
+      "note": "1 ZAR = 1.1626 ZMW — auto-updated 2026-08-14 (open.er-api.com). ~0.2% softer vs election day; kwacha broadly steady vs rand over the past week."
     },
     "BWP": {
-      "mid": 1.36105,
+      "mid": 1.3496,
       "trend": "stable",
       "weekAgo": 1.357,
-      "dayAgo": 1.3304,
-      "note": "1 BWP ≈ 1.3611 ZMW — auto-updated 2026-08-13 (open.er-api.com). Reflects a slightly softer kwacha vs pula versus the prior day's reading."
+      "dayAgo": 1.36105,
+      "note": "1 BWP ≈ 1.3496 ZMW — auto-updated 2026-08-14 (open.er-api.com). Reflects a slightly firmer kwacha vs pula versus the prior day's reading."
     },
     "CNY": {
-      "mid": 2.78071,
+      "mid": 2.77765,
       "trend": "stable",
       "weekAgo": 2.802,
-      "dayAgo": 2.7696,
-      "note": "1 CNY ≈ 2.7807 ZMW — auto-updated 2026-08-13 (open.er-api.com). Kwacha ~0.8% firmer than a week ago vs the yuan."
+      "dayAgo": 2.78071,
+      "note": "1 CNY ≈ 2.7777 ZMW — auto-updated 2026-08-14 (open.er-api.com). Kwacha ~0.9% firmer than a week ago vs the yuan."
     }
   },
   "trendAnalysis": {
-    "direction": "USD/ZMW market mid at 18.7889 on election day (Aug 13), ~0.4% softer than yesterday (18.7189) but still below the BOZ indicative fix (18.9402, Aug 05). Modest pre-result hedging and position squaring into the vote; no disorderly move. Rates auto-refreshed from open.er-api.com (2026-08-13 00:02 UTC).",
-    "dayChange": 0.37,
-    "twoWeekChange": 3.53,
-    "oneMonthChange": -0.22,
-    "sixMonthChange": -16.49,
+    "direction": "USD/ZMW market mid at 18.7688 on the day after the Aug 13 general election, ~0.1% firmer than the election-day close (18.7889) and still comfortably below the BOZ indicative fix (18.9402, Aug 05). No post-election disorderly move; rates auto-refreshed from open.er-api.com (2026-08-14 00:02 UTC).",
+    "dayChange": -0.11,
+    "twoWeekChange": 3.42,
+    "oneMonthChange": -0.33,
+    "sixMonthChange": -16.58,
     "ytdChange": -17,
     "drivers": [
       "Record copper output ~890K tonnes (2025) — strong export earnings",
@@ -74,10 +74,10 @@
       "MPR at 13.5% — high real yields attracting carry trade inflows",
       "Yuan mining tax corridor reducing USD demand",
       "Gross international reserves at historic high of US$5.5 billion",
-      "Election on Aug 13, 2026 — pre-election hedging has normalised; light position squaring visible into results",
+      "Aug 13 general election concluded — market calm; policy-continuity expectations support the kwacha",
       "BoZ cut statutory reserve requirements (early Aug 2026) — supportive of bank liquidity"
     ],
-    "outlook": "Kwacha consolidating in an 18.40–19.20 range, trading just under the BOZ fix into the Aug 13 election. Results and post-election policy continuity are the key swing factors for the next 24–72 hours.",
+    "outlook": "Kwacha consolidating in an 18.40–19.20 range, trading below the BOZ fix. Election results and post-election policy continuity are the key swing factors for the next 24–72 hours.",
     "projection3m": "USD/ZMW 16.50–19.00 range. Elections expected to drive volatility.",
     "projection6m": "USD/ZMW 16.00–19.50 range. Post-election direction depends on fiscal continuity."
   }
