@@ -1,6 +1,69 @@
 [
   {
     "date": "2026-08-23",
+    "category": "Macro",
+    "title": "Zambia's Hakainde Hichilema wins re-election with 60% of vote, officials say",
+    "summary": "Hichilema has been re-elected with about 60% of the vote, officials say, extending his mandate after the Aug 13 general election. Policy-continuity expectations and post-election calm support the kwacha and LuSE sentiment.",
+    "source": "Yahoo/AP",
+    "url": "https://www.yahoo.com",
+    "tickers": []
+  },
+  {
+    "date": "2026-08-21",
+    "category": "Market",
+    "title": "What's driving performance at Africa's top 10 exchanges?",
+    "summary": "African Capital Markets News reviews 2026 performance drivers across Africa's top 10 bourses, including Lusaka, amid copper strength, firmer local currencies and election-driven flows.",
+    "source": "African Capital Markets News",
+    "url": "https://africancapitalmarketsnews.com",
+    "tickers": []
+  },
+  {
+    "date": "2026-08-21",
+    "category": "Macro",
+    "title": "Zambia's messy but decisive election: government shows strength; democracy shows weakness",
+    "summary": "Analysis of the Aug 2026 Zambian election: Hichilema's government retained power decisively, but the process was criticised over irregularities and a post-election crackdown, with reputational implications for foreign investment.",
+    "source": "The Conversation",
+    "url": "https://theconversation.com",
+    "tickers": []
+  },
+  {
+    "date": "2026-08-21",
+    "category": "Macro",
+    "title": "Zambia's Democratic Facade Fractures in Post-Election Crackdown",
+    "summary": "NYT reports on arrests and media restrictions after the Zambian election, raising governance concerns that could weigh on donor and investor sentiment despite market stability.",
+    "source": "The New York Times",
+    "url": "https://www.nytimes.com",
+    "tickers": []
+  },
+  {
+    "date": "2026-08-21",
+    "category": "Commodities",
+    "title": "DRC: Will the copper export ban finally deliver mineral sovereignty?",
+    "summary": "Africanews examines the DRC copper export ban debate — significant for regional copper markets and Zambian producers who compete with and supply the copper value chain.",
+    "source": "Africanews",
+    "url": "https://www.africanews.com",
+    "tickers": []
+  },
+  {
+    "date": "2026-08-20",
+    "category": "Macro",
+    "title": "Zambia's tainted election threatens its reputation",
+    "summary": "The Economist argues the flawed Aug 2026 election process threatens Zambia's hard-won reputation with creditors and investors, even as debt restructuring nears completion.",
+    "source": "The Economist",
+    "url": "https://www.economist.com",
+    "tickers": []
+  },
+  {
+    "date": "2026-08-20",
+    "category": "Macro",
+    "title": "EU raises alarm on election irregularities in Zambia, chief recipient of Global Gateway money",
+    "summary": "EUobserver: the EU flags irregularities in Zambia's election — a key recipient of Global Gateway funding — warning of implications for aid, investment and governance benchmarks.",
+    "source": "EUobserver",
+    "url": "https://euobserver.com",
+    "tickers": []
+  },
+  {
+    "date": "2026-08-23",
     "category": "Corporate",
     "title": "Main Home - Zambian Business Times",
     "summary": "This election fell far short of being free and fair - JCTR, NGOCC, TIZ, ADEG, FPI and 6 others Accounts given by Secretary to Cabinet & Police IG on Kafwaya's death have been inconsistent with one another - Civil Society Organisations (CSOs) Zambia 2",
