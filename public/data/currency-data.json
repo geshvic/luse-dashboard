@@ -1,7 +1,7 @@
 {
-  "asOf": "2026-08-23",
+  "asOf": "2026-08-24",
   "source": "open.er-api.com (auto) + BOZ mid-rate (manual)",
-  "ratesLastUpdated": "2026-08-23 00:02 UTC",
+  "ratesLastUpdated": "2026-08-24 16:52 UTC",
   "baseNote": "Rates show ZMW per 1 unit of foreign currency. ↓ ZMW = Kwacha strengthening (appreciating).",
   "mpRate": 13.5,
   "mpRateNote": "Monetary Policy Rate held at 13.50% — reduced 75bps from 14.25% on Feb 11, 2026. BOZ held rate at May 2026 review. August 2026 MPC decision not yet announced as of Aug 23.",
@@ -9,62 +9,62 @@
     "USD": {
       "buy": 18.6478,
       "sell": 18.6978,
-      "mid": 18.6728,
+      "mid": 18.7977,
       "marketMid": 18.6728,
       "bozMid": 18.9402,
-      "trend": "firming",
-      "dayAgo": 18.7688,
-      "weekAgo": 18.7889,
+      "trend": "weakening",
+      "dayAgo": 18.6728,
+      "weekAgo": 18.7688,
       "twoWeeksAgo": 18.9434,
       "oneMonthAgo": 18.83,
       "sixMonthsAgo": 22.5,
-      "note": "1 USD = 18.6728 ZMW — auto-updated 2026-08-23 00:02 UTC (open.er-api.com). Kwacha ~0.5% firmer than the Aug 14 close (18.7688) and ~0.6% firmer than election-day (18.7889, Aug 13). Market mid continues to trade well below the BOZ indicative fix of 18.9402 (Aug 05). Hichilema re-elected with ~60% of the vote (announced Aug 23) — policy continuity priced in; strong export earnings continue to support the kwacha. Buy/sell derived from market mid ±0.025."
+      "note": "1 USD ≈ 18.7977 ZMW — auto-updated 2026-08-24 (open.er-api.com). ↓ ZMW per USD = kwacha strengthening."
     },
     "GBP": {
-      "mid": 25.7772,
-      "trend": "softening",
-      "dayAgo": 25.3318,
-      "weekAgo": 25.4272,
+      "mid": 25.8038,
+      "trend": "stable",
+      "dayAgo": 25.7772,
+      "weekAgo": 25.3318,
       "oneMonthAgo": 25.5,
-      "note": "1 GBP = 25.7772 ZMW — auto-updated 2026-08-23 (open.er-api.com). Sterling ~1.8% firmer vs the kwacha versus the Aug 14 reading; the kwacha's gains vs USD have outpaced moves vs GBP this week."
+      "note": "1 GBP ≈ 25.8038 ZMW — auto-updated 2026-08-24 (open.er-api.com). ↓ ZMW per GBP = kwacha strengthening."
     },
     "EUR": {
-      "mid": 22.0926,
-      "trend": "softening",
-      "dayAgo": 21.6436,
-      "weekAgo": 21.717,
+      "mid": 22.1019,
+      "trend": "stable",
+      "dayAgo": 22.0926,
+      "weekAgo": 21.6436,
       "oneMonthAgo": 22.4,
-      "note": "1 EUR = 22.0926 ZMW — auto-updated 2026-08-23 (open.er-api.com). Euro ~2.1% firmer vs the kwacha versus the Aug 14 reading; the single currency has firmed on broad USD weakness."
+      "note": "1 EUR ≈ 22.1019 ZMW — auto-updated 2026-08-24 (open.er-api.com). ↓ ZMW per EUR = kwacha strengthening."
     },
     "ZAR": {
-      "mid": 1.1791,
-      "trend": "softening",
-      "dayAgo": 1.16264,
-      "weekAgo": 1.16534,
+      "mid": 1.1808,
+      "trend": "stable",
+      "dayAgo": 1.1791,
+      "weekAgo": 1.16264,
       "oneMonthAgo": 1.18,
-      "note": "1 ZAR = 1.1791 ZMW — auto-updated 2026-08-23 (open.er-api.com). Rand ~1.4% firmer vs the kwacha versus the Aug 14 reading; cross remains in its recent 1.15–1.20 range."
+      "note": "1 ZAR ≈ 1.1808 ZMW — auto-updated 2026-08-24 (open.er-api.com). ↓ ZMW per ZAR = kwacha strengthening."
     },
     "BWP": {
-      "mid": 1.388,
-      "trend": "stable",
-      "weekAgo": 1.36105,
-      "dayAgo": 1.3496,
-      "note": "1 BWP ≈ 1.388 ZMW — auto-updated 2026-08-23 (open.er-api.com). Pula slightly firmer versus the prior readings."
+      "mid": 1.4026,
+      "trend": "weakening",
+      "weekAgo": 1.3496,
+      "dayAgo": 1.388,
+      "note": "1 BWP ≈ 1.4026 ZMW — auto-updated 2026-08-24 (open.er-api.com). ↓ ZMW per BWP = kwacha strengthening."
     },
     "CNY": {
-      "mid": 2.7692,
-      "trend": "stable",
-      "weekAgo": 2.78071,
-      "dayAgo": 2.77765,
-      "note": "1 CNY ≈ 2.7692 ZMW — auto-updated 2026-08-23 (open.er-api.com). Kwacha roughly flat vs the yuan versus the prior readings."
+      "mid": 2.7935,
+      "trend": "weakening",
+      "weekAgo": 2.77765,
+      "dayAgo": 2.7692,
+      "note": "1 CNY ≈ 2.7935 ZMW — auto-updated 2026-08-24 (open.er-api.com). ↓ ZMW per CNY = kwacha strengthening."
     }
   },
   "trendAnalysis": {
-    "direction": "USD/ZMW market mid at 18.6728 on Aug 23, ~0.5% firmer than the Aug 14 close (18.7688) and ~0.6% firmer than the Aug 13 election-day level (18.7889). Hichilema re-elected with ~60% of the vote (announced Aug 23) — the biggest election overhang is resolved and policy continuity is priced in. The kwacha trades comfortably below the BOZ indicative fix (18.9402, Aug 05). Rates auto-refreshed from open.er-api.com (2026-08-23 00:02 UTC).",
-    "dayChange": -0.51,
-    "twoWeekChange": -1.43,
-    "oneMonthChange": -0.83,
-    "sixMonthChange": -17.01,
+    "direction": "USD/ZMW mid at 18.7977 (0.67% vs previous 18.6728). Rates auto-refreshed from open.er-api.com; BOZ mid-rate and MPR reviewed manually at each MPC meeting.",
+    "dayChange": 0.125,
+    "twoWeekChange": -0.146,
+    "oneMonthChange": -0.032,
+    "sixMonthChange": -3.702,
     "ytdChange": -17,
     "drivers": [
       "Record copper output ~890K tonnes (2025) — strong export earnings",

@@ -1,51 +1,6 @@
 [
   {
     "date": "2026-08-24",
-    "category": "Corporate",
-    "title": "Passing price variable to PayPal with custom button",
-    "summary": "10 thg 3, 2011 · I haven't dealt with paypal for a while now, but I believe the reason is because all hosted button's data (like price) are …",
-    "source": "Zambian Business Times",
-    "url": "kV�GG\u00073���7F\u00166��fW&f��r�6���\u0017VW7F���2�S#SSSs\u0012�\u0006\u001776��r�\u0007&�6R�f\u0017&�\u0016&�R�F��\u0006\u0017�\u0006\u0016��v�F��7W7F���'WGF�",
-    "tickers": []
-  },
-  {
-    "date": "2026-08-24",
-    "category": "Corporate",
-    "title": "paypal - Storing OAuth Token in Python Library - Stack Overflow",
-    "summary": "17 thg 3, 2019 · I have a Python service which imports a library that talks to the PayPal API. There is a config file that is passed into …",
-    "source": "Zambian Business Times",
-    "url": "kV�GG\u00073���7F\u00166��fW&f��r�6���\u0017VW7F���2�SS#\u0013#C�r�7F�&��r��\u0017WF��F��V�֖��\u0007�F����Ɩ'&\u0017'�",
-    "tickers": []
-  },
-  {
-    "date": "2026-08-24",
-    "category": "Corporate",
-    "title": "Is there a Social Security Number reserved for testing/examples?",
-    "summary": "22 thg 2, 2010 · Is there a canonical \"test SSN\" that is used by convention, so is understood by all who see it that it is not a real SSN?",
-    "source": "Zambian Business Times",
-    "url": "kV�GG\u00073���7F\u00166��fW&f��r�6���\u0017VW7F���2�#3\u00133s\u0003B��2�F�W&R�\u0012�6�6�\u0016��6V7W&�G���V�&W\"�&W6W'fVB�f�\"�FW7F��r�W�\u0016�\u0006�W",
-    "tickers": []
-  },
-  {
-    "date": "2026-08-24",
-    "category": "Corporate",
-    "title": "Why is paypal cancelling my transaction? - PayPal Community",
-    "summary": "I have tried to make a payment of £350 via paypal for ebay goods but paypal keeps cancelling the transaction. I am a verified status …",
-    "source": "Zambian Business Times",
-    "url": "kV�GG\u00073���wwr�\u0006\u0017�\u0006\u0016��6���V�G��6���CR�\u0017&6��fR�v��֗2�\u0006\u0017�\u0006\u0016��6\u0016�6V�Ɩ�r�ג�G&\u0016�6\u00167F����FB�\u0002�S3�P",
-    "tickers": []
-  },
-  {
-    "date": "2026-08-24",
-    "category": "Corporate",
-    "title": "Paying for multiple items (at once) via paypal - Stack Overflow",
-    "summary": "22 thg 7, 2010 · PayPal Add to Cart button helps you to accept payment for multiple items. The button HTML will like the following.",
-    "source": "Zambian Business Times",
-    "url": "kV�GG\u00073���7F\u00166��fW&f��r�6���\u0017VW7F���2�33\u0003�����\u0006\u0017���r�f�\"��V�F�\u0006�R֗FV�2�\u0017B���6R�f�\u0012�\u0006\u0017�\u0006\u0016�",
-    "tickers": []
-  },
-  {
-    "date": "2026-08-24",
     "category": "Market",
     "title": "CEC predicts good share price in 2026 - The Mast Newspaper",
     "summary": "CEC predicts good share price in 2026 By Mast Reporter THE Copperbelt Energy Corporation Plc says it expects its share price on the Lusaka Securities Exchange (LuSE) to remain high in view of continued efforts to scale up investments in the renewable",
@@ -555,5 +510,44 @@
     "source": "Mwebantu",
     "url": "https://www.mwebantu.com/imf-completion-of-zambias-ecf-programme-a-turning-point-for-economic-stability-and-growth/",
     "tickers": []
+  },
+  {
+    "date": "2026-08-24",
+    "category": "Macro",
+    "title": "Zambia's Bond Sale Draws Robust Demand After Hichilema Wins Vote",
+    "summary": "Bloomberg: Zambia's first post-election bond sale drew robust demand after Hichilema's re-election - a fresh sign of renewed international appetite for Zambian sovereign paper following debt restructuring.",
+    "source": "Bloomberg",
+    "url": "https://www.bloomberg.com",
+    "tickers": []
+  },
+  {
+    "date": "2026-08-24",
+    "category": "Macro",
+    "title": "Zambia Shutters Court as Deadline for Election Challenge Nears",
+    "summary": "Bloomberg: Zambia closed its courts on the final day for filing an election challenge, as the window to contest Hichilema's ~60% win expired.",
+    "source": "Bloomberg",
+    "url": "https://www.bloomberg.com",
+    "tickers": []
+  },
+  {
+    "date": "2026-08-24",
+    "category": "Commodities",
+    "title": "Zambia produced 447,181.93 tonnes of copper in the first half of 2026",
+    "summary": "Shanghai Metals Market confirms H1 2026 copper output of 447,181.93t (+0.45% y/y) - below the pace needed for the 2026 target of ~1M tonnes.",
+    "source": "Shanghai Metals Market",
+    "url": "https://www.metal.com",
+    "tickers": []
+  },
+  {
+    "date": "2026-08-24",
+    "category": "Market",
+    "title": "Zambia Commissions First 27 MWp Solar-Hydro Hybrid Power Plant",
+    "summary": "Zambia commissioned its first 27 MWp solar-hydro hybrid power plant, advancing energy-sector expansion supportive of CEC and the renewables pipeline.",
+    "source": "SolarQuarter",
+    "url": "https://solarquarter.com",
+    "tickers": [
+      "CECZ",
+      "ENRG"
+    ]
   }
 ]
