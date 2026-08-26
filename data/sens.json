@@ -1,5 +1,60 @@
 [
   {
+    "title": "REIZ- HY 2026 ABRIDGED FINANCIALS",
+    "date": "2026-08-24",
+    "category": "Financial Statements",
+    "type": "General",
+    "tickers": [
+      "REIZ"
+    ],
+    "source": "LuSE SENS",
+    "url": "https://www.luse.co.zm/sens-category/financial-statements/"
+  },
+  {
+    "title": "REIZ- HY 2026 TRADING STATEMENT",
+    "date": "2026-08-21",
+    "category": "General Announcements",
+    "type": "Earnings",
+    "tickers": [
+      "REIZ"
+    ],
+    "source": "LuSE SENS",
+    "url": "https://www.luse.co.zm/sens-category/general-announcements/"
+  },
+  {
+    "title": "ZCCM IH FY 2025 Abridged Audited Financial results",
+    "date": "2026-08-20",
+    "category": "Financial Statements",
+    "type": "Earnings",
+    "tickers": [
+      "ZCCM-IH"
+    ],
+    "source": "LuSE SENS",
+    "url": "https://www.luse.co.zm/sens-category/financial-statements/"
+  },
+  {
+    "title": "ZCCM IH TRADING STATEMENT",
+    "date": "2026-08-19",
+    "category": "General Announcements",
+    "type": "Earnings",
+    "tickers": [
+      "ZCCM-IH"
+    ],
+    "source": "LuSE SENS",
+    "url": "https://www.luse.co.zm/sens-category/general-announcements/"
+  },
+  {
+    "title": "ZCCM IH AGM NOTICE",
+    "date": "2026-08-19",
+    "category": "AGM/EGM",
+    "type": "AGM",
+    "tickers": [
+      "ZCCM-IH"
+    ],
+    "source": "LuSE SENS",
+    "url": "https://www.luse.co.zm/sens-category/annual-and-extraordinary-general-meeting/"
+  },
+  {
     "title": "ATEL – FURTHER CAUTIONARY ANNOUNCEMENT",
     "date": "2026-07-30",
     "category": "Cautionary Announcement",
