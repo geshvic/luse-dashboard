@@ -4,54 +4,54 @@
     "name": "AECI",
     "price": 115,
     "change": null,
-    "trades": 2,
-    "volume": 14,
-    "value": 1526
+    "trades": 7,
+    "volume": 24,
+    "value": 2616
   },
   {
     "ticker": "ATEL",
     "name": "ATEL",
-    "price": 224.84,
-    "change": null,
-    "trades": 34,
-    "volume": 433,
-    "value": 97197.54
+    "price": 224,
+    "change": -0.84,
+    "trades": 27,
+    "volume": 773,
+    "value": 173075.88
   },
   {
     "ticker": "BATA",
     "name": "BATA",
     "price": 9.51,
-    "change": -0.01,
-    "trades": 34,
-    "volume": 652,
-    "value": 6200.52
+    "change": null,
+    "trades": 24,
+    "volume": 809,
+    "value": 7684.92
   },
   {
     "ticker": "BATZ",
     "name": "BATZ",
-    "price": 12.64,
-    "change": null,
-    "trades": 25,
-    "volume": 4077,
-    "value": 51532.83
+    "price": 12.6,
+    "change": -0.04,
+    "trades": 12,
+    "volume": 273,
+    "value": 3439.8
   },
   {
     "ticker": "CECZ",
     "name": "CECZ",
-    "price": 15.59,
-    "change": -0.06,
+    "price": 15.47,
+    "change": -0.12,
     "trades": 125,
-    "volume": 70232,
-    "value": 1098683.2
+    "volume": 15329,
+    "value": 237238.68
   },
   {
     "ticker": "CHIL",
     "name": "CHIL",
-    "price": 63.16,
+    "price": 63.15,
     "change": -0.01,
-    "trades": 36,
-    "volume": 651,
-    "value": 41114.8
+    "trades": 38,
+    "volume": 638,
+    "value": 40270.28
   },
   {
     "ticker": "FARM",
@@ -67,143 +67,143 @@
     "name": "MAFS",
     "price": 1.81,
     "change": null,
-    "trades": 3,
-    "volume": 190,
-    "value": 343.9
+    "trades": null,
+    "volume": null,
+    "value": null
   },
   {
     "ticker": "NATB",
     "name": "NATB",
     "price": 2.85,
     "change": null,
-    "trades": 13,
-    "volume": 500,
-    "value": 1425
+    "trades": 10,
+    "volume": 254,
+    "value": 723.9
   },
   {
     "ticker": "PUMA",
     "name": "PUMA",
     "price": 2.45,
-    "change": -0.05,
-    "trades": 41,
-    "volume": 2569,
-    "value": 6266.8
+    "change": null,
+    "trades": 29,
+    "volume": 14732,
+    "value": 36077.7
   },
   {
     "ticker": "SCBL",
     "name": "SCBL",
-    "price": 0.14,
-    "change": -0.01,
+    "price": 1.25,
+    "change": null,
     "trades": 30,
-    "volume": 8250,
-    "value": 1158.83
+    "volume": 3616,
+    "value": 4510.54
   },
   {
     "ticker": "SHOP",
     "name": "SHOP",
-    "price": 1.25,
-    "change": null,
-    "trades": 31,
-    "volume": 1323,
-    "value": 1653.24
-  },
-  {
-    "ticker": "ZABR",
-    "name": "ZABR",
     "price": 350,
-    "change": null,
-    "trades": 12,
-    "volume": 13264,
-    "value": 4642400
-  },
-  {
-    "ticker": "ZCCM-IH",
-    "name": "ZCCM-IH",
-    "price": 6.7,
-    "change": null,
-    "trades": 16,
-    "volume": 1179,
-    "value": 7899.3
-  },
-  {
-    "ticker": "ZFCO",
-    "name": "ZFCO",
-    "price": 150,
-    "change": null,
-    "trades": 20,
-    "volume": 350,
-    "value": 52453.92
-  },
-  {
-    "ticker": "ZMBF",
-    "name": "ZMBF",
-    "price": 10,
-    "change": null,
-    "trades": 35,
-    "volume": 682,
-    "value": 6842.8
-  },
-  {
-    "ticker": "ZMFA",
-    "name": "ZMFA",
-    "price": 1.97,
-    "change": null,
-    "trades": 84,
-    "volume": 13018,
-    "value": 25644.64
-  },
-  {
-    "ticker": "ZMRE",
-    "name": "ZMRE",
-    "price": 40,
-    "change": -7.85,
-    "trades": 8,
-    "volume": 219,
-    "value": 9274.25
-  },
-  {
-    "ticker": "ZNCO",
-    "name": "ZNCO",
-    "price": 2.72,
     "change": null,
     "trades": null,
     "volume": null,
     "value": null
   },
   {
-    "ticker": "ZSUG",
-    "name": "ZSUG",
+    "ticker": "ZABR",
+    "name": "ZABR",
+    "price": 6.7,
+    "change": null,
+    "trades": 11,
+    "volume": 236,
+    "value": 1581.2
+  },
+  {
+    "ticker": "ZCCM-IH",
+    "name": "ZCCM-IH",
+    "price": 150,
+    "change": null,
+    "trades": 12,
+    "volume": 191,
+    "value": 28459
+  },
+  {
+    "ticker": "ZFCO",
+    "name": "ZFCO",
+    "price": 10.24,
+    "change": 0.24,
+    "trades": 32,
+    "volume": 833,
+    "value": 8418.4
+  },
+  {
+    "ticker": "ZMBF",
+    "name": "ZMBF",
+    "price": 1.97,
+    "change": null,
+    "trades": 103,
+    "volume": 40258,
+    "value": 79168.32
+  },
+  {
+    "ticker": "ZMFA",
+    "name": "ZMFA",
+    "price": 40,
+    "change": null,
+    "trades": 16,
+    "volume": 711,
+    "value": 28350
+  },
+  {
+    "ticker": "ZMRE",
+    "name": "ZMRE",
+    "price": 2.72,
+    "change": null,
+    "trades": 10,
+    "volume": 495,
+    "value": 1346.4
+  },
+  {
+    "ticker": "ZNCO",
+    "name": "ZNCO",
     "price": 9.49,
     "change": null,
-    "trades": 117,
-    "volume": 10774,
-    "value": 102208.36
+    "trades": 92,
+    "volume": 5887,
+    "value": 55839.94
+  },
+  {
+    "ticker": "ZSUG",
+    "name": "ZSUG",
+    "price": 70,
+    "change": null,
+    "trades": 22,
+    "volume": 542,
+    "value": 37938
   },
   {
     "ticker": "REIZUSD",
     "name": "REIZUSD",
-    "price": 70,
+    "price": 0.14,
     "change": null,
     "trades": 21,
-    "volume": 298,
-    "value": 20855.65
+    "volume": 4029,
+    "value": 564.06
   },
   {
     "ticker": "DCZM",
     "name": "DCZM",
     "price": 24.6,
     "change": null,
-    "trades": 11,
-    "volume": 151,
-    "value": 3714.6
+    "trades": 16,
+    "volume": 217,
+    "value": 5334.1
   },
   {
     "ticker": "KLRE",
     "name": "KLRE",
     "price": 0.36,
     "change": null,
-    "trades": 87,
-    "volume": 44715,
-    "value": 16097.4
+    "trades": 132,
+    "volume": 37792,
+    "value": 13562.12
   }
 ]
