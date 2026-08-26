@@ -3,8 +3,8 @@
   "source": "open.er-api.com (auto) + BOZ mid-rate (manual)",
   "ratesLastUpdated": "2026-08-26 01:59 UTC",
   "baseNote": "Rates show ZMW per 1 unit of foreign currency. ↓ ZMW = Kwacha strengthening (appreciating).",
-  "mpRate": 13.5,
-  "mpRateNote": "Monetary Policy Rate held at 13.50% — reduced 75bps from 14.25% on Feb 11, 2026. BOZ held rate at May 2026 review. August 2026 MPC decision not yet announced as of Aug 23.",
+  "mpRate": 13.25,
+  "mpRateNote": "Monetary Policy Rate at 13.25% — cut 25bps from 13.50% at the May 2026 MPC meeting (lowest since mid-2024), following the 75bps reduction from 14.25% on Feb 11, 2026. Next MPC decision due 26 August 2026 (per BOZ quarterly calendar).",
   "rates": {
     "USD": {
       "buy": 18.6478,
@@ -71,13 +71,13 @@
       "Record maize harvest >4M tonnes — reduced food import needs",
       "Debt restructuring ~94% complete — sovereign risk premium collapsing",
       "IMF ECF programme completed (final US$190M disbursement) — successor programme talks next",
-      "MPR at 13.5% — high real yields attracting carry trade inflows",
+      "MPR at 13.25% (May 2026 cut, lowest since mid-2024) — attractive real yields still support carry inflows; next MPC decision due Aug 26",
       "Yuan mining tax corridor reducing USD demand",
       "Gross international reserves at historic high of US$5.5 billion",
       "Aug 13 general election concluded — Hichilema re-elected with ~60% (announced Aug 23); policy-continuity expectations support the kwacha",
       "BoZ cut statutory reserve requirements (early Aug 2026) — supportive of bank liquidity"
     ],
-    "outlook": "Kwacha consolidating in an 18.40–19.20 range, trading below the BOZ fix. With the re-election confirmed (Hichilema, ~60%), focus shifts to the August MPC decision and the make-up of the new economic team for the next leg of the currency.",
+    "outlook": "Kwacha consolidating in an 18.40–19.20 range, trading just below the BOZ fix. With re-election confirmed (Hichilema, ~60%) and strong post-election bond demand, focus shifts to the 26 August 2026 MPC decision (rate seen on hold at 13.25%) and the make-up of the new economic team for the next leg of the currency.",
     "projection3m": "USD/ZMW 16.50–19.00 range. Elections expected to drive volatility.",
     "projection6m": "USD/ZMW 16.00–19.50 range. Post-election direction depends on fiscal continuity."
   }

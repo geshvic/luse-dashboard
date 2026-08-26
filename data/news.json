@@ -1,6 +1,35 @@
 [
   {
     "date": "2026-08-25",
+    "category": "Commodities",
+    "title": "Kwacha slips as copper squeeze eases",
+    "summary": "The kwacha weakened slightly against the USD on Wednesday as hard-currency demand outpaced supply while signs of easing physical tightness weighed on the copper market (Bloomberg via Zambia Monitor) — consistent with USD/ZMW drifting toward the 19.0 area.",
+    "source": "Bloomberg / Zambia Monitor",
+    "url": "https://www.zambiamonitor.com/kwacha-slips-as-copper-squeeze-eases/",
+    "tickers": []
+  },
+  {
+    "date": "2026-08-25",
+    "category": "Macro",
+    "title": "Bank of Zambia MPR at 13.25% — next MPC decision due 26 August 2026",
+    "summary": "The Bank of Zambia cut its Monetary Policy Rate by 25bps to 13.25% at the May 2026 MPC meeting — the lowest since mid-2024 — following the 75bps cut in February. The next MPC decision is scheduled for 26 August 2026; markets expect a hold as inflation eases toward the 6–8% band.",
+    "source": "Trading Economics / Central Bank of Africa News",
+    "url": "https://tradingeconomics.com/zambia/interest-rate",
+    "tickers": []
+  },
+  {
+    "date": "2026-08-25",
+    "category": "Corporate",
+    "title": "ZCCM-IH partners Wonderful Group on US$452M Sinazongwe coal plant (600 MW)",
+    "summary": "ZCCM-IH will take a 30% equity stake (US$54.2M) in Ever Great Energy Company Limited, the SPV controlled by Chinese-owned Wonderful Group Services, to develop a two-phase 600 MW coal-fired power station (~US$452M) at Sinazongwe — easing Zambia's electricity deficit and reducing pressure on drought-affected hydropower (Kariba).",
+    "source": "Construction Review Online",
+    "url": "https://constructionreviewonline.com/452m-sinazongwe-coal-plant-project-zambia-chinese-joint-venture-boosts-power-grid-with-600-mw/",
+    "tickers": [
+      "ZCCM"
+    ]
+  },
+  {
+    "date": "2026-08-25",
     "category": "Corporate",
     "title": "GDP expands by 7.7% in Q1of 2026 - Zambian Business Times",
     "summary": "GDP expands by 7.7% in Q1of 2026 According to official government data, Zambia's Gross Domestic Product (GDP) grew by 7.7% in the first quarter of 2026, up from 4.5% recorded during the same period in 2025, representing an acceleration of 3.2 percent",
