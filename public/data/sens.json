@@ -1,5 +1,27 @@
 [
   {
+    "title": "ZFCO – EXTENSION OF RIGHTS ISSUE PERIOD ANNOUNCEMENT",
+    "date": "2026-08-26",
+    "category": "General Announcements",
+    "type": "General",
+    "tickers": [
+      "ZFCO"
+    ],
+    "source": "LuSE SENS",
+    "url": "https://www.luse.co.zm/sens-category/general-announcements/"
+  },
+  {
+    "title": "REIZ- INTERIM DIVIDEND",
+    "date": "2026-08-24",
+    "category": "Dividends",
+    "type": "Dividends",
+    "tickers": [
+      "REIZ"
+    ],
+    "source": "LuSE SENS",
+    "url": "https://www.luse.co.zm/sens-category/dividends/"
+  },
+  {
     "title": "REIZ- HY 2026 ABRIDGED FINANCIALS",
     "date": "2026-08-24",
     "category": "Financial Statements",
