@@ -346,51 +346,6 @@
     "tickers": []
   },
   {
-    "date": "2026-08-27",
-    "category": "Market",
-    "title": "Passez au meilleur de la tech reconditionnée. | Back Market",
-    "summary": "Profitez d'articles reconditionnés sur Back Market, moins cher que le neuf ! Livraison standard offerte - Garantie contractuelle de 12 …",
-    "source": "LuSE Official",
-    "url": "kV�GG\u00073���wwr�&\u00166��\u0017&�WB�g\"�g\"�g#��6�6��C�\u0003S\u00063\u0006\u0013�\u0013S&c\u0003fcF3\u00133�\u0013\u0016CS�S3VcfV\u0013",
-    "tickers": []
-  },
-  {
-    "date": "2026-08-27",
-    "category": "Market",
-    "title": "Dommarket",
-    "summary": "En commandant sur Dommarket, vous faites l'acquisition d'un ou plusieurs produits et de leur acheminement jusqu'au point de retrait …",
-    "source": "LuSE Official",
-    "url": "kV�GG\u00073���F���\u0017&�WB�g\"",
-    "tickers": []
-  },
-  {
-    "date": "2026-08-27",
-    "category": "Market",
-    "title": "Marketplace",
-    "summary": "Buy or sell new and used items easily on Facebook Marketplace, locally or from businesses. Find great deals on new items shipped …",
-    "source": "LuSE Official",
-    "url": "kV�GG\u00073���wwr�f\u00166V&����6����\u0017&�WG\u0006�\u00166R�",
-    "tickers": []
-  },
-  {
-    "date": "2026-08-27",
-    "category": "Market",
-    "title": "Stock Market Prices, Real-time Quotes & Business News - Google",
-    "summary": "Google Finance provides real-time market quotes, international stock information, financial news, currency conversion rates, and …",
-    "source": "LuSE Official",
-    "url": "kV�GG\u00073���wwr�v��v�R�6���f��\u0016�6R�",
-    "tickers": []
-  },
-  {
-    "date": "2026-08-27",
-    "category": "Market",
-    "title": "Yahoo Finance - Stock Market Live, Quotes, Business & Finance News",
-    "summary": "At Yahoo Finance, you get free stock quotes, up-to-date news, portfolio management resources, international market data, social …",
-    "source": "LuSE Official",
-    "url": "kV�GG\u00073���f��\u0016�6R�\u0016����6��",
-    "tickers": []
-  },
-  {
     "date": "2026-08-25",
     "category": "Macro",
     "title": "Bank of Zambia MPR at 13.25% — next MPC decision due 26 August 2026",
@@ -556,6 +511,42 @@
     "summary": "The Board of Directors of Lusaka Securities Exchange Plc (\"LuSE\") wishes to announce the retirement of Dr. Raphael Kasonde as a Director and Chairperson of the Board, with effect from 1 st July 2026.",
     "source": "LuSE Official",
     "url": "https://www.luse.co.zm/wp-content/uploads/2026/07/Market-Announcement.pdf",
+    "tickers": []
+  },
+  {
+    "date": "2026-08-21",
+    "category": "Commodities",
+    "title": "Kwacha extends losses for third consecutive session",
+    "summary": "The Zambian kwacha extended its decline against the US dollar for a third consecutive session on Friday as increased demand for hard currency outpaced available supply, extending the post-election drift in the local unit.",
+    "source": "Zambia Monitor",
+    "url": "https://www.zambiamonitor.com/kwacha-extends-losses-for-third-consecutive-session/",
+    "tickers": []
+  },
+  {
+    "date": "2026-08-21",
+    "category": "Macro",
+    "title": "Post-election reviews reportedly show stable investor confidence, as Zambia bonds attract more attention",
+    "summary": "Zambia's government bonds are reportedly becoming more attractive to investors as shown in post-election reviews, with expectations of continued fiscal consolidation and political stability underpinning demand.",
+    "source": "Zambia Monitor",
+    "url": "https://www.zambiamonitor.com/post-election-reviews-reportedly-show-stable-investor-confidence-as-zambia-bonds-attract-more-attention/",
+    "tickers": []
+  },
+  {
+    "date": "2026-08-19",
+    "category": "Macro",
+    "title": "Group urges policy consistency after Hichilema re-election",
+    "summary": "The Zambia Chamber of Commerce and Industry (ZACCI) has called for policy consistency, predictability and stronger public-private sector collaboration as Zambia enters a new term following President Hichilema's re-election.",
+    "source": "Zambia Monitor",
+    "url": "https://www.zambiamonitor.com/group-urges-policy-consistency-after-hichilema-re-election/",
+    "tickers": []
+  },
+  {
+    "date": "2026-08-18",
+    "category": "Commodities",
+    "title": "Zambia's mainstay, copper, surges as supply tightens",
+    "summary": "Copper prices have gained more than 13 percent this year as a short-term supply squeeze on the London Metal Exchange (LME) continues to tighten, supporting Zambia's key export earnings and the kwacha.",
+    "source": "Zambia Monitor",
+    "url": "https://www.zambiamonitor.com/zambias-mainstay-copper-surges-as-supply-tightens/",
     "tickers": []
   }
 ]

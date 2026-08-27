@@ -1,83 +1,83 @@
 {
-  "asOf": "2026-08-26",
+  "asOf": "2026-08-27",
   "source": "open.er-api.com (auto) + BOZ mid-rate (manual)",
-  "ratesLastUpdated": "2026-08-26 01:59 UTC",
+  "ratesLastUpdated": "2026-08-27 00:02 UTC",
   "baseNote": "Rates show ZMW per 1 unit of foreign currency. ↓ ZMW = Kwacha strengthening (appreciating).",
   "mpRate": 13.25,
-  "mpRateNote": "Monetary Policy Rate at 13.25% — cut 25bps from 13.50% at the May 2026 MPC meeting (lowest since mid-2024), following the 75bps reduction from 14.25% on Feb 11, 2026. Next MPC decision due 26 August 2026 (per BOZ quarterly calendar).",
+  "mpRateNote": "Monetary Policy Rate at 13.25% — held at the August 2026 MPC (decision 26 Aug 2026), lowest since mid-2024. Prior cuts: 25bps from 13.50% at the May 2026 MPC, and 75bps from 14.25% on Feb 11, 2026. Next MPC decision due November 2026 (per BOZ quarterly calendar).",
   "rates": {
     "USD": {
-      "buy": 18.6478,
-      "sell": 18.6978,
-      "mid": 19.0197,
-      "marketMid": 18.6728,
-      "bozMid": 18.9402,
+      "buy": 19.0129,
+      "sell": 19.0629,
+      "mid": 19.0796,
+      "marketMid": 19.0796,
+      "bozMid": 19.0379,
       "trend": "weakening",
-      "dayAgo": 18.7977,
-      "weekAgo": 18.6728,
-      "twoWeeksAgo": 18.9434,
+      "dayAgo": 19.0197,
+      "weekAgo": 18.7977,
+      "twoWeeksAgo": 18.6728,
       "oneMonthAgo": 18.83,
       "sixMonthsAgo": 22.5,
-      "note": "1 USD ≈ 19.0197 ZMW — auto-updated 2026-08-26 (open.er-api.com). ↓ ZMW per USD = kwacha strengthening."
+      "note": "1 USD ≈ 19.0796 ZMW — auto-updated 2026-08-27 (open.er-api.com). BOZ fix (25 Aug): mid 19.0379 (buy 19.0129 / sell 19.0629). ↑ ZMW per USD = kwacha weakening."
     },
     "GBP": {
-      "mid": 25.9585,
+      "mid": 25.931,
       "trend": "weakening",
       "dayAgo": 25.8038,
       "weekAgo": 25.7772,
       "oneMonthAgo": 25.5,
-      "note": "1 GBP ≈ 25.9585 ZMW — auto-updated 2026-08-26 (open.er-api.com). ↓ ZMW per GBP = kwacha strengthening."
+      "note": "1 GBP ≈ 25.9310 ZMW — auto-updated 2026-08-27 (open.er-api.com). ↑ ZMW per GBP = kwacha weakening."
     },
     "EUR": {
-      "mid": 22.2094,
+      "mid": 22.1995,
       "trend": "weakening",
       "dayAgo": 22.1019,
       "weekAgo": 22.0926,
       "oneMonthAgo": 22.4,
-      "note": "1 EUR ≈ 22.2094 ZMW — auto-updated 2026-08-26 (open.er-api.com). ↓ ZMW per EUR = kwacha strengthening."
+      "note": "1 EUR ≈ 22.1995 ZMW — auto-updated 2026-08-27 (open.er-api.com). ↑ ZMW per EUR = kwacha weakening."
     },
     "ZAR": {
-      "mid": 1.1902,
+      "mid": 1.1943,
       "trend": "weakening",
       "dayAgo": 1.1808,
       "weekAgo": 1.1791,
       "oneMonthAgo": 1.18,
-      "note": "1 ZAR ≈ 1.1902 ZMW — auto-updated 2026-08-26 (open.er-api.com). ↓ ZMW per ZAR = kwacha strengthening."
+      "note": "1 ZAR ≈ 1.1943 ZMW — auto-updated 2026-08-27 (open.er-api.com). ↑ ZMW per ZAR = kwacha weakening."
     },
     "BWP": {
-      "mid": 1.3714,
+      "mid": 1.3957,
       "trend": "strengthening",
       "weekAgo": 1.388,
       "dayAgo": 1.4026,
-      "note": "1 BWP ≈ 1.3714 ZMW — auto-updated 2026-08-26 (open.er-api.com). ↓ ZMW per BWP = kwacha strengthening."
+      "note": "1 BWP ≈ 1.3957 ZMW — auto-updated 2026-08-27 (open.er-api.com). ↓ ZMW per BWP = kwacha strengthening."
     },
     "CNY": {
-      "mid": 2.8232,
+      "mid": 2.8317,
       "trend": "weakening",
       "weekAgo": 2.7692,
       "dayAgo": 2.7935,
-      "note": "1 CNY ≈ 2.8232 ZMW — auto-updated 2026-08-26 (open.er-api.com). ↓ ZMW per CNY = kwacha strengthening."
+      "note": "1 CNY ≈ 2.8317 ZMW — auto-updated 2026-08-27 (open.er-api.com). ↑ ZMW per CNY = kwacha weakening."
     }
   },
   "trendAnalysis": {
-    "direction": "USD/ZMW mid at 19.0197 (1.18% vs previous 18.7977). Rates auto-refreshed from open.er-api.com; BOZ mid-rate and MPR reviewed manually at each MPC meeting.",
-    "dayChange": 0.222,
-    "twoWeekChange": 0.076,
-    "oneMonthChange": 0.19,
-    "sixMonthChange": -3.48,
+    "direction": "USD/ZMW mid at 19.0796 (+0.3% vs 19.0197 prior). Rates auto-refreshed from open.er-api.com (2026-08-27); BOZ mid-rate 19.0379 (25 Aug fix) and MPR reviewed manually.",
+    "dayChange": 0.06,
+    "twoWeekChange": 0.41,
+    "oneMonthChange": 0.25,
+    "sixMonthChange": -3.42,
     "ytdChange": -17,
     "drivers": [
       "Record copper output ~890K tonnes (2025) — strong export earnings",
       "Record maize harvest >4M tonnes — reduced food import needs",
       "Debt restructuring ~94% complete — sovereign risk premium collapsing",
       "IMF ECF programme completed (final US$190M disbursement) — successor programme talks next",
-      "MPR at 13.25% (May 2026 cut, lowest since mid-2024) — attractive real yields still support carry inflows; next MPC decision due Aug 26",
+      "MPR held at 13.25% at the August 2026 MPC (26 Aug) — lowest since mid-2024; attractive real yields still support carry inflows",
       "Yuan mining tax corridor reducing USD demand",
       "Gross international reserves at historic high of US$5.5 billion",
       "Aug 13 general election concluded — Hichilema re-elected with ~60% (announced Aug 23); policy-continuity expectations support the kwacha",
       "BoZ cut statutory reserve requirements (early Aug 2026) — supportive of bank liquidity"
     ],
-    "outlook": "Kwacha consolidating in an 18.40–19.20 range, trading just below the BOZ fix. With re-election confirmed (Hichilema, ~60%) and strong post-election bond demand, focus shifts to the 26 August 2026 MPC decision (rate seen on hold at 13.25%) and the make-up of the new economic team for the next leg of the currency.",
+    "outlook": "Kwacha consolidating in an 18.40–19.20 range, trading around the BOZ fix. With re-election confirmed (Hichilema, ~60%) and the MPC holding at 13.25% on 26 August, focus shifts to the make-up of the new economic team and the 2027 budget for the next leg of the currency.",
     "projection3m": "USD/ZMW 16.50–19.00 range. Elections expected to drive volatility.",
     "projection6m": "USD/ZMW 16.00–19.50 range. Post-election direction depends on fiscal continuity."
   }
