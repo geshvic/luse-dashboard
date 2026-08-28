@@ -2,11 +2,11 @@
   {
     "name": "Copper",
     "symbol": "LME",
-    "price": 14253,
+    "price": 14283,
     "unit": "USD/tonne",
-    "change": -97,
-    "changePct": -0.68,
-    "zmwValue": 252421,
+    "change": 30,
+    "changePct": 0.21,
+    "zmwValue": 252952,
     "icon": "🟠",
     "note": "70% of Zambia's exports"
   },
@@ -15,8 +15,8 @@
     "symbol": "BRENT",
     "price": 82.51,
     "unit": "USD/bbl",
-    "change": -0.09,
-    "changePct": -0.11,
+    "change": 0,
+    "changePct": 0,
     "zmwValue": 1461,
     "icon": "🛢️",
     "note": "Fuel & transport cost driver"
@@ -24,11 +24,11 @@
   {
     "name": "Gold",
     "symbol": "XAU",
-    "price": 4588.62,
+    "price": 4597.44,
     "unit": "USD/oz",
-    "change": -0.69,
-    "changePct": -0.02,
-    "zmwValue": 81264,
+    "change": 8.82,
+    "changePct": 0.19,
+    "zmwValue": 81421,
     "icon": "🥇",
     "note": "ZCCM-IH gold mining play"
   },
