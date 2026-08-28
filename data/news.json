@@ -1,6 +1,51 @@
 [
   {
     "date": "2026-08-28",
+    "category": "Macro",
+    "title": "Inflation drops to 6.2% - News Diggers!",
+    "summary": "THE Zambia Statistics Agency (ZamStats) says the annual inflation rate for August 2026 declined to 6.2 percent from 6.5 percent recorded in July 2026. President Hakainde Hichilema says the reduced inflation shows that government's hard work over the past five years is paying off.",
+    "source": "News Diggers",
+    "url": "https://diggers.news/business/2026/08/28/inflation-drops-to-6-2/",
+    "tickers": []
+  },
+  {
+    "date": "2026-08-28",
+    "category": "Market",
+    "title": "AECI - INTERIM ABRIDGED FINANCIALS SENS 2026 - Lusaka Securities Exchange (LuSE)",
+    "summary": "AECI Mining Explosives PLC published interim abridged financial statements (SENS 2026), filed with the exchange on 28 August 2026.",
+    "source": "LuSE Official",
+    "url": "https://www.luse.co.zm/",
+    "tickers": ["AECI"]
+  },
+  {
+    "date": "2026-08-28",
+    "category": "Market",
+    "title": "ZCCM IH CAUTIONARY ANNOUNCEMENT RENEWAL - Lusaka Securities Exchange (LuSE)",
+    "summary": "ZCCM Investments Holdings Plc renewed its cautionary announcement, dated 28 August 2026, pending further details on a matter under negotiation.",
+    "source": "LuSE Official",
+    "url": "https://www.luse.co.zm/",
+    "tickers": ["ZCCM"]
+  },
+  {
+    "date": "2026-08-28",
+    "category": "Macro",
+    "title": "Zambia Economy This Week: 24 to 26 August 2026 - Zambia Economist",
+    "summary": "Courts shut on the petition deadline as a petition reached the Chief Justice by private email; ZIPAR found revenue behind target and copper output crept up 0.45%. The week to 26 August, reviewed.",
+    "source": "Zambia Economist",
+    "url": "https://zambianeconomist.com/zambia-economy-this-week-26-august-2026/",
+    "tickers": []
+  },
+  {
+    "date": "2026-08-28",
+    "category": "Corporate",
+    "title": "Mopani, KCM Drag ZCCM-IH Into ZMW4.9bn Loss - Equity Axis",
+    "summary": "ZCCM-IH recorded a ZMW4.92 billion (US$261.7 million) loss in 2025 as Mopani and KCM underperformance weighed on earnings while both operations remained under strategic reform. Zambia's state-linked mining investment vehicle needs operating reforms at the two critical copper assets to translate into production, cash generation and recurring portfolio income.",
+    "source": "Equity Axis",
+    "url": "https://equityaxis.net/post/19385/2026/8/mopani-kcm-drag-zccm-ih-into-zmw4-9bn-loss",
+    "tickers": ["ZCCM"]
+  },
+  {
+    "date": "2026-08-28",
     "category": "Market",
     "title": "CEC predicts good share price in 2026 - The Mast Newspaper",
     "summary": "CEC predicts good share price in 2026 By Mast Reporter THE Copperbelt Energy Corporation Plc says it expects its share price on the Lusaka Securities Exchange (LuSE) to remain high in view of continued efforts to scale up investments in the renewable",

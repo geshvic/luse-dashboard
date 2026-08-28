@@ -1,7 +1,7 @@
 {
-  "asOf": "2026-08-27",
+  "asOf": "2026-08-28",
   "source": "open.er-api.com (auto) + BOZ mid-rate (manual)",
-  "ratesLastUpdated": "2026-08-27 00:02 UTC",
+  "ratesLastUpdated": "2026-08-28 16:32 UTC",
   "baseNote": "Rates show ZMW per 1 unit of foreign currency. ↓ ZMW = Kwacha strengthening (appreciating).",
   "mpRate": 13.25,
   "mpRateNote": "Monetary Policy Rate at 13.25% — held at the August 2026 MPC (decision 26 Aug 2026), lowest since mid-2024. Prior cuts: 25bps from 13.50% at the May 2026 MPC, and 75bps from 14.25% on Feb 11, 2026. Next MPC decision due November 2026 (per BOZ quarterly calendar).",
@@ -9,62 +9,62 @@
     "USD": {
       "buy": 19.0129,
       "sell": 19.0629,
-      "mid": 19.0796,
-      "marketMid": 19.0796,
+      "mid": 19.0382,
+      "marketMid": 19.0382,
       "bozMid": 19.0379,
-      "trend": "weakening",
-      "dayAgo": 19.0197,
-      "weekAgo": 18.7977,
+      "trend": "stable",
+      "dayAgo": 19.0796,
+      "weekAgo": 19.0197,
       "twoWeeksAgo": 18.6728,
       "oneMonthAgo": 18.83,
       "sixMonthsAgo": 22.5,
-      "note": "1 USD ≈ 19.0796 ZMW — auto-updated 2026-08-27 (open.er-api.com). BOZ fix (25 Aug): mid 19.0379 (buy 19.0129 / sell 19.0629). ↑ ZMW per USD = kwacha weakening."
+      "note": "1 USD ≈ 19.0382 ZMW — auto-updated 2026-08-28 (open.er-api.com). BOZ fix (25 Aug): mid 19.0379 (buy 19.0129 / sell 19.0629). Cross-check: TradingEconomics USD/ZMW ≈ 18.93 (28 Aug, -0.5% d/d) — kwacha firmed. ↓ ZMW per USD = kwacha strengthening."
     },
     "GBP": {
-      "mid": 25.931,
-      "trend": "weakening",
-      "dayAgo": 25.8038,
-      "weekAgo": 25.7772,
+      "mid": 25.8465,
+      "trend": "strengthening",
+      "dayAgo": 25.931,
+      "weekAgo": 25.8038,
       "oneMonthAgo": 25.5,
-      "note": "1 GBP ≈ 25.9310 ZMW — auto-updated 2026-08-27 (open.er-api.com). ↑ ZMW per GBP = kwacha weakening."
+      "note": "1 GBP ≈ 25.8465 ZMW — auto-updated 2026-08-28 (open.er-api.com). ↓ ZMW per GBP = kwacha strengthening."
     },
     "EUR": {
-      "mid": 22.1995,
-      "trend": "weakening",
-      "dayAgo": 22.1019,
-      "weekAgo": 22.0926,
+      "mid": 22.1459,
+      "trend": "stable",
+      "dayAgo": 22.1995,
+      "weekAgo": 22.1019,
       "oneMonthAgo": 22.4,
-      "note": "1 EUR ≈ 22.1995 ZMW — auto-updated 2026-08-27 (open.er-api.com). ↑ ZMW per EUR = kwacha weakening."
+      "note": "1 EUR ≈ 22.1459 ZMW — auto-updated 2026-08-28 (open.er-api.com). ↓ ZMW per EUR = kwacha strengthening."
     },
     "ZAR": {
-      "mid": 1.1943,
-      "trend": "weakening",
-      "dayAgo": 1.1808,
-      "weekAgo": 1.1791,
+      "mid": 1.1899,
+      "trend": "strengthening",
+      "dayAgo": 1.1943,
+      "weekAgo": 1.1808,
       "oneMonthAgo": 1.18,
-      "note": "1 ZAR ≈ 1.1943 ZMW — auto-updated 2026-08-27 (open.er-api.com). ↑ ZMW per ZAR = kwacha weakening."
+      "note": "1 ZAR ≈ 1.1899 ZMW — auto-updated 2026-08-28 (open.er-api.com). ↓ ZMW per ZAR = kwacha strengthening."
     },
     "BWP": {
-      "mid": 1.3957,
+      "mid": 1.3849,
       "trend": "strengthening",
-      "weekAgo": 1.388,
-      "dayAgo": 1.4026,
-      "note": "1 BWP ≈ 1.3957 ZMW — auto-updated 2026-08-27 (open.er-api.com). ↓ ZMW per BWP = kwacha strengthening."
+      "weekAgo": 1.4026,
+      "dayAgo": 1.3957,
+      "note": "1 BWP ≈ 1.3849 ZMW — auto-updated 2026-08-28 (open.er-api.com). ↓ ZMW per BWP = kwacha strengthening."
     },
     "CNY": {
-      "mid": 2.8317,
-      "trend": "weakening",
-      "weekAgo": 2.7692,
-      "dayAgo": 2.7935,
-      "note": "1 CNY ≈ 2.8317 ZMW — auto-updated 2026-08-27 (open.er-api.com). ↑ ZMW per CNY = kwacha weakening."
+      "mid": 2.8258,
+      "trend": "stable",
+      "weekAgo": 2.7935,
+      "dayAgo": 2.8317,
+      "note": "1 CNY ≈ 2.8258 ZMW — auto-updated 2026-08-28 (open.er-api.com). ↓ ZMW per CNY = kwacha strengthening."
     }
   },
   "trendAnalysis": {
-    "direction": "USD/ZMW mid at 19.0796 (+0.3% vs 19.0197 prior). Rates auto-refreshed from open.er-api.com (2026-08-27); BOZ mid-rate 19.0379 (25 Aug fix) and MPR reviewed manually.",
-    "dayChange": 0.06,
-    "twoWeekChange": 0.41,
-    "oneMonthChange": 0.25,
-    "sixMonthChange": -3.42,
+    "direction": "USD/ZMW mid at 19.0382 (-0.22% vs 19.0796 prior) — kwacha firmed on 28 Aug, trading right at the BOZ fix (19.0379, 25 Aug). TradingEconomics prints USD/ZMW ≈ 18.93 (-0.5% d/d). Rates auto-refreshed from open.er-api.com (2026-08-28); BOZ mid-rate and MPR reviewed manually.",
+    "dayChange": -0.041,
+    "twoWeekChange": 0.365,
+    "oneMonthChange": 0.208,
+    "sixMonthChange": -3.462,
     "ytdChange": -17,
     "drivers": [
       "Record copper output ~890K tonnes (2025) — strong export earnings",
