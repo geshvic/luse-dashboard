@@ -1,5 +1,38 @@
 [
   {
+    "title": "CEC PLC HALF YEAR UNAUDITED RESULTS",
+    "date": "2026-08-28",
+    "category": "Financial Statements",
+    "type": "Earnings",
+    "tickers": [
+      "CECZ"
+    ],
+    "source": "LuSE SENS",
+    "url": "https://www.luse.co.zm/sens-category/financial-statements/"
+  },
+  {
+    "title": "CEC PLC NOTICE OF INTERIM DIVIDEND",
+    "date": "2026-08-28",
+    "category": "Dividends",
+    "type": "Dividends",
+    "tickers": [
+      "CECZ"
+    ],
+    "source": "LuSE SENS",
+    "url": "https://www.luse.co.zm/sens-category/dividends/"
+  },
+  {
+    "title": "AECI – TRADING STATEMENT",
+    "date": "2026-08-27",
+    "category": "General Announcements",
+    "type": "Earnings",
+    "tickers": [
+      "AECI"
+    ],
+    "source": "LuSE SENS",
+    "url": "https://www.luse.co.zm/sens-category/general-announcements/"
+  },
+  {
     "title": "ZFCO – EXTENSION OF RIGHTS ISSUE PERIOD ANNOUNCEMENT",
     "date": "2026-08-26",
     "category": "General Announcements",

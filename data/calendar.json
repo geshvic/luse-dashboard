@@ -8,14 +8,6 @@
     "confidence": "estimated"
   },
   {
-    "ticker": "CECZ",
-    "date": "2026-09-15",
-    "displayDate": "Sep 15",
-    "type": "Earnings",
-    "desc": "Half-Year Results (est)",
-    "confidence": "estimated"
-  },
-  {
     "ticker": "ZNCO",
     "date": "2026-09-15",
     "displayDate": "Sep 15",
@@ -57,14 +49,6 @@
   },
   {
     "ticker": "SCBL",
-    "date": "2026-09-15",
-    "displayDate": "Sep 15",
-    "type": "Earnings",
-    "desc": "Half-Year Results (est)",
-    "confidence": "estimated"
-  },
-  {
-    "ticker": "AECI",
     "date": "2026-09-15",
     "displayDate": "Sep 15",
     "type": "Earnings",
@@ -153,6 +137,22 @@
   },
   {
     "ticker": "RFIN",
+    "date": "2026-09-15",
+    "displayDate": "Sep 15",
+    "type": "Earnings",
+    "desc": "Half-Year Results (est)",
+    "confidence": "estimated"
+  },
+  {
+    "ticker": "PRIM",
+    "date": "2026-09-15",
+    "displayDate": "Sep 15",
+    "type": "Earnings",
+    "desc": "Half-Year Results (est)",
+    "confidence": "estimated"
+  },
+  {
+    "ticker": "ENRG",
     "date": "2026-09-15",
     "displayDate": "Sep 15",
     "type": "Earnings",
