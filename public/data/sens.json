@@ -1,5 +1,38 @@
 [
   {
+    "title": "ZABR – Interim Results for the six-month period ended 30 June 2026",
+    "date": "2026-08-31",
+    "category": "Financial Statements",
+    "type": "Earnings",
+    "tickers": [
+      "ZABR"
+    ],
+    "source": "LuSE SENS",
+    "url": "https://www.luse.co.zm/sens-category/financial-statements/"
+  },
+  {
+    "title": "AECI – INTERIM ABRIDGED FINANCIALS SENS",
+    "date": "2026-08-28",
+    "category": "Financial Statements",
+    "type": "General",
+    "tickers": [
+      "AECI"
+    ],
+    "source": "LuSE SENS",
+    "url": "https://www.luse.co.zm/sens-category/financial-statements/"
+  },
+  {
+    "title": "ZCCM IH CAUTIONARY ANNOUNCEMNENT RENEWAL",
+    "date": "2026-08-28",
+    "category": "Cautionary Announcement",
+    "type": "Cautionary",
+    "tickers": [
+      "ZCCM-IH"
+    ],
+    "source": "LuSE SENS",
+    "url": "https://www.luse.co.zm/sens-category/cautionary-announcement/"
+  },
+  {
     "title": "CEC PLC HALF YEAR UNAUDITED RESULTS",
     "date": "2026-08-28",
     "category": "Financial Statements",
