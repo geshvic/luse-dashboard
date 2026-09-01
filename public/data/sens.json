@@ -1,5 +1,16 @@
 [
   {
+    "title": "REIZ- CHANGE IN DIRECTORATE",
+    "date": "2026-08-31",
+    "category": "Change in Directorate",
+    "type": "Directorate",
+    "tickers": [
+      "REIZ"
+    ],
+    "source": "LuSE SENS",
+    "url": "https://www.luse.co.zm/sens-category/change-in-directorate/"
+  },
+  {
     "title": "ZABR – Interim Results for the six-month period ended 30 June 2026",
     "date": "2026-08-31",
     "category": "Financial Statements",
