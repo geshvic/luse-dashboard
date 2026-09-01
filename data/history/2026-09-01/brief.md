@@ -34,16 +34,16 @@
 
 > Data note: only 5 stocks carried official change prints; the remaining 18 were unchanged. CECZ remains the turnover engine — K2.53M of the K3.11M session total. All 29 prices in companies.json are populated (no null/zero flags).
 
-## 💱 Currency (open.er-api.com auto, 2026-09-01 16:37 UTC)
+## 💱 Currency (open.er-api.com auto, 2026-09-01 16:41 UTC)
 
 | Pair | Mid (ZMW per 1 unit) | 1-day | Trend |
 |---|---|---|---|
 | USD/ZMW | 19.0295 | **-0.07%** (kwacha marginally firmer) | Stable |
-| GBP/ZMW | 25.7686 | -0.04% | Strengthening |
+| GBP/ZMW | 25.7685 | -0.04% | Strengthening |
 | EUR/ZMW | 22.0580 | -0.05% | Strengthening |
 | ZAR/ZMW | 1.1771 | -0.21% | Strengthening |
 | BWP/ZMW | 1.3863 | -2.14% | Strengthening |
-| CNY/ZMW | 2.8250 | -0.08% | Stable |
+| CNY/ZMW | 2.8249 | -0.08% | Stable |
 
 - **USD/ZMW market mid 19.0295** — the kwacha opened September marginally firmer (prior 19.0436), trading just inside the BOZ indicative fix (19.0379, 25 Aug).
 - BOZ fix (25 Aug): mid 19.0379 (buy 19.0129 / sell 19.0629). Cross-checks: exchangerate.guru prints ~25.77 ZMW/GBP (1 Sep); exchange-rates.org low for ZMW→ZAR on 25 Aug was 0.8368 ZAR/ZMW.
