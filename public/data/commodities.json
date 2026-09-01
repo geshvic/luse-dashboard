@@ -4,8 +4,8 @@
     "symbol": "LME",
     "price": 14294,
     "unit": "USD/tonne",
-    "change": 11,
-    "changePct": 0.08,
+    "change": 0,
+    "changePct": 0,
     "zmwValue": 253147,
     "icon": "🟠",
     "note": "70% of Zambia's exports"
@@ -13,11 +13,11 @@
   {
     "name": "Brent Crude",
     "symbol": "BRENT",
-    "price": 86.02,
+    "price": 88.14,
     "unit": "USD/bbl",
-    "change": 3.51,
-    "changePct": 4.25,
-    "zmwValue": 1523,
+    "change": 2.12,
+    "changePct": 2.46,
+    "zmwValue": 1561,
     "icon": "🛢️",
     "note": "Fuel & transport cost driver"
   },
