@@ -1,6 +1,264 @@
 [
   {
     "date": "2026-09-03",
+    "category": "Corporate",
+    "title": "GDP expands by 7.7% in Q1of 2026 - Zambian Business Times",
+    "summary": "GDP expands by 7.7% in Q1of 2026 According to official government data, Zambia's Gross Domestic Product (GDP) grew by 7.7% in the first quarter of 2026, up from 4.5% recorded during the same period in 2025, representing an acceleration of 3.2 percent",
+    "source": "Zambian Business Times",
+    "url": "https://zambianbusinesstimes.com/gdp-expands-by-7-7-in-q1of-2026/",
+    "tickers": []
+  },
+  {
+    "date": "2026-09-03",
+    "category": "Corporate",
+    "title": "Zambia records K4.1bn trade surplus in July 2026 - Zambian Business Times",
+    "summary": "Zambia records K4.1bn trade surplus in July 2026 According to the Zambia Statistics Agency (ZAMSTATS) August report, Zambia posted a trade surplus of K4.1 billion in July 2026, down marginally from K4.2 billion in June, a K100 million (2.4%) decline.",
+    "source": "Zambian Business Times",
+    "url": "https://zambianbusinesstimes.com/zambia-records-k4-1bn-trade-surplus-in-july-2026/",
+    "tickers": []
+  },
+  {
+    "date": "2026-09-03",
+    "category": "Corporate",
+    "title": "Economist challenges BoZ's 6-8% inflation projection by Q1 2026 calling ...",
+    "summary": "An Economist has cast doubt on the Bank of Zambia's (BoZ) recent inflation projections, arguing that the central bank's targets are unattainable due to fundamental weaknesses in the nation's economic structure. The BOZ has forecast that inflation wil",
+    "source": "Zambian Business Times",
+    "url": "https://zambianbusinesstimes.com/economist-challenges-bozs-6-8-inflation-projection-by-q1-2026-calling-it-more-academic-than-reality/",
+    "tickers": []
+  },
+  {
+    "date": "2026-09-03",
+    "category": "Corporate",
+    "title": "Zambia's trade surplus drops by K5bn - Zambian Business Times",
+    "summary": "Data from the Zambia Statistics Agency (ZAMSTATS) April 2026 report revealed that Zambia's trade surplus decreased to K0.8 billion in March 2026 from K5.7 billion in February, showing a K5 billion decline within a single month. A further check by the",
+    "source": "Zambian Business Times",
+    "url": "https://zambianbusinesstimes.com/zambias-trade-surplus-drops-by-k5bn/",
+    "tickers": []
+  },
+  {
+    "date": "2026-09-03",
+    "category": "Corporate",
+    "title": "FQM injects $2.6bn into Zambia economy - Zambian Business Times",
+    "summary": "‎By Tyndale Muchiya ‎‎In his recent keynote address at the Mining Indaba in Cape Town, President Hakainde Hichilema highlighted First Quantum Minerals' position as Zambia's largest taxpayer. ‎The following analysis of the mining company's most recent",
+    "source": "Zambian Business Times",
+    "url": "https://zambianbusinesstimes.com/fqm-injects-2-6bn-into-zambia-economy/",
+    "tickers": [
+      "CHIL"
+    ]
+  },
+  {
+    "date": "2026-09-03",
+    "category": "Market",
+    "title": "CEC predicts good share price in 2026 - The Mast Newspaper",
+    "summary": "CEC predicts good share price in 2026 By Mast Reporter THE Copperbelt Energy Corporation Plc says it expects its share price on the Lusaka Securities Exchange (LuSE) to remain high in view of continued efforts to scale up investments in the renewable",
+    "source": "Mast Media Zambia",
+    "url": "https://mastmediazm.com/2026/01/cec-predicts-good-share-price-in-2026/",
+    "tickers": []
+  },
+  {
+    "date": "2026-09-03",
+    "category": "Market",
+    "title": "CEC sets eyes on US$12bn investment - The Mast Newspaper",
+    "summary": "CEC sets eyes on US$12bn investment By Mast Reporter THE Copperbelt Energy Corporation (CEC) says it needs US$12 billion in investment and delivering 10 gigawatts of new generation capacity by 2030 to help ease Zambia's energy crisis. Managing direct",
+    "source": "Mast Media Zambia",
+    "url": "https://mastmediazm.com/2026/02/cec-sets-eyes-on-us12bn-investment/",
+    "tickers": []
+  },
+  {
+    "date": "2026-09-03",
+    "category": "Market",
+    "title": "Copper, campaign cash, and tax breaks: The stakes for Zambia's ...",
+    "summary": "Copper, campaign cash, and tax breaks: The stakes for Zambia's constitutional democracy By Prof. Cephas Lumina Recent claims about foreign companies funding politics, mining tax breaks, and public policy in Zambia raise important questions about who ",
+    "source": "Mast Media Zambia",
+    "url": "https://mastmediazm.com/2026/07/copper-campaign-cash-and-tax-breaks-the-stakes-for-zambias-constitutional-democracy/",
+    "tickers": []
+  },
+  {
+    "date": "2026-09-03",
+    "category": "Market",
+    "title": "ZAMBIA-US 'DEAL' RAISES ALARM - The Mast Newspaper",
+    "summary": "ZAMBIA - US 'DEAL' RAISES ALARM …America to access copper, other minerals in exchange for aid By George Zulu ZAMBIA is on the verge of signing a secretive memorandum of understanding (MoU) with the United States (US) government, which will give the D",
+    "source": "Mast Media Zambia",
+    "url": "https://mastmediazm.com/2026/01/zambia-us-deal-raises-alarm/",
+    "tickers": []
+  },
+  {
+    "date": "2026-09-03",
+    "category": "Market",
+    "title": "Zambia wins UK confidence at InvestFest 2026 - The Mast Newspaper",
+    "summary": "She said the UK-backed Zambia Investment Support Project was helping local businesses become investment-ready by strengthening their operational and financial capabilities. InvestFest 2026 is expected to catalyze new deals and partnerships over its t",
+    "source": "Mast Media Zambia",
+    "url": "https://mastmediazm.com/2026/05/zambia-wins-uk-confidence-at-investfest-2026/",
+    "tickers": []
+  },
+  {
+    "date": "2026-09-03",
+    "category": "Macro",
+    "title": "Zambia's Economic Repositioning in 2025: Consolidation, Confidence, and ...",
+    "summary": "By Dr. Lubinda Haabazoka The year 2025 marked a decisive turning point in Zambia's economic trajectory. While it did not eliminate long-standing structural challenges, it delivered measurable progress in macroeconomic stabilisation, restored internat",
+    "source": "Mwebantu",
+    "url": "https://www.mwebantu.com/zambias-economic-repositioning-in-2025-consolidation-confidence-and-the-path-to-inclusive-growth/",
+    "tickers": []
+  },
+  {
+    "date": "2026-09-03",
+    "category": "Macro",
+    "title": "Zambia economic growth - Mwebantu",
+    "summary": "Zambia's GDP Is Likely to Leapfrog: Why the GDP Rebasing Exercise Could Transform the Country's Economic Profile By Prof. Lubinda Haabazoka By any economic standard, Zambia is on the verge of one of the most significant statistical transformations in",
+    "source": "Mwebantu",
+    "url": "https://www.mwebantu.com/tag/zambia-economic-growth/",
+    "tickers": []
+  },
+  {
+    "date": "2026-09-03",
+    "category": "Macro",
+    "title": "24-Hour Economy: From Policy to Productivity in Zambia By Professor ...",
+    "summary": "A 24-hour economy represents a structural shift in how economic activity is organized, moving from time-restricted productivity to continuous, round-the-clock value creation. For Zambia, this is not merely a policy adjustment, but a transformative de",
+    "source": "Mwebantu",
+    "url": "https://www.mwebantu.com/24-hour-economy-from-policy-to-productivity-in-zambia-by-professor-lubinda-haabazoka/",
+    "tickers": []
+  },
+  {
+    "date": "2026-09-03",
+    "category": "Macro",
+    "title": "Zambia's GDP Is Likely to Leapfrog: Why the GDP Rebasing Exercise Could ...",
+    "summary": "Financial Services The financial sector has transformed. Today Zambia has: Mobile banking Digital lending FinTech innovations Electronic payments Agency banking Mobile money Many of these activities scarcely existed in 2010. ICT and Digital Economy P",
+    "source": "Mwebantu",
+    "url": "https://www.mwebantu.com/zambias-gdp-is-likely-to-leapfrog-why-the-gdp-rebasing-exercise-could-transform-the-countrys-economic-profile/",
+    "tickers": []
+  },
+  {
+    "date": "2026-09-03",
+    "category": "Macro",
+    "title": "HH's Economic Journey (2021-2026): What He Inherited, What He Fixed ...",
+    "summary": "Perhaps the greatest challenge was Zambia's debt crisis. In November 2020, Zambia became the first African country to default on its Eurobond obligations during the COVID-19 era. The default effectively shut the country out of international capital m",
+    "source": "Mwebantu",
+    "url": "https://www.mwebantu.com/hhs-economic-journey-2021-2026-what-he-inherited-what-he-fixed-and-what-remains/",
+    "tickers": []
+  },
+  {
+    "date": "2026-09-03",
+    "category": "Commodities",
+    "title": "Zambian Kwacha closes 2025 firm as copper prices rally",
+    "summary": "The Zambian kwacha ended 2025 on a strong footing, extending gains against the United States dollar on the back of firm copper prices and improving investor confidence. Bloomberg data showed the currency closed the year at around K22.17 to the dollar",
+    "source": "Bloomberg",
+    "url": "https://www.zambiamonitor.com/zambian-kwacha-closes-2025-firm-as-copper-prices-rally/",
+    "tickers": []
+  },
+  {
+    "date": "2026-09-03",
+    "category": "Commodities",
+    "title": "Kwacha gains as copper prices surge above $14,000 | Zambia Monitor",
+    "summary": "The Zambian Kwacha strengthened against the United States dollar on Friday, supported by improved foreign currency inflows, although the local currency could face renewed pressure this week as election-related uncertainty weighs on market sentiment. ",
+    "source": "Bloomberg",
+    "url": "https://www.zambiamonitor.com/kwacha-gains-as-copper-prices-surge-above-14000/",
+    "tickers": []
+  },
+  {
+    "date": "2026-09-03",
+    "category": "Commodities",
+    "title": "Zambia's Kwacha Hits Highest Since 2024 as Copper Demand Soars",
+    "summary": "Zambia's currency rose to the highest level in almost two years, extending a rally driven by confidence in the country's copper industry. The kwacha advanced 0.7% to 22.76 against the dollar, the highest since February 2024. It has climbed the most a",
+    "source": "Bloomberg",
+    "url": "https://news.bloomberglaw.com/bankruptcy-law/zambias-kwacha-hits-highest-since-2024-as-copper-demand-soars",
+    "tickers": []
+  },
+  {
+    "date": "2026-09-03",
+    "category": "Commodities",
+    "title": "Zambia's Kwacha Strengthens to 18-Month High as Copper Prices Surge",
+    "summary": "Credit: bloomberg.com Zambia's currency, the kwacha, has climbed to its strongest level since early 2024, supported by soaring copper prices and renewed investor confidence in the mining-driven economy. The rally highlights the deep link between Zamb",
+    "source": "Bloomberg",
+    "url": "https://empiremagazineafrica.com/zambias-kwacha-strengthens-to-18-month-high-as-copper-prices-surge/",
+    "tickers": []
+  },
+  {
+    "date": "2026-09-03",
+    "category": "Commodities",
+    "title": "Zambia's currency hits highest level since 2024 amid copper price boom",
+    "summary": "Zambia's currency surged to its strongest level in nearly two years, buoyed by renewed optimism in the nation's copper industry. The kwacha advanced 0.7% to 22.76 per dollar, its highest level since February 2024, extending a rally that has made it A",
+    "source": "Bloomberg",
+    "url": "https://africa.businessinsider.com/local/markets/zambias-currency-hits-highest-level-since-2024-amid-copper-price-boom/fms73zb?op=1",
+    "tickers": []
+  },
+  {
+    "date": "2026-09-03",
+    "category": "Macro",
+    "title": "Zambia's debt restructuring remains snagged on Afreximbank problems",
+    "summary": "LONDON (Reuters) -Zambia's debt restructuring remains snagged on its thorny negotiations with the African Export-Import Bank and won't be resolved until next year, one of its top finance officials has told Reuters. Zambia, one of the world's top copp",
+    "source": "Reuters",
+    "url": "https://www.marketscreener.com/news/zambia-s-debt-restructuring-remains-snagged-on-afreximbank-problems-ce7d58deda8cf621",
+    "tickers": []
+  },
+  {
+    "date": "2026-09-03",
+    "category": "Macro",
+    "title": "Zambia draws fresh investment after debt recovery",
+    "summary": "Keypoints: Zambia is attracting renewed investor interest after debt restructuring Mining, energy and agriculture are leading new investment opportunities Zambia's recovery is becoming a closely watched model for African economies ZAMBIA is drawing f",
+    "source": "Reuters",
+    "url": "https://africabriefing.com/zambia-draws-fresh-investment-after-debt-recovery/",
+    "tickers": []
+  },
+  {
+    "date": "2026-09-03",
+    "category": "Macro",
+    "title": "PDF Zambia signs key debt-restructuring deals with Chinese lenders",
+    "summary": "Zambia Summary 24 October 2025 Zambia takes a significant step in its long-running debt crisis by signing bilateral debt restructuring agreements with Chinese lenders, including the Export-Import Bank of China (Exim Bank) and other Chinese creditors.",
+    "source": "Reuters",
+    "url": "https://cdn.prod.website-files.com/683e955842f0f357504a59c6/696a4ff0119f73f752453865_file.pdf",
+    "tickers": []
+  },
+  {
+    "date": "2026-09-03",
+    "category": "Macro",
+    "title": "Debt Restructuring Cuts Zambia's Debt-Service Burden, Expands Fiscal ...",
+    "summary": "Zambia's debt-to-GDP ratio increased from 48 percent in 2016 to 128 percent in 2021, while economic growth averaged only 2.1 percent during the period. Before the restructuring, Nkulukusa said nearly K70 of every K100 collected in domestic revenue wa",
+    "source": "Reuters",
+    "url": "https://efficacynews.africa/2026/08/28/debt-restructuring-cuts-zambias-debt-service-burden-expands-fiscal-space/",
+    "tickers": [
+      "ATEL"
+    ]
+  },
+  {
+    "date": "2026-09-03",
+    "category": "Macro",
+    "title": "Debt Restructuring Saves Zambia $1.4 Billion Annually",
+    "summary": "Debt Restructuring Saves Zambia $1.4 Billion Annually Zambia's economy is back on a firmer footing, with President Hakainde Hichilema crediting the country's debt restructuring programme for both the savings achieved and the renewed confidence among ",
+    "source": "Reuters",
+    "url": "https://www.openzambia.com/economics/2026/6/11/debt-restructuring-saves-zambia-14-billion-annually",
+    "tickers": [
+      "CHIL"
+    ]
+  },
+  {
+    "date": "2026-09-03",
+    "category": "Market",
+    "title": "PDF SENS ANNOUNCEMENT \"Announcement\") - luse.co.zm",
+    "summary": "Announcement dated 26 November 2025 and the EGM Results Announcement dated 17 December 2025, shareholders of Standard Chartered Bank Zambia Plc (\"SCBZ\" or \"the Bank\") are advised that the Bank of Zambia granted its approval on 19 June 2026 for the pr",
+    "source": "LuSE Official",
+    "url": "https://www.luse.co.zm/wp-content/uploads/2026/06/SCBZ-Market-Announcement-SENS-22.06.2026.pdf",
+    "tickers": []
+  },
+  {
+    "date": "2026-09-03",
+    "category": "Market",
+    "title": "PDF Market update - luse.co.zm",
+    "summary": "The LuSE enters the second half of 2026 underpinned by structural tailwinds: deepening bond market liquidity, accelerating retail digital adoption via the LuSE Mobile App, favourable currency-driven returns sustaining foreign interest, and landmark c",
+    "source": "LuSE Official",
+    "url": "https://www.luse.co.zm/wp-content/uploads/2026/07/june_Market-update-2.pdf",
+    "tickers": []
+  },
+  {
+    "date": "2026-09-03",
+    "category": "Market",
+    "title": "ZCMCA 2026 - Zambia Capital Markets Conference & Awards",
+    "summary": "Welcome to the official site of the 2026 Zambia Capital Markets Conference & Awards. Explore speakers, nominate, vote, and book your spot.",
+    "source": "LuSE Official",
+    "url": "https://awards.luse.co.zm/",
+    "tickers": []
+  },
+  {
+    "date": "2026-09-03",
     "category": "Market",
     "title": "3 Ways to Soften Hard Stools - wikiHow",
     "summary": "6 thg 5, 2026 · Passing hard, dry stool is painful. It hurts when it blocks your bowels and when it is difficult to pass. There are several …",
@@ -47,60 +305,6 @@
   {
     "date": "2026-09-03",
     "category": "Macro",
-    "title": "Zambia's Economic Repositioning in 2025: Consolidation, Confidence, and ...",
-    "summary": "The year 2025 marked a decisive turning point in Zambia's economic trajectory. While it did not eliminate long-standing structural challenges, it delivered measurable progress in macroeconomic stabilisation, restored international confidence, and str",
-    "source": "Mwebantu",
-    "url": "https://www.mwebantu.com/zambias-economic-repositioning-in-2025-consolidation-confidence-and-the-path-to-inclusive-growth/",
-    "tickers": []
-  },
-  {
-    "date": "2026-09-03",
-    "category": "Macro",
-    "title": "Zambia economic growth - Mwebantu",
-    "summary": "Zambia's Economic Repositioning in 2025: Consolidation, Confidence, and the Path to Inclusive Growth By Dr. Lubinda Haabazoka The year 2025 marked a decisive turning point in Zambia's economic trajectory. While it did not eliminate long-standing stru",
-    "source": "Mwebantu",
-    "url": "https://www.mwebantu.com/tag/zambia-economic-growth/",
-    "tickers": []
-  },
-  {
-    "date": "2026-09-03",
-    "category": "Macro",
-    "title": "24-Hour Economy: From Policy to Productivity in Zambia By Professor ...",
-    "summary": "A 24-hour economy represents a structural shift in how economic activity is organized, moving from time-restricted productivity to continuous, round-the-clock value creation. For Zambia, this is not merely a policy adjustment, but a transformative de",
-    "source": "Mwebantu",
-    "url": "https://www.mwebantu.com/24-hour-economy-from-policy-to-productivity-in-zambia-by-professor-lubinda-haabazoka/",
-    "tickers": []
-  },
-  {
-    "date": "2026-09-03",
-    "category": "Macro",
-    "title": "Zambia's GDP Is Likely to Leapfrog: Why the GDP Rebasing Exercise Could ...",
-    "summary": "Financial Services The financial sector has transformed. Today Zambia has: Mobile banking Digital lending FinTech innovations Electronic payments Agency banking Mobile money Many of these activities scarcely existed in 2010. ICT and Digital Economy P",
-    "source": "Mwebantu",
-    "url": "https://www.mwebantu.com/zambias-gdp-is-likely-to-leapfrog-why-the-gdp-rebasing-exercise-could-transform-the-countrys-economic-profile/",
-    "tickers": []
-  },
-  {
-    "date": "2026-09-03",
-    "category": "Macro",
-    "title": "HH's Economic Journey (2021-2026): What He Inherited, What He Fixed ...",
-    "summary": "Perhaps the greatest challenge was Zambia's debt crisis. In November 2020, Zambia became the first African country to default on its Eurobond obligations during the COVID-19 era. The default effectively shut the country out of international capital m",
-    "source": "Mwebantu",
-    "url": "https://www.mwebantu.com/hhs-economic-journey-2021-2026-what-he-inherited-what-he-fixed-and-what-remains/",
-    "tickers": []
-  },
-  {
-    "date": "2026-09-03",
-    "category": "Macro",
-    "title": "Zambia's debt restructuring remains snagged on Afreximbank problems",
-    "summary": "LONDON (Reuters) -Zambia's debt restructuring remains snagged on its thorny negotiations with the African Export-Import Bank and won't be resolved until next year, one of its top finance officials has told Reuters. Zambia, one of the world's top copp",
-    "source": "Reuters",
-    "url": "https://www.marketscreener.com/news/zambia-s-debt-restructuring-remains-snagged-on-afreximbank-problems-ce7d58deda8cf621",
-    "tickers": []
-  },
-  {
-    "date": "2026-09-03",
-    "category": "Macro",
     "title": "Debt restructuring reportedly frees funds for development, says ...",
     "summary": "Secretary to the Treasury, Felix Nkulukusa, says Zambia's debt restructuring has significantly eased the country's external debt burden, restoring macroeconomic stability and creating room for increased spending on social services, infrastructure and",
     "source": "Reuters",
@@ -115,17 +319,6 @@
     "source": "Reuters",
     "url": "https://www.imf.org/en/news/articles/2026/01/27/pr-26024-zambia-imf-executive-board-completes-sixth-review-under-the-extended-credit-facility",
     "tickers": []
-  },
-  {
-    "date": "2026-09-03",
-    "category": "Macro",
-    "title": "Debt Restructuring Cuts Zambia's Debt-Service Burden, Expands Fiscal ...",
-    "summary": "Zambia's debt-to-GDP ratio increased from 48 percent in 2016 to 128 percent in 2021, while economic growth averaged only 2.1 percent during the period. Before the restructuring, Nkulukusa said nearly K70 of every K100 collected in domestic revenue wa",
-    "source": "Reuters",
-    "url": "https://efficacynews.africa/2026/08/28/debt-restructuring-cuts-zambias-debt-service-burden-expands-fiscal-space/",
-    "tickers": [
-      "ATEL"
-    ]
   },
   {
     "date": "2026-09-03",
@@ -210,46 +403,10 @@
   {
     "date": "2026-09-01",
     "category": "Market",
-    "title": "CEC predicts good share price in 2026 - The Mast Newspaper",
-    "summary": "CEC predicts good share price in 2026 By Mast Reporter THE Copperbelt Energy Corporation Plc says it expects its share price on the Lusaka Securities Exchange (LuSE) to remain high in view of continued efforts to scale up investments in the renewable",
-    "source": "Mast Media Zambia",
-    "url": "https://mastmediazm.com/2026/01/cec-predicts-good-share-price-in-2026/",
-    "tickers": []
-  },
-  {
-    "date": "2026-09-01",
-    "category": "Market",
-    "title": "CEC sets eyes on US$12bn investment - The Mast Newspaper",
-    "summary": "CEC sets eyes on US$12bn investment By Mast Reporter THE Copperbelt Energy Corporation (CEC) says it needs US$12 billion in investment and delivering 10 gigawatts of new generation capacity by 2030 to help ease Zambia's energy crisis. Managing direct",
-    "source": "Mast Media Zambia",
-    "url": "https://mastmediazm.com/2026/02/cec-sets-eyes-on-us12bn-investment/",
-    "tickers": []
-  },
-  {
-    "date": "2026-09-01",
-    "category": "Market",
-    "title": "Copper, campaign cash, and tax breaks: The stakes for Zambia's ...",
-    "summary": "Copper, campaign cash, and tax breaks: The stakes for Zambia's constitutional democracy By Prof. Cephas Lumina Recent claims about foreign companies funding politics, mining tax breaks, and public policy in Zambia raise important questions about who ",
-    "source": "Mast Media Zambia",
-    "url": "https://mastmediazm.com/2026/07/copper-campaign-cash-and-tax-breaks-the-stakes-for-zambias-constitutional-democracy/",
-    "tickers": []
-  },
-  {
-    "date": "2026-09-01",
-    "category": "Market",
     "title": "ERB approves K1.1bn energy investments - The Mast Newspaper",
     "summary": "In a statement seen by The Mast, ERB public relations manager Namukolo Kasumpa said the approvals, granted on March 16, covered electricity, renewable energy and downstream petroleum projects, showcasing investor confidence in Zambia's energy sector.",
     "source": "Mast Media Zambia",
     "url": "https://mastmediazm.com/2026/03/erb-approves-k1-1bn-energy-investments/",
-    "tickers": []
-  },
-  {
-    "date": "2026-09-01",
-    "category": "Market",
-    "title": "ZAMBIA-US 'DEAL' RAISES ALARM - The Mast Newspaper",
-    "summary": "ZAMBIA - US 'DEAL' RAISES ALARM …America to access copper, other minerals in exchange for aid By George Zulu ZAMBIA is on the verge of signing a secretive memorandum of understanding (MoU) with the United States (US) government, which will give the D",
-    "source": "Mast Media Zambia",
-    "url": "https://mastmediazm.com/2026/01/zambia-us-deal-raises-alarm/",
     "tickers": []
   },
   {
@@ -263,83 +420,11 @@
   },
   {
     "date": "2026-09-01",
-    "category": "Commodities",
-    "title": "Zambian Kwacha closes 2025 firm as copper prices rally",
-    "summary": "The Zambian kwacha ended 2025 on a strong footing, extending gains against the United States dollar on the back of firm copper prices and improving investor confidence. Bloomberg data showed the currency closed the year at around K22.17 to the dollar",
-    "source": "Bloomberg",
-    "url": "https://www.zambiamonitor.com/zambian-kwacha-closes-2025-firm-as-copper-prices-rally/",
-    "tickers": []
-  },
-  {
-    "date": "2026-09-01",
-    "category": "Commodities",
-    "title": "Kwacha gains as copper prices surge above $14,000 | Zambia Monitor",
-    "summary": "The Zambian Kwacha strengthened against the United States dollar on Friday, supported by improved foreign currency inflows, although the local currency could face renewed pressure this week as election-related uncertainty weighs on market sentiment. ",
-    "source": "Bloomberg",
-    "url": "https://www.zambiamonitor.com/kwacha-gains-as-copper-prices-surge-above-14000/",
-    "tickers": []
-  },
-  {
-    "date": "2026-09-01",
-    "category": "Commodities",
-    "title": "Zambia's Kwacha Strengthens to 18-Month High as Copper Prices Surge",
-    "summary": "Credit: bloomberg.com Zambia's currency, the kwacha, has climbed to its strongest level since early 2024, supported by soaring copper prices and renewed investor confidence in the mining-driven economy. The rally highlights the deep link between Zamb",
-    "source": "Bloomberg",
-    "url": "https://empiremagazineafrica.com/zambias-kwacha-strengthens-to-18-month-high-as-copper-prices-surge/",
-    "tickers": []
-  },
-  {
-    "date": "2026-09-01",
-    "category": "Commodities",
-    "title": "Zambia's Kwacha Hits Highest Since 2024 as Copper Demand Soars",
-    "summary": "Zambia's currency rose to the highest level in almost two years, extending a rally driven by confidence in the country's copper industry. The kwacha advanced 0.7% to 22.76 against the dollar, the highest since February 2024. It has climbed the most a",
-    "source": "Bloomberg",
-    "url": "https://news.bloomberglaw.com/bankruptcy-law/zambias-kwacha-hits-highest-since-2024-as-copper-demand-soars",
-    "tickers": []
-  },
-  {
-    "date": "2026-09-01",
-    "category": "Commodities",
-    "title": "Zambia's currency hits highest level since 2024 amid copper price boom",
-    "summary": "Zambia's currency surged to its strongest level in nearly two years, buoyed by renewed optimism in the nation's copper industry. The kwacha advanced 0.7% to 22.76 per dollar, its highest level since February 2024, extending a rally that has made it A",
-    "source": "Bloomberg",
-    "url": "https://africa.businessinsider.com/local/markets/zambias-currency-hits-highest-level-since-2024-amid-copper-price-boom/fms73zb?op=1",
-    "tickers": []
-  },
-  {
-    "date": "2026-09-01",
-    "category": "Macro",
-    "title": "Zambia draws fresh investment after debt recovery",
-    "summary": "Keypoints: Zambia is attracting renewed investor interest after debt restructuring Mining, energy and agriculture are leading new investment opportunities Zambia's recovery is becoming a closely watched model for African economies ZAMBIA is drawing f",
-    "source": "Reuters",
-    "url": "https://africabriefing.com/zambia-draws-fresh-investment-after-debt-recovery/",
-    "tickers": []
-  },
-  {
-    "date": "2026-09-01",
     "category": "Macro",
     "title": "Debt Restructuring Deals Put Zambia in an Economic Catch-22",
     "summary": "Zambia is on the cusp of completing a deal to restructure its debt amounting to US$13.4 billion, a process the Southern African nation pursued in 2021 following its defaulted-on debt obligations. In a wave, the sovereign credit ratings through Moody'",
     "source": "Reuters",
     "url": "https://financialinsight.africa/fiz/articles/9/economic-development/debt-restructuring-deals-put-zambia-in-an-economic-catch-22",
-    "tickers": []
-  },
-  {
-    "date": "2026-09-01",
-    "category": "Market",
-    "title": "PDF SENS ANNOUNCEMENT \"Announcement\") - luse.co.zm",
-    "summary": "Announcement dated 26 November 2025 and the EGM Results Announcement dated 17 December 2025, shareholders of Standard Chartered Bank Zambia Plc (\"SCBZ\" or \"the Bank\") are advised that the Bank of Zambia granted its approval on 19 June 2026 for the pr",
-    "source": "LuSE Official",
-    "url": "https://www.luse.co.zm/wp-content/uploads/2026/06/SCBZ-Market-Announcement-SENS-22.06.2026.pdf",
-    "tickers": []
-  },
-  {
-    "date": "2026-09-01",
-    "category": "Market",
-    "title": "PDF Market update - luse.co.zm",
-    "summary": "The LuSE enters the second half of 2026 underpinned by structural tailwinds: deepening bond market liquidity, accelerating retail digital adoption via the LuSE Mobile App, favourable currency-driven returns sustaining foreign interest, and landmark c",
-    "source": "LuSE Official",
-    "url": "https://www.luse.co.zm/wp-content/uploads/2026/07/june_Market-update-2.pdf",
     "tickers": []
   },
   {
@@ -356,28 +441,10 @@
   {
     "date": "2026-08-31",
     "category": "Corporate",
-    "title": "GDP expands by 7.7% in Q1of 2026 - Zambian Business Times",
-    "summary": "GDP expands by 7.7% in Q1of 2026 According to official government data, Zambia's Gross Domestic Product (GDP) grew by 7.7% in the first quarter of 2026, up from 4.5% recorded during the same period in 2025, representing an acceleration of 3.2 percent",
-    "source": "Zambian Business Times",
-    "url": "https://zambianbusinesstimes.com/gdp-expands-by-7-7-in-q1of-2026/",
-    "tickers": []
-  },
-  {
-    "date": "2026-08-31",
-    "category": "Corporate",
     "title": "Main Home - Zambian Business Times",
     "summary": "2026 elections are the worst-organized elections in Zambia's history - State Counsel lumezi still not connected to the internet. Chiengi facing intermittent connectivity. This election fell far short of being free and fair - JCTR, NGOCC, TIZ, ADEG, F",
     "source": "Zambian Business Times",
     "url": "https://zambianbusinesstimes.com/",
-    "tickers": []
-  },
-  {
-    "date": "2026-08-31",
-    "category": "Corporate",
-    "title": "Economist challenges BoZ's 6-8% inflation projection by Q1 2026 calling ...",
-    "summary": "An Economist has cast doubt on the Bank of Zambia's (BoZ) recent inflation projections, arguing that the central bank's targets are unattainable due to fundamental weaknesses in the nation's economic structure. The BOZ has forecast that inflation wil",
-    "source": "Zambian Business Times",
-    "url": "https://zambianbusinesstimes.com/economist-challenges-bozs-6-8-inflation-projection-by-q1-2026-calling-it-more-academic-than-reality/",
     "tickers": []
   },
   {
@@ -493,74 +560,5 @@
     "source": "LuSE Official",
     "url": "https://www.luse.co.zm/sens/mfs-mandatory-offer-first-announcement/",
     "tickers": []
-  },
-  {
-    "date": "2026-08-29",
-    "category": "Market",
-    "title": "PDF Zambia Sugar Joins the Elite $1 Billion Market Capitalisation Club",
-    "summary": "A MILESTONE FOR ZAMBIAN CAPITAL MARKETS On Friday, 16 January, the Lusaka Securities Exchange (LuSE) marked a significant milestone as Zambia Sugar Plc surpassed the USD 1 billion market capitalisation threshold, becoming the third listed company to ",
-    "source": "LuSE Official",
-    "url": "https://www.luse.co.zm/wp-content/uploads/2026/01/The-LuSE-Perspective-26-Jan.pdf",
-    "tickers": [
-      "ZCCM"
-    ]
-  },
-  {
-    "date": "2026-08-28",
-    "category": "Macro",
-    "title": "Inflation drops to 6.2% - News Diggers!",
-    "summary": "THE Zambia Statistics Agency (ZamStats) says the annual inflation rate for August 2026 declined to 6.2 percent from 6.5 percent recorded in July 2026. President Hakainde Hichilema says the reduced inflation shows that government's hard work over the past five years is paying off.",
-    "source": "News Diggers",
-    "url": "https://diggers.news/business/2026/08/28/inflation-drops-to-6-2/",
-    "tickers": []
-  },
-  {
-    "date": "2026-08-28",
-    "category": "Macro",
-    "title": "Zambia Economy This Week: 24 to 26 August 2026 - Zambia Economist",
-    "summary": "Courts shut on the petition deadline as a petition reached the Chief Justice by private email; ZIPAR found revenue behind target and copper output crept up 0.45%. The week to 26 August, reviewed.",
-    "source": "Zambia Economist",
-    "url": "https://zambianeconomist.com/zambia-economy-this-week-26-august-2026/",
-    "tickers": []
-  },
-  {
-    "date": "2026-08-28",
-    "category": "Corporate",
-    "title": "Mopani, KCM Drag ZCCM-IH Into ZMW4.9bn Loss - Equity Axis",
-    "summary": "ZCCM-IH recorded a ZMW4.92 billion (US$261.7 million) loss in 2025 as Mopani and KCM underperformance weighed on earnings while both operations remained under strategic reform. Zambia's state-linked mining investment vehicle needs operating reforms at the two critical copper assets to translate into production, cash generation and recurring portfolio income.",
-    "source": "Equity Axis",
-    "url": "https://equityaxis.net/post/19385/2026/8/mopani-kcm-drag-zccm-ih-into-zmw4-9bn-loss",
-    "tickers": [
-      "ZCCM"
-    ]
-  },
-  {
-    "date": "2026-08-28",
-    "category": "Market",
-    "title": "Zambia wins UK confidence at InvestFest 2026 - The Mast Newspaper",
-    "summary": "She said the UK-backed Zambia Investment Support Project was helping local businesses become investment-ready by strengthening their operational and financial capabilities. InvestFest 2026 is expected to catalyze new deals and partnerships over its t",
-    "source": "Mast Media Zambia",
-    "url": "https://mastmediazm.com/2026/05/zambia-wins-uk-confidence-at-investfest-2026/",
-    "tickers": []
-  },
-  {
-    "date": "2026-08-28",
-    "category": "Macro",
-    "title": "Investors have regained appetite for Zambia after default, Citi says",
-    "summary": "JOHANNESBURG, July 1 (Reuters) - Zambia's mining, energy and agriculture sectors have drawn significant investor interest as the government's fiscal consolidation gains traction after emerging from a sovereign default, said Citi's country chief. \"We ",
-    "source": "Reuters",
-    "url": "https://www.marketscreener.com/news/investors-have-regained-appetite-for-zambia-after-default-citi-says-ce7f5fdddf8df424",
-    "tickers": []
-  },
-  {
-    "date": "2026-08-28",
-    "category": "Market",
-    "title": "ZCCM IH AGM NOTICE - Lusaka Securities Exchange (LuSE)",
-    "summary": "Stock Exchange News Annual and Extraordinary General Meeting August 19, 2026 ZCCM IH AGM NOTICE Annual and Extraordinary General Meeting Download",
-    "source": "LuSE Official",
-    "url": "https://www.luse.co.zm/sens/zccm-ih-agm-notice/",
-    "tickers": [
-      "ZCCM"
-    ]
   }
 ]
