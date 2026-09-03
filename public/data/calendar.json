@@ -72,14 +72,6 @@
     "confidence": "estimated"
   },
   {
-    "ticker": "CHIL",
-    "date": "2026-09-15",
-    "displayDate": "Sep 15",
-    "type": "Earnings",
-    "desc": "Half-Year Results (est)",
-    "confidence": "estimated"
-  },
-  {
     "ticker": "ZMBF",
     "date": "2026-09-15",
     "displayDate": "Sep 15",
@@ -97,14 +89,6 @@
   },
   {
     "ticker": "BATZ",
-    "date": "2026-09-15",
-    "displayDate": "Sep 15",
-    "type": "Earnings",
-    "desc": "Half-Year Results (est)",
-    "confidence": "estimated"
-  },
-  {
-    "ticker": "SHOP",
     "date": "2026-09-15",
     "displayDate": "Sep 15",
     "type": "Earnings",
@@ -153,6 +137,22 @@
   },
   {
     "ticker": "CCAF",
+    "date": "2026-09-15",
+    "displayDate": "Sep 15",
+    "type": "Earnings",
+    "desc": "Half-Year Results (est)",
+    "confidence": "estimated"
+  },
+  {
+    "ticker": "FARM",
+    "date": "2026-09-15",
+    "displayDate": "Sep 15",
+    "type": "Earnings",
+    "desc": "Half-Year Results (est)",
+    "confidence": "estimated"
+  },
+  {
+    "ticker": "MAFS",
     "date": "2026-09-15",
     "displayDate": "Sep 15",
     "type": "Earnings",

@@ -1,5 +1,38 @@
 [
   {
+    "title": "REIZ – BONUS AND RIGHTS ISSUE DETAILS ANNOUNCEMENT",
+    "date": "2026-09-02",
+    "category": "General Announcements",
+    "type": "General",
+    "tickers": [
+      "REIZ"
+    ],
+    "source": "LuSE SENS",
+    "url": "https://www.luse.co.zm/sens-category/general-announcements/"
+  },
+  {
+    "title": "SHOP – 2026 REVIEWED RESULTS FOR THE 52 WEEKS ENDED 28 JUNE 2026 AND CASH DIVIDEND DECLARATION",
+    "date": "2026-09-02",
+    "category": "Financial Statements",
+    "type": "Earnings",
+    "tickers": [
+      "SHOP"
+    ],
+    "source": "LuSE SENS",
+    "url": "https://www.luse.co.zm/sens-category/financial-statements/"
+  },
+  {
+    "title": "CHIL – UNAUDITED RESULTS FOR THE HALF YEAR",
+    "date": "2026-09-02",
+    "category": "Financial Statements",
+    "type": "Earnings",
+    "tickers": [
+      "CHIL"
+    ],
+    "source": "LuSE SENS",
+    "url": "https://www.luse.co.zm/sens-category/financial-statements/"
+  },
+  {
     "title": "REIZ- CHANGE IN DIRECTORATE",
     "date": "2026-08-31",
     "category": "Change in Directorate",
