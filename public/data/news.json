@@ -330,6 +330,28 @@
     "tickers": []
   },
   {
+    "date": "2026-09-02",
+    "category": "Market",
+    "title": "CHIL - Unaudited Results for the Half Year 2026",
+    "summary": "Chilanga Cement published unaudited financial results for H1 2026 via LuSE SENS on 2 September 2026.",
+    "source": "LuSE Official",
+    "url": "https://www.luse.co.zm/sens-category/financial-statements/",
+    "tickers": [
+      "CHIL"
+    ]
+  },
+  {
+    "date": "2026-09-02",
+    "category": "Market",
+    "title": "SHOP - 2026 Reviewed Results (52 weeks to 28 June 2026) and Cash Dividend Declaration",
+    "summary": "Shoprite (SHOP) published reviewed FY2026 results for the 52 weeks ended 28 June 2026 and declared a cash dividend, via LuSE SENS on 2 September 2026.",
+    "source": "LuSE Official",
+    "url": "https://www.luse.co.zm/sens-category/financial-statements/",
+    "tickers": [
+      "SHOP"
+    ]
+  },
+  {
     "date": "2026-09-01",
     "category": "Macro",
     "title": "Zambia Economy 2026: The Numbers That Matter for Business",
@@ -436,6 +458,17 @@
     "url": "https://www.luse.co.zm/wp-content/uploads/2026/05/ZCCM-IH-NDOLA-LIMESTONE-2026-TRANSACTION-ANNOUNCEMENT-SENS-27-May-2026.pdf",
     "tickers": [
       "ZCCM"
+    ]
+  },
+  {
+    "date": "2026-08-31",
+    "category": "Market",
+    "title": "ZCCM-IH: ZMW4.92bn net loss for FY2025 on Mopani/KCM drag",
+    "summary": "ZCCM Investments Holdings recorded a ZMW4.92bn (US.7m) net loss for the year ended December 2025, versus a ZMW39.85bn profit in 2024 that included a one-off investment gain; underperformance at Mopani and KCM weighed on earnings as both assets remain under strategic operational reform.",
+    "source": "Equity Axis",
+    "url": "https://equityaxis.net/post/19385/2026/8/mopani-kcm-drag-zccm-ih-into-zmw4-9bn-loss",
+    "tickers": [
+      "ZCCM-IH"
     ]
   },
   {
