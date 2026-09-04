@@ -88,14 +88,6 @@
     "confidence": "estimated"
   },
   {
-    "ticker": "BATZ",
-    "date": "2026-09-15",
-    "displayDate": "Sep 15",
-    "type": "Earnings",
-    "desc": "Half-Year Results (est)",
-    "confidence": "estimated"
-  },
-  {
     "ticker": "INDO",
     "date": "2026-09-15",
     "displayDate": "Sep 15",
@@ -153,6 +145,14 @@
   },
   {
     "ticker": "MAFS",
+    "date": "2026-09-15",
+    "displayDate": "Sep 15",
+    "type": "Earnings",
+    "desc": "Half-Year Results (est)",
+    "confidence": "estimated"
+  },
+  {
+    "ticker": "ZMFA",
     "date": "2026-09-15",
     "displayDate": "Sep 15",
     "type": "Earnings",

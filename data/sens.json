@@ -1,5 +1,69 @@
 [
   {
+    "title": "MFS-Mandatory Offer Second Announcement",
+    "date": "2026-09-04",
+    "category": "General Announcements",
+    "type": "General",
+    "tickers": [],
+    "source": "LuSE SENS",
+    "url": "https://www.luse.co.zm/sens-category/general-announcements/"
+  },
+  {
+    "title": "SCBL – MARKET UPDATE ON SALE OF WEALTH AND RETAIL BUSINESS",
+    "date": "2026-09-04",
+    "category": "General Announcements",
+    "type": "General",
+    "tickers": [
+      "SCBL"
+    ],
+    "source": "LuSE SENS",
+    "url": "https://www.luse.co.zm/sens-category/general-announcements/"
+  },
+  {
+    "title": "BATZ-Notice of Interim Interim Results",
+    "date": "2026-09-04",
+    "category": "Financial Statements",
+    "type": "Earnings",
+    "tickers": [
+      "BATZ"
+    ],
+    "source": "LuSE SENS",
+    "url": "https://www.luse.co.zm/sens-category/financial-statements/"
+  },
+  {
+    "title": "BATZ-Notice of Interim Dividend",
+    "date": "2026-09-04",
+    "category": "Dividends",
+    "type": "Dividends",
+    "tickers": [
+      "BATZ"
+    ],
+    "source": "LuSE SENS",
+    "url": "https://www.luse.co.zm/sens-category/dividends/"
+  },
+  {
+    "title": "CHIL – INTERIM DIVIDEND NOTICE",
+    "date": "2026-09-03",
+    "category": "Dividends",
+    "type": "Dividends",
+    "tickers": [
+      "CHIL"
+    ],
+    "source": "LuSE SENS",
+    "url": "https://www.luse.co.zm/sens-category/dividends/"
+  },
+  {
+    "title": "CEC Plc- Change in Company Secretary",
+    "date": "2026-09-03",
+    "category": "Change in Directorate",
+    "type": "General",
+    "tickers": [
+      "CECZ"
+    ],
+    "source": "LuSE SENS",
+    "url": "https://www.luse.co.zm/sens-category/change-in-directorate/"
+  },
+  {
     "title": "REIZ – BONUS AND RIGHTS ISSUE DETAILS ANNOUNCEMENT",
     "date": "2026-09-02",
     "category": "General Announcements",
