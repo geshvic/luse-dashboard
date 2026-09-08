@@ -1,5 +1,27 @@
 [
   {
+    "title": "BATA – HALF YEAR RESULTS FOR THE 6 MONTHS TO 30th June 2026",
+    "date": "2026-09-08",
+    "category": "Financial Statements",
+    "type": "Earnings",
+    "tickers": [
+      "BATA"
+    ],
+    "source": "LuSE SENS",
+    "url": "https://www.luse.co.zm/sens-category/financial-statements/"
+  },
+  {
+    "title": "REIZ- RIGHTS AND BONUS SHARE ISSUE OFFER DOCUMENT",
+    "date": "2026-09-07",
+    "category": "General Announcements",
+    "type": "General",
+    "tickers": [
+      "REIZ"
+    ],
+    "source": "LuSE SENS",
+    "url": "https://www.luse.co.zm/sens-category/general-announcements/"
+  },
+  {
     "title": "MFS-Mandatory Offer Second Announcement",
     "date": "2026-09-04",
     "category": "General Announcements",
