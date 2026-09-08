@@ -1,151 +1,159 @@
 {
-  "asOf": "2026-09-07",
+  "asOf": "2026-09-08",
   "marketClose": {
-    "lasiIndex": 26162.48,
-    "lasiChange": 0,
-    "lasiChangePct": 0,
-    "totalTrades": 884,
-    "totalVolume": 135240,
-    "totalValue": 1240862.24,
-    "marketCapTotal": 336.22,
-    "marketCapExclShoprite": 144.58,
+    "lasiIndex": 26219.04,
+    "lasiChange": 56.56,
+    "lasiChangePct": 0.22,
+    "totalTrades": 866,
+    "totalVolume": 234734,
+    "totalValue": 4064521.92,
+    "marketCapTotal": 336.54,
+    "marketCapExclShoprite": 144.71,
     "marketCapUnit": "Billion ZMW",
-    "sessionSummary": "884 trades across 135,240 shares. Turnover K1.24M. LASI up 0% to 26,162.48. Breadth: 1 advancer, 5 decliners, 17 unchanged."
+    "sessionSummary": "866 trades across 234,734 shares. Turnover K4.06M. LASI up 0.22% to 26,219.04. Breadth: 4 advancers, 3 decliners, 16 unchanged."
   },
   "gainers": [
     {
-      "ticker": "NATB",
-      "name": "NATB",
-      "price": 2.85,
-      "change": 0.25,
-      "changePct": 9.62,
-      "volume": 187
-    }
-  ],
-  "decliners": [
-    {
       "ticker": "ATEL",
       "name": "ATEL",
-      "price": 222.88,
-      "change": -1.12,
-      "changePct": -0.5,
-      "volume": 1344
+      "price": 223,
+      "change": 0.12,
+      "changePct": 0.05,
+      "volume": 350
     },
     {
-      "ticker": "CECZ",
-      "name": "CECZ",
-      "price": 15.46,
-      "change": -0.01,
-      "changePct": -0.06,
-      "volume": 40537
+      "ticker": "BATZ",
+      "name": "BATZ",
+      "price": 12.58,
+      "change": 0.09,
+      "changePct": 0.72,
+      "volume": 684
     },
     {
       "ticker": "ZFCO",
       "name": "ZFCO",
-      "price": 8,
-      "change": -1.5,
-      "changePct": -15.79,
-      "volume": 710
+      "price": 8.6,
+      "change": 0.6,
+      "changePct": 7.5,
+      "volume": 7027
     },
     {
-      "ticker": "ZMFA",
-      "name": "ZMFA",
-      "price": 38,
-      "change": -2,
-      "changePct": -5,
-      "volume": 195
+      "ticker": "REIZUSD",
+      "name": "REIZUSD",
+      "price": 0.16,
+      "change": 0.01,
+      "changePct": 6.67,
+      "volume": 9708
+    }
+  ],
+  "decliners": [
+    {
+      "ticker": "PUMA",
+      "name": "PUMA",
+      "price": 2.43,
+      "change": -0.02,
+      "changePct": -0.82,
+      "volume": 1430
+    },
+    {
+      "ticker": "SCBL",
+      "name": "SCBL",
+      "price": 1.22,
+      "change": -0.01,
+      "changePct": -0.81,
+      "volume": 3282
+    },
+    {
+      "ticker": "ZABR",
+      "name": "ZABR",
+      "price": 6.5,
+      "change": -0.2,
+      "changePct": -2.99,
+      "volume": 218
+    }
+  ],
+  "mostActiveByValue": [
+    {
+      "ticker": "DCZM",
+      "name": "DCZM",
+      "price": 24.6,
+      "volume": 58057,
+      "value": 1428202.2,
+      "trades": 24
+    },
+    {
+      "ticker": "SHOP",
+      "name": "SHOP",
+      "price": 350,
+      "volume": 3777,
+      "value": 1321950,
+      "trades": 2
     },
     {
       "ticker": "ZNCO",
       "name": "ZNCO",
       "price": 9.44,
-      "change": -0.04,
-      "changePct": -0.42,
-      "volume": 9156
-    }
-  ],
-  "mostActiveByValue": [
+      "volume": 49656,
+      "value": 468739.85,
+      "trades": 112
+    },
     {
       "ticker": "CECZ",
       "name": "CECZ",
       "price": 15.46,
-      "volume": 40537,
-      "value": 626771.84,
-      "trades": 184
-    },
-    {
-      "ticker": "ATEL",
-      "name": "ATEL",
-      "price": 222.88,
-      "volume": 1344,
-      "value": 300086,
-      "trades": 51
+      "volume": 27441,
+      "value": 424235.77,
+      "trades": 138
     },
     {
       "ticker": "CHIL",
       "name": "CHIL",
       "price": 63,
-      "volume": 1408,
-      "value": 88688.56,
-      "trades": 42
+      "volume": 2073,
+      "value": 130325.78,
+      "trades": 54
+    }
+  ],
+  "mostActiveByVolume": [
+    {
+      "ticker": "DCZM",
+      "name": "DCZM",
+      "price": 24.6,
+      "volume": 58057,
+      "value": 1428202.2,
+      "trades": 24
+    },
+    {
+      "ticker": "KLRE",
+      "name": "KLRE",
+      "price": 0.36,
+      "volume": 55056,
+      "value": 19586.85,
+      "trades": 124
     },
     {
       "ticker": "ZNCO",
       "name": "ZNCO",
       "price": 9.44,
-      "volume": 9156,
-      "value": 86398.67,
-      "trades": 110
-    },
-    {
-      "ticker": "ZCCM-IH",
-      "name": "ZCCM-IH",
-      "price": 149,
-      "volume": 183,
-      "value": 27245,
-      "trades": 13
-    }
-  ],
-  "mostActiveByVolume": [
-    {
-      "ticker": "KLRE",
-      "name": "KLRE",
-      "price": 0.36,
-      "volume": 52652,
-      "value": 18750.08,
-      "trades": 152
+      "volume": 49656,
+      "value": 468739.85,
+      "trades": 112
     },
     {
       "ticker": "CECZ",
       "name": "CECZ",
       "price": 15.46,
-      "volume": 40537,
-      "value": 626771.84,
-      "trades": 184
+      "volume": 27441,
+      "value": 424235.77,
+      "trades": 138
     },
     {
-      "ticker": "SCBL",
-      "name": "SCBL",
-      "price": 1.23,
-      "volume": 11222,
-      "value": 13848.56,
-      "trades": 46
-    },
-    {
-      "ticker": "REIZUSD",
-      "name": "REIZUSD",
-      "price": 0.15,
-      "volume": 9605,
-      "value": 1483.31,
-      "trades": 51
-    },
-    {
-      "ticker": "ZNCO",
-      "name": "ZNCO",
-      "price": 9.44,
-      "volume": 9156,
-      "value": 86398.67,
-      "trades": 110
+      "ticker": "ZMBF",
+      "name": "ZMBF",
+      "price": 1.93,
+      "volume": 15873,
+      "value": 30583.64,
+      "trades": 95
     }
   ]
 }
