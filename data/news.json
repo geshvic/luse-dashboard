@@ -40,11 +40,13 @@
   {
     "date": "2026-09-10",
     "category": "Corporate",
-    "title": "High lending rates persist despite Zambia's economic gains",
-    "summary": "Despite positive economic indicators, such as an 18% appreciation of the kwacha, international gross reserves exceeding $6 billion, and single-digit inflation within the 6-8% target band, Zambia's private sector continues to face challenges accessing",
+    "title": "Is inflation really falling for ordinary Zambians? - Zambian Business Times",
+    "summary": "The Zambia Statistics Agency (ZAMSTATS) reported in April 2026 that the annual inflation rate slowed to 6.8% in April 2026 from 7.1% in March, but nonfood inflation increased to 6.0% from 5.9%. The report further showed that the rise in non-food infl",
     "source": "Zambian Business Times",
-    "url": "https://zambianbusinesstimes.com/high-lending-rates-persist-despite-zambias-economic-gains/",
-    "tickers": []
+    "url": "https://zambianbusinesstimes.com/is-inflation-really-falling-for-ordinary-zambians/",
+    "tickers": [
+      "CHIL"
+    ]
   },
   {
     "date": "2026-09-10",
@@ -53,6 +55,24 @@
     "summary": "CEC predicts good share price in 2026 By Mast Reporter THE Copperbelt Energy Corporation Plc says it expects its share price on the Lusaka Securities Exchange (LuSE) to remain high in view of continued efforts to scale up investments in the renewable",
     "source": "Mast Media Zambia",
     "url": "https://mastmediazm.com/2026/01/cec-predicts-good-share-price-in-2026/",
+    "tickers": []
+  },
+  {
+    "date": "2026-09-10",
+    "category": "Market",
+    "title": "Copper, campaign cash, and tax breaks: The stakes for Zambia's ...",
+    "summary": "Copper, campaign cash, and tax breaks: The stakes for Zambia's constitutional democracy By Prof. Cephas Lumina Recent claims about foreign companies funding politics, mining tax breaks, and public policy in Zambia raise important questions about who ",
+    "source": "Mast Media Zambia",
+    "url": "https://mastmediazm.com/2026/07/copper-campaign-cash-and-tax-breaks-the-stakes-for-zambias-constitutional-democracy/",
+    "tickers": []
+  },
+  {
+    "date": "2026-09-10",
+    "category": "Market",
+    "title": "ERB approves K1.1bn energy investments - The Mast Newspaper",
+    "summary": "In a statement seen by The Mast, ERB public relations manager Namukolo Kasumpa said the approvals, granted on March 16, covered electricity, renewable energy and downstream petroleum projects, showcasing investor confidence in Zambia's energy sector.",
+    "source": "Mast Media Zambia",
+    "url": "https://mastmediazm.com/2026/03/erb-approves-k1-1bn-energy-investments/",
     "tickers": []
   },
   {
@@ -71,24 +91,6 @@
     "summary": "She said the UK-backed Zambia Investment Support Project was helping local businesses become investment-ready by strengthening their operational and financial capabilities. InvestFest 2026 is expected to catalyze new deals and partnerships over its t",
     "source": "Mast Media Zambia",
     "url": "https://mastmediazm.com/2026/05/zambia-wins-uk-confidence-at-investfest-2026/",
-    "tickers": []
-  },
-  {
-    "date": "2026-09-10",
-    "category": "Market",
-    "title": "Copper, campaign cash, and tax breaks: The stakes for Zambia's ...",
-    "summary": "Copper, campaign cash, and tax breaks: The stakes for Zambia's constitutional democracy By Prof. Cephas Lumina Recent claims about foreign companies funding politics, mining tax breaks, and public policy in Zambia raise important questions about who ",
-    "source": "Mast Media Zambia",
-    "url": "https://mastmediazm.com/2026/07/copper-campaign-cash-and-tax-breaks-the-stakes-for-zambias-constitutional-democracy/",
-    "tickers": []
-  },
-  {
-    "date": "2026-09-10",
-    "category": "Market",
-    "title": "Economy showing signs of hope - ZICA - The Mast Newspaper",
-    "summary": "Economy showing signs of hope - ZICA By Ludia Ngwadzai ZAMBIA'S improving macroeconomic outlook is offering cautious hope for businesses, but emerging fiscal pressures and structural challenges will continue to test the resilience of the private sect",
-    "source": "Mast Media Zambia",
-    "url": "https://mastmediazm.com/2026/05/economy-showing-signs-of-hope-zica/",
     "tickers": []
   },
   {
@@ -132,10 +134,10 @@
   {
     "date": "2026-09-10",
     "category": "Macro",
-    "title": "Zambia's economy to double post 2026 general elections says HH.",
-    "summary": "Zambia's economy grew by 4.5% in the first quarter of 2025, recovering from a slower pace in 2024, despite challenges from drought and low electricity supply. The International Monetary Fund has projected that Zambia's economy will grow by 6.2 percen",
+    "title": "Zambia's GDP Is Likely to Leapfrog: Why the GDP Rebasing Exercise Could ...",
+    "summary": "Financial Services The financial sector has transformed. Today Zambia has: Mobile banking Digital lending FinTech innovations Electronic payments Agency banking Mobile money Many of these activities scarcely existed in 2010. ICT and Digital Economy P",
     "source": "Mwebantu",
-    "url": "https://mwebantu.com/zambias-economy-to-double-post-2026-general-elections-says-hh/",
+    "url": "https://www.mwebantu.com/zambias-gdp-is-likely-to-leapfrog-why-the-gdp-rebasing-exercise-could-transform-the-countrys-economic-profile/",
     "tickers": []
   },
   {
@@ -168,22 +170,20 @@
   {
     "date": "2026-09-10",
     "category": "Commodities",
-    "title": "Zambia 2025 Mining Report - PwC",
-    "summary": "Overview of the mining sector in Zambia The Zambian mining sector remains heavily dominated by copper, which continues to be the backbone of the country's economy, contributing significantly to GDP, government revenue, and export earnings. In 2024, c",
+    "title": "Kwacha Extends Rally, Leads Global Currency Gains - Open Zambia",
+    "summary": "Other factors supporting the kwacha include surging copper prices and the introduction of yuan-denominated mining tax payments that began in October. Three-month copper futures surged to a record $13,090 per ton on the London Metal Exchange on Tuesda",
     "source": "Bloomberg",
-    "url": "https://www.pwc.com/zm/en/publications/zambia-mining-report.html",
+    "url": "https://www.openzambia.com/economics/2026/1/7/kwacha-extends-rally-leads-global-currency-gains",
     "tickers": []
   },
   {
     "date": "2026-09-10",
     "category": "Commodities",
-    "title": "Investors Remain Bullish on Zambia as Copper Rally Strengthens Market ...",
-    "summary": "The recent rally in copper prices has provided further support for the Zambian economy and financial markets. Copper has gained about 15% this year, while the kwacha has strengthened by approximately 16% against the US dollar, supported by higher cop",
+    "title": "Zambia's currency hits highest level since 2024 amid copper price boom",
+    "summary": "Zambia's currency surged to its strongest level in nearly two years, buoyed by renewed optimism in the nation's copper industry. The kwacha advanced 0.7% to 22.76 per dollar, its highest level since February 2024, extending a rally that has made it A",
     "source": "Bloomberg",
-    "url": "https://batterymetalsafrica.com/investors-remain-bullish-on-zambia-as-copper-rally-strengthens-market-outlook/",
-    "tickers": [
-      "ATEL"
-    ]
+    "url": "https://africa.businessinsider.com/local/markets/zambias-currency-hits-highest-level-since-2024-amid-copper-price-boom/fms73zb?op=1",
+    "tickers": []
   },
   {
     "date": "2026-09-10",
@@ -206,6 +206,24 @@
   {
     "date": "2026-09-10",
     "category": "Macro",
+    "title": "Zambia draws fresh investment after debt recovery",
+    "summary": "Keypoints: Zambia is attracting renewed investor interest after debt restructuring Mining, energy and agriculture are leading new investment opportunities Zambia's recovery is becoming a closely watched model for African economies ZAMBIA is drawing f",
+    "source": "Reuters",
+    "url": "https://africabriefing.com/zambia-draws-fresh-investment-after-debt-recovery/",
+    "tickers": []
+  },
+  {
+    "date": "2026-09-10",
+    "category": "Macro",
+    "title": "IMF Executive Board Completes Sixth Review Under the Extended Credit ...",
+    "summary": "The IMF Executive Board completed the sixth and final review under the 38-month Extended Credit Facility Arrangement, which has supported Zambia's reform agenda aimed at restoring macroeconomic stability, building economic resilience, and promoting s",
+    "source": "Reuters",
+    "url": "https://www.imf.org/en/news/articles/2026/01/27/pr-26024-zambia-imf-executive-board-completes-sixth-review-under-the-extended-credit-facility",
+    "tickers": []
+  },
+  {
+    "date": "2026-09-10",
+    "category": "Macro",
     "title": "Debt Restructuring Cuts Zambia's Debt-Service Burden, Expands Fiscal ...",
     "summary": "Zambia's debt-to-GDP ratio increased from 48 percent in 2016 to 128 percent in 2021, while economic growth averaged only 2.1 percent during the period. Before the restructuring, Nkulukusa said nearly K70 of every K100 collected in domestic revenue wa",
     "source": "Reuters",
@@ -216,38 +234,11 @@
   },
   {
     "date": "2026-09-10",
-    "category": "Macro",
-    "title": "Zambia draws fresh investment after debt recovery",
-    "summary": "Keypoints: Zambia is attracting renewed investor interest after debt restructuring Mining, energy and agriculture are leading new investment opportunities Zambia's recovery is becoming a closely watched model for African economies ZAMBIA is drawing f",
-    "source": "Reuters",
-    "url": "https://africabriefing.com/zambia-draws-fresh-investment-after-debt-recovery/",
-    "tickers": []
-  },
-  {
-    "date": "2026-09-10",
-    "category": "Macro",
-    "title": "Debt Restructuring Deals Put Zambia in an Economic Catch-22",
-    "summary": "Zambia is on the cusp of completing a deal to restructure its debt amounting to US$13.4 billion, a process the Southern African nation pursued in 2021 following its defaulted-on debt obligations. In a wave, the sovereign credit ratings through Moody'",
-    "source": "Reuters",
-    "url": "https://financialinsight.africa/fiz/articles/9/economic-development/debt-restructuring-deals-put-zambia-in-an-economic-catch-22",
-    "tickers": []
-  },
-  {
-    "date": "2026-09-10",
     "category": "Market",
-    "title": "PDF SENS ANNOUNCEMENT \"Announcement\")",
+    "title": "PDF SENS ANNOUNCEMENT \"Announcement\") - luse.co.zm",
     "summary": "Announcement dated 26 November 2025, the EGM Results Announcement dated 17 December 2025, and the market update dated 22 June 2026 confirming that the Bank of Zambia had granted its approval on 19 June 2026, shareholders of Standard Chartered Bank Za",
     "source": "LuSE Official",
     "url": "https://www.luse.co.zm/wp-content/uploads/2026/09/SCBZ-Market-Update-Announcement-SENS-04.09.2026.pdf",
-    "tickers": []
-  },
-  {
-    "date": "2026-09-10",
-    "category": "Market",
-    "title": "PDF SENS ANNOUNCEMENT \"Announcement\") - luse.co.zm",
-    "summary": "Announcement dated 26 November 2025 and the EGM Results Announcement dated 17 December 2025, shareholders of Standard Chartered Bank Zambia Plc (\"SCBZ\" or \"the Bank\") are advised that the Bank of Zambia granted its approval on 19 June 2026 for the pr",
-    "source": "LuSE Official",
-    "url": "https://www.luse.co.zm/wp-content/uploads/2026/06/SCBZ-Market-Announcement-SENS-22.06.2026.pdf",
     "tickers": []
   },
   {
@@ -269,6 +260,62 @@
     "summary": "The LuSE enters the second half of 2026 underpinned by structural tailwinds: deepening bond market liquidity, accelerating retail digital adoption via the LuSE Mobile App, favourable currency-driven returns sustaining foreign interest, and landmark c",
     "source": "LuSE Official",
     "url": "https://www.luse.co.zm/wp-content/uploads/2026/07/june_Market-update-2.pdf",
+    "tickers": []
+  },
+  {
+    "date": "2026-09-10",
+    "category": "Corporate",
+    "title": "High lending rates persist despite Zambia's economic gains",
+    "summary": "Despite positive economic indicators, such as an 18% appreciation of the kwacha, international gross reserves exceeding $6 billion, and single-digit inflation within the 6-8% target band, Zambia's private sector continues to face challenges accessing",
+    "source": "Zambian Business Times",
+    "url": "https://zambianbusinesstimes.com/high-lending-rates-persist-despite-zambias-economic-gains/",
+    "tickers": []
+  },
+  {
+    "date": "2026-09-10",
+    "category": "Market",
+    "title": "Economy showing signs of hope - ZICA - The Mast Newspaper",
+    "summary": "Economy showing signs of hope - ZICA By Ludia Ngwadzai ZAMBIA'S improving macroeconomic outlook is offering cautious hope for businesses, but emerging fiscal pressures and structural challenges will continue to test the resilience of the private sect",
+    "source": "Mast Media Zambia",
+    "url": "https://mastmediazm.com/2026/05/economy-showing-signs-of-hope-zica/",
+    "tickers": []
+  },
+  {
+    "date": "2026-09-10",
+    "category": "Macro",
+    "title": "Zambia's economy to double post 2026 general elections says HH.",
+    "summary": "Zambia's economy grew by 4.5% in the first quarter of 2025, recovering from a slower pace in 2024, despite challenges from drought and low electricity supply. The International Monetary Fund has projected that Zambia's economy will grow by 6.2 percen",
+    "source": "Mwebantu",
+    "url": "https://mwebantu.com/zambias-economy-to-double-post-2026-general-elections-says-hh/",
+    "tickers": []
+  },
+  {
+    "date": "2026-09-10",
+    "category": "Commodities",
+    "title": "Zambia 2025 Mining Report - PwC",
+    "summary": "Overview of the mining sector in Zambia The Zambian mining sector remains heavily dominated by copper, which continues to be the backbone of the country's economy, contributing significantly to GDP, government revenue, and export earnings. In 2024, c",
+    "source": "Bloomberg",
+    "url": "https://www.pwc.com/zm/en/publications/zambia-mining-report.html",
+    "tickers": []
+  },
+  {
+    "date": "2026-09-10",
+    "category": "Commodities",
+    "title": "Investors Remain Bullish on Zambia as Copper Rally Strengthens Market ...",
+    "summary": "The recent rally in copper prices has provided further support for the Zambian economy and financial markets. Copper has gained about 15% this year, while the kwacha has strengthened by approximately 16% against the US dollar, supported by higher cop",
+    "source": "Bloomberg",
+    "url": "https://batterymetalsafrica.com/investors-remain-bullish-on-zambia-as-copper-rally-strengthens-market-outlook/",
+    "tickers": [
+      "ATEL"
+    ]
+  },
+  {
+    "date": "2026-09-10",
+    "category": "Macro",
+    "title": "Debt Restructuring Deals Put Zambia in an Economic Catch-22",
+    "summary": "Zambia is on the cusp of completing a deal to restructure its debt amounting to US$13.4 billion, a process the Southern African nation pursued in 2021 following its defaulted-on debt obligations. In a wave, the sovereign credit ratings through Moody'",
+    "source": "Reuters",
+    "url": "https://financialinsight.africa/fiz/articles/9/economic-development/debt-restructuring-deals-put-zambia-in-an-economic-catch-22",
     "tickers": []
   },
   {
@@ -514,52 +561,5 @@
     "tickers": [
       "CHIL"
     ]
-  },
-  {
-    "date": "2026-09-02",
-    "category": "Market",
-    "title": "Where did all the ‘masculine men’ go? - VPM",
-    "summary": "Where did all the ‘masculine men’ go?&nbsp;&nbsp;VPM",
-    "source": "VPM",
-    "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5JcnR1bnRsRzcxVW5zdjdsQ01NMUNWd1Q5N21RTVVmcDY0QW1NWk1zc2Fqc2xUWDl4UTZETUJHaW9Sb3d6Y0ViQlA1NURtXzc3NkRwd3Z6NmpDWUl2aUltY18zTnl4c1ViMm85SGk5eHpOTFU?oc=5",
-    "tickers": []
-  },
-  {
-    "date": "2026-09-01",
-    "category": "Macro",
-    "title": "Hakainde Hichilema sworn in as Zambia’s president after disputed election - Al Jazeera",
-    "summary": "Hakainde Hichilema sworn in as Zambia’s president after disputed election&nbsp;&nbsp;Al Jazeera",
-    "source": "Al Jazeera",
-    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNQURLUTBydUJvbVg0ZFJ3d2FnWmNzeUwyOG4wZkREbElKSmFwMTZuZ24xMHpVZWd2eFkwek5RWEFvdWhEdmw2dTl1emlVbnYwR1Q3LXBOUDhjTzJVcEh3alFUSjF4dFBCZVY4ek1VdHZiVl9NVk95OHFhbUNvRWswSFctcmNyWUhwM3NsMm9YalRISmU5d2x0UkZfTkN6cmc2aG9Cakx4Tk1FRzlBSTVTWtIBtgFBVV95cUxPR0pzZ2wtRXhVQVpMTjhVZ2xvZ1dWbjg5UnEweV9UbUxnZjhCS2pEWm1ZMTFqdnBKNHhfTTBfdDdxdUdqcnk3TkZ3MTNicjVtRWpfRy15N1VfcDFhT1otRXVIOUtmbmVycVl1d1RiRGhmMXVOVTlUYXNJbDBwdkJNNnpUWk5PbFhzR3BXZWtNdENKVVdkUmt1VzhEV2RGWlJPTTh0dmltNFNBeTliaE5HRHZJQWhOZw?oc=5",
-    "tickers": [
-      "CHIL"
-    ]
-  },
-  {
-    "date": "2026-08-31",
-    "category": "Market",
-    "title": "Dolly Parton's Estate announces Dollyfest celebration in Nashville - mycbs4.com",
-    "summary": "Dolly Parton's Estate announces Dollyfest celebration in Nashville&nbsp;&nbsp;mycbs4.com",
-    "source": "mycbs4.com",
-    "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQQTJhOHBuY3ZCeEpGZFZfUk1uQzA3X3l5TDRlM1JfMU1NQ2JCa29mUGZtZC1PNUlpLWxsbG15Z1BvUngwREZMZkhUVElvdUU1cnJEYWIwa0R0NXFZbXZvTU45alVBdVZ6M0psV1lLdXI5SHNVWHM0Y0dCRE1RNnR2UmswZjI5T0t6VlhnMmc5ek1PNjhr?oc=5",
-    "tickers": []
-  },
-  {
-    "date": "2026-08-31",
-    "category": "Market",
-    "title": "John Michael DeCocker Obituary (2026) - Deerfield, MI - Marry Funeral Home - Blissfield Chapel - Legacy obituary",
-    "summary": "John Michael DeCocker Obituary (2026) - Deerfield, MI - Marry Funeral Home - Blissfield Chapel&nbsp;&nbsp;Legacy obituary",
-    "source": "Legacy obituary",
-    "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOOU1rSXZOdUxvMHFLMEUyZGRSVDBaVFBjUXlvNVlHY1RVd2xrbk9OTDRtQVhaSDhuRkowRDlVUmtyV3NsdTgtdnZPV2sxTlJ4YTFfRFl1U3VOSTZQb291MUhfNmMwWnRrbjhWZmdpdERicDdqSGlGNmpacl9UUEhLT2h3?oc=5",
-    "tickers": []
-  },
-  {
-    "date": "2026-08-27",
-    "category": "Market",
-    "title": "KJ Luse - Jackson State Tigers Linebacker - ESPN",
-    "summary": "KJ Luse - Jackson State Tigers Linebacker&nbsp;&nbsp;ESPN",
-    "source": "ESPN",
-    "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5SV0RUVndNakVEREMyTWRVdmF2U1Z1cHdORklPMV9nSkQzSFJVcTVQRDFTQ3J1UGs0b1VoRjI4WlBkSnA3TVhwZk9WTW1VZUp5Rk5VNVpFaTZHbXJSSGlEdkI0X2d2U1hmMUd4VnJ0Nm4tbWs?oc=5",
-    "tickers": []
   }
 ]
