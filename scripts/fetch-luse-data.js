@@ -73,36 +73,62 @@ async function scrapeMarketData() {
 
     // Extract the daily stock table
     const stocks = await page.evaluate(() => {
-      const rows = [];
-      // Try to find the daily stock data table
+      const num = (s) => {
+        if (s == null) return null;
+        const c = String(s).replace(/[,$Kk%]/g, '').replace(/\s/g, '').trim();
+        if (c === '' || c === '-' || c === '+' || c.toLowerCase() === 'n/a') return null;
+        const n = parseFloat(c);
+        return isNaN(n) ? null : n;
+      };
       const tables = document.querySelectorAll('table');
       for (const table of tables) {
-        const headers = Array.from(table.querySelectorAll('th')).map(h => h.innerText.trim());
-        if (headers.some(h => h.includes('Security') || h.includes('Closing Price'))) {
-          const trs = table.querySelectorAll('tbody tr, tr');
-          let headerSkipped = false;
-          for (const tr of trs) {
-            const cells = Array.from(tr.querySelectorAll('td'));
-            if (cells.length < 3) continue;
-            const ticker = cells[0]?.innerText?.trim();
-            if (!ticker || ticker === 'Security' || ticker.includes('Security')) {
-              headerSkipped = true;
-              continue;
-            }
-            rows.push({
-              ticker,
-              name: ticker,
-              price: parseFloat(cells[2]?.innerText?.trim() || '0'),
-              change: parseFloat(cells[3]?.innerText?.trim() || '0'),
-              trades: parseInt(cells[4]?.innerText?.trim() || '0'),
-              volume: parseInt((cells[5]?.innerText || '0').replace(/,/g, '')),
-              value: parseFloat((cells[6]?.innerText || '0').replace(/,/g, '')),
-            });
-          }
-          break;
+        const headerCells = Array.from(table.querySelectorAll('tr')[0]?.querySelectorAll('th, td') || [])
+          .map(h => h.innerText.trim().toLowerCase());
+        // Only target the equity market table (has these columns)
+        if (!headerCells.some(h => h.includes('closing price'))) continue;
+        if (!headerCells.some(h => h.includes('volume traded'))) continue;
+
+        const dataRows = [];
+        for (const tr of table.querySelectorAll('tr')) {
+          const cells = Array.from(tr.querySelectorAll('td'));
+          if (cells.length < 4) continue;
+          dataRows.push(cells.map(c => c.innerText.trim()));
         }
+        if (!dataRows.length) continue;
+
+        // The live site renders an extra "Name" column in the body that is not
+        // present in the header, shifting every data column by one. Detect the
+        // correct mapping by choosing whichever candidate yields the most
+        // non-null closing prices (robust to both layouts).
+        const candidates = [
+          { price: 3, change: 4, trades: 5, volume: 6, value: 7 }, // current layout (extra Name col)
+          { price: 2, change: 3, trades: 4, volume: 5, value: 6 }, // legacy layout
+        ];
+        let chosen = candidates[0];
+        let bestScore = -1;
+        for (const c of candidates) {
+          const score = dataRows.reduce((n, r) => n + (r.length > c.price && num(r[c.price]) !== null ? 1 : 0), 0);
+          if (score > bestScore) { bestScore = score; chosen = c; }
+        }
+        if (bestScore <= 0) continue;
+
+        const rows = [];
+        for (const raw of dataRows) {
+          const ticker = raw[0];
+          if (!ticker || ticker.toLowerCase() === 'security') continue;
+          rows.push({
+            ticker,
+            name: ticker,
+            price: num(raw[chosen.price]),
+            change: num(raw[chosen.change]),
+            trades: num(raw[chosen.trades]),
+            volume: num(raw[chosen.volume]),
+            value: num(raw[chosen.value]),
+          });
+        }
+        return rows;
       }
-      return rows;
+      return [];
     });
 
     console.log(`[fetch-luse] Extracted ${stocks.length} stocks from table`);
@@ -111,6 +137,7 @@ async function scrapeMarketData() {
     const bodyText = await page.evaluate(() => document.body.innerText);
     
     const lasiMatch = bodyText.match(/LASI[^0-9]*Current Value[^0-9]*([\d,.]+)/i) ||
+                      bodyText.match(/ended at\s*([\d,.]+)/i) ||
                       bodyText.match(/closed at ([\d,.]+)/i);
     const lasi = lasiMatch ? parseNumber(lasiMatch[1]) : null;
 
@@ -200,13 +227,20 @@ async function scrapeMarketData() {
     }
 
     // --- Build market-close.json (site primary display format) ---
-    const lasiChangeMatch = bodyText.match(/Change\s*\+?([\d.]+)/i);
-    const lasiPctMatch = bodyText.match(/% Change\s*\+?([\d.]+)/i);
+    const dirMatch = bodyText.match(/\b(up|down)\s+([\d.]+)\s*%/i);
+    const lasiPctMatch = bodyText.match(/% Change\s*\+?(-?[\d.]+)/i);
     const capMatch = bodyText.match(/capitalization of\s*K?([\d,]+(?:\.\d+)?)/i);
     const capExclMatch = bodyText.match(/excluding\s*Shoprite[^K]*K?([\d,]+(?:\.\d+)?)/i);
 
-    const lasiChange = lasiChangeMatch ? parseFloat(lasiChangeMatch[1]) : 0;
-    const lasiChangePct = lasiPctMatch ? parseFloat(lasiPctMatch[1]) : 0;
+    // Prefer the explicit "up/down X%" wording from the market summary; fall back
+    // to a "% Change" cell if present.
+    const lasiChangePct = dirMatch
+      ? (dirMatch[1].toLowerCase() === 'down' ? -1 : 1) * parseFloat(dirMatch[2])
+      : (lasiPctMatch ? parseFloat(lasiPctMatch[1]) : 0);
+    // Derive the absolute index move from the percentage (self-consistent).
+    const lasiChange = (lasi && lasiChangePct)
+      ? parseFloat((lasi - lasi / (1 + lasiChangePct / 100)).toFixed(2))
+      : 0;
     const marketCapTotal = capMatch ? parseFloat(capMatch[1].replace(/,/g, '')) / 1e9 : (lasi || 0) * 0.013;
     const marketCapExcl = capExclMatch ? parseFloat(capExclMatch[1].replace(/,/g, '')) / 1e9 : marketCapTotal * 0.43;
 

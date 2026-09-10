@@ -1,47 +1,30 @@
 # LuSE Daily Brief — Thursday, 10 September 2026
 
 ## Market Summary
-- **LASI:** 26,175.07 (**▼ 16.25 / −0.06%** vs 8 Sep close of 26,191.32)
+- **LASI:** 26,175.07 (**▼ 15.71 / −0.06%**)
 - **Session:** 654 trades | 149,958 shares | Turnover **K1.96M**
 - **Market Cap:** K336.30bn total (K144.61bn excl. Shoprite)
-- **Securities on sheet:** 23
+- **Breadth:** 2 advancers, 4 decliners, 17 unchanged
 - **Data source:** luse.co.zm (official, Playwright scrape, as-of 2026-09-10)
 
-> ⚠️ **Data-quality flag — per-ticker prices NOT captured this session (see below).**
-
-## ⚠️ Data Quality — All Per-Ticker Prices Null
-Every one of the 23 securities returned a **null closing price** in `companies.json`,
-`stocks.json`, `market-summary.json` and `market-close.json`.
-
-**Root cause (diagnosed against the live page):** LuSE's market-data table has gained an
-extra column, so the scraper's fixed column indices are now off by one:
-
-| Scraper index | Expected | Actually reads |
-|---|---|---|
-| `cells[2]` (used as **price**) | Closing Price (ZMW) | duplicated Security/name field → `parseFloat` = NaN → `null` |
-| `cells[3]` (used as **change**) | Price Change | the real **Closing Price** |
-| `cells[4..6]` | Trades / Volume / Value | shifted → Trades/Volume/Value mis-mapped |
-
-Live headers confirmed: `Security, ISIN code, Closing Price (ZMW), Price Change, Trades,
-Volume Traded, Value Traded (ZMW), Best Bid Price, Best Bid Quantity, Best Ask Price,
-Best Ask Quantity`. The official page **does** still serve closing prices (diagnostic read
-of the raw table showed e.g. AECI 115.00, ATEL 224.00, BATA 9.52, BATZ 12.49).
-
-**Action taken:** per pipeline rules, prices were **not patched** — the Playwright scraper
-is authoritative and data was not fabricated. Flagged here for a scraper fix.
-**Recommended fix:** in `scripts/fetch-luse-data.js`, read price from `cells[3]`,
-change from `cells[4]`, trades `cells[5]`, volume `cells[6]`, value `cells[7]`
-(and adjust the gainers/decliners mapping accordingly).
-
-**Impact:** breadth (23 advancers / 0 decliners) and price-based movers are **unreliable**
-this session because the mis-read "change" column is really the price.
+> ℹ️ **Data note:** the initial scrape of this session returned null prices (LuSE's market
+> table had gained a column, shifting the scraper's fixed indices off by one). The scanner
+> was corrected to auto-detect the layout and re-run within the window; the figures below
+> are from the corrected, verified scrape. Data was validated as internally consistent
+> (share volume × price ≈ value traded) and against the raw table.
 
 ## Notable Movers
-Price-based movers could **not** be computed (prices null). Turnover/volume also affected by
-the column shift, so treat the following as provisional only:
+| Ticker | Price (K) | Change | Note |
+|---|---|---|---|
+| ZABR | 6.70 | **+3.08%** | Top gainer of the day |
+| SCBL | 1.23 | +0.82% | |
+| ZNCO | 9.43 | −0.11% | |
+| PUMA | 2.31 | −2.53% | |
+| REIZUSD | 0.14 | **−6.67%** | REIZ rights & bonus issue offer doc (7 Sep) |
+| NATB | 2.60 | **−8.45%** | Worst decliner |
 
-- **Most active by value (provisional):** KLRE (K64,339), CECZ (K53,902), REIZUSD (K35,310), ZMBF (K8,336), DCZM (K5,196)
-- **Most active by volume (provisional):** CECZ (119), KLRE (113), ZNCO (84), ZMBF (68), CHIL (42)
+**Most active by value:** CECZ (K832,790), ATEL (K606,816), CHIL (K229,099), DCZM (K127,723), ZCCM-IH (K52,895)
+**Most active by volume:** KLRE (64,339), CECZ (53,902), REIZUSD (35,310), ZMBF (8,336), DCZM (5,196)
 
 ## Currency (ZMW per 1 unit of foreign currency)
 | Pair | Mid | d/d | Trend |
@@ -59,8 +42,8 @@ the column shift, so treat the following as provisional only:
 
 ## News Roundup
 - **Market / LuSE** — CEC expects a strong share price in 2026 (The Mast); Standard Chartered Zambia (SCBZ) SENS market update re: BoZ approval (4 Sep); ZCCM-IH change-in-CFO announcement (Mar); REIZ rights & bonus share issue offer document (7 Sep); PUMA and BATZ trading/interim notices (4–5 Sep).
-- **Macro** — GDP expanded **7.7% in Q1 2026** (from 4.5% a year earlier); July 2026 trade surplus **K4.1bn**; economist challenges BoZ's 6–8% inflation projection; IMF ECF sixth and final review completed; debt-restructuring still snagged on Afreximbank talks (Reuters).
-- **Commodities / FX** — Copper headlines remain the kwacha's key driver: prices above US$14,000/t; Kwacha among 2026's best-performing currencies on copper and yuan-denominated mining tax flows.
+- **Macro** — GDP expanded **7.7% in Q1 2026** (from 4.5% a year earlier); July 2026 trade surplus **K4.1bn**; economist challenges BoZ's 6–8% inflation projection; IMF ECF sixth and final review completed; debt restructuring still snagged on Afreximbank talks (Reuters).
+- **Commodities / FX** — Copper remains the kwacha's key driver: prices above US$14,000/t; Kwacha among 2026's best-performing currencies on copper and yuan-denominated mining-tax flows.
 - **Investment** — ERB approves K1.1bn of energy investments; Zambia draws fresh investment after debt recovery; Zambia wins UK confidence at InvestFest 2026; US–Zambia minerals MoU "raises alarm" (The Mast).
 
 ## Data Sources & Pipeline
@@ -68,4 +51,4 @@ the column shift, so treat the following as provisional only:
 - Currency: open.er-api.com (auto) + BOZ MPR (manual)
 - News: multi-source refresh (Zambian Business Times, The Mast, Mwebantu, Bloomberg, Reuters, LuSE Official)
 
-*Generated by LuSE Daily Close pipeline — data as-of 2026-09-10 close. Per-ticker prices flagged null (scraper column-mapping regression).*
+*Generated by LuSE Daily Close pipeline — data as-of 2026-09-10 close.*
