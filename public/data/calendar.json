@@ -1,46 +1,6 @@
 [
   {
-    "ticker": "INDO",
-    "date": "2026-09-15",
-    "displayDate": "Sep 15",
-    "type": "Earnings",
-    "desc": "Half-Year Results (est)",
-    "confidence": "estimated"
-  },
-  {
-    "ticker": "LUSW",
-    "date": "2026-09-15",
-    "displayDate": "Sep 15",
-    "type": "Earnings",
-    "desc": "Half-Year Results (est)",
-    "confidence": "estimated"
-  },
-  {
-    "ticker": "RFIN",
-    "date": "2026-09-15",
-    "displayDate": "Sep 15",
-    "type": "Earnings",
-    "desc": "Half-Year Results (est)",
-    "confidence": "estimated"
-  },
-  {
-    "ticker": "PRIM",
-    "date": "2026-09-15",
-    "displayDate": "Sep 15",
-    "type": "Earnings",
-    "desc": "Half-Year Results (est)",
-    "confidence": "estimated"
-  },
-  {
-    "ticker": "ENRG",
-    "date": "2026-09-15",
-    "displayDate": "Sep 15",
-    "type": "Earnings",
-    "desc": "Half-Year Results (est)",
-    "confidence": "estimated"
-  },
-  {
-    "ticker": "CCAF",
+    "ticker": "ATEL",
     "date": "2026-09-15",
     "displayDate": "Sep 15",
     "type": "Earnings",
@@ -49,114 +9,154 @@
   },
   {
     "ticker": "ZNCO",
-    "date": "2026-09-18",
+    "date": "2026-09-15",
+    "displayDate": "Sep 15",
     "type": "Earnings",
-    "desc": "Half-Year Results",
-    "displayDate": "Sep 18",
-    "confidence": "confirmed"
+    "desc": "Half-Year Results (est)",
+    "confidence": "estimated"
+  },
+  {
+    "ticker": "ZSUG",
+    "date": "2026-09-15",
+    "displayDate": "Sep 15",
+    "type": "Earnings",
+    "desc": "Half-Year Results (est)",
+    "confidence": "estimated"
+  },
+  {
+    "ticker": "PUMA",
+    "date": "2026-09-15",
+    "displayDate": "Sep 15",
+    "type": "Earnings",
+    "desc": "Half-Year Results (est)",
+    "confidence": "estimated"
+  },
+  {
+    "ticker": "SCBL",
+    "date": "2026-09-15",
+    "displayDate": "Sep 15",
+    "type": "Earnings",
+    "desc": "Half-Year Results (est)",
+    "confidence": "estimated"
+  },
+  {
+    "ticker": "DCZM",
+    "date": "2026-09-15",
+    "displayDate": "Sep 15",
+    "type": "Earnings",
+    "desc": "Half-Year Results (est)",
+    "confidence": "estimated"
+  },
+  {
+    "ticker": "ZFCO",
+    "date": "2026-09-15",
+    "displayDate": "Sep 15",
+    "type": "Earnings",
+    "desc": "Half-Year Results (est)",
+    "confidence": "estimated"
+  },
+  {
+    "ticker": "NATB",
+    "date": "2026-09-15",
+    "displayDate": "Sep 15",
+    "type": "Earnings",
+    "desc": "Half-Year Results (est)",
+    "confidence": "estimated"
+  },
+  {
+    "ticker": "ZMBF",
+    "date": "2026-09-15",
+    "displayDate": "Sep 15",
+    "type": "Earnings",
+    "desc": "Half-Year Results (est)",
+    "confidence": "estimated"
+  },
+  {
+    "ticker": "KLRE",
+    "date": "2026-09-15",
+    "displayDate": "Sep 15",
+    "type": "Earnings",
+    "desc": "Half-Year Results (est)",
+    "confidence": "estimated"
   },
   {
     "ticker": "INDO",
-    "date": "2027-03-15",
-    "displayDate": "Mar 15",
+    "date": "2026-09-15",
+    "displayDate": "Sep 15",
     "type": "Earnings",
-    "desc": "Annual Results (est)",
+    "desc": "Half-Year Results (est)",
     "confidence": "estimated"
   },
   {
     "ticker": "LUSW",
-    "date": "2027-03-15",
-    "displayDate": "Mar 15",
+    "date": "2026-09-15",
+    "displayDate": "Sep 15",
     "type": "Earnings",
-    "desc": "Annual Results (est)",
+    "desc": "Half-Year Results (est)",
     "confidence": "estimated"
   },
   {
     "ticker": "RFIN",
-    "date": "2027-03-15",
-    "displayDate": "Mar 15",
+    "date": "2026-09-15",
+    "displayDate": "Sep 15",
     "type": "Earnings",
-    "desc": "Annual Results (est)",
+    "desc": "Half-Year Results (est)",
     "confidence": "estimated"
   },
   {
     "ticker": "PRIM",
-    "date": "2027-03-15",
-    "displayDate": "Mar 15",
+    "date": "2026-09-15",
+    "displayDate": "Sep 15",
     "type": "Earnings",
-    "desc": "Annual Results (est)",
+    "desc": "Half-Year Results (est)",
     "confidence": "estimated"
   },
   {
     "ticker": "ENRG",
-    "date": "2027-03-15",
-    "displayDate": "Mar 15",
+    "date": "2026-09-15",
+    "displayDate": "Sep 15",
     "type": "Earnings",
-    "desc": "Annual Results (est)",
+    "desc": "Half-Year Results (est)",
     "confidence": "estimated"
   },
   {
     "ticker": "CCAF",
-    "date": "2027-03-15",
-    "displayDate": "Mar 15",
+    "date": "2026-09-15",
+    "displayDate": "Sep 15",
     "type": "Earnings",
-    "desc": "Annual Results (est)",
+    "desc": "Half-Year Results (est)",
     "confidence": "estimated"
   },
   {
-    "ticker": "INDO",
-    "date": "2027-04-15",
-    "displayDate": "Apr 15",
-    "type": "AGM",
-    "desc": "AGM (est)",
+    "ticker": "FARM",
+    "date": "2026-09-15",
+    "displayDate": "Sep 15",
+    "type": "Earnings",
+    "desc": "Half-Year Results (est)",
     "confidence": "estimated"
   },
   {
-    "ticker": "LUSW",
-    "date": "2027-04-15",
-    "displayDate": "Apr 15",
-    "type": "AGM",
-    "desc": "AGM (est)",
+    "ticker": "MAFS",
+    "date": "2026-09-15",
+    "displayDate": "Sep 15",
+    "type": "Earnings",
+    "desc": "Half-Year Results (est)",
     "confidence": "estimated"
   },
   {
-    "ticker": "RFIN",
-    "date": "2027-04-15",
-    "displayDate": "Apr 15",
-    "type": "AGM",
-    "desc": "AGM (est)",
+    "ticker": "ZMFA",
+    "date": "2026-09-15",
+    "displayDate": "Sep 15",
+    "type": "Earnings",
+    "desc": "Half-Year Results (est)",
     "confidence": "estimated"
   },
   {
-    "ticker": "PRIM",
-    "date": "2027-04-15",
-    "displayDate": "Apr 15",
-    "type": "AGM",
-    "desc": "AGM (est)",
+    "ticker": "ZMRE",
+    "date": "2026-09-15",
+    "displayDate": "Sep 15",
+    "type": "Earnings",
+    "desc": "Half-Year Results (est)",
     "confidence": "estimated"
-  },
-  {
-    "ticker": "ENRG",
-    "date": "2027-04-15",
-    "displayDate": "Apr 15",
-    "type": "AGM",
-    "desc": "AGM (est)",
-    "confidence": "estimated"
-  },
-  {
-    "ticker": "CCAF",
-    "date": "2027-04-15",
-    "displayDate": "Apr 15",
-    "type": "AGM",
-    "desc": "AGM (est)",
-    "confidence": "estimated"
-  },
-  {
-    "ticker": "BATA",
-    "date": "2027-05-01",
-    "type": "Dividend",
-    "desc": "Final Dividend Pay Date",
-    "displayDate": "May 1",
-    "confidence": "confirmed"
   }
 ]
