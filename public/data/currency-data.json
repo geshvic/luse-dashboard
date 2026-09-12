@@ -1,7 +1,7 @@
 {
-  "asOf": "2026-09-11",
+  "asOf": "2026-09-12",
   "source": "open.er-api.com (auto) + BOZ mid-rate (manual)",
-  "ratesLastUpdated": "2026-09-11 03:14 UTC",
+  "ratesLastUpdated": "2026-09-12 01:50 UTC",
   "baseNote": "Rates show ZMW per 1 unit of foreign currency. ↓ ZMW = Kwacha strengthening (appreciating).",
   "mpRate": 13.25,
   "mpRateNote": "Monetary Policy Rate at 13.25% — held at the August 2026 MPC (decision 26 Aug 2026), lowest since mid-2024. Prior cuts: 25bps from 13.50% at the May 2026 MPC, and 75bps from 14.25% on Feb 11, 2026. Next MPC decision due November 2026 (per BOZ quarterly calendar).",
@@ -9,62 +9,62 @@
     "USD": {
       "buy": 19.0129,
       "sell": 19.0629,
-      "mid": 19.2175,
+      "mid": 19.1975,
       "marketMid": 19.082,
       "bozMid": 19.0379,
       "trend": "stable",
-      "dayAgo": 19.2245,
-      "weekAgo": 19.1703,
+      "dayAgo": 19.2175,
+      "weekAgo": 19.2245,
       "twoWeeksAgo": 18.6728,
       "oneMonthAgo": 18.83,
       "sixMonthsAgo": 22.5,
-      "note": "1 USD ≈ 19.2175 ZMW — auto-updated 2026-09-11 (open.er-api.com). ↓ ZMW per USD = kwacha strengthening."
+      "note": "1 USD ≈ 19.1975 ZMW — auto-updated 2026-09-12 (open.er-api.com). ↓ ZMW per USD = kwacha strengthening."
     },
     "GBP": {
-      "mid": 25.9977,
+      "mid": 25.9747,
       "trend": "stable",
-      "dayAgo": 25.9774,
-      "weekAgo": 25.935,
+      "dayAgo": 25.9977,
+      "weekAgo": 25.9774,
       "oneMonthAgo": 25.5,
-      "note": "1 GBP ≈ 25.9977 ZMW — auto-updated 2026-09-11 (open.er-api.com). ↓ ZMW per GBP = kwacha strengthening."
+      "note": "1 GBP ≈ 25.9747 ZMW — auto-updated 2026-09-12 (open.er-api.com). ↓ ZMW per GBP = kwacha strengthening."
     },
     "EUR": {
-      "mid": 22.3249,
+      "mid": 22.3055,
       "trend": "stable",
-      "dayAgo": 22.3075,
-      "weekAgo": 22.2762,
+      "dayAgo": 22.3249,
+      "weekAgo": 22.3075,
       "oneMonthAgo": 22.4,
-      "note": "1 EUR ≈ 22.3249 ZMW — auto-updated 2026-09-11 (open.er-api.com). ↓ ZMW per EUR = kwacha strengthening."
+      "note": "1 EUR ≈ 22.3055 ZMW — auto-updated 2026-09-12 (open.er-api.com). ↓ ZMW per EUR = kwacha strengthening."
     },
     "ZAR": {
-      "mid": 1.2009,
+      "mid": 1.2008,
       "trend": "stable",
-      "dayAgo": 1.201,
-      "weekAgo": 1.2002,
+      "dayAgo": 1.2009,
+      "weekAgo": 1.201,
       "oneMonthAgo": 1.18,
-      "note": "1 ZAR ≈ 1.2009 ZMW — auto-updated 2026-09-11 (open.er-api.com). ↓ ZMW per ZAR = kwacha strengthening."
+      "note": "1 ZAR ≈ 1.2008 ZMW — auto-updated 2026-09-12 (open.er-api.com). ↓ ZMW per ZAR = kwacha strengthening."
     },
     "BWP": {
-      "mid": 1.3844,
+      "mid": 1.3787,
       "trend": "strengthening",
-      "weekAgo": 1.3725,
-      "dayAgo": 1.4052,
-      "note": "1 BWP ≈ 1.3844 ZMW — auto-updated 2026-09-11 (open.er-api.com). ↓ ZMW per BWP = kwacha strengthening."
+      "weekAgo": 1.4052,
+      "dayAgo": 1.3844,
+      "note": "1 BWP ≈ 1.3787 ZMW — auto-updated 2026-09-12 (open.er-api.com). ↓ ZMW per BWP = kwacha strengthening."
     },
     "CNY": {
-      "mid": 2.8727,
+      "mid": 2.8777,
       "trend": "stable",
-      "weekAgo": 2.8547,
-      "dayAgo": 2.8645,
-      "note": "1 CNY ≈ 2.8727 ZMW — auto-updated 2026-09-11 (open.er-api.com). ↓ ZMW per CNY = kwacha strengthening."
+      "weekAgo": 2.8645,
+      "dayAgo": 2.8727,
+      "note": "1 CNY ≈ 2.8777 ZMW — auto-updated 2026-09-12 (open.er-api.com). ↓ ZMW per CNY = kwacha strengthening."
     }
   },
   "trendAnalysis": {
-    "direction": "USD/ZMW mid at 19.2175 (-0.04% vs previous 19.2245). Rates auto-refreshed from open.er-api.com; BOZ mid-rate and MPR reviewed manually at each MPC meeting.",
-    "dayChange": -0.007,
-    "twoWeekChange": 0.545,
-    "oneMonthChange": 0.388,
-    "sixMonthChange": -3.282,
+    "direction": "USD/ZMW mid at 19.1975 (-0.10% vs previous 19.2175). Rates auto-refreshed from open.er-api.com; BOZ mid-rate and MPR reviewed manually at each MPC meeting.",
+    "dayChange": -0.02,
+    "twoWeekChange": 0.525,
+    "oneMonthChange": 0.368,
+    "sixMonthChange": -3.302,
     "ytdChange": -17,
     "drivers": [
       "Record copper output ~890K tonnes (2025) — strong export earnings",
@@ -77,7 +77,7 @@
       "Swearing-in of President Hichilema and Vice-President for a second term held 1 Sep 2026 (public holiday) — policy continuity now formalised",
       "BoZ cut statutory reserve requirements (early Aug 2026) — supportive of bank liquidity"
     ],
-    "outlook": "Kwacha was little changed into 10 Sep: USD/ZMW mid ~19.22 (open.er-api.com), vs ~19.10 a week earlier and ~18.83 a month ago — still within the broad 18.40–19.24 consolidation band, with the market absorbing post-swearing-in positioning. With re-election formalised at the 1 Sep ceremony and the MPC holding at 13.25% on 26 August, focus shifts to the make-up of the new economic team and the 2027 budget for the next leg of the currency.",
+    "outlook": "Kwacha marginally firmer into 12 Sep: USD/ZMW mid ~19.20 (open.er-api.com), vs ~19.22 a week earlier and ~18.83 a month ago — still within the broad 18.40–19.24 consolidation band, with the market absorbing post-swearing-in positioning. With re-election formalised at the 1 Sep ceremony and the MPC holding at 13.25% on 26 August, focus shifts to the make-up of the new economic team and the 2027 budget for the next leg of the currency.",
     "projection3m": "USD/ZMW 16.50–19.00 range. Elections expected to drive volatility.",
     "projection6m": "USD/ZMW 16.00–19.50 range. Post-election direction depends on fiscal continuity."
   }
