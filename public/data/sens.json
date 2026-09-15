@@ -1,5 +1,16 @@
 [
   {
+    "title": "ZCCM IH DIVIDEND NOTICE",
+    "date": "2026-09-14",
+    "category": "Dividends",
+    "type": "Dividends",
+    "tickers": [
+      "ZCCM-IH"
+    ],
+    "source": "LuSE SENS",
+    "url": "https://www.luse.co.zm/sens-category/dividends/"
+  },
+  {
     "title": "BATA – HALF YEAR RESULTS FOR THE 6 MONTHS TO 30th June 2026",
     "date": "2026-09-08",
     "category": "Financial Statements",
