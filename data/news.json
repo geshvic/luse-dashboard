@@ -553,5 +553,67 @@
     "source": "NPR",
     "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9oVFpDSlNtZmVKWnp1SFNrWktPQXlzQko1VlNVSVY0V1N5M1JQVGJiX182RVQ1TVBFV1ZJM3kwY05EUUlPUFJJdmFMR0lPaHNYNThQak44LUk?oc=5",
     "tickers": []
+  },
+  {
+    "date": "2026-09-15",
+    "category": "Market",
+    "title": "LuSE session: LASI +0.75% to 26,265.39; CECZ, CHIL lead gains",
+    "summary": "The LuSE All Share Index rose 0.75% (+195.52 pts) to 26,265.39 on 654 trades. 1,408,082 shares changed hands worth K22.26M. Breadth: 4 advancers, 2 decliners, 17 unchanged. CECZ +3.64% to K15.64 and CHIL +1.32% to K63.83 led gains; PUMA -1.65% was the biggest faller. CECZ also led turnover at K6.43M.",
+    "source": "LuSE (official)",
+    "url": "https://www.luse.co.zm/trading/market-data/",
+    "tickers": []
+  },
+  {
+    "date": "2026-09-15",
+    "category": "Corporate",
+    "title": "ZCCM-IH progresses Listing Optimisation Project across LuSE, Euronext Access and LSE",
+    "summary": "ZCCM Investments Holdings Plc issued a further cautionary announcement (4 Sep 2026) confirming it is progressing with a proposed Listing Optimisation Project involving its listings on the Lusaka Securities Exchange, Euronext Access Paris and the London Stock Exchange, via an odd-lot offer. Shareholders are advised to exercise caution when trading.",
+    "source": "ZCCM-IH",
+    "url": "https://www.zccm-ih.com.zm/2026/09/04/further-cautionary-announcement-optimisation-of-zccm-ih-listings-on-lusaka-securities-exchange-euronext-access-and-london-stock-exchange-via-an-odd-lot-offer/",
+    "tickers": [
+      "ZCCM-IH"
+    ]
+  },
+  {
+    "date": "2026-09-15",
+    "category": "Corporate",
+    "title": "Chilanga Cement files unaudited first-half 2026 results",
+    "summary": "Chilanga Cement PLC (CHIL) published its unaudited interim financial statements for the half year 2026 on the LuSE (2 Sep 2026). The stock closed up 1.32% at K63.83 today.",
+    "source": "LuSE",
+    "url": "https://www.luse.co.zm/sens-category/financial-statements/",
+    "tickers": [
+      "CHIL"
+    ]
+  },
+  {
+    "date": "2026-09-15",
+    "category": "Corporate",
+    "title": "Copperbelt Energy issues trading statement via SENS",
+    "summary": "Copperbelt Energy Corporation PLC (CECZ) issued a trading statement through LuSE SENS. The stock was the day's top gainer, up 3.64% to K15.64 on heavy volume (411,084 shares, K6.43M), and also led trading by value.",
+    "source": "LuSE",
+    "url": "https://www.luse.co.zm/sens/cecz-trading-statement/",
+    "tickers": [
+      "CECZ"
+    ]
+  },
+  {
+    "date": "2026-09-15",
+    "category": "Market",
+    "title": "Copperbelt Energy expands solar capacity toward 230 MW with Itimpi II",
+    "summary": "CEC's 136 MW Itimpi II solar plant and broader green-energy expansion push the firm's solar capacity toward 230 MW, supporting Zambia's renewable transition and rising mining/industrial electricity demand.",
+    "source": "SolarQuarter",
+    "url": "https://solarquarter.com/2026/03/10/copperbelt-energy-corporation-expands-solar-capacity-to-230-mw-as-zambia-accelerates-renewable-energy-transition/",
+    "tickers": [
+      "CECZ"
+    ]
+  },
+  {
+    "date": "2026-09-15",
+    "category": "Macro",
+    "title": "Kwacha softens toward K19.42/USD as import demand returns",
+    "summary": "The kwacha weakened to about K19.42 per US dollar (open.er-api.com, 15 Sep), with the BOZ indicative rate ~K19.42 and the parallel-market premium a narrow ~+1.84%. The move extends recent softness from ~K19.20 on 12 Sep.",
+    "source": "open.er-api.com / African Exponent",
+    "url": "https://www.africanexponent.com/money-zmw/",
+    "tickers": []
   }
 ]
