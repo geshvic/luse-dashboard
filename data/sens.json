@@ -1,5 +1,39 @@
 [
   {
+    "title": "ZNCO – HY 2026 UNAUDITED FINANCIALS",
+    "date": "2026-09-15",
+    "category": "Financial Statements",
+    "type": "General",
+    "tickers": [
+      "ZNCO"
+    ],
+    "source": "LuSE SENS",
+    "url": "https://www.luse.co.zm/sens-category/financial-statements/"
+  },
+  {
+    "title": "CEC Renewables Ltd – HY 2026 Interim Results",
+    "date": "2026-09-15",
+    "category": "Financial Statements",
+    "type": "Earnings",
+    "tickers": [
+      "CECZ",
+      "CCAF"
+    ],
+    "source": "LuSE SENS",
+    "url": "https://www.luse.co.zm/sens-category/financial-statements/"
+  },
+  {
+    "title": "ATEL – Small Related Party Transaction Announcement",
+    "date": "2026-09-11",
+    "category": "General Announcements",
+    "type": "M&A",
+    "tickers": [
+      "ATEL"
+    ],
+    "source": "LuSE SENS",
+    "url": "https://www.luse.co.zm/sens-category/general-announcements/"
+  },
+  {
     "title": "ZCCM IH DIVIDEND NOTICE",
     "date": "2026-09-14",
     "category": "Dividends",
