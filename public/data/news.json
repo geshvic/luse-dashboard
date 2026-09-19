@@ -1,5 +1,88 @@
 [
   {
+    "date": "2026-08-27",
+    "category": "Market",
+    "title": "ZCCM-IH posts K4.92bn loss for 2025 as Mopani, KCM drag earnings",
+    "summary": "ZCCM Investments Holdings recorded a ZMW4.92 billion (US$261.7m) loss in 2025, driven by the absence of the 2024 Mopani strategic-equity-partner gain and ongoing underperformance at Mopani and Konkola Copper Mines. The holding company owns 49% of Mopani and 20.6% of KCM; recovery now hinges on operating reforms and restarting production at both assets.",
+    "source": "Equity Axis / Efficacy News / Zambia 24",
+    "url": "https://equityaxis.net/post/19385/2026/8/mopani-kcm-drag-zccm-ih-into-zmw4-9bn-loss",
+    "tickers": [
+      "ZCCM-IH"
+    ]
+  },
+  {
+    "date": "2026-09-01",
+    "category": "Energy",
+    "title": "Zambia fuel prices unchanged for September 2026",
+    "summary": "The Energy Regulation Board kept national pump prices flat for September 2026: petrol K25.29/litre, diesel K26.86, kerosene K27.02 and Jet A-1 K28.71. Stability persisted despite pressure from international oil prices and the exchange rate, giving households and businesses another month of fuel-cost certainty.",
+    "source": "The Zambian Economist",
+    "url": "https://zambianeconomist.com/zambia-september-2026-fuel-prices-unchanged/",
+    "tickers": [
+      "PUMA"
+    ]
+  },
+  {
+    "date": "2026-09-07",
+    "category": "Energy",
+    "title": "Zambia H1 2026 energy investment tops US$1bn; new rules for generators",
+    "summary": "African Energy reports that energy-sector investment in Zambia topped US$1 billion in H1 2026, accompanied by new regulatory rules for embedded generators. Separately, a South African developer acquired a major wind IPP, underscoring continued private capital inflows into Zambia's power sector.",
+    "source": "African Energy",
+    "url": "https://www.africa-energy.com/news-centre/country/zambia",
+    "tickers": [
+      "CECZ",
+      "ENRG"
+    ]
+  },
+  {
+    "date": "2026-09-15",
+    "category": "Economy",
+    "title": "Zambia sets five-year economic focus on investment, production, exports and jobs",
+    "summary": "Government unveiled a five-year economic strategy centred on investment, production, exports and job creation. Mining remains a key source of activity and export earnings, while reliable energy supply is flagged as critical to enabling businesses to operate and expand.",
+    "source": "Youth Village Zambia",
+    "url": "https://youthvillagezm.com/2026/09/zambia-sets-five-year-economic-focus-on-investment-production-exports-and-job-creation/",
+    "tickers": []
+  },
+  {
+    "date": "2026-09-01",
+    "category": "Agriculture",
+    "title": "ZRA suspends customs duty on specified wheat imports for September 2026",
+    "summary": "The Zambia Revenue Authority announced a temporary suspension of customs duty on specified wheat imports effective 1–30 September 2026, covering a combined 300,000 tonnes of approved imports. The measure aims to steady domestic supply and food prices.",
+    "source": "News Diggers",
+    "url": "https://diggers.news/business/",
+    "tickers": [
+      "ZMBF"
+    ]
+  },
+  {
+    "date": "2026-09-19",
+    "category": "Corporate",
+    "title": "Airtel, MTN sued for K10 billion over alleged pyramid scheme",
+    "summary": "Airtel Zambia and MTN Zambia face a K10 billion lawsuit in the Lusaka High Court from more than 300 investors seeking compensation for losses allegedly linked to a nationwide pyramid scheme. The claim also names the ICT regulator, ZICTA.",
+    "source": "Zambia Monitor",
+    "url": "https://www.zambiamonitor.com/airtel-mtn-sued-for-k10-billion-over-alleged-pyramid-scheme/",
+    "tickers": [
+      "ATEL"
+    ]
+  },
+  {
+    "date": "2026-09-19",
+    "category": "Macro",
+    "title": "AfDB Country Focus Report 2026: mobilising Zambia's development financing",
+    "summary": "The African Development Bank's Country Focus Report 2026 on Zambia notes real GDP rebounded to 5.2% in 2025 (from 3.8% in 2024), driven by agriculture, ICT, manufacturing and mining, with net exports and FDI the main demand-side drivers. Growth is projected around 5.0%, with the report focused on scaling up development financing in a fragmented global environment.",
+    "source": "African Development Bank",
+    "url": "https://www.afdb.org/en/documents/country-focus-report-2026-zambia-mobilizing-zambias-development-financing-scale-fragmented-world",
+    "tickers": []
+  },
+  {
+    "date": "2026-09-18",
+    "category": "FX",
+    "title": "Bank of Zambia official USD/ZMW ~K19.63 as kwacha softens further",
+    "summary": "BoZ-published exchange-rate data for 18 September 2026 put the official rate near K19.625/USD (CNY ~K2.9312), with exchange-rate trackers showing the USD/ZMW high for the week at ~K19.63 on 16 Sep. The kwacha has continued to soften through mid-September on seasonal import and end-of-quarter FX demand.",
+    "source": "Bank of Zambia / AllRatesToday",
+    "url": "https://allratestoday.com/central-bank-rates-api/boz/",
+    "tickers": []
+  },
+  {
     "date": "2026-09-19",
     "category": "Corporate",
     "title": "GDP expands by 7.7% in Q1of 2026 - Zambian Business Times",

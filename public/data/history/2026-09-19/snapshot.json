@@ -217,5 +217,121 @@
       "volume": 34425,
       "value": 12349
     }
+  ],
+  "marketClose": {
+    "lasiIndex": 25924.31,
+    "lasiChange": -2.59,
+    "lasiChangePct": -0.01,
+    "totalTrades": 675,
+    "totalVolume": 78705,
+    "totalValue": 500976.54,
+    "marketCapTotal": 337.02,
+    "marketCapExclShoprite": 144.92,
+    "marketCapUnit": "Billion ZMW",
+    "sessionSummary": "675 trades across 78,705 shares. Turnover K0.50M. LASI down 0.01% to 25,924.31. Breadth: 1 advancer, 1 decliner, 21 unchanged."
+  },
+  "gainers": [
+    {
+      "ticker": "BATZ",
+      "name": "BATZ",
+      "price": 12.97,
+      "change": 0.03,
+      "changePct": 0.23,
+      "volume": 1248
+    }
+  ],
+  "decliners": [
+    {
+      "ticker": "ZMBF",
+      "name": "ZMBF",
+      "price": 1.89,
+      "change": -0.01,
+      "changePct": -0.53,
+      "volume": 8672
+    }
+  ],
+  "mostActiveByValue": [
+    {
+      "ticker": "CECZ",
+      "name": "CECZ",
+      "price": 15.44,
+      "volume": 11746,
+      "value": 181339.25,
+      "trades": 111
+    },
+    {
+      "ticker": "ZSUG",
+      "name": "ZSUG",
+      "price": 69.97,
+      "volume": 1695,
+      "value": 118597.71,
+      "trades": 15
+    },
+    {
+      "ticker": "ZNCO",
+      "name": "ZNCO",
+      "price": 9.42,
+      "volume": 4369,
+      "value": 41156.34,
+      "trades": 90
+    },
+    {
+      "ticker": "CHIL",
+      "name": "CHIL",
+      "price": 62.99,
+      "volume": 467,
+      "value": 29407.01,
+      "trades": 36
+    },
+    {
+      "ticker": "ATEL",
+      "name": "ATEL",
+      "price": 223.5,
+      "volume": 126,
+      "value": 28159.89,
+      "trades": 21
+    }
+  ],
+  "mostActiveByVolume": [
+    {
+      "ticker": "KLRE",
+      "name": "KLRE",
+      "price": 0.36,
+      "volume": 34425,
+      "value": 12349,
+      "trades": 98
+    },
+    {
+      "ticker": "CECZ",
+      "name": "CECZ",
+      "price": 15.44,
+      "volume": 11746,
+      "value": 181339.25,
+      "trades": 111
+    },
+    {
+      "ticker": "REIZUSD",
+      "name": "REIZUSD",
+      "price": 0.14,
+      "volume": 9909,
+      "value": 1387.26,
+      "trades": 27
+    },
+    {
+      "ticker": "ZMBF",
+      "name": "ZMBF",
+      "price": 1.89,
+      "volume": 8672,
+      "value": 16387.47,
+      "trades": 71
+    },
+    {
+      "ticker": "SCBL",
+      "name": "SCBL",
+      "price": 1.23,
+      "volume": 6933,
+      "value": 8527.59,
+      "trades": 38
+    }
   ]
 }
