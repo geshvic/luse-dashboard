@@ -1,7 +1,7 @@
 {
-  "asOf": "2026-09-17",
+  "asOf": "2026-09-19",
   "source": "open.er-api.com (auto) + BOZ mid-rate (manual)",
-  "ratesLastUpdated": "2026-09-17 08:30 UTC",
+  "ratesLastUpdated": "2026-09-19 07:00 UTC",
   "baseNote": "Rates show ZMW per 1 unit of foreign currency. ↓ ZMW = Kwacha strengthening (appreciating).",
   "mpRate": 13.25,
   "mpRateNote": "Monetary Policy Rate at 13.25% — held at the August 2026 MPC (decision 26 Aug 2026), lowest since mid-2024. Prior cuts: 25bps from 13.50% at the May 2026 MPC, and 75bps from 14.25% on Feb 11, 2026. Next MPC decision due November 2026 (per BOZ quarterly calendar).",
@@ -9,62 +9,62 @@
     "USD": {
       "buy": 19.3971,
       "sell": 19.4471,
-      "mid": 19.4043,
+      "mid": 19.6823,
       "marketMid": 19.42,
       "bozMid": 19.4221,
       "trend": "weakening",
-      "dayAgo": 19.2411,
-      "weekAgo": 19.4232,
+      "dayAgo": 19.4043,
+      "weekAgo": 19.2411,
       "twoWeeksAgo": 18.6728,
       "oneMonthAgo": 18.83,
       "sixMonthsAgo": 22.5,
-      "note": "1 USD ≈ 19.4043 ZMW — auto-updated 2026-09-17 (open.er-api.com). ↓ ZMW per USD = kwacha strengthening."
+      "note": "1 USD ≈ 19.6823 ZMW — auto-updated 2026-09-19 (open.er-api.com). ↓ ZMW per USD = kwacha strengthening."
     },
     "GBP": {
-      "mid": 26.1185,
+      "mid": 26.284,
       "trend": "weakening",
-      "dayAgo": 26.0159,
-      "weekAgo": 26.1814,
+      "dayAgo": 26.1185,
+      "weekAgo": 26.0159,
       "oneMonthAgo": 25.5,
-      "note": "1 GBP ≈ 26.1185 ZMW — auto-updated 2026-09-17 (open.er-api.com). ↓ ZMW per GBP = kwacha strengthening."
+      "note": "1 GBP ≈ 26.284 ZMW — auto-updated 2026-09-19 (open.er-api.com). ↓ ZMW per GBP = kwacha strengthening."
     },
     "EUR": {
-      "mid": 22.4125,
+      "mid": 22.5703,
       "trend": "weakening",
-      "dayAgo": 22.3194,
-      "weekAgo": 22.4085,
+      "dayAgo": 22.4125,
+      "weekAgo": 22.3194,
       "oneMonthAgo": 22.4,
-      "note": "1 EUR ≈ 22.4125 ZMW — auto-updated 2026-09-17 (open.er-api.com). ↓ ZMW per EUR = kwacha strengthening."
+      "note": "1 EUR ≈ 22.5703 ZMW — auto-updated 2026-09-19 (open.er-api.com). ↓ ZMW per EUR = kwacha strengthening."
     },
     "ZAR": {
-      "mid": 1.2045,
-      "trend": "weakening",
-      "dayAgo": 1.1986,
-      "weekAgo": 1.1924,
+      "mid": 1.2077,
+      "trend": "stable",
+      "dayAgo": 1.2045,
+      "weekAgo": 1.1986,
       "oneMonthAgo": 1.18,
-      "note": "1 ZAR ≈ 1.2045 ZMW — auto-updated 2026-09-17 (open.er-api.com). ↓ ZMW per ZAR = kwacha strengthening."
+      "note": "1 ZAR ≈ 1.2077 ZMW — auto-updated 2026-09-19 (open.er-api.com). ↓ ZMW per ZAR = kwacha strengthening."
     },
     "BWP": {
-      "mid": 1.3806,
+      "mid": 1.3892,
       "trend": "weakening",
-      "weekAgo": 1.3751,
-      "dayAgo": 1.3759,
-      "note": "1 BWP ≈ 1.3806 ZMW — auto-updated 2026-09-17 (open.er-api.com). ↓ ZMW per BWP = kwacha strengthening."
+      "weekAgo": 1.3759,
+      "dayAgo": 1.3806,
+      "note": "1 BWP ≈ 1.3892 ZMW — auto-updated 2026-09-19 (open.er-api.com). ↓ ZMW per BWP = kwacha strengthening."
     },
     "CNY": {
-      "mid": 2.9377,
+      "mid": 2.9612,
       "trend": "weakening",
-      "weekAgo": 2.8852,
-      "dayAgo": 2.8952,
-      "note": "1 CNY ≈ 2.9377 ZMW — auto-updated 2026-09-17 (open.er-api.com). ↓ ZMW per CNY = kwacha strengthening."
+      "weekAgo": 2.8952,
+      "dayAgo": 2.9377,
+      "note": "1 CNY ≈ 2.9612 ZMW — auto-updated 2026-09-19 (open.er-api.com). ↓ ZMW per CNY = kwacha strengthening."
     }
   },
   "trendAnalysis": {
-    "direction": "USD/ZMW mid at 19.4043 (0.85% vs previous 19.2411). Rates auto-refreshed from open.er-api.com; BOZ mid-rate and MPR reviewed manually at each MPC meeting.",
-    "dayChange": 0.163,
-    "twoWeekChange": 0.732,
-    "oneMonthChange": 0.574,
-    "sixMonthChange": -3.096,
+    "direction": "USD/ZMW mid at 19.6823 (1.43% vs previous 19.4043). Rates auto-refreshed from open.er-api.com; BOZ mid-rate and MPR reviewed manually at each MPC meeting.",
+    "dayChange": 0.278,
+    "twoWeekChange": 1.01,
+    "oneMonthChange": 0.852,
+    "sixMonthChange": -2.818,
     "ytdChange": -17,
     "drivers": [
       "Record copper output ~890K tonnes (2025) — strong export earnings",
