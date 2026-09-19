@@ -1,13 +1,5 @@
 [
   {
-    "ticker": "ZNCO",
-    "date": "2026-09-18",
-    "type": "Earnings",
-    "desc": "Half-Year Results",
-    "displayDate": "Sep 18",
-    "confidence": "confirmed"
-  },
-  {
     "ticker": "ZSUG",
     "date": "2026-11-27",
     "displayDate": "Nov 27",
@@ -153,6 +145,14 @@
   },
   {
     "ticker": "LUSW",
+    "date": "2027-03-15",
+    "displayDate": "Mar 15",
+    "type": "Earnings",
+    "desc": "Annual Results (est)",
+    "confidence": "estimated"
+  },
+  {
+    "ticker": "RFIN",
     "date": "2027-03-15",
     "displayDate": "Mar 15",
     "type": "Earnings",

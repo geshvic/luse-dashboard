@@ -1,5 +1,36 @@
 [
   {
+    "title": "ZAMBIA RE HY ABRIDGED UNAUDITED RESULTS",
+    "date": "2026-09-18",
+    "category": "Financial Statements",
+    "type": "Earnings",
+    "tickers": [],
+    "source": "LuSE SENS",
+    "url": "https://www.luse.co.zm/sens-category/financial-statements/"
+  },
+  {
+    "title": "ZMRE – TRADING STATEMENT",
+    "date": "2026-09-17",
+    "category": "General Announcements",
+    "type": "Earnings",
+    "tickers": [
+      "ZMRE"
+    ],
+    "source": "LuSE SENS",
+    "url": "https://www.luse.co.zm/sens-category/general-announcements/"
+  },
+  {
+    "title": "ATEL – TRADING STATEMENT",
+    "date": "2026-09-17",
+    "category": "General Announcements",
+    "type": "Earnings",
+    "tickers": [
+      "ATEL"
+    ],
+    "source": "LuSE SENS",
+    "url": "https://www.luse.co.zm/sens-category/general-announcements/"
+  },
+  {
     "title": "ZNCO – HY 2026 UNAUDITED FINANCIALS",
     "date": "2026-09-15",
     "category": "Financial Statements",
