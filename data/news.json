@@ -1,5 +1,47 @@
 [
   {
+    "date": "2026-09-17",
+    "category": "Corporate",
+    "title": "Airtel Zambia flags ~82% jump in H1 FY2026 earnings (Trading Statement)",
+    "summary": "In a LuSE SENS trading statement issued 17 September 2026, Airtel Networks Zambia Plc advised shareholders that earnings per share for the half-year ended 30 June 2026 is approximately 81.6% higher than the prior-year period ended 30 June 2025, on strong revenue growth and cost efficiency.",
+    "source": "LuSE / SENS",
+    "url": "https://www.luse.co.zm/wp-content/uploads/2026/09/SENS-Announcement-Airtel-Networks-Zambia-Plc-Trading-Statement-17.09.2026.pdf",
+    "tickers": [
+      "ATEL"
+    ]
+  },
+  {
+    "date": "2026-09-16",
+    "category": "Corporate",
+    "title": "CEC flags directorate changes and Green Bond alongside H1 growth",
+    "summary": "Copperbelt Energy Corporation (CEC) posted 5.6% revenue growth for H1 2026 (US$380.3m vs US$360.0m) with profit steady at US$61.6m. The company's September 2026 updates also covered directorate changes and a Green Bond, plus the launch of the 2026 CEC Media Awards.",
+    "source": "CEC / News Diggers",
+    "url": "https://www.cec.com.zm/2026/09/",
+    "tickers": [
+      "CECZ"
+    ]
+  },
+  {
+    "date": "2026-09-15",
+    "category": "Corporate",
+    "title": "ZCCM-IH approves K183m final dividend, K1.13 per share",
+    "summary": "ZCCM Investments Holdings approved a final dividend of ZMW 1.13 per share (about K183 million) for FY2025 at its 22nd AGM held 11 September 2026. Investment income rose 40% to K3.4bn on higher Kansanshi royalties and first Maamba Energy dividends (US$39.2m).",
+    "source": "News Diggers / ZCCM-IH",
+    "url": "https://diggers.news/business/2026/09/15/zccm-ih-approves-k183m-dividend-payout/",
+    "tickers": [
+      "ZCCM-IH"
+    ]
+  },
+  {
+    "date": "2026-09-20",
+    "category": "FX",
+    "title": "The kwacha comeback: what a stronger ZMW means for Zambia's economy",
+    "summary": "A stronger, more stable kwacha — supported by record copper output, an improving reserves position and debt-restructuring progress — is being framed as a draw for long-term investment, while also pressuring export competitiveness.",
+    "source": "Excel Magazine Zambia",
+    "url": "https://excelmagazinezambia.com/news/the-kwacha-comeback-what-it-means-for-zambia-s-economy",
+    "tickers": []
+  },
+  {
     "date": "2026-09-21",
     "category": "Corporate",
     "title": "GDP expands by 7.7% in Q1of 2026 - Zambian Business Times",
