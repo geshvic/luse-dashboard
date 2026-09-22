@@ -282,7 +282,10 @@ async function scrapeMarketData() {
     // Save daily snapshot
     const historyDir = path.join(DATA_DIR, 'history', todayStr());
     fs.mkdirSync(historyDir, { recursive: true });
-    saveJSON(`history/${todayStr()}/snapshot.json`, summary);
+    // Merge in the market-close sections (marketClose/gainers/decliners/mostActive*).
+    // Older code saved `summary` alone, which wiped those sections that
+    // fetch-daily-close.js had written earlier the same day.
+    saveJSON(`history/${todayStr()}/snapshot.json`, { ...summary, ...mktClose });
 
     // --- Update LASI OHLCV daily candle ---
     const lasiOhlcvPath = path.join(DATA_DIR, 'profiles', 'LASI_ohlcv.json');
