@@ -1,5 +1,25 @@
 [
   {
+    "title": "ZCCM IH HY 2026 UNAUDITED FINANCIAL RESULTS",
+    "date": "2026-09-22",
+    "category": "Financial Statements",
+    "type": "Earnings",
+    "tickers": [
+      "ZCCM-IH"
+    ],
+    "source": "LuSE SENS",
+    "url": "https://www.luse.co.zm/sens-category/financial-statements/"
+  },
+  {
+    "title": "IZWE HY2026 UNAUDITED RESULTS",
+    "date": "2026-09-21",
+    "category": "Financial Statements",
+    "type": "Earnings",
+    "tickers": [],
+    "source": "LuSE SENS",
+    "url": "https://www.luse.co.zm/sens-category/financial-statements/"
+  },
+  {
     "title": "ZCCM IH HY 2026 – TRADING STATEMENT",
     "date": "2026-09-21",
     "category": "General Announcements",
