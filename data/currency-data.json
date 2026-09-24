@@ -11,7 +11,7 @@
       "sell": 19.568,
       "mid": 19.4882,
       "marketMid": 19.7243,
-      "bozMid": 19.543,
+      "bozMid": 19.509,
       "trend": "strengthening",
       "dayAgo": 19.7243,
       "weekAgo": 19.7352,
@@ -78,7 +78,7 @@
       "BoZ cut statutory reserve requirements (early Aug 2026) — supportive of bank liquidity",
       "Seasonal import and end-of-quarter FX demand pressuring the kwacha in mid/late September"
     ],
-    "outlook": "The kwacha firmed marginally, with the USD/ZMW market mid easing ~0.06% to ~K19.72/USD (open.er-api.com, 23 Sep) while the BoZ official mid sat at ~K19.54 (22 Sep). The pair remains inside the broad 18.40–19.80 consolidation band, and the move was broad-based across GBP, EUR, ZAR and BWP (all marginally lower in ZMW terms) with CNY likewise edging down — i.e. a modest, uniform kwacha firming. The official/parallel premium remains narrow, signalling no acute FX scarcity. With re-election formalised at the 1 Sep ceremony and the MPC holding at 13.25% on 26 August, focus shifts to the 30 Sep MPC — the same day a 10% copper-concentrate export duty takes effect — plus the 2027 budget and the make-up of the new economic team.",
+    "outlook": "The kwacha firmed again, with the USD/ZMW market mid easing ~1.20% to ~K19.49/USD (open.er-api.com, 24 Sep) from ~K19.72 the prior session, while the BoZ official mid sat at ~K19.51 (23 Sep, allratestoday). The pair sits near the lower end of its broad 18.40–19.80 consolidation band, and the move was broad-based across GBP (25.89), EUR (22.25), ZAR (1.194) and BWP (1.391), with CNY (2.914) likewise lower — i.e. a uniform kwacha firming, not a single-pair move. The official/parallel premium remains narrow, signalling no acute FX scarcity. With re-election formalised at the 1 Sep ceremony and the MPC held at 13.25% on 26 August, focus shifts to the 30 Sep MPC — the same day a 10% copper-concentrate export duty takes effect — plus the 2027 budget and the make-up of the new economic team.",
     "projection3m": "USD/ZMW 18.50–19.80 range. Post-election policy continuity supportive; import demand and copper-price swings the main risks.",
     "projection6m": "USD/ZMW 18.00–20.00 range. Direction hinges on fiscal continuity and copper earnings."
   }
