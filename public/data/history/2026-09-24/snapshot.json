@@ -217,5 +217,129 @@
       "volume": 62248,
       "value": 22407.86
     }
+  ],
+  "marketClose": {
+    "lasiIndex": 25900.35,
+    "lasiChange": -2.59,
+    "lasiChangePct": -0.01,
+    "totalTrades": 585,
+    "totalVolume": 170049,
+    "totalValue": 1520194.76,
+    "marketCapTotal": 336.7,
+    "marketCapExclShoprite": 144.78,
+    "marketCapUnit": "Billion ZMW",
+    "sessionSummary": "585 trades across 170,049 shares. Turnover K1.52M. LASI down 0.01% to 25,900.35. Breadth: 1 advancer, 2 decliners, 20 unchanged."
+  },
+  "gainers": [
+    {
+      "ticker": "CECZ",
+      "name": "CECZ",
+      "price": 15.43,
+      "change": 0.01,
+      "changePct": 0.06,
+      "volume": 55930
+    }
+  ],
+  "decliners": [
+    {
+      "ticker": "ZMBF",
+      "name": "ZMBF",
+      "price": 1.85,
+      "change": -0.04,
+      "changePct": -2.12,
+      "volume": 6130
+    },
+    {
+      "ticker": "ZSUG",
+      "name": "ZSUG",
+      "price": 69.95,
+      "change": -0.01,
+      "changePct": -0.01,
+      "volume": 312
+    }
+  ],
+  "mostActiveByValue": [
+    {
+      "ticker": "CECZ",
+      "name": "CECZ",
+      "price": 15.43,
+      "volume": 55930,
+      "value": 862705.18,
+      "trades": 96
+    },
+    {
+      "ticker": "ATEL",
+      "name": "ATEL",
+      "price": 224,
+      "volume": 1646,
+      "value": 368663,
+      "trades": 37
+    },
+    {
+      "ticker": "ZNCO",
+      "name": "ZNCO",
+      "price": 9.41,
+      "volume": 9007,
+      "value": 84758.97,
+      "trades": 90
+    },
+    {
+      "ticker": "DCZM",
+      "name": "DCZM",
+      "price": 24.6,
+      "volume": 2320,
+      "value": 57073.2,
+      "trades": 12
+    },
+    {
+      "ticker": "SCBL",
+      "name": "SCBL",
+      "price": 1.22,
+      "volume": 21437,
+      "value": 26152.92,
+      "trades": 28
+    }
+  ],
+  "mostActiveByVolume": [
+    {
+      "ticker": "KLRE",
+      "name": "KLRE",
+      "price": 0.36,
+      "volume": 62248,
+      "value": 22407.86,
+      "trades": 93
+    },
+    {
+      "ticker": "CECZ",
+      "name": "CECZ",
+      "price": 15.43,
+      "volume": 55930,
+      "value": 862705.18,
+      "trades": 96
+    },
+    {
+      "ticker": "SCBL",
+      "name": "SCBL",
+      "price": 1.22,
+      "volume": 21437,
+      "value": 26152.92,
+      "trades": 28
+    },
+    {
+      "ticker": "ZNCO",
+      "name": "ZNCO",
+      "price": 9.41,
+      "volume": 9007,
+      "value": 84758.97,
+      "trades": 90
+    },
+    {
+      "ticker": "ZMBF",
+      "name": "ZMBF",
+      "price": 1.85,
+      "volume": 6130,
+      "value": 11344.48,
+      "trades": 73
+    }
   ]
 }
