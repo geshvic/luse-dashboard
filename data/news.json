@@ -651,5 +651,36 @@
     "source": "Investing News Network",
     "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNa1pELXpkS2NrR1JZOXB3enoxSTRfRW1fWXl1b2xnLUNGWnVQVkZmR05JX1NjUEJiVzdvc2o1cGhqT3FPdGRmMDRaaDkzcENFYzRBakVPeWJlLXBSaUpaZnFiVW05QUlSUWk0YmJLZ2Y4SzhYOGluQ2o3ZWxwenZjekstd1F2c2dBcWJTMmxCZ0pxUmJSTklGUXlXVWpJbDdJX1VWQmpnVndwSW5aZDVKNVZJeWF1di1KTmtJaVl3dlVxQXhUMG5HTjNnYw?oc=5",
     "tickers": []
+  },
+  {
+    "date": "2026-10-01",
+    "category": "Mining",
+    "title": "Zambia firm accuses Abu Dhabi's IRH of breaching mine deal",
+    "summary": "Bloomberg reported that ZCCM Investments Holdings (ZCCM-IH) has formally accused Abu Dhabi's International Resources Holding (IRH) of breaching the 2024 agreement covering the Mopani copper assets — a second source on the flashpoint over the state miner's flagship holding (Bloomberg, 28 Sep 2026).",
+    "source": "Bloomberg.com",
+    "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOM3pEOGFNN0ZuaTI5MW5QM0JrLTRJb08yNzljSTN3OXRMRkczZVpPQS12aXljdEtSZmVPSzdxVFlpdUUxWVBPS1FKMVFjR1VtZDFldGlnbVc2M25ZOEFwTVh1bExSZ1hxSlBMN2lLOERFb2Uza3NrNUV0czUyTzZVY1N3RDJrelI4WWVjQ2xkeDZFbVJzM0lYOFNlcGV3b29QTXJucVNwdzJHYlU3N0Zna1pzdUVkUQ?oc=5",
+    "tickers": [
+      "ZCCM-IH"
+    ]
+  },
+  {
+    "date": "2026-10-01",
+    "category": "Corporate",
+    "title": "ZCCM Investments Holdings expects HY EPS 89% higher than prior year",
+    "summary": "ZCCM Investments Holdings (ZCCM-IH) guided that its half-year earnings per share would be about 89% higher than the prior-year period, ahead of its HY 2026 unaudited results — a positive earnings signal for the state miner (TradingView, 21 Sep 2026).",
+    "source": "TradingView",
+    "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNb1hiNjVPYTBYLVJnM0FhUi1Kbl9ycnMwYmVLc0tsNjd3bjJPbElwTFBYSmhsNlNoNmN2RkpFcl9YbUlLaTB2Y1NQNkl5dWhUV1JXYTNLZUt1LV9MOTNmcnFaR0VkUmstN183R2VSdmtheVQzOWNudlBLMGMtTUtRaHdVMEotVlA0cmRlQ282QXktRnF4LUdia1dVME92N1BkalNZOVluMmpKZmRsZzdFa0RZdEV3RHZaVW9qREdSRXpFeFZ6RmZucEloeVlEbmlBMjA2ZXNROG1Edw?oc=5",
+    "tickers": [
+      "ZCCM-IH"
+    ]
+  },
+  {
+    "date": "2026-10-01",
+    "category": "Mining",
+    "title": "China's quest for critical minerals comes with abuse concerns",
+    "summary": "Analysis of China's push for critical minerals in Africa — including Zambian copper and cobalt — examines labour and governance concerns as Chinese investment in the Copperbelt deepens (Africa Defense Forum, 29 Sep 2026).",
+    "source": "Africa Defense Forum",
+    "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPbmFVeGpOMnZBX0s4WXB0YzExSkh0RGd6SkZtcTNCMWJtNEt0a2E4aE9UNHF3MmFndnFudW81d0RJWGtaQlNSNjZaOTdscy1ncF9tNklQVEEzX18waTJibUNPZzh3YlRYMmJiUnRnQ05TdjROLWVxQUVuVno1MzBoSmVNQXV4WVFQVWJCV1dR?oc=5",
+    "tickers": []
   }
 ]

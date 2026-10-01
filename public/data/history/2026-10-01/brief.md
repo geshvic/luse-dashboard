@@ -42,15 +42,15 @@ Rates = ZMW per 1 unit of foreign currency. ↓ ZMW = kwacha strengthening. All 
 
 | Currency | Mid (ZMW) | vs prior | Trend |
 |---|---|---|---|
-| **USD** | 19.6262 | +0.71% | Weakening |
-| **GBP** | 26.0365 | +0.58% | Weakening |
-| **EUR** | 22.2567 | +0.05% | Stable |
-| **ZAR** | 1.1956 | +0.13% | Stable |
-| BWP | 1.4023 | +0.83% | Weakening |
-| CNY | 2.9219 | +0.28% | Stable |
+| **USD** | 19.6263 | +0.71% | Weakening |
+| **GBP** | 26.0743 | +0.72% | Weakening |
+| **EUR** | 22.3060 | +0.27% | Stable |
+| **ZAR** | 1.2001 | +0.50% | Stable |
+| BWP | 1.3914 | +0.05% | Stable |
+| CNY | 2.9386 | +0.85% | Weakening |
 
-- **USD:** market mid **K19.6262** (1 Oct, open.er-api.com); BoZ-published official mid **K19.509** (23 Sep).
-- **Read:** The kwacha gave back a little ground over the past week — the USD/ZMW mid firmed to ~**K19.63** from ~K19.49 a week ago, a modest ~**0.7%** softening. The move was **basket-wide but shallow**: GBP (26.04), BWP (1.40) and CNY (2.92) all cost slightly more ZMW, while EUR (22.26) and ZAR (1.196) were essentially unchanged. The pair remains inside its broad **18.40–19.80** consolidation band.
+- **USD:** market mid **K19.6263** (1 Oct, open.er-api.com); BoZ-published official mid **K19.59** (1 Oct).
+- **Read:** The kwacha gave back a little more ground over the past week — the USD/ZMW mid firmed to ~**K19.63** from ~K19.49 a week ago, a modest ~**0.7%** softening. The move was **basket-wide but shallow**: GBP (26.07), CNY (2.94) and ZAR (1.200) all cost slightly more ZMW, while EUR (22.31) and BWP (1.39) were essentially unchanged. The pair remains inside its broad **18.40–19.80** consolidation band.
 - **Policy:** The headline event was the **30 September 2026 MPC**, where the BoZ **cut the MPR 250bps to 10.75%** (from 13.25%) as inflation returned inside the target band — the lowest policy rate in several years. The same day a **10% copper-concentrate export duty** took effect, and **IMF successor-programme talks** began.
 
 ## 3. Notable Movers
@@ -70,10 +70,11 @@ Rates = ZMW per 1 unit of foreign currency. ↓ ZMW = kwacha strengthening. All 
 
 - **Monetary policy:** The **Bank of Zambia cut its policy rate 250bps to 10.75%** at the **30 September MPC**, the lowest in several years, as inflation returned inside the target band — signalling a decisive easing cycle even as the kwacha benefits less from carry. _(Bloomberg / Business News Nigeria)_
 - **IMF / fiscal:** An **IMF mission visited Zambia** to open talks on a **successor ECF programme** focused on growth and jobs; the government is **projecting ~7% average growth over the next three years** as policy pivots from stabilisation to expansion. _(Reuters / trtafrika.com)_
-- **ZCCM-IH / mining:** The state miner **accused Abu Dhabi's IRH of breaching the 2024 Mopani agreement**, a fresh flashpoint over its largest holding, alongside its ongoing **Listing Optimisation** cautionary. _(Miningmx / Business Insider Africa / LuSE SENS)_
+- **ZCCM-IH / mining:** The state miner **accused Abu Dhabi's IRH of breaching the 2024 Mopani agreement** (reported by Bloomberg and Miningmx), a fresh flashpoint over its largest holding, alongside a positive signal that it **expects HY 2026 EPS ~89% higher year-on-year**. _(Bloomberg / Miningmx / TradingView)_
 - **Energy / fuel:** President Hichilema called for **more predictable fuel pricing** as Zambia weighs longer review periods, and the **reopening of the main fuel pipeline to open competition was delayed to January 2027**. _(Trendsnafrica / Pipeline Technology Journal)_
 - **Capital markets:** Ongoing coverage of the LuSE's **five-listing / ~US$1bn pipeline and first gold ETF**; a fresh ranking of **Africa's biggest REIT markets in 2026** frames Zambia's listed property counters. _(Bloomberg / Forbes Africa / Nairametrics)_
 - **Telecom / ATEL:** **Airtel Networks Zambia** launched a nationwide drive to **plant 500 trees at schools**, its latest CSI push. _(Telecompaper)_
+- **Mining / China:** Analysis of **China's push for critical minerals in Africa** — including Zambian copper and cobalt — flags labour and governance concerns as Copperbelt investment deepens. _(Africa Defense Forum)_
 
 ---
-_Brief compiled 2026-10-01. Prices are authoritative from the official luse.co.zm feed (Playwright scraper); FX from open.er-api.com with a BoZ official cross-check (USD official mid K19.509, 23 Sep). Not investment advice._
+_Brief compiled 2026-10-01. Prices are authoritative from the official luse.co.zm feed (Playwright scraper); FX from open.er-api.com with a BoZ official cross-check (USD official mid K19.59, 1 Oct). Not investment advice._
