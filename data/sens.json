@@ -1,5 +1,58 @@
 [
   {
+    "title": "DCZM – Interim Results for the six-month period ended 30 June 2026",
+    "date": "2026-09-29",
+    "category": "Financial Statements",
+    "type": "Earnings",
+    "tickers": [
+      "DCZM"
+    ],
+    "source": "LuSE SENS",
+    "url": "https://www.luse.co.zm/sens-category/financial-statements/"
+  },
+  {
+    "title": "DCZM – TRADING STATEMENT",
+    "date": "2026-09-28",
+    "category": "General Announcements",
+    "type": "Earnings",
+    "tickers": [
+      "DCZM"
+    ],
+    "source": "LuSE SENS",
+    "url": "https://www.luse.co.zm/sens-category/general-announcements/"
+  },
+  {
+    "title": "ZCCM IH_Maamba Solar Energy Commissioning",
+    "date": "2026-09-25",
+    "category": "General Announcements",
+    "type": "General",
+    "tickers": [
+      "ZCCM-IH"
+    ],
+    "source": "LuSE SENS",
+    "url": "https://www.luse.co.zm/sens-category/general-announcements/"
+  },
+  {
+    "title": "CEC PLC SHAREHOLDER OPEN DAY NOTICE",
+    "date": "2026-09-23",
+    "category": "General Announcements",
+    "type": "General",
+    "tickers": [
+      "CECZ"
+    ],
+    "source": "LuSE SENS",
+    "url": "https://www.luse.co.zm/sens-category/general-announcements/"
+  },
+  {
+    "title": "IZWE PLC INTERIM DIVIDEND NOTICE",
+    "date": "2026-09-23",
+    "category": "Dividends",
+    "type": "Dividends",
+    "tickers": [],
+    "source": "LuSE SENS",
+    "url": "https://www.luse.co.zm/sens-category/dividends/"
+  },
+  {
     "title": "ZCCM IH HY 2026 UNAUDITED FINANCIAL RESULTS",
     "date": "2026-09-22",
     "category": "Financial Statements",
