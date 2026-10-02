@@ -1,5 +1,36 @@
 [
   {
+    "title": "MAFS – TRADING STATEMENT",
+    "date": "2026-10-01",
+    "category": "General Announcements",
+    "type": "Earnings",
+    "tickers": [
+      "MAFS"
+    ],
+    "source": "LuSE SENS",
+    "url": "https://www.luse.co.zm/sens-category/general-announcements/"
+  },
+  {
+    "title": "ZFCO – TRADING STATEMENT",
+    "date": "2026-10-01",
+    "category": "General Announcements",
+    "type": "Earnings",
+    "tickers": [
+      "ZFCO"
+    ],
+    "source": "LuSE SENS",
+    "url": "https://www.luse.co.zm/sens-category/general-announcements/"
+  },
+  {
+    "title": "SCBZ Trading Statement-HY 2026",
+    "date": "2026-10-01",
+    "category": "General Announcements",
+    "type": "Earnings",
+    "tickers": [],
+    "source": "LuSE SENS",
+    "url": "https://www.luse.co.zm/sens-category/general-announcements/"
+  },
+  {
     "title": "DCZM – Interim Results for the six-month period ended 30 June 2026",
     "date": "2026-09-29",
     "category": "Financial Statements",
