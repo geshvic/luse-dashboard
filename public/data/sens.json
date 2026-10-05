@@ -1,5 +1,23 @@
 [
   {
+    "title": "SCBZ- HY Results-30 June 2026",
+    "date": "2026-10-05",
+    "category": "Financial Statements",
+    "type": "Earnings",
+    "tickers": [],
+    "source": "LuSE SENS",
+    "url": "https://www.luse.co.zm/sens-category/financial-statements/"
+  },
+  {
+    "title": "MFS- HY 2026 Abridged Financial Statements",
+    "date": "2026-10-05",
+    "category": "Financial Statements",
+    "type": "General",
+    "tickers": [],
+    "source": "LuSE SENS",
+    "url": "https://www.luse.co.zm/sens-category/financial-statements/"
+  },
+  {
     "title": "MAFS – TRADING STATEMENT",
     "date": "2026-10-01",
     "category": "General Announcements",
