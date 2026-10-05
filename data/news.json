@@ -1,6 +1,75 @@
 [
   {
     "date": "2026-10-05",
+    "category": "Market",
+    "title": "LuSE Daily Market: LASI slips 0.19% to 25,742.47 — 851 trades, K0.88M turnover",
+    "summary": "The Lusaka Securities Exchange All-Share Index (LASI) closed 0.19% lower at 25,742.47 (down 49 points). 851 trades were recorded across 85,664 shares for turnover of K883,483 (K0.88M). Breadth was negative with 0 advancers, 6 decliners and 17 unchanged. CECZ fell 0.13% to K15.34, ZNCO 0.11% to K9.39 and ZSUG 0.64% to K69.50; ZMFA was the biggest faller, down 7.89% to K35.00. ATEL dominated by value at K542,562 while KLRE led by volume (46,008 shares).",
+    "source": "LuSE Official",
+    "url": "https://www.luse.co.zm/trading/market-data/",
+    "tickers": [
+      "ATEL",
+      "CECZ",
+      "ZNCO",
+      "ZSUG",
+      "KLRE"
+    ]
+  },
+  {
+    "date": "2026-10-05",
+    "category": "Energy",
+    "title": "ZCCM-IH: 100 MWac Maamba solar project begins commissioning and first grid injection",
+    "summary": "ZCCM Investments Holdings announced (25 September 2026) that the 100 MWac Maamba Solar PV Project has commenced commissioning and made its first power injection into Zambia’s national grid, adding meaningful renewable capacity to the group’s energy portfolio as the country battles a generation deficit.",
+    "source": "ZCCM-IH Investor Relations",
+    "url": "https://zccm-ih.financifi.com/news-and-media/",
+    "tickers": [
+      "ZCCM-IH"
+    ]
+  },
+  {
+    "date": "2026-10-05",
+    "category": "Energy",
+    "title": "Zambia creates ZNEC SPV for 312MW renewables; ZCCM-IH holds 60%",
+    "summary": "Zambia has created the ZNEC special-purpose vehicle to deliver a 312MW constituency renewable energy programme nationwide — a US plan funded 70% debt and 30% equity, with ZCCM Investments Holdings holding 60%. Analysts flagged governance (fairness opinion, disciplined procurement) as key to protecting minority shareholders.",
+    "source": "Equity Axis",
+    "url": "https://equityaxis.net/post/18711/2026/1/zambia-s-znec-bet-turning-constituency-power-into-an-investable-pipeline",
+    "tickers": [
+      "ZCCM-IH"
+    ]
+  },
+  {
+    "date": "2026-10-05",
+    "category": "Energy",
+    "title": "CEC’s Itimpi II 136MW solar plant is Zambia’s largest; ZCCM-IH lifts CEC stake to 33.51%",
+    "summary": "Copperbelt Energy Corporation’s Itimpi II 136 MW solar PV plant, commissioned in Q1 2026, is now Zambia’s largest operational solar plant. ZCCM Investments Holdings raised its shareholding in CEC from 32.41% to 33.51% over the period — the most immediately visible energy investment in the state investor’s portfolio.",
+    "source": "Equity Axis",
+    "url": "https://equityaxis.net/post/19248/2026/7/zccm-investments-holdings-swings-from-1-5-bn-profit-to-110-mn-loss-the-real-story-behind-the-numbers",
+    "tickers": [
+      "ZCCM-IH",
+      "CECZ"
+    ]
+  },
+  {
+    "date": "2026-10-05",
+    "category": "Corporate",
+    "title": "Airtel Zambia deploys US network expansion, adds 406 new sites",
+    "summary": "Airtel Networks Zambia (ATEL) has announced a US million nationwide network expansion — its largest single-year infrastructure investment — adding 406 new sites and targeting 95% population coverage. With only ~1.3% of Zambia’s 3,568 towers carrying 5G, the densification runway remains significant, focused on Lusaka, Kitwe and Ndola.",
+    "source": "TechReviewAfrica",
+    "url": "https://www.techreviewafrica.com/news/3470/airtel-zambia-unveils-us107-million-nationwide-network-expansion",
+    "tickers": [
+      "ATEL"
+    ]
+  },
+  {
+    "date": "2026-10-05",
+    "category": "Market",
+    "title": "LuSE CEO outlines first gold ETF, US listing pipeline and 2030 ambitions",
+    "summary": "In a Forbes Africa interview (23 September 2026), the Lusaka Securities Exchange CEO discussed the bourse’s first gold ETF, a ~US listing pipeline and its 2030 strategic ambitions — continuing coverage of the market’s push to broaden listings and products.",
+    "source": "Forbes Africa",
+    "url": "https://www.forbesafrica.com",
+    "tickers": []
+  },
+  {
+    "date": "2026-10-05",
     "category": "Corporate",
     "title": "GDP expands by 7.7% in Q1of 2026 - Zambian Business Times",
     "summary": "July 8, 2026 author: Editorial Team GDP expands by 7.7% in Q1of 2026 According to official government data, Zambia's Gross Domestic Product (GDP) grew by 7.7% in the first quarter of 2026, up from 4.5% recorded during the same period in 2025, represe",
