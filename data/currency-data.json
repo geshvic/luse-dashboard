@@ -1,70 +1,70 @@
 {
-  "asOf": "2026-10-05",
+  "asOf": "2026-10-06",
   "source": "open.er-api.com (auto) + BOZ mid-rate (manual)",
-  "ratesLastUpdated": "2026-10-05 16:26 UTC",
+  "ratesLastUpdated": "2026-10-06 16:46 UTC",
   "baseNote": "Rates show ZMW per 1 unit of foreign currency. ↓ ZMW = Kwacha strengthening (appreciating).",
   "mpRate": 10.75,
   "mpRateNote": "Monetary Policy Rate cut 250bps to 10.75% at the 30 September 2026 MPC (from 13.25%), the lowest in several years, as inflation eased back inside the BoZ target band. Prior path: 13.25% held at the August 2026 MPC (26 Aug); 25bps cut from 13.50% at the May 2026 MPC; 75bps cut from 14.25% on 11 Feb 2026. The 30 Sep decision coincided with the 10% copper-concentrate export duty taking effect and the start of IMF successor-programme talks.",
   "rates": {
     "USD": {
-      "buy": 19.628,
-      "sell": 19.678,
-      "mid": 19.7465,
-      "marketMid": 19.7465,
-      "bozMid": 19.653,
-      "trend": "weakening",
-      "dayAgo": 19.6263,
+      "buy": 19.7175,
+      "sell": 19.7675,
+      "mid": 19.7425,
+      "marketMid": 19.7425,
+      "bozMid": 19.75,
+      "trend": "stable",
+      "dayAgo": 19.7465,
       "weekAgo": 19.4882,
       "twoWeeksAgo": 19.7352,
       "oneMonthAgo": 18.83,
       "sixMonthsAgo": 22.5,
-      "note": "1 USD ≈ 19.7465 ZMW — auto-updated 2026-10-05 (open.er-api.com). ↓ ZMW per USD = kwacha strengthening."
+      "note": "1 USD ≈ 19.7425 ZMW — auto-updated 2026-10-06 (open.er-api.com). BoZ official mid 19.75 (6 Oct). ↓ ZMW per USD = kwacha strengthening."
     },
     "GBP": {
-      "mid": 26.3013,
-      "trend": "weakening",
-      "dayAgo": 26.0743,
+      "mid": 26.0977,
+      "trend": "strengthening",
+      "dayAgo": 26.3013,
       "weekAgo": 25.8866,
       "oneMonthAgo": 25.5,
-      "note": "1 GBP ≈ 26.3013 ZMW — auto-updated 2026-10-05 (open.er-api.com). ↓ ZMW per GBP = kwacha strengthening."
+      "note": "1 GBP ≈ 26.0977 ZMW — auto-updated 2026-10-06 (open.er-api.com). ↓ ZMW per GBP = kwacha strengthening."
     },
     "EUR": {
-      "mid": 22.5271,
-      "trend": "weakening",
-      "dayAgo": 22.306,
+      "mid": 22.1301,
+      "trend": "strengthening",
+      "dayAgo": 22.5271,
       "weekAgo": 22.2455,
       "oneMonthAgo": 22.4,
-      "note": "1 EUR ≈ 22.5271 ZMW — auto-updated 2026-10-05 (open.er-api.com). ↓ ZMW per EUR = kwacha strengthening."
+      "note": "1 EUR ≈ 22.1301 ZMW — auto-updated 2026-10-06 (open.er-api.com). ↓ ZMW per EUR = kwacha strengthening."
     },
     "ZAR": {
-      "mid": 1.205,
-      "trend": "weakening",
-      "dayAgo": 1.2001,
+      "mid": 1.1859,
+      "trend": "strengthening",
+      "dayAgo": 1.205,
       "weekAgo": 1.1941,
       "oneMonthAgo": 1.18,
-      "note": "1 ZAR ≈ 1.205 ZMW — auto-updated 2026-10-05 (open.er-api.com). ↓ ZMW per ZAR = kwacha strengthening."
+      "note": "1 ZAR ≈ 1.1859 ZMW — auto-updated 2026-10-06 (open.er-api.com). ↓ ZMW per ZAR = kwacha strengthening."
     },
     "BWP": {
-      "mid": 1.4061,
-      "trend": "weakening",
+      "mid": 1.3815,
+      "trend": "strengthening",
       "weekAgo": 1.3908,
-      "dayAgo": 1.3914,
-      "note": "1 BWP ≈ 1.4061 ZMW — auto-updated 2026-10-05 (open.er-api.com). ↓ ZMW per BWP = kwacha strengthening."
+      "dayAgo": 1.4061,
+      "note": "1 BWP ≈ 1.3815 ZMW — auto-updated 2026-10-06 (open.er-api.com). ↓ ZMW per BWP = kwacha strengthening."
     },
     "CNY": {
-      "mid": 2.9386,
+      "mid": 2.9403,
       "trend": "stable",
       "weekAgo": 2.9138,
       "dayAgo": 2.9386,
-      "note": "1 CNY ≈ 2.9386 ZMW — auto-updated 2026-10-05 (open.er-api.com). ↓ ZMW per CNY = kwacha strengthening."
+      "note": "1 CNY ≈ 2.9403 ZMW — auto-updated 2026-10-06 (open.er-api.com). BoZ official 2.9476 (6 Oct). Broadly flat."
     }
   },
   "trendAnalysis": {
-    "direction": "USD/ZMW mid at 19.7465 (0.61% vs previous 19.6263). Rates auto-refreshed from open.er-api.com; BOZ mid-rate and MPR reviewed manually at each MPC meeting.",
-    "dayChange": 0.12,
-    "twoWeekChange": 0.011,
-    "oneMonthChange": 0.917,
-    "sixMonthChange": -2.753,
+    "direction": "USD/ZMW mid at 19.7425 (broadly flat, −0.02% vs previous 19.7465). The kwacha steadied and firmed modestly across the basket; rates auto-refreshed from open.er-api.com, with the BoZ official mid at 19.75 (6 Oct) and BOZ/MPR reviewed manually at each MPC meeting.",
+    "dayChange": -0.02,
+    "twoWeekChange": 0.04,
+    "oneMonthChange": 4.85,
+    "sixMonthChange": -12.26,
     "ytdChange": -16.4,
     "drivers": [
       "Record copper output ~890K tonnes (2025) — strong export earnings",
@@ -77,37 +77,37 @@
       "Gross international reserves near record highs (~US$5.5bn)",
       "Policy continuity after the 1 Sep 2026 inauguration of President Hichilema and Vice-President for a second term",
       "BoZ cut statutory reserve requirements (early Aug 2026) — supportive of bank liquidity",
-      "Seasonal import and end-of-quarter FX demand pressuring the kwacha through late September/early October"
+      "KCM copper output up 21% in H1 2026 — supportive of the mining/export outlook"
     ],
-    "outlook": "The kwacha continued to drift weaker in early October, with the USD/ZMW market mid at ~K19.7465/USD (open.er-api.com, 5 Oct) versus ~K19.63 at the start of the month — a further ~0.6% softening that keeps the pair near the top of its recent range. The move was a broad, basket-wide grind rather than a one-pair spike: GBP (26.3013, +0.87%), EUR (22.5271, +0.99%), BWP (1.4061, +1.06%), ZAR (1.205, +0.41%) and USD (19.7465, +0.61%) all cost more ZMW, while CNY (2.9386) was flat. With the USD/ZMW mid now testing the upper edge of the broad 18.40–19.80 consolidation band, the recent direction has flipped from the sharp H1 appreciation to a mild seasonal softening. The policy backdrop remains the 30 September 250bps MPR cut to 10.75% — the lowest in several years — which trims the carry support that buoyed the kwacha earlier in 2026. Import demand, softer copper-price swings and the pace of further BoZ easing are the near-term risks; IMF successor-programme talks and the 2027 budget shape the medium-term path.",
+    "outlook": "After a mild seasonal softening through late September/early October, the kwacha steadied in the 6 October session and edged firmer across the basket. The USD/ZMW market mid sits at ~K19.7425 (open.er-api.com, 6 Oct) versus ~K19.7465 the prior snapshot — essentially flat — while the BoZ official mid printed at K19.75. The day's move was broad and mildly kwacha-positive: GBP (26.0977, −0.77%), EUR (22.1301, −1.76%), BWP (1.3815, −1.75%) and ZAR (1.1859, −1.59%) all cost fewer kwacha, with USD flat and CNY (2.9403) also steady. The pair remains near the upper edge of the broad 18.40–19.80 consolidation band, but the recent direction has turned from softening back toward stability. The policy backdrop remains the 30 September 250bps MPR cut to 10.75% — the lowest in several years — which trims the carry support that buoyed the kwacha earlier in 2026. Import demand, softer copper-price swings and the pace of further BoZ easing are the near-term risks; IMF successor-programme talks and the 2027 budget shape the medium-term path.",
     "projection3m": "USD/ZMW 18.50–19.80 range. Post-election policy continuity and IMF talks supportive; softer policy rate, import demand and copper-price swings the main risks.",
     "projection6m": "USD/ZMW 18.00–20.00 range. Direction hinges on fiscal continuity, copper earnings and the pace of further BoZ easing.",
     "snapshotComparisons": {
       "USD": {
-        "abs": 0.1202,
-        "pct": 0.61
+        "abs": -0.004,
+        "pct": -0.02
       },
       "GBP": {
-        "abs": 0.227,
-        "pct": 0.87
+        "abs": -0.2036,
+        "pct": -0.77
       },
       "EUR": {
-        "abs": 0.2211,
-        "pct": 0.99
+        "abs": -0.397,
+        "pct": -1.76
       },
       "ZAR": {
-        "abs": 0.0049,
-        "pct": 0.41
+        "abs": -0.0191,
+        "pct": -1.59
       },
       "BWP": {
-        "abs": 0.0147,
-        "pct": 1.06
+        "abs": -0.0246,
+        "pct": -1.75
       },
       "CNY": {
-        "abs": 0,
-        "pct": 0
+        "abs": 0.0017,
+        "pct": 0.06
       }
     }
   },
-  "bozNote": "BoZ official daily mid 5 Oct 2026: 1 USD = 19.653 ZMW (per BoZ, cited by allratestoday.com). Market mid K19.7465."
+  "bozNote": "BoZ official daily mid 6 Oct 2026: 1 USD = 19.75 ZMW (allratestoday.com / BoZ API). BoZ 5 Oct mid 19.6784 (buy 19.6534 / sell 19.7034). Market mid K19.7425. Parallel-market quotes ~K20.30/USD (premium ~2.8%)."
 }
