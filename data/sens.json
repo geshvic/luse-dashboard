@@ -1,5 +1,36 @@
 [
   {
+    "title": "MFS Mandatory Offer-Circular to Shareholders",
+    "date": "2026-10-12",
+    "category": "General Announcements",
+    "type": "General",
+    "tickers": [],
+    "source": "LuSE SENS",
+    "url": "https://www.luse.co.zm/sens-category/general-announcements/"
+  },
+  {
+    "title": "DCZM – NOTICE OF INTERIM DIVIDEND",
+    "date": "2026-10-12",
+    "category": "Dividends",
+    "type": "Dividends",
+    "tickers": [
+      "DCZM"
+    ],
+    "source": "LuSE SENS",
+    "url": "https://www.luse.co.zm/sens-category/dividends/"
+  },
+  {
+    "title": "ZCCM IH NCHANGA TAILINGS",
+    "date": "2026-10-07",
+    "category": "General Announcements",
+    "type": "General",
+    "tickers": [
+      "ZCCM-IH"
+    ],
+    "source": "LuSE SENS",
+    "url": "https://www.luse.co.zm/sens-category/general-announcements/"
+  },
+  {
     "title": "SCBZ- HY Results-30 June 2026",
     "date": "2026-10-05",
     "category": "Financial Statements",
