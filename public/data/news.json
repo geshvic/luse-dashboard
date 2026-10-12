@@ -573,5 +573,95 @@
     "tickers": [
       "SCBL"
     ]
+  },
+  {
+    "date": "2026-10-09",
+    "category": "Mining",
+    "title": "ZCCM-IH approves US$498m KCM tailings leach plant at Nchanga - Lusaka Times",
+    "summary": "ZCCM Investments Holdings Plc approved a US$498 million Tailings Leach Plant at Konkola Copper Mines' Nchanga operation in Chingola. The plant will reprocess tailings from the TD5 dam to produce ~70,000t of copper cathode a year at full capacity; ZCCM-IH holds a 20.6% stake in KCM (SENS, 07.10.2026).",
+    "source": "Lusaka Times",
+    "url": "https://www.lusakatimes.com/2026/10/07/zccm-ih-approves-new-kcm-tailings-leach-plant-in-chingola/",
+    "tickers": [
+      "ZCCM-IH"
+    ]
+  },
+  {
+    "date": "2026-10-09",
+    "category": "Corporate",
+    "title": "ZCCM-IH wins big at the 2026 Capital Market Conference - ZCCM-IH",
+    "summary": "ZCCM Investments Holdings Plc took two top honours at the 2026 Zambia Capital Markets Conference and Awards, held in Lusaka from 30 September to 2 October 2026.",
+    "source": "ZCCM-IH",
+    "url": "https://www.zccm-ih.com.zm/2026/10/06/zccm-ih-wins-big-at-the-2026-capital-market-conference/",
+    "tickers": [
+      "ZCCM-IH"
+    ]
+  },
+  {
+    "date": "2026-10-09",
+    "category": "Economy",
+    "title": "Zambians offered access to UK real estate investment from US$27,000 as cross-border opportunities grow - Zambian Business Times",
+    "summary": "Dubai-based Tokinvest is offering eligible Zambian investors exposure to UK residential property (Great Hampton Street Works, Birmingham) from ~US$27,000. ZBT notes the economy grew 5.4% in 2025 (vs 3.8% in 2024) with Q1 2026 GDP growth of 7.7%, and annual inflation easing to 6.1% in September 2026, near the BoZ 6-8% target range.",
+    "source": "Zambian Business Times",
+    "url": "https://zambianbusinesstimes.com/zambians-offered-access-to-uk-real-estate-investment-from-us27000-as-cross-border-opportunities-grow/",
+    "tickers": []
+  },
+  {
+    "date": "2026-10-09",
+    "category": "Mining",
+    "title": "Report on local content law performance in mining sector 'SECRET' - Mines PS - Zambian Business Times",
+    "summary": "Ministry of Mines PS Dr. Hapenga Kabeta says the performance report on the mining local content law (SI No. 68 of 2025, effective 1 Jan 2026, requiring miners to allocate a minimum 20% of core procurement to local suppliers) remains confidential nine months in; the Ministry plans to publish it toward year-end.",
+    "source": "Zambian Business Times",
+    "url": "https://zambianbusinesstimes.com/report-on-local-content-law-performance-in-mining-sector-secret-mines-ps/",
+    "tickers": []
+  },
+  {
+    "date": "2026-10-09",
+    "category": "Mining",
+    "title": "El Nino is good for copper producers - Mining Expert - Zambian Business Times",
+    "summary": "Copperbelt University mining expert Prof. Peter Chileshe says El Nino's dry, sun-filled conditions favour open-pit mining even as they threaten agriculture, setting up contrasting fortunes for two pillars of Zambia's economy.",
+    "source": "Zambian Business Times",
+    "url": "https://zambianbusinesstimes.com/el-nino-is-good-for-copper-producers-mining-expert/",
+    "tickers": []
+  },
+  {
+    "date": "2026-10-09",
+    "category": "Economy",
+    "title": "HH should spell out measures to unify the nation - Governance expert - Zambian Business Times",
+    "summary": "Ahead of President Hakainde Hichilema's official opening of the First Session of the 14th National Assembly on 9 October 2026 (at which he is expected to outline 2026/2027 policy priorities), governance expert Wesly Miyanda urged a message of peace and national unity and continued accountability around the Grow Zambia Agenda.",
+    "source": "Zambian Business Times",
+    "url": "https://zambianbusinesstimes.com/hh-should-spell-out-measures-to-unify-the-nation-governance-expert/",
+    "tickers": []
+  },
+  {
+    "date": "2026-10-09",
+    "category": "Energy",
+    "title": "Maamba Solar injects first power into national grid - ZCCM-IH",
+    "summary": "Maamba Solar Energy Limited (MSEL) has injected electricity into Zambia's national grid for the first time, advancing the 100 MWac Maamba solar project in which ZCCM-IH holds an interest.",
+    "source": "ZCCM-IH",
+    "url": "https://www.zccm-ih.com.zm/2026/10/06/maamba-solar-injects-first-power-into-national-grid/",
+    "tickers": [
+      "ZCCM-IH",
+      "CECZ"
+    ]
+  },
+  {
+    "date": "2026-10-09",
+    "category": "Energy",
+    "title": "Stanbic CEO sees solar, grid investment as key to Zambia's economic transformation - Zambia Monitor",
+    "summary": "Stanbic Bank Zambia's CEO says Zambia needs to accelerate investment in solar power and electricity transmission/distribution networks to support economic transformation.",
+    "source": "Zambia Monitor",
+    "url": "https://www.zambiamonitor.com/stanbic-ceo-sees-solar-grid-investment-as-key-to-zambias-economic-transformation/",
+    "tickers": [
+      "CECZ"
+    ]
+  },
+  {
+    "date": "2026-10-09",
+    "category": "Energy",
+    "title": "Africa GreenCo to drive renewable energy growth through ZamWatt platform - Zambia Monitor",
+    "summary": "Africa GreenCo is using its ZamWatt platform to expand renewable-energy trading and growth in Zambia.",
+    "source": "Zambia Monitor",
+    "url": "https://www.zambiamonitor.com/africa-greenco-to-drive-renewable-energy-growth-through-zamwatt-platform/",
+    "tickers": []
   }
 ]
