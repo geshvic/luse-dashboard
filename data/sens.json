@@ -1,5 +1,91 @@
 [
   {
+    "title": "ZCCM IH Proposed Odd-Lot Offer Circular",
+    "date": "2026-10-30",
+    "category": "General Announcements",
+    "type": "General",
+    "tickers": [
+      "ZCCM-IH"
+    ],
+    "source": "LuSE SENS",
+    "url": "https://www.luse.co.zm/sens-category/general-announcements/"
+  },
+  {
+    "title": "NOTICE OF EXTRAORDINARY GENERAL MEETING",
+    "date": "2026-10-26",
+    "category": "AGM/EGM",
+    "type": "AGM",
+    "tickers": [],
+    "source": "LuSE SENS",
+    "url": "https://www.luse.co.zm/sens-category/annual-and-extraordinary-general-meeting/"
+  },
+  {
+    "title": "ZCCM IH – FURTHER CAUTIONARY ANNOUNCEMENT RENEWAL",
+    "date": "2026-10-22",
+    "category": "Cautionary Announcement",
+    "type": "Cautionary",
+    "tickers": [
+      "ZCCM-IH"
+    ],
+    "source": "LuSE SENS",
+    "url": "https://www.luse.co.zm/sens-category/cautionary-announcement/"
+  },
+  {
+    "title": "ZCCM IH – INVITATION TO THE SHAREHOLDER OPEN DAY AND UNVEILING OF THE COMPANY’S 10-YEAR STRATEGY",
+    "date": "2026-10-21",
+    "category": "General Announcements",
+    "type": "General",
+    "tickers": [
+      "ZCCM-IH"
+    ],
+    "source": "LuSE SENS",
+    "url": "https://www.luse.co.zm/sens-category/general-announcements/"
+  },
+  {
+    "title": "KLRE – SMALL RELATED PARTY TRANSACTION",
+    "date": "2026-10-16",
+    "category": "General Announcements",
+    "type": "M&A",
+    "tickers": [
+      "KLRE"
+    ],
+    "source": "LuSE SENS",
+    "url": "https://www.luse.co.zm/sens-category/general-announcements/"
+  },
+  {
+    "title": "ZMBF – RELATED PARTY TRANSACTION",
+    "date": "2026-10-16",
+    "category": "General Announcements",
+    "type": "M&A",
+    "tickers": [
+      "ZMBF"
+    ],
+    "source": "LuSE SENS",
+    "url": "https://www.luse.co.zm/sens-category/general-announcements/"
+  },
+  {
+    "title": "ZCCM IH- APPOINTMENT OF THE CHIEF FINANCIAL OFFICER",
+    "date": "2026-10-15",
+    "category": "Change in Directorate",
+    "type": "Directorate",
+    "tickers": [
+      "ZCCM-IH"
+    ],
+    "source": "LuSE SENS",
+    "url": "https://www.luse.co.zm/sens-category/change-in-directorate/"
+  },
+  {
+    "title": "IRH and ZCCM-IH reaffirm partnership to grow Mopani and deliver lasting benefits for Zambians (Press Release)",
+    "date": "2026-10-14",
+    "category": "General Announcements",
+    "type": "General",
+    "tickers": [
+      "ZCCM-IH"
+    ],
+    "source": "LuSE SENS",
+    "url": "https://www.luse.co.zm/sens-category/general-announcements/"
+  },
+  {
     "title": "MFS Mandatory Offer-Circular to Shareholders",
     "date": "2026-10-12",
     "category": "General Announcements",
