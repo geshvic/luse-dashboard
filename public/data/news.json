@@ -1,6 +1,39 @@
 [
   {
     "date": "2026-10-30",
+    "category": "Market",
+    "title": "ZCCM-IH vs Mopani investor dispute in the headlines",
+    "summary": "Local press reported a public row between ZCCM-IH and the Mopani investor group during October, a governance overhang for ZCCM-IH even as the miner reaffirmed its partnership with IRH to grow Mopani.",
+    "source": "Mast Media Zambia",
+    "url": "https://mastmediazm.com/2026/10/row-erupts-between-zccm-ih-mopani-investor/",
+    "tickers": [
+      "ZCCM-IH"
+    ]
+  },
+  {
+    "date": "2026-10-30",
+    "category": "Corporate",
+    "title": "ZSUG trading statement (22 Oct) flags earnings movement ahead of FY26 results",
+    "summary": "Zambia Sugar Plc issued a trading statement through LuSE SENS on 22 October 2026 advising shareholders of an expected movement in earnings for the financial year. ZSUG last traded at K67.97.",
+    "source": "LuSE SENS",
+    "url": "https://www.luse.co.zm/",
+    "tickers": [
+      "ZSUG"
+    ]
+  },
+  {
+    "date": "2026-10-30",
+    "category": "Corporate",
+    "title": "ZCCM-IH proposed odd-lot offer circular (LuSE SENS)",
+    "summary": "ZCCM Investments Holdings published a proposed odd-lot offer circular on LuSE SENS on 30 October 2026, giving small shareholders an exit mechanism ahead of the company 10-year strategy unveiling. The stock closed unchanged at K148.",
+    "source": "LuSE SENS",
+    "url": "https://www.luse.co.zm/sens-category/general-announcements/",
+    "tickers": [
+      "ZCCM-IH"
+    ]
+  },
+  {
+    "date": "2026-10-30",
     "category": "Corporate",
     "title": "GDP expands by 7.7% in Q1of 2026 - Zambian Business Times",
     "summary": "GDP expands by 7.7% in Q1of 2026 According to official government data, Zambia's Gross Domestic Product (GDP) grew by 7.7% in the first quarter of 2026, up from 4.5% recorded during the same period in 2025, representing an acceleration of 3.2 percent",
