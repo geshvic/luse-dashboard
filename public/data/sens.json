@@ -1,5 +1,27 @@
 [
   {
+    "title": "ZSUG – FY 2026 RESULTS",
+    "date": "2026-11-03",
+    "category": "Financial Statements",
+    "type": "Earnings",
+    "tickers": [
+      "ZSUG"
+    ],
+    "source": "LuSE SENS",
+    "url": "https://www.luse.co.zm/sens-category/financial-statements/"
+  },
+  {
+    "title": "ZSUG-Notice Of AGM",
+    "date": "2026-11-03",
+    "category": "AGM/EGM",
+    "type": "AGM",
+    "tickers": [
+      "ZSUG"
+    ],
+    "source": "LuSE SENS",
+    "url": "https://www.luse.co.zm/sens-category/annual-and-extraordinary-general-meeting/"
+  },
+  {
     "title": "ZCCM IH Proposed Odd-Lot Offer Circular",
     "date": "2026-10-30",
     "category": "General Announcements",

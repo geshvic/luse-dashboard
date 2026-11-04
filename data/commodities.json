@@ -24,11 +24,11 @@
   {
     "name": "Gold",
     "symbol": "XAU",
-    "price": 3882.47,
+    "price": 3930.57,
     "unit": "USD/oz",
-    "change": -290.01,
-    "changePct": -6.95,
-    "zmwValue": 68759,
+    "change": 48.1,
+    "changePct": 1.24,
+    "zmwValue": 69610,
     "icon": "🥇",
     "note": "ZCCM-IH gold mining play"
   },
