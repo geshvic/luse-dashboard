@@ -1,7 +1,7 @@
 {
-  "asOf": "2026-11-04",
-  "source": "open.er-api.com (auto) + BoZ mid-rate (manual)",
-  "ratesLastUpdated": "2026-11-04 00:02 UTC",
+  "asOf": "2026-11-06",
+  "source": "open.er-api.com (auto) + BOZ mid-rate (manual)",
+  "ratesLastUpdated": "2026-11-06 07:48 UTC",
   "baseNote": "Rates show ZMW per 1 unit of foreign currency. Higher ZMW = Kwacha weaker (depreciating); lower ZMW = Kwacha stronger (appreciating).",
   "mpRate": 10.75,
   "mpRateNote": "Monetary Policy Rate cut 250bps to 10.75% at the 30 September 2026 MPC (from 13.25%), the lowest in several years, as inflation eased back inside the BoZ target band. Prior path: 13.25% held at the August 2026 MPC (26 Aug); 25bps cut from 13.50% at the May 2026 MPC; 75bps cut from 14.25% on 11 Feb 2026. The 30 Sep decision coincided with the 10% copper-concentrate export duty taking effect and the start of IMF successor-programme talks.",
@@ -9,62 +9,62 @@
     "USD": {
       "buy": null,
       "sell": null,
-      "mid": 20.263,
+      "mid": 20.3157,
       "marketMid": 20.263,
       "bozMid": 20.239,
       "trend": "stable",
-      "dayAgo": 20.2741,
-      "weekAgo": 19.7508,
+      "dayAgo": 20.263,
+      "weekAgo": 20.2741,
       "twoWeeksAgo": 19.7352,
       "oneMonthAgo": 18.83,
       "sixMonthsAgo": 22.5,
-      "note": "1 USD = 20.2630 ZMW (market mid) — auto-updated 2026-11-04 (open.er-api.com). BoZ official mid 20.239 on 3 Nov 2026 (buy/sell not published in the feed retrieved). Essentially flat: 0.05% firmer than the 30 Oct snapshot (20.2741)."
+      "note": "1 USD ≈ 20.3157 ZMW — auto-updated 2026-11-06 (open.er-api.com). ↓ ZMW per USD = kwacha strengthening."
     },
     "GBP": {
-      "mid": 27.1843,
+      "mid": 27.3598,
       "trend": "weakening",
-      "dayAgo": 27.0555,
-      "weekAgo": 26.1076,
+      "dayAgo": 27.1843,
+      "weekAgo": 27.0555,
       "oneMonthAgo": 25.5,
-      "note": "1 GBP = 27.1843 ZMW — auto-updated 2026-11-04 (open.er-api.com). Up 0.48% vs the 30 Oct snapshot (27.0555), i.e. kwacha softer against sterling."
+      "note": "1 GBP ≈ 27.3598 ZMW — auto-updated 2026-11-06 (open.er-api.com). ↓ ZMW per GBP = kwacha strengthening."
     },
     "EUR": {
-      "mid": 22.6809,
+      "mid": 22.8175,
       "trend": "weakening",
-      "dayAgo": 22.6173,
-      "weekAgo": 22.136,
+      "dayAgo": 22.6809,
+      "weekAgo": 22.6173,
       "oneMonthAgo": 22.4,
-      "note": "1 EUR = 22.6809 ZMW — auto-updated 2026-11-04 (open.er-api.com). Up 0.28% vs the 30 Oct snapshot (22.6173), i.e. kwacha slightly softer against the euro."
+      "note": "1 EUR ≈ 22.8175 ZMW — auto-updated 2026-11-06 (open.er-api.com). ↓ ZMW per EUR = kwacha strengthening."
     },
     "ZAR": {
-      "mid": 1.2232,
-      "trend": "stable",
-      "dayAgo": 1.2209,
-      "weekAgo": 1.1887,
+      "mid": 1.24,
+      "trend": "weakening",
+      "dayAgo": 1.2232,
+      "weekAgo": 1.2209,
       "oneMonthAgo": 1.18,
-      "note": "1 ZAR = 1.2232 ZMW — auto-updated 2026-11-04 (open.er-api.com). Flat (+0.19%) vs the 30 Oct snapshot (1.2209)."
+      "note": "1 ZAR ≈ 1.24 ZMW — auto-updated 2026-11-06 (open.er-api.com). ↓ ZMW per ZAR = kwacha strengthening."
     },
     "BWP": {
-      "mid": 1.4174,
-      "trend": "strengthening",
-      "weekAgo": 1.4093,
-      "dayAgo": 1.4257,
-      "note": "1 BWP = 1.4174 ZMW — auto-updated 2026-11-04 (open.er-api.com). Down 0.58% vs the 30 Oct snapshot (1.4257), i.e. kwacha firmer against the pula."
+      "mid": 1.4323,
+      "trend": "weakening",
+      "weekAgo": 1.4257,
+      "dayAgo": 1.4174,
+      "note": "1 BWP ≈ 1.4323 ZMW — auto-updated 2026-11-06 (open.er-api.com). ↓ ZMW per BWP = kwacha strengthening."
     },
     "CNY": {
-      "mid": 3.0404,
-      "trend": "strengthening",
-      "weekAgo": 2.9412,
-      "dayAgo": 3.0618,
-      "note": "1 CNY = 3.0404 ZMW (market) — auto-updated 2026-11-04 (open.er-api.com). BoZ official 3 Nov print: 3.0335. Down 0.70% vs the 30 Oct snapshot (3.0618), i.e. kwacha firmer against the yuan."
+      "mid": 3.0386,
+      "trend": "stable",
+      "weekAgo": 3.0618,
+      "dayAgo": 3.0404,
+      "note": "1 CNY ≈ 3.0386 ZMW — auto-updated 2026-11-06 (open.er-api.com). ↓ ZMW per CNY = kwacha strengthening."
     }
   },
   "trendAnalysis": {
-    "direction": "USD/ZMW market mid 20.2630 — 0.05% firmer than the 30 Oct snapshot (20.2741). BoZ official mid 20.239 on 3 Nov (vs 20.201 on 30 Oct), so the market trades ~0.12% above the official fix. The kwacha remains pinned in a 20.10–20.30 band through early November.",
-    "dayChange": -0.05,
-    "twoWeekChange": -0.05,
-    "oneMonthChange": 7.61,
-    "sixMonthChange": -9.94,
+    "direction": "USD/ZMW mid at 20.3157 (0.26% vs previous 20.263). Rates auto-refreshed from open.er-api.com; BOZ mid-rate and MPR reviewed manually at each MPC meeting.",
+    "dayChange": 0.053,
+    "twoWeekChange": 0.581,
+    "oneMonthChange": 1.486,
+    "sixMonthChange": -2.184,
     "ytdChange": -16.4,
     "drivers": [
       "Record copper output ~890K tonnes (2025) — strong export earnings",
