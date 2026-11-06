@@ -108,5 +108,5 @@
       }
     }
   },
-  "bozNote": "BoZ official daily mid: 1 USD = 20.2925 ZMW on 4 Nov 2026 (buy 20.2675 / sell 20.3175). Market mid from open.er-api.com is 20.3157, ~0.11% above the official fix — a normal small offshore premium. CNY official 5 Nov: 3.0396."
+  "bozNote": "BoZ official daily mid: 1 USD = 20.2925 ZMW on 4 Nov 2026 (buy 20.2675 / sell 20.3175). Market mid from open.er-api.com is 20.3157, ~0.11% above the official fix — a normal small offshore premium. CNY official 5 Nov: 3.0396. Verified 6 Nov 09:56 UTC: boz.zm is JavaScript-gated and returns no table to a plain fetch, so 20.2925 (4 Nov) remains the last confirmed official fix; a third-party aggregator (allratestoday) reports the 6 Nov official mid at 20.271 — treat as unverified pending a confirmed BoZ print."
 }
