@@ -9,8 +9,10 @@ const path = require('path');
 const DATA_DIR = path.join(__dirname, '..', 'data');
 
 function todayStr() {
-  const d = new Date();
-  return d.toISOString().split('T')[0];
+  // Use the dashboard's local trading date (America/Chicago), NOT the UTC date.
+  // toISOString() rolls over to the next day after 6pm CT, which misfiled the
+  // daily close into tomorrow's folder.
+  return new Date().toLocaleDateString('en-CA', { timeZone: 'America/Chicago' });
 }
 
 function saveJSON(filename, data) {
