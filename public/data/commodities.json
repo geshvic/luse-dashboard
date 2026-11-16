@@ -2,11 +2,11 @@
   {
     "name": "Copper",
     "symbol": "LME",
-    "price": 13844,
+    "price": 13399,
     "unit": "USD/tonne",
-    "change": -696,
-    "changePct": -4.79,
-    "zmwValue": 245177,
+    "change": -445,
+    "changePct": -3.21,
+    "zmwValue": 237296,
     "icon": "🟠",
     "note": "70% of Zambia's exports"
   },
