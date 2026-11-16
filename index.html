@@ -913,9 +913,9 @@ function renderCurrency() {
   const getName = (c) => ({ USD:'US Dollar', GBP:'British Pound', EUR:'Euro', ZAR:'SA Rand', BWP:'Botswana Pula', CNY:'Chinese Yuan' }[c]||c);
   let items = '';
   for (const [code, data] of Object.entries(r)) {
-    const trendClass = data.trend === 'appreciating' ? 'up' : data.trend === 'depreciating' ? 'down' : '';
-    const trendSign = data.trend === 'appreciating' ? '▼' : data.trend === 'depreciating' ? '▲' : '—';
-    const trendLabel = data.trend === 'appreciating' ? 'Kwacha ↑' : data.trend === 'depreciating' ? 'Kwacha ↓' : 'Stable';
+    const trendClass = (data.trend === 'appreciating' || data.trend === 'strengthening') ? 'up' : (data.trend === 'depreciating' || data.trend === 'weakening') ? 'down' : '';
+    const trendSign = (data.trend === 'appreciating' || data.trend === 'strengthening') ? '▼' : (data.trend === 'depreciating' || data.trend === 'weakening') ? '▲' : '—';
+    const trendLabel = (data.trend === 'appreciating' || data.trend === 'strengthening') ? 'Kwacha ↑' : (data.trend === 'depreciating' || data.trend === 'weakening') ? 'Kwacha ↓' : 'Stable';
     const wkChg = data.weekAgo ? ((data.mid - data.weekAgo) / data.weekAgo * 100).toFixed(1) : null;
     items += '<div class="currency-item"><div class="cc-flag">'+getFlag(code)+'</div><div class="cc-code">'+code+'/'+getName(code)+'</div><div class="cc-rate">K'+data.mid.toFixed(2)+'</div><div class="cc-move '+trendClass+'">'+trendSign+' '+trendLabel+(wkChg?' · '+wkChg+'% wk':'')+'</div></div>';
   }

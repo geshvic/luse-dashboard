@@ -1,6 +1,17 @@
 [
   {
     "date": "2026-11-16",
+    "category": "Market",
+    "title": "REIZ rights offer results published on LuSE SENS",
+    "summary": "Real Estate Investments Zambia (REIZ) released the results of its rights offer on LuSE SENS on 16 November 2026. The counter traded 8,616 shares and closed 8.33% lower at K0.11 on the USD-quoted line (REIZUSD), the weakest move on the board. Investors should treat the rights-offer outcome as the driver of the move rather than any change in underlying property valuations.",
+    "source": "LuSE SENS",
+    "url": "https://www.luse.co.zm/sens-category/general-announcements/",
+    "tickers": [
+      "REIZUSD"
+    ]
+  },
+  {
+    "date": "2026-11-16",
     "category": "Corporate",
     "title": "GDP expands by 7.7% in Q1of 2026 - Zambian Business Times",
     "summary": "GDP expands by 7.7% in Q1of 2026 According to official government data, Zambia's Gross Domestic Product (GDP) grew by 7.7% in the first quarter of 2026, up from 4.5% recorded during the same period in 2025, representing an acceleration of 3.2 percent",
@@ -257,6 +268,38 @@
     "summary": "The September 2026 performance of the Lusaka Securities Exchange presents a mixed picture. While equity market liquidity saw a significant, albeit singular, boost, the underlying index sentiment remained bearish, and bond market activity softened.",
     "source": "LuSE Official",
     "url": "https://www.luse.co.zm/wp-content/uploads/2026/10/Market-update.pdf",
+    "tickers": []
+  },
+  {
+    "date": "2026-11-14",
+    "category": "Corporate",
+    "title": "ZCCM-IH targets copper trading, energy and formalised gold output",
+    "summary": "Speaking at the same ZACCI symposium, ZCCM-IH board chairperson Phesto Musonda said the state investment vehicle is investing in energy to support the national goal of 10,000MW of generation capacity by 2031 and is working to formalise gold production. Separately reported this week, ZCCM-IH also plans to enter copper trading directly to capture more revenue from mineral sales, a shift beyond passive shareholdings. The stock closed unchanged at K148.",
+    "source": "Zambia 24 / Kwacha News",
+    "url": "https://zambia24.com/2026/11/14/zra-moves-to-tighten-monitoring-of-mineral-value-chain/",
+    "tickers": [
+      "ZCCM-IH"
+    ]
+  },
+  {
+    "date": "2026-11-14",
+    "category": "Macro",
+    "title": "ZRA tightens mineral value-chain monitoring as copper royalties top K13bn",
+    "summary": "Zambia Revenue Authority Commissioner General Dingani Banda told the ZACCI 2027 Budget Copperbelt Symposium that ZRA will strengthen monitoring of the mineral value chain after copper generated more than K13 billion in mineral royalty revenue in 2025. He flagged only K64 million collected from a single gold operator, and more than K25 billion of VAT refunds paid last year with fraudulent claims on fictitious exports a live problem. ZACCI president Anthony Kabaghe said government owes businesses over K11.2 billion in VAT refunds.",
+    "source": "Zambia 24",
+    "url": "https://zambia24.com/2026/11/14/zra-moves-to-tighten-monitoring-of-mineral-value-chain/",
+    "tickers": [
+      "ZCCM-IH",
+      "CECZ"
+    ]
+  },
+  {
+    "date": "2026-11-12",
+    "category": "Market",
+    "title": "LuSE begins pilot transition to T+1 securities settlement",
+    "summary": "The Lusaka Securities Exchange published a general announcement on 12 November 2026 confirming the commencement of a pilot transition to a T+1 securities settlement cycle, moving from the current T+2 convention. Faster settlement shortens counterparty exposure, frees collateral for market makers and is a prerequisite for the exchange deepening secondary-market liquidity. Brokers and custodians are expected to run the pilot before a full cut-over.",
+    "source": "LuSE SENS",
+    "url": "https://www.luse.co.zm/sens-category/general-announcements/",
     "tickers": []
   },
   {
