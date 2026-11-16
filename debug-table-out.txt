@@ -1,0 +1,175 @@
+﻿TITLE: Market Data - Lusaka Securities Exchange (LuSE)
+{
+  "tables": [
+    {
+      "ti": 0,
+      "headerCount": 1,
+      "headers": [
+        "EQUITY MARKET"
+      ],
+      "rows": [
+        [
+          "EQUITY MARKET"
+        ],
+        [
+          "For Kwacha denominated securities: In 654 trades recorded today 149,958 shares were transacted resulting in a turnover of K1,960,583.09 . The following price changes were recorded today: -K.24 in NATB, -K0.06 in PUMA, +K0.01 in SCBL, +K0.20 in ZABR, and -K0.01 in ZNCO. Trading activity was also recorded in the following securities: AECI, ATEL, BATA, BATZ, CECZ, CCAF, CHIL, DCZM, KLRE, ZCCM, ZFCO, ZMBF, ZMFA, ZMRE, and ZSUG.\n\nFor the dollar denominated security (REIT): A total of 40 trades was recorded today, amounting to 35,310 units and a turnover of $4,943.40, and declined by $0.01 .\n\nThe LuSE All Share Index (LASI) ended at 26,175.07, down 0.06% from the previous session. The market closed on a capitalization of K336,295,158,674.55 including Shoprite Holdings and K146,223,089,774.55 excluding Shoprite Holdings."
+        ]
+      ]
+    },
+    {
+      "ti": 1,
+      "headerCount": 11,
+      "headers": [
+        "Security",
+        "ISIN code",
+        "Closing Price (ZMW)",
+        "Price Change",
+        "Trades",
+        "Volume Traded",
+        "Value Traded (ZMW)",
+        "Best Bid Price",
+        "Best Bid Quantity",
+        "Best Ask Price",
+        "Best Ask Quantity"
+      ],
+      "rows": [
+        [
+          "Security",
+          "ISIN code",
+          "Closing Price (ZMW)",
+          "Price Change",
+          "Trades",
+          "Volume Traded",
+          "Value Traded (ZMW)",
+          "Best Bid Price",
+          "Best Bid Quantity",
+          "Best Ask Price",
+          "Best Ask Quantity",
+          ""
+        ],
+        [
+          "AECI",
+          "ZM0000000284",
+          "AECI",
+          "115.00",
+          "-",
+          "2.00",
+          "6.00",
+          "648.00",
+          "-",
+          "108.00",
+          "658",
+          ""
+        ],
+        [
+          "ATEL",
+          "ZM0000000342",
+          "ATEL",
+          "224.00",
+          "-",
+          "26.00",
+          "2,704.00",
+          "606,816.00",
+          "223.00",
+          "224.00",
+          "9",
+          ""
+        ],
+        [
+          "BATA",
+          "ZM0000000102",
+          "BATA",
+          "9.52",
+          "-",
+          "4.00",
+          "61.00",
+          "582.33",
+          "9.54",
+          "-",
+          "-",
+          ""
+        ],
+        [
+          "BATZ",
+          "ZM0000000029",
+          "BATZ",
+          "12.49",
+          "-",
+          "34.00",
+          "794.00",
+          "9,917.06",
+          "12.30",
+          "12.49",
+          "5,045",
+          ""
+        ]
+      ]
+    },
+    {
+      "ti": 2,
+      "headerCount": 8,
+      "headers": [
+        "Name",
+        "Value",
+        "Interest",
+        "ISIN",
+        "Tenor (Years)",
+        "Issue Date",
+        "Maturity Date",
+        "Status"
+      ],
+      "rows": [
+        [
+          "Name",
+          "Value",
+          "Interest",
+          "ISIN",
+          "Tenor (Years)",
+          "Issue Date",
+          "Maturity Date",
+          "Status"
+        ],
+        [
+          "Real Estate Investments Zambia",
+          "$4,190,537",
+          "5.5%",
+          "ZM2000000181",
+          "5",
+          "26-11-2022",
+          "26-11-2027",
+          "Running"
+        ],
+        [
+          "IZWE-MTN 22A",
+          "K69,141,000",
+          "23.50%",
+          "ZM2000001163",
+          "3",
+          "27-07-2024",
+          "31-07-2027",
+          "Running"
+        ],
+        [
+          "Bayport Financial Services 01-2023 MTNP",
+          "K50,047,000",
+          "364TB + 500 Basis Points per Annum",
+          "ZM2000001072",
+          "3",
+          "31/05/2023",
+          "31/05/2026",
+          "Running"
+        ],
+        [
+          "Bayport Financial Services 02-2023 MTNP",
+          "K58,535,000",
+          "364TB + 575 Basis Points per Annum",
+          "ZM2000001080",
+          "5",
+          "31/05/2023",
+          "31/05/2028",
+          "Running"
+        ]
+      ]
+    }
+  ]
+}
